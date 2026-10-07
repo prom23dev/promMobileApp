@@ -1,0 +1,15 @@
+✔ actual public snapshot has image/description; private files and flags without provenance are excluded (1.237584ms)
+✔ snapshot cannot provide inventory, lease approval or a fabricated stock number (0.478792ms)
+✔ warehouse IDs from client rejected before calling any provider (0.386792ms)
+✔ complete explicit source rows preserve quantity without asserting reservation, pickup, nearest warehouse (0.796417ms)
+✔ missing row is unknown, explicit zero is zero; partial query cannot sum a false total (0.303334ms)
+✔ stale stock, mismatched context/product, foreign/duplicate/negative warehouse data fail closed (0.4715ms)
+✔ stale or cross-buyer/settlement mapping never queries inventory; raw provider errors never escape (0.35925ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 70.699917

@@ -1,0 +1,4859 @@
+{
+  "sourcePackage": "docs/legal42/source/00–13.txt",
+  "routeFiles": [
+    "mobile/app/(tabs)/(home)/_layout.tsx",
+    "mobile/app/(tabs)/(home)/blog/[id].tsx",
+    "mobile/app/(tabs)/(home)/blog/index.tsx",
+    "mobile/app/(tabs)/(home)/brands/[slug].tsx",
+    "mobile/app/(tabs)/(home)/brands/index.tsx",
+    "mobile/app/(tabs)/(home)/catalog/brand/[brand].tsx",
+    "mobile/app/(tabs)/(home)/catalog/section/[section].tsx",
+    "mobile/app/(tabs)/(home)/compare.tsx",
+    "mobile/app/(tabs)/(home)/forms/[id].tsx",
+    "mobile/app/(tabs)/(home)/index.tsx",
+    "mobile/app/(tabs)/(home)/information/[topic].tsx",
+    "mobile/app/(tabs)/(home)/legal/[id].tsx",
+    "mobile/app/(tabs)/(home)/more.tsx",
+    "mobile/app/(tabs)/(home)/not-found.tsx",
+    "mobile/app/(tabs)/(home)/notifications.tsx",
+    "mobile/app/(tabs)/(home)/order/[id].tsx",
+    "mobile/app/(tabs)/(home)/orders.tsx",
+    "mobile/app/(tabs)/(home)/pages/[id].tsx",
+    "mobile/app/(tabs)/(home)/procurement.tsx",
+    "mobile/app/(tabs)/(home)/product/[id].tsx",
+    "mobile/app/(tabs)/(home)/quick-order.tsx",
+    "mobile/app/(tabs)/(home)/service.tsx",
+    "mobile/app/(tabs)/(home)/workspace/[kind].tsx",
+    "mobile/app/(tabs)/(saved)/_layout.tsx",
+    "mobile/app/(tabs)/(saved)/blog/[id].tsx",
+    "mobile/app/(tabs)/(saved)/blog/index.tsx",
+    "mobile/app/(tabs)/(saved)/brands/[slug].tsx",
+    "mobile/app/(tabs)/(saved)/brands/index.tsx",
+    "mobile/app/(tabs)/(saved)/catalog/brand/[brand].tsx",
+    "mobile/app/(tabs)/(saved)/catalog/section/[section].tsx",
+    "mobile/app/(tabs)/(saved)/compare.tsx",
+    "mobile/app/(tabs)/(saved)/favorites.tsx",
+    "mobile/app/(tabs)/(saved)/forms/[id].tsx",
+    "mobile/app/(tabs)/(saved)/information/[topic].tsx",
+    "mobile/app/(tabs)/(saved)/legal/[id].tsx",
+    "mobile/app/(tabs)/(saved)/more.tsx",
+    "mobile/app/(tabs)/(saved)/notifications.tsx",
+    "mobile/app/(tabs)/(saved)/order/[id].tsx",
+    "mobile/app/(tabs)/(saved)/orders.tsx",
+    "mobile/app/(tabs)/(saved)/pages/[id].tsx",
+    "mobile/app/(tabs)/(saved)/procurement.tsx",
+    "mobile/app/(tabs)/(saved)/product/[id].tsx",
+    "mobile/app/(tabs)/(saved)/quick-order.tsx",
+    "mobile/app/(tabs)/(saved)/service.tsx",
+    "mobile/app/(tabs)/(saved)/workspace/[kind].tsx",
+    "mobile/app/(tabs)/(search)/_layout.tsx",
+    "mobile/app/(tabs)/(search)/blog/[id].tsx",
+    "mobile/app/(tabs)/(search)/blog/index.tsx",
+    "mobile/app/(tabs)/(search)/brands/[slug].tsx",
+    "mobile/app/(tabs)/(search)/brands/index.tsx",
+    "mobile/app/(tabs)/(search)/catalog/brand/[brand].tsx",
+    "mobile/app/(tabs)/(search)/catalog/section/[section].tsx",
+    "mobile/app/(tabs)/(search)/catalog.tsx",
+    "mobile/app/(tabs)/(search)/compare.tsx",
+    "mobile/app/(tabs)/(search)/forms/[id].tsx",
+    "mobile/app/(tabs)/(search)/information/[topic].tsx",
+    "mobile/app/(tabs)/(search)/legal/[id].tsx",
+    "mobile/app/(tabs)/(search)/more.tsx",
+    "mobile/app/(tabs)/(search)/notifications.tsx",
+    "mobile/app/(tabs)/(search)/order/[id].tsx",
+    "mobile/app/(tabs)/(search)/orders.tsx",
+    "mobile/app/(tabs)/(search)/pages/[id].tsx",
+    "mobile/app/(tabs)/(search)/procurement.tsx",
+    "mobile/app/(tabs)/(search)/product/[id].tsx",
+    "mobile/app/(tabs)/(search)/quick-order.tsx",
+    "mobile/app/(tabs)/(search)/service.tsx",
+    "mobile/app/(tabs)/(search)/workspace/[kind].tsx",
+    "mobile/app/(tabs)/(shopping)/_layout.tsx",
+    "mobile/app/(tabs)/(shopping)/blog/[id].tsx",
+    "mobile/app/(tabs)/(shopping)/blog/index.tsx",
+    "mobile/app/(tabs)/(shopping)/brands/[slug].tsx",
+    "mobile/app/(tabs)/(shopping)/brands/index.tsx",
+    "mobile/app/(tabs)/(shopping)/cart.tsx",
+    "mobile/app/(tabs)/(shopping)/catalog/brand/[brand].tsx",
+    "mobile/app/(tabs)/(shopping)/catalog/section/[section].tsx",
+    "mobile/app/(tabs)/(shopping)/checkout-preview.tsx",
+    "mobile/app/(tabs)/(shopping)/compare.tsx",
+    "mobile/app/(tabs)/(shopping)/forms/[id].tsx",
+    "mobile/app/(tabs)/(shopping)/information/[topic].tsx",
+    "mobile/app/(tabs)/(shopping)/legal/[id].tsx",
+    "mobile/app/(tabs)/(shopping)/more.tsx",
+    "mobile/app/(tabs)/(shopping)/notifications.tsx",
+    "mobile/app/(tabs)/(shopping)/order/[id].tsx",
+    "mobile/app/(tabs)/(shopping)/orders.tsx",
+    "mobile/app/(tabs)/(shopping)/pages/[id].tsx",
+    "mobile/app/(tabs)/(shopping)/procurement.tsx",
+    "mobile/app/(tabs)/(shopping)/product/[id].tsx",
+    "mobile/app/(tabs)/(shopping)/quick-order.tsx",
+    "mobile/app/(tabs)/(shopping)/service.tsx",
+    "mobile/app/(tabs)/(shopping)/workspace/[kind].tsx",
+    "mobile/app/(tabs)/(user)/_layout.tsx",
+    "mobile/app/(tabs)/(user)/account.tsx",
+    "mobile/app/(tabs)/(user)/blog/[id].tsx",
+    "mobile/app/(tabs)/(user)/blog/index.tsx",
+    "mobile/app/(tabs)/(user)/brands/[slug].tsx",
+    "mobile/app/(tabs)/(user)/brands/index.tsx",
+    "mobile/app/(tabs)/(user)/catalog/brand/[brand].tsx",
+    "mobile/app/(tabs)/(user)/catalog/section/[section].tsx",
+    "mobile/app/(tabs)/(user)/compare.tsx",
+    "mobile/app/(tabs)/(user)/forms/[id].tsx",
+    "mobile/app/(tabs)/(user)/information/[topic].tsx",
+    "mobile/app/(tabs)/(user)/legal/[id].tsx",
+    "mobile/app/(tabs)/(user)/more.tsx",
+    "mobile/app/(tabs)/(user)/notifications.tsx",
+    "mobile/app/(tabs)/(user)/order/[id].tsx",
+    "mobile/app/(tabs)/(user)/orders.tsx",
+    "mobile/app/(tabs)/(user)/pages/[id].tsx",
+    "mobile/app/(tabs)/(user)/procurement.tsx",
+    "mobile/app/(tabs)/(user)/product/[id].tsx",
+    "mobile/app/(tabs)/(user)/quick-order.tsx",
+    "mobile/app/(tabs)/(user)/service.tsx",
+    "mobile/app/(tabs)/(user)/workspace/[kind].tsx",
+    "mobile/app/(tabs)/_layout.tsx",
+    "mobile/app/+html.tsx",
+    "mobile/app/+not-found.tsx",
+    "mobile/app/_layout.tsx",
+    "mobile/app/advertising-consent.tsx",
+    "mobile/app/business.tsx",
+    "mobile/app/claims.tsx",
+    "mobile/app/cookie-policy.tsx",
+    "mobile/app/oferta.tsx",
+    "mobile/app/offer.tsx",
+    "mobile/app/personal-data-consent.tsx",
+    "mobile/app/personal-data-distribution-consent.tsx",
+    "mobile/app/privacy-policy.tsx",
+    "mobile/app/recom-tech-info.tsx",
+    "mobile/app/return.tsx",
+    "mobile/app/user-agreement.tsx",
+    "mobile/app/warranty.tsx"
+  ],
+  "routes": [
+    "/",
+    "/more",
+    "/catalog",
+    "/cart",
+    "/checkout-preview",
+    "/account",
+    "/favorites",
+    "/compare",
+    "/orders",
+    "/service",
+    "/notifications",
+    "/procurement",
+    "/quick-order",
+    "/claims",
+    "/pages/documents",
+    "/pages/about",
+    "/pages/brands",
+    "/pages/suppliers",
+    "/pages/franchise",
+    "/pages/awards",
+    "/pages/returns",
+    "/pages/details",
+    "/pages/offer",
+    "/pages/privacy",
+    "/pages/personal-data",
+    "/pages/cookies",
+    "/pages/checkout",
+    "/pages/recommendations",
+    "/pages/faq",
+    "/pages/warranty",
+    "/pages/promotions",
+    "/pages/cooperation",
+    "/information/delivery",
+    "/information/payment",
+    "/information/business",
+    "/information/production",
+    "/information/contacts",
+    "/legal/privacy",
+    "/legal/consent",
+    "/legal/offer",
+    "/legal/cookies",
+    "/legal/recommendations",
+    "/legal/advertising",
+    "/legal/distribution",
+    "/privacy-policy",
+    "/personal-data-consent",
+    "/user-agreement",
+    "/cookie-policy",
+    "/recom-tech-info",
+    "/advertising-consent",
+    "/personal-data-distribution-consent",
+    "/offer",
+    "/oferta",
+    "/return",
+    "/warranty",
+    "/business",
+    "/workspace/profile",
+    "/workspace/contacts",
+    "/workspace/addresses",
+    "/workspace/organizations",
+    "/workspace/requisites",
+    "/workspace/bank",
+    "/workspace/staff",
+    "/workspace/documents",
+    "/workspace/sessions",
+    "/workspace/security",
+    "/workspace/payment-methods",
+    "/workspace/reviews",
+    "/workspace/waiting-list",
+    "/workspace/returns",
+    "/workspace/about",
+    "/brands/",
+    "/brands/promyshlennik/",
+    "/catalog/brand/promyshlennik/",
+    "/brands/team/",
+    "/catalog/brand/team/",
+    "/brands/alumet/",
+    "/catalog/brand/alumet/",
+    "/brands/afacan/",
+    "/catalog/brand/afacan/",
+    "/brands/zhfk/",
+    "/catalog/brand/zhfk/",
+    "/brands/stroymash/",
+    "/catalog/brand/stroymash/",
+    "/brands/denzel/",
+    "/catalog/brand/denzel/",
+    "/brands/ballu/",
+    "/catalog/brand/ballu/",
+    "/brands/tisel-technics/",
+    "/catalog/brand/tisel-technics/",
+    "/brands/daire/",
+    "/catalog/brand/daire/",
+    "/brands/centaure/",
+    "/catalog/brand/centaure/",
+    "/brands/geoplast/",
+    "/catalog/brand/geoplast/",
+    "/brands/bestweld/",
+    "/catalog/brand/bestweld/",
+    "/brands/sveza/",
+    "/catalog/brand/sveza/",
+    "/pages/advertising",
+    "/pages/distribution",
+    "/order/audit-missing",
+    "/product/prom-2414",
+    "/product/prom-1042",
+    "/product/prom-1046",
+    "/product/prom-908",
+    "/product/prom-592",
+    "/product/prom-1774",
+    "/product/prom-23916",
+    "/product/prom-2749",
+    "/product/prom-2743",
+    "/product/prom-2733",
+    "/product/prom-2402",
+    "/product/prom-2335",
+    "/product/prom-2377",
+    "/product/prom-2272",
+    "/product/prom-2388",
+    "/product/prom-2349",
+    "/product/prom-2266",
+    "/product/prom-1649",
+    "/product/prom-969",
+    "/product/prom-1343",
+    "/product/prom-2033",
+    "/product/prom-2017",
+    "/product/prom-372",
+    "/product/prom-2491",
+    "/product/prom-2200",
+    "/product/prom-594",
+    "/product/prom-596",
+    "/product/prom-597",
+    "/catalog/section/16",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07x16prom/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07x16promultra700/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07kh16ver20/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavspt07kh16/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkaturavspteam16kh20/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkiturypromyshlennikvspprom1620m/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkaturavsppromyshlennik16kh20/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavspteam12kh20/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavspprom12kh20/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavsppromultima12kh20/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavsppromyshlennik12kh20/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavspteam20kh20/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavsp-prom20kh20/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavsppromyshlennik20kh20/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/vspekonom12kh24094/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/vspekonom12kh2/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkaturadachnik/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryrezervuarnyevsp25020kh20m/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/alumet/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/promyshlennik/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/komplektuyushchiekvyshkam/",
+    "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/motorizovannyevyshkitury/",
+    "/catalog/section/37",
+    "/catalog/section/https://prom.myfast.space/catalog/podmostistroitelnye/malyarnyestoliki/",
+    "/catalog/section/https://prom.myfast.space/catalog/podmostistroitelnye/podmostimalyarnyeslesarnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/podmostistroitelnye/pomostymalyarnye/",
+    "/catalog/section/41",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/komplektuyushchiedlyazatenyayushcheysetki/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkadlyazabora/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkazatenyayushchaya/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkamaskirovochnaya/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkafasadnayazatenyayushchaya/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/brezent/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/tenty/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/zashchitno-ulavlivayushchaya-setka/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/dekorativnyeukrytiyadlyastroitelnykhlesov/",
+    "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/zashchitnoeograzhdenie/",
+    "/catalog/section/56",
+    "/catalog/section/https://prom.myfast.space/catalog/podemniki-krany-lyulki/stroitelnye-ljulki/",
+    "/catalog/section/https://prom.myfast.space/catalog/podemniki-krany-lyulki/rabochie-platformy/",
+    "/catalog/section/https://prom.myfast.space/catalog/podemniki-krany-lyulki/machtovye-podemniki/",
+    "/catalog/section/https://prom.myfast.space/catalog/podemniki-krany-lyulki/machtovye-stroitelnye-platformy-reechnogo-tipa/",
+    "/catalog/section/https://prom.myfast.space/catalog/podemniki-krany-lyulki/zapchastidlyalyulekzlp/",
+    "/catalog/section/64",
+    "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/buksirytekstilnyelentochnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/lebedkiruchnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/lebedkielektricheskie/",
+    "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/montazhnyepoyasaiprivyazi/",
+    "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/remnistyazhnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/stropytekstilnyepetlevye/",
+    "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/taliruchnye/",
+    "/catalog/section/71",
+    "/catalog/section/72",
+    "/catalog/section/https://prom.myfast.space/catalog/fanera-laminirovannaya/18-mm/",
+    "/catalog/section/https://prom.myfast.space/catalog/fanera-laminirovannaya/fanera10mm/",
+    "/catalog/section/https://prom.myfast.space/catalog/fanera-laminirovannaya/fanera9mm/",
+    "/catalog/section/https://prom.myfast.space/catalog/fanera-laminirovannaya/faneralaminirovannaya12mm/",
+    "/catalog/section/https://prom.myfast.space/catalog/fanera-laminirovannaya/21-mm/",
+    "/catalog/section/79",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/dvutavrovayabalka/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/obemnayaopalubkaperekrytiycuplock/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/ramnayaklinovayaopalubka/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/ramnayaopalubka/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/teleskopicheskiestoyki/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/vintystyazhnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/gaykiistyazhnyevinty/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/zamkidlyaopalubki/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/zakhvatymontazhnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/ograzhdayushchieustroystvaipodkosyvintovye/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/pruzhinnye-zazhimy/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zashchitnyykolpachok/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zvezdochka/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/mnogourovnevyy/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/opora/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/podstavka/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/stoyka/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/stulchik/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/fs/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zakladnyeelementy/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/betonnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/gidroizolyatsionnyematerialyismesi/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/melkoshchitovayaopalubka/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubkashchitovaya/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/emulsol/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/oborudovanie-dlya-progreva-betona/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/plastikovaya/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/kolonn/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/ctenovaya/",
+    "/catalog/section/https://prom.myfast.space/catalog/opalubka/teksturnyepanelivalero/",
+    "/catalog/section/113",
+    "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/benzinovye-vibroplity/",
+    "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/vibrotrambovki/",
+    "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/zaglazhivayushchaya-mashina/",
+    "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/vibroreyki/",
+    "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/",
+    "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/glubinnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/ploshhadochnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/",
+    "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/gladilkidlyabetona/",
+    "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/ruchkidlyagladilokpobetonu/",
+    "/catalog/section/125",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/kljuchi-dlja-gibki-armatury/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/nozhnicy/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/vyazalnyyinstrument/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/gilotinadlyakolkibruschatki/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/lomburklombara/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/mobilnyeelektricheskiestankidlyarezkiarmatury/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/ruchnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/gidravlicheskie-stanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/mobilnyeelektricheskiestankidlyagibkiarmatury/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/ruchnye-stanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/gidravlicheskie-stanki-dlya-gibki-armatury/",
+    "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/komplektuyushchiekstankamdlyagibkiirezkiarmatury/",
+    "/catalog/section/141",
+    "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/betonomeshalki/",
+    "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/kljuchi-dlja-gibki-armatury6163/",
+    "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/yashchiki-kamenshchika/",
+    "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/",
+    "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/rjumka-kolokolchik/",
+    "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/tufelka/",
+    "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/",
+    "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/stroitelnyetazy/",
+    "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/rastvorosmesiteli/",
+    "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/formydlyabetona/",
+    "/catalog/section/157",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/gidravlicheskie/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/gidravlicheskie/elektricheskietelezhkirokhli/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/platformennye/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/dvukhkolesnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/promyshlennyekolesa/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/nozhnichnye-podemniki/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/sistemykhraneniya/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/ruchnyeshtabelery/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/samokhodnyeshtabelery/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/elektricheskieshtabelery/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/elektricheskie3khopornye/",
+    "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/elektricheskie4khopornye/",
+    "/catalog/section/173",
+    "/catalog/section/https://prom.myfast.space/catalog/tachki/kolesadlyatachek/",
+    "/catalog/section/https://prom.myfast.space/catalog/tachki/tachkiteam/",
+    "/catalog/section/https://prom.myfast.space/catalog/tachki/tachkipromyshlennik/",
+    "/catalog/section/179",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/odnosektsionnye-lestnitsy-stremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dvukhsektsionnye-lestnitsy-stremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/trekhsektsionnye-lestnitsy-stremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsy-stremyanki-transformery/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/alyuminievyedvustoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/alyuminievyeodnostoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/anodirovannyedvustoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/anodirovannyeodnostoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyedvustoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyeodnostoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyestremyankistulya/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stremyankistalnyekhozyayushka/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki8760/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/alyuminievyedvustoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/alyuminievyeodnostoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyedvustoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyeodnostoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyedvustoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyestremyankistulya/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stremyankistalnyekhozyayushka/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/vsestremyanki/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/komplektuyushchieklestnitsamstremyankampomostam/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsynakanatnoytyage/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsyteleskopicheskie/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankidogrular/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankiteam/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankiprofessionalnyealyumet/",
+    "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stalnyeoblegchennyestremyankialyumet/",
+    "/catalog/section/200",
+    "/catalog/section/203",
+    "/catalog/section/https://prom.myfast.space/catalog/kompressory/bezmasljanye/",
+    "/catalog/section/https://prom.myfast.space/catalog/kompressory/maslyanye-koaksialnye/",
+    "/catalog/section/https://prom.myfast.space/catalog/kompressory/maslyanye-remennye/",
+    "/catalog/section/207",
+    "/catalog/section/https://prom.myfast.space/catalog/svarochnye-apparaty/invertornye/",
+    "/catalog/section/https://prom.myfast.space/catalog/svarochnye-apparaty/svarochnye-poluavtomaty/",
+    "/catalog/section/221",
+    "/catalog/section/https://prom.myfast.space/catalog/teplovye-pushki/gazovyeteplovyepushki/",
+    "/catalog/section/https://prom.myfast.space/catalog/teplovye-pushki/nagrevatel-pryamogo-nagreva/",
+    "/catalog/section/https://prom.myfast.space/catalog/teplovye-pushki/jelektricheskie-vozduhonagrevateli/",
+    "/catalog/section/250",
+    "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/ramnogo-tipa/",
+    "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/",
+    "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/a/",
+    "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/homuty/",
+    "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+    "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/shchity-i-balki-nastila/",
+    "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/ramy-stroitelnykh-lesov/",
+    "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/svyazi-krepleniya-opory/",
+    "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/sektsii-i-komplekty/",
+    "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/mobilnye-stroitelnye-lesa/",
+    "/catalog/section/231",
+    "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/vannochkadlyasvarkiarmatury/",
+    "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/zakladnyeizmetalla/",
+    "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/metallizdeliya/",
+    "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/muftydlyastykovkiarmatury/",
+    "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/stankidlyagibkimetalla/",
+    "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/stankidlyarezkimetalla/",
+    "/blog/articles-khomutovye-stroitelnye-lesa-promyshlennik-poshagovaya-sborka-vidy-khomutov-i-sovety-po-montazhu",
+    "/blog/articles-setka-zatenyayushchaya-promyshlennik-kak-vybrat-dlya-stroyki-dachi-maskirovki-i-dekora",
+    "/blog/articles-vyshka-tura-ili-stroitelnye-lesa-5-shagov-k-pravilnomu-vyboru-dlya-fasada-i-remonta",
+    "/blog/articles-konus-abramsa-dlya-betona-kak-proverit-kachestvo-i-podvizhnost-betonnoy-smesi-na-stroyploshchadke",
+    "/blog/articles-kak-sobrat-stroitelnye-ramnye-lesa-lrsp-svoimi-rukami-poshagovaya-instruktsiya-dlya-novichkov",
+    "/blog/articles-kak-sobrat-vyshku-turu-svoimi-rukami-poshagovaya-instruktsiya-dlya-nachinayushchikh",
+    "/blog/projects-moscow-city",
+    "/blog/projects-krc-oktyabr-astrakhan",
+    "/blog/projects-development-plaza-krasnodar",
+    "/blog/projects-serdtse-krasnodara",
+    "/blog/projects-zhk-obraztsovo-insiti",
+    "/blog/projects-zhk-fontany-krasnodar",
+    "/blog/projects-zhk-pervoe-mesto",
+    "/blog/projects-residential-complex-derbent",
+    "/blog/projects-botanika-hills",
+    "/blog/projects-nova-vita",
+    "/blog/projects-zhk-ritm",
+    "/blog/projects-zhk-slavyanka",
+    "/blog/projects-zhk-zvezdy",
+    "/blog/projects-zhk-tsentralnyy",
+    "/blog/video-inforce-7",
+    "/blog/video-fubag-6",
+    "/blog/video-inforce-5",
+    "/blog/video-fubag-4",
+    "/blog/video-fubag-3",
+    "/blog/video-inforce-2",
+    "/blog/video-fubag-1",
+    "/blog/video-inforce-0",
+    "/blog?kind=articles",
+    "/blog?kind=projects",
+    "/blog?kind=video",
+    "/forms/auth-login",
+    "/forms/auth-email",
+    "/forms/auth-register",
+    "/forms/auth-phone",
+    "/forms/auth-otp",
+    "/forms/auth-register-phone",
+    "/forms/auth-register-otp",
+    "/forms/auth-recovery",
+    "/forms/profile-name",
+    "/forms/profile-surname",
+    "/forms/profile-city",
+    "/forms/profile-email",
+    "/forms/profile-email-otp",
+    "/forms/profile-phone",
+    "/forms/profile-phone-otp",
+    "/forms/profile-passport",
+    "/forms/address-create",
+    "/forms/address-edit",
+    "/forms/address-default",
+    "/forms/address-delete",
+    "/forms/organization-add",
+    "/forms/organization-requisites",
+    "/forms/organization-bank",
+    "/forms/organization-verify",
+    "/forms/organization-edo",
+    "/forms/organization-consignee",
+    "/forms/organization-switch",
+    "/forms/organization-delete",
+    "/forms/account-delete",
+    "/forms/sessions-terminate",
+    "/forms/document-request",
+    "/forms/payment-card",
+    "/forms/payment-default",
+    "/forms/payment-remove",
+    "/forms/checkout",
+    "/forms/order-cancel",
+    "/forms/order-repeat",
+    "/forms/order-pay",
+    "/forms/callback",
+    "/forms/buy-one-click",
+    "/forms/rent",
+    "/forms/leasing",
+    "/forms/found-cheaper",
+    "/forms/tour",
+    "/forms/business-advice",
+    "/forms/supplier",
+    "/forms/partner",
+    "/forms/advice",
+    "/forms/review",
+    "/forms/order-review",
+    "/forms/question",
+    "/forms/review-reply",
+    "/forms/question-reply",
+    "/forms/review-edit",
+    "/forms/question-edit",
+    "/forms/review-delete",
+    "/forms/question-delete",
+    "/forms/appeal",
+    "/forms/appeal-order",
+    "/forms/appeal-rating",
+    "/forms/return",
+    "/forms/subscription",
+    "/forms/product-notify",
+    "/forms/notification-preferences",
+    "/forms/quote",
+    "/forms/production-request",
+    "/forms/contact",
+    "/forms/franchise"
+  ],
+  "forms": [
+    {
+      "description": "",
+      "submitLabel": "Продолжить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "auth-login",
+      "group": "auth",
+      "title": "Вход или регистрация",
+      "fields": [
+        {
+          "name": "login",
+          "label": "Email или телефон",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "notice": "Персональные данные обрабатываются в соответствии с Политикой в отношении обработки персональных данных.",
+      "sourceFiles": [
+        "site-source/local/templates/.default/components/bitrix/system.auth.form/.default/template.php",
+        "site-source/local/include/forms/auth-reg/action-auth.php"
+      ],
+      "sourceAction": "/local/include/forms/auth-reg/action-auth.php",
+      "relatedForms": [
+        "auth-email",
+        "auth-phone",
+        "auth-register",
+        "auth-recovery"
+      ],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Далее",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "auth-email",
+      "group": "auth",
+      "title": "Вход по электронной почте",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "password",
+          "label": "Пароль",
+          "type": "password",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-auth-by-email.php",
+        "site-source/local/include/forms/auth-reg/action-auth-by-email.php"
+      ],
+      "sourceAction": "/local/include/forms/auth-reg/action-auth-by-email.php",
+      "relatedForms": [
+        "auth-recovery",
+        "auth-register"
+      ],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Далее",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "auth-register",
+      "notice": "Персональные данные обрабатываются в соответствии с Политикой в отношении обработки персональных данных.",
+      "group": "auth",
+      "title": "Регистрация",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "password",
+          "label": "Пароль",
+          "type": "password",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "password_repeat",
+          "label": "Повторите пароль",
+          "type": "password",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent_reg",
+          "label": "Я даю согласие на обработку персональных данных для создания учётной записи на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-reg.php",
+        "site-source/local/include/forms/auth-reg/action-reg.php"
+      ],
+      "sourceAction": "/local/include/forms/auth-reg/action-reg.php",
+      "relatedForms": [
+        "auth-login"
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Получить код",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "auth-phone",
+      "group": "auth",
+      "title": "Вход по телефону",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-auth-by-phone.php",
+        "site-source/local/include/forms/auth-reg/action-get-code-for-phone.php"
+      ],
+      "sourceAction": "/local/include/forms/auth-reg/action-get-code-for-phone.php",
+      "relatedForms": [
+        "auth-email"
+      ],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Подтвердить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "auth-otp",
+      "group": "auth",
+      "title": "Подтверждение телефона",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "code",
+          "label": "Код подтверждения",
+          "type": "otp",
+          "required": true,
+          "sourceMapping": "otp-digits",
+          "maxLength": 6,
+          "sourceName": "code[1]…code[6]",
+          "hint": "Введите 6 последних цифр номера или код из СМС."
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-auth-by-phone.php",
+        "site-source/local/include/forms/auth-reg/action-auth-by-phone.php"
+      ],
+      "sourceAction": "/local/include/forms/auth-reg/action-auth-by-phone.php",
+      "sourceContext": [
+        "phone",
+        "verification-challenge"
+      ],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Далее",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "auth-register-phone",
+      "group": "auth",
+      "title": "Телефон для регистрации",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-reg-step-phone.php",
+        "site-source/local/include/forms/auth-reg/action-reg-step-phone.php"
+      ],
+      "sourceAction": "/local/include/forms/auth-reg/action-reg-step-phone.php",
+      "sourceContext": [
+        "registration-challenge"
+      ],
+      "sourceNotes": [
+        "Do not reproduce hidden plaintext password fields from the PHP form; use an opaque registration challenge."
+      ],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Подтвердить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "auth-register-otp",
+      "group": "auth",
+      "title": "Подтверждение регистрации",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "code",
+          "label": "Код подтверждения",
+          "type": "otp",
+          "required": true,
+          "sourceMapping": "otp-digits",
+          "maxLength": 6,
+          "sourceName": "code[1]…code[6]",
+          "hint": "Введите 6 последних цифр номера или код из СМС."
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-reg-step-phone-code.php",
+        "site-source/local/include/forms/auth-reg/action-reg-step-phone-code.php"
+      ],
+      "sourceAction": "/local/include/forms/auth-reg/action-reg-step-phone-code.php",
+      "sourceContext": [
+        "registration-challenge",
+        "phone"
+      ],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Восстановить пароль",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "auth-recovery",
+      "group": "auth",
+      "title": "Восстановление пароля",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/password-recovery.php",
+        "site-source/local/include/forms/auth-reg/action-password-recovery.php"
+      ],
+      "sourceAction": "/local/include/forms/auth-reg/action-password-recovery.php",
+      "relatedForms": [
+        "auth-login"
+      ],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Сохранить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "profile-name",
+      "group": "profile",
+      "title": "Имя",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Имя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/change-name.php",
+        "site-source/local/ajax/lk/info/edit/change-user-data.php"
+      ],
+      "sourceAction": "/local/ajax/lk/info/edit/change-user-data.php",
+      "sourceContext": [
+        "authenticated-user"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для изменения имени в личном кабинете на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Сохранить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "profile-surname",
+      "group": "profile",
+      "title": "Фамилия",
+      "fields": [
+        {
+          "name": "last_name",
+          "label": "Фамилия",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/change-family.php",
+        "site-source/local/ajax/lk/info/edit/change-user-data.php"
+      ],
+      "sourceAction": "/local/ajax/lk/info/edit/change-user-data.php",
+      "sourceContext": [
+        "authenticated-user"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для изменения фамилии в личном кабинете на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Сохранить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "profile-city",
+      "group": "profile",
+      "title": "Город",
+      "fields": [
+        {
+          "name": "city",
+          "label": "Город",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/change-city.php",
+        "site-source/local/ajax/lk/info/edit/change-user-data.php"
+      ],
+      "sourceAction": "/local/ajax/lk/info/edit/change-user-data.php",
+      "sourceContext": [
+        "authenticated-user"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для сохранения выбранного города на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Получить код",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "profile-email",
+      "group": "profile",
+      "title": "Изменить электронную почту",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/change-email.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-email-get-code-action.php"
+      ],
+      "sourceAction": "/local/ajax/lk/info/edit/forms/change-email-get-code-action.php",
+      "sourceContext": [
+        "authenticated-user"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для изменения электронной почты на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Подтвердить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "profile-email-otp",
+      "group": "profile",
+      "title": "Подтвердить электронную почту",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "code",
+          "label": "Код подтверждения",
+          "type": "otp",
+          "required": true,
+          "sourceMapping": "otp-digits",
+          "maxLength": 6,
+          "sourceName": "code[1]…code[6]"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/code-verification-by-email.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-email-check-code-action.php"
+      ],
+      "sourceAction": "/local/ajax/lk/info/edit/forms/change-email-check-code-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "email-verification-challenge"
+      ],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Получить код",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "profile-phone",
+      "group": "profile",
+      "title": "Изменить телефон",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/change-phone.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-phone-get-code-action.php"
+      ],
+      "sourceAction": "/local/ajax/lk/info/edit/forms/change-phone-get-code-action.php",
+      "sourceContext": [
+        "authenticated-user"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для изменения номера телефона на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Подтвердить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "profile-phone-otp",
+      "group": "profile",
+      "title": "Подтвердить новый телефон",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "code",
+          "label": "Код подтверждения",
+          "type": "otp",
+          "required": true,
+          "sourceMapping": "otp-digits",
+          "maxLength": 6,
+          "sourceName": "code[1]…code[6]",
+          "hint": "Введите 6 последних цифр номера или код из СМС."
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/code-verification-by-phone.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-phone-check-code-action.php"
+      ],
+      "sourceAction": "/local/ajax/lk/info/edit/forms/change-phone-check-code-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "phone-verification-challenge"
+      ],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Сохранить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "profile-passport",
+      "group": "profile",
+      "title": "Паспортные данные",
+      "fields": [
+        {
+          "name": "country",
+          "label": "Гражданство",
+          "type": "select",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true,
+          "options": [
+            {
+              "value": "1",
+              "label": "Россия"
+            },
+            {
+              "value": "2",
+              "label": "Беларусь"
+            },
+            {
+              "value": "3",
+              "label": "Казахстан"
+            }
+          ]
+        },
+        {
+          "name": "unmapped-0",
+          "label": "Имя",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        },
+        {
+          "name": "unmapped-1",
+          "label": "Фамилия",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        },
+        {
+          "name": "unmapped-2",
+          "label": "Отчество",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        },
+        {
+          "name": "unmapped-3",
+          "label": "Дата рождения",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        },
+        {
+          "name": "unmapped-4",
+          "label": "Серия и номер паспорта",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        },
+        {
+          "name": "unmapped-5",
+          "label": "Кем выдан",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        },
+        {
+          "name": "unmapped-6",
+          "label": "Дата выдачи",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        },
+        {
+          "name": "unmapped-7",
+          "label": "Код подразделения",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        },
+        {
+          "name": "unmapped-no-patronymic",
+          "label": "У меня нет отчества",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        },
+        {
+          "name": "unmapped-passport-storage",
+          "label": "Согласен на сохранение паспортных данных для последующего использования",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/gosuslugi.php"
+      ],
+      "sourceNotes": [
+        "Source points to a frontend mock; unnamed controls and no verified passport or Gosuslugi integration. Read-only until the actual contract exists."
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для проверки предоставленных паспортных данных на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Сохранить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "address-create",
+      "group": "profile",
+      "title": "Добавить адрес",
+      "fields": [
+        {
+          "name": "full_address",
+          "label": "Город, улица, дом",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/order-placing/popup-courier.php",
+        "site-source/local/ajax/lk/address-delivery/add-address-action.php"
+      ],
+      "sourceAction": "/local/ajax/lk/address-delivery/add-address-action.php",
+      "sourceContext": [
+        "authenticated-user"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для сохранения адреса доставки на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Сохранить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "address-edit",
+      "group": "profile",
+      "title": "Изменить адрес",
+      "fields": [
+        {
+          "name": "full_address",
+          "label": "Город, улица, дом",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/order-placing/popup-courier.php",
+        "site-source/local/ajax/lk/address-delivery/add-address-action.php"
+      ],
+      "sourceAction": "/local/ajax/lk/address-delivery/add-address-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "change_address_id"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для изменения адреса доставки на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Сделать основным",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "address-default",
+      "group": "profile",
+      "title": "Сделать адрес основным",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/address-delivery/change-main-address.php"
+      ],
+      "sourceAction": "/local/ajax/lk/address-delivery/change-main-address.php",
+      "sourceContext": [
+        "authenticated-user",
+        "address_id"
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Удалить адрес",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "address-delete",
+      "group": "profile",
+      "title": "Удалить адрес",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/address-delivery/remove-address-action.php"
+      ],
+      "sourceAction": "/local/ajax/lk/address-delivery/remove-address-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "address_id"
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Продолжить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "organization-add",
+      "group": "business",
+      "title": "Добавить организацию",
+      "fields": [
+        {
+          "name": "inn",
+          "label": "ИНН",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "kpp",
+          "label": "КПП",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "store_region_id",
+          "label": "Регион обслуживания",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Регионы обслуживания появятся после загрузки списка."
+        },
+        {
+          "name": "name",
+          "label": "Наименование организации",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "legal-addresss",
+          "label": "Юридический адрес",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "fact-address",
+          "label": "Фактический адрес",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "bik",
+          "label": "БИК",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "payment-bill",
+          "label": "Расчётный счёт",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "bank-name",
+          "label": "Наименование банка",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "correspondent-bill",
+          "label": "Корреспондентский счёт",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_my_organizations_add/templates/.default/template.php",
+        "site-source/local/ajax/lk/organization/organizations-find.php",
+        "site-source/local/ajax/lk/organization/organizations-add.php"
+      ],
+      "sourceAction": "/local/ajax/lk/organization/organizations-add.php",
+      "sourceContext": [
+        "authenticated-user",
+        "organization-lookup-result"
+      ],
+      "sourceNotes": [
+        "Lookup accepts inn/kpp. Final add uses returned inn-company/kpp-company and store_region_id. Read-only details originate from the lookup; never trust client organization ownership."
+      ],
+      "relatedForms": [
+        "organization-requisites",
+        "organization-verify"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для добавления организации в личный кабинет на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "Прикрепите документы для изменения реквизитов организации.",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "organization-requisites",
+      "group": "business",
+      "title": "Изменить реквизиты",
+      "fields": [
+        {
+          "name": "company_letter",
+          "label": "Официальное письмо об изменении реквизитов",
+          "type": "file",
+          "required": true,
+          "sourceMapping": "exact",
+          "acceptedExtensions": [
+            "pdf",
+            "png",
+            "jpeg",
+            "jpg"
+          ],
+          "maxBytes": 10485760,
+          "maxFiles": 1,
+          "requiredFrom": "handler",
+          "hint": "С печатью и подписью. PDF, PNG или JPG, до 10 МБ."
+        },
+        {
+          "name": "card_company",
+          "label": "Карточка компании в текстовом формате",
+          "type": "file",
+          "required": true,
+          "sourceMapping": "exact",
+          "acceptedExtensions": [
+            "docx",
+            "txt"
+          ],
+          "maxBytes": 10485760,
+          "maxFiles": 1,
+          "requiredFrom": "handler",
+          "hint": "DOCX или TXT, до 10 МБ."
+        },
+        {
+          "name": "scan_card",
+          "label": "Скан карточки компании",
+          "type": "file",
+          "required": true,
+          "sourceMapping": "exact",
+          "acceptedExtensions": [
+            "pdf",
+            "png",
+            "jpeg",
+            "jpg"
+          ],
+          "maxBytes": 10485760,
+          "maxFiles": 1,
+          "requiredFrom": "handler",
+          "hint": "С печатью и подписью. PDF, PNG или JPG, до 10 МБ."
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/organizations-details.php",
+        "site-source/local/ajax/lk/organization/action-organizations-details.php"
+      ],
+      "sourceAction": "/local/ajax/lk/organization/action-organizations-details.php",
+      "sourceContext": [
+        "authenticated-user",
+        "companyID"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для обновления реквизитов организации на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Обновить сведения",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "organization-bank",
+      "group": "business",
+      "title": "Банковские реквизиты",
+      "fields": [
+        {
+          "name": "bik",
+          "label": "БИК",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "payment-bill",
+          "label": "Расчётный счёт",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "bank-name",
+          "label": "Наименование банка",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true
+        },
+        {
+          "name": "correspondent-bill",
+          "label": "Корреспондентский счёт",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "readOnly": true
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_my_organizations_add/templates/.default/template.php",
+        "site-source/local/ajax/lk/organization/organizations-find.php"
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "companyID"
+      ],
+      "sourceNotes": [
+        "No editable bank-details submission exists. Bank data is read-only in the organization lookup."
+      ],
+      "relatedForms": [
+        "organization-requisites"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для обновления банковских реквизитов организации на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "organization-verify",
+      "group": "business",
+      "title": "Подтвердить полномочия",
+      "fields": [
+        {
+          "name": "fio",
+          "label": "ФИО",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/organization-verify.php",
+        "site-source/local/ajax/lk/organization/action-organization-verify.php"
+      ],
+      "sourceAction": "/local/ajax/lk/organization/action-organization-verify.php",
+      "sourceContext": [
+        "authenticated-user",
+        "companyID"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для проверки полномочий представителя организации на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "organization-edo",
+      "group": "business",
+      "title": "Подключить ЭДО",
+      "fields": [
+        {
+          "name": "edo_id",
+          "label": "Идентификатор участника ЭДО",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "edo_operator",
+          "label": "Оператор ЭДО",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Операторы ЭДО появятся после загрузки списка."
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/organization-edo.php",
+        "site-source/local/ajax/lk/organization/action-organization-edo.php"
+      ],
+      "sourceAction": "/local/ajax/lk/organization/action-organization-edo.php",
+      "sourceContext": [
+        "authenticated-user",
+        "companyID"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для подключения электронного документооборота на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Сохранить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "organization-consignee",
+      "group": "business",
+      "title": "Грузополучатель",
+      "fields": [
+        {
+          "name": "unmapped-0",
+          "label": "КПП",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        },
+        {
+          "name": "unmapped-1",
+          "label": "Название филиала",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        },
+        {
+          "name": "unmapped-2",
+          "label": "Адрес",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "unnamed-source-control",
+          "readOnly": true
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/organizations-consignee.php"
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "companyID"
+      ],
+      "sourceNotes": [
+        "Source controls have no names and no connected handler. Do not invent a consignee API."
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для оформления данных грузополучателя на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Выбрать",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "organization-switch",
+      "group": "business",
+      "title": "Выбрать организацию",
+      "fields": [
+        {
+          "name": "organization",
+          "label": "Организация",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Ваши организации появятся после входа."
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/organizations-switcher.php",
+        "site-source/local/ajax/lk/organization/action-organizations-switcher.php"
+      ],
+      "sourceAction": "/local/ajax/lk/organization/action-organizations-switcher.php",
+      "sourceContext": [
+        "authenticated-user"
+      ],
+      "relatedForms": [
+        "organization-add"
+      ],
+      "consents": []
+    },
+    {
+      "description": "Удалив организацию, вы потеряете данные в этой организации: историю заказов, сохранённые карты, сопроводительные документы, избранное и сравнение.",
+      "submitLabel": "Удалить организацию",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "organization-delete",
+      "group": "business",
+      "title": "Удалить организацию",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/form-delete-organization.php"
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "org_id"
+      ],
+      "sourceNotes": [
+        "Source confirmation links to ?delete_org=y&org_id=… in the organization page. The native integration must recheck membership and scope."
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "После удаления аккаунта вы потеряете историю заказов, сохранённые карты и организации, документы, избранное и сравнение.",
+      "submitLabel": "Удалить аккаунт",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "account-delete",
+      "group": "profile",
+      "title": "Удалить аккаунт",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/delete-account.php"
+      ],
+      "sourceContext": [
+        "authenticated-user"
+      ],
+      "sourceNotes": [
+        "Source links to /?deleteAccount=y&sessid=…. Native deletion requires a verified server result; a local session reset is not account deletion."
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "Для продолжения работы на этом устройстве потребуется снова войти в аккаунт.",
+      "submitLabel": "Завершить сеанс",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "sessions-terminate",
+      "group": "profile",
+      "title": "Завершить сеанс",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/terminate-session.php"
+      ],
+      "sourceAction": "/local/ajax/lk/info/edit/terminate-session.php",
+      "sourceContext": [
+        "authenticated-user",
+        "id"
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Запросить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "document-request",
+      "group": "business",
+      "title": "Запросить документ",
+      "fields": [
+        {
+          "name": "DOC_TYPE",
+          "label": "Вид документа",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "database",
+          "requiredFrom": "database"
+        },
+        {
+          "name": "PERIOD_FROM",
+          "label": "Период с",
+          "type": "date",
+          "required": false,
+          "sourceMapping": "database",
+          "requiredFrom": "database"
+        },
+        {
+          "name": "PERIOD_TO",
+          "label": "Период по",
+          "type": "date",
+          "required": false,
+          "sourceMapping": "database",
+          "requiredFrom": "database"
+        },
+        {
+          "name": "COMMENT",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "database",
+          "requiredFrom": "database"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-document/template.php",
+        "site-source/local/ajax/form/request-document-action.php"
+      ],
+      "sourceAction": "/local/ajax/form/request-document-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "organization_id"
+      ],
+      "sourceNotes": [
+        "DOC_TYPE/PERIOD_FROM/PERIOD_TO/COMMENT are question SIDs. Numeric input names and REQUIRED flags must be loaded from REQUEST_DOCUMENT, not inferred."
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для подготовки запрошенных документов на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "Данные карты вводятся в защищённой форме платёжного сервиса.",
+      "submitLabel": "Перейти к привязке карты",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "payment-card",
+      "group": "purchase",
+      "title": "Привязать карту",
+      "externalCapture": "payment-provider",
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_payment_methods/templates/.default/template.php",
+        "site-source/local/ajax/lk/payment-methods/add-card-action.php"
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "provider-binding-session"
+      ],
+      "sourceNotes": [
+        "Original card_number/card_expire/card_code fields post to an unfinished own-site stub. They are intentionally not collected by the app. A real provider SDK/session is required."
+      ],
+      "fields": [],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для привязки сохранённого способа оплаты на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Сделать основной",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "payment-default",
+      "group": "purchase",
+      "title": "Сделать карту основной",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/payment-methods/change-main-card-action.php"
+      ],
+      "sourceAction": "/local/ajax/lk/payment-methods/change-main-card-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "card_id"
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Удалить карту",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "payment-remove",
+      "group": "purchase",
+      "title": "Удалить сохранённую карту",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/payment-methods/remove-card-action.php"
+      ],
+      "sourceAction": "/local/ajax/lk/payment-methods/remove-card-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "card_id"
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Оформить заказ",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "checkout",
+      "group": "purchase",
+      "title": "Оформление заказа",
+      "fields": [
+        {
+          "name": "ORDER_FIO",
+          "label": "ФИО получателя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "order-property",
+          "sourceName": "ORDER_PROP_{FIO}"
+        },
+        {
+          "name": "ORDER_EMAIL",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "order-property",
+          "sourceName": "ORDER_PROP_{EMAIL}"
+        },
+        {
+          "name": "ORDER_PHONE",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "order-property",
+          "sourceName": "ORDER_PROP_{PHONE}"
+        },
+        {
+          "name": "ORDER_COMPANY",
+          "label": "Организация",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "order-property",
+          "audience": "business",
+          "readOnly": true,
+          "sourceName": "ORDER_PROP_{COMPANY}"
+        },
+        {
+          "name": "ORDER_INN",
+          "label": "ИНН",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "order-property",
+          "audience": "business",
+          "readOnly": true,
+          "sourceName": "ORDER_PROP_{INN}"
+        },
+        {
+          "name": "ORDER_KPP",
+          "label": "КПП",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "order-property",
+          "audience": "business",
+          "readOnly": true,
+          "sourceName": "ORDER_PROP_{KPP}"
+        },
+        {
+          "name": "ORDER_CONTACT_PERSON",
+          "label": "Контактное лицо",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "order-property",
+          "audience": "business",
+          "sourceName": "ORDER_PROP_{CONTACT_PERSON}"
+        },
+        {
+          "name": "DELIVERY_ID",
+          "label": "Способ получения",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Способы получения появятся после расчёта доставки."
+        },
+        {
+          "name": "ORDER_ADDRESS",
+          "label": "Адрес получения",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "order-property",
+          "sourceName": "ORDER_PROP_{ADDRESS}"
+        },
+        {
+          "name": "pod",
+          "label": "Подъезд",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "etag",
+          "label": "Этаж",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "office",
+          "label": "Квартира / офис",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "comment",
+          "label": "Комментарий к доставке",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "DELIVERY_PICKUP_ID",
+          "label": "Пункт самовывоза",
+          "type": "select",
+          "required": false,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Пункты самовывоза появятся после выбора города и способа получения."
+        },
+        {
+          "name": "delivery-date",
+          "label": "Дата доставки",
+          "type": "select",
+          "required": false,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Доступные даты появятся после расчёта доставки."
+        },
+        {
+          "name": "time",
+          "label": "Интервал доставки",
+          "type": "select",
+          "required": false,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Доступные интервалы появятся после выбора даты."
+        },
+        {
+          "name": "PAY_SYSTEM_ID",
+          "label": "Способ оплаты",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Доступные способы оплаты появятся после расчёта заказа."
+        },
+        {
+          "name": "promo_code",
+          "label": "Промокод",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact"
+        }
+      ],
+      "consents": [],
+      "sourceFiles": [
+        "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/template.php",
+        "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/script.js",
+        "site-source/local/ajax/order/popup-curier.php",
+        "site-source/order/index.php"
+      ],
+      "sourceAction": "/order/",
+      "sourceContext": [
+        "basket",
+        "region",
+        "person-type",
+        "organization-if-business",
+        "calculated-order-options"
+      ],
+      "sourceNotes": [
+        "Order property IDs, allowed delivery/payment methods and address requirements are server/context-dependent. Do not copy fallback test email, static demo times, or hardcoded recipient data. YaPay CARD/SPLIT belongs to an online physical-person payment session; invoice is conditional on organization/legal-price context.",
+        "The courier popup requires address; pod/etag/office/comment are optional text with these exact names. Preserve them separately in the DTO. The source script combines nonempty values into ORDER_PROP_{ADDRESS} but resolves location from the base address only. The adapter must compose the mapped order property and require the base address only for the relevant delivery mode; do not repurpose profile full_address or treat freeform address details as a location ID."
+      ]
+    },
+    {
+      "description": "Проверьте выбранный заказ перед отменой.",
+      "submitLabel": "Отменить заказ",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "order-cancel",
+      "group": "purchase",
+      "title": "Отменить заказ",
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_order_detail/templates/.default/template.php",
+        "site-source/local/components/prom.organization/organization_order_detail/templates/.default/template.php"
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "order-id",
+        "cancellable-order"
+      ],
+      "sourceNotes": [
+        "Source uses the current order page ?cancelOrder=y&sessid=…. No cancellation-reason enum is present."
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "Товары выбранного заказа заменят текущую корзину. Перед оформлением проверьте количество, наличие и цены.",
+      "submitLabel": "Повторить заказ",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "order-repeat",
+      "group": "purchase",
+      "title": "Повторить заказ",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/orders/order-repeat.php"
+      ],
+      "sourceAction": "/local/ajax/lk/orders/order-repeat.php",
+      "sourceContext": [
+        "authenticated-user",
+        "id"
+      ],
+      "sourceNotes": [
+        "Original action clears non-delayed basket entries before re-adding the order goods. Do not describe this as an additive operation."
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Перейти к оплате",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "order-pay",
+      "group": "purchase",
+      "title": "Оплатить заказ",
+      "externalCapture": "payment-provider",
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_order_detail/templates/.default/template.php",
+        "site-source/local/components/prom.organization/organization_order_detail/templates/.default/template.php"
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "order-id",
+        "payable-order",
+        "provider-payment-session"
+      ],
+      "sourceNotes": [
+        "Availability and the payment session must be returned for the selected owned order. Never collect PAN/CVV or invent a payment URL."
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "callback",
+      "group": "service",
+      "title": "Заказать звонок",
+      "fields": [
+        {
+          "name": "form_text_24",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_25",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent_call",
+          "label": "Я даю согласие на обработку персональных данных для обратного звонка по моей заявке на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/request-a-call.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-call/template.php",
+        "site-source/local/ajax/catalog/action-request-a-call.php"
+      ],
+      "sourceAction": "/local/ajax/catalog/action-request-a-call.php",
+      "sourceUrls": [
+        "https://prom.myfast.space/local/ajax/catalog/request-a-call.php"
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "buy-one-click",
+      "group": "purchase",
+      "title": "Купить в один клик",
+      "fields": [
+        {
+          "name": "form_text_12",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_13",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_14",
+          "label": "Email",
+          "type": "email",
+          "required": false,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_16",
+          "label": "Количество",
+          "type": "number",
+          "required": true,
+          "sourceMapping": "exact",
+          "requiredFrom": "html",
+          "minValue": 1,
+          "maxValue": 99
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent_one_click",
+          "label": "Я даю согласие на обработку персональных данных для подготовки предложения по выбранному товару на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/buy-one-click.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/buy-one-click/template.php",
+        "site-source/local/ajax/catalog/action-buy-one-click.php"
+      ],
+      "sourceAction": "/local/ajax/catalog/action-buy-one-click.php",
+      "sourceContext": [
+        "product-id"
+      ],
+      "sourceUrls": [
+        "https://prom.myfast.space/local/ajax/catalog/buy-one-click.php"
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "rent",
+      "group": "purchase",
+      "title": "Заявка на аренду",
+      "fields": [
+        {
+          "name": "form_text_20",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_21",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 3000
+        },
+        {
+          "name": "form_text_23",
+          "label": "Количество",
+          "type": "number",
+          "required": true,
+          "sourceMapping": "exact",
+          "requiredFrom": "html",
+          "minValue": 1,
+          "maxValue": 99
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent_rent",
+          "label": "Я даю согласие на обработку персональных данных для рассмотрения заявки на аренду оборудования на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/request-a-rent.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-rent/template.php",
+        "site-source/local/ajax/catalog/action-request-a-rent.php"
+      ],
+      "sourceAction": "/local/ajax/catalog/action-request-a-rent.php",
+      "sourceContext": [
+        "product-id"
+      ],
+      "sourceUrls": [
+        "https://prom.myfast.space/local/ajax/catalog/request-a-rent.php"
+      ],
+      "sourceNotes": [
+        "The retrieved public form has no phone field. Do not add one by analogy with callback."
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "leasing",
+      "group": "purchase",
+      "title": "Заявка на лизинг",
+      "fields": [
+        {
+          "name": "form_text_30",
+          "label": "ИНН",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 12
+        },
+        {
+          "name": "form_text_31",
+          "label": "Организация",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_32",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_email_33",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_34",
+          "label": "Стоимость предмета лизинга",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent_leasing",
+          "label": "Я даю согласие на обработку персональных данных для рассмотрения заявки на лизинг на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/request-a-leasing.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-leasing/template.php",
+        "site-source/local/ajax/catalog/action-request-a-call.php"
+      ],
+      "sourceAction": "/local/ajax/catalog/action-request-a-call.php",
+      "sourceContext": [
+        "product-id"
+      ],
+      "sourceUrls": [
+        "https://prom.myfast.space/local/ajax/catalog/request-a-leasing.php"
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "found-cheaper",
+      "group": "service",
+      "title": "Нашли дешевле?",
+      "fields": [
+        {
+          "name": "form_text_6",
+          "label": "Цена в другом магазине",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_7",
+          "label": "Ссылка на товар",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_8",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_9",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent_cheaper",
+          "label": "Я даю согласие на обработку персональных данных для рассмотрения запроса о цене на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/form-found-it-cheaper.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/found-it-cheaper/template.php",
+        "site-source/local/ajax/catalog/action-found-it-cheaper.php"
+      ],
+      "sourceAction": "/local/ajax/catalog/action-found-it-cheaper.php",
+      "sourceContext": [
+        "product-id"
+      ],
+      "sourceUrls": [
+        "https://prom.myfast.space/local/ajax/catalog/form-found-it-cheaper.php"
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "tour",
+      "group": "business",
+      "title": "Записаться на экскурсию",
+      "fields": [
+        {
+          "name": "form_text_17",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_18",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_19",
+          "label": "Выберите дату",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Доступные даты появятся после загрузки расписания."
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent_tour",
+          "label": "Я даю согласие на обработку персональных данных для организации посещения производства на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/form/book-a-tour.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/book-a-tour/template.php",
+        "site-source/local/ajax/form/book-a-tour-action.php"
+      ],
+      "sourceAction": "/local/ajax/form/book-a-tour-action.php",
+      "sourceUrls": [
+        "https://prom.myfast.space/local/ajax/form/book-a-tour.php"
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "business-advice",
+      "group": "business",
+      "title": "Консультация для бизнеса",
+      "fields": [
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "phone",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "email",
+          "label": "E-mail",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "comment-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 3000
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для подбора оборудования для бизнеса на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/form/get-business-advice-form-action.php",
+        "site-source/frontend/h/production.php"
+      ],
+      "sourceAction": "/local/ajax/form/get-business-advice-form-action.php",
+      "sourceUrls": [
+        "https://prom.myfast.space/vendor/"
+      ],
+      "sourceNotes": [
+        "Field names/required flags are confirmed in the current public /vendor/ form and the handler. frontend/h/production.php alone is a layout, not a running route."
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "supplier",
+      "group": "business",
+      "title": "Стать поставщиком",
+      "fields": [
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "product-category",
+          "label": "Категория продукции",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Категории продукции появятся после загрузки списка."
+        },
+        {
+          "name": "product-desc",
+          "label": "Описание продукции",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "comment",
+          "label": "Комментарий",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "attachment",
+          "label": "Прикрепить файл",
+          "type": "file",
+          "required": false,
+          "sourceMapping": "exact",
+          "acceptedExtensions": [
+            "txt",
+            "doc",
+            "docx",
+            "pdf"
+          ],
+          "maxBytes": 20971520,
+          "maxFiles": 1,
+          "hint": "TXT, DOC, DOCX или PDF, один файл до 20 МБ."
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для рассмотрения предложения поставщика на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/suppliers/index.php",
+        "site-source/local/ajax/form/suppliers-form-action.php"
+      ],
+      "sourceAction": "/local/ajax/form/suppliers-form-action.php"
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить заявку",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "partner",
+      "group": "business",
+      "title": "Заявка на франшизу",
+      "fields": [
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "maxLength": 300
+        },
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "maxLength": 300,
+          "placeholder": "+7 900 000-00-00",
+          "hint": "Укажите международный код: например, +7, +375, +995 или +374."
+        },
+        {
+          "name": "email",
+          "label": "E-mail",
+          "type": "email",
+          "required": true,
+          "maxLength": 300
+        },
+        {
+          "name": "country",
+          "label": "Страна",
+          "type": "text",
+          "required": true,
+          "maxLength": 300,
+          "placeholder": "Например, Россия или Беларусь"
+        },
+        {
+          "name": "region",
+          "label": "Город / регион",
+          "type": "text",
+          "required": true,
+          "maxLength": 300,
+          "placeholder": "Где вы планируете работать"
+        },
+        {
+          "name": "business-status",
+          "label": "Есть действующий бизнес?",
+          "type": "select",
+          "required": true,
+          "maxLength": 300,
+          "options": [
+            {
+              "value": "Да",
+              "label": "Да"
+            },
+            {
+              "value": "Нет",
+              "label": "Нет"
+            }
+          ],
+          "multiple": false
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": false,
+          "maxLength": 300
+        },
+        {
+          "name": "inn",
+          "label": "ИНН / регистрационный номер",
+          "type": "text",
+          "required": false,
+          "maxLength": 300
+        },
+        {
+          "name": "warehouse-status",
+          "label": "Есть склад или помещение?",
+          "type": "select",
+          "required": true,
+          "maxLength": 300,
+          "options": [
+            {
+              "value": "Да",
+              "label": "Да"
+            },
+            {
+              "value": "Нет",
+              "label": "Нет"
+            },
+            {
+              "value": "Планирую",
+              "label": "Планирую"
+            }
+          ],
+          "multiple": false
+        },
+        {
+          "name": "warehouse-address",
+          "label": "Адрес или город расположения",
+          "type": "text",
+          "required": false,
+          "maxLength": 300
+        },
+        {
+          "name": "warehouse-phone",
+          "label": "Телефон склада",
+          "type": "tel",
+          "required": false,
+          "maxLength": 300
+        },
+        {
+          "name": "warehouse-schedule",
+          "label": "График работы склада",
+          "type": "text",
+          "required": false,
+          "maxLength": 300
+        },
+        {
+          "name": "interests",
+          "label": "Какие направления вам интересны?",
+          "type": "select",
+          "required": true,
+          "maxLength": 300,
+          "options": [
+            {
+              "value": "Строительные леса",
+              "label": "Строительные леса"
+            },
+            {
+              "value": "Вышки-туры",
+              "label": "Вышки-туры"
+            },
+            {
+              "value": "Опалубка",
+              "label": "Опалубка"
+            },
+            {
+              "value": "Оборудование для бетонных работ",
+              "label": "Оборудование для бетонных работ"
+            },
+            {
+              "value": "Оборудование для арматуры",
+              "label": "Оборудование для арматуры"
+            },
+            {
+              "value": "Лестницы и стремянки",
+              "label": "Лестницы и стремянки"
+            },
+            {
+              "value": "Складская техника",
+              "label": "Складская техника"
+            },
+            {
+              "value": "Грузоподъёмное оборудование",
+              "label": "Грузоподъёмное оборудование"
+            },
+            {
+              "value": "Другое",
+              "label": "Другое"
+            }
+          ],
+          "multiple": true
+        },
+        {
+          "name": "about",
+          "label": "Расскажите о себе или вашем бизнесе",
+          "type": "textarea",
+          "required": false,
+          "maxLength": 3000
+        },
+        {
+          "name": "has-warehouse",
+          "label": "Есть склад",
+          "type": "checkbox",
+          "required": false,
+          "maxLength": 300
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для рассмотрения заявки на франшизу на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/franchise/index.php",
+        "site-source/local/ajax/form/partners-form-action.php"
+      ],
+      "sourceAction": "/local/ajax/form/partners-form-action.php",
+      "sourceNotes": [
+        "Franchise 36 owner brief extends location, business, warehouse state and interests. Legacy warehouse fields retained. Updated runtime mapping is a production publication gate; integration explicitly skipped."
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "advice",
+      "group": "service",
+      "title": "Задать вопрос специалисту",
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для ответа на вопрос специалисту на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "awaitingFields": "Поля формы появятся после соединения с сервисом.",
+      "sourceFiles": [
+        "site-source/local/templates/main/components/bitrix/form.result.new/orange-form-ask/template.php",
+        "site-source/local/ajax/form/orangeAsk-action.php"
+      ],
+      "sourceAction": "/local/ajax/form/orangeAsk-action.php",
+      "sourceNotes": [
+        "All question SIDs/types/REQUIRED flags are database-owned CForm fields. Do not invent an email/name/message schema from another form."
+      ],
+      "fields": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить отзыв",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "review",
+      "group": "service",
+      "title": "Написать отзыв",
+      "fields": [
+        {
+          "name": "rate",
+          "label": "Оценка",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "options": [
+            {
+              "value": "5",
+              "label": "5 из 5"
+            },
+            {
+              "value": "4",
+              "label": "4 из 5"
+            },
+            {
+              "value": "3",
+              "label": "3 из 5"
+            },
+            {
+              "value": "2",
+              "label": "2 из 5"
+            },
+            {
+              "value": "1",
+              "label": "1 из 5"
+            }
+          ]
+        },
+        {
+          "name": "vote-quality",
+          "label": "Хорошее качество товара",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceName": "votes[]",
+          "sourceValue": "quality"
+        },
+        {
+          "name": "vote-value",
+          "label": "Приятное соотношение цены и качества",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceName": "votes[]",
+          "sourceValue": "quality-value-balance"
+        },
+        {
+          "name": "vote-delivery",
+          "label": "Быстрая доставка",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceName": "votes[]",
+          "sourceValue": "fast-delivery"
+        },
+        {
+          "name": "review-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 300
+        },
+        {
+          "name": "media[]",
+          "label": "Фото или видео",
+          "type": "file",
+          "required": false,
+          "sourceMapping": "exact",
+          "multiple": true,
+          "acceptedExtensions": [
+            "jpg",
+            "jpeg",
+            "png",
+            "mp4",
+            "mov",
+            "webm"
+          ],
+          "maxFiles": 10,
+          "maxBytes": 20971520,
+          "serverFileValidation": {
+            "acceptedMimeTypes": [
+              "image/jpeg",
+              "image/png",
+              "video/mp4",
+              "video/quicktime",
+              "video/webm"
+            ],
+            "maxVideoDurationSeconds": 60,
+            "rejectUnreadableVideo": true
+          },
+          "hint": "До 10 файлов, каждый до 20 МБ. Фото: JPG, PNG. Видео: MP4, MOV, WebM — до 1 минуты; содержимое и длительность проверяются сервером."
+        },
+        {
+          "name": "public-author",
+          "label": "Имя или псевдоним для публикации",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 100,
+          "hint": "Оставьте пустым, чтобы опубликовать материал без имени."
+        },
+        {
+          "name": "publication-conditions",
+          "label": "Условия и ограничения распространения данных",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 1500
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/reviews/form-review-add.php",
+        "site-source/local/ajax/reviews/form-review-add-action.php"
+      ],
+      "sourceAction": "/local/ajax/reviews/form-review-add-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "product-id"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для обработки и проверки отзыва о товаре на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        },
+        {
+          "name": "publish_author",
+          "label": "Разрешаю опубликовать выбранные мной данные автора вместе с отзывом/вопросом.",
+          "required": false,
+          "initial": false,
+          "documents": [
+            "distribution"
+          ]
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить отзыв",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "order-review",
+      "group": "service",
+      "title": "Оценить товар из заказа",
+      "fields": [
+        {
+          "name": "rate",
+          "label": "Оценка",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "options": [
+            {
+              "value": "5",
+              "label": "5 из 5"
+            },
+            {
+              "value": "4",
+              "label": "4 из 5"
+            },
+            {
+              "value": "3",
+              "label": "3 из 5"
+            },
+            {
+              "value": "2",
+              "label": "2 из 5"
+            },
+            {
+              "value": "1",
+              "label": "1 из 5"
+            }
+          ]
+        },
+        {
+          "name": "vote-quality",
+          "label": "Хорошее качество товара",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceName": "votes[]",
+          "sourceValue": "quality"
+        },
+        {
+          "name": "vote-value",
+          "label": "Приятное соотношение цены и качества",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceName": "votes[]",
+          "sourceValue": "quality-value-balance"
+        },
+        {
+          "name": "vote-delivery",
+          "label": "Быстрая доставка",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceName": "votes[]",
+          "sourceValue": "fast-delivery"
+        },
+        {
+          "name": "review-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 300
+        },
+        {
+          "name": "media[]",
+          "label": "Фотографии",
+          "type": "file",
+          "required": false,
+          "sourceMapping": "exact",
+          "multiple": true,
+          "acceptedExtensions": [
+            "jpg",
+            "jpeg",
+            "png"
+          ],
+          "maxFiles": 10,
+          "hint": "До 10 фотографий в формате JPG или PNG."
+        },
+        {
+          "name": "public-author",
+          "label": "Имя или псевдоним для публикации",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 100,
+          "hint": "Оставьте пустым, чтобы опубликовать материал без имени."
+        },
+        {
+          "name": "publication-conditions",
+          "label": "Условия и ограничения распространения данных",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 1500
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/orders/form-review-add.php",
+        "site-source/local/ajax/lk/orders/action-review-add.php"
+      ],
+      "sourceAction": "/local/ajax/lk/orders/action-review-add.php",
+      "sourceContext": [
+        "authenticated-user",
+        "order-id",
+        "product-id"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для обработки отзыва о товаре из заказа на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        },
+        {
+          "name": "publish_author",
+          "label": "Разрешаю опубликовать выбранные мной данные автора вместе с отзывом/вопросом.",
+          "required": false,
+          "initial": false,
+          "documents": [
+            "distribution"
+          ]
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить вопрос",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "question",
+      "group": "service",
+      "title": "Задать вопрос о товаре",
+      "fields": [
+        {
+          "name": "question-text",
+          "label": "Ваш вопрос",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact",
+          "minLength": 5,
+          "maxLength": 3000
+        },
+        {
+          "name": "public-author",
+          "label": "Имя или псевдоним для публикации",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 100,
+          "hint": "Оставьте пустым, чтобы опубликовать материал без имени."
+        },
+        {
+          "name": "publication-conditions",
+          "label": "Условия и ограничения распространения данных",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 1500
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent_question",
+          "label": "Я даю согласие на обработку персональных данных для подготовки ответа на вопрос о товаре на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        },
+        {
+          "name": "publish_author",
+          "label": "Разрешаю опубликовать выбранные мной данные автора вместе с отзывом/вопросом.",
+          "required": false,
+          "initial": false,
+          "documents": [
+            "distribution"
+          ]
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/reviews/form-question-add.php",
+        "site-source/local/ajax/reviews/form-question-add-action.php"
+      ],
+      "sourceAction": "/local/ajax/reviews/form-question-add-action.php",
+      "sourceContext": [
+        "product-id"
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "review-reply",
+      "group": "service",
+      "title": "Ответить на отзыв",
+      "fields": [
+        {
+          "name": "review-text",
+          "label": "Ваш ответ",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "public-author",
+          "label": "Имя или псевдоним для публикации",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 100,
+          "hint": "Оставьте пустым, чтобы опубликовать материал без имени."
+        },
+        {
+          "name": "publication-conditions",
+          "label": "Условия и ограничения распространения данных",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 1500
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/reviews/form-review-reply-action.php"
+      ],
+      "sourceAction": "/local/ajax/reviews/form-review-reply-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "product-id",
+        "parent-id"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для обработки ответа на отзыв на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        },
+        {
+          "name": "publish_author",
+          "label": "Разрешаю опубликовать выбранные мной данные автора вместе с отзывом/вопросом.",
+          "required": false,
+          "initial": false,
+          "documents": [
+            "distribution"
+          ]
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "question-reply",
+      "group": "service",
+      "title": "Ответить на вопрос",
+      "fields": [
+        {
+          "name": "question-text",
+          "label": "Ваш ответ",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "public-author",
+          "label": "Имя или псевдоним для публикации",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 100,
+          "hint": "Оставьте пустым, чтобы опубликовать материал без имени."
+        },
+        {
+          "name": "publication-conditions",
+          "label": "Условия и ограничения распространения данных",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 1500
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/reviews/form-question-reply-action.php"
+      ],
+      "sourceAction": "/local/ajax/reviews/form-question-reply-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "product-id",
+        "parent-id"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для обработки ответа на вопрос на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        },
+        {
+          "name": "publish_author",
+          "label": "Разрешаю опубликовать выбранные мной данные автора вместе с отзывом/вопросом.",
+          "required": false,
+          "initial": false,
+          "documents": [
+            "distribution"
+          ]
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Сохранить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "review-edit",
+      "group": "service",
+      "title": "Изменить отзыв",
+      "fields": [
+        {
+          "name": "rate",
+          "label": "Оценка",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "options": [
+            {
+              "value": "5",
+              "label": "5 из 5"
+            },
+            {
+              "value": "4",
+              "label": "4 из 5"
+            },
+            {
+              "value": "3",
+              "label": "3 из 5"
+            },
+            {
+              "value": "2",
+              "label": "2 из 5"
+            },
+            {
+              "value": "1",
+              "label": "1 из 5"
+            }
+          ]
+        },
+        {
+          "name": "vote-quality",
+          "label": "Хорошее качество товара",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceName": "votes[]",
+          "sourceValue": "quality"
+        },
+        {
+          "name": "vote-value",
+          "label": "Приятное соотношение цены и качества",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceName": "votes[]",
+          "sourceValue": "quality-value-balance"
+        },
+        {
+          "name": "vote-delivery",
+          "label": "Быстрая доставка",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceName": "votes[]",
+          "sourceValue": "fast-delivery"
+        },
+        {
+          "name": "review-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 300
+        },
+        {
+          "name": "media[]",
+          "label": "Фотографии",
+          "type": "file",
+          "required": false,
+          "sourceMapping": "exact",
+          "multiple": true,
+          "acceptedExtensions": [
+            "jpg",
+            "jpeg",
+            "png"
+          ],
+          "maxFiles": 10,
+          "hint": "До 10 фотографий в формате JPG или PNG."
+        },
+        {
+          "name": "public-author",
+          "label": "Имя или псевдоним для публикации",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 100,
+          "hint": "Оставьте пустым, чтобы опубликовать материал без имени."
+        },
+        {
+          "name": "publication-conditions",
+          "label": "Условия и ограничения распространения данных",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 1500
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/questions-and-reviews/form-edit-review.php",
+        "site-source/local/ajax/lk/questions-and-reviews/action-edit-review.php"
+      ],
+      "sourceAction": "/local/ajax/lk/questions-and-reviews/action-edit-review.php",
+      "sourceContext": [
+        "authenticated-user",
+        "product-id",
+        "review-id"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для изменения ранее направленного отзыва на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        },
+        {
+          "name": "publish_author",
+          "label": "Разрешаю опубликовать выбранные мной данные автора вместе с отзывом/вопросом.",
+          "required": false,
+          "initial": false,
+          "documents": [
+            "distribution"
+          ]
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Сохранить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "question-edit",
+      "group": "service",
+      "title": "Изменить вопрос",
+      "fields": [
+        {
+          "name": "question-text",
+          "label": "Ваш вопрос",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact",
+          "minLength": 5,
+          "maxLength": 3000
+        },
+        {
+          "name": "public-author",
+          "label": "Имя или псевдоним для публикации",
+          "type": "text",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 100,
+          "hint": "Оставьте пустым, чтобы опубликовать материал без имени."
+        },
+        {
+          "name": "publication-conditions",
+          "label": "Условия и ограничения распространения данных",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 1500
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/questions-and-reviews/form-edit-question.php",
+        "site-source/local/ajax/lk/questions-and-reviews/action-edit-question.php"
+      ],
+      "sourceAction": "/local/ajax/lk/questions-and-reviews/action-edit-question.php",
+      "sourceContext": [
+        "authenticated-user",
+        "product-id",
+        "question-id"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для изменения ранее направленного вопроса на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        },
+        {
+          "name": "publish_author",
+          "label": "Разрешаю опубликовать выбранные мной данные автора вместе с отзывом/вопросом.",
+          "required": false,
+          "initial": false,
+          "documents": [
+            "distribution"
+          ]
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Удалить отзыв",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "review-delete",
+      "group": "service",
+      "title": "Удалить отзыв",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/questions-and-reviews/action-delete.php"
+      ],
+      "sourceAction": "/local/ajax/lk/questions-and-reviews/action-delete.php",
+      "sourceContext": [
+        "authenticated-user",
+        "id",
+        "action_name=review"
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Удалить вопрос",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "question-delete",
+      "group": "service",
+      "title": "Удалить вопрос",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/questions-and-reviews/action-delete.php"
+      ],
+      "sourceAction": "/local/ajax/lk/questions-and-reviews/action-delete.php",
+      "sourceContext": [
+        "authenticated-user",
+        "id",
+        "action_name=question"
+      ],
+      "fields": [],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "appeal",
+      "group": "service",
+      "title": "Задать вопрос",
+      "fields": [
+        {
+          "name": "theme",
+          "label": "Тема обращения",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Темы обращений появятся после загрузки списка."
+        },
+        {
+          "name": "comment",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 1500,
+          "maxUtf8Bytes": 2000
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/appeals/appeals-questions.php",
+        "site-source/local/ajax/lk/appeals/appeals-text-action.php"
+      ],
+      "sourceAction": "/local/ajax/lk/appeals/appeals-text-action.php",
+      "sourceContext": [
+        "authenticated-user"
+      ],
+      "sourceNotes": [
+        "THEME is an iblock enumeration absent from the archive. HTML allows 1500 characters; handler limits strlen(comment) to 2000 bytes. Must reconcile in the integration."
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для рассмотрения моего обращения на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "appeal-order",
+      "group": "service",
+      "title": "Проблема с заказом",
+      "fields": [
+        {
+          "name": "theme",
+          "label": "Тема обращения",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Темы обращений появятся после выбора заказа.",
+          "sourceName": "theme_id"
+        },
+        {
+          "name": "tags[]",
+          "label": "С чем нужна помощь",
+          "type": "select",
+          "required": false,
+          "sourceMapping": "exact",
+          "awaitingOptions": "Варианты появятся после выбора темы.",
+          "multiple": true
+        },
+        {
+          "name": "comment",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 300,
+          "maxUtf8Bytes": 500
+        },
+        {
+          "name": "photos[]",
+          "label": "Фото или видео",
+          "type": "file",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceName": "photos[]",
+          "multiple": true,
+          "acceptedExtensions": [
+            "jpg",
+            "jpeg",
+            "png",
+            "gif",
+            "webp",
+            "mp4",
+            "avi",
+            "mov",
+            "wmv",
+            "flv",
+            "webm"
+          ],
+          "maxFiles": 10,
+          "maxBytes": 20971520,
+          "serverFileValidation": {
+            "acceptedMimeTypes": [
+              "image/jpeg",
+              "image/jpg",
+              "image/png",
+              "image/gif",
+              "image/webp",
+              "video/mp4",
+              "video/avi",
+              "video/mov",
+              "video/wmv",
+              "video/flv",
+              "video/webm"
+            ],
+            "maxVideoDurationSeconds": 60,
+            "rejectUnreadableVideo": true
+          },
+          "hint": "До 10 файлов, каждый до 20 МБ. Фото: JPG, PNG, GIF, WebP. Видео: MP4, AVI, MOV, WMV, FLV, WebM — до 1 минуты. Содержимое и длительность видео должны пройти проверку на сервере при отправке."
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/appeals/appeals-order-form.php",
+        "site-source/local/ajax/lk/appeals/appeals-order-form-action.php",
+        "site-source/local/php_interface/functions.php"
+      ],
+      "sourceAction": "/local/ajax/lk/appeals/appeals-order-form-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "order-help"
+      ],
+      "sourceNotes": [
+        "TAGS_HELP and theme identifiers must come from the source dictionaries. Source counter says 300, handler strlen maximum is 500; no invented theme or tags.",
+        "Source handlers allow up to 10 optional files per appeal / per returned item, each <=20 MiB; functions.php allows images and video <=60 seconds despite photo-only HTML accept. Mobile checks filename/count/reported size only. The upload service must verify actual bytes, normalize recognized MIME aliases, and reject unreadable, nonfinite, nonpositive or >60-second video before accepting; source multipart MIME and ffprobe float conversion are not sufficient validation."
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для рассмотрения обращения по выбранному заказу на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить оценку",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "appeal-rating",
+      "group": "service",
+      "title": "Оценить качество обслуживания",
+      "fields": [
+        {
+          "name": "rate",
+          "label": "Оценка",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "options": [
+            {
+              "value": "5",
+              "label": "5 из 5"
+            },
+            {
+              "value": "4",
+              "label": "4 из 5"
+            },
+            {
+              "value": "3",
+              "label": "3 из 5"
+            },
+            {
+              "value": "2",
+              "label": "2 из 5"
+            },
+            {
+              "value": "1",
+              "label": "1 из 5"
+            }
+          ]
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/appeals/appeals-rate-add.php",
+        "site-source/local/ajax/lk/appeals/appeals-rate-action.php"
+      ],
+      "sourceAction": "/local/ajax/lk/appeals/appeals-rate-action.php",
+      "sourceContext": [
+        "authenticated-user",
+        "appealID"
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для обработки оценки качества обслуживания на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "Выберите товары из завершённого заказа и заполните информацию по каждому товару.",
+      "submitLabel": "Отправить заявку",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "return",
+      "group": "service",
+      "title": "Возврат товаров",
+      "fields": [
+        {
+          "name": "selected-products",
+          "label": "Товары для возврата",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "database",
+          "awaitingOptions": "Товары появятся после выбора завершённого заказа.",
+          "multiple": true
+        }
+      ],
+      "repeatedFields": [
+        {
+          "name": "items",
+          "label": "Информация о товаре",
+          "sourcePattern": "item-{index}-id / item-{index}-reason-{enumIndex} / item-{index}-comment / item-{index}-photos[]",
+          "fields": [
+            {
+              "name": "quantity",
+              "label": "Количество",
+              "type": "number",
+              "required": true,
+              "sourceMapping": "exact",
+              "minValue": 0.001,
+              "hint": "Укажите количество по этой заявке, не больше количества в заказе."
+            },
+            {
+              "name": "reason",
+              "label": "Причина возврата",
+              "type": "select",
+              "required": false,
+              "sourceMapping": "database",
+              "awaitingOptions": "Причины возврата появятся после загрузки списка.",
+              "multiple": true
+            },
+            {
+              "name": "comment",
+              "label": "Комментарий",
+              "type": "textarea",
+              "required": true,
+              "sourceMapping": "exact"
+            },
+            {
+              "name": "photos[]",
+              "label": "Фото или видео",
+              "type": "file",
+              "required": false,
+              "sourceMapping": "exact",
+              "sourceName": "item-{index}-photos[]",
+              "multiple": true,
+              "acceptedExtensions": [
+                "jpg",
+                "jpeg",
+                "png",
+                "gif",
+                "webp",
+                "mp4",
+                "avi",
+                "mov",
+                "wmv",
+                "flv",
+                "webm"
+              ],
+              "maxFiles": 10,
+              "maxBytes": 20971520,
+              "serverFileValidation": {
+                "acceptedMimeTypes": [
+                  "image/jpeg",
+                  "image/jpg",
+                  "image/png",
+                  "image/gif",
+                  "image/webp",
+                  "video/mp4",
+                  "video/avi",
+                  "video/mov",
+                  "video/wmv",
+                  "video/flv",
+                  "video/webm"
+                ],
+                "maxVideoDurationSeconds": 60,
+                "rejectUnreadableVideo": true
+              },
+              "hint": "До 10 файлов, каждый до 20 МБ. Фото: JPG, PNG, GIF, WebP. Видео: MP4, AVI, MOV, WMV, FLV, WebM — до 1 минуты. Содержимое и длительность видео должны пройти проверку на сервере при отправке."
+            }
+          ]
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/lk/returns-products/returns-product.php",
+        "site-source/local/ajax/lk/returns-products/action-returns-product.php",
+        "site-source/local/php_interface/functions.php"
+      ],
+      "sourceAction": "/local/ajax/lk/returns-products/action-returns-product.php",
+      "sourceContext": [
+        "authenticated-user",
+        "orderID",
+        "completed-order"
+      ],
+      "sourceNotes": [
+        "The source checks STATUS_ORDER_FINISH and ownership. REASONS enum and allowed order items are server-owned. The source repeats comment/reasons/photos per item; never return an unfinished order or accept arbitrary item IDs.",
+        "Source handlers allow up to 10 optional files per appeal / per returned item, each <=20 MiB; functions.php allows images and video <=60 seconds despite photo-only HTML accept. Mobile checks filename/count/reported size only. The upload service must verify actual bytes, normalize recognized MIME aliases, and reject unreadable, nonfinite, nonpositive or >60-second video before accepting; source multipart MIME and ffprobe float conversion are not sufficient validation."
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для рассмотрения заявления на возврат и приложенных материалов на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Подписаться",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "subscription",
+      "group": "marketing",
+      "title": "Подписка на рассылку",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Электронная почта",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для оформления выбранной подписки на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        },
+        {
+          "name": "marketing",
+          "label": "Хочу получать от ГК «Промышленник» новости, акции и специальные предложения по указанным контактам.",
+          "required": false,
+          "documents": [
+            "advertising"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/templates/main/footer.php",
+        "site-source/local/ajax/subscription/subscription.php"
+      ],
+      "sourceAction": "/local/ajax/subscription/subscription.php",
+      "sourceUrls": [
+        "https://prom.myfast.space/"
+      ],
+      "sourceNotes": [
+        "Voluntary standalone subscription. Public rendered footer includes mailing consent; archived footer label mentions policy only. Never require this consent to buy or register."
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Сообщить о поступлении",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "product-notify",
+      "group": "purchase",
+      "title": "Сообщить о поступлении",
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/action-add-to-waitlist.php"
+      ],
+      "sourceAction": "/local/ajax/catalog/action-add-to-waitlist.php",
+      "sourceContext": [
+        "authenticated-user",
+        "id"
+      ],
+      "sourceNotes": [
+        "Owned waiting-list toggle, not newsletter subscription. Do not port the public upload/waiting_list_errors.log logging from the source."
+      ],
+      "fields": [],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для уведомления о поступлении выбранного товара на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ]
+    },
+    {
+      "description": "",
+      "submitLabel": "Сохранить",
+      "legalDocuments": [
+        "privacy",
+        "advertising"
+      ],
+      "id": "notification-preferences",
+      "group": "profile",
+      "title": "Настройки уведомлений",
+      "fields": [
+        {
+          "name": "email_order_info",
+          "label": "Email: информация о заказе и товарах",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "email_promotions",
+          "label": "Email: акции, распродажи и специальные предложения",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "sms_order_info",
+          "label": "СМС: информация о заказе и товарах",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "sms_promotions",
+          "label": "СМС: акции, распродажи и специальные предложения",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact"
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_notifications/templates/.default/template.php",
+        "site-source/local/components/prom.organization/organization_notifications/templates/.default/template.php",
+        "site-source/local/ajax/lk/notifications/notifications.php"
+      ],
+      "sourceAction": "/local/ajax/lk/notifications/notifications.php",
+      "sourceContext": [
+        "authenticated-user"
+      ],
+      "notice": "Сервисные уведомления необходимы для работы с вашим заказом или учётной записью и не являются подпиской на рекламу.",
+      "sourceNotes": [
+        "All four switches are independent and optional. Actual saved values must be loaded; never convert missing preferences to consent."
+      ],
+      "consents": []
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "quote",
+      "group": "business",
+      "title": "Запросить предложение",
+      "fields": [
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "phone",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "email",
+          "label": "E-mail",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "comment-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 3000
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для подготовки коммерческого предложения по моей спецификации на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/form/get-business-advice-form-action.php",
+        "site-source/frontend/h/production.php"
+      ],
+      "sourceAction": "/local/ajax/form/get-business-advice-form-action.php",
+      "sourceUrls": [
+        "https://prom.myfast.space/vendor/"
+      ],
+      "sourceNotes": [
+        "Field names/required flags are confirmed in the current public /vendor/ form and the handler. frontend/h/production.php alone is a layout, not a running route."
+      ],
+      "aliasOf": "business-advice"
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "production-request",
+      "group": "business",
+      "title": "Заказать продукцию собственного производства",
+      "fields": [
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "phone",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "email",
+          "label": "E-mail",
+          "type": "email",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "comment-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 3000
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для расчёта изготовления продукции по моему техническому заданию на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/form/get-business-advice-form-action.php",
+        "site-source/frontend/h/production.php"
+      ],
+      "sourceAction": "/local/ajax/form/get-business-advice-form-action.php",
+      "sourceUrls": [
+        "https://prom.myfast.space/vendor/"
+      ],
+      "sourceNotes": [
+        "Field names/required flags are confirmed in the current public /vendor/ form and the handler. frontend/h/production.php alone is a layout, not a running route."
+      ],
+      "aliasOf": "business-advice"
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "contact",
+      "group": "service",
+      "title": "Связаться с нами",
+      "fields": [
+        {
+          "name": "form_text_24",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact"
+        },
+        {
+          "name": "form_text_25",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "sourceMapping": "exact"
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent_call",
+          "label": "Я даю согласие на обработку персональных данных для ответа на моё обращение на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/request-a-call.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-call/template.php",
+        "site-source/local/ajax/catalog/action-request-a-call.php"
+      ],
+      "sourceAction": "/local/ajax/catalog/action-request-a-call.php",
+      "sourceUrls": [
+        "https://prom.myfast.space/local/ajax/catalog/request-a-call.php"
+      ],
+      "aliasOf": "callback"
+    },
+    {
+      "description": "",
+      "submitLabel": "Отправить заявку",
+      "legalDocuments": [
+        "privacy"
+      ],
+      "id": "franchise",
+      "group": "business",
+      "title": "Стать партнёром",
+      "fields": [
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "maxLength": 300
+        },
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "maxLength": 300,
+          "placeholder": "+7 900 000-00-00",
+          "hint": "Укажите международный код: например, +7, +375, +995 или +374."
+        },
+        {
+          "name": "email",
+          "label": "E-mail",
+          "type": "email",
+          "required": true,
+          "maxLength": 300
+        },
+        {
+          "name": "country",
+          "label": "Страна",
+          "type": "text",
+          "required": true,
+          "maxLength": 300,
+          "placeholder": "Например, Россия или Беларусь"
+        },
+        {
+          "name": "region",
+          "label": "Город / регион",
+          "type": "text",
+          "required": true,
+          "maxLength": 300,
+          "placeholder": "Где вы планируете работать"
+        },
+        {
+          "name": "business-status",
+          "label": "Есть действующий бизнес?",
+          "type": "select",
+          "required": true,
+          "maxLength": 300,
+          "options": [
+            {
+              "value": "Да",
+              "label": "Да"
+            },
+            {
+              "value": "Нет",
+              "label": "Нет"
+            }
+          ],
+          "multiple": false
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": false,
+          "maxLength": 300
+        },
+        {
+          "name": "inn",
+          "label": "ИНН / регистрационный номер",
+          "type": "text",
+          "required": false,
+          "maxLength": 300
+        },
+        {
+          "name": "warehouse-status",
+          "label": "Есть склад или помещение?",
+          "type": "select",
+          "required": true,
+          "maxLength": 300,
+          "options": [
+            {
+              "value": "Да",
+              "label": "Да"
+            },
+            {
+              "value": "Нет",
+              "label": "Нет"
+            },
+            {
+              "value": "Планирую",
+              "label": "Планирую"
+            }
+          ],
+          "multiple": false
+        },
+        {
+          "name": "warehouse-address",
+          "label": "Адрес или город расположения",
+          "type": "text",
+          "required": false,
+          "maxLength": 300
+        },
+        {
+          "name": "warehouse-phone",
+          "label": "Телефон склада",
+          "type": "tel",
+          "required": false,
+          "maxLength": 300
+        },
+        {
+          "name": "warehouse-schedule",
+          "label": "График работы склада",
+          "type": "text",
+          "required": false,
+          "maxLength": 300
+        },
+        {
+          "name": "interests",
+          "label": "Какие направления вам интересны?",
+          "type": "select",
+          "required": true,
+          "maxLength": 300,
+          "options": [
+            {
+              "value": "Строительные леса",
+              "label": "Строительные леса"
+            },
+            {
+              "value": "Вышки-туры",
+              "label": "Вышки-туры"
+            },
+            {
+              "value": "Опалубка",
+              "label": "Опалубка"
+            },
+            {
+              "value": "Оборудование для бетонных работ",
+              "label": "Оборудование для бетонных работ"
+            },
+            {
+              "value": "Оборудование для арматуры",
+              "label": "Оборудование для арматуры"
+            },
+            {
+              "value": "Лестницы и стремянки",
+              "label": "Лестницы и стремянки"
+            },
+            {
+              "value": "Складская техника",
+              "label": "Складская техника"
+            },
+            {
+              "value": "Грузоподъёмное оборудование",
+              "label": "Грузоподъёмное оборудование"
+            },
+            {
+              "value": "Другое",
+              "label": "Другое"
+            }
+          ],
+          "multiple": true
+        },
+        {
+          "name": "about",
+          "label": "Расскажите о себе или вашем бизнесе",
+          "type": "textarea",
+          "required": false,
+          "maxLength": 3000
+        },
+        {
+          "name": "has-warehouse",
+          "label": "Есть склад",
+          "type": "checkbox",
+          "required": false,
+          "maxLength": 300
+        }
+      ],
+      "consents": [
+        {
+          "name": "agree_consent",
+          "label": "Я даю согласие на обработку персональных данных для рассмотрения заявки на франшизу на условиях Согласия на обработку персональных данных.",
+          "required": true,
+          "documents": [
+            "consent"
+          ],
+          "initial": false
+        }
+      ],
+      "sourceFiles": [
+        "site-source/franchise/index.php",
+        "site-source/local/ajax/form/partners-form-action.php"
+      ],
+      "sourceAction": "/local/ajax/form/partners-form-action.php",
+      "sourceNotes": [
+        "Franchise 36 owner brief extends location, business, warehouse state and interests. Legacy warehouse fields retained. Updated runtime mapping is a production publication gate; integration explicitly skipped."
+      ],
+      "aliasOf": "partner"
+    }
+  ],
+  "pages": [
+    {
+      "slug": "about",
+      "title": "О компании"
+    },
+    {
+      "slug": "brands",
+      "title": "Бренды"
+    },
+    {
+      "slug": "suppliers",
+      "title": "Поставщикам"
+    },
+    {
+      "slug": "franchise",
+      "title": "Франшиза"
+    },
+    {
+      "slug": "awards",
+      "title": "Награды и сертификаты"
+    },
+    {
+      "slug": "returns",
+      "title": "Правила возврата"
+    },
+    {
+      "slug": "details",
+      "title": "Реквизиты"
+    },
+    {
+      "slug": "offer",
+      "title": "Публичная оферта для физических лиц"
+    },
+    {
+      "slug": "privacy",
+      "title": "Политика в отношении обработки персональных данных"
+    },
+    {
+      "slug": "personal-data",
+      "title": "Согласие на обработку персональных данных"
+    },
+    {
+      "slug": "cookies",
+      "title": "Политика использования cookie и аналогичных технологий"
+    },
+    {
+      "slug": "checkout",
+      "title": "Оформление заказа"
+    },
+    {
+      "slug": "recommendations",
+      "title": "Правила применения рекомендательных технологий"
+    },
+    {
+      "slug": "faq",
+      "title": "Вопросы и ответы"
+    },
+    {
+      "slug": "warranty",
+      "title": "Гарантии"
+    },
+    {
+      "slug": "promotions",
+      "title": "Акции и предложения"
+    },
+    {
+      "slug": "cooperation",
+      "title": "Сотрудничество"
+    }
+  ],
+  "articles": [
+    {
+      "id": "articles-khomutovye-stroitelnye-lesa-promyshlennik-poshagovaya-sborka-vidy-khomutov-i-sovety-po-montazhu",
+      "title": "Хомутовые строительные леса Промышленник: пошаговая сборка, виды хомутов и советы по монтажу"
+    },
+    {
+      "id": "articles-setka-zatenyayushchaya-promyshlennik-kak-vybrat-dlya-stroyki-dachi-maskirovki-i-dekora",
+      "title": "Сетка затеняющая «Промышленник»: как выбрать для стройки, дачи, маскировки и декора"
+    },
+    {
+      "id": "articles-vyshka-tura-ili-stroitelnye-lesa-5-shagov-k-pravilnomu-vyboru-dlya-fasada-i-remonta",
+      "title": "Вышка-тура или строительные леса: 5 шагов к правильному выбору для фасада и ремонта"
+    },
+    {
+      "id": "articles-konus-abramsa-dlya-betona-kak-proverit-kachestvo-i-podvizhnost-betonnoy-smesi-na-stroyploshchadke",
+      "title": "Конус Абрамса для бетона: как проверить качество и подвижность бетонной смеси на стройплощадке"
+    },
+    {
+      "id": "articles-kak-sobrat-stroitelnye-ramnye-lesa-lrsp-svoimi-rukami-poshagovaya-instruktsiya-dlya-novichkov",
+      "title": "Как собрать строительные рамные леса ЛРСП своими руками: пошаговая инструкция для новичков"
+    },
+    {
+      "id": "articles-kak-sobrat-vyshku-turu-svoimi-rukami-poshagovaya-instruktsiya-dlya-nachinayushchikh",
+      "title": "Как собрать вышку-туру своими руками: пошаговая инструкция для начинающих"
+    },
+    {
+      "id": "projects-moscow-city",
+      "title": "Строительство в деловом центре «Москва-Сити»"
+    },
+    {
+      "id": "projects-krc-oktyabr-astrakhan",
+      "title": "Реконструкция КРК «Октябрь» в Астрахани"
+    },
+    {
+      "id": "projects-development-plaza-krasnodar",
+      "title": "Development Plaza, Краснодар"
+    },
+    {
+      "id": "projects-serdtse-krasnodara",
+      "title": "ЖК «Сердце Краснодара»"
+    },
+    {
+      "id": "projects-zhk-obraztsovo-insiti",
+      "title": "ЖК «Образцово» от ИНСИТИ, Краснодар"
+    },
+    {
+      "id": "projects-zhk-fontany-krasnodar",
+      "title": "ЖК «Фонтаны», Краснодар"
+    },
+    {
+      "id": "projects-zhk-pervoe-mesto",
+      "title": "ЖК «Первое место»"
+    },
+    {
+      "id": "projects-residential-complex-derbent",
+      "title": "Жилой комплекс в Дербенте"
+    },
+    {
+      "id": "projects-botanika-hills",
+      "title": "ЖК Botanika Hills"
+    },
+    {
+      "id": "projects-nova-vita",
+      "title": "ЖК Nova Vita"
+    },
+    {
+      "id": "projects-zhk-ritm",
+      "title": "ЖК «Ритм»"
+    },
+    {
+      "id": "projects-zhk-slavyanka",
+      "title": "ЖК «Славянка»"
+    },
+    {
+      "id": "projects-zhk-zvezdy",
+      "title": "ЖК «Звёзды»"
+    },
+    {
+      "id": "projects-zhk-tsentralnyy",
+      "title": "ЖК «Центральный»"
+    },
+    {
+      "id": "video-inforce-7",
+      "title": "Inforce"
+    },
+    {
+      "id": "video-fubag-6",
+      "title": "Fubag"
+    },
+    {
+      "id": "video-inforce-5",
+      "title": "Inforce"
+    },
+    {
+      "id": "video-fubag-4",
+      "title": "Fubag"
+    },
+    {
+      "id": "video-fubag-3",
+      "title": "Fubag"
+    },
+    {
+      "id": "video-inforce-2",
+      "title": "Inforce"
+    },
+    {
+      "id": "video-fubag-1",
+      "title": "Fubag"
+    },
+    {
+      "id": "video-inforce-0",
+      "title": "Inforce"
+    }
+  ],
+  "scope": "All actual preview entities and shared route templates; authenticated records require external runtime, never fabricated."
+}

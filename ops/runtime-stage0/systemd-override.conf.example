@@ -1,0 +1,62 @@
+# Stage 0 deliverable: example systemd override adding the three runtime
+# BFF env vars to prom23-preview.service on the integration host.
+#
+# THIS IS A TEMPLATE. Do not install as-is — the placeholder values below
+# will fail configFor()'s validation on purpose (see notes), so you'll know
+# immediately if it was installed unedited.
+#
+# Install as a drop-in (does NOT require editing the tracked unit file in
+# deploy/prom23-preview.service):
+#
+#   sudo systemctl --user -M fastuser@ edit prom23-preview.service
+#     (or, run as root: sudo -u fastuser XDG_RUNTIME_DIR=/run/user/1000 \
+#      systemctl --user edit prom23-preview.service)
+#
+# That opens/creates:
+#   ~fastuser/.config/systemd/user/prom23-preview.service.d/override.conf
+#
+# Paste the [Service] block below (edited with real values), save, then:
+#
+#   sudo -u fastuser XDG_RUNTIME_DIR=/run/user/1000 systemctl --user daemon-reload
+#   sudo -u fastuser XDG_RUNTIME_DIR=/run/user/1000 systemctl --user restart prom23-preview
+#
+# ---------------------------------------------------------------------------
+[Service]
+# Must be exact HTTPS URL, no userinfo/query/fragment (configFor() rejects
+# url.username/password/search/hash). Path here must match config.php's
+# 'endpointPath'.
+Environment=PROM23_RUNTIME_URL=https://REPLACE-ME.example/local/prom23-runtime/endpoint.php
+
+# Absolute path, outside any web-served directory, mode 0600 (see
+# generate-hmac-key.sh). configFor() only checks it's an absolute string
+# ('/'-prefixed) and later readKey() enforces mode/size/format at call time —
+# get the path right here, get the file itself right via the key script.
+Environment=PROM23_RUNTIME_KEY_FILE=/absolute/private/prom23-runtime/hmac-key
+
+# JSON array of exact HTTPS origins (protocol+host+port, NO path/query/
+# fragment/wildcard). MUST include PROM23_RUNTIME_URL's own origin
+# (configFor() requires origins.includes(url.origin)) — this is the BFF's own
+# outbound-callback origin allowlist, not a CORS list for browsers.
+# Quote the whole value for systemd env parsing, escape inner double quotes.
+Environment=PROM23_RUNTIME_ALLOWED_ORIGINS=["https://REPLACE-ME.example"]
+# ---------------------------------------------------------------------------
+
+# Reminders from server/integrations/runtime-client.mjs's configFor():
+#   - protocol must be exactly "https:" — http:// or missing scheme throws
+#     RUNTIME_CONFIG_INVALID.
+#   - hostname must not match /(^|\.)zavod-antibpla\.ru$/i (hardcoded
+#     rejection in the transport — irrelevant to a correctly-chosen prom23
+#     hostname, but worth knowing it's there).
+#   - origins array: 1-10 entries, each must parse back to itself via
+#     `new URL(origin).origin === origin` (i.e. no trailing slash, no path)
+#     and must be https.
+#   - Until all three vars are set, readiness() reports
+#     { configured: false, code: 'RUNTIME_NOT_CONFIGURED' } — this was the
+#     original symptom on the production-request form. Setting all three
+#     correctly only gets to { configured: true, verified: false,
+#     code: 'RUNTIME_NOT_VERIFIED' } — "verified" requires an actual
+#     operation-specific acceptance test per README.md, not just config
+#     presence.
+#   - Leave PROM23_PREVIEW_PORT/BIND/API_PORT/DATABASE_PATH/PREVIEW_HOSTS
+#     (already in deploy/prom23-preview.service) untouched — this override
+#     only adds the three PROM23_RUNTIME_* vars.

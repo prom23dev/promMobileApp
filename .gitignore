@@ -1,0 +1,32 @@
+# Dependencies / build output
+node_modules/
+.expo/
+dist/
+build/
+__pycache__/
+
+# Env / secrets
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+*.p8
+*.secret
+*.mobileprovision
+*.keystore
+!debug.keystore
+
+# Private runtime configs (filled from ops/runtime-stage0 templates — never commit real values)
+**/config.private.php
+**/*.sqlite
+**/*.sqlite-wal
+**/*.sqlite-shm
+
+# Archives / local artifacts
+*.tar.gz
+*.zip
+
+# OS cruft
+.DS_Store
+Thumbs.db

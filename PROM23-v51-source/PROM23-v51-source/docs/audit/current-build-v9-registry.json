@@ -1,0 +1,2684 @@
+{
+  "createdAt": "2026-09-11T18:03:51.152Z",
+  "patterns": [
+    {
+      "file": "mobile/app/(tabs)/account.tsx",
+      "route": "/account",
+      "source": "export { default } from '../../src/screens/AccountScreen';"
+    },
+    {
+      "file": "mobile/app/(tabs)/cart.tsx",
+      "route": "/cart",
+      "source": "export { default } from '../../src/screens/CartScreen';"
+    },
+    {
+      "file": "mobile/app/(tabs)/catalog.tsx",
+      "route": "/catalog",
+      "source": "export { default } from '../../src/screens/CatalogScreen';"
+    },
+    {
+      "file": "mobile/app/(tabs)/favorites.tsx",
+      "route": "/favorites",
+      "source": "import React from 'react';\nimport CatalogScreen from '../../src/screens/CatalogScreen';\nexport default function FavoritesRoute() { return <CatalogScreen mode=\"favorites\" />; }"
+    },
+    {
+      "file": "mobile/app/(tabs)/index.tsx",
+      "route": "/",
+      "source": "import React from 'react';\nimport CatalogScreen from '../../src/screens/CatalogScreen';\nexport default function HomeRoute() { return <CatalogScreen mode=\"home\" />; }"
+    },
+    {
+      "file": "mobile/app/+not-found.tsx",
+      "route": "/+not-found",
+      "source": "import React from 'react';\nimport { SafeAreaView } from 'react-native-safe-area-context';\nimport { useRouter } from 'expo-router';\nimport { PackageSearch } from 'lucide-react-native';\nimport { Button, EmptyState, Header } from '../src/ui/primitives';\nimport { colors, layout } from '../src/ui/theme';\nexport default function NotFound() {\n  const router = useRouter();\n  return <SafeAreaView style={layout.screen} edges={['top', 'left', 'right']}><Header title=\"Страница не найдена\" back /><EmptyState icon={<PackageSearch size={34} color={colors.brand} />} title=\"Такой страницы нет\" message=\"Ссылка могла устареть. Перейдите в каталог, чтобы продолжить.\" action={<Button label=\"Открыть каталог\" onPress={() => router.replace('/catalog')} />} /></SafeAreaView>;\n}"
+    },
+    {
+      "file": "mobile/app/blog/[id].tsx",
+      "route": "/blog/[id]",
+      "source": "export { default } from '../../src/screens/ArticleScreen';"
+    },
+    {
+      "file": "mobile/app/blog/index.tsx",
+      "route": "/blog",
+      "source": "export { default } from '../../src/screens/BlogScreen';"
+    },
+    {
+      "file": "mobile/app/catalog/section/[section].tsx",
+      "route": "/catalog/section/[section]",
+      "source": "import React from 'react';\nimport CatalogScreen from '../../../src/screens/CatalogScreen';\nexport default function CatalogSection() { return <CatalogScreen nested />; }"
+    },
+    {
+      "file": "mobile/app/checkout-preview.tsx",
+      "route": "/checkout-preview",
+      "source": "export { default } from '../src/screens/CheckoutScreen';"
+    },
+    {
+      "file": "mobile/app/compare.tsx",
+      "route": "/compare",
+      "source": "export { default } from '../src/screens/CompareScreen';"
+    },
+    {
+      "file": "mobile/app/forms/[id].tsx",
+      "route": "/forms/[id]",
+      "source": "export { default } from '../../src/screens/FormScreen';"
+    },
+    {
+      "file": "mobile/app/information/[topic].tsx",
+      "route": "/information/[topic]",
+      "source": "export { default } from '../../src/screens/InformationScreen';"
+    },
+    {
+      "file": "mobile/app/legal/[id].tsx",
+      "route": "/legal/[id]",
+      "source": "export { default } from '../../src/screens/LegalScreen';"
+    },
+    {
+      "file": "mobile/app/more.tsx",
+      "route": "/more",
+      "source": "export { default } from '../src/screens/MoreScreen';"
+    },
+    {
+      "file": "mobile/app/notifications.tsx",
+      "route": "/notifications",
+      "source": "export { default } from '../src/screens/NotificationsScreen';"
+    },
+    {
+      "file": "mobile/app/order/[id].tsx",
+      "route": "/order/[id]",
+      "source": "export { default } from '../../src/screens/OrderDetailScreen';"
+    },
+    {
+      "file": "mobile/app/orders.tsx",
+      "route": "/orders",
+      "source": "export { default } from '../src/screens/OrdersScreen';"
+    },
+    {
+      "file": "mobile/app/pages/[id].tsx",
+      "route": "/pages/[id]",
+      "source": "export { default } from '../../src/screens/SitePageScreen';"
+    },
+    {
+      "file": "mobile/app/procurement.tsx",
+      "route": "/procurement",
+      "source": "export { default } from '../src/screens/ProcurementScreen';"
+    },
+    {
+      "file": "mobile/app/product/[id].tsx",
+      "route": "/product/[id]",
+      "source": "export { default } from '../../src/screens/ProductScreen';"
+    },
+    {
+      "file": "mobile/app/quick-order.tsx",
+      "route": "/quick-order",
+      "source": "export { default } from '../src/screens/QuickOrderScreen';"
+    },
+    {
+      "file": "mobile/app/service.tsx",
+      "route": "/service",
+      "source": "export { default } from '../src/screens/ServiceScreen';"
+    },
+    {
+      "file": "mobile/app/workspace/[kind].tsx",
+      "route": "/workspace/[kind]",
+      "source": "export { default } from '../../src/screens/WorkspaceScreen';"
+    }
+  ],
+  "infra": [
+    "mobile/app/(tabs)/_layout.tsx",
+    "mobile/app/+html.tsx",
+    "mobile/app/_layout.tsx"
+  ],
+  "forms": [
+    {
+      "id": "auth-login",
+      "title": "Вход или регистрация",
+      "group": "auth",
+      "sourceFiles": [
+        "site-source/local/templates/.default/components/bitrix/system.auth.form/.default/template.php",
+        "site-source/local/include/forms/auth-reg/action-auth.php"
+      ]
+    },
+    {
+      "id": "auth-email",
+      "title": "Вход по электронной почте",
+      "group": "auth",
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-auth-by-email.php",
+        "site-source/local/include/forms/auth-reg/action-auth-by-email.php"
+      ]
+    },
+    {
+      "id": "auth-register",
+      "title": "Регистрация",
+      "group": "auth",
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-reg.php",
+        "site-source/local/include/forms/auth-reg/action-reg.php"
+      ]
+    },
+    {
+      "id": "auth-phone",
+      "title": "Вход по телефону",
+      "group": "auth",
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-auth-by-phone.php",
+        "site-source/local/include/forms/auth-reg/action-get-code-for-phone.php"
+      ]
+    },
+    {
+      "id": "auth-otp",
+      "title": "Подтверждение телефона",
+      "group": "auth",
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-auth-by-phone.php",
+        "site-source/local/include/forms/auth-reg/action-auth-by-phone.php"
+      ]
+    },
+    {
+      "id": "auth-register-phone",
+      "title": "Телефон для регистрации",
+      "group": "auth",
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-reg-step-phone.php",
+        "site-source/local/include/forms/auth-reg/action-reg-step-phone.php"
+      ]
+    },
+    {
+      "id": "auth-register-otp",
+      "title": "Подтверждение регистрации",
+      "group": "auth",
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/form-reg-step-phone-code.php",
+        "site-source/local/include/forms/auth-reg/action-reg-step-phone-code.php"
+      ]
+    },
+    {
+      "id": "auth-recovery",
+      "title": "Восстановление пароля",
+      "group": "auth",
+      "sourceFiles": [
+        "site-source/local/include/forms/auth-reg/password-recovery.php",
+        "site-source/local/include/forms/auth-reg/action-password-recovery.php"
+      ]
+    },
+    {
+      "id": "profile-name",
+      "title": "Имя",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/change-name.php",
+        "site-source/local/ajax/lk/info/edit/change-user-data.php"
+      ]
+    },
+    {
+      "id": "profile-surname",
+      "title": "Фамилия",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/change-family.php",
+        "site-source/local/ajax/lk/info/edit/change-user-data.php"
+      ]
+    },
+    {
+      "id": "profile-city",
+      "title": "Город",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/change-city.php",
+        "site-source/local/ajax/lk/info/edit/change-user-data.php"
+      ]
+    },
+    {
+      "id": "profile-email",
+      "title": "Изменить электронную почту",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/change-email.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-email-get-code-action.php"
+      ]
+    },
+    {
+      "id": "profile-email-otp",
+      "title": "Подтвердить электронную почту",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/code-verification-by-email.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-email-check-code-action.php"
+      ]
+    },
+    {
+      "id": "profile-phone",
+      "title": "Изменить телефон",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/change-phone.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-phone-get-code-action.php"
+      ]
+    },
+    {
+      "id": "profile-phone-otp",
+      "title": "Подтвердить новый телефон",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/code-verification-by-phone.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-phone-check-code-action.php"
+      ]
+    },
+    {
+      "id": "profile-passport",
+      "title": "Паспортные данные",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/forms/gosuslugi.php"
+      ]
+    },
+    {
+      "id": "address-create",
+      "title": "Добавить адрес",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/order-placing/popup-courier.php",
+        "site-source/local/ajax/lk/address-delivery/add-address-action.php"
+      ]
+    },
+    {
+      "id": "address-edit",
+      "title": "Изменить адрес",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/order-placing/popup-courier.php",
+        "site-source/local/ajax/lk/address-delivery/add-address-action.php"
+      ]
+    },
+    {
+      "id": "address-default",
+      "title": "Сделать адрес основным",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/address-delivery/change-main-address.php"
+      ]
+    },
+    {
+      "id": "address-delete",
+      "title": "Удалить адрес",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/address-delivery/remove-address-action.php"
+      ]
+    },
+    {
+      "id": "organization-add",
+      "title": "Добавить организацию",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_my_organizations_add/templates/.default/template.php",
+        "site-source/local/ajax/lk/organization/organizations-find.php",
+        "site-source/local/ajax/lk/organization/organizations-add.php"
+      ]
+    },
+    {
+      "id": "organization-requisites",
+      "title": "Изменить реквизиты",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/organizations-details.php",
+        "site-source/local/ajax/lk/organization/action-organizations-details.php"
+      ]
+    },
+    {
+      "id": "organization-bank",
+      "title": "Банковские реквизиты",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_my_organizations_add/templates/.default/template.php",
+        "site-source/local/ajax/lk/organization/organizations-find.php"
+      ]
+    },
+    {
+      "id": "organization-verify",
+      "title": "Подтвердить полномочия",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/organization-verify.php",
+        "site-source/local/ajax/lk/organization/action-organization-verify.php"
+      ]
+    },
+    {
+      "id": "organization-edo",
+      "title": "Подключить ЭДО",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/organization-edo.php",
+        "site-source/local/ajax/lk/organization/action-organization-edo.php"
+      ]
+    },
+    {
+      "id": "organization-consignee",
+      "title": "Грузополучатель",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/organizations-consignee.php"
+      ]
+    },
+    {
+      "id": "organization-switch",
+      "title": "Выбрать организацию",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/organizations-switcher.php",
+        "site-source/local/ajax/lk/organization/action-organizations-switcher.php"
+      ]
+    },
+    {
+      "id": "organization-delete",
+      "title": "Удалить организацию",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/organization/form-delete-organization.php"
+      ]
+    },
+    {
+      "id": "account-delete",
+      "title": "Удалить аккаунт",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/delete-account.php"
+      ]
+    },
+    {
+      "id": "sessions-terminate",
+      "title": "Завершить сеанс",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/info/edit/terminate-session.php"
+      ]
+    },
+    {
+      "id": "document-request",
+      "title": "Запросить документ",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-document/template.php",
+        "site-source/local/ajax/form/request-document-action.php"
+      ]
+    },
+    {
+      "id": "payment-card",
+      "title": "Привязать карту",
+      "group": "purchase",
+      "externalCapture": "payment-provider",
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_payment_methods/templates/.default/template.php",
+        "site-source/local/ajax/lk/payment-methods/add-card-action.php"
+      ]
+    },
+    {
+      "id": "payment-default",
+      "title": "Сделать карту основной",
+      "group": "purchase",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/payment-methods/change-main-card-action.php"
+      ]
+    },
+    {
+      "id": "payment-remove",
+      "title": "Удалить сохранённую карту",
+      "group": "purchase",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/payment-methods/remove-card-action.php"
+      ]
+    },
+    {
+      "id": "checkout",
+      "title": "Оформление заказа",
+      "group": "purchase",
+      "sourceFiles": [
+        "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/template.php",
+        "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/script.js",
+        "site-source/local/ajax/order/popup-curier.php",
+        "site-source/order/index.php"
+      ]
+    },
+    {
+      "id": "order-cancel",
+      "title": "Отменить заказ",
+      "group": "purchase",
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_order_detail/templates/.default/template.php",
+        "site-source/local/components/prom.organization/organization_order_detail/templates/.default/template.php"
+      ]
+    },
+    {
+      "id": "order-repeat",
+      "title": "Повторить заказ",
+      "group": "purchase",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/orders/order-repeat.php"
+      ]
+    },
+    {
+      "id": "order-pay",
+      "title": "Оплатить заказ",
+      "group": "purchase",
+      "externalCapture": "payment-provider",
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_order_detail/templates/.default/template.php",
+        "site-source/local/components/prom.organization/organization_order_detail/templates/.default/template.php"
+      ]
+    },
+    {
+      "id": "callback",
+      "title": "Заказать звонок",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/request-a-call.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-call/template.php",
+        "site-source/local/ajax/catalog/action-request-a-call.php"
+      ]
+    },
+    {
+      "id": "buy-one-click",
+      "title": "Купить в один клик",
+      "group": "purchase",
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/buy-one-click.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/buy-one-click/template.php",
+        "site-source/local/ajax/catalog/action-buy-one-click.php"
+      ]
+    },
+    {
+      "id": "rent",
+      "title": "Заявка на аренду",
+      "group": "purchase",
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/request-a-rent.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-rent/template.php",
+        "site-source/local/ajax/catalog/action-request-a-rent.php"
+      ]
+    },
+    {
+      "id": "leasing",
+      "title": "Заявка на лизинг",
+      "group": "purchase",
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/request-a-leasing.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-leasing/template.php",
+        "site-source/local/ajax/catalog/action-request-a-call.php"
+      ]
+    },
+    {
+      "id": "found-cheaper",
+      "title": "Нашли дешевле?",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/form-found-it-cheaper.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/found-it-cheaper/template.php",
+        "site-source/local/ajax/catalog/action-found-it-cheaper.php"
+      ]
+    },
+    {
+      "id": "tour",
+      "title": "Записаться на экскурсию",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/ajax/form/book-a-tour.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/book-a-tour/template.php",
+        "site-source/local/ajax/form/book-a-tour-action.php"
+      ]
+    },
+    {
+      "id": "business-advice",
+      "title": "Консультация для бизнеса",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/ajax/form/get-business-advice-form-action.php",
+        "site-source/frontend/h/production.php"
+      ]
+    },
+    {
+      "id": "supplier",
+      "title": "Стать поставщиком",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/suppliers/index.php",
+        "site-source/local/ajax/form/suppliers-form-action.php"
+      ]
+    },
+    {
+      "id": "partner",
+      "title": "Стать партнёром",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/franchise/index.php",
+        "site-source/local/ajax/form/partners-form-action.php"
+      ]
+    },
+    {
+      "id": "advice",
+      "title": "Задать вопрос специалисту",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/templates/main/components/bitrix/form.result.new/orange-form-ask/template.php",
+        "site-source/local/ajax/form/orangeAsk-action.php"
+      ]
+    },
+    {
+      "id": "review",
+      "title": "Написать отзыв",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/reviews/form-review-add.php",
+        "site-source/local/ajax/reviews/form-review-add-action.php"
+      ]
+    },
+    {
+      "id": "order-review",
+      "title": "Оценить товар из заказа",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/orders/form-review-add.php",
+        "site-source/local/ajax/lk/orders/action-review-add.php"
+      ]
+    },
+    {
+      "id": "question",
+      "title": "Задать вопрос о товаре",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/reviews/form-question-add.php",
+        "site-source/local/ajax/reviews/form-question-add-action.php"
+      ]
+    },
+    {
+      "id": "review-reply",
+      "title": "Ответить на отзыв",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/reviews/form-review-reply-action.php"
+      ]
+    },
+    {
+      "id": "question-reply",
+      "title": "Ответить на вопрос",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/reviews/form-question-reply-action.php"
+      ]
+    },
+    {
+      "id": "review-edit",
+      "title": "Изменить отзыв",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/questions-and-reviews/form-edit-review.php",
+        "site-source/local/ajax/lk/questions-and-reviews/action-edit-review.php"
+      ]
+    },
+    {
+      "id": "question-edit",
+      "title": "Изменить вопрос",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/questions-and-reviews/form-edit-question.php",
+        "site-source/local/ajax/lk/questions-and-reviews/action-edit-question.php"
+      ]
+    },
+    {
+      "id": "review-delete",
+      "title": "Удалить отзыв",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/questions-and-reviews/action-delete.php"
+      ]
+    },
+    {
+      "id": "question-delete",
+      "title": "Удалить вопрос",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/questions-and-reviews/action-delete.php"
+      ]
+    },
+    {
+      "id": "appeal",
+      "title": "Задать вопрос",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/appeals/appeals-questions.php",
+        "site-source/local/ajax/lk/appeals/appeals-text-action.php"
+      ]
+    },
+    {
+      "id": "appeal-order",
+      "title": "Проблема с заказом",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/appeals/appeals-order-form.php",
+        "site-source/local/ajax/lk/appeals/appeals-order-form-action.php",
+        "site-source/local/php_interface/functions.php"
+      ]
+    },
+    {
+      "id": "appeal-rating",
+      "title": "Оценить качество обслуживания",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/appeals/appeals-rate-add.php",
+        "site-source/local/ajax/lk/appeals/appeals-rate-action.php"
+      ]
+    },
+    {
+      "id": "return",
+      "title": "Возврат товаров",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/lk/returns-products/returns-product.php",
+        "site-source/local/ajax/lk/returns-products/action-returns-product.php",
+        "site-source/local/php_interface/functions.php"
+      ]
+    },
+    {
+      "id": "subscription",
+      "title": "Подписка на рассылку",
+      "group": "marketing",
+      "sourceFiles": [
+        "site-source/local/templates/main/footer.php",
+        "site-source/local/ajax/subscription/subscription.php"
+      ]
+    },
+    {
+      "id": "product-notify",
+      "title": "Сообщить о поступлении",
+      "group": "purchase",
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/action-add-to-waitlist.php"
+      ]
+    },
+    {
+      "id": "notification-preferences",
+      "title": "Настройки уведомлений",
+      "group": "profile",
+      "sourceFiles": [
+        "site-source/local/components/prom.personal/personal_notifications/templates/.default/template.php",
+        "site-source/local/components/prom.organization/organization_notifications/templates/.default/template.php",
+        "site-source/local/ajax/lk/notifications/notifications.php"
+      ]
+    },
+    {
+      "id": "quote",
+      "title": "Запросить предложение",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/ajax/form/get-business-advice-form-action.php",
+        "site-source/frontend/h/production.php"
+      ]
+    },
+    {
+      "id": "production-request",
+      "title": "Заказать продукцию собственного производства",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/local/ajax/form/get-business-advice-form-action.php",
+        "site-source/frontend/h/production.php"
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "Связаться с нами",
+      "group": "service",
+      "sourceFiles": [
+        "site-source/local/ajax/catalog/request-a-call.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-call/template.php",
+        "site-source/local/ajax/catalog/action-request-a-call.php"
+      ]
+    },
+    {
+      "id": "franchise",
+      "title": "Стать партнёром",
+      "group": "business",
+      "sourceFiles": [
+        "site-source/franchise/index.php",
+        "site-source/local/ajax/form/partners-form-action.php"
+      ]
+    }
+  ],
+  "workspaces": [
+    "profile",
+    "contacts",
+    "addresses",
+    "organizations",
+    "requisites",
+    "bank",
+    "staff",
+    "documents",
+    "sessions",
+    "security",
+    "payment-methods",
+    "reviews",
+    "waiting-list",
+    "returns",
+    "about"
+  ],
+  "pages": [
+    {
+      "id": "about",
+      "title": "О компании",
+      "sourceUrl": "https://prom.myfast.space/about/",
+      "contract": null
+    },
+    {
+      "id": "brands",
+      "title": "Бренды",
+      "sourceUrl": "https://prom.myfast.space/brands/",
+      "contract": null
+    },
+    {
+      "id": "suppliers",
+      "title": "Поставщикам",
+      "sourceUrl": "https://prom.myfast.space/suppliers/",
+      "contract": null
+    },
+    {
+      "id": "franchise",
+      "title": "Франшиза",
+      "sourceUrl": "https://prom.myfast.space/franchise/",
+      "contract": null
+    },
+    {
+      "id": "awards",
+      "title": "Награды и сертификаты",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "contract": null
+    },
+    {
+      "id": "returns",
+      "title": "Правила возврата",
+      "sourceUrl": "https://prom.myfast.space/return/",
+      "contract": null
+    },
+    {
+      "id": "details",
+      "title": "Реквизиты",
+      "sourceUrl": "https://prom.myfast.space/details/",
+      "contract": null
+    },
+    {
+      "id": "offer",
+      "title": "Публичная оферта",
+      "sourceUrl": "https://prom.myfast.space/oferta/",
+      "contract": null
+    },
+    {
+      "id": "privacy",
+      "title": "Политика конфиденциальности",
+      "sourceUrl": "https://prom.myfast.space/privacy-policy/",
+      "contract": null
+    },
+    {
+      "id": "personal-data",
+      "title": "Согласие на обработку персональных данных",
+      "sourceUrl": "https://prom.myfast.space/user-agreement/",
+      "contract": null
+    },
+    {
+      "id": "cookies",
+      "title": "Политика использования cookie-файлов",
+      "sourceUrl": "https://prom.myfast.space/cookie-policy/",
+      "contract": null
+    },
+    {
+      "id": "checkout",
+      "title": "Оформление заказа",
+      "sourceUrl": "https://prom.myfast.space/checkout/",
+      "contract": {
+        "resource": "content.checkout",
+        "fields": [
+          "title",
+          "sections",
+          "updatedAt"
+        ],
+        "sourcePath": "delivery/index.php: UF_CONTENT_TABS_TEXT",
+        "status": "requires-source"
+      }
+    },
+    {
+      "id": "recommendations",
+      "title": "Сведения о рекомендательных технологиях",
+      "sourceUrl": "https://prom.myfast.space/recom-tech-info/",
+      "contract": {
+        "resource": "content.recommendations",
+        "fields": [
+          "title",
+          "sections",
+          "updatedAt"
+        ],
+        "sourcePath": "recom-tech-info/",
+        "status": "requires-source"
+      }
+    },
+    {
+      "id": "faq",
+      "title": "Вопросы и ответы",
+      "sourceUrl": "https://prom.myfast.space/delivery/",
+      "contract": {
+        "resource": "content.faq",
+        "fields": [
+          "id",
+          "question",
+          "answer",
+          "topic",
+          "updatedAt"
+        ],
+        "sourcePath": "delivery/index.php / UF_QUESTIONS",
+        "status": "requires-source"
+      }
+    },
+    {
+      "id": "warranty",
+      "title": "Гарантии",
+      "sourceUrl": null,
+      "contract": {
+        "resource": "content.warranty",
+        "fields": [
+          "manufacturer",
+          "productId",
+          "warrantyTerm",
+          "conditions",
+          "documents"
+        ],
+        "status": "requires-source"
+      }
+    },
+    {
+      "id": "promotions",
+      "title": "Акции и предложения",
+      "sourceUrl": null,
+      "contract": {
+        "resource": "promotions",
+        "fields": [
+          "id",
+          "title",
+          "validFrom",
+          "validTo",
+          "conditions",
+          "productIds",
+          "buyerTypes",
+          "regions"
+        ],
+        "status": "requires-source"
+      }
+    },
+    {
+      "id": "cooperation",
+      "title": "Сотрудничество",
+      "sourceUrl": "https://prom.myfast.space/suppliers/",
+      "contract": null
+    }
+  ],
+  "blog": [
+    {
+      "id": "articles-khomutovye-stroitelnye-lesa-promyshlennik-poshagovaya-sborka-vidy-khomutov-i-sovety-po-montazhu",
+      "title": "Хомутовые строительные леса Промышленник: пошаговая сборка, виды хомутов и советы по монтажу",
+      "kind": "articles"
+    },
+    {
+      "id": "articles-setka-zatenyayushchaya-promyshlennik-kak-vybrat-dlya-stroyki-dachi-maskirovki-i-dekora",
+      "title": "Сетка затеняющая «Промышленник»: как выбрать для стройки, дачи, маскировки и декора",
+      "kind": "articles"
+    },
+    {
+      "id": "articles-vyshka-tura-ili-stroitelnye-lesa-5-shagov-k-pravilnomu-vyboru-dlya-fasada-i-remonta",
+      "title": "Вышка-тура или строительные леса: 5 шагов к правильному выбору для фасада и ремонта",
+      "kind": "articles"
+    },
+    {
+      "id": "articles-konus-abramsa-dlya-betona-kak-proverit-kachestvo-i-podvizhnost-betonnoy-smesi-na-stroyploshchadke",
+      "title": "Конус Абрамса для бетона: как проверить качество и подвижность бетонной смеси на стройплощадке",
+      "kind": "articles"
+    },
+    {
+      "id": "articles-kak-sobrat-stroitelnye-ramnye-lesa-lrsp-svoimi-rukami-poshagovaya-instruktsiya-dlya-novichkov",
+      "title": "Как собрать строительные рамные леса ЛРСП своими руками: пошаговая инструкция для новичков",
+      "kind": "articles"
+    },
+    {
+      "id": "articles-kak-sobrat-vyshku-turu-svoimi-rukami-poshagovaya-instruktsiya-dlya-nachinayushchikh",
+      "title": "Как собрать вышку-туру своими руками: пошаговая инструкция для начинающих",
+      "kind": "articles"
+    },
+    {
+      "id": "projects-moscow-city",
+      "title": "Строительство в деловом центре «Москва-Сити»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-krc-oktyabr-astrakhan",
+      "title": "Реконструкция КРК «Октябрь» в Астрахани",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-development-plaza-krasnodar",
+      "title": "Development Plaza, Краснодар",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-serdtse-krasnodara",
+      "title": "ЖК «Сердце Краснодара»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-obraztsovo-insiti",
+      "title": "ЖК «Образцово» от ИНСИТИ, Краснодар",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-fontany-krasnodar",
+      "title": "ЖК «Фонтаны», Краснодар",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-pervoe-mesto",
+      "title": "ЖК «Первое место»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-residential-complex-derbent",
+      "title": "Жилой комплекс в Дербенте",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-botanika-hills",
+      "title": "ЖК Botanika Hills",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-nova-vita",
+      "title": "ЖК Nova Vita",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-ritm",
+      "title": "ЖК «Ритм»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-slavyanka",
+      "title": "ЖК «Славянка»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-zvezdy",
+      "title": "ЖК «Звёзды»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-tsentralnyy",
+      "title": "ЖК «Центральный»",
+      "kind": "projects"
+    },
+    {
+      "id": "video-inforce-7",
+      "title": "Inforce",
+      "kind": "video"
+    },
+    {
+      "id": "video-fubag-6",
+      "title": "Fubag",
+      "kind": "video"
+    },
+    {
+      "id": "video-inforce-5",
+      "title": "Inforce",
+      "kind": "video"
+    },
+    {
+      "id": "video-fubag-4",
+      "title": "Fubag",
+      "kind": "video"
+    },
+    {
+      "id": "video-fubag-3",
+      "title": "Fubag",
+      "kind": "video"
+    },
+    {
+      "id": "video-inforce-2",
+      "title": "Inforce",
+      "kind": "video"
+    },
+    {
+      "id": "video-fubag-1",
+      "title": "Fubag",
+      "kind": "video"
+    },
+    {
+      "id": "video-inforce-0",
+      "title": "Inforce",
+      "kind": "video"
+    }
+  ],
+  "sections": [
+    {
+      "id": "16",
+      "name": "Вышки-туры",
+      "parentId": null,
+      "productIds": [
+        "prom-2414",
+        "prom-1042",
+        "prom-1046"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "name": "Стальные вышки-туры",
+      "parentId": "16",
+      "productIds": [
+        "prom-2414"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/",
+      "name": "Вышки-туры ВСП 250 0,7x1,6 м",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "productIds": [
+        "prom-2414"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07x16prom/",
+      "name": "Вышка-тура ВСП 0,7x1,6 ПРОМ",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07x16promultra700/",
+      "name": "Вышка-тура ВСП 0,7x1,6 ПРОМ УЛЬТРА 700",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07kh16ver20/",
+      "name": "Вышка-тура ВСП 0.7х1.6 ver. 2.0",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavspt07kh16/",
+      "name": "Вышка-тура ВСПТ 0.7х1.6",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/",
+      "productIds": [
+        "prom-2414"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/",
+      "name": "Вышки-туры ВСП 250 1,6x2,0 м",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkaturavspteam16kh20/",
+      "name": "Вышка-тура ВСП TeaM 1.6х2.0",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkiturypromyshlennikvspprom1620m/",
+      "name": "Вышка-тура ВСП ПРОМ 1.6х2.0",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkaturavsppromyshlennik16kh20/",
+      "name": "Вышка-тура ВСП Промышленник 1.6х2.0",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/",
+      "name": "Вышки-туры ВСП 250 1,2x2,0 м",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavspteam12kh20/",
+      "name": "Вышка-тура ВСП TeaM 1.2х2.0",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavspprom12kh20/",
+      "name": "Вышка-тура ВСП ПРОМ 1.2х2.0",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavsppromultima12kh20/",
+      "name": "Вышка-тура ВСП ПРОМ УЛЬТИМА 1.2х2.0",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavsppromyshlennik12kh20/",
+      "name": "Вышка-тура ВСП Промышленник 1.2х2.0",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/",
+      "name": "Вышки-туры ВСП 250 2,0х2,0 м",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavspteam20kh20/",
+      "name": "Вышка-тура ВСП TeaM 2.0х2.0",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavsp-prom20kh20/",
+      "name": "Вышка-тура ВСП ПРОМ 2.0х2.0",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavsppromyshlennik20kh20/",
+      "name": "Вышка-тура ВСП Промышленник 2.0х2.0",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/",
+      "name": "Вышки-туры ВСЭ 250",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/vspekonom12kh24094/",
+      "name": "Вышки-туры ВСЭ 250 0,7х1,6 м",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/vspekonom12kh2/",
+      "name": "Вышки-туры ВСЭ 250 1,2x2,0 м",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkaturadachnik/",
+      "name": "Вышка-тура Дачник",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryrezervuarnyevsp25020kh20m/",
+      "name": "Вышки-туры ВСП Резервуарные 2,0х2,0 м",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/",
+      "name": "Алюминиевые подмости и вышки",
+      "parentId": "16",
+      "productIds": [
+        "prom-1042",
+        "prom-1046"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/",
+      "name": "Вышки-туры Профи",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/",
+      "productIds": [
+        "prom-1042",
+        "prom-1046"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/alumet/",
+      "name": "Вышки-туры Alumet",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/promyshlennik/",
+      "name": "Платформы Промышленник",
+      "parentId": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/komplektuyushchiekvyshkam/",
+      "name": "Комплектующие к вышкам турам",
+      "parentId": "16",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/motorizovannyevyshkitury/",
+      "name": "Моторизованные вышки-туры",
+      "parentId": "16",
+      "productIds": []
+    },
+    {
+      "id": "37",
+      "name": "Подмости строительные",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podmostistroitelnye/malyarnyestoliki/",
+      "name": "Малярные столики",
+      "parentId": "37",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podmostistroitelnye/podmostimalyarnyeslesarnye/",
+      "name": "Подмости малярные слесарные",
+      "parentId": "37",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podmostistroitelnye/pomostymalyarnye/",
+      "name": "Помосты малярные",
+      "parentId": "37",
+      "productIds": []
+    },
+    {
+      "id": "41",
+      "name": "Сетка, тенты, брезенты",
+      "parentId": null,
+      "productIds": [
+        "prom-372",
+        "prom-2491",
+        "prom-2200"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/",
+      "name": "Защитная сетка",
+      "parentId": "41",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/komplektuyushchiedlyazatenyayushcheysetki/",
+      "name": "Клипса Люверс для сетки",
+      "parentId": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkadlyazabora/",
+      "name": "Сетка для забора",
+      "parentId": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkazatenyayushchaya/",
+      "name": "Сетка затеняющая",
+      "parentId": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkamaskirovochnaya/",
+      "name": "Сетка маскировочная",
+      "parentId": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkafasadnayazatenyayushchaya/",
+      "name": "Сетка фасадная затеняющая",
+      "parentId": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/",
+      "name": "Укрывные материалы",
+      "parentId": "41",
+      "productIds": [
+        "prom-372",
+        "prom-2491",
+        "prom-2200"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/",
+      "name": "Армированная пленка",
+      "parentId": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/",
+      "productIds": [
+        "prom-372",
+        "prom-2491"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/brezent/",
+      "name": "Брезент",
+      "parentId": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/tenty/",
+      "name": "Тенты",
+      "parentId": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/",
+      "productIds": [
+        "prom-2200"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/zashchitno-ulavlivayushchaya-setka/",
+      "name": "Защитно-улавливающая сетка (ЗУС)",
+      "parentId": "41",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/dekorativnyeukrytiyadlyastroitelnykhlesov/",
+      "name": "Декоративные укрытия для строительных лесов",
+      "parentId": "41",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/zashchitnoeograzhdenie/",
+      "name": "Защитное ограждение",
+      "parentId": "41",
+      "productIds": []
+    },
+    {
+      "id": "56",
+      "name": "Строительные подъемники",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/stroitelnye-ljulki/",
+      "name": "Строительные люльки (фасадные подъемники)",
+      "parentId": "56",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/rabochie-platformy/",
+      "name": "Строительные площадки",
+      "parentId": "56",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/machtovye-podemniki/",
+      "name": "Мачтовые подъемники",
+      "parentId": "56",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/machtovye-stroitelnye-platformy-reechnogo-tipa/",
+      "name": "Мачтовые строительные платформы реечного типа",
+      "parentId": "56",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/zapchastidlyalyulekzlp/",
+      "name": "Комплектующие для люлек ZLP",
+      "parentId": "56",
+      "productIds": []
+    },
+    {
+      "id": "64",
+      "name": "Грузоподъемное оборудование",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/buksirytekstilnyelentochnye/",
+      "name": "Буксиры текстильные ленточные",
+      "parentId": "64",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/lebedkiruchnye/",
+      "name": "Лебедки ручные",
+      "parentId": "64",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/lebedkielektricheskie/",
+      "name": "Лебедки электрические",
+      "parentId": "64",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/montazhnyepoyasaiprivyazi/",
+      "name": "Монтажные пояса и привязи",
+      "parentId": "64",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/remnistyazhnye/",
+      "name": "Ремни стяжные",
+      "parentId": "64",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/stropytekstilnyepetlevye/",
+      "name": "Стропы текстильные петлевые",
+      "parentId": "64",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/taliruchnye/",
+      "name": "Тали ручные",
+      "parentId": "64",
+      "productIds": []
+    },
+    {
+      "id": "71",
+      "name": "Мусоропровод строительный",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "72",
+      "name": "Фанера ламинированная",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/fanera-laminirovannaya/18-mm/",
+      "name": "Фанера ламинированная 18 мм",
+      "parentId": "72",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/fanera-laminirovannaya/fanera10mm/",
+      "name": "Фанера 10 мм",
+      "parentId": "72",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/fanera-laminirovannaya/fanera9mm/",
+      "name": "Фанера 9 мм",
+      "parentId": "72",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/fanera-laminirovannaya/faneralaminirovannaya12mm/",
+      "name": "Фанера ламинированная 12 мм",
+      "parentId": "72",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/fanera-laminirovannaya/21-mm/",
+      "name": "Фанера ламинированная 21 мм",
+      "parentId": "72",
+      "productIds": []
+    },
+    {
+      "id": "79",
+      "name": "Опалубка",
+      "parentId": null,
+      "productIds": [
+        "prom-2033",
+        "prom-2017"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/",
+      "name": "Опалубка перекрытий",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/dvutavrovayabalka/",
+      "name": "Двутавровая балка",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/",
+      "name": "Объемная опалубка перекрытий",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/obemnayaopalubkaperekrytiycuplock/",
+      "name": "Объемная опалубка перекрытий CUP LOCK",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/ramnayaklinovayaopalubka/",
+      "name": "Рамная клиновая опалубка",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/ramnayaopalubka/",
+      "name": "Рамная опалубка",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/teleskopicheskiestoyki/",
+      "name": "Телескопические стойки для опалубки перекрытия",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+      "name": "Комплектующие для стеновой опалубки",
+      "parentId": "79",
+      "productIds": [
+        "prom-2033",
+        "prom-2017"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/vintystyazhnye/",
+      "name": "Винты стяжные для опалубки",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+      "productIds": [
+        "prom-2033",
+        "prom-2017"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/gaykiistyazhnyevinty/",
+      "name": "Гайки для опалубки",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/zamkidlyaopalubki/",
+      "name": "Замки для опалубки",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/zakhvatymontazhnye/",
+      "name": "Захваты монтажные",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/ograzhdayushchieustroystvaipodkosyvintovye/",
+      "name": "Ограждающие устройства и подкосы винтовые",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/pruzhinnye-zazhimy/",
+      "name": "Пружинные зажимы для опалубки",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/",
+      "name": "Фиксаторы арматуры",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "name": "Пластиковые фиксаторы арматуры",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zashchitnyykolpachok/",
+      "name": "Фиксатор арматуры защитный колпачок",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zvezdochka/",
+      "name": "Фиксатор арматуры звездочка",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/mnogourovnevyy/",
+      "name": "Фиксатор арматуры многоуровневый",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/opora/",
+      "name": "Фиксатор арматуры опора",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/podstavka/",
+      "name": "Фиксатор арматуры подставка",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/stoyka/",
+      "name": "Фиксатор арматуры стойка",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/stulchik/",
+      "name": "Фиксатор арматуры стульчик",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/fs/",
+      "name": "Фиксатор арматуры ФС сыпучий грунт",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zakladnyeelementy/",
+      "name": "Фиксаторы арматуры закладные",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/betonnye/",
+      "name": "Фиксаторы из бетона",
+      "parentId": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/gidroizolyatsionnyematerialyismesi/",
+      "name": "Гидроизоляционные материалы и смеси",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/melkoshchitovayaopalubka/",
+      "name": "Мелкощитовая опалубка (МЩО)",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubkashchitovaya/",
+      "name": "Опалубка щитовая",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/emulsol/",
+      "name": "СОЖ Эмульсол",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/oborudovanie-dlya-progreva-betona/",
+      "name": "Оборудование для прогрева бетона",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/plastikovaya/",
+      "name": "Пластиковая опалубка",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/kolonn/",
+      "name": "Опалубка колонн",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/ctenovaya/",
+      "name": "Стеновая опалубка",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/teksturnyepanelivalero/",
+      "name": "Текстурные панели VALERO",
+      "parentId": "79",
+      "productIds": []
+    },
+    {
+      "id": "113",
+      "name": "Вибротехника для строительства",
+      "parentId": null,
+      "productIds": [
+        "prom-2388",
+        "prom-2349",
+        "prom-2266"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/benzinovye-vibroplity/",
+      "name": "Виброплиты бензиновые",
+      "parentId": "113",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/vibrotrambovki/",
+      "name": "Вибротрамбовки бензиновые",
+      "parentId": "113",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/zaglazhivayushchaya-mashina/",
+      "name": "Затирочные машины",
+      "parentId": "113",
+      "productIds": [
+        "prom-2266"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/vibroreyki/",
+      "name": "Виброрейки",
+      "parentId": "113",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/",
+      "name": "Вибраторы для бетона",
+      "parentId": "113",
+      "productIds": [
+        "prom-2388",
+        "prom-2349"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/glubinnye/",
+      "name": "Глубинные вибраторы",
+      "parentId": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/",
+      "productIds": [
+        "prom-2388",
+        "prom-2349"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/ploshhadochnye/",
+      "name": "Площадочные вибраторы",
+      "parentId": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/",
+      "name": "Инструмент для работы с бетоном",
+      "parentId": "113",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/gladilkidlyabetona/",
+      "name": "Гладилки для бетона",
+      "parentId": "https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/ruchkidlyagladilokpobetonu/",
+      "name": "Ручки для гладилок по бетону",
+      "parentId": "https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/",
+      "productIds": []
+    },
+    {
+      "id": "125",
+      "name": "Оборудование для работы с арматурой",
+      "parentId": null,
+      "productIds": [
+        "prom-2402",
+        "prom-2335",
+        "prom-2377",
+        "prom-2272"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/kljuchi-dlja-gibki-armatury/",
+      "name": "Ключи для гибки арматуры",
+      "parentId": "125",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/nozhnicy/",
+      "name": "Ножницы для резки арматуры, болторезы",
+      "parentId": "125",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/vyazalnyyinstrument/",
+      "name": "Вязальный инструмент для арматуры",
+      "parentId": "125",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/gilotinadlyakolkibruschatki/",
+      "name": "Гильотины для колки брусчатки",
+      "parentId": "125",
+      "productIds": [
+        "prom-2272"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/lomburklombara/",
+      "name": "Лом-бурк (лом-бара)",
+      "parentId": "125",
+      "productIds": [
+        "prom-2377"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/",
+      "name": "Станки для гибки и резки арматуры",
+      "parentId": "125",
+      "productIds": [
+        "prom-2402",
+        "prom-2335"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/",
+      "name": "Станки для резки арматуры",
+      "parentId": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/",
+      "productIds": [
+        "prom-2335"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/mobilnyeelektricheskiestankidlyarezkiarmatury/",
+      "name": "Мобильные электрические станки для резки арматуры",
+      "parentId": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/",
+      "productIds": [
+        "prom-2335"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/ruchnye/",
+      "name": "Ручные станки для резки арматуры",
+      "parentId": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/gidravlicheskie-stanki/",
+      "name": "Электрические станки для резки арматуры",
+      "parentId": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/",
+      "name": "Станки для гибки арматуры (арматурогибы)",
+      "parentId": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/",
+      "productIds": [
+        "prom-2402"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/mobilnyeelektricheskiestankidlyagibkiarmatury/",
+      "name": "Мобильные электрические станки для гибки арматуры",
+      "parentId": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/ruchnye-stanki/",
+      "name": "Ручные станки для гибки арматуры",
+      "parentId": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/gidravlicheskie-stanki-dlya-gibki-armatury/",
+      "name": "Электрические станки для гибки арматуры",
+      "parentId": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/",
+      "productIds": [
+        "prom-2402"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/komplektuyushchiekstankamdlyagibkiirezkiarmatury/",
+      "name": "Комплектующие к станкам для гибки и резки арматуры",
+      "parentId": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/",
+      "productIds": []
+    },
+    {
+      "id": "141",
+      "name": "Оборудование для бетонных работ",
+      "parentId": null,
+      "productIds": [
+        "prom-1649",
+        "prom-969",
+        "prom-1343"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/betonomeshalki/",
+      "name": "Бетономешалки и бетоносмесители",
+      "parentId": "141",
+      "productIds": [
+        "prom-1649"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/kljuchi-dlja-gibki-armatury6163/",
+      "name": "Молотки бетонщика",
+      "parentId": "141",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/yashchiki-kamenshchika/",
+      "name": "Ящики каменщика",
+      "parentId": "141",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/",
+      "name": "Бадьи для бетона",
+      "parentId": "141",
+      "productIds": [
+        "prom-969"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/rjumka-kolokolchik/",
+      "name": "Бадья для бетона Рюмка",
+      "parentId": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/",
+      "productIds": [
+        "prom-969"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/tufelka/",
+      "name": "Бадья для бетона Туфелька",
+      "parentId": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/",
+      "name": "Пластиковая тара для раствора",
+      "parentId": "141",
+      "productIds": [
+        "prom-1343"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/stroitelnyetazy/",
+      "name": "Строительные тазы",
+      "parentId": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/",
+      "productIds": [
+        "prom-1343"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/rastvorosmesiteli/",
+      "name": "Растворосмесители",
+      "parentId": "141",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/formydlyabetona/",
+      "name": "Формы для бетона",
+      "parentId": "141",
+      "productIds": []
+    },
+    {
+      "id": "157",
+      "name": "Техника для склада",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/gidravlicheskie/",
+      "name": "Гидравлические тележки (рохли)",
+      "parentId": "157",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/gidravlicheskie/elektricheskietelezhkirokhli/",
+      "name": "Электрические тележки (рохли)",
+      "parentId": "https://prom.myfast.space/catalog/gruzovye-telezhki/gidravlicheskie/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/",
+      "name": "Грузовые тележки для склада",
+      "parentId": "157",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/platformennye/",
+      "name": "Платформенные тележки",
+      "parentId": "https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/dvukhkolesnye/",
+      "name": "Грузовые тележки двухколесные",
+      "parentId": "https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/promyshlennyekolesa/",
+      "name": "Колеса для тележек",
+      "parentId": "157",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/nozhnichnye-podemniki/",
+      "name": "Ножничные подъемники и столы",
+      "parentId": "157",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/sistemykhraneniya/",
+      "name": "Системы хранения",
+      "parentId": "157",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/",
+      "name": "Штабелеры",
+      "parentId": "157",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/ruchnyeshtabelery/",
+      "name": "Ручные штабелеры",
+      "parentId": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/samokhodnyeshtabelery/",
+      "name": "Самоходные штабелеры",
+      "parentId": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/elektricheskieshtabelery/",
+      "name": "Электрические штабелеры",
+      "parentId": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/",
+      "name": "Вилочные погрузчики",
+      "parentId": "157",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/elektricheskie3khopornye/",
+      "name": "Электрические погрузчики 3-х опорные",
+      "parentId": "https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/elektricheskie4khopornye/",
+      "name": "Электрические погрузчики 4-х опорные",
+      "parentId": "https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/",
+      "productIds": []
+    },
+    {
+      "id": "173",
+      "name": "Тачки строительные и садовые",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/tachki/kolesadlyatachek/",
+      "name": "Колеса для тачек, комплектующие",
+      "parentId": "173",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/tachki/tachkiteam/",
+      "name": "Тачки TeaM",
+      "parentId": "173",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/tachki/tachkipromyshlennik/",
+      "name": "Тачки Промышленник",
+      "parentId": "173",
+      "productIds": []
+    },
+    {
+      "id": "179",
+      "name": "Лестницы и стремянки",
+      "parentId": null,
+      "productIds": [
+        "prom-908",
+        "prom-592",
+        "prom-1774",
+        "prom-594",
+        "prom-596",
+        "prom-597"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/odnosektsionnye-lestnitsy-stremyanki/",
+      "name": "Односекционные лестницы",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dvukhsektsionnye-lestnitsy-stremyanki/",
+      "name": "Двухсекционные лестницы",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/trekhsektsionnye-lestnitsy-stremyanki/",
+      "name": "Трехсекционные лестницы",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsy-stremyanki-transformery/",
+      "name": "Лестницы трансформеры",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "name": "Стремянки Alumet",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/alyuminievyedvustoronniestremyanki/",
+      "name": "Алюминиевые двусторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/alyuminievyeodnostoronniestremyanki/",
+      "name": "Алюминиевые односторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/anodirovannyedvustoronniestremyanki/",
+      "name": "Анодированные двусторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/anodirovannyeodnostoronniestremyanki/",
+      "name": "Анодированные односторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyedvustoronniestremyanki/",
+      "name": "Стальные двусторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyeodnostoronniestremyanki/",
+      "name": "Стальные односторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyestremyankistulya/",
+      "name": "Стальные стремянки стулья",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stremyankistalnyekhozyayushka/",
+      "name": "Стремянки стальные \"Хозяюшка\"",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki8760/",
+      "name": "Стремянки Centaure",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "name": "Диэлектрические лестницы и стремянки",
+      "parentId": "179",
+      "productIds": [
+        "prom-908",
+        "prom-592",
+        "prom-1774",
+        "prom-594",
+        "prom-596",
+        "prom-597"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/alyuminievyedvustoronniestremyanki/",
+      "name": "Алюминиевые двусторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/alyuminievyeodnostoronniestremyanki/",
+      "name": "Алюминиевые односторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyedvustoronniestremyanki/",
+      "name": "Анодированные двусторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "productIds": [
+        "prom-1774"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyeodnostoronniestremyanki/",
+      "name": "Анодированные односторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyedvustoronniestremyanki/",
+      "name": "Стальные двусторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/",
+      "name": "Стальные односторонние стремянки",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "productIds": [
+        "prom-592",
+        "prom-594",
+        "prom-596",
+        "prom-597"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyestremyankistulya/",
+      "name": "Стальные стремянки стулья",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "productIds": [
+        "prom-908"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stremyankistalnyekhozyayushka/",
+      "name": "Стремянки стальные \"Хозяюшка\"",
+      "parentId": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/vsestremyanki/",
+      "name": "Все стремянки",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/komplektuyushchieklestnitsamstremyankampomostam/",
+      "name": "Комплектующие к лестницам, стремянкам, помостам",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsynakanatnoytyage/",
+      "name": "Лестницы на канатной тяге",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsyteleskopicheskie/",
+      "name": "Лестницы телескопические",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankidogrular/",
+      "name": "Стремянки Dogrular",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankiteam/",
+      "name": "Стремянки TeaM",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankiprofessionalnyealyumet/",
+      "name": "Стремянки профессиональные Alumet",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stalnyeoblegchennyestremyankialyumet/",
+      "name": "Стремянки стальные облегченные Alumet",
+      "parentId": "179",
+      "productIds": []
+    },
+    {
+      "id": "200",
+      "name": "Штукатурные комплекты",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "203",
+      "name": "Компрессоры воздушные",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/kompressory/bezmasljanye/",
+      "name": "Безмасляные компрессоры",
+      "parentId": "203",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/kompressory/maslyanye-koaksialnye/",
+      "name": "Масляные коаксиальные компрессоры",
+      "parentId": "203",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/kompressory/maslyanye-remennye/",
+      "name": "Компрессоры ременные масляные",
+      "parentId": "203",
+      "productIds": []
+    },
+    {
+      "id": "207",
+      "name": "Сварочные аппараты",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/svarochnye-apparaty/invertornye/",
+      "name": "Сварочные инверторы",
+      "parentId": "207",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/svarochnye-apparaty/svarochnye-poluavtomaty/",
+      "name": "Сварочные полуавтоматы",
+      "parentId": "207",
+      "productIds": []
+    },
+    {
+      "id": "221",
+      "name": "Тепловые пушки",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/teplovye-pushki/gazovyeteplovyepushki/",
+      "name": "Газовые тепловые пушки",
+      "parentId": "221",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/teplovye-pushki/nagrevatel-pryamogo-nagreva/",
+      "name": "Нагреватели прямого нагрева",
+      "parentId": "221",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/teplovye-pushki/jelektricheskie-vozduhonagrevateli/",
+      "name": "Электрические воздухонагреватели",
+      "parentId": "221",
+      "productIds": []
+    },
+    {
+      "id": "250",
+      "name": "Леса",
+      "parentId": null,
+      "productIds": [
+        "prom-23916",
+        "prom-2749",
+        "prom-2743",
+        "prom-2733"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/ramnogo-tipa/",
+      "name": "Леса рамные ЛРСП",
+      "parentId": "250",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/",
+      "name": "Хомутовые леса",
+      "parentId": "250",
+      "productIds": [
+        "prom-23916"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/a/",
+      "name": "Комплектующие для хомутовых лесов",
+      "parentId": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/",
+      "productIds": [
+        "prom-23916"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/homuty/",
+      "name": "Строительные хомуты",
+      "parentId": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+      "name": "Комплектующие к строительным лесам",
+      "parentId": "250",
+      "productIds": [
+        "prom-2749",
+        "prom-2743",
+        "prom-2733"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/shchity-i-balki-nastila/",
+      "name": "Настил для строительных лесов",
+      "parentId": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/ramy-stroitelnykh-lesov/",
+      "name": "Рамы строительных лесов ЛРСП",
+      "parentId": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+      "productIds": [
+        "prom-2733"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/svyazi-krepleniya-opory/",
+      "name": "Связи, крепления, опоры строительных лесов",
+      "parentId": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+      "productIds": [
+        "prom-2749",
+        "prom-2743"
+      ]
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/sektsii-i-komplekty/",
+      "name": "Секции и комплекты рамных лесов ЛРСП",
+      "parentId": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/mobilnye-stroitelnye-lesa/",
+      "name": "Мобильные строительные леса",
+      "parentId": "250",
+      "productIds": []
+    },
+    {
+      "id": "231",
+      "name": "Металл и металлообработка",
+      "parentId": null,
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/vannochkadlyasvarkiarmatury/",
+      "name": "Ванночки для сварки арматуры",
+      "parentId": "231",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/zakladnyeizmetalla/",
+      "name": "Закладные из металла",
+      "parentId": "231",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/metallizdeliya/",
+      "name": "Металлические изделия",
+      "parentId": "231",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/muftydlyastykovkiarmatury/",
+      "name": "Муфты для стыковки арматуры",
+      "parentId": "231",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/stankidlyagibkimetalla/",
+      "name": "Станки для гибки металла",
+      "parentId": "231",
+      "productIds": []
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/stankidlyarezkimetalla/",
+      "name": "Станки для резки металла",
+      "parentId": "231",
+      "productIds": []
+    }
+  ],
+  "products": [
+    {
+      "id": "prom-2414",
+      "name": "Вышка-тура ВСПТ 0,7×1,6, высота 2,8 метра",
+      "sku": "ВПТ0728"
+    },
+    {
+      "id": "prom-1042",
+      "name": "Алюминиевая вышка-тура ПРОФИ 2×7, высота 3 метра",
+      "sku": "ВТПА273"
+    },
+    {
+      "id": "prom-1046",
+      "name": "Алюминиевая вышка-тура ПРОФИ 2×15, высота 7 метров",
+      "sku": "ВТПА2157"
+    },
+    {
+      "id": "prom-908",
+      "name": "Стремянка стальная с широкими ступенями Alumet MCH 202 Home, 2 ступени",
+      "sku": "MCH202"
+    },
+    {
+      "id": "prom-592",
+      "name": "Стремянка стальная с алюминиевыми ступенями Alumet M 8404 Classic, 4 ступени",
+      "sku": "M8404"
+    },
+    {
+      "id": "prom-1774",
+      "name": "Стремянка алюминиевая двухсторонняя анодированная Alumet APD 9206 Pro Premium, 6 ступеней",
+      "sku": "APD9206"
+    },
+    {
+      "id": "prom-23916",
+      "name": "Настил перфорированный оцинкованный для строительных лесов 0,3х3,0 м",
+      "sku": "НОЦ0330М"
+    },
+    {
+      "id": "prom-2749",
+      "name": "Горизонтальная связь рамных лесов 3 м",
+      "sku": "ГОР3М"
+    },
+    {
+      "id": "prom-2743",
+      "name": "Винтовая опорная пята 0,35 м универсальная",
+      "sku": "ВОУ350"
+    },
+    {
+      "id": "prom-2733",
+      "name": "Рама проходная ЛРСП 30",
+      "sku": "РП30"
+    },
+    {
+      "id": "prom-2402",
+      "name": "Скоростной электрический станок для гибки арматуры TeaM GF20S",
+      "sku": "GF-20S"
+    },
+    {
+      "id": "prom-2335",
+      "name": "Мобильный электрогидравлический станок для резки арматуры TeaM RC-16",
+      "sku": "RC-16"
+    },
+    {
+      "id": "prom-2377",
+      "name": "Ручной лом-гвоздодёр 150 см",
+      "sku": "ЛГ150"
+    },
+    {
+      "id": "prom-2272",
+      "name": "Ручной станок для резки брусчатки (гильотина) TeaM BC25",
+      "sku": "BC25"
+    },
+    {
+      "id": "prom-2388",
+      "name": "Глубинный вибратор для бетона ВЭ-45-800",
+      "sku": "ВЭ45800"
+    },
+    {
+      "id": "prom-2349",
+      "name": "Глубинный вибратор для бетона c аккумулятором LV-3515",
+      "sku": "LV3515"
+    },
+    {
+      "id": "prom-2266",
+      "name": "Затирочная машина BPM 120",
+      "sku": "ЗМ120"
+    },
+    {
+      "id": "prom-1649",
+      "name": "Бетономешалка СБР (Лебедянь) СБР-260/380В",
+      "sku": "СБР260/380"
+    },
+    {
+      "id": "prom-969",
+      "name": "Бадья для бетона БН 1,0 м3 c лотком",
+      "sku": "БН1.0"
+    },
+    {
+      "id": "prom-1343",
+      "name": "Тара антиударная для раствора TeaM 80, прямоугольная",
+      "sku": "ТРПП80"
+    },
+    {
+      "id": "prom-2033",
+      "name": "Анкер торцевой для опалубки оцинкованный удлиненный",
+      "sku": "АТПО400"
+    },
+    {
+      "id": "prom-2017",
+      "name": "Анкер для опалубки",
+      "sku": "Ш350"
+    },
+    {
+      "id": "prom-372",
+      "name": "Плёнка армированная Промышленник 140 г/м² 2×25 м 50 м²",
+      "sku": "АП140225"
+    },
+    {
+      "id": "prom-2491",
+      "name": "Плёнка армированная Промышленник 200 г/м² 6×25 м 150 м²",
+      "sku": "АП200625"
+    },
+    {
+      "id": "prom-2200",
+      "name": "Тент укрывной тарпаулин 180 г/м² 3×4 м с люверсами",
+      "sku": "ТУ18034"
+    },
+    {
+      "id": "prom-594",
+      "name": "Стремянка стальная с алюминиевыми ступенями Alumet M 8406 Classic, 6 ступеней",
+      "sku": "M8406"
+    },
+    {
+      "id": "prom-596",
+      "name": "Стремянка стальная с алюминиевыми ступенями Alumet M 8408 Classic, 8 ступеней",
+      "sku": "M8408"
+    },
+    {
+      "id": "prom-597",
+      "name": "Стремянка стальная с алюминиевыми ступенями Alumet M 8409 Classic, 9 ступеней",
+      "sku": "M8409"
+    }
+  ]
+}

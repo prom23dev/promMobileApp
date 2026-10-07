@@ -1,0 +1,56 @@
+{
+  "at": "2026-09-11T18:52:19.236968+00:00",
+  "entry": [
+    {
+      "path": "_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js",
+      "sha256": "27a9c685453283780f6d80f010ea732a4f0fad6a8afb842358d3c0b9485bf859",
+      "bytes": 5834442,
+      "gzipBytes": 853335
+    }
+  ],
+  "assets": {
+    "blog": {
+      "count": 24,
+      "bytes": 17581285,
+      "over1MiB": [
+        {
+          "path": "mobile/assets/blog/articles-vyshka-tura-ili-stroitelnye-lesa-5-shagov-k-pravilnomu-vyboru-dlya-fasada-i-remonta.png",
+          "bytes": 3508624
+        },
+        {
+          "path": "mobile/assets/blog/articles-setka-zatenyayushchaya-promyshlennik-kak-vybrat-dlya-stroyki-dachi-maskirovki-i-dekora.png",
+          "bytes": 3340371
+        },
+        {
+          "path": "mobile/assets/blog/articles-khomutovye-stroitelnye-lesa-promyshlennik-poshagovaya-sborka-vidy-khomutov-i-sovety-po-montazhu.jpg",
+          "bytes": 3253591
+        }
+      ]
+    },
+    "product-gallery": {
+      "count": 136,
+      "bytes": 38723737,
+      "over1MiB": []
+    },
+    "catalog": {
+      "count": 28,
+      "bytes": 4579018,
+      "over1MiB": []
+    },
+    "brand": {
+      "count": 11,
+      "bytes": 3335780,
+      "over1MiB": [
+        {
+          "path": "mobile/assets/brand/automated-tube-concept.png",
+          "bytes": 2016010
+        }
+      ]
+    },
+    "company": {
+      "count": 14,
+      "bytes": 1111338,
+      "over1MiB": []
+    }
+  }
+}

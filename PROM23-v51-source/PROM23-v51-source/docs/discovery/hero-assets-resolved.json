@@ -1,0 +1,255 @@
+[
+  {
+    "url": "https://prom.myfast.space/",
+    "parts": [
+      {
+        "tag": "IMG",
+        "cl": "absolut-wrap bg-img-cover",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/7d7/beky681wz4s5tc1lj64cbu4r9bay9omw.webp",
+        "current": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/7d7/beky681wz4s5tc1lj64cbu4r9bay9omw.webp",
+        "srcset": null,
+        "sizes": null,
+        "bg": "none",
+        "data": null,
+        "rect": {
+          "top": 598.1875,
+          "w": 454,
+          "h": 753.625
+        },
+        "nw": 908,
+        "nh": 1512
+      },
+      {
+        "tag": "IMG",
+        "cl": "absolut-wrap bg-img-cover",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/logo_card.webp",
+        "current": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/logo_card.webp",
+        "srcset": null,
+        "sizes": null,
+        "bg": "none",
+        "data": null,
+        "rect": {
+          "top": 697.666015625,
+          "w": 334.1439208984375,
+          "h": 554.66796875
+        },
+        "nw": 1536,
+        "nh": 1024
+      },
+      {
+        "tag": "IMG",
+        "cl": "absolut-wrap bg-img-cover",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/logo_card.webp",
+        "current": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/logo_card.webp",
+        "srcset": null,
+        "sizes": null,
+        "bg": "none",
+        "data": null,
+        "rect": {
+          "top": 697.666015625,
+          "w": 334.14404296875,
+          "h": 554.66796875
+        },
+        "nw": 1536,
+        "nh": 1024
+      },
+      {
+        "tag": "IMG",
+        "cl": "main-top-banner__slide__bg absolut-wrap bg-img-cover",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/dae/wwknjny34y2h5mro9cla9qohhzt7qcpl/kgccaicu89dzdlpr37l4rzjob2d7m3ye.webp",
+        "current": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/dae/wwknjny34y2h5mro9cla9qohhzt7qcpl/kgccaicu89dzdlpr37l4rzjob2d7m3ye.webp",
+        "srcset": "/upload/resize_cache/iblock/dae/wwknjny34y2h5mro9cla9qohhzt7qcpl/480_4000_1/kgccaicu89dzdlpr37l4rzjob2d7m3ye.jpg 480w, /upload/resize_cache/iblock/dae/wwknjny34y2h5mro9cla9qohhzt7qcpl/640_4000_1/kgccaicu89dzdlpr37l4rzjob2d7m3ye.jpg 640w, /upload/resize_cache/iblock/dae/wwknjny34y2h5mro9cla9qohhzt7qcpl/828_4000_1/kgccaicu89dzdlpr37l4rzjob2d7m3ye.jpg 828w, /upload/resize_cache/iblock/dae/wwknjny34y2h5mro9cla9qohhzt7qcpl/1080_4000_1/kgccaicu89dzdlpr37l4rzjob2d7m3ye.jpg 1080w, /upload/resize_cache/iblock/dae/wwknjny34y2h5mro9cla9qohhzt7qcpl/1366_4000_1/kgccaicu89dzdlpr37l4rzjob2d7m3ye.jpg 1366w, /upload/dev2fun.imagecompress/webp/iblock/dae/wwknjny34y2h5mro9cla9qohhzt7qcpl/kgccaicu89dzdlpr37l4rzjob2d7m3ye.webp 1920w",
+        "sizes": "100vw",
+        "bg": "none",
+        "data": null,
+        "rect": {
+          "top": 164,
+          "w": 1187,
+          "h": 500
+        },
+        "nw": 1050,
+        "nh": 450
+      },
+      {
+        "tag": "IMG",
+        "cl": "main-top-banner__slide__bg absolut-wrap bg-img-cover",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/bcc/z4gs8bwe6bxu0cm3ezw3lthrtl0hfhdy.webp",
+        "current": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/bcc/z4gs8bwe6bxu0cm3ezw3lthrtl0hfhdy.webp",
+        "srcset": "/upload/resize_cache/iblock/bcc/480_4000_1/z4gs8bwe6bxu0cm3ezw3lthrtl0hfhdy.jpg 480w, /upload/resize_cache/iblock/bcc/640_4000_1/z4gs8bwe6bxu0cm3ezw3lthrtl0hfhdy.jpg 640w, /upload/resize_cache/iblock/bcc/828_4000_1/z4gs8bwe6bxu0cm3ezw3lthrtl0hfhdy.jpg 828w, /upload/resize_cache/iblock/bcc/1080_4000_1/z4gs8bwe6bxu0cm3ezw3lthrtl0hfhdy.jpg 1080w, /upload/resize_cache/iblock/bcc/1366_4000_1/z4gs8bwe6bxu0cm3ezw3lthrtl0hfhdy.jpg 1366w, /upload/dev2fun.imagecompress/webp/iblock/bcc/z4gs8bwe6bxu0cm3ezw3lthrtl0hfhdy.webp 1920w",
+        "sizes": "100vw",
+        "bg": "none",
+        "data": null,
+        "rect": {
+          "top": 164,
+          "w": 1187,
+          "h": 500
+        },
+        "nw": 1050,
+        "nh": 450
+      },
+      {
+        "tag": "IMG",
+        "cl": "main-top-banner__slide__bg absolut-wrap bg-img-cover",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/e8b/kk30v4p0q8xospx6m4b3nn1t5x0w2ans.webp",
+        "current": null,
+        "srcset": "/upload/resize_cache/iblock/e8b/480_4000_1/kk30v4p0q8xospx6m4b3nn1t5x0w2ans.jpg 480w, /upload/resize_cache/iblock/e8b/640_4000_1/kk30v4p0q8xospx6m4b3nn1t5x0w2ans.jpg 640w, /upload/resize_cache/iblock/e8b/828_4000_1/kk30v4p0q8xospx6m4b3nn1t5x0w2ans.jpg 828w, /upload/resize_cache/iblock/e8b/1080_4000_1/kk30v4p0q8xospx6m4b3nn1t5x0w2ans.jpg 1080w, /upload/resize_cache/iblock/e8b/1366_4000_1/kk30v4p0q8xospx6m4b3nn1t5x0w2ans.jpg 1366w, /upload/dev2fun.imagecompress/webp/iblock/e8b/kk30v4p0q8xospx6m4b3nn1t5x0w2ans.webp 1920w",
+        "sizes": "100vw",
+        "bg": "none",
+        "data": null,
+        "rect": {
+          "top": 164,
+          "w": 1187,
+          "h": 500
+        },
+        "nw": null,
+        "nh": null
+      },
+      {
+        "tag": "IMG",
+        "cl": "main-top-banner__slide__bg absolut-wrap bg-img-cover",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/cba/02mdwjvu425b3i64i9z4kgj3dtv1poof.webp",
+        "current": null,
+        "srcset": "/upload/resize_cache/iblock/cba/480_4000_1/02mdwjvu425b3i64i9z4kgj3dtv1poof.jpg 480w, /upload/resize_cache/iblock/cba/640_4000_1/02mdwjvu425b3i64i9z4kgj3dtv1poof.jpg 640w, /upload/resize_cache/iblock/cba/828_4000_1/02mdwjvu425b3i64i9z4kgj3dtv1poof.jpg 828w, /upload/resize_cache/iblock/cba/1080_4000_1/02mdwjvu425b3i64i9z4kgj3dtv1poof.jpg 1080w, /upload/resize_cache/iblock/cba/1366_4000_1/02mdwjvu425b3i64i9z4kgj3dtv1poof.jpg 1366w, /upload/dev2fun.imagecompress/webp/iblock/cba/02mdwjvu425b3i64i9z4kgj3dtv1poof.webp 1920w",
+        "sizes": "100vw",
+        "bg": "none",
+        "data": null,
+        "rect": {
+          "top": 164,
+          "w": 1187,
+          "h": 500
+        },
+        "nw": null,
+        "nh": null
+      },
+      {
+        "tag": "DIV",
+        "cl": "main-catalog-menu__group__img _tablet-desktop absolut-wrap js--lazy entered loaded",
+        "src": null,
+        "current": null,
+        "srcset": null,
+        "sizes": null,
+        "bg": "url(\"https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/2de/liafv5ii39nl3fqbd2aca5n4foigznbd.webp\")",
+        "data": "/upload/dev2fun.imagecompress/webp/iblock/2de/liafv5ii39nl3fqbd2aca5n4foigznbd.webp",
+        "rect": {
+          "top": 744,
+          "w": 406,
+          "h": 548
+        },
+        "nw": null,
+        "nh": null
+      },
+      {
+        "tag": "DIV",
+        "cl": "main-catalog-menu__group__hover absolut-wrap bg-cover js--lazy entered loaded",
+        "src": null,
+        "current": null,
+        "srcset": null,
+        "sizes": null,
+        "bg": "url(\"https://prom.myfast.space/upload/dev2fun.imagecompress/webp/frontend/img/h/main/main-catalog-menu-group-hover.webp\")",
+        "data": "/upload/dev2fun.imagecompress/webp/frontend/img/h/main/main-catalog-menu-group-hover.webp",
+        "rect": {
+          "top": 744,
+          "w": 406,
+          "h": 548
+        },
+        "nw": null,
+        "nh": null
+      },
+      {
+        "tag": "DIV",
+        "cl": "main-catalog-menu__group__hover absolut-wrap bg-cover js--lazy entered loaded",
+        "src": null,
+        "current": null,
+        "srcset": null,
+        "sizes": null,
+        "bg": "url(\"https://prom.myfast.space/upload/dev2fun.imagecompress/webp/frontend/img/h/main/main-catalog-menu-group-hover.webp\")",
+        "data": "/upload/dev2fun.imagecompress/webp/frontend/img/h/main/main-catalog-menu-group-hover.webp",
+        "rect": {
+          "top": 744,
+          "w": 477,
+          "h": 264
+        },
+        "nw": null,
+        "nh": null
+      },
+      {
+        "tag": "DIV",
+        "cl": "main-catalog-menu__group__hover absolut-wrap bg-cover js--lazy entered loaded",
+        "src": null,
+        "current": null,
+        "srcset": null,
+        "sizes": null,
+        "bg": "url(\"https://prom.myfast.space/upload/dev2fun.imagecompress/webp/frontend/img/h/main/main-catalog-menu-group-hover.webp\")",
+        "data": "/upload/dev2fun.imagecompress/webp/frontend/img/h/main/main-catalog-menu-group-hover.webp",
+        "rect": {
+          "top": 744,
+          "w": 477,
+          "h": 264
+        },
+        "nw": null,
+        "nh": null
+      }
+    ]
+  },
+  {
+    "url": "https://prom.myfast.space/about/",
+    "parts": [
+      {
+        "tag": "DIV",
+        "cl": "banner__img js--lazy bg-cover entered loaded",
+        "src": null,
+        "current": null,
+        "srcset": null,
+        "sizes": null,
+        "bg": "url(\"https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/bcc/z4gs8bwe6bxu0cm3ezw3lthrtl0hfhdy.webp\")",
+        "data": "/upload/dev2fun.imagecompress/webp/iblock/bcc/z4gs8bwe6bxu0cm3ezw3lthrtl0hfhdy.webp",
+        "rect": {
+          "top": 180,
+          "w": 1400,
+          "h": 600
+        },
+        "nw": null,
+        "nh": null
+      },
+      {
+        "tag": "DIV",
+        "cl": "main-adv__bg absolut-wrap js--lazy bg-100 _tablet-desktop entered loaded",
+        "src": null,
+        "current": null,
+        "srcset": null,
+        "sizes": null,
+        "bg": "url(\"https://prom.myfast.space/upload/dev2fun.imagecompress/webp/frontend/img/main-adv-bg.webp\")",
+        "data": "/upload/dev2fun.imagecompress/webp/frontend/img/main-adv-bg.webp",
+        "rect": {
+          "top": 860,
+          "w": 1400,
+          "h": 600
+        },
+        "nw": null,
+        "nh": null
+      }
+    ]
+  },
+  {
+    "url": "https://prom.myfast.space/brands/",
+    "parts": [
+      {
+        "tag": "DIV",
+        "cl": "banner__img js--lazy bg-cover entered loaded",
+        "src": null,
+        "current": null,
+        "srcset": null,
+        "sizes": null,
+        "bg": "url(\"https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/535/xqo3v5or5ufb5dur1476r7783bpweel0.webp\")",
+        "data": "/upload/dev2fun.imagecompress/webp/iblock/535/xqo3v5or5ufb5dur1476r7783bpweel0.webp",
+        "rect": {
+          "top": 180,
+          "w": 1400,
+          "h": 600
+        },
+        "nw": null,
+        "nh": null
+      }
+    ]
+  }
+]

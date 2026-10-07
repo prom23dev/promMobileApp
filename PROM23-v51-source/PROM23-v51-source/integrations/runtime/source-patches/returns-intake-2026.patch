@@ -1,0 +1,166 @@
+--- a/local/components/prom.personal/personal_returns_orders_list/templates/.default/template.php
++++ b/local/components/prom.personal/personal_returns_orders_list/templates/.default/template.php
+@@ -23,26 +23,10 @@
+         <?foreach ($arResult['ITEMS'] as $arOrder):?>
+             <?php
+ 
++            // Intake of a claim is separate from deciding its legal merits.
++            // No universal day cutoff; an earlier claim does not block another item.
+             $isDisabled = false;
+             $returnUntilFormatted = '';
+-
+-            // Проверяем, прошло ли больше 14 дней с момента даты завершения заказа
+-            if($arOrder['DATE_ORDER_RECEIPT']) {
+-                $dateOrderReceipt = $arOrder['DATE_ORDER_RECEIPT'];
+-                $orderDate = new DateTime($dateOrderReceipt);
+-                $currentDate = new DateTime();
+-                $interval = $currentDate->diff($orderDate);
+-                $isDisabled = ($interval->days > 14 || $arOrder['ORDER_HAS_RETURN_TICKET']) ? true : false;
+-
+-                // Рассчитываем дату, до которой можно вернуть товар (14 дней от даты завершения заказа)
+-                $returnUntilDate = clone $orderDate;
+-                $returnUntilDate->modify('+14 days');
+-                $returnUntilFormatted = formatDateToRussian($returnUntilDate->format('d F Y'));
+-
+-            } else {
+-
+-                $isDisabled = true;
+-            }
+             ?>
+ 
+             <div class="lk-page__returns__product__orders<?if($isDisabled):?> _disabled<?endif;?>">
+@@ -61,21 +45,8 @@
+                                 №<?=$arOrder['ORDER_ID']?>
+                             </div>
+                             <div class="lk-text">
+-                                <?if($isDisabled):?>
+-                                    <?if($arOrder['ORDER_HAS_RETURN_TICKET']):?>
+-                                        Вы уже создавали заявку на возврат этого заказа или товаров
+-                                    <?elseif($returnUntilFormatted):?>
+-                                        Можно было вернуть до <?= $returnUntilFormatted ?>
+-                                    <?else:?>
+-                                        У заказа не проставлена дата получения. <br/>
+-                                        Для возврата, пожалуйста, свяжитесь с нами.
+-                                    <?endif;?>
+-                                <?elseif($returnUntilFormatted):?>
+-                                    Можно вернуть до <?= $returnUntilFormatted ?>
+-                                <?else:?>
+-                                    У заказа не проставлена дата получения. <br/>
+-                                    Для возврата, пожалуйста, свяжитесь с нами.
+-                                <?endif;?>
++                                Выберите товары и опишите причину обращения.
++                                Условия зависят от покупки и заявленного требования.
+                             </div>
+                         </div>
+                     </div>
+--- a/local/components/prom.organization/organization_returns_orders_list/templates/.default/template.php
++++ b/local/components/prom.organization/organization_returns_orders_list/templates/.default/template.php
+@@ -23,26 +23,10 @@
+         <?foreach ($arResult['ITEMS'] as $arOrder):?>
+             <?php
+ 
++            // Intake of a claim is separate from deciding its legal merits.
++            // No universal day cutoff; an earlier claim does not block another item.
+             $isDisabled = false;
+             $returnUntilFormatted = '';
+-
+-            // Проверяем, прошло ли больше 14 дней с момента даты завершения заказа
+-            if($arOrder['DATE_ORDER_RECEIPT']) {
+-                $dateOrderReceipt = $arOrder['DATE_ORDER_RECEIPT'];
+-                $orderDate = new DateTime($dateOrderReceipt);
+-                $currentDate = new DateTime();
+-                $interval = $currentDate->diff($orderDate);
+-                $isDisabled = ($interval->days > 14 || $arOrder['ORDER_HAS_RETURN_TICKET']) ? true : false;
+-
+-                // Рассчитываем дату, до которой можно вернуть товар (14 дней от даты завершения заказа)
+-                $returnUntilDate = clone $orderDate;
+-                $returnUntilDate->modify('+14 days');
+-                $returnUntilFormatted = formatDateToRussian($returnUntilDate->format('d F Y'));
+-
+-            } else {
+-
+-                $isDisabled = true;
+-            }
+             ?>
+             <div class="lk-page__returns__product__orders<?if($isDisabled):?> _disabled<?endif;?>">
+                 <input type="hidden" name="order_id" value="<?=$arOrder['ORDER_ID']?>">
+@@ -60,21 +44,8 @@
+                                 №<?=$arOrder['ORDER_ID']?>
+                             </div>
+                             <div class="lk-text">
+-                                <?if($isDisabled):?>
+-                                    <?if($arOrder['ORDER_HAS_RETURN_TICKET']):?>
+-                                        Вы уже создавали заявку на возврат этого заказа или товаров
+-                                    <?elseif($returnUntilFormatted):?>
+-                                        Можно было вернуть до <?= $returnUntilFormatted ?>
+-                                    <?else:?>
+-                                        У заказа не проставлена дата получения. <br/>
+-                                        Для возврата, пожалуйста, свяжитесь с нами.
+-                                    <?endif;?>
+-                                <?elseif($returnUntilFormatted):?>
+-                                    Можно вернуть до <?= $returnUntilFormatted ?>
+-                                <?else:?>
+-                                    У заказа не проставлена дата получения. <br/>
+-                                    Для возврата, пожалуйста, свяжитесь с нами.
+-                                <?endif;?>
++                                Выберите товары и опишите причину обращения.
++                                Условия зависят от покупки и заявленного требования.
+                             </div>
+                         </div>
+                     </div>
+--- a/local/ajax/lk/returns-products/action-returns-product.php
++++ b/local/ajax/lk/returns-products/action-returns-product.php
+@@ -70,29 +70,8 @@
+         }
+     }
+ 
+-    $res = CIBlockElement::GetList(
+-        [
+-            "SORT" => "ASC",
+-            "ID" => "DESC"
+-        ],
+-        [
+-            "IBLOCK_ID" => IBLOCK_ID_RETURNS,
+-            "ACTIVE" => "Y",
+-            "PROPERTY_ORDER_ID" => $orderID,
+-            "PROPERTY_ORGANIZATION_ID" => Organization::getActiveOrganizationID()
+-        ],
+-        false,
+-        [],
+-        ["ID", "IBLOCK_ID", "NAME", "DATE_CREATE", "PROPERTY_ORDER_ID"]
+-    );
+-
+-    if ($arFields = $res->Fetch()) {
+-        $result['STATUS'] = 'ERROR';
+-        $result['ERROR_TITLE'] = 'Ошибка создания заявки';
+-        $result['ERROR_TEXT'] = 'Заявка на возврат этого заказа уже существует';
+-        echo json_encode($result);
+-        die();
+-    }
++    // Do not reject a new claim merely because this order has a previous claim.
++    // Authentication, order ownership, product ownership and completed status stay above.
+ 
+ } else {
+ 
+--- a/local/components/prom.personal/personal_returns_applications_detail/templates/.default/template.php
++++ b/local/components/prom.personal/personal_returns_applications_detail/templates/.default/template.php
+@@ -114,7 +114,7 @@
+                                     <?endforeach;?>
+                                 </div>
+                                 <div class="lk-text">
+-                                    <?=$arItems[$key]['COMMENT']?>
++                                    <?=htmlspecialchars((string)$arItems[$key]['COMMENT'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')?>
+                                 </div>
+                                 <?if($arItems[$key]['MEDIA']):?>
+                                     <div class="lk-page__returns__applications-detail__product-photos">
+--- a/local/components/prom.organization/organization_returns_applications_detail/templates/.default/template.php
++++ b/local/components/prom.organization/organization_returns_applications_detail/templates/.default/template.php
+@@ -114,7 +114,7 @@
+                                     <?endforeach;?>
+                                 </div>
+                                 <div class="lk-text">
+-                                    <?=$arItems[$key]['COMMENT']?>
++                                    <?=htmlspecialchars((string)$arItems[$key]['COMMENT'], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8')?>
+                                 </div>
+                                 <?if($arItems[$key]['MEDIA']):?>
+                                     <div class="lk-page__returns__applications-detail__product-photos">

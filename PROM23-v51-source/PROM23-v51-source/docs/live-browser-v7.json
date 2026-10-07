@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "base": "http://159.253.19.172:18087",
+  "entry": "9bd376941d209cef85b2f91b43359fc7",
+  "screens": [
+    "home",
+    "contacts"
+  ],
+  "pageErrors": [],
+  "blockedExternalWrites": [],
+  "limitations": "Chromium web preview only; no telephone call or store writes executed."
+}

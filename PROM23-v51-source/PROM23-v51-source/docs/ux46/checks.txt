@@ -1,0 +1,33 @@
+
+> prom23-mobile-preview@0.9.0 typecheck
+> tsc --noEmit
+
+✔ provider URLs normalize without external navigation or untrusted parameters (0.23425ms)
+ℹ tests 108
+ℹ suites 4
+ℹ pass 108
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 491.081708
+✔ timeout and caller abort stop transport without mutation retries (19.130875ms)
+ℹ tests 190
+ℹ suites 0
+ℹ pass 190
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3379.758208
+› Files (3):
+favicon.ico (15KB)
+index.html (1.2KB)
+metadata.json (30KB)
+
+Exported: dist
+Brands: generated 14 canonical detail pages and directory.
+Business account deep link and short-screen form PASS
+
+Public navigation checks: 1009; invoice checks: 41; JS errors:0.
+Business account deep link and short-screen form PASS

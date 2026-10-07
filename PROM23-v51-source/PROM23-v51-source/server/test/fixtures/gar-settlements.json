@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "provider": "fns-gar",
+  "providerVersion": "20260911",
+  "sourceUrl": "https://fias-file.nalog.ru/downloads/2026.09.11/gar_xml.zip",
+  "fixtureNote": "Verified public extract for offline tests; not the complete runtime registry.",
+  "items": [
+    {
+      "id": "915703c4-731d-4ebe-b893-561d99982172",
+      "fiasId": "915703c4-731d-4ebe-b893-561d99982172",
+      "garId": "320266",
+      "name": "Динская",
+      "type": "Станица",
+      "typeShort": "ст-ца",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": {
+        "id": "26aa1290-5f68-4fbc-868e-c14af7ee80e3",
+        "name": "Динской",
+        "typeShort": "р-н"
+      },
+      "fullName": "край Краснодарский, р-н Динской, ст-ца Динская",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "7dfa745e-aa19-4688-b121-b655c11e482f",
+      "fiasId": "7dfa745e-aa19-4688-b121-b655c11e482f",
+      "garId": "293930",
+      "name": "Краснодар",
+      "type": "Город",
+      "typeShort": "г.",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": null,
+      "fullName": "край Краснодарский, г. Краснодар",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "79da737a-603b-4c19-9b54-9114c96fb912",
+      "fiasId": "79da737a-603b-4c19-9b54-9114c96fb912",
+      "garId": "294728",
+      "name": "Сочи",
+      "type": "Город",
+      "typeShort": "г.",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": null,
+      "fullName": "край Краснодарский, г. Сочи",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+      "fiasId": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+      "garId": "1405113",
+      "name": "Москва",
+      "type": "Город",
+      "typeShort": "г.",
+      "region": {
+        "id": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+        "name": "Москва",
+        "typeShort": "г."
+      },
+      "district": null,
+      "fullName": "г. Москва",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "c2deb16a-0330-4f05-821f-1d09c93331e6",
+      "fiasId": "c2deb16a-0330-4f05-821f-1d09c93331e6",
+      "garId": "1414662",
+      "name": "Санкт-Петербург",
+      "type": "Город",
+      "typeShort": "г.",
+      "region": {
+        "id": "c2deb16a-0330-4f05-821f-1d09c93331e6",
+        "name": "Санкт-Петербург",
+        "typeShort": "г."
+      },
+      "district": null,
+      "fullName": "г. Санкт-Петербург",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "9edd8d25-b98b-4589-a8f5-0bcb0847bd44",
+      "fiasId": "9edd8d25-b98b-4589-a8f5-0bcb0847bd44",
+      "garId": "293509",
+      "name": "Молдовка",
+      "type": "Село",
+      "typeShort": "с.",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": null,
+      "fullName": "край Краснодарский, г. Сочи, с. Молдовка",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "4fcf0cc9-cd01-409a-aab9-7889849f5c3f",
+      "fiasId": "4fcf0cc9-cd01-409a-aab9-7889849f5c3f",
+      "garId": "293833",
+      "name": "Верхнебаканский",
+      "type": "Поселок",
+      "typeShort": "п.",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": null,
+      "fullName": "край Краснодарский, г. Новороссийск, п. Верхнебаканский",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "9d1c577a-18e9-4f49-a865-228e9b0e604c",
+      "fiasId": "9d1c577a-18e9-4f49-a865-228e9b0e604c",
+      "garId": "329638",
+      "name": "Ленина",
+      "type": "Хутор",
+      "typeShort": "х.",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": {
+        "id": "a7c89393-deee-42a3-8d5a-cc614ca8200d",
+        "name": "Ленинградский",
+        "typeShort": "р-н"
+      },
+      "fullName": "край Краснодарский, р-н Ленинградский, х. Ленина",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "e4db6d5b-5778-4583-8a37-e32a7c9690d3",
+      "fiasId": "e4db6d5b-5778-4583-8a37-e32a7c9690d3",
+      "garId": "395071",
+      "name": "Ленина",
+      "type": "Хутор",
+      "typeShort": "х.",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": {
+        "id": "cd446c45-fc30-4401-b37f-8511282860b8",
+        "name": "Отрадненский",
+        "typeShort": "р-н"
+      },
+      "fullName": "край Краснодарский, р-н Отрадненский, х. Ленина",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "9e60baf7-fac6-4135-8a98-c5412b6bd709",
+      "fiasId": "9e60baf7-fac6-4135-8a98-c5412b6bd709",
+      "garId": "295795",
+      "name": "Ленина",
+      "type": "Хутор",
+      "typeShort": "х.",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": null,
+      "fullName": "край Краснодарский, г. Краснодар, х. Ленина",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "e72125aa-e7de-4b28-8a60-1767f5e55b7f",
+      "fiasId": "e72125aa-e7de-4b28-8a60-1767f5e55b7f",
+      "garId": "340602",
+      "name": "Ленина",
+      "type": "Хутор",
+      "typeShort": "х.",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": {
+        "id": "2b521963-2a08-4198-89a4-23981e86b3fb",
+        "name": "Тимашевский",
+        "typeShort": "р-н"
+      },
+      "fullName": "край Краснодарский, р-н Тимашевский, х. Ленина",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "ec44c0ee-bf24-41c8-9e1c-76136ab05cbf",
+      "fiasId": "ec44c0ee-bf24-41c8-9e1c-76136ab05cbf",
+      "garId": "1405230",
+      "name": "Зеленоград",
+      "type": "Город",
+      "typeShort": "г.",
+      "region": {
+        "id": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+        "name": "Москва",
+        "typeShort": "г."
+      },
+      "district": null,
+      "fullName": "г. Москва, г. Зеленоград",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "fc9c55d0-c66e-455e-8034-b0944b025c38",
+      "fiasId": "fc9c55d0-c66e-455e-8034-b0944b025c38",
+      "garId": "294834",
+      "name": "Армавир",
+      "type": "Город",
+      "typeShort": "г.",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": null,
+      "fullName": "край Краснодарский, г. Армавир",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "eeb7a0a7-3bbf-4f00-8a03-a7eabc257bed",
+      "fiasId": "eeb7a0a7-3bbf-4f00-8a03-a7eabc257bed",
+      "garId": "314003",
+      "name": "Анапа",
+      "type": "Город",
+      "typeShort": "г.",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": {
+        "id": "4504c6b3-f501-4f6b-949f-45704aa3ecdd",
+        "name": "Анапский",
+        "typeShort": "р-н"
+      },
+      "fullName": "край Краснодарский, р-н Анапский, г. Анапа",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "16ac039a-5257-4715-a8c5-d6bd9e617b53",
+      "fiasId": "16ac039a-5257-4715-a8c5-d6bd9e617b53",
+      "garId": "294855",
+      "name": "Новороссийск",
+      "type": "Город",
+      "typeShort": "г.",
+      "region": {
+        "id": "d00e1013-16bd-4c09-b3d5-3cb09fc54bd8",
+        "name": "Краснодарский",
+        "typeShort": "край"
+      },
+      "district": null,
+      "fullName": "край Краснодарский, г. Новороссийск",
+      "providerVersion": "20260911"
+    },
+    {
+      "id": "c3363d58-abb1-4844-b9ee-29647423cb88",
+      "fiasId": "c3363d58-abb1-4844-b9ee-29647423cb88",
+      "garId": "867311",
+      "name": "Новобрёхово",
+      "type": "Хутор",
+      "typeShort": "х.",
+      "region": {
+        "id": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+        "name": "Москва",
+        "typeShort": "г."
+      },
+      "district": {
+        "id": "3d0d421e-3a94-4524-ad2d-6a6a10a1fab4",
+        "name": "Внуково",
+        "typeShort": "р-н"
+      },
+      "fullName": "г. Москва, р-н Внуково, х. Новобрёхово",
+      "providerVersion": "20260911"
+    }
+  ]
+}

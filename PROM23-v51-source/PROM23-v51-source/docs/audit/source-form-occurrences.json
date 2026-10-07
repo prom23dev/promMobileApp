@@ -1,0 +1,2265 @@
+[
+  {
+    "path": "site-source/suppliers/index.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "first-name",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "name": "company-name",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "required": true,
+        "type": "email"
+      },
+      {
+        "name": "phone",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "product-category",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "product-desc",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "name": "comment",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "attachment",
+        "required": false,
+        "type": "file"
+      },
+      {
+        "name": "agree_policy",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "agree_consent",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/franchise/index.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "inn",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "name": "company-name",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "required": true,
+        "type": "email"
+      },
+      {
+        "name": "phone",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "first-name",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "name": "has-warehouse",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "warehouse-address",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "warehouse-phone",
+        "required": false,
+        "type": "tel"
+      },
+      {
+        "name": "warehouse-schedule",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "agree_policy",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "agree_consent",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/include/forms/auth-reg/form-reg-step-phone.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "email",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "password",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "password_repeat",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "phone",
+        "required": true,
+        "type": "tel"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/include/forms/auth-reg/form-auth-by-phone.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "phone",
+        "required": false,
+        "type": "tel"
+      },
+      {
+        "name": "code_public",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "code[1]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[2]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[3]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[4]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[5]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[6]",
+        "required": true,
+        "type": "tel"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/include/forms/auth-reg/password-recovery.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "email",
+        "required": true,
+        "type": "email"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/include/forms/auth-reg/form-auth-by-email.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "email",
+        "required": false,
+        "type": "email"
+      },
+      {
+        "name": "password",
+        "required": true,
+        "type": "password"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/include/forms/auth-reg/form-reg.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "email",
+        "required": false,
+        "type": "email"
+      },
+      {
+        "name": "password",
+        "required": false,
+        "type": "password"
+      },
+      {
+        "name": "password_repeat",
+        "required": false,
+        "type": "password"
+      },
+      {
+        "name": "agree_policy_reg",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "agree_consent_reg",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/include/forms/auth-reg/form-reg-step-phone-code.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "email",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "password",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "password_repeat",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "phone",
+        "required": false,
+        "type": "tel"
+      },
+      {
+        "name": "code_public",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "code[1]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[2]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[3]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[4]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[5]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[6]",
+        "required": true,
+        "type": "tel"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom/comments.view/ajax.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "target_id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "entity_type",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "parent_id",
+        "required": false,
+        "type": "hidden"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom/comments.view/templates/.default/template.php",
+    "forms": 2,
+    "fields": [
+      {
+        "name": "target_id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "entity_type",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "comment_text",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "name": "target_id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "entity_type",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "parent_id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "comment_text",
+        "required": true,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom/product.reviews.list/templates/.default/review_item.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "parent-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "review-text",
+        "required": true,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom/product.reviews.list/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "r-sort",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "r-rating",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "r-rating",
+        "required": false,
+        "type": "radio"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom/product.questions.list/templates/.default/question_item.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "parent-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "question-text",
+        "required": false,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/components/prom/product.questions.list/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "q-new",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "q-popular",
+        "required": false,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/components/prom/product.reviews.gallery/templates/.default/review_item.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "parent-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "ENTITY_TYPE",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "review-text",
+        "required": true,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom/product.question/templates/.default/template.php",
+    "forms": 1,
+    "fields": [],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/components/prom/catalog.smart.filter/templates/visual_vertical_search/template.php",
+    "forms": 2,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom/catalog.smart.filter/templates/visual_vertical/template.php",
+    "forms": 2,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom/brands.list/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "popular",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "letter[]",
+        "required": false,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom.organization/organization_reviews/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "parent-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "review-text",
+        "required": true,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom.organization/organization_questions/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "parent-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "question-text",
+        "required": true,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/components/prom.organization/organization_notifications/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "email_order_info",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "email_promotions",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "sms_order_info",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "sms_promotions",
+        "required": false,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom.organization/organization_info_organization_add/templates/.default/template.php",
+    "forms": 2,
+    "fields": [
+      {
+        "name": "inn",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "name": "kpp",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "store_region_id",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "inn-company",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "kpp-company",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "legal-addresss",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "fact-address",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "bik",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "payment-bill",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "bank-name",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "correspondent-bill",
+        "required": false,
+        "type": "text"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom.organization/organization_dashboard_orders_finish/templates/.default/template.php",
+    "forms": 2,
+    "fields": [
+      {
+        "name": "action-name",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "order-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "organization-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "action-name",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "order-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "organization-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "rate",
+        "required": false,
+        "type": "radio"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom.organization/organization_payment_methods/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "card_number",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "card_expire",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "card_code",
+        "required": false,
+        "type": "text"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/arturgolubev/search.title/templates/.default/template.php",
+    "forms": 1,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/arturgolubev/search.title/templates/redesign/template.php",
+    "forms": 1,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/arturgolubev/search.page.new/templates/test/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "where",
+        "required": false,
+        "type": "select/textarea"
+      },
+      {
+        "name": "how",
+        "required": false,
+        "type": "hidden"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/arturgolubev/search.page.new/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "where",
+        "required": false,
+        "type": "select/textarea"
+      },
+      {
+        "name": "how",
+        "required": false,
+        "type": "hidden"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/arturgolubev/search.page.new/templates/catalog/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "how",
+        "required": false,
+        "type": "hidden"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/arturgolubev/search.title.new/templates/.default/template.php",
+    "forms": 1,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/arturgolubev/search.title.new/templates/redesign/template.php",
+    "forms": 1,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/arturgolubev/search.page/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "where",
+        "required": false,
+        "type": "select/textarea"
+      },
+      {
+        "name": "how",
+        "required": false,
+        "type": "hidden"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/arturgolubev/search.page/templates/catalog/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "how",
+        "required": false,
+        "type": "hidden"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom.personal/personal_notifications/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "email_order_info",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "email_promotions",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "sms_order_info",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "sms_promotions",
+        "required": false,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom.personal/personal_questions/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "parent-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "question-text",
+        "required": true,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/components/prom.personal/personal_info_edit_data/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "hash_email",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "hash_phone",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "name",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "last_name",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "city",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "phone",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "required": false,
+        "type": "text"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom.personal/personal_dashboard_orders_finish/templates/.default/template.php",
+    "forms": 2,
+    "fields": [
+      {
+        "name": "action-name",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "order-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "organization-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "action-name",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "order-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "organization-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "rate",
+        "required": false,
+        "type": "radio"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom.personal/personal_reviews/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "parent-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "review-text",
+        "required": true,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom.personal/personal_my_organizations_add/templates/.default/template.php",
+    "forms": 2,
+    "fields": [
+      {
+        "name": "inn",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "name": "kpp",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "name",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "store_region_id",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "inn-company",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "kpp-company",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "legal-addresss",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "fact-address",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "bik",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "payment-bill",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "bank-name",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "correspondent-bill",
+        "required": false,
+        "type": "text"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/components/prom.personal/personal_payment_methods/templates/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "card_number",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "card_expire",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "card_code",
+        "required": false,
+        "type": "text"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/class/PHPExcel-1.8/Examples/Quadratic2.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "A",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "B",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "C",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "submit",
+        "required": false,
+        "type": "submit"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/class/PHPExcel-1.8/Examples/Quadratic.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "A",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "B",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "C",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "submit",
+        "required": false,
+        "type": "submit"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/templates/.default/components/bitrix/system.auth.form/.default/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "login",
+        "required": true,
+        "type": "text"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/templates/main/footer.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "email",
+        "required": true,
+        "type": "email"
+      },
+      {
+        "name": "agree_policy",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/subscribe.form/main/template.php",
+    "forms": 2,
+    "fields": [
+      {
+        "name": "sf_RUB_ID[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "sf_EMAIL",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "OK",
+        "required": false,
+        "type": "submit"
+      },
+      {
+        "name": "sf_RUB_ID[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "sf_EMAIL",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "OK",
+        "required": false,
+        "type": "submit"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/catalog.smart.filter/visual_vertical_search/template.php",
+    "forms": 2,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/catalog.smart.filter/visual_vertical/template.php",
+    "forms": 2,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/form.result.new/request-a-leasing/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "WEB_FORM_ID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "agree_policy_leasing",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "agree_consent_leasing",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/form.result.new/found-it-cheaper/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "WEB_FORM_ID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "agree_policy_cheaper",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "agree_consent_cheaper",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/form.result.new/request-a-call/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "WEB_FORM_ID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "agree_policy_call",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "agree_consent_call",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/form.result.new/request-document/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "WEB_FORM_ID",
+        "required": false,
+        "type": "hidden"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/form.result.new/request-a-rent/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "WEB_FORM_ID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "agree_policy_rent",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "agree_consent_rent",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/form.result.new/book-a-tour/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "WEB_FORM_ID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "agree_policy_tour",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "agree_consent_tour",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/form.result.new/orange-form-ask/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "WEB_FORM_ID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "agree_policy",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/form.result.new/buy-one-click/template.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "WEB_FORM_ID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "agree_policy_one_click",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "agree_consent_one_click",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/template.php",
+    "forms": 5,
+    "fields": [
+      {
+        "name": "PERSON_TYPE",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "PERSON_TYPE_OLD",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "DELIVERY_PICKUP_ID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "DELIVERY_PICKUP_ADDRESS",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "RECENT_DELIVERY_VALUE",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "location_type",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "ORDER_PROP_20",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "ORDER_PROP_21",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "DELIVERY_ID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "delivery-date",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "time",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "time",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "time",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "order-placing-delivery-company",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "order-placing-delivery-company",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "order-placing-delivery-company",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "order-placing-delivery-company",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "promo_code",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "PAY_SYSTEM_ID",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "PAY_SYSTEM_ID",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "PAY_SYSTEM_ID",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "order-placing-pay-method-fiz",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "order-placing-pay-method-fiz",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "order-placing-pay-method-fiz",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "order-placing-pay-method-fiz",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "order-placing-pay-method-fiz",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "agree_policy_order",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "agree_consent_order",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "phone",
+        "required": false,
+        "type": "tel"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/order/popup-curier.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "q",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "address",
+        "required": true,
+        "type": "select/textarea"
+      },
+      {
+        "name": "pod",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "etag",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "office",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "comment",
+        "required": false,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/organization/organizations-switcher.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "organization",
+        "required": false,
+        "type": "radio"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/organization/organization-edo.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "companyID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "edo_id",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "name": "edo_operator",
+        "required": false,
+        "type": "radio"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/organization/organizations-consignee.php",
+    "forms": 1,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/organization/organizations-details.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "companyID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "company_letter",
+        "required": false,
+        "type": "file"
+      },
+      {
+        "name": "card_company",
+        "required": false,
+        "type": "file"
+      },
+      {
+        "name": "scan_card",
+        "required": false,
+        "type": "file"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/organization/organization-verify.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "companyID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "fio",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "name": "phone",
+        "required": true,
+        "type": "tel"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/info/edit/forms/gosuslugi.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "country",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "country",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "country",
+        "required": false,
+        "type": "radio"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/info/edit/forms/code-verification-by-phone.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "phone",
+        "required": false,
+        "type": "tel"
+      },
+      {
+        "name": "code_public",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "code[1]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[2]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[3]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[4]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[5]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[6]",
+        "required": true,
+        "type": "tel"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/info/edit/forms/change-phone.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "phone",
+        "required": false,
+        "type": "tel"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/info/edit/forms/change-email.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "email",
+        "required": false,
+        "type": "email"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/info/edit/forms/code-verification-by-email.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "email",
+        "required": false,
+        "type": "email"
+      },
+      {
+        "name": "code_public",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "code[1]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[2]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[3]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[4]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[5]",
+        "required": true,
+        "type": "tel"
+      },
+      {
+        "name": "code[6]",
+        "required": true,
+        "type": "tel"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/appeals/appeals-questions.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "theme",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "comment",
+        "required": true,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/appeals/appeals-order-form.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "theme_id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "order-help",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "tags[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "comment",
+        "required": false,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/appeals/appeals-rate-add.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "appealID",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "rate",
+        "required": false,
+        "type": "radio"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/appeals/appeals-orders.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "theme_id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "order-help",
+        "required": false,
+        "type": "radio"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/questions-and-reviews/form-delete.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "action_name",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "id",
+        "required": false,
+        "type": "hidden"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/questions-and-reviews/form-edit-review.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "review-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "rate",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "votes[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "votes[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "votes[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "review-text",
+        "required": true,
+        "type": "select/textarea"
+      },
+      {
+        "name": "media[]",
+        "required": false,
+        "type": "file"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/questions-and-reviews/form-edit-question.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "question-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "question-text",
+        "required": true,
+        "type": "select/textarea"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/ajax/lk/orders/form-review-add.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "order-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "rate",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "votes[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "votes[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "votes[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "review-text",
+        "required": true,
+        "type": "select/textarea"
+      },
+      {
+        "name": "media[]",
+        "required": false,
+        "type": "file"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/lk/returns-products/returns-product.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "orderID",
+        "required": false,
+        "type": "hidden"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/reviews/form-review-add.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "rate",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "votes[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "votes[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "votes[]",
+        "required": false,
+        "type": "checkbox"
+      },
+      {
+        "name": "review-text",
+        "required": true,
+        "type": "select/textarea"
+      },
+      {
+        "name": "media[]",
+        "required": false,
+        "type": "file"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/reviews/form-question-reply-action.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "parent-id",
+        "required": false,
+        "type": "hidden"
+      }
+    ],
+    "dynamicCForm": true
+  },
+  {
+    "path": "site-source/local/ajax/reviews/form-review-reply-action.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "parent-id",
+        "required": false,
+        "type": "hidden"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/local/ajax/reviews/form-question-add.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "product-id",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "question-text",
+        "required": true,
+        "type": "select/textarea"
+      },
+      {
+        "name": "agree_policy_question",
+        "required": true,
+        "type": "checkbox"
+      },
+      {
+        "name": "agree_consent_question",
+        "required": true,
+        "type": "checkbox"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/ajax/forms/form-excursion.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "date",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "date",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "date",
+        "required": false,
+        "type": "radio"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/ajax/forms/lk-data-edit/change-name.php",
+    "forms": 1,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/ajax/forms/lk-data-edit/change-family.php",
+    "forms": 1,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/ajax/forms/lk-data-edit/gosuslugi.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "country",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "country",
+        "required": false,
+        "type": "radio"
+      },
+      {
+        "name": "country",
+        "required": false,
+        "type": "radio"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/ajax/forms/lk-data-edit/code-verification-by-phone.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "phone",
+        "required": false,
+        "type": "tel"
+      },
+      {
+        "name": "code_public",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "code[1]",
+        "required": false,
+        "type": "tel"
+      },
+      {
+        "name": "code[2]",
+        "required": false,
+        "type": "tel"
+      },
+      {
+        "name": "code[3]",
+        "required": false,
+        "type": "tel"
+      },
+      {
+        "name": "code[4]",
+        "required": false,
+        "type": "tel"
+      }
+    ],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/ajax/forms/lk-data-edit/change-email.php",
+    "forms": 1,
+    "fields": [],
+    "dynamicCForm": false
+  },
+  {
+    "path": "site-source/ajax/forms/lk-data-edit/code-verification-by-email.php",
+    "forms": 1,
+    "fields": [
+      {
+        "name": "email",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "name": "code_public",
+        "required": false,
+        "type": "hidden"
+      },
+      {
+        "name": "code[1]",
+        "required": false,
+        "type": "tel"
+      },
+      {
+        "name": "code[2]",
+        "required": false,
+        "type": "tel"
+      },
+      {
+        "name": "code[3]",
+        "required": false,
+        "type": "tel"
+      },
+      {
+        "name": "code[4]",
+        "required": false,
+        "type": "tel"
+      }
+    ],
+    "dynamicCForm": false
+  }
+]

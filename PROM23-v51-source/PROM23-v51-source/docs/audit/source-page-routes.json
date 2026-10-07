@@ -1,0 +1,688 @@
+[
+  {
+    "route": "/",
+    "file": "site-source/index.php",
+    "components": [
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:catalog.section.list",
+      "bitrix:catalog.section",
+      "bitrix:catalog.section",
+      "bitrix:catalog.section",
+      "bitrix:catalog.section",
+      "bitrix:news.list",
+      "bitrix:catalog.section"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/about/",
+    "file": "site-source/about/index.php",
+    "components": [
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:catalog.section.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/awards/",
+    "file": "site-source/awards/index.php",
+    "components": [
+      "bitrix:breadcrumb"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/basket/",
+    "file": "site-source/basket/index.php",
+    "components": [
+      "bitrix:sale.basket.basket",
+      "bitrix:catalog.section",
+      "bitrix:catalog.section"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/blog/",
+    "file": "site-source/blog/index.php",
+    "components": [
+      "bitrix:news"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/blog/projects/",
+    "file": "runtime public + site-source/blog/index.php/urlrewrite.php",
+    "components": [
+      "CMS dynamic"
+    ],
+    "kind": "dynamic/public"
+  },
+  {
+    "route": "/blog/projects/{code}/",
+    "file": "runtime public + site-source/blog/index.php/urlrewrite.php",
+    "components": [
+      "CMS dynamic"
+    ],
+    "kind": "dynamic/public"
+  },
+  {
+    "route": "/blog/video/",
+    "file": "runtime public + site-source/blog/index.php/urlrewrite.php",
+    "components": [
+      "CMS dynamic"
+    ],
+    "kind": "dynamic/public"
+  },
+  {
+    "route": "/blog/{code}/",
+    "file": "runtime public + site-source/blog/index.php/urlrewrite.php",
+    "components": [
+      "CMS dynamic"
+    ],
+    "kind": "dynamic/public"
+  },
+  {
+    "route": "/brands/",
+    "file": "site-source/brands/index.php",
+    "components": [
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "prom:brands.list",
+      "bitrix:catalog.section"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/business/",
+    "file": "site-source/business/index.php",
+    "components": [
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/cart/",
+    "file": "site-source/urlrewrite.php → basket/index.php",
+    "components": [
+      "rewrite alias"
+    ],
+    "kind": "alias"
+  },
+  {
+    "route": "/catalog-vyshki/",
+    "file": "site-source/catalog-vyshki/index.php",
+    "components": [
+      "bitrix:catalog"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/catalog/",
+    "file": "site-source/catalog/index.php",
+    "components": [
+      "bitrix:catalog"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/catalog/{section}/{product}/",
+    "file": "site-source/catalog/index.php/urlrewrite.php",
+    "components": [
+      "CMS dynamic"
+    ],
+    "kind": "dynamic/public"
+  },
+  {
+    "route": "/checkout/",
+    "file": "site-source/urlrewrite.php → delivery/index.php",
+    "components": [
+      "rewrite alias"
+    ],
+    "kind": "alias"
+  },
+  {
+    "route": "/chek/",
+    "file": "site-source/chek/index.php",
+    "components": [
+      "bitrix:sale.order.ajax",
+      "bitrix:sale.order.ajax"
+    ],
+    "kind": "technical"
+  },
+  {
+    "route": "/comparison/",
+    "file": "site-source/comparison/index.php",
+    "components": [
+      "prom:comparison",
+      "bitrix:form.result.new",
+      "bitrix:catalog.section"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/contacts/",
+    "file": "site-source/contacts/index.php",
+    "components": [
+      "bitrix:news.list"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/cookie-policy/",
+    "file": "site-source/cookie-policy/index.php",
+    "components": [],
+    "kind": "source-page"
+  },
+  {
+    "route": "/delivery/",
+    "file": "site-source/delivery/index.php",
+    "components": [
+      "bitrix:breadcrumb",
+      "bitrix:news.list"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/details/",
+    "file": "site-source/urlrewrite.php → delivery/index.php",
+    "components": [
+      "rewrite alias"
+    ],
+    "kind": "alias"
+  },
+  {
+    "route": "/favorite/",
+    "file": "site-source/favorite/index.php",
+    "components": [
+      "bitrix:catalog.section"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/franchise/",
+    "file": "site-source/franchise/index.php",
+    "components": [
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/oferta/",
+    "file": "site-source/urlrewrite.php → delivery/index.php",
+    "components": [
+      "rewrite alias"
+    ],
+    "kind": "alias"
+  },
+  {
+    "route": "/order/",
+    "file": "site-source/order/index.php",
+    "components": [
+      "bitrix:sale.order.ajax"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/order/good/",
+    "file": "site-source/order/good/index.php",
+    "components": [],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/",
+    "file": "site-source/organization/index.php",
+    "components": [],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/address-delivery/",
+    "file": "site-source/organization/address-delivery/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_address_deliveries"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/appeals/",
+    "file": "site-source/organization/appeals/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_appeals_main"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/appeals/list/",
+    "file": "site-source/organization/appeals/list/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_appeals_main"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/appeals/list/{id}/",
+    "file": "site-source/organization/appeals/list/detail.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_appeals_detail"
+    ],
+    "kind": "dynamic-detail"
+  },
+  {
+    "route": "/organization/dashboard/",
+    "file": "site-source/organization/dashboard/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_dashboard_orders",
+      "prom.personal:personal_dashboard_favorite",
+      "prom.personal:personal_dashboard_waitlist",
+      "prom.organization:organization_dashboard_documents",
+      "prom.organization:organization_dashboard_orders_finish",
+      "prom.organization:organization_dashboard_viewed_catalog"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/documents/",
+    "file": "site-source/organization/documents/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_documents",
+      "bitrix:form.result.new"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/info/",
+    "file": "site-source/organization/info/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_info_data",
+      "prom.organization:organization_info_organization_add",
+      "prom.organization:organization_info_faq"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/notifications/",
+    "file": "site-source/organization/notifications/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_notifications"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/orders/active/",
+    "file": "site-source/organization/orders/active/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_orders_active"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/orders/completed/",
+    "file": "site-source/organization/orders/completed/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_orders_finish"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/orders/goods/",
+    "file": "site-source/organization/orders/goods/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_orders_goods"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/orders/{id}/",
+    "file": "site-source/organization/orders/detail.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_order_detail"
+    ],
+    "kind": "dynamic-detail"
+  },
+  {
+    "route": "/organization/payment-methods/",
+    "file": "site-source/organization/payment-methods/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_payment_methods"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/questions-and-reviews/",
+    "file": "site-source/organization/questions-and-reviews/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_questions",
+      "prom.personal:personal_reviews"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/returns/applications/",
+    "file": "site-source/organization/returns/applications/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_returns_list"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/organization/returns/applications/{id}/",
+    "file": "site-source/organization/returns/applications/detail.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_returns_applications_detail"
+    ],
+    "kind": "dynamic-detail"
+  },
+  {
+    "route": "/organization/returns/orders/",
+    "file": "site-source/organization/returns/orders/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.organization:organization_returns_orders_list",
+      "prom.organization:organization_returns_orders_faq"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/payment/",
+    "file": "site-source/urlrewrite.php → delivery/index.php",
+    "components": [
+      "rewrite alias"
+    ],
+    "kind": "alias"
+  },
+  {
+    "route": "/personal/",
+    "file": "site-source/personal/index.php",
+    "components": [],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/address-delivery/",
+    "file": "site-source/personal/address-delivery/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_address_deliveries"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/appeals/",
+    "file": "site-source/personal/appeals/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_appeals_main"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/appeals/list/",
+    "file": "site-source/personal/appeals/list/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_appeals_main"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/appeals/list/{id}/",
+    "file": "site-source/personal/appeals/list/detail.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_appeals_detail"
+    ],
+    "kind": "dynamic-detail"
+  },
+  {
+    "route": "/personal/dashboard/",
+    "file": "site-source/personal/dashboard/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_dashboard_orders",
+      "prom.personal:personal_dashboard_favorite",
+      "prom.personal:personal_dashboard_waitlist",
+      "prom.personal:personal_dashboard_orders_finish",
+      "prom.personal:personal_dashboard_viewed_catalog"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/info/",
+    "file": "site-source/personal/info/index.php",
+    "components": [
+      "bitrix:menu",
+      "bitrix:main.profile"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/info/edit/",
+    "file": "site-source/personal/info/edit/index.php",
+    "components": [
+      "prom.personal:personal_info_edit_data",
+      "prom.personal:personal_info_edit_sessions"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/notifications/",
+    "file": "site-source/personal/notifications/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_notifications"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/order/payment/",
+    "file": "site-source/personal/order/payment/index.php",
+    "components": [
+      "bitrix:sale.order.payment"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/orders/active/",
+    "file": "site-source/personal/orders/active/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_orders_active"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/orders/completed/",
+    "file": "site-source/personal/orders/completed/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_orders_finish"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/orders/goods/",
+    "file": "site-source/personal/orders/goods/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_orders_goods"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/orders/{id}/",
+    "file": "site-source/personal/orders/detail.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_order_detail"
+    ],
+    "kind": "dynamic-detail"
+  },
+  {
+    "route": "/personal/organizations/",
+    "file": "site-source/personal/organizations/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_my_organizations_list",
+      "prom.personal:personal_my_organizations_add",
+      "prom.personal:personal_my_organizations_faq"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/payment-methods/",
+    "file": "site-source/personal/payment-methods/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_payment_methods"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/questions-and-reviews/",
+    "file": "site-source/personal/questions-and-reviews/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_questions",
+      "prom.personal:personal_reviews"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/returns/applications/",
+    "file": "site-source/personal/returns/applications/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_returns_list"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/personal/returns/applications/{id}/",
+    "file": "site-source/personal/returns/applications/detail.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_returns_applications_detail"
+    ],
+    "kind": "dynamic-detail"
+  },
+  {
+    "route": "/personal/returns/orders/",
+    "file": "site-source/personal/returns/orders/index.php",
+    "components": [
+      "bitrix:menu",
+      "prom.personal:personal_returns_orders_list",
+      "prom.personal:personal_returns_orders_faq"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/privacy-policy/",
+    "file": "site-source/privacy-policy/index.php",
+    "components": [],
+    "kind": "source-page"
+  },
+  {
+    "route": "/recom-tech-info/",
+    "file": "site-source/recom-tech-info/index.php",
+    "components": [],
+    "kind": "source-page"
+  },
+  {
+    "route": "/return/",
+    "file": "site-source/urlrewrite.php → delivery/index.php",
+    "components": [
+      "rewrite alias"
+    ],
+    "kind": "alias"
+  },
+  {
+    "route": "/search/",
+    "file": "site-source/search/index.php",
+    "components": [
+      "arturgolubev:search.page",
+      "prom:catalog.smart.filter",
+      "bitrix:catalog.section",
+      "bitrix:catalog.section"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/search/map/",
+    "file": "site-source/search/map/index.php",
+    "components": [
+      "bitrix:main.map"
+    ],
+    "kind": "technical"
+  },
+  {
+    "route": "/suppliers/",
+    "file": "site-source/suppliers/index.php",
+    "components": [
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list",
+      "bitrix:news.list"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/user-agreement/",
+    "file": "site-source/user-agreement/index.php",
+    "components": [
+      "bitrix:breadcrumb"
+    ],
+    "kind": "source-page"
+  },
+  {
+    "route": "/vendor/",
+    "file": "runtime public; source file absent",
+    "components": [
+      "CMS dynamic"
+    ],
+    "kind": "dynamic/public"
+  },
+  {
+    "route": "/waiting-list/",
+    "file": "site-source/waiting-list/index.php",
+    "components": [
+      "bitrix:catalog.section"
+    ],
+    "kind": "source-page"
+  }
+]

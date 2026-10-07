@@ -1,0 +1,8 @@
+{
+  "attempt": 1,
+  "failure": "Activation healthcheck used page.id instead of page.slug",
+  "automaticRollback": "previous v0.8 restored",
+  "verifiedPublicHomeRevision": "home-v8-1",
+  "affectedService": "prom23-preview.service only",
+  "fix": "Match actual public content DTO page.slug; reverify all already extracted hashes before reuse"
+}

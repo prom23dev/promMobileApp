@@ -1,0 +1,2 @@
+// Synthetic identity for isolated tests only. Never included in catalogue or deployment data.
+export const legalFixture = {documentType:'offer',version:'2026-10-01',hash:'a'.repeat(64),url:'/offer/',sellerInn:'1234567890',seller:{id:'test-only-seller',legalName:'TEST ONLY',inn:'1234567890',kpp:'123456789',ogrn:'1234567890123',legalAddress:'TEST ADDRESS',email:'seller@example.test',phone:'+70000000000'}};

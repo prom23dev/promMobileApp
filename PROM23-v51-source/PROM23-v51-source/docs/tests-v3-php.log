@@ -1,0 +1,6 @@
+No syntax errors detected in bitrix/endpoint.php
+No syntax errors detected in bitrix/src/Bridge.php
+No syntax errors detected in bitrix/src/DocumentManifest.php
+No syntax errors detected in bitrix/src/ReadOnlyBitrix.php
+No syntax errors detected in bitrix/test/Bridge.test.php
+PHP policy tests passed: 27

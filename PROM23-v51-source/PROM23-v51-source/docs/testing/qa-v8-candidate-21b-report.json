@@ -1,0 +1,387 @@
+{
+  "checkedAt": "2026-09-11T17:13:36.062Z",
+  "base": "http://127.0.0.1:8087",
+  "personas": [
+    "Обычный покупатель впервые: найти товар, узнать получение и оплату, оформить личную покупку.",
+    "Закупщик: передать файл потребности, сохранить ранее выбранное, получить предложение без обязательного знания артикулов."
+  ],
+  "checks": [
+    {
+      "name": "Fresh guest personal state and equally prominent catalog / procurement entries",
+      "status": "PASS",
+      "detail": {
+        "state": "personal",
+        "screenshot": "qa-v8-equal-buyers.png"
+      }
+    },
+    {
+      "name": "Responsive home, popular products, B2C and B2B at five viewports",
+      "status": "FAIL",
+      "error": "Section not reachable: home-buyer-benefits",
+      "screenshot": "qa-v8-failure-2.png"
+    },
+    {
+      "name": "Search history is separate from menu and survives Back / reload",
+      "status": "PASS"
+    },
+    {
+      "name": "Official settlement search accepts village / hamlet and typo, rejects free text, preserves cart and CAS",
+      "status": "PASS",
+      "detail": {
+        "village": "край Краснодарский, г. Сочи, с. Молдовка",
+        "hamlet": "край Краснодарский, г. Краснодар, х. Ленина",
+        "staleStatus": 409,
+        "cartQuantity": 25
+      }
+    },
+    {
+      "name": "Cards / PDP use server old price and integer discount; null stock permits draft25",
+      "status": "PASS",
+      "detail": {
+        "productId": "prom-2414",
+        "oldPriceKopecks": 1526500,
+        "discountPercent": 12
+      }
+    },
+    {
+      "name": "Source child categories are visual tiles, with Back",
+      "status": "FAIL",
+      "error": "page.waitForURL: Timeout 8000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"http://127.0.0.1:8087/catalog?section=250\" until \"load\"\n  navigated to \"http://127.0.0.1:8087/checkout-preview\"\n  navigated to \"http://127.0.0.1:8087/checkout-preview\"\n============================================================",
+      "screenshot": "qa-v8-failure-6.png"
+    },
+    {
+      "name": "Procurement starts with files, validates types/fields, keeps consent and never invents acceptance",
+      "status": "PASS",
+      "detail": {
+        "upload": "local picker only",
+        "accepted": false
+      }
+    },
+    {
+      "name": "Benefits explain Split / Plus / delivery / account and navigate back",
+      "status": "FAIL",
+      "error": "Section not reachable: home-buyer-benefits",
+      "screenshot": "qa-v8-failure-8.png"
+    },
+    {
+      "name": "Calls remain visible, contacts and legal pages have a return path, waiting list is honest",
+      "status": "PASS",
+      "detail": {
+        "telephoneActivated": false,
+        "waitingListFakeRecords": false
+      }
+    },
+    {
+      "name": "Unverified company context cannot be activated through shopping actions",
+      "status": "PASS",
+      "detail": {
+        "status": 403,
+        "code": "ORGANIZATION_REQUIRED"
+      }
+    },
+    {
+      "name": "Zero-stock response fixture exposes product-specific waiting-list action without fake subscription",
+      "status": "PASS",
+      "detail": {
+        "evidence": "UI_RESPONSE_FIXTURE_ONLY",
+        "productId": "prom-1042",
+        "realSubscription": false
+      }
+    },
+    {
+      "name": "Legacy company-cart response fixture remains accessible as procurement draft in personal context",
+      "status": "PASS",
+      "detail": {
+        "evidence": "UI_RESPONSE_FIXTURE_ONLY; database migration is covered by separate server tests",
+        "productId": "prom-2414",
+        "quantity": 3
+      }
+    },
+    {
+      "name": "Company trust facts / production stages / business FAQ disclose content and preserve Back",
+      "status": "PASS"
+    },
+    {
+      "name": "Reduced motion and keyboard focus remain usable",
+      "status": "PASS",
+      "detail": {
+        "tag": "BUTTON",
+        "label": "Промышленник — на главную",
+        "outline": "solid",
+        "border": "rgb(0, 0, 0)"
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "name": "home-320",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "popular-320",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "unnamed": [],
+      "tiny": [],
+      "outside": [
+        "Раздел каталога: Подмости строительные"
+      ]
+    },
+    {
+      "name": "buyers-320",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "business-320",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "home-390",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": [
+        "Раздел каталога: Сетка, тенты, брезенты"
+      ]
+    },
+    {
+      "name": "popular-390",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": [
+        "Раздел каталога: Сетка, тенты, брезенты"
+      ]
+    },
+    {
+      "name": "buyers-390",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "business-390",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "home-430",
+      "width": 430,
+      "height": 932,
+      "documentWidth": 430,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "popular-430",
+      "width": 430,
+      "height": 932,
+      "documentWidth": 430,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "buyers-430",
+      "width": 430,
+      "height": 932,
+      "documentWidth": 430,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "business-430",
+      "width": 430,
+      "height": 932,
+      "documentWidth": 430,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "home-768",
+      "width": 768,
+      "height": 1024,
+      "documentWidth": 768,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "popular-768",
+      "width": 768,
+      "height": 1024,
+      "documentWidth": 768,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "buyers-768",
+      "width": 768,
+      "height": 1024,
+      "documentWidth": 768,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "business-768",
+      "width": 768,
+      "height": 1024,
+      "documentWidth": 768,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "home-844",
+      "width": 844,
+      "height": 390,
+      "documentWidth": 844,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "popular-844",
+      "width": 844,
+      "height": 390,
+      "documentWidth": 844,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "pdp",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "child-categories",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "/information/production",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "/information/business",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "/legal/offer",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "/legal/consent",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "company-trust",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "production-process",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    }
+  ],
+  "pageErrors": [],
+  "blockedWrites": [],
+  "localWrites": [
+    "/api/sessions",
+    "/api/actions",
+    "/api/actions",
+    "/api/actions",
+    "/api/v1/location",
+    "/api/v1/location",
+    "/api/v1/location",
+    "/api/actions",
+    "/api/actions",
+    "/api/actions",
+    "/api/actions",
+    "/api/actions"
+  ],
+  "limitations": [
+    "Expo Web in isolated Chromium, not native VoiceOver/TalkBack/Dynamic Type acceptance.",
+    "No real forms, calls, orders or payments. Product stock-zero and legacy-cart rendering cases use explicitly labelled response fixtures."
+  ],
+  "build": {
+    "entry": "/_expo/static/js/web/entry-21bfbce8901c5ec7a55852a531b044fa.js",
+    "sha256": "d7877c89cd092ba22fa00dc3b152abc0ecbb60b5940aa4c80f03681bacc05545"
+  },
+  "summary": {
+    "passed": 11,
+    "failed": 3,
+    "pageErrors": 0,
+    "blockedWrites": 0
+  }
+}

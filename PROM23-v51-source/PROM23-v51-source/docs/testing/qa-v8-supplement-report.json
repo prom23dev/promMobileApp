@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-09-11T17:07:55.269Z",
+  "base": "http://127.0.0.1:8087",
+  "personas": [
+    "Обычный покупатель впервые: найти товар, узнать получение и оплату, оформить личную покупку.",
+    "Закупщик: передать файл потребности, сохранить ранее выбранное, получить предложение без обязательного знания артикулов."
+  ],
+  "checks": [
+    {
+      "name": "Cards / PDP use server old price and integer discount; null stock permits draft25",
+      "status": "FAIL",
+      "error": "locator.waitFor: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Скидка 12%', { exact: true }).first() to be visible\u001b[22m\n\u001b[2m    20 × locator resolved to hidden <div dir=\"auto\" aria-label=\"Скидка 12%\" class=\"css-146c3p1 r-1enofrn r-5fcqz0\">−12%</div>\u001b[22m\n",
+      "screenshot": "qa-v8-failure-1.png"
+    },
+    {
+      "name": "Source child categories are visual tiles, with Back",
+      "status": "PASS"
+    },
+    {
+      "name": "Calls remain visible, contacts and legal pages have a return path, waiting list is honest",
+      "status": "PASS",
+      "detail": {
+        "telephoneActivated": false,
+        "waitingListFakeRecords": false
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "name": "child-categories",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "/information/production",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "/information/business",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "/legal/offer",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    },
+    {
+      "name": "/legal/consent",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "tiny": [],
+      "outside": []
+    }
+  ],
+  "pageErrors": [],
+  "blockedWrites": [],
+  "localWrites": [
+    "/api/sessions",
+    "/api/actions",
+    "/api/actions"
+  ],
+  "limitations": [
+    "Expo Web in isolated Chromium, not native VoiceOver/TalkBack/Dynamic Type acceptance.",
+    "No real forms, calls, orders or payments. Product stock-zero and legacy-cart rendering cases use explicitly labelled response fixtures."
+  ],
+  "build": {
+    "entry": "/_expo/static/js/web/entry-abcf2afa31a6bbf5de20113f5e846e0a.js",
+    "sha256": "e75aee4d15973066e7f61d26c1960d7ef56d423369a2bcda75dd7ce907a35628"
+  },
+  "summary": {
+    "passed": 2,
+    "failed": 1,
+    "pageErrors": 0,
+    "blockedWrites": 0
+  }
+}

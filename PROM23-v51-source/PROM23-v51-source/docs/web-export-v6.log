@@ -1,0 +1,85 @@
+
+> prom23-mobile-preview@0.6.0 export:web
+> expo export --platform web && node scripts/prepare-web.cjs
+
+Starting Metro Bundler
+
+| (node:80467) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:80467) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:80467) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:80467) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+Web Bundled 1380ms node_modules/expo-router/entry.js (2760 modules)
+
+› Assets (64):
+assets/blog/articles-kak-sobrat-stroitelnye-ramnye-lesa-lrsp-svoimi-rukami-poshagovaya-instruktsiya-dlya-novichkov.7df3ac4023a059991be40cda38108cbc.jpg (331KB)
+assets/blog/articles-kak-sobrat-vyshku-turu-svoimi-rukami-poshagovaya-instruktsiya-dlya-nachinayushchikh.9a180b266cec404b052c4fa61aabc9d8.jpg (813KB)
+assets/blog/articles-khomutovye-stroitelnye-lesa-promyshlennik-poshagovaya-sborka-vidy-khomutov-i-sovety-po-montazhu.410f110cba047d88d1c42700bf63e68c.jpg (3.3MB)
+assets/blog/articles-konus-abramsa-dlya-betona-kak-proverit-kachestvo-i-podvizhnost-betonnoy-smesi-na-stroyploshchadke.3feddd67a3d4188aabffa7034b7d463b.jpg (654KB)
+assets/blog/articles-setka-zatenyayushchaya-promyshlennik-kak-vybrat-dlya-stroyki-dachi-maskirovki-i-dekora.ae4e4bcbc06c6c6549e9873945a3fc92.png (3.3MB)
+assets/blog/articles-vyshka-tura-ili-stroitelnye-lesa-5-shagov-k-pravilnomu-vyboru-dlya-fasada-i-remonta.3a934bbda1f01a33c581f1e49fbbded3.png (3.5MB)
+assets/blog/projects-botanika-hills.8d3acb51a97c5bc958da66c0ecac0382.jpg (447KB)
+assets/blog/projects-development-plaza-krasnodar.e868fe4f32b6e417f081ef3124306789.jpg (194KB)
+assets/blog/projects-krc-oktyabr-astrakhan.10042101f79b29adb60e8a17f1aacc8e.jpg (273KB)
+assets/blog/projects-moscow-city.a6bf88c0ed4d95e8eff8c7e2e3af8683.jpg (294KB)
+assets/blog/projects-nova-vita.a8c07f415df1664fea5c5f33c24d2ad9.jpg (268KB)
+assets/blog/projects-residential-complex-derbent.3cc0a7d6ccb5c96f00cd7fc5352fdd56.jpg (299KB)
+assets/blog/projects-serdtse-krasnodara.0475fdc2ab59590aa1f907eaf8c0e6f2.jpg (179KB)
+assets/blog/projects-zhk-fontany-krasnodar.8f73d80e7d3dd1990bdbfe412ce4a4fc.jpg (390KB)
+assets/blog/projects-zhk-obraztsovo-insiti.df29815b481d6ed8121cebc00bdb8280.jpg (132KB)
+assets/blog/projects-zhk-pervoe-mesto.937dc6510436625a88b7211e2d41aa3e.jpg (365KB)
+assets/blog/projects-zhk-ritm.4b25e314c4eb0265fdbc06007154c123.jpg (550KB)
+assets/blog/projects-zhk-slavyanka.b9575746adec8494a28ac88754be9288.jpg (440KB)
+assets/blog/projects-zhk-tsentralnyy.faccd8cb092c5b8680f972a517beecb0.jpg (394KB)
+assets/blog/projects-zhk-zvezdy.bcfb1ba7142027f93504cb5b8654e3a6.jpg (267KB)
+assets/brand/production-hero.0b14078ee297b4f1a6e802d5a9cf51d0.jpg (109KB)
+assets/catalog/prom-1042.f702dfb8a898d4b9028dbd711348b2b0.jpg (136KB)
+assets/catalog/prom-1046.e1841d98e4c96c3f4a0609824f3a1ac1.jpg (126KB)
+assets/catalog/prom-1343.e64903e216853f0dce4753118fc76140.jpg (51KB)
+assets/catalog/prom-1649.ac57a2fb271ab2017a7a9d18e1605b44.jpg (49KB)
+assets/catalog/prom-1774.17d163836d210cb1558eea36651dbdc5.jpg (283KB)
+assets/catalog/prom-2017.d8ce72813bdfd73b106b4c31f2292fc7.png (164KB)
+assets/catalog/prom-2033.a0f47420dfe0404047e03aee3d822126.png (143KB)
+assets/catalog/prom-2200.29b1bcfe3a741cec53eebfc0332f1f6c.jpg (185KB)
+assets/catalog/prom-2266.c12ce70c88f843591cd24c7ae3031ca2.png (220KB)
+assets/catalog/prom-2272.be998ff76516934aa2bba70aa339044c.png (110KB)
+assets/catalog/prom-2335.3905caa29b228de3da133b95331d75c3.jpg (203KB)
+assets/catalog/prom-2349.c0a1688e90a4fcfcbcea51dad474b09b.png (415KB)
+assets/catalog/prom-2377.25d609875c6e48dd5ebe9df70592d283.png (40KB)
+assets/catalog/prom-2388.088b9d52e182ec0a9b8b57dd74d05991.png (319KB)
+assets/catalog/prom-23916.f5cd9e26dcf15c62382d277a74e54ed5.jpg (105KB)
+assets/catalog/prom-2402.9fe4f6b37a6fe243158031d2b1f0c5bf.jpg (108KB)
+assets/catalog/prom-2414.ceebe4987da4470a4bcc5500bd8b9b22.jpg (314KB)
+assets/catalog/prom-2491.c863886ecf85cfbcae05094b2d57fc97.jpg (55KB)
+assets/catalog/prom-2733.f9e35928135091967c4c1eae1b2b6c3c.png (87KB)
+assets/catalog/prom-2743.148a9d11779ebd9ee6db0dba28b68ebe.jpg (44KB)
+assets/catalog/prom-2749.143581cc9aa3c37875f14902540207c2.jpg (15KB)
+assets/catalog/prom-372.7a7b94c1202f2dc9e0ed28a7aa8da4c3.png (215KB)
+assets/catalog/prom-592.1ae1fe819c9f3a48187699bd9b7f9700.jpg (200KB)
+assets/catalog/prom-908.b717b806403f41440d60fb671055ad6c.png (110KB)
+assets/catalog/prom-969.858c4424ecd3174e7d57ffa0800fa7b2.jpg (268KB)
+node_modules/expo-router/assets/arrow_down.017bc6ba3fc25503e5eb5e53826d48a8.png (9.5KB)
+node_modules/expo-router/assets/error.d1ea1496f9057eb392d5bbf3732a61b7.png (469B)
+node_modules/expo-router/assets/file.19eeb73b9593a38f8e9f418337fc7d10.png (138B)
+node_modules/expo-router/assets/forward.d8b800c443b8972542883e0b9de2bdc6.png (188B)
+node_modules/expo-router/assets/pkg.ab19f4cbc543357183a20571f68380a3.png (364B)
+node_modules/expo-router/assets/react-navigation/elements/back-icon-mask.0a328cd9c1afd0afe8e3b1ec5165b1b4.png (653B)
+node_modules/expo-router/assets/react-navigation/elements/back-icon.35ba0eaec5a4f5ed12ca16fabeae451d.png (207B)
+node_modules/expo-router/assets/react-navigation/elements/clear-icon.c94f6478e7ae0cdd9f15de1fcb9e5e55.png (4 variations | 425B)
+node_modules/expo-router/assets/react-navigation/elements/close-icon.808e1b1b9b53114ec2838071a7e6daa7.png (4 variations | 235B)
+node_modules/expo-router/assets/react-navigation/elements/search-icon.286d67d3f74808a60a78d3ebf1a5fb57.png (928B)
+node_modules/expo-router/assets/sitemap.412dd9275b6b48ad28f5e3d81bb1f626.png (465B)
+node_modules/expo-router/assets/unmatched.20e71bdf79e3a97bf55fd9e164041578.png (4.8KB)
+
+› web bundles (1):
+_expo/static/js/web/entry-32cbee464c0f6946e383ecb8fecd7cb5.js (5.1MB)
+
+› Files (3):
+favicon.ico (15KB)
+index.html (1.2KB)
+metadata.json (49B)
+
+Exported: dist

@@ -1,0 +1,15 @@
+PASS: Fresh guest personal state and equally prominent catalog / procurement entries
+PASS: Responsive home, popular products, B2C and B2B at five viewports
+PASS: Search history is separate from menu and survives Back / reload
+PASS: Official settlement search accepts village / hamlet and typo, rejects free text, preserves cart and CAS
+PASS: Cards / PDP use server old price and integer discount; null stock permits draft25
+PASS: Source child categories are visual tiles, with Back
+PASS: Procurement starts with files, validates types/fields, keeps consent and never invents acceptance
+PASS: Benefits explain Split / Plus / delivery / account and navigate back
+PASS: Calls remain visible, contacts and legal pages have a return path, waiting list is honest
+PASS: Unverified company context cannot be activated through shopping actions
+PASS: Zero-stock response fixture exposes product-specific waiting-list action without fake subscription
+PASS: Legacy company-cart response fixture remains accessible as procurement draft in personal context
+PASS: Company trust facts / production stages / business FAQ disclose content and preserve Back
+PASS: Reduced motion and keyboard focus remain usable
+{"passed":14,"failed":0,"pageErrors":0,"blockedWrites":0}

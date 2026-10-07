@@ -1,0 +1,14 @@
+{
+  "entry": [
+    "entry-868a5bbc6dfffc180ef9df17946774da.js"
+  ],
+  "viewport": {
+    "width": 320,
+    "height": 844
+  },
+  "selectedLocation": "край Краснодарский, г. Краснодар",
+  "visibleHeaderLabel": "Краснодар",
+  "headerLabelTruncated": false,
+  "evidence": "docs/critic-v8-header-r2-320-krasnodar.png",
+  "scope": "Targeted visual verification; no code edits"
+}

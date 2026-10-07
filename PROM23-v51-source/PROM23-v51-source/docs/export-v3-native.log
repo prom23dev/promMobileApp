@@ -1,0 +1,62 @@
+Starting Metro Bundler
+
+| (node:56531) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:56531) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+iOS Bundled 10418ms node_modules/expo-router/entry.js (2796 modules)
+Android Bundled 18417ms node_modules/expo-router/entry.js (3311 modules)
+
+› Assets (60):
+assets/brand/production-hero.jpg (109KB)
+assets/catalog/prom-1042.jpg (136KB)
+assets/catalog/prom-1046.jpg (126KB)
+assets/catalog/prom-1343.jpg (51KB)
+assets/catalog/prom-1649.jpg (49KB)
+assets/catalog/prom-1774.jpg (283KB)
+assets/catalog/prom-2017.png (164KB)
+assets/catalog/prom-2033.png (143KB)
+assets/catalog/prom-2200.jpg (185KB)
+assets/catalog/prom-2266.png (220KB)
+assets/catalog/prom-2272.png (110KB)
+assets/catalog/prom-2335.jpg (203KB)
+assets/catalog/prom-2349.png (415KB)
+assets/catalog/prom-2377.png (40KB)
+assets/catalog/prom-2388.png (319KB)
+assets/catalog/prom-23916.jpg (105KB)
+assets/catalog/prom-2402.jpg (108KB)
+assets/catalog/prom-2414.jpg (314KB)
+assets/catalog/prom-2491.jpg (55KB)
+assets/catalog/prom-2733.png (87KB)
+assets/catalog/prom-2743.jpg (44KB)
+assets/catalog/prom-2749.jpg (15KB)
+assets/catalog/prom-372.png (215KB)
+assets/catalog/prom-592.jpg (200KB)
+assets/catalog/prom-908.png (110KB)
+assets/catalog/prom-969.jpg (268KB)
+node_modules/@expo-google-fonts/material-symbols/400Regular/MaterialSymbols_400Regular.ttf (967KB)
+node_modules/expo-router/assets/arrow_down.png (9.5KB)
+node_modules/expo-router/assets/arrow_right.xml (307B)
+node_modules/expo-router/assets/checkmark.xml (312B)
+node_modules/expo-router/assets/error.png (469B)
+node_modules/expo-router/assets/file.png (138B)
+node_modules/expo-router/assets/forward.png (188B)
+node_modules/expo-router/assets/pkg.png (364B)
+node_modules/expo-router/assets/react-navigation/elements/back-icon-mask.png (653B)
+node_modules/expo-router/assets/react-navigation/elements/back-icon.png (8 variations | 359B)
+node_modules/expo-router/assets/react-navigation/elements/clear-icon.png (4 variations | 425B)
+node_modules/expo-router/assets/react-navigation/elements/close-icon.png (4 variations | 235B)
+node_modules/expo-router/assets/react-navigation/elements/search-icon.png (7 variations | 592B)
+node_modules/expo-router/assets/sitemap.png (465B)
+node_modules/expo-router/assets/unmatched.png (4.8KB)
+
+› ios bundles (1):
+_expo/static/js/ios/entry-d35afcc7f373fcd604ac78b2b0538ad7.hbc (4.8MB)
+
+› android bundles (1):
+_expo/static/js/android/entry-0d1830bc9b6de6d9c06435103b6a8e5a.hbc (5.1MB)
+
+› Files (1):
+metadata.json (6.7KB)
+
+Exported: native-export

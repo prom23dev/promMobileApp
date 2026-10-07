@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-09-11T09:05:01Z",
+  "release": {
+    "release": "v0.4-20260911-02",
+    "previous": "v0.4-20260911-01",
+    "filesVerified": 78,
+    "sections": 226,
+    "products": 25,
+    "unitPreserved": true
+  },
+  "previewHttp": 200,
+  "previewHtmlMatchesLocal": true,
+  "productionThemeFiles": 82,
+  "productionThemeUnchanged": true,
+  "productionServicesUnchanged": true,
+  "productionHttpBefore": 200,
+  "productionHttpAfter": 200,
+  "dnsChanged": false
+}

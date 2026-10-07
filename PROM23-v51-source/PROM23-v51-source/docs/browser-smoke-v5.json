@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-09-11T12:43:59.320Z",
+  "checks": [
+    "Menu separate from search; no duplicate raw forms; return to origin",
+    "Search executes without menu, persists query history across reload and preserves query on menu back",
+    "Product history/recommendations on home; quote retains product; finance examples clearly marked; delivery has real branch and tariff-unavailable state",
+    "Cart recovery and checkout retain cart; contextual support available",
+    "B2B hero leads to company quote; personal search history hidden",
+    "320/375/390/768 and landscape layouts fit; reduced-motion enabled"
+  ],
+  "errors": [],
+  "postPaths": [
+    "/api/sessions",
+    "/api/actions"
+  ]
+}

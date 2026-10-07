@@ -1,0 +1,2834 @@
+{
+  "checkedAt": "2026-09-11T23:44:10.088Z",
+  "phase": "navigation-reviewed-content-parity-in-progress",
+  "sourceFiles": [
+    "site-source/local/templates/main/components/bitrix/menu/header-mobile/template.php",
+    "site-source/local/templates/main/components/bitrix/menu/footer/template.php",
+    "site-source/about/.footer-child.menu.php",
+    "site-source/business/.footer-child.menu.php",
+    "site-source/catalog/.footer-child.menu.php",
+    "site-source/personal/.personal.menu.php",
+    "site-source/organization/.personal.menu.php"
+  ],
+  "runtimeNavigation": [
+    {
+      "text": "Краснодар",
+      "href": "javascript:void(0);",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "8 (800) 200-25-90",
+      "href": "tel:88002002590",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "Покупайте как юридическое лицо",
+      "href": "/business/",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "О компании",
+      "href": "/about/",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "Производство",
+      "href": "/vendor/",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "Доставка и оплата",
+      "href": "/delivery/",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "Франшиза",
+      "href": "/franchise/",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "Контакты",
+      "href": "/contacts/",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "",
+      "href": "/",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "",
+      "href": "javascript:void(0);",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "",
+      "href": "/favorite/",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "",
+      "href": "/comparison/",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "",
+      "href": "/basket/",
+      "visible": false,
+      "zone": "header"
+    },
+    {
+      "text": "",
+      "href": "/",
+      "visible": true,
+      "zone": "header"
+    },
+    {
+      "text": "",
+      "href": "/",
+      "visible": true,
+      "zone": "mobile-menu"
+    },
+    {
+      "text": "Покупать как юрлицо",
+      "href": "/business/",
+      "visible": true,
+      "zone": "mobile-menu"
+    },
+    {
+      "text": "О компании",
+      "href": "/about/",
+      "visible": true,
+      "zone": "mobile-menu"
+    },
+    {
+      "text": "Производство",
+      "href": "/vendor/",
+      "visible": true,
+      "zone": "mobile-menu"
+    },
+    {
+      "text": "Доставка и оплата",
+      "href": "/delivery/",
+      "visible": true,
+      "zone": "mobile-menu"
+    },
+    {
+      "text": "Франшиза",
+      "href": "/franchise/",
+      "visible": true,
+      "zone": "mobile-menu"
+    },
+    {
+      "text": "Контакты",
+      "href": "/contacts/",
+      "visible": true,
+      "zone": "mobile-menu"
+    },
+    {
+      "text": "8 (800) 200-25-90\n                единая справочная",
+      "href": "tel:88002002590",
+      "visible": true,
+      "zone": "mobile-menu"
+    },
+    {
+      "text": "+7 (861) 225-00-90",
+      "href": "tel:+7 (861) 225-00-90",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "8 (800) 200-25-90",
+      "href": "tel:88002002590",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Компания",
+      "href": "/about/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Бренды",
+      "href": "/brands/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "О нас",
+      "href": "/about/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Производство",
+      "href": "/vendor/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Контакты",
+      "href": "/contacts/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Покупателям",
+      "href": "/catalog/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Каталог",
+      "href": "/catalog/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Доставка и оплата",
+      "href": "/delivery/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Статьи",
+      "href": "/blog/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Компаниям",
+      "href": "/business/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Юридическим лицам",
+      "href": "/business/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Франшиза",
+      "href": "/franchise/",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "",
+      "href": "https://vk.com/prom23ru",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "",
+      "href": "https://www.youtube.com/@prom23ru",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "",
+      "href": "https://t.me/prom23ru",
+      "visible": false,
+      "zone": "footer"
+    },
+    {
+      "text": "Поставщикам",
+      "href": "/suppliers/",
+      "visible": true,
+      "zone": "footer"
+    },
+    {
+      "text": "Скачать каталог",
+      "href": "/upload/uf/c2e/z9a89bazeaxnc6s09bwmuabw6t6p9bdg/katalog.pdf",
+      "visible": true,
+      "zone": "footer"
+    },
+    {
+      "text": "",
+      "href": "https://vk.com/prom23ru",
+      "visible": true,
+      "zone": "footer"
+    },
+    {
+      "text": "",
+      "href": "https://www.youtube.com/@prom23ru",
+      "visible": true,
+      "zone": "footer"
+    },
+    {
+      "text": "",
+      "href": "https://t.me/prom23ru",
+      "visible": true,
+      "zone": "footer"
+    },
+    {
+      "text": "Подробнее — в «Сведениях о рекомендательных технологиях»",
+      "href": "/recom-tech-info/",
+      "visible": true,
+      "zone": "footer"
+    },
+    {
+      "text": "Политика конфиденциальности",
+      "href": "/privacy-policy/",
+      "visible": true,
+      "zone": "footer"
+    },
+    {
+      "text": "Согласие на обработку персональных данных",
+      "href": "/user-agreement/",
+      "visible": true,
+      "zone": "footer"
+    },
+    {
+      "text": "Политика cookies",
+      "href": "/cookie-policy/",
+      "visible": true,
+      "zone": "footer"
+    }
+  ],
+  "items": [
+    {
+      "group": "Покупателям",
+      "label": "Доставка",
+      "web": "/delivery/",
+      "mobile": "/information/delivery",
+      "status": "PARTIAL",
+      "gap": "Есть объединённый пункт",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Покупателям",
+      "label": "Оплата",
+      "web": "/payment/",
+      "mobile": "/information/payment",
+      "status": "PARTIAL",
+      "gap": "Есть",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Покупателям",
+      "label": "Оформление заказа",
+      "web": "/checkout/",
+      "mobile": "/pages/checkout",
+      "status": "PARTIAL",
+      "gap": "Нет глобального входа",
+      "baselineStatus": "MISSING",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Покупателям",
+      "label": "Возврат",
+      "web": "/return/",
+      "mobile": "/pages/returns",
+      "status": "PARTIAL",
+      "gap": "Объединён с гарантией; отдельный warranty скрыт",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Покупателям",
+      "label": "Гарантия",
+      "web": "source/service",
+      "mobile": "/pages/warranty",
+      "status": "PARTIAL",
+      "gap": "Нет отдельного входа",
+      "baselineStatus": "MISSING",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Покупателям",
+      "label": "FAQ",
+      "web": "UF_FAQ delivery",
+      "mobile": "/pages/faq",
+      "status": "PARTIAL",
+      "gap": "Есть curated FAQ, не полный source",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Компания",
+      "label": "О компании",
+      "web": "/about/",
+      "mobile": "/pages/about",
+      "status": "PARTIAL",
+      "gap": "Вход есть, контент неполный",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Компания",
+      "label": "Производство",
+      "web": "/vendor/",
+      "mobile": "/information/production",
+      "status": "PARTIAL",
+      "gap": "Вход есть",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Компания",
+      "label": "Бренды",
+      "web": "/brands/",
+      "mobile": "/pages/brands",
+      "status": "PARTIAL",
+      "gap": "Нет входа MoreScreen",
+      "baselineStatus": "MISSING",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Компания",
+      "label": "Награды",
+      "web": "/awards/",
+      "mobile": "/pages/awards",
+      "status": "PARTIAL",
+      "gap": "Нет входа MoreScreen",
+      "baselineStatus": "MISSING",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Компания",
+      "label": "Проекты",
+      "web": "/blog/projects/",
+      "mobile": "/blog?kind=projects",
+      "status": "PARTIAL",
+      "gap": "Нет прямого входа",
+      "baselineStatus": "MISSING",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Компания",
+      "label": "Контакты",
+      "web": "/contacts/",
+      "mobile": "/information/contacts",
+      "status": "PARTIAL",
+      "gap": "Вход есть",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Бизнес",
+      "label": "Для бизнеса",
+      "web": "/business/",
+      "mobile": "/information/business",
+      "status": "PARTIAL",
+      "gap": "Вход есть",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Бизнес",
+      "label": "Закупка потребности",
+      "web": "source procurement",
+      "mobile": "/procurement",
+      "status": "PARTIAL",
+      "gap": "MoreScreen предлагает только /quick-order",
+      "baselineStatus": "MISSING",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Бизнес",
+      "label": "Поставщикам",
+      "web": "/suppliers/",
+      "mobile": "/pages/suppliers",
+      "status": "PARTIAL",
+      "gap": "Скрыт под новым hub cooperation",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Бизнес",
+      "label": "Франшиза",
+      "web": "/franchise/",
+      "mobile": "/pages/franchise",
+      "status": "PARTIAL",
+      "gap": "Скрыт под новым hub cooperation",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Материалы",
+      "label": "Статьи",
+      "web": "/blog/",
+      "mobile": "/blog",
+      "status": "PARTIAL",
+      "gap": "Вход есть",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Материалы",
+      "label": "Видео",
+      "web": "/blog/video/",
+      "mobile": "/blog?kind=video",
+      "status": "PARTIAL",
+      "gap": "Нет прямого входа",
+      "baselineStatus": "MISSING",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Материалы",
+      "label": "Скачать каталог",
+      "web": "/upload/uf/c2e/z9a89bazeaxnc6s09bwmuabw6t6p9bdg/katalog.pdf",
+      "mobile": "/pages/documents",
+      "status": "PARTIAL",
+      "gap": "Footer download не представлен в MoreScreen",
+      "baselineStatus": "MISSING",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Документы",
+      "label": "Реквизиты",
+      "web": "/details/",
+      "mobile": "/pages/details",
+      "status": "PARTIAL",
+      "gap": "В disclosure",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Документы",
+      "label": "Оферта",
+      "web": "/oferta/",
+      "mobile": "/legal/offer",
+      "status": "PARTIAL",
+      "gap": "В disclosure",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Документы",
+      "label": "Политика конфиденциальности",
+      "web": "/privacy-policy/",
+      "mobile": "/legal/privacy",
+      "status": "PARTIAL",
+      "gap": "В disclosure",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Документы",
+      "label": "Согласие ПД",
+      "web": "/user-agreement/",
+      "mobile": "/legal/consent",
+      "status": "PARTIAL",
+      "gap": "В disclosure",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Документы",
+      "label": "Cookies",
+      "web": "/cookie-policy/",
+      "mobile": "/legal/cookies",
+      "status": "PARTIAL",
+      "gap": "В disclosure",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    },
+    {
+      "group": "Документы",
+      "label": "Рекомендательные технологии",
+      "web": "/recom-tech-info/",
+      "mobile": "/legal/recommendations",
+      "status": "PARTIAL",
+      "gap": "В disclosure",
+      "baselineStatus": "PARTIAL",
+      "currentCode": "RESTORED_IN_CODE",
+      "verification": "PASS: точный route/query, нижняя навигация/корзина и UI Back на 320/390 в 06d88. Content/function parity отдельно."
+    }
+  ],
+  "accountItems": [
+    {
+      "group": "personal",
+      "label": "Личные данные",
+      "web": "/personal/info/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/workspace/profile",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "personal",
+      "label": "Заказы",
+      "web": "/personal/orders/active/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/orders",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "personal",
+      "label": "Мои организации",
+      "web": "/personal/organizations/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/workspace/organizations",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "personal",
+      "label": "Избранное",
+      "web": "/favorite/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/favorites",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "personal",
+      "label": "Лист ожидания",
+      "web": "/waiting-list/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/workspace/waiting-list",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "personal",
+      "label": "Сравнение",
+      "web": "/comparison/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/compare",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "personal",
+      "label": "Мои отзывы и вопросы",
+      "web": "/personal/questions-and-reviews/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/workspace/reviews",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "personal",
+      "label": "Мои обращения",
+      "web": "/personal/appeals/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/service?kind=appeal",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "personal",
+      "label": "Мои возвраты",
+      "web": "/personal/returns/applications/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/workspace/returns",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "personal",
+      "label": "Адреса доставки",
+      "web": "/personal/address-delivery/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/workspace/addresses",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "personal",
+      "label": "Способы оплаты",
+      "web": "/personal/payment-methods/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/workspace/payment-methods",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "personal",
+      "label": "Настройки уведомлений",
+      "web": "/personal/notifications/",
+      "source": "site-source/personal/.personal.menu.php",
+      "mobile": "/notifications",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "organization",
+      "label": "Данные организации",
+      "web": "/organization/info/",
+      "source": "site-source/organization/.personal.menu.php",
+      "mobile": "/workspace/requisites",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "organization",
+      "label": "Заказы",
+      "web": "/organization/orders/active/",
+      "source": "site-source/organization/.personal.menu.php",
+      "mobile": "/orders",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "organization",
+      "label": "Избранное",
+      "web": "/favorite/",
+      "source": "site-source/organization/.personal.menu.php",
+      "mobile": "/favorites",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "organization",
+      "label": "Лист ожидания",
+      "web": "/waiting-list/",
+      "source": "site-source/organization/.personal.menu.php",
+      "mobile": "/workspace/waiting-list",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "organization",
+      "label": "Сравнение",
+      "web": "/comparison/",
+      "source": "site-source/organization/.personal.menu.php",
+      "mobile": "/compare",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "organization",
+      "label": "Мои отзывы и вопросы",
+      "web": "/organization/questions-and-reviews/",
+      "source": "site-source/organization/.personal.menu.php",
+      "mobile": "/workspace/reviews",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "organization",
+      "label": "Мои обращения",
+      "web": "/organization/appeals/",
+      "source": "site-source/organization/.personal.menu.php",
+      "mobile": "/service?kind=appeal",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "organization",
+      "label": "Мои возвраты",
+      "web": "/organization/returns/applications/",
+      "source": "site-source/organization/.personal.menu.php",
+      "mobile": "/workspace/returns",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "organization",
+      "label": "Адреса доставки",
+      "web": "/organization/address-delivery/",
+      "source": "site-source/organization/.personal.menu.php",
+      "mobile": "/workspace/addresses",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "organization",
+      "label": "Способы оплаты",
+      "web": "/organization/payment-methods/",
+      "source": "site-source/organization/.personal.menu.php",
+      "mobile": "/workspace/payment-methods",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    },
+    {
+      "group": "organization",
+      "label": "Настройки уведомлений",
+      "web": "/organization/notifications/",
+      "source": "site-source/organization/.personal.menu.php",
+      "mobile": "/notifications",
+      "status": "PARTIAL",
+      "note": "Маршрут/действие сопоставлены; авторизованные данные и полный набор операций проверяются в functions.md."
+    }
+  ],
+  "catalogItems": [
+    {
+      "id": "16",
+      "label": "Вышки-туры",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/",
+      "mobile": "/catalog/section/16",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "label": "Стальные вышки-туры",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/",
+      "label": "Вышки-туры ВСП 250 0,7x1,6 м",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07x16prom/",
+      "label": "Вышка-тура ВСП 0,7x1,6 ПРОМ",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07x16prom/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07x16prom/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07x16promultra700/",
+      "label": "Вышка-тура ВСП 0,7x1,6 ПРОМ УЛЬТРА 700",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07x16promultra700/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07x16promultra700/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07kh16ver20/",
+      "label": "Вышка-тура ВСП 0.7х1.6 ver. 2.0",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07kh16ver20/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavsp07kh16ver20/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavspt07kh16/",
+      "label": "Вышка-тура ВСПТ 0.7х1.6",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavspt07kh16/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavspt07kh16/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/",
+      "label": "Вышки-туры ВСП 250 1,6x2,0 м",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkaturavspteam16kh20/",
+      "label": "Вышка-тура ВСП TeaM 1.6х2.0",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkaturavspteam16kh20/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkaturavspteam16kh20/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkiturypromyshlennikvspprom1620m/",
+      "label": "Вышка-тура ВСП ПРОМ 1.6х2.0",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkiturypromyshlennikvspprom1620m/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkiturypromyshlennikvspprom1620m/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkaturavsppromyshlennik16kh20/",
+      "label": "Вышка-тура ВСП Промышленник 1.6х2.0",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkaturavsppromyshlennik16kh20/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/vyshkaturavsppromyshlennik16kh20/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/",
+      "label": "Вышки-туры ВСП 250 1,2x2,0 м",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavspteam12kh20/",
+      "label": "Вышка-тура ВСП TeaM 1.2х2.0",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavspteam12kh20/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavspteam12kh20/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavspprom12kh20/",
+      "label": "Вышка-тура ВСП ПРОМ 1.2х2.0",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavspprom12kh20/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavspprom12kh20/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavsppromultima12kh20/",
+      "label": "Вышка-тура ВСП ПРОМ УЛЬТИМА 1.2х2.0",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavsppromultima12kh20/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavsppromultima12kh20/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavsppromyshlennik12kh20/",
+      "label": "Вышка-тура ВСП Промышленник 1.2х2.0",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavsppromyshlennik12kh20/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/vyshkaturavsppromyshlennik12kh20/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/",
+      "label": "Вышки-туры ВСП 250 2,0х2,0 м",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavspteam20kh20/",
+      "label": "Вышка-тура ВСП TeaM 2.0х2.0",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavspteam20kh20/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavspteam20kh20/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavsp-prom20kh20/",
+      "label": "Вышка-тура ВСП ПРОМ 2.0х2.0",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavsp-prom20kh20/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavsp-prom20kh20/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavsppromyshlennik20kh20/",
+      "label": "Вышка-тура ВСП Промышленник 2.0х2.0",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavsppromyshlennik20kh20/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/vyshkaturavsppromyshlennik20kh20/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/",
+      "label": "Вышки-туры ВСЭ 250",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/vspekonom12kh24094/",
+      "label": "Вышки-туры ВСЭ 250 0,7х1,6 м",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/vspekonom12kh24094/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/vspekonom12kh24094/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/vspekonom12kh2/",
+      "label": "Вышки-туры ВСЭ 250 1,2x2,0 м",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/vspekonom12kh2/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryekonom/vspekonom12kh2/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkaturadachnik/",
+      "label": "Вышка-тура Дачник",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkaturadachnik/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkaturadachnik/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryrezervuarnyevsp25020kh20m/",
+      "label": "Вышки-туры ВСП Резервуарные 2,0х2,0 м",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryrezervuarnyevsp25020kh20m/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/stalnye/vyshkituryrezervuarnyevsp25020kh20m/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/",
+      "label": "Алюминиевые подмости и вышки",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/",
+      "label": "Вышки-туры Профи",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/alumet/",
+      "label": "Вышки-туры Alumet",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/alumet/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/alumet/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/promyshlennik/",
+      "label": "Платформы Промышленник",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/promyshlennik/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/promyshlennik/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/komplektuyushchiekvyshkam/",
+      "label": "Комплектующие к вышкам турам",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/komplektuyushchiekvyshkam/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/komplektuyushchiekvyshkam/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vyshki-tury/motorizovannyevyshkitury/",
+      "label": "Моторизованные вышки-туры",
+      "web": "https://prom.myfast.space/catalog/vyshki-tury/motorizovannyevyshkitury/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vyshki-tury/motorizovannyevyshkitury/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "37",
+      "label": "Подмости строительные",
+      "web": "https://prom.myfast.space/catalog/podmostistroitelnye/",
+      "mobile": "/catalog/section/37",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podmostistroitelnye/malyarnyestoliki/",
+      "label": "Малярные столики",
+      "web": "https://prom.myfast.space/catalog/podmostistroitelnye/malyarnyestoliki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/podmostistroitelnye/malyarnyestoliki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podmostistroitelnye/podmostimalyarnyeslesarnye/",
+      "label": "Подмости малярные слесарные",
+      "web": "https://prom.myfast.space/catalog/podmostistroitelnye/podmostimalyarnyeslesarnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/podmostistroitelnye/podmostimalyarnyeslesarnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podmostistroitelnye/pomostymalyarnye/",
+      "label": "Помосты малярные",
+      "web": "https://prom.myfast.space/catalog/podmostistroitelnye/pomostymalyarnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/podmostistroitelnye/pomostymalyarnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "41",
+      "label": "Сетка, тенты, брезенты",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/",
+      "mobile": "/catalog/section/41",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/",
+      "label": "Защитная сетка",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/komplektuyushchiedlyazatenyayushcheysetki/",
+      "label": "Клипса Люверс для сетки",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/komplektuyushchiedlyazatenyayushcheysetki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/komplektuyushchiedlyazatenyayushcheysetki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkadlyazabora/",
+      "label": "Сетка для забора",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkadlyazabora/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkadlyazabora/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkazatenyayushchaya/",
+      "label": "Сетка затеняющая",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkazatenyayushchaya/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkazatenyayushchaya/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkamaskirovochnaya/",
+      "label": "Сетка маскировочная",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkamaskirovochnaya/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkamaskirovochnaya/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkafasadnayazatenyayushchaya/",
+      "label": "Сетка фасадная затеняющая",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkafasadnayazatenyayushchaya/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkafasadnayazatenyayushchaya/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/",
+      "label": "Укрывные материалы",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/",
+      "label": "Армированная пленка",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/brezent/",
+      "label": "Брезент",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/brezent/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/brezent/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/tenty/",
+      "label": "Тенты",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/tenty/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/tenty/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/zashchitno-ulavlivayushchaya-setka/",
+      "label": "Защитно-улавливающая сетка (ЗУС)",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/zashchitno-ulavlivayushchaya-setka/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/zashchitno-ulavlivayushchaya-setka/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/dekorativnyeukrytiyadlyastroitelnykhlesov/",
+      "label": "Декоративные укрытия для строительных лесов",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/dekorativnyeukrytiyadlyastroitelnykhlesov/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/dekorativnyeukrytiyadlyastroitelnykhlesov/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/zashchitnoeograzhdenie/",
+      "label": "Защитное ограждение",
+      "web": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/zashchitnoeograzhdenie/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/zashhnaja-setka-brezent/zashchitnoeograzhdenie/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "56",
+      "label": "Строительные подъемники",
+      "web": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/",
+      "mobile": "/catalog/section/56",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/stroitelnye-ljulki/",
+      "label": "Строительные люльки (фасадные подъемники)",
+      "web": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/stroitelnye-ljulki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/podemniki-krany-lyulki/stroitelnye-ljulki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/rabochie-platformy/",
+      "label": "Строительные площадки",
+      "web": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/rabochie-platformy/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/podemniki-krany-lyulki/rabochie-platformy/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/machtovye-podemniki/",
+      "label": "Мачтовые подъемники",
+      "web": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/machtovye-podemniki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/podemniki-krany-lyulki/machtovye-podemniki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/machtovye-stroitelnye-platformy-reechnogo-tipa/",
+      "label": "Мачтовые строительные платформы реечного типа",
+      "web": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/machtovye-stroitelnye-platformy-reechnogo-tipa/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/podemniki-krany-lyulki/machtovye-stroitelnye-platformy-reechnogo-tipa/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/zapchastidlyalyulekzlp/",
+      "label": "Комплектующие для люлек ZLP",
+      "web": "https://prom.myfast.space/catalog/podemniki-krany-lyulki/zapchastidlyalyulekzlp/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/podemniki-krany-lyulki/zapchastidlyalyulekzlp/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "64",
+      "label": "Грузоподъемное оборудование",
+      "web": "https://prom.myfast.space/catalog/lebedki-elektricheskie/",
+      "mobile": "/catalog/section/64",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/buksirytekstilnyelentochnye/",
+      "label": "Буксиры текстильные ленточные",
+      "web": "https://prom.myfast.space/catalog/lebedki-elektricheskie/buksirytekstilnyelentochnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/buksirytekstilnyelentochnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/lebedkiruchnye/",
+      "label": "Лебедки ручные",
+      "web": "https://prom.myfast.space/catalog/lebedki-elektricheskie/lebedkiruchnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/lebedkiruchnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/lebedkielektricheskie/",
+      "label": "Лебедки электрические",
+      "web": "https://prom.myfast.space/catalog/lebedki-elektricheskie/lebedkielektricheskie/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/lebedkielektricheskie/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/montazhnyepoyasaiprivyazi/",
+      "label": "Монтажные пояса и привязи",
+      "web": "https://prom.myfast.space/catalog/lebedki-elektricheskie/montazhnyepoyasaiprivyazi/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/montazhnyepoyasaiprivyazi/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/remnistyazhnye/",
+      "label": "Ремни стяжные",
+      "web": "https://prom.myfast.space/catalog/lebedki-elektricheskie/remnistyazhnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/remnistyazhnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/stropytekstilnyepetlevye/",
+      "label": "Стропы текстильные петлевые",
+      "web": "https://prom.myfast.space/catalog/lebedki-elektricheskie/stropytekstilnyepetlevye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/stropytekstilnyepetlevye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lebedki-elektricheskie/taliruchnye/",
+      "label": "Тали ручные",
+      "web": "https://prom.myfast.space/catalog/lebedki-elektricheskie/taliruchnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lebedki-elektricheskie/taliruchnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "71",
+      "label": "Мусоропровод строительный",
+      "web": "https://prom.myfast.space/catalog/musoroprovod/",
+      "mobile": "/catalog/section/71",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "72",
+      "label": "Фанера ламинированная",
+      "web": "https://prom.myfast.space/catalog/fanera-laminirovannaya/",
+      "mobile": "/catalog/section/72",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/fanera-laminirovannaya/18-mm/",
+      "label": "Фанера ламинированная 18 мм",
+      "web": "https://prom.myfast.space/catalog/fanera-laminirovannaya/18-mm/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/fanera-laminirovannaya/18-mm/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/fanera-laminirovannaya/fanera10mm/",
+      "label": "Фанера 10 мм",
+      "web": "https://prom.myfast.space/catalog/fanera-laminirovannaya/fanera10mm/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/fanera-laminirovannaya/fanera10mm/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/fanera-laminirovannaya/fanera9mm/",
+      "label": "Фанера 9 мм",
+      "web": "https://prom.myfast.space/catalog/fanera-laminirovannaya/fanera9mm/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/fanera-laminirovannaya/fanera9mm/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/fanera-laminirovannaya/faneralaminirovannaya12mm/",
+      "label": "Фанера ламинированная 12 мм",
+      "web": "https://prom.myfast.space/catalog/fanera-laminirovannaya/faneralaminirovannaya12mm/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/fanera-laminirovannaya/faneralaminirovannaya12mm/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/fanera-laminirovannaya/21-mm/",
+      "label": "Фанера ламинированная 21 мм",
+      "web": "https://prom.myfast.space/catalog/fanera-laminirovannaya/21-mm/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/fanera-laminirovannaya/21-mm/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "79",
+      "label": "Опалубка",
+      "web": "https://prom.myfast.space/catalog/opalubka/",
+      "mobile": "/catalog/section/79",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/",
+      "label": "Опалубка перекрытий",
+      "web": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/dvutavrovayabalka/",
+      "label": "Двутавровая балка",
+      "web": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/dvutavrovayabalka/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/dvutavrovayabalka/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/",
+      "label": "Объемная опалубка перекрытий",
+      "web": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/obemnayaopalubkaperekrytiycuplock/",
+      "label": "Объемная опалубка перекрытий CUP LOCK",
+      "web": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/obemnayaopalubkaperekrytiycuplock/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/obemnayaopalubkaperekrytiycuplock/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/ramnayaklinovayaopalubka/",
+      "label": "Рамная клиновая опалубка",
+      "web": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/ramnayaklinovayaopalubka/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/ramnayaklinovayaopalubka/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/ramnayaopalubka/",
+      "label": "Рамная опалубка",
+      "web": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/ramnayaopalubka/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/ramnayaopalubka/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/teleskopicheskiestoyki/",
+      "label": "Телескопические стойки для опалубки перекрытия",
+      "web": "https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/teleskopicheskiestoyki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubka-perekrytiy/teleskopicheskiestoyki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+      "label": "Комплектующие для стеновой опалубки",
+      "web": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/vintystyazhnye/",
+      "label": "Винты стяжные для опалубки",
+      "web": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/vintystyazhnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/vintystyazhnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/gaykiistyazhnyevinty/",
+      "label": "Гайки для опалубки",
+      "web": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/gaykiistyazhnyevinty/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/gaykiistyazhnyevinty/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/zamkidlyaopalubki/",
+      "label": "Замки для опалубки",
+      "web": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/zamkidlyaopalubki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/zamkidlyaopalubki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/zakhvatymontazhnye/",
+      "label": "Захваты монтажные",
+      "web": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/zakhvatymontazhnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/zakhvatymontazhnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/ograzhdayushchieustroystvaipodkosyvintovye/",
+      "label": "Ограждающие устройства и подкосы винтовые",
+      "web": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/ograzhdayushchieustroystvaipodkosyvintovye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/komplektuyushchie/ograzhdayushchieustroystvaipodkosyvintovye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/pruzhinnye-zazhimy/",
+      "label": "Пружинные зажимы для опалубки",
+      "web": "https://prom.myfast.space/catalog/opalubka/pruzhinnye-zazhimy/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/pruzhinnye-zazhimy/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/",
+      "label": "Фиксаторы арматуры",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "label": "Пластиковые фиксаторы арматуры",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zashchitnyykolpachok/",
+      "label": "Фиксатор арматуры защитный колпачок",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zashchitnyykolpachok/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zashchitnyykolpachok/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zvezdochka/",
+      "label": "Фиксатор арматуры звездочка",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zvezdochka/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zvezdochka/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/mnogourovnevyy/",
+      "label": "Фиксатор арматуры многоуровневый",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/mnogourovnevyy/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/mnogourovnevyy/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/opora/",
+      "label": "Фиксатор арматуры опора",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/opora/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/opora/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/podstavka/",
+      "label": "Фиксатор арматуры подставка",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/podstavka/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/podstavka/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/stoyka/",
+      "label": "Фиксатор арматуры стойка",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/stoyka/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/stoyka/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/stulchik/",
+      "label": "Фиксатор арматуры стульчик",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/stulchik/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/stulchik/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/fs/",
+      "label": "Фиксатор арматуры ФС сыпучий грунт",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/fs/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/fs/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zakladnyeelementy/",
+      "label": "Фиксаторы арматуры закладные",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zakladnyeelementy/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/zakladnyeelementy/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/betonnye/",
+      "label": "Фиксаторы из бетона",
+      "web": "https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/betonnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/fiksatory-armatury/betonnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/gidroizolyatsionnyematerialyismesi/",
+      "label": "Гидроизоляционные материалы и смеси",
+      "web": "https://prom.myfast.space/catalog/opalubka/gidroizolyatsionnyematerialyismesi/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/gidroizolyatsionnyematerialyismesi/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/melkoshchitovayaopalubka/",
+      "label": "Мелкощитовая опалубка (МЩО)",
+      "web": "https://prom.myfast.space/catalog/opalubka/melkoshchitovayaopalubka/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/melkoshchitovayaopalubka/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/opalubkashchitovaya/",
+      "label": "Опалубка щитовая",
+      "web": "https://prom.myfast.space/catalog/opalubka/opalubkashchitovaya/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/opalubkashchitovaya/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/emulsol/",
+      "label": "СОЖ Эмульсол",
+      "web": "https://prom.myfast.space/catalog/opalubka/emulsol/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/emulsol/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/oborudovanie-dlya-progreva-betona/",
+      "label": "Оборудование для прогрева бетона",
+      "web": "https://prom.myfast.space/catalog/opalubka/oborudovanie-dlya-progreva-betona/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/oborudovanie-dlya-progreva-betona/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/plastikovaya/",
+      "label": "Пластиковая опалубка",
+      "web": "https://prom.myfast.space/catalog/opalubka/plastikovaya/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/plastikovaya/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/kolonn/",
+      "label": "Опалубка колонн",
+      "web": "https://prom.myfast.space/catalog/opalubka/kolonn/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/kolonn/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/ctenovaya/",
+      "label": "Стеновая опалубка",
+      "web": "https://prom.myfast.space/catalog/opalubka/ctenovaya/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/ctenovaya/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/opalubka/teksturnyepanelivalero/",
+      "label": "Текстурные панели VALERO",
+      "web": "https://prom.myfast.space/catalog/opalubka/teksturnyepanelivalero/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/opalubka/teksturnyepanelivalero/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "113",
+      "label": "Вибротехника для строительства",
+      "web": "https://prom.myfast.space/catalog/vibrotekhnika/",
+      "mobile": "/catalog/section/113",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/benzinovye-vibroplity/",
+      "label": "Виброплиты бензиновые",
+      "web": "https://prom.myfast.space/catalog/vibrotekhnika/benzinovye-vibroplity/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/benzinovye-vibroplity/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/vibrotrambovki/",
+      "label": "Вибротрамбовки бензиновые",
+      "web": "https://prom.myfast.space/catalog/vibrotekhnika/vibrotrambovki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/vibrotrambovki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/zaglazhivayushchaya-mashina/",
+      "label": "Затирочные машины",
+      "web": "https://prom.myfast.space/catalog/vibrotekhnika/zaglazhivayushchaya-mashina/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/zaglazhivayushchaya-mashina/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/vibroreyki/",
+      "label": "Виброрейки",
+      "web": "https://prom.myfast.space/catalog/vibrotekhnika/vibroreyki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/vibroreyki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/",
+      "label": "Вибраторы для бетона",
+      "web": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/glubinnye/",
+      "label": "Глубинные вибраторы",
+      "web": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/glubinnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/glubinnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/ploshhadochnye/",
+      "label": "Площадочные вибраторы",
+      "web": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/ploshhadochnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/ploshhadochnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/",
+      "label": "Инструмент для работы с бетоном",
+      "web": "https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/gladilkidlyabetona/",
+      "label": "Гладилки для бетона",
+      "web": "https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/gladilkidlyabetona/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/gladilkidlyabetona/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/ruchkidlyagladilokpobetonu/",
+      "label": "Ручки для гладилок по бетону",
+      "web": "https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/ruchkidlyagladilokpobetonu/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/vibrotekhnika/instrumentdlyarabotysbetonom/ruchkidlyagladilokpobetonu/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "125",
+      "label": "Оборудование для работы с арматурой",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/",
+      "mobile": "/catalog/section/125",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/kljuchi-dlja-gibki-armatury/",
+      "label": "Ключи для гибки арматуры",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/kljuchi-dlja-gibki-armatury/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/kljuchi-dlja-gibki-armatury/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/nozhnicy/",
+      "label": "Ножницы для резки арматуры, болторезы",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/nozhnicy/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/nozhnicy/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/vyazalnyyinstrument/",
+      "label": "Вязальный инструмент для арматуры",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/vyazalnyyinstrument/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/vyazalnyyinstrument/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/gilotinadlyakolkibruschatki/",
+      "label": "Гильотины для колки брусчатки",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/gilotinadlyakolkibruschatki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/gilotinadlyakolkibruschatki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/lomburklombara/",
+      "label": "Лом-бурк (лом-бара)",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/lomburklombara/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/lomburklombara/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/",
+      "label": "Станки для гибки и резки арматуры",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/",
+      "label": "Станки для резки арматуры",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/mobilnyeelektricheskiestankidlyarezkiarmatury/",
+      "label": "Мобильные электрические станки для резки арматуры",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/mobilnyeelektricheskiestankidlyarezkiarmatury/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/mobilnyeelektricheskiestankidlyarezkiarmatury/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/ruchnye/",
+      "label": "Ручные станки для резки арматуры",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/ruchnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/ruchnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/gidravlicheskie-stanki/",
+      "label": "Электрические станки для резки арматуры",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/gidravlicheskie-stanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/gidravlicheskie-stanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/",
+      "label": "Станки для гибки арматуры (арматурогибы)",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/mobilnyeelektricheskiestankidlyagibkiarmatury/",
+      "label": "Мобильные электрические станки для гибки арматуры",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/mobilnyeelektricheskiestankidlyagibkiarmatury/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/mobilnyeelektricheskiestankidlyagibkiarmatury/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/ruchnye-stanki/",
+      "label": "Ручные станки для гибки арматуры",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/ruchnye-stanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/ruchnye-stanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/gidravlicheskie-stanki-dlya-gibki-armatury/",
+      "label": "Электрические станки для гибки арматуры",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/gidravlicheskie-stanki-dlya-gibki-armatury/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/gidravlicheskie-stanki-dlya-gibki-armatury/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/komplektuyushchiekstankamdlyagibkiirezkiarmatury/",
+      "label": "Комплектующие к станкам для гибки и резки арматуры",
+      "web": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/komplektuyushchiekstankamdlyagibkiirezkiarmatury/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/komplektuyushchiekstankamdlyagibkiirezkiarmatury/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "141",
+      "label": "Оборудование для бетонных работ",
+      "web": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/",
+      "mobile": "/catalog/section/141",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/betonomeshalki/",
+      "label": "Бетономешалки и бетоносмесители",
+      "web": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/betonomeshalki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/betonomeshalki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/kljuchi-dlja-gibki-armatury6163/",
+      "label": "Молотки бетонщика",
+      "web": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/kljuchi-dlja-gibki-armatury6163/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/kljuchi-dlja-gibki-armatury6163/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/yashchiki-kamenshchika/",
+      "label": "Ящики каменщика",
+      "web": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/yashchiki-kamenshchika/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/yashchiki-kamenshchika/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/",
+      "label": "Бадьи для бетона",
+      "web": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/rjumka-kolokolchik/",
+      "label": "Бадья для бетона Рюмка",
+      "web": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/rjumka-kolokolchik/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/rjumka-kolokolchik/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/tufelka/",
+      "label": "Бадья для бетона Туфелька",
+      "web": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/tufelka/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/tufelka/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/",
+      "label": "Пластиковая тара для раствора",
+      "web": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/stroitelnyetazy/",
+      "label": "Строительные тазы",
+      "web": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/stroitelnyetazy/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/stroitelnyetazy/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/rastvorosmesiteli/",
+      "label": "Растворосмесители",
+      "web": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/rastvorosmesiteli/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/rastvorosmesiteli/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/formydlyabetona/",
+      "label": "Формы для бетона",
+      "web": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/formydlyabetona/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/formydlyabetona/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "157",
+      "label": "Техника для склада",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/",
+      "mobile": "/catalog/section/157",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/gidravlicheskie/",
+      "label": "Гидравлические тележки (рохли)",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/gidravlicheskie/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/gidravlicheskie/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/gidravlicheskie/elektricheskietelezhkirokhli/",
+      "label": "Электрические тележки (рохли)",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/gidravlicheskie/elektricheskietelezhkirokhli/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/gidravlicheskie/elektricheskietelezhkirokhli/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/",
+      "label": "Грузовые тележки для склада",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/platformennye/",
+      "label": "Платформенные тележки",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/platformennye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/platformennye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/dvukhkolesnye/",
+      "label": "Грузовые тележки двухколесные",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/dvukhkolesnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/gruzovyetelezhki/dvukhkolesnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/promyshlennyekolesa/",
+      "label": "Колеса для тележек",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/promyshlennyekolesa/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/promyshlennyekolesa/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/nozhnichnye-podemniki/",
+      "label": "Ножничные подъемники и столы",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/nozhnichnye-podemniki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/nozhnichnye-podemniki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/sistemykhraneniya/",
+      "label": "Системы хранения",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/sistemykhraneniya/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/sistemykhraneniya/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/",
+      "label": "Штабелеры",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/ruchnyeshtabelery/",
+      "label": "Ручные штабелеры",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/ruchnyeshtabelery/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/ruchnyeshtabelery/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/samokhodnyeshtabelery/",
+      "label": "Самоходные штабелеры",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/samokhodnyeshtabelery/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/samokhodnyeshtabelery/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/elektricheskieshtabelery/",
+      "label": "Электрические штабелеры",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/elektricheskieshtabelery/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/shtabelery/elektricheskieshtabelery/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/",
+      "label": "Вилочные погрузчики",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/elektricheskie3khopornye/",
+      "label": "Электрические погрузчики 3-х опорные",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/elektricheskie3khopornye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/elektricheskie3khopornye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/elektricheskie4khopornye/",
+      "label": "Электрические погрузчики 4-х опорные",
+      "web": "https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/elektricheskie4khopornye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/gruzovye-telezhki/vilochnyepogruzchiki/elektricheskie4khopornye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "173",
+      "label": "Тачки строительные и садовые",
+      "web": "https://prom.myfast.space/catalog/tachki/",
+      "mobile": "/catalog/section/173",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/tachki/kolesadlyatachek/",
+      "label": "Колеса для тачек, комплектующие",
+      "web": "https://prom.myfast.space/catalog/tachki/kolesadlyatachek/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/tachki/kolesadlyatachek/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/tachki/tachkiteam/",
+      "label": "Тачки TeaM",
+      "web": "https://prom.myfast.space/catalog/tachki/tachkiteam/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/tachki/tachkiteam/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/tachki/tachkipromyshlennik/",
+      "label": "Тачки Промышленник",
+      "web": "https://prom.myfast.space/catalog/tachki/tachkipromyshlennik/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/tachki/tachkipromyshlennik/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "179",
+      "label": "Лестницы и стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/",
+      "mobile": "/catalog/section/179",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/odnosektsionnye-lestnitsy-stremyanki/",
+      "label": "Односекционные лестницы",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/odnosektsionnye-lestnitsy-stremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/odnosektsionnye-lestnitsy-stremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dvukhsektsionnye-lestnitsy-stremyanki/",
+      "label": "Двухсекционные лестницы",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dvukhsektsionnye-lestnitsy-stremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dvukhsektsionnye-lestnitsy-stremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/trekhsektsionnye-lestnitsy-stremyanki/",
+      "label": "Трехсекционные лестницы",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/trekhsektsionnye-lestnitsy-stremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/trekhsektsionnye-lestnitsy-stremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsy-stremyanki-transformery/",
+      "label": "Лестницы трансформеры",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsy-stremyanki-transformery/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsy-stremyanki-transformery/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "label": "Стремянки Alumet",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/alyuminievyedvustoronniestremyanki/",
+      "label": "Алюминиевые двусторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/alyuminievyedvustoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/alyuminievyedvustoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/alyuminievyeodnostoronniestremyanki/",
+      "label": "Алюминиевые односторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/alyuminievyeodnostoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/alyuminievyeodnostoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/anodirovannyedvustoronniestremyanki/",
+      "label": "Анодированные двусторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/anodirovannyedvustoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/anodirovannyedvustoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/anodirovannyeodnostoronniestremyanki/",
+      "label": "Анодированные односторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/anodirovannyeodnostoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/anodirovannyeodnostoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyedvustoronniestremyanki/",
+      "label": "Стальные двусторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyedvustoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyedvustoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyeodnostoronniestremyanki/",
+      "label": "Стальные односторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyeodnostoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyeodnostoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyestremyankistulya/",
+      "label": "Стальные стремянки стулья",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyestremyankistulya/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stalnyestremyankistulya/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stremyankistalnyekhozyayushka/",
+      "label": "Стремянки стальные \"Хозяюшка\"",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stremyankistalnyekhozyayushka/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki/stremyankistalnyekhozyayushka/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki8760/",
+      "label": "Стремянки Centaure",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki8760/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyanki8760/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "label": "Диэлектрические лестницы и стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/alyuminievyedvustoronniestremyanki/",
+      "label": "Алюминиевые двусторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/alyuminievyedvustoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/alyuminievyedvustoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/alyuminievyeodnostoronniestremyanki/",
+      "label": "Алюминиевые односторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/alyuminievyeodnostoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/alyuminievyeodnostoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyedvustoronniestremyanki/",
+      "label": "Анодированные двусторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyedvustoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyedvustoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyeodnostoronniestremyanki/",
+      "label": "Анодированные односторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyeodnostoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyeodnostoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyedvustoronniestremyanki/",
+      "label": "Стальные двусторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyedvustoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyedvustoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/",
+      "label": "Стальные односторонние стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyestremyankistulya/",
+      "label": "Стальные стремянки стулья",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyestremyankistulya/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyestremyankistulya/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stremyankistalnyekhozyayushka/",
+      "label": "Стремянки стальные \"Хозяюшка\"",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stremyankistalnyekhozyayushka/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stremyankistalnyekhozyayushka/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/vsestremyanki/",
+      "label": "Все стремянки",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/vsestremyanki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/vsestremyanki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/komplektuyushchieklestnitsamstremyankampomostam/",
+      "label": "Комплектующие к лестницам, стремянкам, помостам",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/komplektuyushchieklestnitsamstremyankampomostam/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/komplektuyushchieklestnitsamstremyankampomostam/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsynakanatnoytyage/",
+      "label": "Лестницы на канатной тяге",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsynakanatnoytyage/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsynakanatnoytyage/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsyteleskopicheskie/",
+      "label": "Лестницы телескопические",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsyteleskopicheskie/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/lestnitsyteleskopicheskie/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankidogrular/",
+      "label": "Стремянки Dogrular",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankidogrular/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankidogrular/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankiteam/",
+      "label": "Стремянки TeaM",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankiteam/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankiteam/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankiprofessionalnyealyumet/",
+      "label": "Стремянки профессиональные Alumet",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankiprofessionalnyealyumet/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stremyankiprofessionalnyealyumet/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stalnyeoblegchennyestremyankialyumet/",
+      "label": "Стремянки стальные облегченные Alumet",
+      "web": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/stalnyeoblegchennyestremyankialyumet/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/lestnitsy-stremyanki/stalnyeoblegchennyestremyankialyumet/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "200",
+      "label": "Штукатурные комплекты",
+      "web": "https://prom.myfast.space/catalog/shtukaturnye-komplekty/",
+      "mobile": "/catalog/section/200",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "203",
+      "label": "Компрессоры воздушные",
+      "web": "https://prom.myfast.space/catalog/kompressory/",
+      "mobile": "/catalog/section/203",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/kompressory/bezmasljanye/",
+      "label": "Безмасляные компрессоры",
+      "web": "https://prom.myfast.space/catalog/kompressory/bezmasljanye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/kompressory/bezmasljanye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/kompressory/maslyanye-koaksialnye/",
+      "label": "Масляные коаксиальные компрессоры",
+      "web": "https://prom.myfast.space/catalog/kompressory/maslyanye-koaksialnye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/kompressory/maslyanye-koaksialnye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/kompressory/maslyanye-remennye/",
+      "label": "Компрессоры ременные масляные",
+      "web": "https://prom.myfast.space/catalog/kompressory/maslyanye-remennye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/kompressory/maslyanye-remennye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "207",
+      "label": "Сварочные аппараты",
+      "web": "https://prom.myfast.space/catalog/svarochnye-apparaty/",
+      "mobile": "/catalog/section/207",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/svarochnye-apparaty/invertornye/",
+      "label": "Сварочные инверторы",
+      "web": "https://prom.myfast.space/catalog/svarochnye-apparaty/invertornye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/svarochnye-apparaty/invertornye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/svarochnye-apparaty/svarochnye-poluavtomaty/",
+      "label": "Сварочные полуавтоматы",
+      "web": "https://prom.myfast.space/catalog/svarochnye-apparaty/svarochnye-poluavtomaty/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/svarochnye-apparaty/svarochnye-poluavtomaty/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "221",
+      "label": "Тепловые пушки",
+      "web": "https://prom.myfast.space/catalog/teplovye-pushki/",
+      "mobile": "/catalog/section/221",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/teplovye-pushki/gazovyeteplovyepushki/",
+      "label": "Газовые тепловые пушки",
+      "web": "https://prom.myfast.space/catalog/teplovye-pushki/gazovyeteplovyepushki/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/teplovye-pushki/gazovyeteplovyepushki/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/teplovye-pushki/nagrevatel-pryamogo-nagreva/",
+      "label": "Нагреватели прямого нагрева",
+      "web": "https://prom.myfast.space/catalog/teplovye-pushki/nagrevatel-pryamogo-nagreva/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/teplovye-pushki/nagrevatel-pryamogo-nagreva/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/teplovye-pushki/jelektricheskie-vozduhonagrevateli/",
+      "label": "Электрические воздухонагреватели",
+      "web": "https://prom.myfast.space/catalog/teplovye-pushki/jelektricheskie-vozduhonagrevateli/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/teplovye-pushki/jelektricheskie-vozduhonagrevateli/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "250",
+      "label": "Леса",
+      "web": "https://prom.myfast.space/catalog/stroitelnye-lesa/",
+      "mobile": "/catalog/section/250",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/ramnogo-tipa/",
+      "label": "Леса рамные ЛРСП",
+      "web": "https://prom.myfast.space/catalog/stroitelnye-lesa/ramnogo-tipa/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/ramnogo-tipa/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/",
+      "label": "Хомутовые леса",
+      "web": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/a/",
+      "label": "Комплектующие для хомутовых лесов",
+      "web": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/a/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/a/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/homuty/",
+      "label": "Строительные хомуты",
+      "web": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/homuty/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/homuty/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+      "label": "Комплектующие к строительным лесам",
+      "web": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/shchity-i-balki-nastila/",
+      "label": "Настил для строительных лесов",
+      "web": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/shchity-i-balki-nastila/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/shchity-i-balki-nastila/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/ramy-stroitelnykh-lesov/",
+      "label": "Рамы строительных лесов ЛРСП",
+      "web": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/ramy-stroitelnykh-lesov/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/ramy-stroitelnykh-lesov/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/svyazi-krepleniya-opory/",
+      "label": "Связи, крепления, опоры строительных лесов",
+      "web": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/svyazi-krepleniya-opory/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/svyazi-krepleniya-opory/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/sektsii-i-komplekty/",
+      "label": "Секции и комплекты рамных лесов ЛРСП",
+      "web": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/sektsii-i-komplekty/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/sektsii-i-komplekty/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/stroitelnye-lesa/mobilnye-stroitelnye-lesa/",
+      "label": "Мобильные строительные леса",
+      "web": "https://prom.myfast.space/catalog/stroitelnye-lesa/mobilnye-stroitelnye-lesa/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/stroitelnye-lesa/mobilnye-stroitelnye-lesa/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "231",
+      "label": "Металл и металлообработка",
+      "web": "https://prom.myfast.space/catalog/metallicheskieizdeliya/",
+      "mobile": "/catalog/section/231",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/vannochkadlyasvarkiarmatury/",
+      "label": "Ванночки для сварки арматуры",
+      "web": "https://prom.myfast.space/catalog/metallicheskieizdeliya/vannochkadlyasvarkiarmatury/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/vannochkadlyasvarkiarmatury/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/zakladnyeizmetalla/",
+      "label": "Закладные из металла",
+      "web": "https://prom.myfast.space/catalog/metallicheskieizdeliya/zakladnyeizmetalla/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/zakladnyeizmetalla/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/metallizdeliya/",
+      "label": "Металлические изделия",
+      "web": "https://prom.myfast.space/catalog/metallicheskieizdeliya/metallizdeliya/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/metallizdeliya/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/muftydlyastykovkiarmatury/",
+      "label": "Муфты для стыковки арматуры",
+      "web": "https://prom.myfast.space/catalog/metallicheskieizdeliya/muftydlyastykovkiarmatury/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/muftydlyastykovkiarmatury/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/stankidlyagibkimetalla/",
+      "label": "Станки для гибки металла",
+      "web": "https://prom.myfast.space/catalog/metallicheskieizdeliya/stankidlyagibkimetalla/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/stankidlyagibkimetalla/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    },
+    {
+      "id": "https://prom.myfast.space/catalog/metallicheskieizdeliya/stankidlyarezkimetalla/",
+      "label": "Станки для резки металла",
+      "web": "https://prom.myfast.space/catalog/metallicheskieizdeliya/stankidlyarezkimetalla/",
+      "mobile": "/catalog/section/https://prom.myfast.space/catalog/metallicheskieizdeliya/stankidlyarezkimetalla/",
+      "status": "PARTIAL",
+      "note": "Иерархия импортирована; полный ассортимент и динамические фильтры ещё не соответствуют source."
+    }
+  ],
+  "currentGlobalEntries": [
+    {
+      "label": "Доставка и самовывоз",
+      "mobile": "/information/delivery",
+      "source": "/delivery/"
+    },
+    {
+      "label": "Способы оплаты",
+      "mobile": "/information/payment",
+      "source": "/payment/"
+    },
+    {
+      "label": "Как оформить заказ",
+      "mobile": "/pages/checkout",
+      "source": "/checkout/"
+    },
+    {
+      "label": "Возврат товара",
+      "mobile": "/pages/returns",
+      "source": "/return/"
+    },
+    {
+      "label": "Гарантия",
+      "mobile": "/pages/warranty",
+      "source": "/return/ + catalog product documents"
+    },
+    {
+      "label": "Частые вопросы",
+      "mobile": "/pages/faq",
+      "source": "/delivery/ (UF_FAQ)"
+    },
+    {
+      "label": "Акции",
+      "mobile": "/pages/promotions",
+      "source": "/catalog/ (discounted products)"
+    },
+    {
+      "label": "Видео",
+      "mobile": "/blog?kind=video",
+      "source": "/blog/video/"
+    },
+    {
+      "label": "Скачать каталог",
+      "mobile": "/pages/documents",
+      "source": "/upload/uf/c2e/z9a89bazeaxnc6s09bwmuabw6t6p9bdg/katalog.pdf"
+    },
+    {
+      "label": "Блог и полезные материалы",
+      "mobile": "/blog",
+      "source": "/blog/"
+    },
+    {
+      "label": "О компании",
+      "mobile": "/pages/about",
+      "source": "/about/"
+    },
+    {
+      "label": "Собственное производство",
+      "mobile": "/information/production",
+      "source": "/vendor/"
+    },
+    {
+      "label": "Наши проекты",
+      "mobile": "/blog?kind=projects",
+      "source": "/blog/projects/"
+    },
+    {
+      "label": "Награды и достижения",
+      "mobile": "/pages/awards",
+      "source": "/awards/"
+    },
+    {
+      "label": "Бренды",
+      "mobile": "/pages/brands",
+      "source": "/brands/"
+    },
+    {
+      "label": "Контакты и филиалы",
+      "mobile": "/information/contacts",
+      "source": "/contacts/"
+    },
+    {
+      "label": "Реквизиты",
+      "mobile": "/pages/details",
+      "source": "/details/"
+    },
+    {
+      "label": "Поставки для бизнеса",
+      "mobile": "/information/business",
+      "source": "/business/"
+    },
+    {
+      "label": "Отправить заявку на просчет",
+      "mobile": "/procurement",
+      "source": "/business/"
+    },
+    {
+      "label": "Сотрудничество",
+      "mobile": "/pages/cooperation",
+      "source": "/cooperation/"
+    },
+    {
+      "label": "Поставщикам",
+      "mobile": "/pages/suppliers",
+      "source": "/suppliers/"
+    },
+    {
+      "label": "Франшиза",
+      "mobile": "/pages/franchise",
+      "source": "/franchise/"
+    },
+    {
+      "label": "Личные данные",
+      "mobile": "/workspace/profile",
+      "source": "/personal/info/"
+    },
+    {
+      "label": "Заказы",
+      "mobile": "/orders",
+      "source": "/personal/orders/active/"
+    },
+    {
+      "label": "Избранное",
+      "mobile": "/favorites",
+      "source": "/favorite/"
+    },
+    {
+      "label": "Сравнение товаров",
+      "mobile": "/compare",
+      "source": "/comparison/"
+    },
+    {
+      "label": "Лист ожидания",
+      "mobile": "/workspace/waiting-list",
+      "source": "/waiting-list/"
+    },
+    {
+      "label": "Мои отзывы и вопросы",
+      "mobile": "/workspace/reviews",
+      "source": "/personal/questions-and-reviews/"
+    },
+    {
+      "label": "Мои обращения",
+      "mobile": "/service?kind=appeal",
+      "source": "/personal/appeals/"
+    },
+    {
+      "label": "Мои возвраты",
+      "mobile": "/workspace/returns",
+      "source": "/personal/returns/applications/"
+    },
+    {
+      "label": "Адреса доставки",
+      "mobile": "/workspace/addresses",
+      "source": "/personal/address-delivery/"
+    },
+    {
+      "label": "Сохранённые способы оплаты",
+      "mobile": "/workspace/payment-methods",
+      "source": "/personal/payment-methods/"
+    },
+    {
+      "label": "Уведомления и рассылки",
+      "mobile": "/notifications",
+      "source": "/personal/notifications/"
+    },
+    {
+      "label": "Мои организации",
+      "mobile": "/workspace/organizations",
+      "source": "/personal/organizations/"
+    },
+    {
+      "label": "Документы и ЭДО",
+      "mobile": "/workspace/documents",
+      "source": "/organization/info/"
+    },
+    {
+      "label": "Публичная оферта",
+      "mobile": "/legal/offer",
+      "source": "/oferta/"
+    },
+    {
+      "label": "Политика конфиденциальности",
+      "mobile": "/legal/privacy",
+      "source": "/privacy-policy/"
+    },
+    {
+      "label": "Согласие на обработку данных",
+      "mobile": "/legal/consent",
+      "source": "/user-agreement/"
+    },
+    {
+      "label": "Использование cookie",
+      "mobile": "/legal/cookies",
+      "source": "/cookie-policy/"
+    },
+    {
+      "label": "Рекомендательные технологии",
+      "mobile": "/legal/recommendations",
+      "source": "/recom-tech-info/"
+    }
+  ],
+  "notes": [
+    "Публичный mobile burger, mobile search и desktop catalog действительно открывались; скриншоты evidence/menu-*.png. Массив controls в menu-interactions.json содержит DOM страницы после открытия, не только перекрывающую панель.",
+    "Source содержит три социальные ссылки: VK, YouTube и Telegram. MoreScreen восстанавливает все три; browser-проверка внешних переходов фиксируется отдельно, без отправки сообщений.",
+    "/faq/ и /warranty/ не самостоятельные публичные source pages; FAQ расположен в UF_FAQ, гарантия относится к товарным документам.",
+    "Полная функциональность документов организации сохраняется, хотя пункт Documents закомментирован в source organization menu.",
+    "12.09.2026, прямое решение владельца: быстрый заказ по артикулам удалён, старый /quick-order перенаправляет в /procurement. Пункт заявки переименован в «Отправить заявку на просчет». Текущих пунктов 40; прежние 41 в истории проверок сохранены."
+  ],
+  "currentUiVerification": {
+    "entry": "af47a4ffd3e870a579d37d5bdfcd8830",
+    "at": "2026-09-12T07:53:30.509145+03:00",
+    "widths": [
+      320,
+      390
+    ],
+    "menuTransitions": 80,
+    "menuTransitionsPassed": 80,
+    "pageErrors": 0,
+    "evidence": "docs/parity/evidence/partner05-public/report.json",
+    "limitations": "Navigation only; not live form submission/Bitrix acceptance."
+  },
+  "previousUiVerification": {
+    "entry": "/_expo/static/js/web/entry-06d88df008f4e6f2ba6afe6c82a0ecd5.js",
+    "at": "2026-09-11T23:45:28.540Z",
+    "widths": [
+      320,
+      390
+    ],
+    "menuTransitions": 82,
+    "menuTransitionsPassed": 82,
+    "pageErrors": 0,
+    "evidence": "evidence/recovery-content-06d88/results.json",
+    "limitations": "Подтверждена навигация; содержание, авторизованные данные и submit не закрыты."
+  }
+}

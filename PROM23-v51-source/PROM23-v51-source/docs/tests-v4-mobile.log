@@ -1,0 +1,51 @@
+
+> prom23-mobile-preview@0.4.0 test
+> tsx --test tests/*.test.ts
+
+▶ Граница будущего мобильного API
+  ✔ запрещает HTTP и встроенные секреты (4.272833ms)
+  ✔ не отправляет запросы на другой origin или за пределы API (1.366875ms)
+  ✔ передаёт ключ и контекст, задаёт запрет cookie и редиректов транспорту (16.786208ms)
+  ✔ не допускает B2B запрос без авторизации и отменённый запрос (0.388625ms)
+  ✔ возвращает понятную ошибку авторизации, не выдаёт HTML или внутренний текст сервера (0.24ms)
+  ✔ проверяет JSON и структуру ответа (1.617708ms)
+  ✔ отменяет запрос по таймауту и не повторяет POST автоматически (12.499125ms)
+✔ Граница будущего мобильного API (38.177166ms)
+▶ Публичный снимок каталога PROM23 от 11.09.2026
+  ✔ сохраняет все 20 корней и их порядок из меню сайта, включая леса перед металлом (0.865583ms)
+  ✔ не содержит повторных ID, URL, отсутствующих родителей или повторных ссылок на потомков (1.021875ms)
+  ✔ полностью достижим из корней без циклов и сохраняет исходный DFS-порядок четырёх уровней (0.259833ms)
+  ✔ связывает каждый из 25 товаров с точной цепочкой разделов его исходного URL (0.588542ms)
+  ✔ productIds на каждом уровне включает ровно свои товары и товары потомков, без чужих SKU (1.716042ms)
+  ✔ находит товар на четвёртом уровне и не помещает вышку в посторонний корневой раздел (0.380542ms)
+  ✔ сохраняет связь по section.productIds для старого товара без sectionIds (0.289458ms)
+  ✔ останавливает построение хлебных крошек при повреждённом циклическом дереве (0.908875ms)
+✔ Публичный снимок каталога PROM23 от 11.09.2026 (6.992459ms)
+▶ Корзины личных и корпоративных покупок
+  ✔ изолирует корзины при смене контекста (1.497875ms)
+  ✔ ограничивает количество остатком и отклоняет дробные/отрицательные значения (0.112083ms)
+  ✔ удаляет нулевое количество и не добавляет отсутствующий товар (0.096833ms)
+  ✔ считает целые копейки и отклоняет устаревшие SKU/остатки (0.276541ms)
+✔ Корзины личных и корпоративных покупок (4.202708ms)
+▶ Каталог
+  ✔ ищет слова независимо от регистра, учитывает артикул, категорию и сортировку (0.363583ms)
+  ✔ ограничивает сравнение тремя товарами и позволяет убрать выбранный (0.098667ms)
+✔ Каталог (0.554667ms)
+✔ source forms keep unchecked consent, valid related routes and source provenance (0.869875ms)
+✔ registration catches password mismatch and invalid email; OTP requires six digits (0.300792ms)
+✔ return renders and serializes only selected authorized order items (0.233291ms)
+✔ checkbox false is explicit; readonly identity cannot be supplied by form values (0.064042ms)
+✔ disconnected form transport never sends or fabricates acceptance (0.282083ms)
+✔ push opens an order only in its own customer context (0.6345ms)
+✔ push cannot navigate to external URLs or traverse paths (0.208958ms)
+✔ empty history yields no invented interests or recommendations; popularity uses source rank (1.971708ms)
+✔ deduplicates history, excludes stale IDs and prioritizes deepest shared category (0.295375ms)
+✔ recommendations exclude products already in the current cart (1.524ms)
+ℹ tests 31
+ℹ suites 4
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 212.817042

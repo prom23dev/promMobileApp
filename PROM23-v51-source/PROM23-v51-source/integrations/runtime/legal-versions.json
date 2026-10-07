@@ -1,0 +1,34 @@
+{
+  "privacy": {
+    "version": "2026-10-01",
+    "sha256": "c5e29d383a8afa3e7ff01791b43a66380f6b3511db5d328bce69c64183296db3"
+  },
+  "consent": {
+    "version": "2026-10-01",
+    "sha256": "79f0db38e06382dd44273b7a6b51aa43ac7a71c91bf3d6d2b842b86e418c3355"
+  },
+  "cookies": {
+    "version": "2026-10-01",
+    "sha256": "4ec20e72b84640f13b868b92732a0635d0b9543a7ddbc2ccba72f0816b843c5e"
+  },
+  "recommendations": {
+    "version": "2026-10-01",
+    "sha256": "ca9b6561097005c2cc4c9846ee3ba94e7abc7558c5c4e1c13b1edab51daa659b"
+  },
+  "advertising": {
+    "version": "2026-10-01",
+    "sha256": "67d2a699298b30291ac303c56481773a2313de119c65d799ee5a9441021f6554"
+  },
+  "distribution": {
+    "version": "2026-10-01",
+    "sha256": "9b6ff06b96f86fa965cec0fef4d8a1af5e3dbd484f78edb5501444dd363dbb0b"
+  },
+  "offer": {
+    "version": "2026-10-01",
+    "sha256": "76b4a75f3972799e4edb8aa76e7b48d7b726a21c4285e0fac85efff0df3947f7"
+  },
+  "ui": {
+    "version": "2026-10-01",
+    "sha256": "406084ce4dddbefd2cfe72dfc9e0d43d25e56f8d62b9f6687a48310e69645c12"
+  }
+}

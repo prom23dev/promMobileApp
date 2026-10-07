@@ -1,0 +1,18 @@
+{
+  "tool": "Built-in image_gen",
+  "created": "2026-09-17",
+  "briefs": [
+    {
+      "key": "2008-supplies",
+      "prompt": "Use case: historical-scene. Create a realistic editorial photograph as a temporary illustrative placeholder for the 2008 founding stage in a Russian construction-equipment supplier company history website. Horizontal 16:9 composition. A modest, well-organized construction equipment warehouse yard in southern Russia around 2008: bundles of blue painted steel scaffold frames, stacked timber scaffold decks, steel props and an ordinary small delivery truck beside a low industrial warehouse. Equipment and logistics, not a factory. No people needed. Natural daylight, authentic unpolished industrial setting, restrained realistic colors, eye-level documentary composition, sharp and legible equipment. No corporate logos, no writing, no year or caption rendered in image, no watermark, no collage. The image will be visibly captioned as an AI illustration on the page, not presented as an actual historical archival photo."
+    },
+    {
+      "key": "2015-network",
+      "prompt": "Use case: historical-scene. Create a realistic editorial photograph as a temporary illustrative placeholder for the 2015 regional network expansion stage of a construction-equipment supplier in Russia. Horizontal 16:9 composition, single coherent scene. A larger regional distribution warehouse with open loading doors, pallets of steel formwork panels, neatly bundled scaffold frames and stacks of laminated plywood. A delivery truck is parked at a loading area and a forklift with lowered forks sits at a safe distance; no people needed. Clear overcast daylight, clean but credible working depot, grey steel, blue frames, subtle yellow machinery, wide eye-level view. The feeling is growing logistics capacity, not manufacturing or a finished construction site. No logos, no signs, no textual labels, no dates, no watermark, no collage. This is an illustrative image to be identified as AI on the website, not a claim of documentary company provenance."
+    },
+    {
+      "key": "2021-workshop",
+      "prompt": "Use case: photorealistic-natural. Generate a single realistic horizontal 16:9 editorial photograph for a corporate history timeline: starting a construction-equipment manufacturing workshop in 2021. View inside a modest first production workshop: steel scaffold frame tubes on a jig welding table, neatly stacked semi-finished frames, a metal cutting machine, organized hand tools, tall workshop windows and structural steel beams. Show a believable real industrial workflow and modest scale rather than a huge futuristic plant. No people required, no sparks without a worker, no robots. Natural side daylight, graphite metal, some blue-painted finished frames and a few orange workshop details, accurate perspective, crisp documentary photograph. No text, no logos, no company signage, no date, no collage or watermark. Intended as an explicitly identified temporary AI illustration, not an actual historical archival photograph."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "route": "/pages/cooperation",
+    "entry": [
+      "http://127.0.0.1:8087/_expo/static/js/web/entry-ed83011da7b1676c4f2bd2fd2d35a7cd.js"
+    ],
+    "callBounds": {
+      "x": 260,
+      "y": 6,
+      "width": 48,
+      "height": 48
+    },
+    "pass": true
+  },
+  {
+    "route": "/information/production",
+    "entry": [
+      "http://127.0.0.1:8087/_expo/static/js/web/entry-ed83011da7b1676c4f2bd2fd2d35a7cd.js"
+    ],
+    "callBounds": {
+      "x": 260,
+      "y": 6,
+      "width": 48,
+      "height": 48
+    },
+    "pass": true
+  },
+  {
+    "route": "/pages/faq",
+    "entry": [
+      "http://127.0.0.1:8087/_expo/static/js/web/entry-ed83011da7b1676c4f2bd2fd2d35a7cd.js"
+    ],
+    "callBounds": {
+      "x": 260,
+      "y": 6,
+      "width": 48,
+      "height": 48
+    },
+    "pass": true
+  },
+  {
+    "route": "/information/business",
+    "entry": [
+      "http://127.0.0.1:8087/_expo/static/js/web/entry-ed83011da7b1676c4f2bd2fd2d35a7cd.js"
+    ],
+    "callBounds": {
+      "x": 260,
+      "y": 6,
+      "width": 48,
+      "height": 48
+    },
+    "pass": true
+  },
+  {
+    "check": "Cooperation photo target navigates supplier",
+    "pass": true
+  }
+]

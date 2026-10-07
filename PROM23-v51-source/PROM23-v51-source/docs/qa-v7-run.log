@@ -1,0 +1,15 @@
+passed: Responsive home / product shelf / B2B at 320,390,430,768,844 landscape
+passed: Phone/contact visibility and Back
+passed: Hero photo toggles, project link and return
+passed: Search history, persistence and menu Back
+passed: Popular continuation preserves uniqueness
+passed: B2B radio routes to selection and quick specification
+passed: B2B radio labels remain within their controls at 320 CSS px
+passed: Quick-order validates quantity and preserves known/unknown lines in quote and Back
+passed: Draft expiration during editing preserves form; reload explains missing draft and allows recovery
+passed: Projects gallery all tabs, information, Back and heading hierarchy
+passed: Delivery/payment/account explain terms and return routes
+passed: City modal focus trap, Escape, landscape action
+passed: Comparison empty state matches the supported six-product limit
+passed: Reduced motion, no page errors or external mutations
+{"passed":14,"failed":0}

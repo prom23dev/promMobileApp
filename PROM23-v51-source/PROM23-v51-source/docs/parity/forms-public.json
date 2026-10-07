@@ -1,0 +1,183 @@
+{
+  "at": "2026-09-11T23:10:59.969776+00:00",
+  "scope": "Public GET only; no supplied credentials, form submit or hidden values saved",
+  "pages": [
+    {
+      "url": "https://prom.myfast.space/local/ajax/catalog/request-a-call.php",
+      "status": 200,
+      "finalUrl": "https://prom.myfast.space/local/ajax/catalog/request-a-call.php",
+      "sha256": "3bcacab039e852ec2e3b395a8faee9e821025d742517fdb7f542b3b1ba899308",
+      "forms": [
+        {
+          "action": "/local/ajax/catalog/action-request-a-call.php",
+          "method": "post",
+          "name": null,
+          "id": null
+        }
+      ],
+      "fields": [
+        {
+          "name": "form_text_24",
+          "type": "text",
+          "required": true,
+          "readonly": false,
+          "multiple": false,
+          "accept": null,
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "mask": null,
+          "placeholder": "Иван",
+          "line": 13,
+          "defaultIncluded": false
+        },
+        {
+          "name": "form_text_25",
+          "type": "tel",
+          "required": true,
+          "readonly": false,
+          "multiple": false,
+          "accept": null,
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "mask": "phone",
+          "placeholder": "+7 351 000-00-00",
+          "line": 25,
+          "defaultIncluded": false
+        },
+        {
+          "name": "form_text_26",
+          "type": "hidden",
+          "required": false,
+          "readonly": false,
+          "multiple": false,
+          "accept": null,
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "mask": null,
+          "placeholder": null,
+          "line": 37,
+          "defaultIncluded": false
+        },
+        {
+          "name": "form_text_27",
+          "type": "hidden",
+          "required": false,
+          "readonly": false,
+          "multiple": false,
+          "accept": null,
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "mask": null,
+          "placeholder": null,
+          "line": 42,
+          "defaultIncluded": false
+        },
+        {
+          "name": "WEB_FORM_ID",
+          "type": "hidden",
+          "required": false,
+          "readonly": false,
+          "multiple": false,
+          "accept": null,
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "mask": null,
+          "placeholder": null,
+          "line": 47,
+          "defaultIncluded": false
+        },
+        {
+          "name": "agree_policy_call",
+          "type": "checkbox",
+          "required": true,
+          "readonly": false,
+          "multiple": false,
+          "accept": null,
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "mask": null,
+          "placeholder": null,
+          "line": 51,
+          "defaultIncluded": false
+        },
+        {
+          "name": "agree_consent_call",
+          "type": "checkbox",
+          "required": true,
+          "readonly": false,
+          "multiple": false,
+          "accept": null,
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "mask": null,
+          "placeholder": null,
+          "line": 59,
+          "defaultIncluded": false
+        },
+        {
+          "name": "sessid",
+          "type": "hidden",
+          "required": false,
+          "readonly": false,
+          "multiple": false,
+          "accept": null,
+          "maxlength": null,
+          "min": null,
+          "max": null,
+          "mask": null,
+          "placeholder": null,
+          "line": 66,
+          "defaultIncluded": false
+        }
+      ],
+      "labels": [
+        "Ваше имя",
+        "Ваш телефон",
+        "Я согласен с «Политикой конфиденциальности»",
+        "Я согласен с «Согласием на обработку персональных данных»"
+      ]
+    },
+    {
+      "url": "https://prom.myfast.space/local/ajax/catalog/buy-one-click.php?id=2749",
+      "errorType": "HTTPError",
+      "status": 403
+    },
+    {
+      "url": "https://prom.myfast.space/local/ajax/catalog/request-a-rent.php?id=2749",
+      "errorType": "HTTPError",
+      "status": 403
+    },
+    {
+      "url": "https://prom.myfast.space/local/ajax/catalog/request-a-leasing.php?id=1046",
+      "errorType": "HTTPError",
+      "status": 403
+    },
+    {
+      "url": "https://prom.myfast.space/local/ajax/catalog/form-found-it-cheaper.php?id=2749",
+      "errorType": "HTTPError",
+      "status": 403
+    },
+    {
+      "url": "https://prom.myfast.space/local/include/forms/auth-reg/form-auth-by-email.php",
+      "errorType": "HTTPError",
+      "status": 403
+    },
+    {
+      "url": "https://prom.myfast.space/local/include/forms/auth-reg/form-reg.php",
+      "errorType": "HTTPError",
+      "status": 403
+    },
+    {
+      "url": "https://prom.myfast.space/local/include/forms/auth-reg/password-recovery.php",
+      "errorType": "HTTPError",
+      "status": 403
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "release": {
+    "release": "v0.6-20260911-01",
+    "previous": "v0.5-20260911-01",
+    "filesVerified": 78,
+    "sections": 226,
+    "products": 25,
+    "unitPreserved": true
+  },
+  "previewStatus": 200,
+  "publicHtmlMatchesLocal": true,
+  "publicBundleMatchesLocal": true,
+  "bundleSha256": "861ddda457cca5494158bdd51a0a3cbc71fd1673e8cf5c7a08128ab7dadbdc6d",
+  "robots": "noindex, nofollow",
+  "popularProducts": 7,
+  "productionHttpBefore": 200,
+  "productionHttpAfter": 200,
+  "productionThemeFilesUnchanged": 82,
+  "productionProcessesUnchanged": true,
+  "dnsChanged": false
+}

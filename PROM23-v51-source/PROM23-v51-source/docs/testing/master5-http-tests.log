@@ -1,0 +1,14 @@
+✔ HTTP public content DTO is credentialless, cached with ETag304, noindex and exact route/method (62.982083ms)
+✔ HTTP product detail returns owned public snapshot, no fake stock or private file path; unknown is404 (30.975208ms)
+✔ HTTP availability needs session and its selected official location, not URL-supplied warehouse (38.127167ms)
+✔ HTTP buyer context comes from authoritative session even in explicit isolated organization fixtures (24.403791ms)
+✔ HTTP content conditional caching supports allowed origins and rejects foreign origins/headers (20.345708ms)
+✔ missing/malformed optional detail/content files do not prevent catalog or local session startup (36.879666ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 303.402833

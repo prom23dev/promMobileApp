@@ -1,0 +1,23 @@
+{
+  "products": 28,
+  "galleryReferences": 144,
+  "uniqueFiles": 136,
+  "assetBytes": 38723737,
+  "descriptions": 28,
+  "publicDocuments": 0,
+  "capabilities": {
+    "canRent": [
+      "prom-2414",
+      "prom-23916",
+      "prom-2749"
+    ],
+    "canLease": [
+      "prom-1046",
+      "prom-2266",
+      "prom-1649"
+    ],
+    "canRequestBetterPrice": []
+  },
+  "variant": "existing responsive720; original1280URL preserved",
+  "dataSHA256": "625fb2fdde1f3383aaffa19755f2d796030009829d1ff830fa8a93ac7effaa72"
+}

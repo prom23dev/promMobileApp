@@ -1,0 +1,21 @@
+{
+    "generatedAt": "2026-09-29T15:02:42+00:00",
+    "slugCount": 14,
+    "requestedSlugs": [
+        "personal-data",
+        "checkout",
+        "details",
+        "returns",
+        "offer",
+        "privacy",
+        "about",
+        "brands",
+        "suppliers",
+        "franchise",
+        "awards",
+        "faq",
+        "cookies",
+        "recommendations"
+    ],
+    "errors": []
+}

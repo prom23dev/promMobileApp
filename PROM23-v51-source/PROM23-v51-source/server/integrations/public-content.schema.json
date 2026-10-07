@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:prom23:public-content:v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "revision",
+    "sourceCheckedAt",
+    "mode",
+    "page"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "sourceCheckedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "mode": {
+      "enum": [
+        "source-snapshot",
+        "live-cms"
+      ]
+    },
+    "provenance": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "page": {
+      "type": "object",
+      "required": [
+        "slug",
+        "title",
+        "sourceUrl",
+        "sections",
+        "links"
+      ],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{0,79}$"
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "sourceUrl": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "sections": {
+          "type": "array",
+          "maxItems": 80,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "paragraphs"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{0,79}$"
+              },
+              "title": {
+                "type": "string",
+                "maxLength": 300
+              },
+              "paragraphs": {
+                "type": "array",
+                "maxItems": 120,
+                "items": {
+                  "type": "string",
+                  "maxLength": 20000
+                }
+              },
+              "bullets": {
+                "type": "array",
+                "maxItems": 120,
+                "items": {
+                  "type": "string",
+                  "maxLength": 20000
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "links": {
+          "type": "array",
+          "maxItems": 40,
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "url"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

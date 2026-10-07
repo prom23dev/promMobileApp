@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-11T18:54:48.674Z",
+  "expected": "f511f4c425f0956cb8c2dd105ef3dba2",
+  "checks": [
+    {
+      "name": "Official settlement update preserves cart, shows notice and keeps unknown stock honest",
+      "status": "PASS",
+      "details": {
+        "settlement": "край Краснодарский, р-н Динской, ст-ца Динская",
+        "cartQuantity": 1,
+        "stock": "unknown"
+      }
+    }
+  ],
+  "layouts": [],
+  "errors": [],
+  "blocked": [],
+  "limits": [
+    "Isolated browser; no external submissions/calls/payment. Native accessibility and live integration acceptance remain separate."
+  ],
+  "entry": "/_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js",
+  "finishedAt": "2026-09-11T18:54:52.554Z"
+}

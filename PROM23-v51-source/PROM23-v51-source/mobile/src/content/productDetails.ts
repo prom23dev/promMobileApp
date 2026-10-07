@@ -1,0 +1,2631 @@
+// Generated from owned-site public PDPs by scripts/import-product-details.py. No live eligibility implied.
+import type { ImageSourcePropType } from 'react-native';
+export type ProductGalleryImage = { id: string; kind: 'image'; source: ImageSourcePropType; alt: string; url: string; originalUrl?: string; width?: number; height?: number; localFile: string; sha256: string; bytes: number };
+export type ProductDetails = { productId: string; sourceUrl: string; sourcePageSHA256: string; capturedAt: string; gallery: ProductGalleryImage[]; descriptionParagraphs: string[]; advantages: string[]; packageContents: string[]; documents: {id:string;name:string;url:string;access:'public'}[]; documentPolicy: {requiresOrder:boolean;manifestAvailable:boolean;source:string}; capabilities: {canRent:boolean;canLease:boolean;canBuyOneClick:boolean;canRequestBetterPrice:boolean;canRequestQuote:boolean;canRequestCallback:boolean}; capabilityMode:'source-form-visibility';runtimeWritesAvailable:false };
+const details: Record<string, ProductDetails> = {
+"prom-2414": {
+  "productId": "prom-2414",
+  "sourceUrl": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavspt07kh16/id-vyshka-tura-vspt-0-7h1-6-2-8-m/",
+  "sourcePageSHA256": "c1d538fd1bfee748a5123e4f46aadae09977314da9ce3b1fd81f6bce9d699c9e",
+  "capturedAt": "2026-09-11T18:14:16.243767+00:00",
+  "gallery": [
+    {
+      "id": "prom-2414-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/32c/720_4000_1/tbo6tbol168ns5wf2nfd2h2gd0mxo23z.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/32c/1280_4000_1/tbo6tbol168ns5wf2nfd2h2gd0mxo23z.jpg",
+      "alt": "Вышка-тура ВСПТ 0,7×1,6, высота 2,8 метра",
+      "localFile": "mobile/assets/product-gallery/c71115bae7f092bd996f0049.jpg",
+      "sha256": "c71115bae7f092bd996f004909bdecb10a5caa588250ee2e21ac141b51656822",
+      "bytes": 370559,
+      "source": require('../../assets/product-gallery/c71115bae7f092bd996f0049.jpg')
+    },
+    {
+      "id": "prom-2414-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/d53/720_4000_1/mj8njpjo4gpkq6vpjibw7ncanhx7nno7.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/d53/1280_4000_1/mj8njpjo4gpkq6vpjibw7ncanhx7nno7.jpg",
+      "alt": "Вышка-тура ВСПТ 0,7×1,6, высота 2,8 метра",
+      "localFile": "mobile/assets/product-gallery/8837868e7fb64d1cebdaff8c.jpg",
+      "sha256": "8837868e7fb64d1cebdaff8c333a6c45df316ab60e72c8228ebb9301dd02205e",
+      "bytes": 275407,
+      "source": require('../../assets/product-gallery/8837868e7fb64d1cebdaff8c.jpg')
+    },
+    {
+      "id": "prom-2414-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/8d3/720_4000_1/wu0tbifdh1xw5q9xkrp2hqqgq7046wce.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/8d3/1280_4000_1/wu0tbifdh1xw5q9xkrp2hqqgq7046wce.jpg",
+      "alt": "Вышка-тура ВСПТ 0,7×1,6, высота 2,8 метра",
+      "localFile": "mobile/assets/product-gallery/cd1c619e2dc64eb47477a4e4.jpg",
+      "sha256": "cd1c619e2dc64eb47477a4e4446243fe546cba59d82a8453e80527ef013fd719",
+      "bytes": 312132,
+      "source": require('../../assets/product-gallery/cd1c619e2dc64eb47477a4e4.jpg')
+    },
+    {
+      "id": "prom-2414-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/f74/720_4000_1/rhpi0j612j9rr8ez5a2c0g2cun9bj1vn.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/f74/1280_4000_1/rhpi0j612j9rr8ez5a2c0g2cun9bj1vn.jpg",
+      "alt": "Вышка-тура ВСПТ 0,7×1,6, высота 2,8 метра",
+      "localFile": "mobile/assets/product-gallery/58960da45976113677a1c026.jpg",
+      "sha256": "58960da45976113677a1c0263160f5899e568aa645509e5e3098cbb5557e6162",
+      "bytes": 312832,
+      "source": require('../../assets/product-gallery/58960da45976113677a1c026.jpg')
+    },
+    {
+      "id": "prom-2414-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/81c/720_4000_1/3oxwdbwqobullnd7vd02muxz1w3uejg9.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/81c/1280_4000_1/3oxwdbwqobullnd7vd02muxz1w3uejg9.jpg",
+      "alt": "Вышка-тура ВСПТ 0,7×1,6, высота 2,8 метра",
+      "localFile": "mobile/assets/product-gallery/aacedf6218358f7b68604215.jpg",
+      "sha256": "aacedf6218358f7b68604215c8faa5fd6e50e594048270639e6fc2078c1a8131",
+      "bytes": 233487,
+      "source": require('../../assets/product-gallery/aacedf6218358f7b68604215.jpg')
+    },
+    {
+      "id": "prom-2414-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ed8/720_4000_1/xg29twziifbz8sourhcxyileqklng8r0.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/ed8/1280_4000_1/xg29twziifbz8sourhcxyileqklng8r0.jpg",
+      "alt": "Вышка-тура ВСПТ 0,7×1,6, высота 2,8 метра",
+      "localFile": "mobile/assets/product-gallery/2feedd463a20c94fa3be7d0a.jpg",
+      "sha256": "2feedd463a20c94fa3be7d0ae0468147f98b085e12bfcb9e02db53a5d22404dc",
+      "bytes": 194070,
+      "source": require('../../assets/product-gallery/2feedd463a20c94fa3be7d0a.jpg')
+    },
+    {
+      "id": "prom-2414-photo-7",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/3d5/720_4000_1/08qnthf6dy4j3bkaktdanqljrplcj2uz.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/3d5/1280_4000_1/08qnthf6dy4j3bkaktdanqljrplcj2uz.jpg",
+      "alt": "Вышка-тура ВСПТ 0,7×1,6, высота 2,8 метра",
+      "localFile": "mobile/assets/product-gallery/564656c3c2d8a70a85283673.jpg",
+      "sha256": "564656c3c2d8a70a85283673d4b2722eb69aa0c9ad03dc88ac70d28d59994603",
+      "bytes": 230891,
+      "source": require('../../assets/product-gallery/564656c3c2d8a70a85283673.jpg')
+    },
+    {
+      "id": "prom-2414-photo-8",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/c8e/720_4000_1/ctvsieu34ivyldz7zzbkmg16e9iy9zbw.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/c8e/1280_4000_1/ctvsieu34ivyldz7zzbkmg16e9iy9zbw.jpg",
+      "alt": "Вышка-тура ВСПТ 0,7×1,6, высота 2,8 метра",
+      "localFile": "mobile/assets/product-gallery/25cb296c60310e73e817ac21.jpg",
+      "sha256": "25cb296c60310e73e817ac213f2b100626942e4df6fca2f834c9fbaeed0e799d",
+      "bytes": 373307,
+      "source": require('../../assets/product-gallery/25cb296c60310e73e817ac21.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Вышка-тура ВСПТ 0,7×1,6, высота 2,8 метра бренда TeaM — передвижная сборно-разборная вышка-тура для строительных, отделочных, монтажных, ремонтных и сервисных работ на высоте.",
+    "Рабочая площадка 0,7×1,6 м рассчитана на нагрузку до 250 килограммов. На ней удобно выполнять покраску, шпаклевку, штукатурные работы, монтаж потолков, светильников, вентиляции, кабельных трасс, рекламных конструкций и обслуживание складских зон.",
+    "Каркас выполнен для регулярной эксплуатации на объекте: труба диаметром 42 миллиметров, толщина стенки 1,5 миллиметра, материал — сталь. Сборка выполняется секционно, без сложного инструмента, а штатные связи помогают удерживать геометрию конструкции.",
+    "В комплекте предусмотрен настил с люком — 1 шт. Люк используется для подъёма и спуска внутри конструкции; настилы без люка в данную комплектацию не входят. Толщина фанеры — 10 мм.",
+    "Вышку можно перемещать по объекту на колесах диаметром 125 миллиметров. Перед началом работы конструкцию нужно выставить устойчиво, проверить замки, связи, настилы, колеса, опоры и отсутствие деформаций.",
+    "Высоту можно увеличивать совместимыми секциями этой же серии. В данной комплектации указано: 1 секция. Стыковка гарантируется только с элементами той же серии; детали других серий и самодельные переходники использовать нельзя.",
+    "Дополнительные настилы можно докупать и устанавливать только на предусмотренные уровни по паспорту. Нельзя превышать допустимую нагрузку и работать на уровне без ограждения.",
+    "Элементы с трещинами, сильным изгибом, поврежденными сварными швами, нарушенной геометрией, люфтом замков или расслоением настила нужно заменить до начала работ."
+  ],
+  "advantages": [
+    "Передвижная вышка-тура подходит для ремонта, монтажа и отделки",
+    "Секционная конструкция позволяет подбирать нужную высоту",
+    "Настил с люком удобен для подъема внутри вышки",
+    "Колеса помогают перемещать вышку по объекту",
+    "Флажковые замки ускоряют сборку связей",
+    "Рабочая площадка удобна для инструмента и материалов",
+    "Можно докупить совместимые секции и настилы",
+    "Стабилизаторы можно подобрать отдельно для высокой сборки"
+  ],
+  "packageContents": [
+    "Базовый блок — 1 комплект",
+    "Секция наращивания — 1 шт.",
+    "Настил с люком 0,7×1,6 — 1 шт.",
+    "Колеса/ролики — 4 шт.",
+    "Стабилизаторы — не входят, подбираются отдельно при необходимости",
+    "Паспорт изделия — 1 шт."
+  ],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": true,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-1042": {
+  "productId": "prom-1042",
+  "sourceUrl": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/id-alyuminievaya-vyshka-tura-profi-2h7-h-3m/",
+  "sourcePageSHA256": "19ee9e77c1b522431a97bc6238e164448a61bc79e8a073f0ac640ce6220c838f",
+  "capturedAt": "2026-09-11T18:14:16.245495+00:00",
+  "gallery": [
+    {
+      "id": "prom-1042-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/9cf/720_4000_1/nttcm2f30p8o878nef51rhuc9v569pc0.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/9cf/nttcm2f30p8o878nef51rhuc9v569pc0.jpg",
+      "alt": "Алюминиевая вышка-тура ПРОФИ 2×7, высота 3 метра",
+      "localFile": "mobile/assets/product-gallery/cb4c9d2065cfef7285dd642e.jpg",
+      "sha256": "cb4c9d2065cfef7285dd642e1f79233c3f7b2f833168ea7798db180c1872a6f0",
+      "bytes": 162876,
+      "source": require('../../assets/product-gallery/cb4c9d2065cfef7285dd642e.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Алюминиевая вышка-тура ПРОФИ 2×7, высота 3 метра бренда Промышленник — алюминиевая вышка-тура для строительных, монтажных, ремонтных и сервисных работ на высоте. Модель подходит для помещений, фасадов, складов, торговых залов и производственных зон, где важны легкость конструкции, быстрый монтаж и удобное перемещение.",
+    "Главная особенность серии ПРОФИ — раздвижная база: лестничные марши выдвигаются вверх и фиксируются в заданном положении. Такая схема позволяет менять высоту в пределах модели без тяжелых стальных секций и удобно работать там, где обычную вышку сложно хранить или перевозить.",
+    "Рабочая площадка 0,5×1,3 м комплектуется настилом с люком. Через люк можно подниматься внутри конструкции, а рифленые ступени помогают увереннее ставить ногу при подъеме. Каркас выполнен из алюминиевого сплава, поэтому вышку легче перемещать по объекту, чем стальную конструкцию сопоставимой высоты.",
+    "Основные параметры модели: полная высота 3 метров, рабочая высота 3,8 метров, высота установки настила 1,8 метров, допустимая нагрузка 150 килограммов. Перед работой нужно проверить фиксаторы, настил, ограждение, колеса, опоры и отсутствие деформаций.",
+    "Вышка подходит для монтажа светильников, вентиляции, кабельных трасс, отделки стен и потолков, обслуживания витрин, вывесок, инженерных коммуникаций и складского оборудования. Для работы на неровной поверхности или при сильном износе элементов вышку использовать нельзя.",
+    "Дополнительные настилы и элементы нужно подбирать только по совместимости с данной серией. Стыковка с другими вышками, самодельными переходниками или неподходящими деталями не гарантируется."
+  ],
+  "advantages": [
+    "Легкий алюминиевый каркас удобен для частого перемещения",
+    "Раздвижная база помогает менять рабочую высоту внутри модели",
+    "Рифленые ступени уменьшают риск соскальзывания ноги",
+    "Настил с люком позволяет подниматься внутри конструкции",
+    "Подходит для ремонта, монтажа, отделки и обслуживания",
+    "Вышка занимает меньше места при хранении и перевозке",
+    "Колеса упрощают перемещение по ровной площадке"
+  ],
+  "packageContents": [
+    "Базовый блок — 1 комплект",
+    "Секции наращивания — не предусмотрены для данной высоты",
+    "Колеса/ролики — 4 шт.",
+    "Паспорт изделия — 1 шт."
+  ],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-1046": {
+  "productId": "prom-1046",
+  "sourceUrl": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/id-alyuminievaya-vyshka-tura-profi-2h15-h-7m/",
+  "sourcePageSHA256": "bbd0a7ff23a963e08deed6c42e8f0e25dcaeefc442d4565a657eb213d360b9e9",
+  "capturedAt": "2026-09-11T18:14:16.245351+00:00",
+  "gallery": [
+    {
+      "id": "prom-1046-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/56c/720_4000_1/x5pxfb8be0pd1pfs1jkopyu1ahcc2i9o.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/56c/x5pxfb8be0pd1pfs1jkopyu1ahcc2i9o.jpg",
+      "alt": "Алюминиевая вышка-тура ПРОФИ 2×15, высота 7 метров",
+      "localFile": "mobile/assets/product-gallery/daf401e780f897080f657d06.jpg",
+      "sha256": "daf401e780f897080f657d06aed89c61ae22ae85fcbdba13b7c84db064c8c2d4",
+      "bytes": 150405,
+      "source": require('../../assets/product-gallery/daf401e780f897080f657d06.jpg')
+    },
+    {
+      "id": "prom-1046-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ad3/720_4000_1/vlll3a2c2jmx1tx1zjyimkli3aheb723.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/ad3/1280_4000_1/vlll3a2c2jmx1tx1zjyimkli3aheb723.jpg",
+      "alt": "Алюминиевая вышка-тура ПРОФИ 2×15, высота 7 метров",
+      "localFile": "mobile/assets/product-gallery/1fd7617889d91d428efaec09.jpg",
+      "sha256": "1fd7617889d91d428efaec0946a661c8036a58c51cb83f323f283e3899de0f07",
+      "bytes": 57997,
+      "source": require('../../assets/product-gallery/1fd7617889d91d428efaec09.jpg')
+    },
+    {
+      "id": "prom-1046-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/2ce/720_4000_1/rkuap6f9rt8e3cx0zzn5yl0ye6a0owot.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/2ce/1280_4000_1/rkuap6f9rt8e3cx0zzn5yl0ye6a0owot.jpg",
+      "alt": "Алюминиевая вышка-тура ПРОФИ 2×15, высота 7 метров",
+      "localFile": "mobile/assets/product-gallery/3eb942a2bd631f9d8375cf5a.jpg",
+      "sha256": "3eb942a2bd631f9d8375cf5a364ed25661b9769f31a2a80f16b6bfefee35d56a",
+      "bytes": 140197,
+      "source": require('../../assets/product-gallery/3eb942a2bd631f9d8375cf5a.jpg')
+    },
+    {
+      "id": "prom-1046-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/5ae/720_4000_1/yqrdmag8p1auvjo18pnby01gxybcohko.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/5ae/1280_4000_1/yqrdmag8p1auvjo18pnby01gxybcohko.jpg",
+      "alt": "Алюминиевая вышка-тура ПРОФИ 2×15, высота 7 метров",
+      "localFile": "mobile/assets/product-gallery/f2aa9a0fc083af7fd8a86301.jpg",
+      "sha256": "f2aa9a0fc083af7fd8a8630109c440d574f28169ed75100d1e15422396305619",
+      "bytes": 142119,
+      "source": require('../../assets/product-gallery/f2aa9a0fc083af7fd8a86301.jpg')
+    },
+    {
+      "id": "prom-1046-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ba3/720_4000_1/x300jk8z0w01mese95ubcu3wj5mh3s62.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/ba3/x300jk8z0w01mese95ubcu3wj5mh3s62.jpg",
+      "alt": "Алюминиевая вышка-тура ПРОФИ 2×15, высота 7 метров",
+      "localFile": "mobile/assets/product-gallery/2d9714d6d35937a8a365242b.jpg",
+      "sha256": "2d9714d6d35937a8a365242b372db11c864853025aa5daa384713baa47a29133",
+      "bytes": 99557,
+      "source": require('../../assets/product-gallery/2d9714d6d35937a8a365242b.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Алюминиевая вышка-тура ПРОФИ 2×15, высота 7 метров бренда Промышленник — алюминиевая вышка-тура для строительных, монтажных, ремонтных и сервисных работ на высоте. Модель подходит для помещений, фасадов, складов, торговых залов и производственных зон, где важны легкость конструкции, быстрый монтаж и удобное перемещение.",
+    "Главная особенность серии ПРОФИ — раздвижная база: лестничные марши выдвигаются вверх и фиксируются в заданном положении. Такая схема позволяет менять высоту в пределах модели без тяжелых стальных секций и удобно работать там, где обычную вышку сложно хранить или перевозить.",
+    "Рабочая площадка 0,5×1,9 м комплектуется настилом с люком. Через люк можно подниматься внутри конструкции, а рифленые ступени помогают увереннее ставить ногу при подъеме. Каркас выполнен из алюминиевого сплава, поэтому вышку легче перемещать по объекту, чем стальную конструкцию сопоставимой высоты.",
+    "Основные параметры модели: полная высота 7 метров, рабочая высота 7,8 метров, высота установки настила 5,8 метров, допустимая нагрузка 150 килограммов. Перед работой нужно проверить фиксаторы, настил, ограждение, колеса, опоры и отсутствие деформаций.",
+    "Вышка подходит для монтажа светильников, вентиляции, кабельных трасс, отделки стен и потолков, обслуживания витрин, вывесок, инженерных коммуникаций и складского оборудования. Для работы на неровной поверхности или при сильном износе элементов вышку использовать нельзя.",
+    "Дополнительные настилы и элементы нужно подбирать только по совместимости с данной серией. Стыковка с другими вышками, самодельными переходниками или неподходящими деталями не гарантируется."
+  ],
+  "advantages": [
+    "Легкий алюминиевый каркас удобен для частого перемещения",
+    "Раздвижная база помогает менять рабочую высоту внутри модели",
+    "Рифленые ступени уменьшают риск соскальзывания ноги",
+    "Настил с люком позволяет подниматься внутри конструкции",
+    "Подходит для ремонта, монтажа, отделки и обслуживания",
+    "Вышка занимает меньше места при хранении и перевозке",
+    "Колеса упрощают перемещение по ровной площадке"
+  ],
+  "packageContents": [
+    "Базовый блок — 1 комплект",
+    "Секции наращивания — не предусмотрены для данной высоты",
+    "Колеса/ролики — 4 шт.",
+    "Паспорт изделия — 1 шт."
+  ],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": true,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-908": {
+  "productId": "prom-908",
+  "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyestremyankistulya/id-stremyankaalumetmsn202/",
+  "sourcePageSHA256": "7e86e614fae65eb78576a4f9f4b45194acd77ece507a7de3a553147fa15f6965",
+  "capturedAt": "2026-09-11T18:14:16.289777+00:00",
+  "gallery": [
+    {
+      "id": "prom-908-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/e81/720_4000_1/ji7rwz3wdbw0frfzhj313otfg3yc0riw.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/e81/1280_4000_1/ji7rwz3wdbw0frfzhj313otfg3yc0riw.png",
+      "alt": "Стремянка стальная с широкими ступенями Alumet MCH 202 Home, 2 ступени",
+      "localFile": "mobile/assets/product-gallery/3aa965ddb559b0eb269068c1.png",
+      "sha256": "3aa965ddb559b0eb269068c1a0284dbec42fc3361814d4fb4b0f440a367b09b2",
+      "bytes": 135810,
+      "source": require('../../assets/product-gallery/3aa965ddb559b0eb269068c1.png')
+    },
+    {
+      "id": "prom-908-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/iblock/c8d/7kb1hq4q3n5xjp5hybmaydbuwihgv7mj.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/c8d/7kb1hq4q3n5xjp5hybmaydbuwihgv7mj.jpg",
+      "alt": "Стремянка стальная с широкими ступенями Alumet MCH 202 Home, 2 ступени",
+      "localFile": "mobile/assets/product-gallery/2e9c749c874b96539796e645.jpg",
+      "sha256": "2e9c749c874b96539796e64503f7e3aa0cbd8ecdfb4b3514c964a515918d15a1",
+      "bytes": 66139,
+      "source": require('../../assets/product-gallery/2e9c749c874b96539796e645.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Стремянка стальная с широкими ступенями Alumet MCH 202 Home, 2 ступени — компактная домашняя стремянка с широкими ступенями, на которых удобнее стоять дольше обычного. Верхняя ступень расположена на высоте 0,48 м, а рабочая зона достигает примерно 2,58 м.",
+    "Широкие ступени делают такую стремянку ближе по удобству к небольшой лестнице-стулу, чем к обычной модели с узкими перекладинами. На ней комфортнее протирать верхние шкафы, раскладывать товар, менять шторы или выполнять мелкий ремонт.",
+    "Широкие ступени распределяют нагрузку на стопу лучше узких перекладин, поэтому на стремянке комфортнее стоять во время уборки и мелкого ремонта. Стальной складной каркас сохраняет жёсткость, а компактная форма позволяет хранить стремянку в кладовой, шкафу или за дверью. Опорные наконечники защищают пол и уменьшают риск скольжения.",
+    "Такая стремянка удобна для кухни, гардеробной, магазина, подсобки и домашних работ. Широкие ступени особенно полезны, когда на одной высоте нужно провести больше времени, чем при обычном коротком подъёме.",
+    "Стремянка рассчитана на нагрузку до 150 кг вместе с пользователем, инструментом и материалами. Такого запаса достаточно для обычного рабочего комплекта, но тяжёлые предметы нельзя складывать на ступени или подвешивать сбоку — это смещает центр тяжести.",
+    "При весе 4,5 кг стремянка остаётся достаточно мобильной для ежедневных перестановок и перевозки в автомобиле. Перед покупкой стоит учесть длину в сложенном виде, ширину проходов и место, где изделие будет храниться между работами.",
+    "Стремянку полностью раскрывают и ставят всеми опорами на ровный твёрдый пол. Её нельзя использовать как приставную лестницу, работать на частично раскрытой конструкции или переносить вместе с человеком и инструментом."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-592": {
+  "productId": "prom-592",
+  "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/id-m8404/",
+  "sourcePageSHA256": "b8310702a003b97eb55f169d9a02d9bde903a9da28f5d49e94e0d1dbc7cb5f0b",
+  "capturedAt": "2026-09-11T18:14:16.339914+00:00",
+  "gallery": [
+    {
+      "id": "prom-592-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/a14/720_4000_1/m7us9l09ti0nlwvg1bi94cg077qillk7.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/a14/1280_4000_1/m7us9l09ti0nlwvg1bi94cg077qillk7.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8404 Classic, 4 ступени",
+      "localFile": "mobile/assets/product-gallery/c9a37e012549c2c1b7f77fac.jpg",
+      "sha256": "c9a37e012549c2c1b7f77face6cbccacd53f22c288ae51674aa4aea2db5601cb",
+      "bytes": 233147,
+      "source": require('../../assets/product-gallery/c9a37e012549c2c1b7f77fac.jpg')
+    },
+    {
+      "id": "prom-592-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/c56/720_4000_1/w6nvjulqyioipjr800il8xzsv5jrge1r.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/c56/1280_4000_1/w6nvjulqyioipjr800il8xzsv5jrge1r.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8404 Classic, 4 ступени",
+      "localFile": "mobile/assets/product-gallery/7c71016b62de885e0ed39db2.jpg",
+      "sha256": "7c71016b62de885e0ed39db274ea1ee5b604557266f2888cd5b1154f7b67e4f2",
+      "bytes": 225032,
+      "source": require('../../assets/product-gallery/7c71016b62de885e0ed39db2.jpg')
+    },
+    {
+      "id": "prom-592-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/9e3/720_4000_1/0486qfe3pvyqxljvvsgdmssrv8db0228.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/9e3/1280_4000_1/0486qfe3pvyqxljvvsgdmssrv8db0228.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8404 Classic, 4 ступени",
+      "localFile": "mobile/assets/product-gallery/b58baef7daf251e43db71fe5.jpg",
+      "sha256": "b58baef7daf251e43db71fe5fbe6c340f2956124c62560fd4cd2e92e72a60845",
+      "bytes": 240708,
+      "source": require('../../assets/product-gallery/b58baef7daf251e43db71fe5.jpg')
+    },
+    {
+      "id": "prom-592-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/aef/720_4000_1/pjx3x1nmn8569ln5fpbwnna0me0qp1cw.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/aef/1280_4000_1/pjx3x1nmn8569ln5fpbwnna0me0qp1cw.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8404 Classic, 4 ступени",
+      "localFile": "mobile/assets/product-gallery/145cbe7539734719a48833c6.jpg",
+      "sha256": "145cbe7539734719a48833c6ab4119670652e9f9f6b1b64be25857ea147dd95f",
+      "bytes": 250201,
+      "source": require('../../assets/product-gallery/145cbe7539734719a48833c6.jpg')
+    },
+    {
+      "id": "prom-592-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/101/720_4000_1/vz0takac42jv2iegb5ptalzh7o36yhft.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/101/1280_4000_1/vz0takac42jv2iegb5ptalzh7o36yhft.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8404 Classic, 4 ступени",
+      "localFile": "mobile/assets/product-gallery/3bc535907183cecbfa2412ce.jpg",
+      "sha256": "3bc535907183cecbfa2412cea3222bffc9abd736bba82035f5dd75602a390dd5",
+      "bytes": 273972,
+      "source": require('../../assets/product-gallery/3bc535907183cecbfa2412ce.jpg')
+    },
+    {
+      "id": "prom-592-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/38f/720_4000_1/ohgo6tqgo2x6ifflu2cve2gv6vzmymmu.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/38f/1280_4000_1/ohgo6tqgo2x6ifflu2cve2gv6vzmymmu.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8404 Classic, 4 ступени",
+      "localFile": "mobile/assets/product-gallery/11eb7f4b6390a8ffa795e6d7.jpg",
+      "sha256": "11eb7f4b6390a8ffa795e6d71ea68670e38608795850e01638335990017dca17",
+      "bytes": 214162,
+      "source": require('../../assets/product-gallery/11eb7f4b6390a8ffa795e6d7.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Стремянка стальная с алюминиевыми ступенями Alumet M 8404 Classic, 4 ступени — практичная стремянка со стальным каркасом и алюминиевыми ступенями. У этой модели верхняя площадка расположена на высоте 0,81 м, а с учётом роста пользователя рабочая зона достигает примерно 2,91 м, поэтому она подходит для работ под потолком, обслуживания стеллажей, окон, освещения и внутренней отделки.",
+    "Стремянка не требует опоры на стену и создаёт устойчивое рабочее место там, где приставную лестницу поставить невозможно. Полноценная площадка позволяет уверенно стоять обеими ногами, держать корпус ровнее и меньше уставать при работе под потолком или у верхних полок.",
+    "Стальной каркас даёт жёсткость, а алюминиевые рифлёные ступени снижают общий вес и обеспечивают уверенную опору. Верхняя площадка фиксируется при полном раскрытии и даёт устойчивое место для обеих ног, а дуга безопасности помогает сохранять правильное положение корпуса. Пластиковые наконечники повышают сцепление с полом и защищают покрытие от царапин.",
+    "Стремянка подходит для ремонта, уборки, доступа к шкафам, освещению и верхним полкам. Самостоятельная опора позволяет работать посреди помещения и не искать стену, на которую можно безопасно прислонить лестницу.",
+    "Стремянка рассчитана на нагрузку до 150 кг вместе с пользователем, инструментом и материалами. Такого запаса достаточно для обычного рабочего комплекта, но тяжёлые предметы нельзя складывать на ступени или подвешивать сбоку — это смещает центр тяжести.",
+    "При весе 5 кг стремянка остаётся достаточно мобильной для ежедневных перестановок и перевозки в автомобиле. Перед покупкой стоит учесть длину в сложенном виде, ширину проходов и место, где изделие будет храниться между работами.",
+    "Стремянку полностью раскрывают и ставят всеми опорами на ровный твёрдый пол. Её нельзя использовать как приставную лестницу, работать на частично раскрытой конструкции или переносить вместе с человеком и инструментом."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-1774": {
+  "productId": "prom-1774",
+  "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyedvustoronniestremyanki/id-stremyankaalumetapd9206/",
+  "sourcePageSHA256": "aa5109b7763b4a50b57d70f236be85e54a8a1c87316912cf3d70b55e657c726c",
+  "capturedAt": "2026-09-11T18:14:16.321769+00:00",
+  "gallery": [
+    {
+      "id": "prom-1774-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/a53/720_4000_1/wbri4773va3uswfvhfi4qt06cczzvxvb.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/a53/1280_4000_1/wbri4773va3uswfvhfi4qt06cczzvxvb.jpg",
+      "alt": "Стремянка алюминиевая двухсторонняя анодированная Alumet APD 9206 Pro Premium, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/214d62ddc7f1558ff46341ff.jpg",
+      "sha256": "214d62ddc7f1558ff46341ff433da8d400caf92580796517854ca85858e772fc",
+      "bytes": 332838,
+      "source": require('../../assets/product-gallery/214d62ddc7f1558ff46341ff.jpg')
+    },
+    {
+      "id": "prom-1774-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/70d/720_4000_1/clundjzrza5rkenbpq7hf5y1vnv12uf3.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/70d/1280_4000_1/clundjzrza5rkenbpq7hf5y1vnv12uf3.jpg",
+      "alt": "Стремянка алюминиевая двухсторонняя анодированная Alumet APD 9206 Pro Premium, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/7b4e475cd0df09283c82061e.jpg",
+      "sha256": "7b4e475cd0df09283c82061e79db02473663b06f9a26446db73ec6588f0060be",
+      "bytes": 299232,
+      "source": require('../../assets/product-gallery/7b4e475cd0df09283c82061e.jpg')
+    },
+    {
+      "id": "prom-1774-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/a71/720_4000_1/n6fqtx1hffw8fahz25us783ed71e32lb.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/a71/1280_4000_1/n6fqtx1hffw8fahz25us783ed71e32lb.jpg",
+      "alt": "Стремянка алюминиевая двухсторонняя анодированная Alumet APD 9206 Pro Premium, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/653d72e0e6809d95d92e0865.jpg",
+      "sha256": "653d72e0e6809d95d92e0865266f05c408ee61f01a15ac594ebb1033a3f7c5ea",
+      "bytes": 292368,
+      "source": require('../../assets/product-gallery/653d72e0e6809d95d92e0865.jpg')
+    },
+    {
+      "id": "prom-1774-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/bbc/720_4000_1/aj6vahgamcpevpgcgez01gy8y4i1geh5.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/bbc/1280_4000_1/aj6vahgamcpevpgcgez01gy8y4i1geh5.jpg",
+      "alt": "Стремянка алюминиевая двухсторонняя анодированная Alumet APD 9206 Pro Premium, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/a55836829c7a1fb64db571b8.jpg",
+      "sha256": "a55836829c7a1fb64db571b8cfcde55bbda5ae1e1a7291f587bee6202582ee75",
+      "bytes": 254100,
+      "source": require('../../assets/product-gallery/a55836829c7a1fb64db571b8.jpg')
+    },
+    {
+      "id": "prom-1774-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/8ab/720_4000_1/f1r3ju6fl45lpjn0p2sx4ipahohbv0fo.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/8ab/1280_4000_1/f1r3ju6fl45lpjn0p2sx4ipahohbv0fo.jpg",
+      "alt": "Стремянка алюминиевая двухсторонняя анодированная Alumet APD 9206 Pro Premium, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/cc2c06454c7f080d4cd88462.jpg",
+      "sha256": "cc2c06454c7f080d4cd8846230616cb495339cea9f134d05058da63ee83b083f",
+      "bytes": 301279,
+      "source": require('../../assets/product-gallery/cc2c06454c7f080d4cd88462.jpg')
+    },
+    {
+      "id": "prom-1774-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/2b6/720_4000_1/3zwqrly8tkkkobox4oql07vbuq9b9rkp.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/2b6/1280_4000_1/3zwqrly8tkkkobox4oql07vbuq9b9rkp.jpg",
+      "alt": "Стремянка алюминиевая двухсторонняя анодированная Alumet APD 9206 Pro Premium, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/7d13b673db3b62817398eb24.jpg",
+      "sha256": "7d13b673db3b62817398eb24f39bbe953bce30a8a3d4d3458bf0d152a8b68eaa",
+      "bytes": 292804,
+      "source": require('../../assets/product-gallery/7d13b673db3b62817398eb24.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Стремянка алюминиевая двухсторонняя анодированная Alumet APD 9206 Pro Premium, 6 ступеней — анодированная профессиональная двухсторонняя стремянка. Верхняя рабочая ступень находится на высоте 1,23 м, а с учётом роста пользователя рабочая зона достигает примерно 3,33 м.",
+    "Ступени с обеих сторон позволяют подниматься с удобного направления и не разворачивать стремянку после каждого перехода. Это особенно полезно между стеллажами, вокруг станка или при работе вдоль длинного участка стены.",
+    "Анодированный алюминий устойчивее к загрязнениям и удобен при регулярной профессиональной эксплуатации. Шарнир удерживает секции в рабочем положении, а противоскользящие наконечники помогают всем четырём опорам сохранять контакт с основанием. Главное удобство двухсторонней стремянки — возможность подниматься с любой стороны.",
+    "Двухсторонняя стремянка удобна между стеллажами, возле оборудования и в длинных проходах. Доступ с обеих сторон сокращает количество разворотов и перестановок при переходе к соседнему участку.",
+    "Стремянка рассчитана на нагрузку до 150 кг вместе с пользователем, инструментом и материалами. Такого запаса достаточно для обычного рабочего комплекта, но тяжёлые предметы нельзя складывать на ступени или подвешивать сбоку — это смещает центр тяжести.",
+    "При весе 5,8 кг стремянка остаётся достаточно мобильной для ежедневных перестановок и перевозки в автомобиле. Перед покупкой стоит учесть длину в сложенном виде, ширину проходов и место, где изделие будет храниться между работами.",
+    "Обе секции раскрывают до рабочего положения и устанавливают всеми четырьмя опорами на ровное основание. Верхний шарнир не используют как ступень, а стремянку не переставляют, пока на ней находится человек."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-23916": {
+  "productId": "prom-23916",
+  "sourceUrl": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/a/id-nastilperforirovannyyotsinkovannyydlyastroitelnykhlesov03kh30m/",
+  "sourcePageSHA256": "03b9d968d3649e42100a72560c4a08ef2a71e1d29fc4fe403c164b8449a3959b",
+  "capturedAt": "2026-09-11T18:14:16.362205+00:00",
+  "gallery": [
+    {
+      "id": "prom-23916-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/203/d4dkww48mbbkjm21flcqacmzbx0kxzx9/720_4000_1/18a77zx42q5g3k3obwhc88xpv79t2cwc.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/203/d4dkww48mbbkjm21flcqacmzbx0kxzx9/1280_4000_1/18a77zx42q5g3k3obwhc88xpv79t2cwc.jpg",
+      "alt": "Настил перфорированный оцинкованный для строительных лесов 0,3х3,0 м",
+      "localFile": "mobile/assets/product-gallery/f8574f5850f0b7aecfb3d9e2.jpg",
+      "sha256": "f8574f5850f0b7aecfb3d9e2a3817ce02ce9ec08b80f3c5bbbb0599315b7d088",
+      "bytes": 129605,
+      "source": require('../../assets/product-gallery/f8574f5850f0b7aecfb3d9e2.jpg')
+    },
+    {
+      "id": "prom-23916-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/88b/9vxtbl7w7qee9i3pq04mtbipqkhlbl38/720_4000_1/95yik62lcji22xsor0qfd8xiymv2k8co.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/88b/9vxtbl7w7qee9i3pq04mtbipqkhlbl38/1280_4000_1/95yik62lcji22xsor0qfd8xiymv2k8co.jpg",
+      "alt": "Настил перфорированный оцинкованный для строительных лесов 0,3х3,0 м",
+      "localFile": "mobile/assets/product-gallery/919ea3224d23f7f09c97ff29.jpg",
+      "sha256": "919ea3224d23f7f09c97ff291dbfde9e746c4669fb213904f2b62bd72edff9ed",
+      "bytes": 152246,
+      "source": require('../../assets/product-gallery/919ea3224d23f7f09c97ff29.jpg')
+    },
+    {
+      "id": "prom-23916-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/06f/r7gz8us78unisreijgzivwfkk70k8om1/720_4000_1/ymjkt9zn5k8dxivetgpwbloxqy16i8cj.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/06f/r7gz8us78unisreijgzivwfkk70k8om1/1280_4000_1/ymjkt9zn5k8dxivetgpwbloxqy16i8cj.jpg",
+      "alt": "Настил перфорированный оцинкованный для строительных лесов 0,3х3,0 м",
+      "localFile": "mobile/assets/product-gallery/12307c99d5bcb856ef0f1c98.jpg",
+      "sha256": "12307c99d5bcb856ef0f1c987d55cc4d4ccebba54dc5fd229793b13f7fb3004b",
+      "bytes": 287743,
+      "source": require('../../assets/product-gallery/12307c99d5bcb856ef0f1c98.jpg')
+    },
+    {
+      "id": "prom-23916-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/42c/hrbjc0gubn13koytyqu42qqfrm18rgvs/720_4000_1/bj42phmwzzlh6deqpl409ba6w75cssi6.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/42c/hrbjc0gubn13koytyqu42qqfrm18rgvs/1280_4000_1/bj42phmwzzlh6deqpl409ba6w75cssi6.jpg",
+      "alt": "Настил перфорированный оцинкованный для строительных лесов 0,3х3,0 м",
+      "localFile": "mobile/assets/product-gallery/087beadae3072e662ed07d4b.jpg",
+      "sha256": "087beadae3072e662ed07d4ba57b94c7bdf0ad36830949a3cd45a6cf1b115aa2",
+      "bytes": 117364,
+      "source": require('../../assets/product-gallery/087beadae3072e662ed07d4b.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Металлический оцинкованный настил для строительных лесов 0,3х3,0 м используется в работе с большими нагрузками: при каменной или кирпичной кладке, а также при повышенных требованиях безопасности. Выдерживает нормативную нагрузку до 200 кг/м2.",
+    "Прочность и надежность настила обеспечивает изготовление из стали толщиной 1,5 мм. Швы выполнены полуавтоматической сваркой. Перфорированная поверхность предотвращает скольжение и соответственно травматизм рабочих. Настил прошел процесс горячей оцинковки и не подвержен коррозии, что существенно продлевает срок службы.",
+    "Универсальный размер креплений позволяет использовать настил с различными диаметрами трубы лесов: от 42 до 48 мм. Благодаря чему металлический оцинкованный настил подходит и для классических рамными, и для хомутовых лесов. Крепления дополнены специальными замками-фиксаторами, предотвращающими срыв настила с трубы лесов."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": true,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2749": {
+  "productId": "prom-2749",
+  "sourceUrl": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/svyazi-krepleniya-opory/id-gorizontalnayasvyazramnykhlesov3m/",
+  "sourcePageSHA256": "91e48880a9664ecb1c572581f83534a9a3f0fb79fd74d09ddf9222e06e1006a5",
+  "capturedAt": "2026-09-11T18:14:16.398864+00:00",
+  "gallery": [
+    {
+      "id": "prom-2749-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/430/720_4000_1/x6cvabyxhcvgy4n893skrvqfqqh2rpf0.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/430/x6cvabyxhcvgy4n893skrvqfqqh2rpf0.jpg",
+      "alt": "Горизонтальная связь рамных лесов 3 м",
+      "localFile": "mobile/assets/product-gallery/3acd8a28d2e6e6b98c251bc5.jpg",
+      "sha256": "3acd8a28d2e6e6b98c251bc5449df444e8a041472c6b15731c7d2c625dafa8ff",
+      "bytes": 17936,
+      "source": require('../../assets/product-gallery/3acd8a28d2e6e6b98c251bc5.jpg')
+    },
+    {
+      "id": "prom-2749-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ed6/720_4000_1/hn61370h6ss6c3s3tohwh293j3vj62wb.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/ed6/hn61370h6ss6c3s3tohwh293j3vj62wb.jpg",
+      "alt": "Горизонтальная связь рамных лесов 3 м",
+      "localFile": "mobile/assets/product-gallery/e9c6b798b8e9ab6436f269d1.jpg",
+      "sha256": "e9c6b798b8e9ab6436f269d15826812a92b54fe92b57eadbccc6575bb942f216",
+      "bytes": 76189,
+      "source": require('../../assets/product-gallery/e9c6b798b8e9ab6436f269d1.jpg')
+    },
+    {
+      "id": "prom-2749-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/6c0/720_4000_1/e2jh66saf46aofsmldx5ol5thgpldlbt.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/6c0/e2jh66saf46aofsmldx5ol5thgpldlbt.jpg",
+      "alt": "Горизонтальная связь рамных лесов 3 м",
+      "localFile": "mobile/assets/product-gallery/93f1e47bdf95df098abe8738.jpg",
+      "sha256": "93f1e47bdf95df098abe87383e82630356db5a018d718b750d02f9ef80158af7",
+      "bytes": 70756,
+      "source": require('../../assets/product-gallery/93f1e47bdf95df098abe8738.jpg')
+    },
+    {
+      "id": "prom-2749-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/d9d/720_4000_1/w7eef5k1fdvse21n40tj9zbfl4zmn69m.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/d9d/w7eef5k1fdvse21n40tj9zbfl4zmn69m.jpg",
+      "alt": "Горизонтальная связь рамных лесов 3 м",
+      "localFile": "mobile/assets/product-gallery/7e770aff2015449af3987ed1.jpg",
+      "sha256": "7e770aff2015449af3987ed103b40cb2f582271a49f6caec6357c3cfbeb995f5",
+      "bytes": 250447,
+      "source": require('../../assets/product-gallery/7e770aff2015449af3987ed1.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Основная задача горизонталей – соединение вертикальных элементов строительных лесов и придание дополнительной жесткости и устойчивости конструкции. Горизонтальная связь для строительных лесов изготавливается из стальной трубы диаметром 25 мм с толщиной стенки 1,5 мм."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": true,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2743": {
+  "productId": "prom-2743",
+  "sourceUrl": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/svyazi-krepleniya-opory/id-vintovayaopornayapyata035muniversalnaya/",
+  "sourcePageSHA256": "70da8a2add9ce397d3014018800f7a3a888645634ce822edab85f01f9ff34fb9",
+  "capturedAt": "2026-09-11T18:14:16.436019+00:00",
+  "gallery": [
+    {
+      "id": "prom-2743-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ec5/720_4000_1/3dk9cm7moj07ykmsca1gm42wtpiths1r.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/ec5/3dk9cm7moj07ykmsca1gm42wtpiths1r.jpg",
+      "alt": "Винтовая опорная пята 0,35 м универсальная",
+      "localFile": "mobile/assets/product-gallery/6f8c361d3933c448323b2400.jpg",
+      "sha256": "6f8c361d3933c448323b2400c20ceb75702c11c2a10dab8ff54fd20bd726e937",
+      "bytes": 54243,
+      "source": require('../../assets/product-gallery/6f8c361d3933c448323b2400.jpg')
+    },
+    {
+      "id": "prom-2743-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/014/720_4000_1/6f9cgdrvp7dbh7l8ajxxe8l0rnvxqyx5.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/014/1280_4000_1/6f9cgdrvp7dbh7l8ajxxe8l0rnvxqyx5.jpg",
+      "alt": "Винтовая опорная пята 0,35 м универсальная",
+      "localFile": "mobile/assets/product-gallery/b8dcd182aa008500c6ef4c0f.jpg",
+      "sha256": "b8dcd182aa008500c6ef4c0fd960bf0411c4e6baf10cf2ad1db1cbc716f17419",
+      "bytes": 320071,
+      "source": require('../../assets/product-gallery/b8dcd182aa008500c6ef4c0f.jpg')
+    },
+    {
+      "id": "prom-2743-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/508/720_4000_1/3a7fzvzlq26t09jj3n1er1g75t0cy6l0.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/508/1280_4000_1/3a7fzvzlq26t09jj3n1er1g75t0cy6l0.jpg",
+      "alt": "Винтовая опорная пята 0,35 м универсальная",
+      "localFile": "mobile/assets/product-gallery/f27d8379c1c5e9ae96223d5e.jpg",
+      "sha256": "f27d8379c1c5e9ae96223d5eaeec9a1daf1ab7d951db1653e1e5d12bca4278e1",
+      "bytes": 320254,
+      "source": require('../../assets/product-gallery/f27d8379c1c5e9ae96223d5e.jpg')
+    },
+    {
+      "id": "prom-2743-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/58c/720_4000_1/2ml3haxzdkdjgm5nm3cmol9kl1mr1eh6.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/58c/1280_4000_1/2ml3haxzdkdjgm5nm3cmol9kl1mr1eh6.jpg",
+      "alt": "Винтовая опорная пята 0,35 м универсальная",
+      "localFile": "mobile/assets/product-gallery/ace068f9246131cc11376ac6.jpg",
+      "sha256": "ace068f9246131cc11376ac61c7170c3a9283542d4f148c631289ba2f1694310",
+      "bytes": 324611,
+      "source": require('../../assets/product-gallery/ace068f9246131cc11376ac6.jpg')
+    },
+    {
+      "id": "prom-2743-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/5c7/720_4000_1/j32hc724214nc9hle1w83rrdlp75ez7a.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/5c7/1280_4000_1/j32hc724214nc9hle1w83rrdlp75ez7a.jpg",
+      "alt": "Винтовая опорная пята 0,35 м универсальная",
+      "localFile": "mobile/assets/product-gallery/1fd6a1c3256b03151ecacddd.jpg",
+      "sha256": "1fd6a1c3256b03151ecacddd39af80d6d210edcd6690080a1459b7f8e1eb8cf8",
+      "bytes": 338209,
+      "source": require('../../assets/product-gallery/1fd6a1c3256b03151ecacddd.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Винтовая опора 0,35 м используется при установке рамных или хомутовых лесов. При больших перепадах высоты (неровностях) поверхности на которую устанавливаются рамы лесов берутся винтовые опоры нужной высоты. С помощью них можно выровнять нижний ярус лесов для правильной дальнейшей сборки всей конструкции."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2733": {
+  "productId": "prom-2733",
+  "sourceUrl": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/ramy-stroitelnykh-lesov/id-ramaprokhodnayalrsp30/",
+  "sourcePageSHA256": "de60af4ff73083381acc207fd69e25c016f6176054ac1b2b5aafe806d9214913",
+  "capturedAt": "2026-09-11T18:14:16.469157+00:00",
+  "gallery": [
+    {
+      "id": "prom-2733-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/cb1/t7yjmdsp781kac1pnp37fq1lur4jqxzo/720_4000_1/01.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/cb1/t7yjmdsp781kac1pnp37fq1lur4jqxzo/1280_4000_1/01.png",
+      "alt": "Рама проходная ЛРСП 30",
+      "localFile": "mobile/assets/product-gallery/a9d49946a59f947eb52bb258.png",
+      "sha256": "a9d49946a59f947eb52bb25891523dbab10890d7ef3a05693a93bfb160000499",
+      "bytes": 104784,
+      "source": require('../../assets/product-gallery/a9d49946a59f947eb52bb258.png')
+    },
+    {
+      "id": "prom-2733-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/370/b8inhmldutqmq67oa7qjmph7f5nm6mbh/720_4000_1/02.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/370/b8inhmldutqmq67oa7qjmph7f5nm6mbh/1280_4000_1/02.png",
+      "alt": "Рама проходная ЛРСП 30",
+      "localFile": "mobile/assets/product-gallery/0af337e059183ab6f0f1de23.png",
+      "sha256": "0af337e059183ab6f0f1de239f88923308c8027ec4359907d9d51b9553f6d691",
+      "bytes": 91505,
+      "source": require('../../assets/product-gallery/0af337e059183ab6f0f1de23.png')
+    },
+    {
+      "id": "prom-2733-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/019/5mfa30v5f6tl52ssfqxhi6rrl5otdv8b/720_4000_1/03.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/019/5mfa30v5f6tl52ssfqxhi6rrl5otdv8b/1280_4000_1/03.png",
+      "alt": "Рама проходная ЛРСП 30",
+      "localFile": "mobile/assets/product-gallery/f21b666f625c267a8ee77a29.png",
+      "sha256": "f21b666f625c267a8ee77a293d6b90737fabd4bdeb14c2942bac37d6881edaae",
+      "bytes": 356511,
+      "source": require('../../assets/product-gallery/f21b666f625c267a8ee77a29.png')
+    },
+    {
+      "id": "prom-2733-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/260/swe20x5wsnsv6eyt5sjakdx2gntxcohm/720_4000_1/04.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/260/swe20x5wsnsv6eyt5sjakdx2gntxcohm/1280_4000_1/04.png",
+      "alt": "Рама проходная ЛРСП 30",
+      "localFile": "mobile/assets/product-gallery/70ec360d6889fe0a3d45b530.png",
+      "sha256": "70ec360d6889fe0a3d45b5306bda8ffa9225a860cf88ad331953053e6065be7b",
+      "bytes": 155712,
+      "source": require('../../assets/product-gallery/70ec360d6889fe0a3d45b530.png')
+    },
+    {
+      "id": "prom-2733-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/a3e/pxzzh9at49ezfpe7mzv4mbgelagd8u3s/720_4000_1/05.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/a3e/pxzzh9at49ezfpe7mzv4mbgelagd8u3s/1280_4000_1/05.png",
+      "alt": "Рама проходная ЛРСП 30",
+      "localFile": "mobile/assets/product-gallery/94449557d1345bc7d7ff07f6.png",
+      "sha256": "94449557d1345bc7d7ff07f6335ec672817d52a83197984be8b2baaf983849c0",
+      "bytes": 253510,
+      "source": require('../../assets/product-gallery/94449557d1345bc7d7ff07f6.png')
+    },
+    {
+      "id": "prom-2733-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ef9/i45w5dungif9deln11zh2ict2ii3an4w/720_4000_1/06.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/ef9/i45w5dungif9deln11zh2ict2ii3an4w/1280_4000_1/06.png",
+      "alt": "Рама проходная ЛРСП 30",
+      "localFile": "mobile/assets/product-gallery/3d74d81648a48f00799ae12e.png",
+      "sha256": "3d74d81648a48f00799ae12e16676fabaf48e9f7a1af68ce8919aad1bb66200a",
+      "bytes": 150552,
+      "source": require('../../assets/product-gallery/3d74d81648a48f00799ae12e.png')
+    },
+    {
+      "id": "prom-2733-photo-7",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/a7b/4epwl77ket21qzp9inwbxet0crg79fc2/720_4000_1/07.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/a7b/4epwl77ket21qzp9inwbxet0crg79fc2/1280_4000_1/07.png",
+      "alt": "Рама проходная ЛРСП 30",
+      "localFile": "mobile/assets/product-gallery/eb2faf556c69b2b8b3157fae.png",
+      "sha256": "eb2faf556c69b2b8b3157fae90a0fb5814de1faa304c485a630c7a5a6378d3f8",
+      "bytes": 441036,
+      "source": require('../../assets/product-gallery/eb2faf556c69b2b8b3157fae.png')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Рама для строительных лесов проходная ЛРСП30 – основной элемент рамных строительных лесов. Используется при ремонтно-монтажных и строительных работах. Снабжена флажковыми замками. На основе рамы быстро и надежно, используя горизонтальные и диагональные связи, возводятся прочные строительные леса рамного типа.",
+    "Преимущества:",
+    "Быстрая сборка – флажковые замки.",
+    "Надежность - прочное крепление.",
+    "Антикоррозионное порошковое-полимерное покрытие."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2402": {
+  "productId": "prom-2402",
+  "sourceUrl": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/gidravlicheskie-stanki-dlya-gibki-armatury/id-skorostnoystanokdlyagibkiarmaturyteamgf20s/",
+  "sourcePageSHA256": "9f37c781d41413a60849c3a37c7fec23edc32646e4a9f16272e86d2c8679cc5b",
+  "capturedAt": "2026-09-11T18:14:16.515089+00:00",
+  "gallery": [
+    {
+      "id": "prom-2402-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/1ae/720_4000_1/dhhs5b1viqqp6k4wi5ojdgashe3ocbje.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/1ae/dhhs5b1viqqp6k4wi5ojdgashe3ocbje.jpg",
+      "alt": "Скоростной электрический станок для гибки арматуры TeaM GF20S",
+      "localFile": "mobile/assets/product-gallery/3eac57901d3a2aa28c7acfbd.jpg",
+      "sha256": "3eac57901d3a2aa28c7acfbd9d19c9a13346801c8b1adbd5c9f1ee5461c6c017",
+      "bytes": 128488,
+      "source": require('../../assets/product-gallery/3eac57901d3a2aa28c7acfbd.jpg')
+    },
+    {
+      "id": "prom-2402-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/438/720_4000_1/80utuj6jnaktt1kpwvluvwnzqy5tqdcy.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/438/80utuj6jnaktt1kpwvluvwnzqy5tqdcy.jpg",
+      "alt": "Скоростной электрический станок для гибки арматуры TeaM GF20S",
+      "localFile": "mobile/assets/product-gallery/a74abf965461bc4eb44d0b93.jpg",
+      "sha256": "a74abf965461bc4eb44d0b933e3298491313efb669b692df53a2579decfde231",
+      "bytes": 125836,
+      "source": require('../../assets/product-gallery/a74abf965461bc4eb44d0b93.jpg')
+    },
+    {
+      "id": "prom-2402-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ac6/720_4000_1/t4lvmey83um3cs3ib9nx7h54drlef1ei.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/ac6/t4lvmey83um3cs3ib9nx7h54drlef1ei.jpg",
+      "alt": "Скоростной электрический станок для гибки арматуры TeaM GF20S",
+      "localFile": "mobile/assets/product-gallery/598bacbcc57a88bcf31252ba.jpg",
+      "sha256": "598bacbcc57a88bcf31252ba3c9707ddc8d8d35f09928eca88d3ebdbbe44a38a",
+      "bytes": 156068,
+      "source": require('../../assets/product-gallery/598bacbcc57a88bcf31252ba.jpg')
+    },
+    {
+      "id": "prom-2402-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/c04/720_4000_1/00cqnek7cg5j8p21zqb36bdxler8vy0b.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/c04/00cqnek7cg5j8p21zqb36bdxler8vy0b.jpg",
+      "alt": "Скоростной электрический станок для гибки арматуры TeaM GF20S",
+      "localFile": "mobile/assets/product-gallery/550829aa3d8d59a38e5fc9a5.jpg",
+      "sha256": "550829aa3d8d59a38e5fc9a5c3b8066d7c5d7080d030cf2e4d1e5f8caff4e2cb",
+      "bytes": 192274,
+      "source": require('../../assets/product-gallery/550829aa3d8d59a38e5fc9a5.jpg')
+    },
+    {
+      "id": "prom-2402-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/643/720_4000_1/rrc1tdueg0viztr7sljn13w1wgwhtk0j.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/643/rrc1tdueg0viztr7sljn13w1wgwhtk0j.jpg",
+      "alt": "Скоростной электрический станок для гибки арматуры TeaM GF20S",
+      "localFile": "mobile/assets/product-gallery/1392eb8e42574933f19a92a7.jpg",
+      "sha256": "1392eb8e42574933f19a92a7e0e184109c6252eb19f89a924c330e40c1013982",
+      "bytes": 118659,
+      "source": require('../../assets/product-gallery/1392eb8e42574933f19a92a7.jpg')
+    },
+    {
+      "id": "prom-2402-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/2fc/720_4000_1/mcomdlxsmlx1cefakpzjbaq3dz7zdsk4.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/2fc/mcomdlxsmlx1cefakpzjbaq3dz7zdsk4.jpg",
+      "alt": "Скоростной электрический станок для гибки арматуры TeaM GF20S",
+      "localFile": "mobile/assets/product-gallery/0cdde7b0ee244e65d3cf6a53.jpg",
+      "sha256": "0cdde7b0ee244e65d3cf6a53f9c005164b0fa3c9214276dd369d63d7e809a79f",
+      "bytes": 171191,
+      "source": require('../../assets/product-gallery/0cdde7b0ee244e65d3cf6a53.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Скоростной электрический станок для гибки арматуры TeaM GF20S — скоростной электрический станок для гибки гладкой и рифлёной арматуры Ø4–20 мм. Рабочий механизм развивает 25–30 об/мин; мощность двигателя — 2,2 кВт, питание — 220 В. Модель рассчитана на массовое изготовление хомутов, скоб, крюков и небольших закладных, где важны быстрый цикл и повторяемость заданных углов.",
+    "Заготовка фиксируется между упорами и рабочими элементами, после чего привод поворачивает гибочный узел. Углы 90°, 135° и 180° применяются как типовые настройки, но фактическое значение проверяют на пробном прутке с учётом пружинения. Управление выполняется штатными органами и педалью; конкретная логика режимов зависит от исполнения панели. Для получения одинаковых деталей важно выдерживать длину подачи, положение упора и одну схему оснастки.",
+    "Станок устанавливают на ровную площадку, подключают к сети соответствующего напряжения через защитный автомат и заземление. Перед запуском проверяют рабочие пальцы, крепёж, свободный ход механизма и исправность педали. Арматуру подают без перекоса и удерживают только за пределами опасной зоны. Диаметр 20 мм является верхней границей модели; допустимость для конкретного класса стали и многопрутковой гибки следует подтверждать паспортом.",
+    "Высокая скорость особенно полезна при повторяющихся операциях малого и среднего диаметра. Для крупной арматуры, нескольких прутков или сложной классовой матрицы рациональнее серия GW. В ходе обслуживания очищают рабочую зону от окалины, проверяют упоры и электрические соединения, контролируют смазку и состояние приводных узлов по регламенту. При неточном угле, рывках или повышенном шуме работу прекращают до проверки оснастки и механизма."
+  ],
+  "advantages": [
+    "Скорость 25–30 об/мин сокращает время изготовления повторяющихся хомутов и скоб.",
+    "Диапазон Ø4–20 мм подходит для распространённых малых и средних диаметров.",
+    "Типовые углы 90°, 135° и 180° ускоряют переналадку между стандартными деталями.",
+    "Педальное управление позволяет оператору контролировать цикл, не удерживая кнопку рукой.",
+    "Колёсное основание облегчает перемещение станка внутри цеха или строительного участка.",
+    "Доступ к рабочим узлам упрощает очистку и регулярный осмотр."
+  ],
+  "packageContents": [
+    "Станок со штатными рабочими элементами и педалью управления — 1 комплект; точный состав оснастки уточняется по паспорту."
+  ],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2335": {
+  "productId": "prom-2335",
+  "sourceUrl": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/mobilnyeelektricheskiestankidlyarezkiarmatury/id-stanokdlyarezkiarmaturyelektricheskiymobilnyyrc16/",
+  "sourcePageSHA256": "6f78340b4e7dca7aabeef3a80ed66dd271c92ea4f51cfdc8a8bf7a69580e8acd",
+  "capturedAt": "2026-09-11T18:14:16.527254+00:00",
+  "gallery": [
+    {
+      "id": "prom-2335-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/0ef/720_4000_1/ywie1r19v6528j9qcgrqbaeqsvmbi80w.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/0ef/1280_4000_1/ywie1r19v6528j9qcgrqbaeqsvmbi80w.jpg",
+      "alt": "Мобильный электрогидравлический станок для резки арматуры TeaM RC-16",
+      "localFile": "mobile/assets/product-gallery/fa15cf48191c1b0a8732d3a8.jpg",
+      "sha256": "fa15cf48191c1b0a8732d3a80cb89e731476a2b3dba9f7d55fce632dddd3780e",
+      "bytes": 240140,
+      "source": require('../../assets/product-gallery/fa15cf48191c1b0a8732d3a8.jpg')
+    },
+    {
+      "id": "prom-2335-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/78a/720_4000_1/eoyn0zv96y0po0bvk5wrpn3sf2wfbr8v.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/78a/1280_4000_1/eoyn0zv96y0po0bvk5wrpn3sf2wfbr8v.jpg",
+      "alt": "Мобильный электрогидравлический станок для резки арматуры TeaM RC-16",
+      "localFile": "mobile/assets/product-gallery/fc4b2de99284d7f684e90cba.jpg",
+      "sha256": "fc4b2de99284d7f684e90cbaa8d4cbaf60201c0723e7f9044ddff43d8b1673b5",
+      "bytes": 279156,
+      "source": require('../../assets/product-gallery/fc4b2de99284d7f684e90cba.jpg')
+    },
+    {
+      "id": "prom-2335-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/73c/720_4000_1/14l4d3vvqln324496vwh2cwgwrpb6hgv.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/73c/1280_4000_1/14l4d3vvqln324496vwh2cwgwrpb6hgv.jpg",
+      "alt": "Мобильный электрогидравлический станок для резки арматуры TeaM RC-16",
+      "localFile": "mobile/assets/product-gallery/b9ddf2de81808cd1459e49b5.jpg",
+      "sha256": "b9ddf2de81808cd1459e49b55e893d0ecf3a93d844ceb1bfdbde1ac9cf27892a",
+      "bytes": 167114,
+      "source": require('../../assets/product-gallery/b9ddf2de81808cd1459e49b5.jpg')
+    },
+    {
+      "id": "prom-2335-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ad4/720_4000_1/gz8kbl06e2818djapx1gneob3kibi19t.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/ad4/1280_4000_1/gz8kbl06e2818djapx1gneob3kibi19t.jpg",
+      "alt": "Мобильный электрогидравлический станок для резки арматуры TeaM RC-16",
+      "localFile": "mobile/assets/product-gallery/00ae39e9ddfb92f852be0027.jpg",
+      "sha256": "00ae39e9ddfb92f852be0027919cd66da2abe4ebca7c66b86db7c3a826d842e2",
+      "bytes": 287985,
+      "source": require('../../assets/product-gallery/00ae39e9ddfb92f852be0027.jpg')
+    },
+    {
+      "id": "prom-2335-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/e0a/720_4000_1/h13z4smu85ihmvo63r659fr9rps2j4tp.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/e0a/1280_4000_1/h13z4smu85ihmvo63r659fr9rps2j4tp.jpg",
+      "alt": "Мобильный электрогидравлический станок для резки арматуры TeaM RC-16",
+      "localFile": "mobile/assets/product-gallery/94f3b4b2ffb8c7cf9e986b01.jpg",
+      "sha256": "94f3b4b2ffb8c7cf9e986b011a9a6f51150b04fec9e03cb7776e04a73852d035",
+      "bytes": 269546,
+      "source": require('../../assets/product-gallery/94f3b4b2ffb8c7cf9e986b01.jpg')
+    },
+    {
+      "id": "prom-2335-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ad6/720_4000_1/dgp2nacb05mn15222d7h99cyykitu0ej.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/ad6/1280_4000_1/dgp2nacb05mn15222d7h99cyykitu0ej.jpg",
+      "alt": "Мобильный электрогидравлический станок для резки арматуры TeaM RC-16",
+      "localFile": "mobile/assets/product-gallery/40362688623c5eefe78131a0.jpg",
+      "sha256": "40362688623c5eefe78131a0288c4ee1d175c1da0d7d538eb57b78c513e4fb05",
+      "bytes": 225157,
+      "source": require('../../assets/product-gallery/40362688623c5eefe78131a0.jpg')
+    },
+    {
+      "id": "prom-2335-photo-7",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/8b1/720_4000_1/dobe7g1isu2tll80jb9ghisxhzwgnb0i.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/8b1/1280_4000_1/dobe7g1isu2tll80jb9ghisxhzwgnb0i.jpg",
+      "alt": "Мобильный электрогидравлический станок для резки арматуры TeaM RC-16",
+      "localFile": "mobile/assets/product-gallery/0a0b438c0a878dc8932d5bb1.jpg",
+      "sha256": "0a0b438c0a878dc8932d5bb1586f3ef1a2ac09f179fed10f4a650da5809fddfe",
+      "bytes": 216489,
+      "source": require('../../assets/product-gallery/0a0b438c0a878dc8932d5bb1.jpg')
+    },
+    {
+      "id": "prom-2335-photo-8",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/796/720_4000_1/1c00w4fkf8kkmq9k1zawtj42ckq0ijkj.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/796/1280_4000_1/1c00w4fkf8kkmq9k1zawtj42ckq0ijkj.jpg",
+      "alt": "Мобильный электрогидравлический станок для резки арматуры TeaM RC-16",
+      "localFile": "mobile/assets/product-gallery/a4d070dff336cebdf069fa48.jpg",
+      "sha256": "a4d070dff336cebdf069fa4886c7c849da665f369e84b9858254bbf7c17be73e",
+      "bytes": 185157,
+      "source": require('../../assets/product-gallery/a4d070dff336cebdf069fa48.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Мобильный электрогидравлический станок для резки арматуры TeaM RC-16 — переносной электрогидравлический резчик для работы с арматурой Ø4–16 мм непосредственно на строительном объекте. Двигатель мощностью 0,8 кВт подключается к сети 220 В, а гидравлический привод создаёт усилие на подвижном ноже. Номинальное время одного рабочего хода по каталогу — 3,0 с; фактическая производительность зависит от подачи прутка, длины отрезков и подготовки рабочего места.",
+    "Мобильная конструкция удобна при сборке монолитных каркасов, подрезке выпусков, изготовлении армопоясов и работе там, где стационарный станок невозможно подвести к заготовке. Арматуру устанавливают в режущую головку перпендикулярно ножам и до штатного упора, после чего запускают цикл кнопкой. Фиксатор стержня уменьшает смещение, однако оператор обязан поддерживать длинные части заготовки и держать руки вне зоны ножей.",
+    "Диапазон модели указан как общий геометрический предел. Для арматуры повышенного класса прочности допустимый диаметр может быть меньше, поэтому перед основной работой требуется проверка паспорта и пробный рез. Нельзя резать одновременно несколько прутков, если это прямо не разрешено производителем, использовать инструмент как рычаг, работать с повреждённым кабелем, утечкой масла или сколотыми ножами. Короткие остатки должны удаляться только после полного возврата поршня и отключения питания.",
+    "Перед сменой проверяют уровень и состояние гидравлического масла, герметичность соединений, крепёж режущей головки, зазор и кромки ножей. После работы удаляют окалину, не допуская её попадания под подвижные детали. Хранение и перевозку выполняют в штатном кейсе. Масса оборудования по каталогу — 13 кг; вес с упаковкой в WB может отличаться, поэтому в шаблоне эти значения разделены.",
+    "Мобильный RC не заменяет стационарный GQ при серийной нарезке большого объёма, но выигрывает по доступности к уже собранному каркасу. Для устойчивого темпа важно заранее организовать питание, поддержку прутков и безопасную зону для отрезанной части."
+  ],
+  "advantages": [
+    "Рабочий диапазон Ø4–16 мм позволяет подобрать модель по фактическому диаметру прутка.",
+    "Цикл около 3,0 с ускоряет локальную подрезку по сравнению с ручным рычажным инструментом.",
+    "Питание 220 В не требует промышленной трёхфазной сети.",
+    "Переносной корпус позволяет работать рядом с уже смонтированным каркасом и в стеснённых местах.",
+    "Электрогидравлический привод создаёт стабильное усилие без резкого ручного рывка.",
+    "Металлический кейс защищает инструмент и комплект обслуживания при перевозке."
+  ],
+  "packageContents": [
+    "Резчик, металлический кейс, комплект масла и сервисных инструментов — по каталогу; точный состав проверяется при приёмке."
+  ],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2377": {
+  "productId": "prom-2377",
+  "sourceUrl": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/lomburklombara/id-lomgvozdodyer150sm/",
+  "sourcePageSHA256": "34154847db01fb80efc23f1374f915364149dc5944bf1bb6dc4cdd47323e0024",
+  "capturedAt": "2026-09-11T18:14:16.554491+00:00",
+  "gallery": [
+    {
+      "id": "prom-2377-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/064/720_4000_1/lki99c8km3xp6ix939exqwmqd2fii3wo.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/064/1280_4000_1/lki99c8km3xp6ix939exqwmqd2fii3wo.png",
+      "alt": "Ручной лом-гвоздодёр 150 см",
+      "localFile": "mobile/assets/product-gallery/49074a89f7255113e8c877e8.png",
+      "sha256": "49074a89f7255113e8c877e818a26143d68629821f46173d0bfd9bf9eda259b0",
+      "bytes": 49238,
+      "source": require('../../assets/product-gallery/49074a89f7255113e8c877e8.png')
+    },
+    {
+      "id": "prom-2377-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/2e8/720_4000_1/s9kik9olzj5y1rl9e6lzqk0ie1zdvy7s.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/2e8/1280_4000_1/s9kik9olzj5y1rl9e6lzqk0ie1zdvy7s.png",
+      "alt": "Ручной лом-гвоздодёр 150 см",
+      "localFile": "mobile/assets/product-gallery/91948db34d63a99c79e9d391.png",
+      "sha256": "91948db34d63a99c79e9d3917853bfeacd1a0202dd31385cd2bb43867b539f99",
+      "bytes": 90139,
+      "source": require('../../assets/product-gallery/91948db34d63a99c79e9d391.png')
+    },
+    {
+      "id": "prom-2377-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/0f3/720_4000_1/ev5jn6fi538b8nmcnd0a7gnf5gi73gsq.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/0f3/1280_4000_1/ev5jn6fi538b8nmcnd0a7gnf5gi73gsq.png",
+      "alt": "Ручной лом-гвоздодёр 150 см",
+      "localFile": "mobile/assets/product-gallery/2fad61f71ea0a83d2c2c6f01.png",
+      "sha256": "2fad61f71ea0a83d2c2c6f01f641016a66175d0bfbcb3bdd599c3b334c73732b",
+      "bytes": 99736,
+      "source": require('../../assets/product-gallery/2fad61f71ea0a83d2c2c6f01.png')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Ручной лом-гвоздодёр 150 см — ручной рычажный инструмент для демонтажа, вскрытия, перемещения и поддевания тяжёлых элементов на строительной площадке. Длина около 1500 мм обеспечивает рабочий рычаг, позволяя разбирать деревянные конструкции, опалубку, настилы и крепёж без электрического привода. Эта товарная группа не относится к оборудованию для гибки или резки арматуры и в шаблоне выделена в отдельную категорию.",
+    "Рабочая часть используется для поддевания досок, извлечения гвоздей, разборки упаковки, перемещения небольших элементов и подготовки зоны ремонта. Конкретные операции зависят от формы концов: лапа-гвоздодёр удобна для крепежа, плоская лопатка — для раскрытия зазоров, заострённый конец — для пробивки и позиционирования. Инструмент нельзя применять как страховочную опору, грузозахватное приспособление или удлинитель другого рычага.",
+    "Перед работой осматривают стержень на изгиб, трещины и сильную коррозию, а рабочие концы — на сколы и заусенцы. Точку опоры выбирают прочную и устойчивую; хрупкий край бетона, стекло или тонкий лист могут разрушиться внезапно. Усилие прикладывают плавно, находясь в стороне от возможного отскока. При извлечении гвоздя соседние поверхности защищают подкладкой, чтобы распределить давление.",
+    "Большая длина повышает плечо рычага, но одновременно увеличивает риск неконтролируемого движения. Для стеснённого пространства удобнее более короткая модель, для массивного демонтажа — длинная. Вес и диаметр стержня должны соответствовать задаче; выбирать только по длине недостаточно. Если инструмент заметно пружинит или деформируется, нагрузку прекращают.",
+    "После работы лом очищают от раствора и грязи, удаляют острые заусенцы безопасным способом и защищают металл от влаги. Хранение выполняют горизонтально либо в стойке, исключая падение на людей. Использование средств защиты глаз, перчаток и обуви с защитным носком обязательно при демонтаже."
+  ],
+  "advantages": [
+    "Длина около 1500 мм создаёт рабочий рычаг для демонтажных операций.",
+    "Ручной инструмент не зависит от электросети и готов к работе без настройки.",
+    "Разные рабочие концы позволяют поддевать элементы и извлекать крепёж.",
+    "Цельностальная конструкция подходит для интенсивной стройплощадки при штатной нагрузке.",
+    "Простое обслуживание сводится к очистке, осмотру и защите от коррозии.",
+    "Инструмент удобен для разборки опалубки, тары и деревянных конструкций."
+  ],
+  "packageContents": [
+    "Ручной лом-гвоздодёр 150 см — 1 шт."
+  ],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2272": {
+  "productId": "prom-2272",
+  "sourceUrl": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/gilotinadlyakolkibruschatki/id-ruchnoystanokdlyarezkibruschatkibc25/",
+  "sourcePageSHA256": "db578c1a2e5203ce8f749dd6041e66f9b404368ce0bee2e007bc1d53bba78f72",
+  "capturedAt": "2026-09-11T18:14:16.598326+00:00",
+  "gallery": [
+    {
+      "id": "prom-2272-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/7cc/720_4000_1/3o786lo91oti06k3m57ukmajor9bgj2n.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/7cc/1280_4000_1/3o786lo91oti06k3m57ukmajor9bgj2n.png",
+      "alt": "Ручной станок для резки брусчатки (гильотина) TeaM BC25",
+      "localFile": "mobile/assets/product-gallery/7a04d3f4b1292eaa33ad965d.png",
+      "sha256": "7a04d3f4b1292eaa33ad965d989c2d932bac8be642099f253c47291070147f42",
+      "bytes": 137133,
+      "source": require('../../assets/product-gallery/7a04d3f4b1292eaa33ad965d.png')
+    },
+    {
+      "id": "prom-2272-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/4e1/720_4000_1/7idh0y2uukgdj8rad3xj5q6mvnolsdu0.png",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/4e1/7idh0y2uukgdj8rad3xj5q6mvnolsdu0.png",
+      "alt": "Ручной станок для резки брусчатки (гильотина) TeaM BC25",
+      "localFile": "mobile/assets/product-gallery/4aaf99005f7fc9ea1a6d294b.png",
+      "sha256": "4aaf99005f7fc9ea1a6d294ba13490be106d128f4840f8ddcb31aca285db8054",
+      "bytes": 203655,
+      "source": require('../../assets/product-gallery/4aaf99005f7fc9ea1a6d294b.png')
+    },
+    {
+      "id": "prom-2272-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/caa/720_4000_1/pmufdehoc6xckp882525qi2zvs00ml4q.png",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/caa/pmufdehoc6xckp882525qi2zvs00ml4q.png",
+      "alt": "Ручной станок для резки брусчатки (гильотина) TeaM BC25",
+      "localFile": "mobile/assets/product-gallery/92c11816bf396fc4227d3f99.png",
+      "sha256": "92c11816bf396fc4227d3f991ac53e0a4ffa43453135e52ab71fb63691a0d729",
+      "bytes": 707629,
+      "source": require('../../assets/product-gallery/92c11816bf396fc4227d3f99.png')
+    },
+    {
+      "id": "prom-2272-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/d2f/720_4000_1/r9bntyk79qrg1g1f9vugetvlwo0fk7vr.png",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/d2f/r9bntyk79qrg1g1f9vugetvlwo0fk7vr.png",
+      "alt": "Ручной станок для резки брусчатки (гильотина) TeaM BC25",
+      "localFile": "mobile/assets/product-gallery/22e899770b1995cfd5bc9335.png",
+      "sha256": "22e899770b1995cfd5bc9335db070188beda53762f5640fa2b9e064f474e48f2",
+      "bytes": 882539,
+      "source": require('../../assets/product-gallery/22e899770b1995cfd5bc9335.png')
+    },
+    {
+      "id": "prom-2272-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/5e5/720_4000_1/u8b8owasm97nrs5zc6lk1pr912s2r6g3.png",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/5e5/u8b8owasm97nrs5zc6lk1pr912s2r6g3.png",
+      "alt": "Ручной станок для резки брусчатки (гильотина) TeaM BC25",
+      "localFile": "mobile/assets/product-gallery/b202de6fda76bddc14de12a4.png",
+      "sha256": "b202de6fda76bddc14de12a4bb414db91ecee1e3d8ab08744540714b7e2e3cee",
+      "bytes": 737962,
+      "source": require('../../assets/product-gallery/b202de6fda76bddc14de12a4.png')
+    },
+    {
+      "id": "prom-2272-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/0c1/720_4000_1/j377es7gg065sjrnh3qeeq2mjnxm8cg8.png",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/0c1/j377es7gg065sjrnh3qeeq2mjnxm8cg8.png",
+      "alt": "Ручной станок для резки брусчатки (гильотина) TeaM BC25",
+      "localFile": "mobile/assets/product-gallery/6b8eea772819a32dd7adca35.png",
+      "sha256": "6b8eea772819a32dd7adca356e564dc1723b8b3a000944cffb824105985f7bf0",
+      "bytes": 1039361,
+      "source": require('../../assets/product-gallery/6b8eea772819a32dd7adca35.png')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Ручной станок для резки брусчатки (гильотина) TeaM BC25 — ручной станок для раскалывания тротуарной плитки, брусчатки, кирпича и сходных штучных материалов непосредственно на месте укладки. Эта группа не относится к арматурным станкам и вынесена в отдельную категорию. Рез выполняется не абразивным диском, а давлением верхнего и нижнего ножа: материал разрушается по заданной линии без электропитания, облака пыли и потока искр.",
+    "Перед работой измеряют толщину и ширину элемента, выставляют рабочий зазор и размечают линию раскола. Плитку укладывают на опорный стол без перекоса, совмещают метку с ножом и плавно опускают рычаг. Для модели BC25 максимальная высота материала — около 30 мм, длина рукояти — 720 мм. У AFACAN в печатном каталоге указана регулировка толщины до 90 мм и рукоять 780 мм; для моделей TeaM параметры проверяются отдельно.",
+    "Качество зависит от структуры материала. Литая бетонная плитка, клинкер, кирпич и природный камень раскалываются по-разному; фактура и внутренние пустоты могут отклонить линию. Перед серией выполняют пробу. Гильотина формирует технологический раскол, а не полированную кромку: для видимого торца может потребоваться подрезка или обработка.",
+    "Ножи осматривают на сколы и равномерность. Изношенная кромка повышает усилие и дробит край. Рабочий стол очищают от крошки после каждого цикла, чтобы материал лежал ровно. Руки держат вне зоны ножей, защитные очки обязательны. Перемещают станок за штатные рукоятки или на колёсах, если они предусмотрены, не поднимая за рабочий рычаг.",
+    "При выборе учитывают максимальную толщину и ширину плитки, массу станка, наличие колёс и доступность запасных ножей. Для большого объёма точной подрезки сложных материалов может быть эффективнее камнерезный станок, а ручная гильотина удобна для быстрых сухих расколов на объекте."
+  ],
+  "advantages": [
+    "Работа без электричества подходит для благоустройства и удалённых участков.",
+    "Сухой раскол не создаёт абразивной пыли и не требует воды для охлаждения.",
+    "Регулируемый рабочий зазор позволяет настраивать станок под толщину материала.",
+    "Длинная рукоять снижает усилие оператора при штатной толщине.",
+    "Сменные или обслуживаемые ножи позволяют поддерживать качество линии раскола.",
+    "Мобильная конструкция удобна для перемещения вдоль фронта укладки."
+  ],
+  "packageContents": [
+    "Гильотина BC25 со штатными ножами и рычагом — 1 комплект."
+  ],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2388": {
+  "productId": "prom-2388",
+  "sourceUrl": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/glubinnye/id-glubinnyyvibratordlyabetonave45800/",
+  "sourcePageSHA256": "fd62b8e371d9a077fc58afb2d58e08628d1f16e30bfee2f7ec89410cc0b7fbdc",
+  "capturedAt": "2026-09-11T18:14:16.618527+00:00",
+  "gallery": [
+    {
+      "id": "prom-2388-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/90f/tulz57zxjifx2up2y6csdph6kwqy4gzk/720_4000_1/01.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/90f/tulz57zxjifx2up2y6csdph6kwqy4gzk/1280_4000_1/01.png",
+      "alt": "Глубинный вибратор для бетона ВЭ-45-800",
+      "localFile": "mobile/assets/product-gallery/676438ae6fb634e213647118.png",
+      "sha256": "676438ae6fb634e21364711885fa5ed4e954625b7beef6f0ddb4fd695995d5cc",
+      "bytes": 388024,
+      "source": require('../../assets/product-gallery/676438ae6fb634e213647118.png')
+    },
+    {
+      "id": "prom-2388-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/145/inymyqfeuymkifx0o4c2tfz4k8wctofd/720_4000_1/02.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/145/inymyqfeuymkifx0o4c2tfz4k8wctofd/1280_4000_1/02.png",
+      "alt": "Глубинный вибратор для бетона ВЭ-45-800",
+      "localFile": "mobile/assets/product-gallery/3563f59e4b518245ed44d3b1.png",
+      "sha256": "3563f59e4b518245ed44d3b10d3a7c0755639b539bb5d7d17585d7ae9b2da44b",
+      "bytes": 361082,
+      "source": require('../../assets/product-gallery/3563f59e4b518245ed44d3b1.png')
+    },
+    {
+      "id": "prom-2388-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/f59/wci1sv87kpm7j99e1egjfp6nz5ggop0f/720_4000_1/03.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/f59/wci1sv87kpm7j99e1egjfp6nz5ggop0f/1280_4000_1/03.png",
+      "alt": "Глубинный вибратор для бетона ВЭ-45-800",
+      "localFile": "mobile/assets/product-gallery/fccbcc172cca94d752642c7d.png",
+      "sha256": "fccbcc172cca94d752642c7d7a9d9eed6ef74d08ab7ec416d2a44ef2364ab39b",
+      "bytes": 641234,
+      "source": require('../../assets/product-gallery/fccbcc172cca94d752642c7d.png')
+    },
+    {
+      "id": "prom-2388-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/c88/f8mxwq192xwm2dfuu3zycid7c3y6esnn/720_4000_1/04.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/c88/f8mxwq192xwm2dfuu3zycid7c3y6esnn/1280_4000_1/04.png",
+      "alt": "Глубинный вибратор для бетона ВЭ-45-800",
+      "localFile": "mobile/assets/product-gallery/70f5fae2b293686481bbe719.png",
+      "sha256": "70f5fae2b293686481bbe719c5d845c71165cfc784f59e05d48f00cda27e0877",
+      "bytes": 382288,
+      "source": require('../../assets/product-gallery/70f5fae2b293686481bbe719.png')
+    },
+    {
+      "id": "prom-2388-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/446/bppfy2hn8w4eyh02s8sw57nqbptvxihx/720_4000_1/05.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/446/bppfy2hn8w4eyh02s8sw57nqbptvxihx/1280_4000_1/05.png",
+      "alt": "Глубинный вибратор для бетона ВЭ-45-800",
+      "localFile": "mobile/assets/product-gallery/d6a02d4f368b77917454b1f3.png",
+      "sha256": "d6a02d4f368b77917454b1f3255fed0d096479c06a978fb250c652cf8da1c97c",
+      "bytes": 494061,
+      "source": require('../../assets/product-gallery/d6a02d4f368b77917454b1f3.png')
+    },
+    {
+      "id": "prom-2388-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/aa2/a9owieg0u4y54943blfd61yk7gfnak0l/720_4000_1/06.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/aa2/a9owieg0u4y54943blfd61yk7gfnak0l/1280_4000_1/06.png",
+      "alt": "Глубинный вибратор для бетона ВЭ-45-800",
+      "localFile": "mobile/assets/product-gallery/a4f868682113bdeaf08bad34.png",
+      "sha256": "a4f868682113bdeaf08bad34c70e583c6d10816cd93a5a7e3a4cd338133cdd0a",
+      "bytes": 638490,
+      "source": require('../../assets/product-gallery/a4f868682113bdeaf08bad34.png')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Отлично подходит при небольшом объёме работ, либо \"точечном\" применении. Обладает мощностью 800 Вт, валом 1.55 м с диаметром вибронаконечника 45 мм. Портативен, имеет малый вес и удобен в эксплуатации.",
+    "Малый вес, удобный эргономичный корпус обеспечивают комфортную работу и легкое перемещение вибратора по объекту, глубинный вибратор для опалубки удобный в использовании, с ним возможно значительно ускорить процесс укладки фундамента, а значит и строительный процесс будет более гибким и планомерным. Благодаря вибратору для уплотнения бетонных смесей, качество фундамента не пострадает и воздвигаемая конструкция будет более прочной.",
+    "Качественные материалы из которых производят вибратор для опалубки позволит обеспечить продолжительный эксплуатационный срок службы, мощный двигатель в компактном корпусе сократит время на уплотнения бетонной смеси, при этом экономя электроэнергию, двухметровый вал - идеальное решение для работы на небольшом объекте по доступной цене.",
+    "Глубинный вибратор великолепный инструмент для запрессовки бетона. Его погружают в рабочий состав, а передающиеся по радиусу колебания создают плотную массу, таким образом, удаляется лишний воздух, что значительно повышает качество материала. Если не устранить лишний воздух, бетон может получиться пористым, а значит менее прочным и не надежным.",
+    "Комплект электрического глубинного вибратора состоит из электропривода, гибкого вала и наконечника, удобный и компактный, при своем малом весе и низкой стоимости он удовлетворит потребности частного строительства."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2349": {
+  "productId": "prom-2349",
+  "sourceUrl": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/glubinnye/id-glubinnyyvibratordlyabetonacakkumulyatoromlv3515/",
+  "sourcePageSHA256": "c81f2483f492e622df23d5c4a4e6fca4fe09c046e617073688d0eafe92edf3d9",
+  "capturedAt": "2026-09-11T18:14:16.646460+00:00",
+  "gallery": [
+    {
+      "id": "prom-2349-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/9e4/dof8eusvwsp7gnmxosrhl00czg5zkq7e/720_4000_1/01.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/9e4/dof8eusvwsp7gnmxosrhl00czg5zkq7e/1280_4000_1/01.png",
+      "alt": "Глубинный вибратор для бетона c аккумулятором LV-3515",
+      "localFile": "mobile/assets/product-gallery/a7dc1cfa042cc78636bbd70e.png",
+      "sha256": "a7dc1cfa042cc78636bbd70e7b819f8fe27e39de9523fa5e1fe95b076d79ce95",
+      "bytes": 510268,
+      "source": require('../../assets/product-gallery/a7dc1cfa042cc78636bbd70e.png')
+    },
+    {
+      "id": "prom-2349-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/8a5/bqct6o1c3kxrnz5fts959nheaf8f2zj5/720_4000_1/02.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/8a5/bqct6o1c3kxrnz5fts959nheaf8f2zj5/1280_4000_1/02.png",
+      "alt": "Глубинный вибратор для бетона c аккумулятором LV-3515",
+      "localFile": "mobile/assets/product-gallery/b1363aae45f8b239025d0721.png",
+      "sha256": "b1363aae45f8b239025d072196dd8f71751cf1199cb993f50e4489d0c65f1bc6",
+      "bytes": 593306,
+      "source": require('../../assets/product-gallery/b1363aae45f8b239025d0721.png')
+    },
+    {
+      "id": "prom-2349-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/0e9/m8str274ck5g57ch2g91cgz7a7dk8zei/720_4000_1/03.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/0e9/m8str274ck5g57ch2g91cgz7a7dk8zei/1280_4000_1/03.png",
+      "alt": "Глубинный вибратор для бетона c аккумулятором LV-3515",
+      "localFile": "mobile/assets/product-gallery/57c0ad69e341a989533369e5.png",
+      "sha256": "57c0ad69e341a989533369e5ba7263ddfa4ed533acd4becaaa997dbe3cad5d3e",
+      "bytes": 519659,
+      "source": require('../../assets/product-gallery/57c0ad69e341a989533369e5.png')
+    },
+    {
+      "id": "prom-2349-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/b8d/y092u1pfy4zdpxcxt5xch76p6gqda1qr/720_4000_1/04.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/b8d/y092u1pfy4zdpxcxt5xch76p6gqda1qr/1280_4000_1/04.png",
+      "alt": "Глубинный вибратор для бетона c аккумулятором LV-3515",
+      "localFile": "mobile/assets/product-gallery/621cb0cd8d76f9e0310237cf.png",
+      "sha256": "621cb0cd8d76f9e0310237cf9258b54d73b7c424d51ab6dc692abff41495cd00",
+      "bytes": 468990,
+      "source": require('../../assets/product-gallery/621cb0cd8d76f9e0310237cf.png')
+    },
+    {
+      "id": "prom-2349-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/098/a7fietdw0s2jx27ud3myo706451qsqhd/720_4000_1/05.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/098/a7fietdw0s2jx27ud3myo706451qsqhd/1280_4000_1/05.png",
+      "alt": "Глубинный вибратор для бетона c аккумулятором LV-3515",
+      "localFile": "mobile/assets/product-gallery/e8513e77a5059c68c91e4478.png",
+      "sha256": "e8513e77a5059c68c91e447816ae1eec9e1b9fc821229972a19729821acd82a7",
+      "bytes": 494428,
+      "source": require('../../assets/product-gallery/e8513e77a5059c68c91e4478.png')
+    },
+    {
+      "id": "prom-2349-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/84a/2c226o12sn2d8n835bqwbc3296yasts3/720_4000_1/06.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/84a/2c226o12sn2d8n835bqwbc3296yasts3/1280_4000_1/06.png",
+      "alt": "Глубинный вибратор для бетона c аккумулятором LV-3515",
+      "localFile": "mobile/assets/product-gallery/b2e4ada8e9a16ea9e85fcafa.png",
+      "sha256": "b2e4ada8e9a16ea9e85fcafa972e543644148f941d5fa32586649d6772e1ab7d",
+      "bytes": 646059,
+      "source": require('../../assets/product-gallery/b2e4ada8e9a16ea9e85fcafa.png')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Идеально подходит для выполнения небольших объёмов работ или для работы в труднодоступных местах. Мощность устройства составляет 800 Вт, длина вала — 1.5 метра, а диаметр вибронаконечника — 35 мм. Благодаря компактным размерам и небольшому весу, этот инструмент очень удобен в эксплуатации и портативен.",
+    "Глубинный вибратор для опалубки — это лёгкое и удобное в использовании устройство. Его эргономичный корпус и небольшой вес обеспечивают комфорт во время работы. Благодаря своей мобильности, вибратор легко перемещается по объекту, что значительно упрощает процесс.",
+    "Этот вибратор существенно ускоряет процесс укладки фундамента, что, в свою очередь, делает строительство более гибким и организованным. Более того, вибратор для уплотнения бетонных смесей позволяет сохранять высокое качество фундамента и обеспечивает прочность конструкции.",
+    "Вибратор для опалубки, выполненный из качественных материалов, гарантирует долгий срок службы. Благодаря мощному двигателю, заключенному в компактный корпус, он позволяет значительно сократить время, необходимое для уплотнения бетонной смеси, и при этом существенно экономит электроэнергию.",
+    "Вал длиной 1.5 метра представляет собой идеальное решение для работы на небольших объектах, а доступная цена делает его особенно привлекательным.",
+    "Глубинный вибратор великолепный инструмент для запрессовки бетона. Его погружают в рабочий состав, а передающиеся по радиусу колебания создают плотную массу, таким образом, удаляется лишний воздух, что значительно повышает качество материала. Если не устранить лишний воздух, бетон может получиться пористым, а значит менее прочным и не надежным.",
+    "Комплект электрического глубинного вибратора включает в себя электропривод, гибкий вал и наконечник, две батареи 18V и портативное зарядное устройство.",
+    "Этот инструмент отличается удобством и компактностью, а также небольшим весом и доступной стоимостью, что делает его отличным выбором для частного строительства."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2266": {
+  "productId": "prom-2266",
+  "sourceUrl": "https://prom.myfast.space/catalog/vibrotekhnika/zaglazhivayushchaya-mashina/id-zatirochnayamashinahmr120/",
+  "sourcePageSHA256": "8d57fd07668670da55b4054588bab1f2ca0b576bd475a5fb0fe013de6955c8f5",
+  "capturedAt": "2026-09-11T18:14:16.695582+00:00",
+  "gallery": [
+    {
+      "id": "prom-2266-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/97f/720_4000_1/5jl3x2asswu06zunlbuc11h4o6z1lelc.png",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/97f/5jl3x2asswu06zunlbuc11h4o6z1lelc.png",
+      "alt": "Затирочная машина BPM 120",
+      "localFile": "mobile/assets/product-gallery/d84e7f3df4e2eae93293bc2d.png",
+      "sha256": "d84e7f3df4e2eae93293bc2de1aadc8f3886f3f50b6e6bb9732e9e4460a3ebb1",
+      "bytes": 269390,
+      "source": require('../../assets/product-gallery/d84e7f3df4e2eae93293bc2d.png')
+    },
+    {
+      "id": "prom-2266-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/a9a/720_4000_1/k883uu5a2lj01pnn4th3judl05scinl3.png",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/a9a/k883uu5a2lj01pnn4th3judl05scinl3.png",
+      "alt": "Затирочная машина BPM 120",
+      "localFile": "mobile/assets/product-gallery/b3cf9ea6861bb4d93b0dc120.png",
+      "sha256": "b3cf9ea6861bb4d93b0dc12093d4fcdfaf9c5d261b64254beb629a2dd1d52d24",
+      "bytes": 339153,
+      "source": require('../../assets/product-gallery/b3cf9ea6861bb4d93b0dc120.png')
+    },
+    {
+      "id": "prom-2266-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/256/720_4000_1/pmq28pcrlc1um0lu87xns5z5uqwj5nb8.png",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/256/pmq28pcrlc1um0lu87xns5z5uqwj5nb8.png",
+      "alt": "Затирочная машина BPM 120",
+      "localFile": "mobile/assets/product-gallery/312c31c7fd7620a12635d888.png",
+      "sha256": "312c31c7fd7620a12635d888fa60e0a088eca273f5c5d15a7016730e74758443",
+      "bytes": 917859,
+      "source": require('../../assets/product-gallery/312c31c7fd7620a12635d888.png')
+    },
+    {
+      "id": "prom-2266-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/2e7/720_4000_1/ihk24ake04e2b95xj993t9kcrojlulsp.png",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/2e7/ihk24ake04e2b95xj993t9kcrojlulsp.png",
+      "alt": "Затирочная машина BPM 120",
+      "localFile": "mobile/assets/product-gallery/76434e972bfc920c1fbb3c58.png",
+      "sha256": "76434e972bfc920c1fbb3c5824aa863c1f13c2c1c204447f9302e5529b87aaba",
+      "bytes": 697603,
+      "source": require('../../assets/product-gallery/76434e972bfc920c1fbb3c58.png')
+    },
+    {
+      "id": "prom-2266-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/817/720_4000_1/g7wb080auhu7mcfzgt4fzy0eh3f79d7f.png",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/817/g7wb080auhu7mcfzgt4fzy0eh3f79d7f.png",
+      "alt": "Затирочная машина BPM 120",
+      "localFile": "mobile/assets/product-gallery/9ce6594fb5bf623950ba5d1b.png",
+      "sha256": "9ce6594fb5bf623950ba5d1b5306b85c1e9fde63211a87a7420f82a32c8791da",
+      "bytes": 678575,
+      "source": require('../../assets/product-gallery/9ce6594fb5bf623950ba5d1b.png')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Затирочная машина TeaM BPM-120 с радиусом действия 120 см и двигателем Honda GX-270 предназначена для полировки и шлифовки бетонных поверхностей, создает глянцевую или гладкую, ровную поверхность. Применяется для обработки бетонных полов, дорожек, тротуаров и других бетонных поверхностей, требующих ровной и глянцевой отделки.",
+    "Комплект поставки включает следующие элементы:",
+    "Рама. Это основная жесткая часть машины, в которой расположены двигатель, трансмиссия и другие компоненты. Изготовлена из прочной стали, надежно защищает лезвие при проведении работ в различных условиях.",
+    "Двигатель. Данная модель оснащена мощным двигателем Honda GX-270 с рабочим объемом 270 куб. см и мощностью 9,0 лошадиных сил. Это четырехтактный двигатель, обеспечивающий эффективную работу и низкие эксплуатационные расходы.",
+    "Ручка. Её можно отрегулировать в соответствии с ростом и предпочтениями оператора, обеспечивая максимальный комфорт и контроль во время работы. На ней находятся все основные элементы управления",
+    "Лезвие. Имеет четыре лепестка с общим диаметром 120 см. Позволяет обрабатывать большие площади продолжительное время.",
+    "Диск. Защищает лопости лезвия от повреждения, а также может использоваться при затирке.",
+    "При проведении затирочных работ вертолетом по бетону, рекомендуем:",
+    "Перекрывайте каждый проход примерно на половину ширины машины, чтобы обеспечить полное покрытие и равномерную затирку. Это также поможет предотвратить появление незавершенных участков.",
+    "Поддерживайте постоянную глубину: держите машину на постоянной глубине, регулируя ее по мере необходимости, чтобы обеспечить равномерную обработку.",
+    "Содержите машину в чистоте. Регулярно очищайте машину и ее навесное оборудование, чтобы сохранить производительность и продлить срок их службы.",
+    "Проверьте бетон: перед отделкой проверьте бетон на наличие дефектов или недостатков, которые могут повлиять на процесс отделки. Прежде чем продолжить, устраните любые проблемы."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": true,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-1649": {
+  "productId": "prom-1649",
+  "sourceUrl": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/betonomeshalki/id-betonomeshalkasbrlebedyansbr260380v/",
+  "sourcePageSHA256": "37bba9b4b9cd0a850106a8560ee0cf03113604012f89afdf23f8270fd2ff1991",
+  "capturedAt": "2026-09-11T18:14:16.713212+00:00",
+  "gallery": [
+    {
+      "id": "prom-1649-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/514/720_4000_1/ao1bzvjvmmas8lmu6ybrnh3hdwb2um6w.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/514/ao1bzvjvmmas8lmu6ybrnh3hdwb2um6w.jpg",
+      "alt": "Бетономешалка СБР (Лебедянь) СБР-260/380В",
+      "localFile": "mobile/assets/product-gallery/6fd6a090f4facb279f3f486a.jpg",
+      "sha256": "6fd6a090f4facb279f3f486a3a6b4d8c0af22372a576c2c0a0926dd1f93f758b",
+      "bytes": 59693,
+      "source": require('../../assets/product-gallery/6fd6a090f4facb279f3f486a.jpg')
+    },
+    {
+      "id": "prom-1649-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/iblock/612/le9tzrug6ekl41dxyvemo8owo239hcgc.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/612/le9tzrug6ekl41dxyvemo8owo239hcgc.jpg",
+      "alt": "Бетономешалка СБР (Лебедянь) СБР-260/380В",
+      "localFile": "mobile/assets/product-gallery/e9bd484a94ad8272dee5a56a.jpg",
+      "sha256": "e9bd484a94ad8272dee5a56afb14e938d4eed7724b95771dd2559f6832d61394",
+      "bytes": 82358,
+      "source": require('../../assets/product-gallery/e9bd484a94ad8272dee5a56a.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Болтовое соединение надежно скрепляет все части бетоносмесителя. Сварная рама изготовлена из стальных труб и придает жесткость всей конструкции. Чугунный венец увеличивает прочность и долговечность бетоносмесителя. Питание инструмента осуществляется от сети, напряжением 380 В. Электрический привод обеспечивает удобную и менее утомительную работу.",
+    "Бетоносмеситель оборудован термозащитой, отключающей его при резкой перегрузке и перегреве двигателя. Встроенный выключатель отключает смеситель при низком напряжении и одновременно предотвращает самостоятельный запуск при последующей нормализации электрического тока."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": true,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-969": {
+  "productId": "prom-969",
+  "sourceUrl": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/rjumka-kolokolchik/id-badyadlyabetonabn10m3/",
+  "sourcePageSHA256": "0be896b2b62e78a6342b15c3e6c00faf26de503696a6575d5f4e5da93b5469b7",
+  "capturedAt": "2026-09-11T18:14:16.745434+00:00",
+  "gallery": [
+    {
+      "id": "prom-969-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/fef/720_4000_1/ngbc54kvqwmgpn9ibrz5cxw1qdsl3tf3.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/fef/1280_4000_1/ngbc54kvqwmgpn9ibrz5cxw1qdsl3tf3.jpg",
+      "alt": "Бадья для бетона БН 1,0 м3 c лотком",
+      "localFile": "mobile/assets/product-gallery/358917e7aae1c4fb4ce70226.jpg",
+      "sha256": "358917e7aae1c4fb4ce70226f8e383a78197996da68a9b8b25f1a6f0e5f48437",
+      "bytes": 313794,
+      "source": require('../../assets/product-gallery/358917e7aae1c4fb4ce70226.jpg')
+    },
+    {
+      "id": "prom-969-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/1b6/720_4000_1/cgk5eyzbz0zlj927xavsqgzum1uwfmvn.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/1b6/1280_4000_1/cgk5eyzbz0zlj927xavsqgzum1uwfmvn.jpg",
+      "alt": "Бадья для бетона БН 1,0 м3 c лотком",
+      "localFile": "mobile/assets/product-gallery/a14f012817b191b9a2b1ef94.jpg",
+      "sha256": "a14f012817b191b9a2b1ef940cdee3ea28c267b56bba1fe898dae9a42c63d96f",
+      "bytes": 265511,
+      "source": require('../../assets/product-gallery/a14f012817b191b9a2b1ef94.jpg')
+    },
+    {
+      "id": "prom-969-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/630/720_4000_1/qunz8jmru3t7lu4b5t5z7ope1mgsj32k.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/630/1280_4000_1/qunz8jmru3t7lu4b5t5z7ope1mgsj32k.jpg",
+      "alt": "Бадья для бетона БН 1,0 м3 c лотком",
+      "localFile": "mobile/assets/product-gallery/8fe8eedeb83fd88bb34999ce.jpg",
+      "sha256": "8fe8eedeb83fd88bb34999ceaa8c697c94889c6dfac4120d30e41ec71af76fdd",
+      "bytes": 291808,
+      "source": require('../../assets/product-gallery/8fe8eedeb83fd88bb34999ce.jpg')
+    },
+    {
+      "id": "prom-969-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/926/720_4000_1/vffksmh4ex7ky6hkki6tzz8vts8dhbej.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/926/1280_4000_1/vffksmh4ex7ky6hkki6tzz8vts8dhbej.jpg",
+      "alt": "Бадья для бетона БН 1,0 м3 c лотком",
+      "localFile": "mobile/assets/product-gallery/65de450e4edc2cd6b3ee4eba.jpg",
+      "sha256": "65de450e4edc2cd6b3ee4ebaebb8f86b467d4c8c52c231b6564f16f0ca7dc86b",
+      "bytes": 384225,
+      "source": require('../../assets/product-gallery/65de450e4edc2cd6b3ee4eba.jpg')
+    },
+    {
+      "id": "prom-969-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/adc/720_4000_1/rqkl398e8krmw1tzmshfakso97esy62k.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/adc/1280_4000_1/rqkl398e8krmw1tzmshfakso97esy62k.jpg",
+      "alt": "Бадья для бетона БН 1,0 м3 c лотком",
+      "localFile": "mobile/assets/product-gallery/e194672f0c3c7b4732d4b1d1.jpg",
+      "sha256": "e194672f0c3c7b4732d4b1d1f0cec3c0a50a13845dc2c9ed1c516c55fd9dd52b",
+      "bytes": 323456,
+      "source": require('../../assets/product-gallery/e194672f0c3c7b4732d4b1d1.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Бункер бетонной массы БН используется для транспортировки и выгрузки бетонов, а также для удобной заливки как бетонных перекрытий, так и колонн монолитно-каркасных конструкций.",
+    "В комплекте с бадьей идёт лоток. Он служит для равномерного распределения бетона, что значительно упрощает процесс заливки и способствует повышению качества выполненных работ.",
+    "Лоток изготовлен из прочных материалов, устойчивых к износу и механическим воздействиям. Это обеспечивает его долговечность и сохранение рабочих характеристик на протяжении всего срока службы.",
+    "Габариты лотка:",
+    "- Длина 1170 мм",
+    "- Ширина 400 мм",
+    "- Высота 150 мм",
+    "- Толщина 2,5 мм",
+    "- Вес 12,5 кг"
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-1343": {
+  "productId": "prom-1343",
+  "sourceUrl": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/stroitelnyetazy/id-taraantiudarnayadlyarastvorateam80pryamougolnaya/",
+  "sourcePageSHA256": "97409026f65d5c7f2d9a7485f18378cffb5e7bb174fa4bcab50401220fe0ff7c",
+  "capturedAt": "2026-09-11T18:14:16.846261+00:00",
+  "gallery": [
+    {
+      "id": "prom-1343-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/cda/720_4000_1/vu9n09279rvmgbokm41tfcgaldxayd43.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/cda/vu9n09279rvmgbokm41tfcgaldxayd43.jpg",
+      "alt": "Тара антиударная для раствора TeaM 80, прямоугольная",
+      "localFile": "mobile/assets/product-gallery/a94a79a12f5045d871b6e097.jpg",
+      "sha256": "a94a79a12f5045d871b6e0975ca295f2d44b7eafd34e1de4aaddf39e6a423cfc",
+      "bytes": 61619,
+      "source": require('../../assets/product-gallery/a94a79a12f5045d871b6e097.jpg')
+    },
+    {
+      "id": "prom-1343-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/751/720_4000_1/ezmpzt8ohvp79l76c5buc72apyirm0me.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/751/ezmpzt8ohvp79l76c5buc72apyirm0me.jpg",
+      "alt": "Тара антиударная для раствора TeaM 80, прямоугольная",
+      "localFile": "mobile/assets/product-gallery/addbdedf630b532cdabd9e56.jpg",
+      "sha256": "addbdedf630b532cdabd9e56e80c940c999e2e23cd293ad755f9e251545e6d80",
+      "bytes": 75734,
+      "source": require('../../assets/product-gallery/addbdedf630b532cdabd9e56.jpg')
+    },
+    {
+      "id": "prom-1343-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/da3/720_4000_1/k72rsd8wa0x91kf3u8rbu5hjd8jibgyd.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/iblock/da3/k72rsd8wa0x91kf3u8rbu5hjd8jibgyd.jpg",
+      "alt": "Тара антиударная для раствора TeaM 80, прямоугольная",
+      "localFile": "mobile/assets/product-gallery/a3df36efde99e0e6950dfb89.jpg",
+      "sha256": "a3df36efde99e0e6950dfb8916e000eabb060d10a4ddad93f1898d6477b7eb5f",
+      "bytes": 53787,
+      "source": require('../../assets/product-gallery/a3df36efde99e0e6950dfb89.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Отличительная особенность —специальный рецептурный полимер, из которого изготовлена данная серия. За счет данного материала, формованного при низком давлении, тара не гнется и сохраняет форму при ударах. Бортик усилен ребрами жесткости для удобства переноски.",
+    "Тара может быть использована не только при строительстве, но и в быту для хранения жидкостей или сыпучих продуктов. Она невосприимчива к воздействию многих химических веществ, а также к перепадам температур от -40 до +60 градусов.",
+    "Серия представлена круглыми и квадратными моделями объемом 40, 60 и 80 литров."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2033": {
+  "productId": "prom-2033",
+  "sourceUrl": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/vintystyazhnye/id-ankertortsevoydlyaopalubkiotsinkovannyy/",
+  "sourcePageSHA256": "748eb648184b62919db9829552944b4131ca9cffb81ad3b3b95acecd56411eda",
+  "capturedAt": "2026-09-11T18:14:16.846435+00:00",
+  "gallery": [
+    {
+      "id": "prom-2033-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/9ab/720_4000_1/ll6oyv78fjpi34pmdgjhyxzxzwwbriy9.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/9ab/1280_4000_1/ll6oyv78fjpi34pmdgjhyxzxzwwbriy9.png",
+      "alt": "Анкер торцевой для опалубки оцинкованный удлиненный",
+      "localFile": "mobile/assets/product-gallery/6eb383d729452cebd1c9a4d1.png",
+      "sha256": "6eb383d729452cebd1c9a4d174562734d45b7946d889606d0d35627dce5f348d",
+      "bytes": 177715,
+      "source": require('../../assets/product-gallery/6eb383d729452cebd1c9a4d1.png')
+    },
+    {
+      "id": "prom-2033-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/1f5/720_4000_1/3j8zhx3pcws2vp1lf4de6mnf33a4xzjr.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/1f5/1280_4000_1/3j8zhx3pcws2vp1lf4de6mnf33a4xzjr.jpg",
+      "alt": "Анкер торцевой для опалубки оцинкованный удлиненный",
+      "localFile": "mobile/assets/product-gallery/d7c8a6e2548bc8519f270092.jpg",
+      "sha256": "d7c8a6e2548bc8519f2700922222995b6cf305f13aa9fbf3861aed46465b42b8",
+      "bytes": 206686,
+      "source": require('../../assets/product-gallery/d7c8a6e2548bc8519f270092.jpg')
+    },
+    {
+      "id": "prom-2033-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/c28/720_4000_1/ipr780b6s6ora0pjcyhtugnp4n046256.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/c28/1280_4000_1/ipr780b6s6ora0pjcyhtugnp4n046256.jpg",
+      "alt": "Анкер торцевой для опалубки оцинкованный удлиненный",
+      "localFile": "mobile/assets/product-gallery/810bd22b4112c97d15c566ff.jpg",
+      "sha256": "810bd22b4112c97d15c566ffb78d9c9163e92a999a1f142d70a58c54a479802c",
+      "bytes": 204805,
+      "source": require('../../assets/product-gallery/810bd22b4112c97d15c566ff.jpg')
+    },
+    {
+      "id": "prom-2033-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/99e/720_4000_1/6pscdroj7gfyomhlgsf38gxdck99d8as.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/99e/1280_4000_1/6pscdroj7gfyomhlgsf38gxdck99d8as.jpg",
+      "alt": "Анкер торцевой для опалубки оцинкованный удлиненный",
+      "localFile": "mobile/assets/product-gallery/c7c8163e23bd7c47adb5ee94.jpg",
+      "sha256": "c7c8163e23bd7c47adb5ee94336700b89c805e19eee46745387d78c189638c79",
+      "bytes": 231374,
+      "source": require('../../assets/product-gallery/c7c8163e23bd7c47adb5ee94.jpg')
+    },
+    {
+      "id": "prom-2033-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/136/720_4000_1/34hr13nod1t0a9iawgox48bs8ez6bnbt.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/136/1280_4000_1/34hr13nod1t0a9iawgox48bs8ez6bnbt.jpg",
+      "alt": "Анкер торцевой для опалубки оцинкованный удлиненный",
+      "localFile": "mobile/assets/product-gallery/470f6e93cf264e331c44631d.jpg",
+      "sha256": "470f6e93cf264e331c44631d7a783bfe9f29fb80b30a1c24831bedbcef007317",
+      "bytes": 229516,
+      "source": require('../../assets/product-gallery/470f6e93cf264e331c44631d.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Анкер торцевой для опалубки оцинкованный предназначен для сборки и соединения щитов опалубки между собой. В изготовлении применяется оцинкованная сталь. Не подвержен коррозии. Обеспечивает максимальную прижимную силу на прямых углах. Конструкция проста в сборке: анкер вставляется в технологическое отверстие в щите, с противоположной стороны надевается шайба для обеспечения большей площади контакта, конец фиксируется гайкой. Является усиленной версией шкворня"
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2017": {
+  "productId": "prom-2017",
+  "sourceUrl": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/vintystyazhnye/id-shkvoren-dlyaopalubki/",
+  "sourcePageSHA256": "1c8ab6c81115ad4d1f988d6ed5791f6cca164da14519a63a511123b4274b5599",
+  "capturedAt": "2026-09-11T18:14:16.889328+00:00",
+  "gallery": [
+    {
+      "id": "prom-2017-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/798/720_4000_1/3yj6ii5frh0qb2tr3dxi8ctcsk9qejnl.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/798/1280_4000_1/3yj6ii5frh0qb2tr3dxi8ctcsk9qejnl.png",
+      "alt": "Анкер для опалубки",
+      "localFile": "mobile/assets/product-gallery/4e406553df6eaa8ac6360e5b.png",
+      "sha256": "4e406553df6eaa8ac6360e5b8119e1ae7c12c01ce8831aeef8047659b872ad40",
+      "bytes": 203622,
+      "source": require('../../assets/product-gallery/4e406553df6eaa8ac6360e5b.png')
+    },
+    {
+      "id": "prom-2017-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/f39/720_4000_1/k0fvhb96qdv8m8ex73asmywvts2a5b9l.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/f39/1280_4000_1/k0fvhb96qdv8m8ex73asmywvts2a5b9l.jpg",
+      "alt": "Анкер для опалубки",
+      "localFile": "mobile/assets/product-gallery/0777d29b5c2b0c1cc83f3318.jpg",
+      "sha256": "0777d29b5c2b0c1cc83f3318ff2d732bb48de349445f12e8cf0e390b135ef0e1",
+      "bytes": 210990,
+      "source": require('../../assets/product-gallery/0777d29b5c2b0c1cc83f3318.jpg')
+    },
+    {
+      "id": "prom-2017-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/4f6/720_4000_1/cdswz83r1ibz09es64hrrs3ugtnxo1ly.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/4f6/1280_4000_1/cdswz83r1ibz09es64hrrs3ugtnxo1ly.jpg",
+      "alt": "Анкер для опалубки",
+      "localFile": "mobile/assets/product-gallery/fd4bc1d0d09e57628cec62f0.jpg",
+      "sha256": "fd4bc1d0d09e57628cec62f09fb00bf08722da480cae4e3c2a4f467e8b179fa2",
+      "bytes": 245456,
+      "source": require('../../assets/product-gallery/fd4bc1d0d09e57628cec62f0.jpg')
+    },
+    {
+      "id": "prom-2017-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/a4b/720_4000_1/ebczqg0ddliv4mjovzbbeqmocv7dx22g.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/a4b/1280_4000_1/ebczqg0ddliv4mjovzbbeqmocv7dx22g.jpg",
+      "alt": "Анкер для опалубки",
+      "localFile": "mobile/assets/product-gallery/62200a0f140f0c40d3aeaf2f.jpg",
+      "sha256": "62200a0f140f0c40d3aeaf2fa91e7837401bf677506fd771f3022e23b5a564f3",
+      "bytes": 249938,
+      "source": require('../../assets/product-gallery/62200a0f140f0c40d3aeaf2f.jpg')
+    },
+    {
+      "id": "prom-2017-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ab3/720_4000_1/qpscd9iyo905ba0f6jc1znlbtod7003l.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/ab3/1280_4000_1/qpscd9iyo905ba0f6jc1znlbtod7003l.jpg",
+      "alt": "Анкер для опалубки",
+      "localFile": "mobile/assets/product-gallery/5067ac0a17368b5b61ec5ee2.jpg",
+      "sha256": "5067ac0a17368b5b61ec5ee24afd1d0ccb976564dcb7949307f110cf7841be50",
+      "bytes": 227900,
+      "source": require('../../assets/product-gallery/5067ac0a17368b5b61ec5ee2.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Шкворень для опалубки применяется практически для всех вариантов сборки щитовой опалубки. Обеспечивает максимальную прижимную силу на прямых углах. Конструкция проста в сборке: шкворень вставляется в технологическое отверстие в щите, с противоположной стороны надевается шайба для обеспечения большей площади контакта, конец фиксируется гайкой. Существует множество вариантов шкворня, отличающихся только формой головки. Является усиленной версией шкворня"
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-372": {
+  "productId": "prom-372",
+  "sourceUrl": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/id-armirovannayaplenka140gm22kh25m/",
+  "sourcePageSHA256": "bc4a3c25b8ee9264d72df1171eae7f9fa9b96ddf8c08430b8fa0ae97bbfd7c92",
+  "capturedAt": "2026-09-11T18:14:16.956975+00:00",
+  "gallery": [
+    {
+      "id": "prom-372-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/08f/rjt96pbhysu2p0ao7qdrfvnadixgv1l0/720_4000_1/01.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/08f/rjt96pbhysu2p0ao7qdrfvnadixgv1l0/1280_4000_1/01.png",
+      "alt": "Плёнка армированная Промышленник 140 г/м² 2×25 м 50 м²",
+      "localFile": "mobile/assets/product-gallery/0140fcbaf6d44dc1492389b8.png",
+      "sha256": "0140fcbaf6d44dc1492389b8dd58a0f250f5b4c9582ab0b39cb33d8d62571996",
+      "bytes": 353364,
+      "source": require('../../assets/product-gallery/0140fcbaf6d44dc1492389b8.png')
+    },
+    {
+      "id": "prom-372-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/a6f/gqkd5ocebkq24x3cztt3til86rz8r23l/720_4000_1/02.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/a6f/gqkd5ocebkq24x3cztt3til86rz8r23l/1280_4000_1/02.png",
+      "alt": "Плёнка армированная Промышленник 140 г/м² 2×25 м 50 м²",
+      "localFile": "mobile/assets/product-gallery/ee35dfe21ac0e762b4a2915f.png",
+      "sha256": "ee35dfe21ac0e762b4a2915f486849c6733c3aad57a7578d3768fa105d1a04f6",
+      "bytes": 241597,
+      "source": require('../../assets/product-gallery/ee35dfe21ac0e762b4a2915f.png')
+    },
+    {
+      "id": "prom-372-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/0c1/jj72qy0pb0uckcgvlumwmwwsuwrnwy21/720_4000_1/03.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/0c1/jj72qy0pb0uckcgvlumwmwwsuwrnwy21/1280_4000_1/03.png",
+      "alt": "Плёнка армированная Промышленник 140 г/м² 2×25 м 50 м²",
+      "localFile": "mobile/assets/product-gallery/50f54480eb9955fd9dfa22c4.png",
+      "sha256": "50f54480eb9955fd9dfa22c486e8b19386a50ebf6140a4f129191e95fd72e264",
+      "bytes": 826193,
+      "source": require('../../assets/product-gallery/50f54480eb9955fd9dfa22c4.png')
+    },
+    {
+      "id": "prom-372-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/e0c/cztvd16v4m6njlpspar1m33czljyu8fy/720_4000_1/04.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/e0c/cztvd16v4m6njlpspar1m33czljyu8fy/1280_4000_1/04.png",
+      "alt": "Плёнка армированная Промышленник 140 г/м² 2×25 м 50 м²",
+      "localFile": "mobile/assets/product-gallery/0982f18b7838e01bb8f0ed91.png",
+      "sha256": "0982f18b7838e01bb8f0ed910aff3664ad5602bf24398c57279258f4a9981792",
+      "bytes": 423016,
+      "source": require('../../assets/product-gallery/0982f18b7838e01bb8f0ed91.png')
+    },
+    {
+      "id": "prom-372-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/776/efnbr2x2nds4vp293ph5p90zsotzordm/720_4000_1/05.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/776/efnbr2x2nds4vp293ph5p90zsotzordm/1280_4000_1/05.png",
+      "alt": "Плёнка армированная Промышленник 140 г/м² 2×25 м 50 м²",
+      "localFile": "mobile/assets/product-gallery/7ab30c770fce1c8d408d38fc.png",
+      "sha256": "7ab30c770fce1c8d408d38fc519de37b10a2f046c8a9c3ede78cef2821d25b60",
+      "bytes": 293417,
+      "source": require('../../assets/product-gallery/7ab30c770fce1c8d408d38fc.png')
+    },
+    {
+      "id": "prom-372-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/d8d/sxkuyo8w2gv2vn27ttqyk031am5uzcfh/720_4000_1/06.png",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/d8d/sxkuyo8w2gv2vn27ttqyk031am5uzcfh/1280_4000_1/06.png",
+      "alt": "Плёнка армированная Промышленник 140 г/м² 2×25 м 50 м²",
+      "localFile": "mobile/assets/product-gallery/86576673248b54b0343f7eab.png",
+      "sha256": "86576673248b54b0343f7eab43c29795d9c5b09598e9f676f4868619e897e556",
+      "bytes": 388215,
+      "source": require('../../assets/product-gallery/86576673248b54b0343f7eab.png')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Плёнка армированная Промышленник 140 г/м² 2×25 м 50 м² — светостабилизированное полиэтиленовое полотно с внутренней армирующей сеткой для укрытия и временной защиты.",
+    "Размер рулона 2×25 м, площадь 50 м², плотность 140 г/м², материал — полиэтилен со стекловолоконной армирующей сеткой. Армирование распределяет усилие и помогает ограничить дальнейшее расползание локального прокола или надреза.",
+    "Размер 2×25 м площадью 50 м² подходит для частных и профессиональных задач: полотно можно использовать целиком либо раскроить на несколько рабочих фрагментов с учётом припусков.",
+    "На строительном объекте плёнкой закрывают леса и фасады, оконные и дверные проёмы, кровлю на период работ, опалубку, утеплитель, пиломатериалы, оборудование и складские зоны. Она подходит для создания временного теплового контура, защиты помещений от осадков и пыли, а также как разделительный слой в технологических операциях, если это предусмотрено проектом.",
+    "В тепличном и фермерском хозяйстве прозрачное полотно используют на каркасах теплиц и парников, для укрытия рассады, кормов, сена, инвентаря и хозяйственных сооружений. Для растений необходимо предусмотреть вентиляцию: герметично закрытая теплица может перегреваться и накапливать конденсат даже при хорошем светопропускании.",
+    "Лёгкие варианты 120–140 г/м² удобны для теплиц, ремонта и сезонных укрытий; плотности 200–250 г/м² выбирают для более интенсивной строительной и хозяйственной эксплуатации. Перед раскроем измерьте рулон и разметьте детали по армирующей сетке. Покупатели особенно обращают внимание на фактический метраж и ровность отреза, поэтому длину и ширину лучше проверить до монтажа.",
+    "Полотно закрепляют рейками, клипсами или широкими прижимными элементами, не прокалывая его в случайных местах. На углах исключают контакт с острым металлом, а в местах крепления предусматривают усиление. Небольшие повреждения ремонтируют совместимой лентой по сухой и чистой поверхности.",
+    "Армированная плёнка является временным укрывным материалом, а не постоянной кровлей. Не допускайте водяных и снеговых мешков, контакта с горячими поверхностями и чрезмерного натяжения. После демонтажа полотно очищают, высушивают и сворачивают."
+  ],
+  "advantages": [
+    "Армирующая сетка сдерживает распространение локального повреждения.",
+    "Плотность 140 г/м² позволяет выбрать вариант от сезонного до усиленного.",
+    "Рулон 2×25 м закрывает большую площадь с меньшим количеством стыков.",
+    "Светопропускающее полотно подходит для теплиц и временных световых контуров.",
+    "Материал защищает от осадков, ветра, пыли и строительных загрязнений.",
+    "Разметка армирующей сетки упрощает ровный раскрой и ремонт повреждений."
+  ],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2491": {
+  "productId": "prom-2491",
+  "sourceUrl": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/id-armirovannayaplenka200gm26kh25m/",
+  "sourcePageSHA256": "17f2f6e1f8e3f0c6cc3b60c05bc1034b6d7ca3a8c565eb396fd5b3786d6547cc",
+  "capturedAt": "2026-09-11T18:14:16.911693+00:00",
+  "gallery": [
+    {
+      "id": "prom-2491-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/logo_card.png",
+      "originalUrl": "https://prom.myfast.space/upload/logo_card.png",
+      "alt": "Плёнка армированная Промышленник 200 г/м² 6×25 м 150 м²",
+      "localFile": "mobile/assets/product-gallery/cc0b84b18d9fb0782302e5ed.png",
+      "sha256": "cc0b84b18d9fb0782302e5edbd7192d1096e7fd46cd23c70227a643db6872b07",
+      "bytes": 35302,
+      "source": require('../../assets/product-gallery/cc0b84b18d9fb0782302e5ed.png')
+    },
+    {
+      "id": "prom-2491-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/d0d/720_4000_1/h393q4vvjg3yr4myxl9ub01szp232sra.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/d0d/1280_4000_1/h393q4vvjg3yr4myxl9ub01szp232sra.jpg",
+      "alt": "Плёнка армированная Промышленник 200 г/м² 6×25 м 150 м²",
+      "localFile": "mobile/assets/product-gallery/df91a1227898d313fecf2a14.jpg",
+      "sha256": "df91a1227898d313fecf2a14e23c5e341ea4703139279774db06b24f7554bd53",
+      "bytes": 349796,
+      "source": require('../../assets/product-gallery/df91a1227898d313fecf2a14.jpg')
+    },
+    {
+      "id": "prom-2491-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/941/720_4000_1/tsnibsmiaovto00y3ni9daho9k07hikk.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/941/1280_4000_1/tsnibsmiaovto00y3ni9daho9k07hikk.jpg",
+      "alt": "Плёнка армированная Промышленник 200 г/м² 6×25 м 150 м²",
+      "localFile": "mobile/assets/product-gallery/3f97070354881203de089721.jpg",
+      "sha256": "3f97070354881203de089721b66e339878c7636223b65cc5be71f97f67d19480",
+      "bytes": 333359,
+      "source": require('../../assets/product-gallery/3f97070354881203de089721.jpg')
+    },
+    {
+      "id": "prom-2491-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/b72/720_4000_1/trpiw7mqnlyf4lkb2shafiku2i7cwcyc.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/b72/1280_4000_1/trpiw7mqnlyf4lkb2shafiku2i7cwcyc.jpg",
+      "alt": "Плёнка армированная Промышленник 200 г/м² 6×25 м 150 м²",
+      "localFile": "mobile/assets/product-gallery/1003ff8d002b03f9a1e71aeb.jpg",
+      "sha256": "1003ff8d002b03f9a1e71aebc808840d82012bd074829b9996ac5a3180362ce4",
+      "bytes": 374712,
+      "source": require('../../assets/product-gallery/1003ff8d002b03f9a1e71aeb.jpg')
+    },
+    {
+      "id": "prom-2491-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/d84/720_4000_1/w098h4j4otf2gvfu2q0syueohhzrxsyw.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/d84/1280_4000_1/w098h4j4otf2gvfu2q0syueohhzrxsyw.jpg",
+      "alt": "Плёнка армированная Промышленник 200 г/м² 6×25 м 150 м²",
+      "localFile": "mobile/assets/product-gallery/b99677b605a3cbbc9b60ee79.jpg",
+      "sha256": "b99677b605a3cbbc9b60ee7924bbeff73dd94ff6c471e30b0a948451a0605e24",
+      "bytes": 395856,
+      "source": require('../../assets/product-gallery/b99677b605a3cbbc9b60ee79.jpg')
+    },
+    {
+      "id": "prom-2491-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ea6/720_4000_1/7eyqg091k1f2cxi74mwjym8bnz5nnrw8.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/ea6/1280_4000_1/7eyqg091k1f2cxi74mwjym8bnz5nnrw8.jpg",
+      "alt": "Плёнка армированная Промышленник 200 г/м² 6×25 м 150 м²",
+      "localFile": "mobile/assets/product-gallery/4d31374d87bf85db794e2bbc.jpg",
+      "sha256": "4d31374d87bf85db794e2bbcaf799018b8628ad23c5db1470c5579987dd1f631",
+      "bytes": 313437,
+      "source": require('../../assets/product-gallery/4d31374d87bf85db794e2bbc.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Плёнка армированная Промышленник 200 г/м² 6×25 м 150 м² — светостабилизированное полиэтиленовое полотно с внутренней армирующей сеткой для укрытия и временной защиты.",
+    "Размер рулона 6×25 м, площадь 150 м², плотность 200 г/м², материал — полиэтилен со стекловолоконной армирующей сеткой. Армирование распределяет усилие и помогает ограничить дальнейшее расползание локального прокола или надреза.",
+    "Размер 6×25 м площадью 150 м² подходит для частных и профессиональных задач: полотно можно использовать целиком либо раскроить на несколько рабочих фрагментов с учётом припусков.",
+    "На строительном объекте плёнкой закрывают леса и фасады, оконные и дверные проёмы, кровлю на период работ, опалубку, утеплитель, пиломатериалы, оборудование и складские зоны. Она подходит для создания временного теплового контура, защиты помещений от осадков и пыли, а также как разделительный слой в технологических операциях, если это предусмотрено проектом.",
+    "В тепличном и фермерском хозяйстве прозрачное полотно используют на каркасах теплиц и парников, для укрытия рассады, кормов, сена, инвентаря и хозяйственных сооружений. Для растений необходимо предусмотреть вентиляцию: герметично закрытая теплица может перегреваться и накапливать конденсат даже при хорошем светопропускании.",
+    "Лёгкие варианты 120–140 г/м² удобны для теплиц, ремонта и сезонных укрытий; плотности 200–250 г/м² выбирают для более интенсивной строительной и хозяйственной эксплуатации. Перед раскроем измерьте рулон и разметьте детали по армирующей сетке. Покупатели особенно обращают внимание на фактический метраж и ровность отреза, поэтому длину и ширину лучше проверить до монтажа.",
+    "Полотно закрепляют рейками, клипсами или широкими прижимными элементами, не прокалывая его в случайных местах. На углах исключают контакт с острым металлом, а в местах крепления предусматривают усиление. Небольшие повреждения ремонтируют совместимой лентой по сухой и чистой поверхности.",
+    "Армированная плёнка является временным укрывным материалом, а не постоянной кровлей. Не допускайте водяных и снеговых мешков, контакта с горячими поверхностями и чрезмерного натяжения. После демонтажа полотно очищают, высушивают и сворачивают."
+  ],
+  "advantages": [
+    "Армирующая сетка сдерживает распространение локального повреждения.",
+    "Плотность 200 г/м² позволяет выбрать вариант от сезонного до усиленного.",
+    "Рулон 6×25 м закрывает большую площадь с меньшим количеством стыков.",
+    "Светопропускающее полотно подходит для теплиц и временных световых контуров.",
+    "Материал защищает от осадков, ветра, пыли и строительных загрязнений.",
+    "Разметка армирующей сетки упрощает ровный раскрой и ремонт повреждений."
+  ],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-2200": {
+  "productId": "prom-2200",
+  "sourceUrl": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/tenty/id-tentukryvnoyoxiss180gm23kh4m/",
+  "sourcePageSHA256": "7b3fece39e8244605f7a957ad93f9f39f9e37273328a9850187b197ccdbac296",
+  "capturedAt": "2026-09-11T18:14:16.988557+00:00",
+  "gallery": [
+    {
+      "id": "prom-2200-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/b06/720_4000_1/io7ychhqyygp4plovld5mwluj8n1czc5.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/b06/1280_4000_1/io7ychhqyygp4plovld5mwluj8n1czc5.jpg",
+      "alt": "Тент укрывной тарпаулин 180 г/м² 3×4 м с люверсами",
+      "localFile": "mobile/assets/product-gallery/fdd36a738e35ffd3e35e86b8.jpg",
+      "sha256": "fdd36a738e35ffd3e35e86b8d29a1fa7ca4ac663e8b5c8f774e9f6cbf76ede42",
+      "bytes": 215277,
+      "source": require('../../assets/product-gallery/fdd36a738e35ffd3e35e86b8.jpg')
+    },
+    {
+      "id": "prom-2200-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/dfb/720_4000_1/062mufkk8mbm8bhdb6uqzq27tbqmih9k.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/dfb/1280_4000_1/062mufkk8mbm8bhdb6uqzq27tbqmih9k.jpg",
+      "alt": "Тент укрывной тарпаулин 180 г/м² 3×4 м с люверсами",
+      "localFile": "mobile/assets/product-gallery/151c23837978201f7f17ca7a.jpg",
+      "sha256": "151c23837978201f7f17ca7a1ad6bdf0bb866c7f80b80cc56658f0da77ec92c4",
+      "bytes": 331387,
+      "source": require('../../assets/product-gallery/151c23837978201f7f17ca7a.jpg')
+    },
+    {
+      "id": "prom-2200-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/91d/720_4000_1/g6ws17670ikd37u6yo35o2bqcadkuc5u.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/91d/1280_4000_1/g6ws17670ikd37u6yo35o2bqcadkuc5u.jpg",
+      "alt": "Тент укрывной тарпаулин 180 г/м² 3×4 м с люверсами",
+      "localFile": "mobile/assets/product-gallery/3c01584fb3960a9b9ed3d225.jpg",
+      "sha256": "3c01584fb3960a9b9ed3d225cd37fee85a82f244af92e1a596edf8521d781022",
+      "bytes": 245899,
+      "source": require('../../assets/product-gallery/3c01584fb3960a9b9ed3d225.jpg')
+    },
+    {
+      "id": "prom-2200-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/e08/720_4000_1/fwyqaofl5vmch12jg3x57d75e88wuxfk.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/e08/1280_4000_1/fwyqaofl5vmch12jg3x57d75e88wuxfk.jpg",
+      "alt": "Тент укрывной тарпаулин 180 г/м² 3×4 м с люверсами",
+      "localFile": "mobile/assets/product-gallery/bc9b3c1d3bb14ba084769390.jpg",
+      "sha256": "bc9b3c1d3bb14ba0847693905f0f242a566d8529fb7f4d4eb499cf9230ed85f6",
+      "bytes": 284439,
+      "source": require('../../assets/product-gallery/bc9b3c1d3bb14ba084769390.jpg')
+    },
+    {
+      "id": "prom-2200-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/225/720_4000_1/hb7xd52ad3bi14rxcslzg0w0d2uxlvx8.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/225/1280_4000_1/hb7xd52ad3bi14rxcslzg0w0d2uxlvx8.jpg",
+      "alt": "Тент укрывной тарпаулин 180 г/м² 3×4 м с люверсами",
+      "localFile": "mobile/assets/product-gallery/de3db8c344e26efc3307bac1.jpg",
+      "sha256": "de3db8c344e26efc3307bac1c2f1474c6ef7adec635316eb56124f9a0f2047d3",
+      "bytes": 308072,
+      "source": require('../../assets/product-gallery/de3db8c344e26efc3307bac1.jpg')
+    },
+    {
+      "id": "prom-2200-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/fc7/720_4000_1/1nc2jq8ifpsrqg9b6jgt4onf2ah50su0.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/fc7/1280_4000_1/1nc2jq8ifpsrqg9b6jgt4onf2ah50su0.jpg",
+      "alt": "Тент укрывной тарпаулин 180 г/м² 3×4 м с люверсами",
+      "localFile": "mobile/assets/product-gallery/fc2a96bfbbf9f69583027de4.jpg",
+      "sha256": "fc2a96bfbbf9f69583027de4cdd622207e34752eafb7536f25a02142ca6de10d",
+      "bytes": 308057,
+      "source": require('../../assets/product-gallery/fc2a96bfbbf9f69583027de4.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Тент укрывной тарпаулин 180 г/м² 3×4 м с люверсами — укрывной тент из ламинированного полиэтиленового полотна (тарпаулина) для временной защиты от осадков, пыли и солнца.",
+    "Размер 3×4 м, площадь 12 м², плотность 180 г/м², цвет — синий. Полотно изготовлено из полиэтиленовой ткани с защитным ламинированием. Это не ПВХ-ткань: тарпаулин легче, гибче и предназначен прежде всего для оперативных укрытий, тогда как тяжёлые ПВХ-тенты 550 г/м² выбирают для более интенсивной эксплуатации.",
+    "Размер 3×4 м площадью 12 м² подходит для частных и профессиональных задач: полотно можно использовать целиком либо раскроить на несколько рабочих фрагментов с учётом припусков.",
+    "Плотность 180 г/м² подходит для более интенсивного использования, больших укрытий, складских и строительных площадок, где требуется повышенная устойчивость к растяжению и истиранию.",
+    "Тент используют для укрытия пиломатериалов, кирпича, утеплителя, садовой техники, дров, сена, грузов, лодок, прицепов, бассейнов, временных складов и рабочих зон. Он подходит для навесов и временных перегородок, если полотно натянуто на каркас с уклоном. Материал не следует применять как самостоятельную несущую кровлю.",
+    "Металлические люверсы распределены по периметру и служат точками крепления. Используйте шнур, эластичные петли или мягкие стяжки, чтобы компенсировать порывы ветра. Не затягивайте крепёж до деформации кромки: у лёгких тентов чаще всего повреждаются люверсы, если полотно перетянуто или свободно хлопает на ветру.",
+    "Полотно монтируют с уклоном, исключая карманы для воды, снега и мокрой листвы. На больших размерах добавляют промежуточную поддержку и крепления, а острые углы груза закрывают прокладками. Для длительной зимней эксплуатации и постоянного навеса лучше выбрать более плотный тарпаулин либо ПВХ-тент.",
+    "После использования тент очищают, полностью высушивают и складывают без острых заломов. Небольшие повреждения ремонтируют заплатой или лентой для полиэтиленовых тентов; разорванный люверс необходимо разгрузить дополнительной точкой крепления."
+  ],
+  "advantages": [
+    "Плотность 180 г/м² позволяет подобрать тент под срок и интенсивность использования.",
+    "Размер 3×4 м удобен для укрытия без большого количества стыков.",
+    "Ламинированный полиэтилен защищает от дождя, грязи, пыли и солнечного воздействия.",
+    "Люверсы по периметру упрощают равномерное крепление полотна.",
+    "Небольшая масса по сравнению с ПВХ-тентом облегчает монтаж и транспортировку.",
+    "Тент можно применять на стройке, в сельском хозяйстве, туризме и быту."
+  ],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-594": {
+  "productId": "prom-594",
+  "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/id-m8406/",
+  "sourcePageSHA256": "330a258259fcc08c08b47c4802e1c8aa0f78e44e7eadcdd78041c10c47028eae",
+  "capturedAt": "2026-09-11T18:14:17.008021+00:00",
+  "gallery": [
+    {
+      "id": "prom-594-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/fbc/720_4000_1/53mrdk8im2ijfmhf46xcp22aa0mpfisn.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/fbc/1280_4000_1/53mrdk8im2ijfmhf46xcp22aa0mpfisn.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8406 Classic, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/34b9e912101d81f59fe664a8.jpg",
+      "sha256": "34b9e912101d81f59fe664a8c415c0976a034e17836052254cf0e226f42b6ac5",
+      "bytes": 234811,
+      "source": require('../../assets/product-gallery/34b9e912101d81f59fe664a8.jpg')
+    },
+    {
+      "id": "prom-594-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/c22/720_4000_1/hfn1gzijjcjc7jkszg2d2gcn136duzwd.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/c22/1280_4000_1/hfn1gzijjcjc7jkszg2d2gcn136duzwd.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8406 Classic, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/4742299f4b806c2df8e2d1bb.jpg",
+      "sha256": "4742299f4b806c2df8e2d1bba33667c89dd7c7b6df837c91a38ed3a6eea417d0",
+      "bytes": 228731,
+      "source": require('../../assets/product-gallery/4742299f4b806c2df8e2d1bb.jpg')
+    },
+    {
+      "id": "prom-594-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/ba4/720_4000_1/brwvsqbockpuhciczln6r818k0zpb531.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/ba4/1280_4000_1/brwvsqbockpuhciczln6r818k0zpb531.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8406 Classic, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/f7fdb584f49a05da455beaaf.jpg",
+      "sha256": "f7fdb584f49a05da455beaaf53cc64208c41de63845dd95c515fc4dbc2f346cc",
+      "bytes": 240686,
+      "source": require('../../assets/product-gallery/f7fdb584f49a05da455beaaf.jpg')
+    },
+    {
+      "id": "prom-594-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/a2c/720_4000_1/6mc2k7a9w1pxnobh3yx4h9unovtk6wvy.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/a2c/1280_4000_1/6mc2k7a9w1pxnobh3yx4h9unovtk6wvy.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8406 Classic, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/322e43580864603a2f169acb.jpg",
+      "sha256": "322e43580864603a2f169acbe50140673243e0f3735f5102623c3af1864ca4ec",
+      "bytes": 250101,
+      "source": require('../../assets/product-gallery/322e43580864603a2f169acb.jpg')
+    },
+    {
+      "id": "prom-594-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/04c/720_4000_1/qj429vug5iqqlypkufbm1jky0n1aigd9.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/04c/1280_4000_1/qj429vug5iqqlypkufbm1jky0n1aigd9.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8406 Classic, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/8e50879a82e8e8e55a9bb882.jpg",
+      "sha256": "8e50879a82e8e8e55a9bb882082f454fe9b9c7b2fa3acb436598e543091a5f0a",
+      "bytes": 273944,
+      "source": require('../../assets/product-gallery/8e50879a82e8e8e55a9bb882.jpg')
+    },
+    {
+      "id": "prom-594-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/12a/720_4000_1/vnihkn95eks1i4no6st3zpjhyztdka4v.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/12a/1280_4000_1/vnihkn95eks1i4no6st3zpjhyztdka4v.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8406 Classic, 6 ступеней",
+      "localFile": "mobile/assets/product-gallery/6176828cc14ec3404e4123a2.jpg",
+      "sha256": "6176828cc14ec3404e4123a29ba13a1ebe5ddfc4b3ea973312eed47bc75bdd92",
+      "bytes": 214177,
+      "source": require('../../assets/product-gallery/6176828cc14ec3404e4123a2.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Стремянка стальная с алюминиевыми ступенями Alumet M 8406 Classic, 6 ступеней — практичная стремянка со стальным каркасом и алюминиевыми ступенями. У этой модели верхняя площадка расположена на высоте 1,23 м, а с учётом роста пользователя рабочая зона достигает примерно 3,33 м, поэтому она подходит для работ под потолком, обслуживания стеллажей, окон, освещения и внутренней отделки.",
+    "Стремянка не требует опоры на стену и создаёт устойчивое рабочее место там, где приставную лестницу поставить невозможно. Полноценная площадка позволяет уверенно стоять обеими ногами, держать корпус ровнее и меньше уставать при работе под потолком или у верхних полок.",
+    "Стальной каркас даёт жёсткость, а алюминиевые рифлёные ступени снижают общий вес и обеспечивают уверенную опору. Верхняя площадка фиксируется при полном раскрытии и даёт устойчивое место для обеих ног, а дуга безопасности помогает сохранять правильное положение корпуса. Пластиковые наконечники повышают сцепление с полом и защищают покрытие от царапин.",
+    "Стремянка подходит для ремонта, уборки, доступа к шкафам, освещению и верхним полкам. Самостоятельная опора позволяет работать посреди помещения и не искать стену, на которую можно безопасно прислонить лестницу.",
+    "Стремянка рассчитана на нагрузку до 150 кг вместе с пользователем, инструментом и материалами. Такого запаса достаточно для обычного рабочего комплекта, но тяжёлые предметы нельзя складывать на ступени или подвешивать сбоку — это смещает центр тяжести.",
+    "При весе 6,6 кг стремянка остаётся достаточно мобильной для ежедневных перестановок и перевозки в автомобиле. Перед покупкой стоит учесть длину в сложенном виде, ширину проходов и место, где изделие будет храниться между работами.",
+    "Стремянку полностью раскрывают и ставят всеми опорами на ровный твёрдый пол. Её нельзя использовать как приставную лестницу, работать на частично раскрытой конструкции или переносить вместе с человеком и инструментом."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-596": {
+  "productId": "prom-596",
+  "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/id-m8408/",
+  "sourcePageSHA256": "dd20c7a5b1cd8757f520c80423c9c390b3c7bc1909f0eea5dfe5e658d36a207f",
+  "capturedAt": "2026-09-11T18:14:17.028375+00:00",
+  "gallery": [
+    {
+      "id": "prom-596-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/0c8/720_4000_1/lfbwab8ohdf042vq8sp7lpp2jrmzzrjw.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/0c8/1280_4000_1/lfbwab8ohdf042vq8sp7lpp2jrmzzrjw.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8408 Classic, 8 ступеней",
+      "localFile": "mobile/assets/product-gallery/f01b37d52926d0083a0c7330.jpg",
+      "sha256": "f01b37d52926d0083a0c7330946e7b743ba02227e4650e0b3e54917f29332edc",
+      "bytes": 238784,
+      "source": require('../../assets/product-gallery/f01b37d52926d0083a0c7330.jpg')
+    },
+    {
+      "id": "prom-596-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/dd3/720_4000_1/3td7jb89962m2b214xx3dhhvwcoxz7cp.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/dd3/1280_4000_1/3td7jb89962m2b214xx3dhhvwcoxz7cp.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8408 Classic, 8 ступеней",
+      "localFile": "mobile/assets/product-gallery/647c56ed0e6d3dfe1d92c4ef.jpg",
+      "sha256": "647c56ed0e6d3dfe1d92c4efd77595f8a052cafe72aeb4c587d542194d2ccea4",
+      "bytes": 220907,
+      "source": require('../../assets/product-gallery/647c56ed0e6d3dfe1d92c4ef.jpg')
+    },
+    {
+      "id": "prom-596-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/712/720_4000_1/j9zdrgl51b8cczkompzkfzdeepzl5rp8.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/712/1280_4000_1/j9zdrgl51b8cczkompzkfzdeepzl5rp8.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8408 Classic, 8 ступеней",
+      "localFile": "mobile/assets/product-gallery/f7fdb584f49a05da455beaaf.jpg",
+      "sha256": "f7fdb584f49a05da455beaaf53cc64208c41de63845dd95c515fc4dbc2f346cc",
+      "bytes": 240686,
+      "source": require('../../assets/product-gallery/f7fdb584f49a05da455beaaf.jpg')
+    },
+    {
+      "id": "prom-596-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/006/720_4000_1/3g37d0yi9eyjqzimm037y7ir23yxhfq2.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/006/1280_4000_1/3g37d0yi9eyjqzimm037y7ir23yxhfq2.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8408 Classic, 8 ступеней",
+      "localFile": "mobile/assets/product-gallery/322e43580864603a2f169acb.jpg",
+      "sha256": "322e43580864603a2f169acbe50140673243e0f3735f5102623c3af1864ca4ec",
+      "bytes": 250101,
+      "source": require('../../assets/product-gallery/322e43580864603a2f169acb.jpg')
+    },
+    {
+      "id": "prom-596-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/9c2/720_4000_1/ouvumhuca1l1snrrq4s0fx3z2qd97by0.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/9c2/1280_4000_1/ouvumhuca1l1snrrq4s0fx3z2qd97by0.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8408 Classic, 8 ступеней",
+      "localFile": "mobile/assets/product-gallery/8e50879a82e8e8e55a9bb882.jpg",
+      "sha256": "8e50879a82e8e8e55a9bb882082f454fe9b9c7b2fa3acb436598e543091a5f0a",
+      "bytes": 273944,
+      "source": require('../../assets/product-gallery/8e50879a82e8e8e55a9bb882.jpg')
+    },
+    {
+      "id": "prom-596-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/3f6/720_4000_1/zemx4qcqp08kq01t0xe78vn86retcofv.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/3f6/1280_4000_1/zemx4qcqp08kq01t0xe78vn86retcofv.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8408 Classic, 8 ступеней",
+      "localFile": "mobile/assets/product-gallery/6176828cc14ec3404e4123a2.jpg",
+      "sha256": "6176828cc14ec3404e4123a29ba13a1ebe5ddfc4b3ea973312eed47bc75bdd92",
+      "bytes": 214177,
+      "source": require('../../assets/product-gallery/6176828cc14ec3404e4123a2.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Стремянка стальная с алюминиевыми ступенями Alumet M 8408 Classic, 8 ступеней — высокая стремянка со стальным каркасом и алюминиевыми ступенями. У этой модели верхняя площадка расположена на высоте 1,66 м, а с учётом роста пользователя рабочая зона достигает примерно 3,76 м, поэтому она подходит для отделки стен, монтажа освещения, обслуживания складских стеллажей и фасадных элементов.",
+    "Стремянка не требует опоры на стену и создаёт устойчивое рабочее место там, где приставную лестницу поставить невозможно. Полноценная площадка позволяет уверенно стоять обеими ногами, держать корпус ровнее и меньше уставать при работе под потолком или у верхних полок.",
+    "Стальной каркас даёт жёсткость, а алюминиевые рифлёные ступени снижают общий вес и обеспечивают уверенную опору. Верхняя площадка фиксируется при полном раскрытии и даёт устойчивое место для обеих ног, а дуга безопасности помогает сохранять правильное положение корпуса. Пластиковые наконечники повышают сцепление с полом и защищают покрытие от царапин.",
+    "Высокая стремянка подходит для склада, мастерской, магазина и ремонта помещений с увеличенной высотой потолка. Самостоятельная опора позволяет работать посреди помещения, не прислоняя конструкцию к стене.",
+    "Стремянка рассчитана на нагрузку до 150 кг вместе с пользователем, инструментом и материалами. Такого запаса достаточно для обычного рабочего комплекта, но тяжёлые предметы нельзя складывать на ступени или подвешивать сбоку — это смещает центр тяжести.",
+    "Вес 8,1 кг соответствует увеличенной длине и более жёсткой конструкции; на объекте такую модель удобнее переносить вдвоём. Перед покупкой стоит учесть длину в сложенном виде, ширину проходов и место, где изделие будет храниться между работами.",
+    "Стремянку полностью раскрывают и ставят всеми опорами на ровный твёрдый пол. Её нельзя использовать как приставную лестницу, работать на частично раскрытой конструкции или переносить вместе с человеком и инструментом."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+"prom-597": {
+  "productId": "prom-597",
+  "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/id-m8409/",
+  "sourcePageSHA256": "0cb0112a45e84f2495f2db2d136964b350d0327923111d74ae3daf98941cf002",
+  "capturedAt": "2026-09-11T18:14:17.049081+00:00",
+  "gallery": [
+    {
+      "id": "prom-597-photo-1",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/2a6/720_4000_1/0jz82yu4cdiplk02b9tj4digzhsm0m8r.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/2a6/1280_4000_1/0jz82yu4cdiplk02b9tj4digzhsm0m8r.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8409 Classic, 9 ступеней",
+      "localFile": "mobile/assets/product-gallery/5c80dae6f6b8cc0b97346722.jpg",
+      "sha256": "5c80dae6f6b8cc0b973467221a0cb11a9b8ecfcf7ac43ff6013c2a7d2d12d7b0",
+      "bytes": 240381,
+      "source": require('../../assets/product-gallery/5c80dae6f6b8cc0b97346722.jpg')
+    },
+    {
+      "id": "prom-597-photo-2",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/4a0/720_4000_1/6yo1tyhcdn1ysxoxmnj0dgztlar3k57m.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/4a0/1280_4000_1/6yo1tyhcdn1ysxoxmnj0dgztlar3k57m.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8409 Classic, 9 ступеней",
+      "localFile": "mobile/assets/product-gallery/d3fe08be882bd2170ffce3a3.jpg",
+      "sha256": "d3fe08be882bd2170ffce3a339aebf2d52edeb850ace649f93093a3aef2f0385",
+      "bytes": 227800,
+      "source": require('../../assets/product-gallery/d3fe08be882bd2170ffce3a3.jpg')
+    },
+    {
+      "id": "prom-597-photo-3",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/25a/720_4000_1/9o6sd0v4rtaf2lhoutau27p2t0f7cr6h.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/25a/1280_4000_1/9o6sd0v4rtaf2lhoutau27p2t0f7cr6h.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8409 Classic, 9 ступеней",
+      "localFile": "mobile/assets/product-gallery/f7fdb584f49a05da455beaaf.jpg",
+      "sha256": "f7fdb584f49a05da455beaaf53cc64208c41de63845dd95c515fc4dbc2f346cc",
+      "bytes": 240686,
+      "source": require('../../assets/product-gallery/f7fdb584f49a05da455beaaf.jpg')
+    },
+    {
+      "id": "prom-597-photo-4",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/643/720_4000_1/c8yc2yrbkbe0sn217m97u6lzzisiiiqf.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/643/1280_4000_1/c8yc2yrbkbe0sn217m97u6lzzisiiiqf.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8409 Classic, 9 ступеней",
+      "localFile": "mobile/assets/product-gallery/322e43580864603a2f169acb.jpg",
+      "sha256": "322e43580864603a2f169acbe50140673243e0f3735f5102623c3af1864ca4ec",
+      "bytes": 250101,
+      "source": require('../../assets/product-gallery/322e43580864603a2f169acb.jpg')
+    },
+    {
+      "id": "prom-597-photo-5",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/d46/720_4000_1/sjeozzzun2hnv5uj4l7org9xagkr4b5t.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/d46/1280_4000_1/sjeozzzun2hnv5uj4l7org9xagkr4b5t.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8409 Classic, 9 ступеней",
+      "localFile": "mobile/assets/product-gallery/8e50879a82e8e8e55a9bb882.jpg",
+      "sha256": "8e50879a82e8e8e55a9bb882082f454fe9b9c7b2fa3acb436598e543091a5f0a",
+      "bytes": 273944,
+      "source": require('../../assets/product-gallery/8e50879a82e8e8e55a9bb882.jpg')
+    },
+    {
+      "id": "prom-597-photo-6",
+      "kind": "image",
+      "url": "https://prom.myfast.space/upload/resize_cache/iblock/4ca/720_4000_1/dre25z663adzsln2e6m444ix07je0d1c.jpg",
+      "originalUrl": "https://prom.myfast.space/upload/resize_cache/iblock/4ca/1280_4000_1/dre25z663adzsln2e6m444ix07je0d1c.jpg",
+      "alt": "Стремянка стальная с алюминиевыми ступенями Alumet M 8409 Classic, 9 ступеней",
+      "localFile": "mobile/assets/product-gallery/6176828cc14ec3404e4123a2.jpg",
+      "sha256": "6176828cc14ec3404e4123a29ba13a1ebe5ddfc4b3ea973312eed47bc75bdd92",
+      "bytes": 214177,
+      "source": require('../../assets/product-gallery/6176828cc14ec3404e4123a2.jpg')
+    }
+  ],
+  "descriptionParagraphs": [
+    "Стремянка стальная с алюминиевыми ступенями Alumet M 8409 Classic, 9 ступеней — высокая стремянка со стальным каркасом и алюминиевыми ступенями. У этой модели верхняя площадка расположена на высоте 1,87 м, а с учётом роста пользователя рабочая зона достигает примерно 3,97 м, поэтому она подходит для отделки стен, монтажа освещения, обслуживания складских стеллажей и фасадных элементов.",
+    "Стремянка не требует опоры на стену и создаёт устойчивое рабочее место там, где приставную лестницу поставить невозможно. Полноценная площадка позволяет уверенно стоять обеими ногами, держать корпус ровнее и меньше уставать при работе под потолком или у верхних полок.",
+    "Стальной каркас даёт жёсткость, а алюминиевые рифлёные ступени снижают общий вес и обеспечивают уверенную опору. Верхняя площадка фиксируется при полном раскрытии и даёт устойчивое место для обеих ног, а дуга безопасности помогает сохранять правильное положение корпуса. Пластиковые наконечники повышают сцепление с полом и защищают покрытие от царапин.",
+    "Высокая стремянка подходит для склада, мастерской, магазина и ремонта помещений с увеличенной высотой потолка. Самостоятельная опора позволяет работать посреди помещения, не прислоняя конструкцию к стене.",
+    "Стремянка рассчитана на нагрузку до 150 кг вместе с пользователем, инструментом и материалами. Такого запаса достаточно для обычного рабочего комплекта, но тяжёлые предметы нельзя складывать на ступени или подвешивать сбоку — это смещает центр тяжести.",
+    "Вес 9,2 кг соответствует увеличенной длине и более жёсткой конструкции; на объекте такую модель удобнее переносить вдвоём. Перед покупкой стоит учесть длину в сложенном виде, ширину проходов и место, где изделие будет храниться между работами.",
+    "Стремянку полностью раскрывают и ставят всеми опорами на ровный твёрдый пол. Её нельзя использовать как приставную лестницу, работать на частично раскрытой конструкции или переносить вместе с человеком и инструментом."
+  ],
+  "advantages": [],
+  "packageContents": [],
+  "documents": [],
+  "documentPolicy": {
+    "requiresOrder": true,
+    "manifestAvailable": false,
+    "source": "catalog.element/old/template.php:503-505"
+  },
+  "capabilities": {
+    "canRent": false,
+    "canLease": false,
+    "canBuyOneClick": true,
+    "canRequestBetterPrice": false,
+    "canRequestCallback": true,
+    "canRequestQuote": false
+  },
+  "capabilityMode": "source-form-visibility",
+  "runtimeWritesAvailable": false
+},
+};
+export function getProductDetails(productId: string): ProductDetails | null { return details[productId] ?? null; }
+export const productDetailsCount = Object.keys(details).length;

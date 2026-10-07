@@ -1,0 +1,2159 @@
+{
+  "forms": [
+    {
+      "id": "auth-login",
+      "title": "Вход или регистрация",
+      "group": "auth",
+      "fields": [
+        {
+          "name": "login",
+          "label": "Email или телефон",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        }
+      ]
+    },
+    {
+      "id": "auth-email",
+      "title": "Вход по электронной почте",
+      "group": "auth",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "password",
+          "label": "Пароль",
+          "type": "password",
+          "required": true,
+          "awaiting": false
+        }
+      ]
+    },
+    {
+      "id": "auth-register",
+      "title": "Регистрация",
+      "group": "auth",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "password",
+          "label": "Пароль",
+          "type": "password",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "password_repeat",
+          "label": "Повторите пароль",
+          "type": "password",
+          "required": true,
+          "awaiting": false
+        }
+      ]
+    },
+    {
+      "id": "auth-phone",
+      "title": "Вход по телефону",
+      "group": "auth",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        }
+      ]
+    },
+    {
+      "id": "auth-otp",
+      "title": "Подтверждение телефона",
+      "group": "auth",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "code",
+          "label": "Код подтверждения",
+          "type": "otp",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "phone",
+        "verification-challenge"
+      ]
+    },
+    {
+      "id": "auth-register-phone",
+      "title": "Телефон для регистрации",
+      "group": "auth",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "registration-challenge"
+      ]
+    },
+    {
+      "id": "auth-register-otp",
+      "title": "Подтверждение регистрации",
+      "group": "auth",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "code",
+          "label": "Код подтверждения",
+          "type": "otp",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "registration-challenge",
+        "phone"
+      ]
+    },
+    {
+      "id": "auth-recovery",
+      "title": "Восстановление пароля",
+      "group": "auth",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        }
+      ]
+    },
+    {
+      "id": "profile-name",
+      "title": "Имя",
+      "group": "profile",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user"
+      ]
+    },
+    {
+      "id": "profile-surname",
+      "title": "Фамилия",
+      "group": "profile",
+      "fields": [
+        {
+          "name": "last_name",
+          "label": "Фамилия",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user"
+      ]
+    },
+    {
+      "id": "profile-city",
+      "title": "Город",
+      "group": "profile",
+      "fields": [
+        {
+          "name": "city",
+          "label": "Город",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user"
+      ]
+    },
+    {
+      "id": "profile-email",
+      "title": "Изменить электронную почту",
+      "group": "profile",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user"
+      ]
+    },
+    {
+      "id": "profile-email-otp",
+      "title": "Подтвердить электронную почту",
+      "group": "profile",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "code",
+          "label": "Код подтверждения",
+          "type": "otp",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "email-verification-challenge"
+      ]
+    },
+    {
+      "id": "profile-phone",
+      "title": "Изменить телефон",
+      "group": "profile",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user"
+      ]
+    },
+    {
+      "id": "profile-phone-otp",
+      "title": "Подтвердить новый телефон",
+      "group": "profile",
+      "fields": [
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "code",
+          "label": "Код подтверждения",
+          "type": "otp",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "phone-verification-challenge"
+      ]
+    },
+    {
+      "id": "profile-passport",
+      "title": "Паспортные данные",
+      "group": "profile",
+      "fields": [
+        {
+          "name": "country",
+          "label": "Гражданство",
+          "type": "select",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-0",
+          "label": "Имя",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-1",
+          "label": "Фамилия",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-2",
+          "label": "Отчество",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-3",
+          "label": "Дата рождения",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-4",
+          "label": "Серия и номер паспорта",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-5",
+          "label": "Кем выдан",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-6",
+          "label": "Дата выдачи",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-7",
+          "label": "Код подразделения",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-no-patronymic",
+          "label": "У меня нет отчества",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-passport-storage",
+          "label": "Согласен на сохранение паспортных данных для последующего использования",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        }
+      ]
+    },
+    {
+      "id": "address-create",
+      "title": "Добавить адрес",
+      "group": "profile",
+      "fields": [
+        {
+          "name": "full_address",
+          "label": "Город, улица, дом",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user"
+      ]
+    },
+    {
+      "id": "address-edit",
+      "title": "Изменить адрес",
+      "group": "profile",
+      "fields": [
+        {
+          "name": "full_address",
+          "label": "Город, улица, дом",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "change_address_id"
+      ]
+    },
+    {
+      "id": "address-default",
+      "title": "Сделать адрес основным",
+      "group": "profile",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "address_id"
+      ]
+    },
+    {
+      "id": "address-delete",
+      "title": "Удалить адрес",
+      "group": "profile",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "address_id"
+      ]
+    },
+    {
+      "id": "organization-add",
+      "title": "Добавить организацию",
+      "group": "business",
+      "fields": [
+        {
+          "name": "inn",
+          "label": "ИНН",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "kpp",
+          "label": "КПП",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "store_region_id",
+          "label": "Регион обслуживания",
+          "type": "select",
+          "required": true,
+          "awaiting": true
+        },
+        {
+          "name": "name",
+          "label": "Наименование организации",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "legal-addresss",
+          "label": "Юридический адрес",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "fact-address",
+          "label": "Фактический адрес",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "bik",
+          "label": "БИК",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "payment-bill",
+          "label": "Расчётный счёт",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "bank-name",
+          "label": "Наименование банка",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "correspondent-bill",
+          "label": "Корреспондентский счёт",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "organization-lookup-result"
+      ]
+    },
+    {
+      "id": "organization-requisites",
+      "title": "Изменить реквизиты",
+      "group": "business",
+      "fields": [
+        {
+          "name": "company_letter",
+          "label": "Официальное письмо об изменении реквизитов",
+          "type": "file",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "card_company",
+          "label": "Карточка компании в текстовом формате",
+          "type": "file",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "scan_card",
+          "label": "Скан карточки компании",
+          "type": "file",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "companyID"
+      ]
+    },
+    {
+      "id": "organization-bank",
+      "title": "Банковские реквизиты",
+      "group": "business",
+      "fields": [
+        {
+          "name": "bik",
+          "label": "БИК",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "payment-bill",
+          "label": "Расчётный счёт",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "bank-name",
+          "label": "Наименование банка",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "correspondent-bill",
+          "label": "Корреспондентский счёт",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "companyID"
+      ]
+    },
+    {
+      "id": "organization-verify",
+      "title": "Подтвердить полномочия",
+      "group": "business",
+      "fields": [
+        {
+          "name": "fio",
+          "label": "ФИО",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "companyID"
+      ]
+    },
+    {
+      "id": "organization-edo",
+      "title": "Подключить ЭДО",
+      "group": "business",
+      "fields": [
+        {
+          "name": "edo_id",
+          "label": "Идентификатор участника ЭДО",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "edo_operator",
+          "label": "Оператор ЭДО",
+          "type": "select",
+          "required": true,
+          "awaiting": true
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "companyID"
+      ]
+    },
+    {
+      "id": "organization-consignee",
+      "title": "Грузополучатель",
+      "group": "business",
+      "fields": [
+        {
+          "name": "unmapped-0",
+          "label": "КПП",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-1",
+          "label": "Название филиала",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "unmapped-2",
+          "label": "Адрес",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "companyID"
+      ]
+    },
+    {
+      "id": "organization-switch",
+      "title": "Выбрать организацию",
+      "group": "business",
+      "fields": [
+        {
+          "name": "organization",
+          "label": "Организация",
+          "type": "select",
+          "required": true,
+          "awaiting": true
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user"
+      ]
+    },
+    {
+      "id": "organization-delete",
+      "title": "Удалить организацию",
+      "group": "business",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "org_id"
+      ]
+    },
+    {
+      "id": "account-delete",
+      "title": "Удалить аккаунт",
+      "group": "profile",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user"
+      ]
+    },
+    {
+      "id": "sessions-terminate",
+      "title": "Завершить сеанс",
+      "group": "profile",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "id"
+      ]
+    },
+    {
+      "id": "document-request",
+      "title": "Запросить документ",
+      "group": "business",
+      "fields": [
+        {
+          "name": "DOC_TYPE",
+          "label": "Вид документа",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "PERIOD_FROM",
+          "label": "Период с",
+          "type": "date",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "PERIOD_TO",
+          "label": "Период по",
+          "type": "date",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "COMMENT",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": false,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "organization_id"
+      ]
+    },
+    {
+      "id": "payment-card",
+      "title": "Привязать карту",
+      "group": "purchase",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "provider-binding-session"
+      ]
+    },
+    {
+      "id": "payment-default",
+      "title": "Сделать карту основной",
+      "group": "purchase",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "card_id"
+      ]
+    },
+    {
+      "id": "payment-remove",
+      "title": "Удалить сохранённую карту",
+      "group": "purchase",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "card_id"
+      ]
+    },
+    {
+      "id": "checkout",
+      "title": "Оформление заказа",
+      "group": "purchase",
+      "fields": [
+        {
+          "name": "ORDER_FIO",
+          "label": "ФИО получателя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "ORDER_EMAIL",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "ORDER_PHONE",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "ORDER_COMPANY",
+          "label": "Организация",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "ORDER_INN",
+          "label": "ИНН",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "ORDER_KPP",
+          "label": "КПП",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "ORDER_CONTACT_PERSON",
+          "label": "Контактное лицо",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "DELIVERY_ID",
+          "label": "Способ получения",
+          "type": "select",
+          "required": true,
+          "awaiting": true
+        },
+        {
+          "name": "ORDER_ADDRESS",
+          "label": "Адрес получения",
+          "type": "textarea",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "DELIVERY_PICKUP_ID",
+          "label": "Пункт самовывоза",
+          "type": "select",
+          "required": false,
+          "awaiting": true
+        },
+        {
+          "name": "delivery-date",
+          "label": "Дата доставки",
+          "type": "select",
+          "required": false,
+          "awaiting": true
+        },
+        {
+          "name": "time",
+          "label": "Интервал доставки",
+          "type": "select",
+          "required": false,
+          "awaiting": true
+        },
+        {
+          "name": "PAY_SYSTEM_ID",
+          "label": "Способ оплаты",
+          "type": "select",
+          "required": true,
+          "awaiting": true
+        },
+        {
+          "name": "promo_code",
+          "label": "Промокод",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "basket",
+        "region",
+        "person-type",
+        "organization-if-business",
+        "calculated-order-options"
+      ]
+    },
+    {
+      "id": "order-cancel",
+      "title": "Отменить заказ",
+      "group": "purchase",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "order-id",
+        "cancellable-order"
+      ]
+    },
+    {
+      "id": "order-repeat",
+      "title": "Повторить заказ",
+      "group": "purchase",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "id"
+      ]
+    },
+    {
+      "id": "order-pay",
+      "title": "Оплатить заказ",
+      "group": "purchase",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "order-id",
+        "payable-order",
+        "provider-payment-session"
+      ]
+    },
+    {
+      "id": "callback",
+      "title": "Заказать звонок",
+      "group": "service",
+      "fields": [
+        {
+          "name": "form_text_24",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_25",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        }
+      ]
+    },
+    {
+      "id": "buy-one-click",
+      "title": "Купить в один клик",
+      "group": "purchase",
+      "fields": [
+        {
+          "name": "form_text_12",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_13",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_14",
+          "label": "Email",
+          "type": "email",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_16",
+          "label": "Количество",
+          "type": "number",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "product-id"
+      ]
+    },
+    {
+      "id": "rent",
+      "title": "Заявка на аренду",
+      "group": "purchase",
+      "fields": [
+        {
+          "name": "form_text_20",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_21",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_23",
+          "label": "Количество",
+          "type": "number",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "product-id"
+      ]
+    },
+    {
+      "id": "leasing",
+      "title": "Заявка на лизинг",
+      "group": "purchase",
+      "fields": [
+        {
+          "name": "form_text_30",
+          "label": "ИНН",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_31",
+          "label": "Организация",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_32",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_email_33",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_34",
+          "label": "Стоимость предмета лизинга",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "product-id"
+      ]
+    },
+    {
+      "id": "found-cheaper",
+      "title": "Нашли дешевле?",
+      "group": "service",
+      "fields": [
+        {
+          "name": "form_text_6",
+          "label": "Цена в другом магазине",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_7",
+          "label": "Ссылка на товар",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_8",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_9",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "product-id"
+      ]
+    },
+    {
+      "id": "tour",
+      "title": "Записаться на экскурсию",
+      "group": "business",
+      "fields": [
+        {
+          "name": "form_text_17",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_18",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_19",
+          "label": "Выберите дату",
+          "type": "select",
+          "required": true,
+          "awaiting": true
+        }
+      ]
+    },
+    {
+      "id": "business-advice",
+      "title": "Консультация для бизнеса",
+      "group": "business",
+      "fields": [
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "phone",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "email",
+          "label": "E-mail",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "comment-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        }
+      ]
+    },
+    {
+      "id": "supplier",
+      "title": "Стать поставщиком",
+      "group": "business",
+      "fields": [
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "product-category",
+          "label": "Категория продукции",
+          "type": "select",
+          "required": true,
+          "awaiting": true
+        },
+        {
+          "name": "product-desc",
+          "label": "Описание продукции",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "comment",
+          "label": "Комментарий",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "attachment",
+          "label": "Прикрепить файл",
+          "type": "file",
+          "required": false,
+          "awaiting": false
+        }
+      ]
+    },
+    {
+      "id": "partner",
+      "title": "Стать партнёром",
+      "group": "business",
+      "fields": [
+        {
+          "name": "inn",
+          "label": "ИНН компании",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "has-warehouse",
+          "label": "Есть склад",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "warehouse-address",
+          "label": "Адрес склада",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "warehouse-phone",
+          "label": "Телефон склада",
+          "type": "tel",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "warehouse-schedule",
+          "label": "График работы склада",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        }
+      ]
+    },
+    {
+      "id": "advice",
+      "title": "Задать вопрос специалисту",
+      "group": "service",
+      "fields": [],
+      "awaitingFields": "Поля формы появятся после соединения с сервисом."
+    },
+    {
+      "id": "review",
+      "title": "Написать отзыв",
+      "group": "service",
+      "fields": [
+        {
+          "name": "rate",
+          "label": "Оценка",
+          "type": "select",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "vote-quality",
+          "label": "Хорошее качество товара",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "vote-value",
+          "label": "Приятное соотношение цены и качества",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "vote-delivery",
+          "label": "Быстрая доставка",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "review-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "media[]",
+          "label": "Фотографии",
+          "type": "file",
+          "required": false,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "product-id"
+      ]
+    },
+    {
+      "id": "order-review",
+      "title": "Оценить товар из заказа",
+      "group": "service",
+      "fields": [
+        {
+          "name": "rate",
+          "label": "Оценка",
+          "type": "select",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "vote-quality",
+          "label": "Хорошее качество товара",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "vote-value",
+          "label": "Приятное соотношение цены и качества",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "vote-delivery",
+          "label": "Быстрая доставка",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "review-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "media[]",
+          "label": "Фотографии",
+          "type": "file",
+          "required": false,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "order-id",
+        "product-id"
+      ]
+    },
+    {
+      "id": "question",
+      "title": "Задать вопрос о товаре",
+      "group": "service",
+      "fields": [
+        {
+          "name": "question-text",
+          "label": "Ваш вопрос",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "product-id"
+      ]
+    },
+    {
+      "id": "review-reply",
+      "title": "Ответить на отзыв",
+      "group": "service",
+      "fields": [
+        {
+          "name": "review-text",
+          "label": "Ваш ответ",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "product-id",
+        "parent-id"
+      ]
+    },
+    {
+      "id": "question-reply",
+      "title": "Ответить на вопрос",
+      "group": "service",
+      "fields": [
+        {
+          "name": "question-text",
+          "label": "Ваш ответ",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "product-id",
+        "parent-id"
+      ]
+    },
+    {
+      "id": "review-edit",
+      "title": "Изменить отзыв",
+      "group": "service",
+      "fields": [
+        {
+          "name": "rate",
+          "label": "Оценка",
+          "type": "select",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "vote-quality",
+          "label": "Хорошее качество товара",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "vote-value",
+          "label": "Приятное соотношение цены и качества",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "vote-delivery",
+          "label": "Быстрая доставка",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "review-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "media[]",
+          "label": "Фотографии",
+          "type": "file",
+          "required": false,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "product-id",
+        "review-id"
+      ]
+    },
+    {
+      "id": "question-edit",
+      "title": "Изменить вопрос",
+      "group": "service",
+      "fields": [
+        {
+          "name": "question-text",
+          "label": "Ваш вопрос",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "product-id",
+        "question-id"
+      ]
+    },
+    {
+      "id": "review-delete",
+      "title": "Удалить отзыв",
+      "group": "service",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "id",
+        "action_name=review"
+      ]
+    },
+    {
+      "id": "question-delete",
+      "title": "Удалить вопрос",
+      "group": "service",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "id",
+        "action_name=question"
+      ]
+    },
+    {
+      "id": "appeal",
+      "title": "Задать вопрос",
+      "group": "service",
+      "fields": [
+        {
+          "name": "theme",
+          "label": "Тема обращения",
+          "type": "select",
+          "required": true,
+          "awaiting": true
+        },
+        {
+          "name": "comment",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user"
+      ]
+    },
+    {
+      "id": "appeal-order",
+      "title": "Проблема с заказом",
+      "group": "service",
+      "fields": [
+        {
+          "name": "theme",
+          "label": "Тема обращения",
+          "type": "select",
+          "required": true,
+          "awaiting": true
+        },
+        {
+          "name": "tags[]",
+          "label": "С чем нужна помощь",
+          "type": "select",
+          "required": false,
+          "awaiting": true
+        },
+        {
+          "name": "comment",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "photos[]",
+          "label": "Фотографии",
+          "type": "file",
+          "required": false,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "order-help"
+      ]
+    },
+    {
+      "id": "appeal-rating",
+      "title": "Оценить качество обслуживания",
+      "group": "service",
+      "fields": [
+        {
+          "name": "rate",
+          "label": "Оценка",
+          "type": "select",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "appealID"
+      ]
+    },
+    {
+      "id": "return",
+      "title": "Возврат товаров",
+      "group": "service",
+      "fields": [
+        {
+          "name": "selected-products",
+          "label": "Товары для возврата",
+          "type": "select",
+          "required": true,
+          "awaiting": true
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user",
+        "orderID",
+        "completed-order"
+      ]
+    },
+    {
+      "id": "subscription",
+      "title": "Подписка на рассылку",
+      "group": "marketing",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Электронная почта",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        }
+      ]
+    },
+    {
+      "id": "product-notify",
+      "title": "Сообщить о поступлении",
+      "group": "purchase",
+      "fields": [],
+      "sourceContext": [
+        "authenticated-user",
+        "id"
+      ]
+    },
+    {
+      "id": "notification-preferences",
+      "title": "Настройки уведомлений",
+      "group": "profile",
+      "fields": [
+        {
+          "name": "email_order_info",
+          "label": "Email: информация о заказе и товарах",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "email_promotions",
+          "label": "Email: акции, распродажи и специальные предложения",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "sms_order_info",
+          "label": "СМС: информация о заказе и товарах",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "sms_promotions",
+          "label": "СМС: акции, распродажи и специальные предложения",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        }
+      ],
+      "sourceContext": [
+        "authenticated-user"
+      ]
+    },
+    {
+      "id": "quote",
+      "title": "Запросить предложение",
+      "group": "business",
+      "fields": [
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "phone",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "email",
+          "label": "E-mail",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "comment-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "aliasOf": "business-advice"
+    },
+    {
+      "id": "production-request",
+      "title": "Заказать продукцию собственного производства",
+      "group": "business",
+      "fields": [
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "phone",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "email",
+          "label": "E-mail",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "comment-text",
+          "label": "Комментарий",
+          "type": "textarea",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "aliasOf": "business-advice"
+    },
+    {
+      "id": "contact",
+      "title": "Связаться с нами",
+      "group": "service",
+      "fields": [
+        {
+          "name": "form_text_24",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "form_text_25",
+          "label": "Ваш телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        }
+      ],
+      "aliasOf": "callback"
+    },
+    {
+      "id": "franchise",
+      "title": "Стать партнёром",
+      "group": "business",
+      "fields": [
+        {
+          "name": "inn",
+          "label": "ИНН компании",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "company-name",
+          "label": "Название компании",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "phone",
+          "label": "Телефон",
+          "type": "tel",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "first-name",
+          "label": "Ваше имя",
+          "type": "text",
+          "required": true,
+          "awaiting": false
+        },
+        {
+          "name": "has-warehouse",
+          "label": "Есть склад",
+          "type": "checkbox",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "warehouse-address",
+          "label": "Адрес склада",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "warehouse-phone",
+          "label": "Телефон склада",
+          "type": "tel",
+          "required": false,
+          "awaiting": false
+        },
+        {
+          "name": "warehouse-schedule",
+          "label": "График работы склада",
+          "type": "text",
+          "required": false,
+          "awaiting": false
+        }
+      ],
+      "aliasOf": "partner"
+    }
+  ],
+  "pages": [
+    {
+      "id": "about",
+      "title": "О компании",
+      "contract": false
+    },
+    {
+      "id": "brands",
+      "title": "Бренды",
+      "contract": false
+    },
+    {
+      "id": "suppliers",
+      "title": "Поставщикам",
+      "contract": false
+    },
+    {
+      "id": "franchise",
+      "title": "Франшиза",
+      "contract": false
+    },
+    {
+      "id": "awards",
+      "title": "Награды и сертификаты",
+      "contract": false
+    },
+    {
+      "id": "returns",
+      "title": "Правила возврата",
+      "contract": false
+    },
+    {
+      "id": "details",
+      "title": "Реквизиты",
+      "contract": false
+    },
+    {
+      "id": "offer",
+      "title": "Публичная оферта",
+      "contract": false
+    },
+    {
+      "id": "privacy",
+      "title": "Политика конфиденциальности",
+      "contract": false
+    },
+    {
+      "id": "personal-data",
+      "title": "Согласие на обработку персональных данных",
+      "contract": false
+    },
+    {
+      "id": "cookies",
+      "title": "Политика использования cookie-файлов",
+      "contract": false
+    },
+    {
+      "id": "checkout",
+      "title": "Оформление заказа",
+      "contract": true
+    },
+    {
+      "id": "recommendations",
+      "title": "Сведения о рекомендательных технологиях",
+      "contract": true
+    },
+    {
+      "id": "faq",
+      "title": "Вопросы и ответы",
+      "contract": true
+    },
+    {
+      "id": "warranty",
+      "title": "Гарантии",
+      "contract": true
+    },
+    {
+      "id": "promotions",
+      "title": "Акции и предложения",
+      "contract": true
+    },
+    {
+      "id": "cooperation",
+      "title": "Сотрудничество",
+      "contract": false
+    }
+  ],
+  "blog": [
+    {
+      "id": "articles-khomutovye-stroitelnye-lesa-promyshlennik-poshagovaya-sborka-vidy-khomutov-i-sovety-po-montazhu",
+      "title": "Хомутовые строительные леса Промышленник: пошаговая сборка, виды хомутов и советы по монтажу",
+      "kind": "articles"
+    },
+    {
+      "id": "articles-setka-zatenyayushchaya-promyshlennik-kak-vybrat-dlya-stroyki-dachi-maskirovki-i-dekora",
+      "title": "Сетка затеняющая «Промышленник»: как выбрать для стройки, дачи, маскировки и декора",
+      "kind": "articles"
+    },
+    {
+      "id": "articles-vyshka-tura-ili-stroitelnye-lesa-5-shagov-k-pravilnomu-vyboru-dlya-fasada-i-remonta",
+      "title": "Вышка-тура или строительные леса: 5 шагов к правильному выбору для фасада и ремонта",
+      "kind": "articles"
+    },
+    {
+      "id": "articles-konus-abramsa-dlya-betona-kak-proverit-kachestvo-i-podvizhnost-betonnoy-smesi-na-stroyploshchadke",
+      "title": "Конус Абрамса для бетона: как проверить качество и подвижность бетонной смеси на стройплощадке",
+      "kind": "articles"
+    },
+    {
+      "id": "articles-kak-sobrat-stroitelnye-ramnye-lesa-lrsp-svoimi-rukami-poshagovaya-instruktsiya-dlya-novichkov",
+      "title": "Как собрать строительные рамные леса ЛРСП своими руками: пошаговая инструкция для новичков",
+      "kind": "articles"
+    },
+    {
+      "id": "articles-kak-sobrat-vyshku-turu-svoimi-rukami-poshagovaya-instruktsiya-dlya-nachinayushchikh",
+      "title": "Как собрать вышку-туру своими руками: пошаговая инструкция для начинающих",
+      "kind": "articles"
+    },
+    {
+      "id": "projects-moscow-city",
+      "title": "Строительство в деловом центре «Москва-Сити»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-krc-oktyabr-astrakhan",
+      "title": "Реконструкция КРК «Октябрь» в Астрахани",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-development-plaza-krasnodar",
+      "title": "Development Plaza, Краснодар",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-serdtse-krasnodara",
+      "title": "ЖК «Сердце Краснодара»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-obraztsovo-insiti",
+      "title": "ЖК «Образцово» от ИНСИТИ, Краснодар",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-fontany-krasnodar",
+      "title": "ЖК «Фонтаны», Краснодар",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-pervoe-mesto",
+      "title": "ЖК «Первое место»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-residential-complex-derbent",
+      "title": "Жилой комплекс в Дербенте",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-botanika-hills",
+      "title": "ЖК Botanika Hills",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-nova-vita",
+      "title": "ЖК Nova Vita",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-ritm",
+      "title": "ЖК «Ритм»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-slavyanka",
+      "title": "ЖК «Славянка»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-zvezdy",
+      "title": "ЖК «Звёзды»",
+      "kind": "projects"
+    },
+    {
+      "id": "projects-zhk-tsentralnyy",
+      "title": "ЖК «Центральный»",
+      "kind": "projects"
+    },
+    {
+      "id": "video-inforce-7",
+      "title": "Inforce",
+      "kind": "video"
+    },
+    {
+      "id": "video-fubag-6",
+      "title": "Fubag",
+      "kind": "video"
+    },
+    {
+      "id": "video-inforce-5",
+      "title": "Inforce",
+      "kind": "video"
+    },
+    {
+      "id": "video-fubag-4",
+      "title": "Fubag",
+      "kind": "video"
+    },
+    {
+      "id": "video-fubag-3",
+      "title": "Fubag",
+      "kind": "video"
+    },
+    {
+      "id": "video-inforce-2",
+      "title": "Inforce",
+      "kind": "video"
+    },
+    {
+      "id": "video-fubag-1",
+      "title": "Fubag",
+      "kind": "video"
+    },
+    {
+      "id": "video-inforce-0",
+      "title": "Inforce",
+      "kind": "video"
+    }
+  ],
+  "workspaces": [
+    "profile",
+    "contacts",
+    "addresses",
+    "organizations",
+    "requisites",
+    "bank",
+    "staff",
+    "documents",
+    "sessions",
+    "security",
+    "payment-methods",
+    "reviews",
+    "returns",
+    "about"
+  ],
+  "legalKeys": [
+    "legalDocuments"
+  ]
+}

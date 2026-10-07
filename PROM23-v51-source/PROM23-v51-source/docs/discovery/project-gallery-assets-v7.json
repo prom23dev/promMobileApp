@@ -1,0 +1,45 @@
+{
+  "purpose": "Verified source photographs for native project showcase. Existing cover assets and UI unchanged.",
+  "verifiedAt": "2026-09-11",
+  "assets": [
+    {
+      "project": "krc-oktyabr-astrakhan",
+      "sourcePage": "https://prom.myfast.space/blog/projects/krc-oktyabr-astrakhan/",
+      "sourceImage": "https://prom.myfast.space/upload/medialibrary/b03/ay4yytfuw1ogyl7a3n8njffaq2p78ckt/krc-oktyabr-astrakhan-05.jpg",
+      "originalAlt": "Реконструкция КРК «Октябрь» в Астрахани — оборудование на строительной площадке",
+      "localFile": "mobile/assets/blog/gallery-krc-oktyabr-astrakhan-05.jpg",
+      "width": 1024,
+      "height": 683,
+      "bytes": 456161,
+      "sha256": "13e1425b5084f7fc9c68330960e20fea943261f59c8c48f02bd68782cd1cdf39",
+      "visualInspection": "Хомутовые леса и сплошные оцинкованные настилы внутри реконструируемого зала; широкая горизонтальная сцена.",
+      "status": "Observed in live source article DOM; fetched with GET and visually inspected. No generation or photo edits. Image alone does not prove authorship or company installation responsibility."
+    },
+    {
+      "project": "moscow-city",
+      "sourcePage": "https://prom.myfast.space/blog/projects/moscow-city/",
+      "sourceImage": "https://prom.myfast.space/upload/medialibrary/21c/cpzv7g74in80u4pe0lar1qu2bgb2i0ot/moscow-city-02.jpg",
+      "originalAlt": "Строительство в деловом центре «Москва-Сити» — оборудование на строительной площадке",
+      "localFile": "mobile/assets/blog/gallery-moscow-city-02.jpg",
+      "width": 1024,
+      "height": 683,
+      "bytes": 320506,
+      "sha256": "95c8fe7a8d534ba0f8dbb950c8f31191822328717c186c8aa8c6fa7cd69e8215",
+      "visualInspection": "Рабочие на строительных лесах на фоне башен; оборудование и реальный контекст объекта в одном кадре.",
+      "status": "Observed in live source article DOM; fetched with GET and visually inspected. No generation or photo edits. Image alone does not prove authorship or company installation responsibility."
+    },
+    {
+      "project": "development-plaza-krasnodar",
+      "sourcePage": "https://prom.myfast.space/blog/projects/development-plaza-krasnodar/",
+      "sourceImage": "https://prom.myfast.space/upload/medialibrary/aa6/ckn9rv6zd2o3lmr6qmx8s3dm4olelk46/development-plaza-krasnodar-02.jpg",
+      "originalAlt": "Development Plaza, Краснодар — оборудование на строительной площадке",
+      "localFile": "mobile/assets/blog/gallery-development-plaza-krasnodar-02.jpg",
+      "width": 1024,
+      "height": 683,
+      "bytes": 405761,
+      "sha256": "45d7a2be434222343fd74c1376e6cca850600d5db4dea22e78684b8561c495e2",
+      "visualInspection": "Монолитный каркас, опалубка, стойки и бадья на этапе строительства.",
+      "status": "Observed in live source article DOM; fetched with GET and visually inspected. No generation or photo edits. Image alone does not prove authorship or company installation responsibility."
+    }
+  ]
+}

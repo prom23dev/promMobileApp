@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:prom23:product-detail:v1",
+  "title": "Public product detail and inventory projection (no live endpoint implied)",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/productDetail"
+    },
+    {
+      "$ref": "#/$defs/availability"
+    }
+  ],
+  "$defs": {
+    "productDetail": {
+      "type": "object",
+      "required": [
+        "productId",
+        "sourceUrl",
+        "sourcePageSHA256",
+        "capturedAt",
+        "gallery",
+        "descriptionParagraphs",
+        "advantages",
+        "packageContents",
+        "documents",
+        "documentPolicy",
+        "capabilities",
+        "capabilityMode",
+        "runtimeWritesAvailable"
+      ],
+      "properties": {
+        "productId": {
+          "type": "string",
+          "pattern": "^prom-[1-9][0-9]*$"
+        },
+        "sourceUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sourcePageSHA256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "capturedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "gallery": {
+          "type": "array",
+          "maxItems": 50,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "kind",
+              "url",
+              "alt"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "kind": {
+                "const": "image"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "originalUrl": {
+                "type": "string",
+                "format": "uri"
+              },
+              "alt": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "height": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "descriptionParagraphs": {
+          "type": "array",
+          "maxItems": 200,
+          "items": {
+            "type": "string"
+          }
+        },
+        "advantages": {
+          "type": "array",
+          "maxItems": 200,
+          "items": {
+            "type": "string"
+          }
+        },
+        "packageContents": {
+          "type": "array",
+          "maxItems": 200,
+          "items": {
+            "type": "string"
+          }
+        },
+        "documents": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name",
+              "url",
+              "access"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "access": {
+                "const": "public"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "documentPolicy": {
+          "type": "object",
+          "required": [
+            "requiresOrder",
+            "manifestAvailable"
+          ],
+          "properties": {
+            "requiresOrder": {
+              "type": "boolean"
+            },
+            "manifestAvailable": {
+              "const": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "capabilities": {
+          "type": "object",
+          "required": [
+            "canRent",
+            "canLease",
+            "canBuyOneClick",
+            "canRequestBetterPrice",
+            "canRequestQuote",
+            "canRequestCallback"
+          ],
+          "properties": {
+            "canRent": {
+              "type": "boolean"
+            },
+            "canLease": {
+              "type": "boolean"
+            },
+            "canBuyOneClick": {
+              "type": "boolean"
+            },
+            "canRequestBetterPrice": {
+              "type": "boolean"
+            },
+            "canRequestQuote": {
+              "type": "boolean"
+            },
+            "canRequestCallback": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        "capabilityMode": {
+          "const": "source-form-visibility"
+        },
+        "runtimeWritesAvailable": {
+          "const": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "availability": {
+      "type": "object",
+      "required": [
+        "status",
+        "reason",
+        "quantityBasis",
+        "totalQuantity",
+        "warehouses",
+        "nearestWarehouse",
+        "pickupAvailable",
+        "estimatedRestock",
+        "availableToPromise",
+        "measuredAt",
+        "expiresAt",
+        "checkoutEligible"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "unknown",
+            "in-stock",
+            "out-of-stock"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "quantityBasis": {
+          "const": "physical-on-hand"
+        },
+        "totalQuantity": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "warehouses": {
+          "type": "array",
+          "maxItems": 500,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "quantity"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "nearestWarehouse": {
+          "type": "null"
+        },
+        "pickupAvailable": {
+          "type": "null"
+        },
+        "estimatedRestock": {
+          "type": "null"
+        },
+        "availableToPromise": {
+          "type": "null"
+        },
+        "measuredAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expiresAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "checkoutEligible": {
+          "const": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

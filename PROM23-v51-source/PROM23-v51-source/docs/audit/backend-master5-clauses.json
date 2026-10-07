@@ -1,0 +1,1004 @@
+{
+  "master": "MASTER5",
+  "date": "2026-09-11",
+  "note": "Только backend/source-data scope. Остальные clauses проверяют root/design/QA. Это не подтверждение всегоmaster.",
+  "clauses": [
+    {
+      "clause": 1,
+      "status": "SOURCE_REVIEWED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "docs/audit/forms-source-evidence.json"
+      ],
+      "note": "Инвентарь источника и68формовыхdefinitions; UI не равен runtime, реальные submit не выполнялись."
+    },
+    {
+      "clause": 32,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 33,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 35,
+      "status": "DATA_READY_UI_QA_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "data/product-details.json",
+        "mobile/src/content/productDetails.ts",
+        "docs/testing/product-assets-master5.json"
+      ],
+      "note": "28описаний,144фотосвязи/136реальныхфайлов720; original1280URL сохранён. Gallery/zoom/nativeperformance проверяет root."
+    },
+    {
+      "clause": 37,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 38,
+      "status": "ADAPTER_TESTED_RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "server/integrations/product-detail.mjs",
+        "server/test/product-detail.test.mjs",
+        "server/location/service.mjs",
+        "server/test/master5-http.test.mjs",
+        "docs/testing/master5-http-tests.log"
+      ],
+      "note": "Физический остаток unknown при missing/stale/mismatched source; actual Bitrix warehouse mapping/price/revalidation не подключены."
+    },
+    {
+      "clause": 39,
+      "status": "ADAPTER_TESTED_RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "server/integrations/product-detail.mjs",
+        "server/test/product-detail.test.mjs",
+        "server/location/service.mjs",
+        "server/test/master5-http.test.mjs",
+        "docs/testing/master5-http-tests.log"
+      ],
+      "note": "Физический остаток unknown при missing/stale/mismatched source; actual Bitrix warehouse mapping/price/revalidation не подключены."
+    },
+    {
+      "clause": 40,
+      "status": "ADAPTER_TESTED_RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "server/integrations/product-detail.mjs",
+        "server/test/product-detail.test.mjs",
+        "server/location/service.mjs",
+        "server/test/master5-http.test.mjs",
+        "docs/testing/master5-http-tests.log"
+      ],
+      "note": "Физический остаток unknown при missing/stale/mismatched source; actual Bitrix warehouse mapping/price/revalidation не подключены."
+    },
+    {
+      "clause": 41,
+      "status": "ADAPTER_TESTED_RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "server/integrations/product-detail.mjs",
+        "server/test/product-detail.test.mjs",
+        "server/location/service.mjs",
+        "server/test/master5-http.test.mjs",
+        "docs/testing/master5-http-tests.log"
+      ],
+      "note": "Физический остаток unknown при missing/stale/mismatched source; actual Bitrix warehouse mapping/price/revalidation не подключены."
+    },
+    {
+      "clause": 42,
+      "status": "ADAPTER_TESTED_RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "server/integrations/product-detail.mjs",
+        "server/test/product-detail.test.mjs",
+        "server/location/service.mjs",
+        "server/test/master5-http.test.mjs",
+        "docs/testing/master5-http-tests.log"
+      ],
+      "note": "Физический остаток unknown при missing/stale/mismatched source; actual Bitrix warehouse mapping/price/revalidation не подключены."
+    },
+    {
+      "clause": 43,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 44,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 45,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 50,
+      "status": "SOURCE_CAPABILITIES_READY",
+      "scope": "backend/source-data",
+      "evidence": [
+        "data/product-details.json",
+        "site-source/local/templates/main/components/bitrix/catalog.element/old/template.php"
+      ],
+      "note": "Аренда3SKU ARENDA=Да, лизинг3SKU цена>=100000RUB; sourceformvisibility != runtimeapproval; cheaper0."
+    },
+    {
+      "clause": 51,
+      "status": "SOURCE_CAPABILITIES_READY",
+      "scope": "backend/source-data",
+      "evidence": [
+        "data/product-details.json",
+        "site-source/local/templates/main/components/bitrix/catalog.element/old/template.php"
+      ],
+      "note": "Аренда3SKU ARENDA=Да, лизинг3SKU цена>=100000RUB; sourceformvisibility != runtimeapproval; cheaper0."
+    },
+    {
+      "clause": 52,
+      "status": "SOURCE_CAPABILITIES_READY",
+      "scope": "backend/source-data",
+      "evidence": [
+        "data/product-details.json",
+        "site-source/local/templates/main/components/bitrix/catalog.element/old/template.php"
+      ],
+      "note": "Аренда3SKU ARENDA=Да, лизинг3SKU цена>=100000RUB; sourceformvisibility != runtimeapproval; cheaper0."
+    },
+    {
+      "clause": 53,
+      "status": "DATA_READY_UI_QA_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "data/product-details.json",
+        "mobile/src/content/productDetails.ts",
+        "docs/testing/product-assets-master5.json"
+      ],
+      "note": "28описаний,144фотосвязи/136реальныхфайлов720; original1280URL сохранён. Gallery/zoom/nativeperformance проверяет root."
+    },
+    {
+      "clause": 54,
+      "status": "DATA_READY_UI_QA_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "data/product-details.json",
+        "mobile/src/content/productDetails.ts",
+        "docs/testing/product-assets-master5.json"
+      ],
+      "note": "28описаний,144фотосвязи/136реальныхфайлов720; original1280URL сохранён. Gallery/zoom/nativeperformance проверяет root."
+    },
+    {
+      "clause": 55,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 56,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts",
+        "mobile/src/publication-domain.ts",
+        "mobile/src/ui/ProductDiscussion.tsx",
+        "docs/api/product-details.md"
+      ],
+      "note": "Source filters/media и root UI/purehelper подготовлены; loadProductPublications всё ещё unavailable, actual retrieval/uploads/permissions BLOCKED. Не считать нулём реальные отзывы сайта."
+    },
+    {
+      "clause": 61,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 62,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 63,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 65,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 66,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 67,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 68,
+      "status": "ADAPTER_TESTED_RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "server/integrations/product-detail.mjs",
+        "server/test/product-detail.test.mjs",
+        "server/location/service.mjs"
+      ],
+      "note": "Физический остаток unknown при missing/stale/mismatched source; actual Bitrix warehouse mapping/price/revalidation не подключены."
+    },
+    {
+      "clause": 69,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 70,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 71,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 72,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 73,
+      "status": "ADAPTER_TESTED_RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "server/integrations/product-detail.mjs",
+        "server/test/product-detail.test.mjs",
+        "server/location/service.mjs"
+      ],
+      "note": "Физический остаток unknown при missing/stale/mismatched source; actual Bitrix warehouse mapping/price/revalidation не подключены."
+    },
+    {
+      "clause": 98,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 137,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 138,
+      "status": "ADAPTER_TESTED_RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "server/integrations/product-detail.mjs",
+        "server/test/product-detail.test.mjs",
+        "server/location/service.mjs"
+      ],
+      "note": "Физический остаток unknown при missing/stale/mismatched source; actual Bitrix warehouse mapping/price/revalidation не подключены."
+    },
+    {
+      "clause": 144,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 145,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 146,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 147,
+      "status": "SOURCE_REVIEWED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "docs/audit/forms-source-evidence.json"
+      ],
+      "note": "Инвентарь источника и68формовыхdefinitions; UI не равен runtime, реальные submit не выполнялись."
+    },
+    {
+      "clause": 148,
+      "status": "SOURCE_REVIEWED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "docs/audit/forms-source-evidence.json"
+      ],
+      "note": "Инвентарь источника и68формовыхdefinitions; UI не равен runtime, реальные submit не выполнялись."
+    },
+    {
+      "clause": 149,
+      "status": "SOURCE_REVIEWED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "docs/audit/forms-source-evidence.json"
+      ],
+      "note": "Инвентарь источника и68формовыхdefinitions; UI не равен runtime, реальные submit не выполнялись."
+    },
+    {
+      "clause": 150,
+      "status": "SOURCE_REVIEWED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "docs/audit/forms-source-evidence.json"
+      ],
+      "note": "Инвентарь источника и68формовыхdefinitions; UI не равен runtime, реальные submit не выполнялись."
+    },
+    {
+      "clause": 151,
+      "status": "SOURCE_REVIEWED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "docs/audit/forms-source-evidence.json"
+      ],
+      "note": "Инвентарь источника и68формовыхdefinitions; UI не равен runtime, реальные submit не выполнялись."
+    },
+    {
+      "clause": 152,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 153,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 154,
+      "status": "SOURCE_REVIEWED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "docs/audit/forms-source-evidence.json"
+      ],
+      "note": "Инвентарь источника и68формовыхdefinitions; UI не равен runtime, реальные submit не выполнялись."
+    },
+    {
+      "clause": 155,
+      "status": "SOURCE_REVIEWED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "docs/audit/forms-source-evidence.json"
+      ],
+      "note": "Инвентарь источника и68формовыхdefinitions; UI не равен runtime, реальные submit не выполнялись."
+    },
+    {
+      "clause": 156,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 159,
+      "status": "DATA_READY_UI_QA_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "data/product-details.json",
+        "mobile/src/content/productDetails.ts",
+        "docs/testing/product-assets-master5.json"
+      ],
+      "note": "28описаний,144фотосвязи/136реальныхфайлов720; original1280URL сохранён. Gallery/zoom/nativeperformance проверяет root."
+    },
+    {
+      "clause": 162,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 163,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 176,
+      "status": "DATA_READY_UI_QA_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "data/product-details.json",
+        "mobile/src/content/productDetails.ts",
+        "docs/testing/product-assets-master5.json"
+      ],
+      "note": "28описаний,144фотосвязи/136реальныхфайлов720; original1280URL сохранён. Gallery/zoom/nativeperformance проверяет root."
+    },
+    {
+      "clause": 182,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 183,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 184,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 185,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 186,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 187,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 188,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 189,
+      "status": "BOUNDED_SECURITY_TESTED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/testing/backend-master5-tests.log",
+        "docs/testing/product-snapshot-tests-master5.log",
+        "docs/audit/function-parity.md"
+      ],
+      "note": "Новыеadapters проверяют isolation/provenance/unknown/zero/unsafeURLs; sourcebug defaultB2Cregion/legacyPAN не копируется. Это не securityacceptance всейproductionсистемы."
+    },
+    {
+      "clause": 190,
+      "status": "BOUNDED_SECURITY_TESTED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/testing/backend-master5-tests.log",
+        "docs/testing/product-snapshot-tests-master5.log",
+        "docs/audit/function-parity.md"
+      ],
+      "note": "Новыеadapters проверяют isolation/provenance/unknown/zero/unsafeURLs; sourcebug defaultB2Cregion/legacyPAN не копируется. Это не securityacceptance всейproductionсистемы."
+    },
+    {
+      "clause": 192,
+      "status": "SOURCE_REVIEWED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "docs/audit/forms-source-evidence.json"
+      ],
+      "note": "Инвентарь источника и68формовыхdefinitions; UI не равен runtime, реальные submit не выполнялись."
+    },
+    {
+      "clause": 193,
+      "status": "HTTP_ADAPTER_TESTED_UI_QA_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "server/integrations/public-content.mjs",
+        "server/integrations/public-content.schema.json",
+        "mobile/src/api/content.ts",
+        "docs/testing/public-content-server-master5.log",
+        "docs/testing/public-content-client-master5.log",
+        "server/app.mjs",
+        "server/test/master5-http.test.mjs",
+        "docs/testing/master5-http-tests.log"
+      ],
+      "note": "17страниц через реальный локальный GET/ETag304/CORS; product details GET; session-scoped availability с settlementId/locationVersion/buyerContext.6HTTPтестов PASS. CMS/Bitrix не подключены, stock unknown; UI принимает root QA."
+    },
+    {
+      "clause": 194,
+      "status": "HTTP_ADAPTER_TESTED_UI_QA_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "server/integrations/public-content.mjs",
+        "server/integrations/public-content.schema.json",
+        "mobile/src/api/content.ts",
+        "docs/testing/public-content-server-master5.log",
+        "docs/testing/public-content-client-master5.log",
+        "server/app.mjs",
+        "server/test/master5-http.test.mjs",
+        "docs/testing/master5-http-tests.log"
+      ],
+      "note": "17страниц через реальный локальный GET/ETag304/CORS; product details GET; session-scoped availability с settlementId/locationVersion/buyerContext.6HTTPтестов PASS. CMS/Bitrix не подключены, stock unknown; UI принимает root QA."
+    },
+    {
+      "clause": 195,
+      "status": "HTTP_ADAPTER_TESTED_UI_QA_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "server/integrations/public-content.mjs",
+        "server/integrations/public-content.schema.json",
+        "mobile/src/api/content.ts",
+        "docs/testing/public-content-server-master5.log",
+        "docs/testing/public-content-client-master5.log",
+        "server/app.mjs",
+        "server/test/master5-http.test.mjs",
+        "docs/testing/master5-http-tests.log"
+      ],
+      "note": "17страниц через реальный локальный GET/ETag304/CORS; product details GET; session-scoped availability с settlementId/locationVersion/buyerContext.6HTTPтестов PASS. CMS/Bitrix не подключены, stock unknown; UI принимает root QA."
+    },
+    {
+      "clause": 210,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 211,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 212,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 213,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 214,
+      "status": "BOUNDED_SECURITY_TESTED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/testing/backend-master5-tests.log",
+        "docs/testing/product-snapshot-tests-master5.log",
+        "docs/audit/function-parity.md"
+      ],
+      "note": "Новыеadapters проверяют isolation/provenance/unknown/zero/unsafeURLs; sourcebug defaultB2Cregion/legacyPAN не копируется. Это не securityacceptance всейproductionсистемы."
+    },
+    {
+      "clause": 220,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 221,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 222,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 223,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 224,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 225,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 226,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 227,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 229,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 230,
+      "status": "RUNTIME_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/forms-parity.md",
+        "mobile/src/api/site.ts",
+        "mobile/src/api/commerce.ts"
+      ],
+      "note": "Подтверждён source contract, UI/data подготовлены; actual auth/order/PSP/return/CRM/consentdurability требуютпрограммистскойинтеграции. Никакойфальшивойприёмки."
+    },
+    {
+      "clause": 235,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    },
+    {
+      "clause": 236,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 237,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 239,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 240,
+      "status": "ROOT_QA_OR_EXTERNAL_RUNTIME_REQUIRED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/function-parity.md",
+        "docs/audit/web-mobile-parity.md"
+      ],
+      "note": "Документы честно разделяют источник, данные, UI и блокированныеоперации. Fullclick-through/native/legal/deploy acceptance не выполняютсяподзадачейbackend."
+    },
+    {
+      "clause": 246,
+      "status": "GEO_LOCAL_TESTED_COMMERCE_BLOCKED",
+      "scope": "backend/source-data",
+      "evidence": [
+        "docs/audit/location-system.md",
+        "docs/testing/location-tests.md",
+        "server/location/data/gar.manifest.json"
+      ],
+      "note": "ПолныйГАР сохранён160478actualrecords/96regions; nofree-text, CAS/recent/isolation. ServiceRegion/Warehouse/DeliveryAddress отдельны, checkoutrevalidation503 доBitrix."
+    }
+  ],
+  "verification": {
+    "serverTests": {
+      "pass": 82,
+      "fail": 0,
+      "log": "docs/testing/server-master5-final.log"
+    },
+    "httpTests": {
+      "pass": 6,
+      "fail": 0
+    },
+    "sourceExtractorTests": {
+      "pass": 4,
+      "fail": 0
+    },
+    "mobileContentTests": {
+      "pass": 4,
+      "fail": 0
+    },
+    "typescript": "PASS",
+    "liveIntegrationAcceptance": false
+  }
+}

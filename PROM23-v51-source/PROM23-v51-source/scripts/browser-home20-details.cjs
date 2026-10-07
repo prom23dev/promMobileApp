@@ -1,0 +1,28 @@
+const {chromium}=require('/Users/prom23/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs=require('fs'),assert=require('assert/strict');const base=process.env.QA_BASE_URL||'http://127.0.0.1:8087',out=__dirname+'/../docs/parity/evidence/home20-'+(base.includes('159.253')?'public':'local');fs.mkdirSync(out,{recursive:true});const report={base,checks:[],errors:[]};
+function check(name,pass){report.checks.push({name,pass});assert.ok(pass,name)}
+async function reveal(p,id){let el=p.getByTestId(id).filter({visible:true});for(let i=0;i<65&&!await el.count();i++){await p.getByTestId('home-feed').evaluate(e=>e.scrollTop+=450);await p.waitForTimeout(160)}await el.waitFor();await el.evaluate(e=>e.scrollIntoView({block:'start'}));await p.waitForTimeout(450);return el}
+(async()=>{const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});try{for(const width of [320,390,768,1280]){const ctx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'}),p=await ctx.newPage();p.on('pageerror',e=>report.errors.push(e.message));await p.goto(base+'/');await p.getByTestId('home-hero').waitFor();await p.waitForTimeout(350);report.bundle=await p.locator('script[src*="entry-"]').getAttribute('src');const gradients=[];
+for(const [i,name] of ['Оборудование','Производство','Проекты'].entries()){
+ await p.getByRole('tab',{name:'Баннер: '+name,exact:true}).click();await p.waitForTimeout(250);const hero=await p.getByTestId('home-banner').boundingBox(),photo=await p.getByTestId('home-banner-photo').boundingBox(),copy=await p.getByTestId('home-banner-copy').boundingBox();
+ check(width+' '+name+' photo inside banner',photo&&hero&&Math.abs(photo.y-hero.y)<2&&Math.abs(photo.height-hero.height)<2);
+ check(width+' '+name+' text inside banner',copy&&hero&&copy.y>=hero.y&&copy.y+copy.height<=hero.y+hero.height+1);
+ check(width+' '+name+' one image',await p.getByTestId('home-banner-photo').getByRole('img').count()===1);
+ check(width+' '+name+' no separate photo strip',await p.getByTestId('home-hero-equipment').count()===0);
+ gradients.push(await p.getByTestId('home-banner-gradient').locator('stop').first().getAttribute('stop-color'));
+ check(width+' '+name+' single H1',await p.getByRole('heading',{level:1}).count()===1);
+ await p.screenshot({path:out+'/banner-'+i+'-'+width+'.png'});
+}
+check(width+' distinct gradient spectra',new Set(gradients).size===3);check(width+' no horizontal overflow',await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+for(const [id,title] of [['home-popular','Популярные товары'],['home-manufactured','Рекомендуем к покупке']]){
+ const grid=await reveal(p,id);let boxes=await grid.getByRole('button',{name:/Открыть товар:/}).evaluateAll(es=>es.map(e=>{let r=e.getBoundingClientRect();return{x:r.x,y:r.y,w:r.width}}));
+ check(width+' '+id+' initial six',boxes.length===6);check(width+' '+id+' rows down',boxes[(width>=700?3:2)].y>boxes[0].y+100);check(width+' '+id+' equal card widths',boxes.every(b=>Math.abs(b.w-boxes[0].w)<2));
+ check(width+' '+id+' no sideways controls',await grid.getByRole('button',{name:/Следующие товары|Предыдущие товары/}).count()===0);
+ await p.screenshot({path:out+'/'+id+'-'+width+'.png'});
+ await grid.getByRole('button',{name:'Показать ещё: '+title,exact:true}).click();await p.waitForTimeout(350);check(width+' '+id+' expands down',await grid.getByRole('button',{name:/Открыть товар:/}).count()>6);
+ if(id==='home-manufactured'&&width===390){await grid.getByRole('button',{name:/Открыть товар:/}).first().click();await p.waitForURL(u=>u.pathname.startsWith('/product/'));await p.goBack();await p.getByTestId('home-feed').waitFor();const history=await reveal(p,'home-section-personalized');check('history uses real viewed product',await history.getByRole('heading',{name:'Вы интересовались',exact:true}).count()===1);const order=await p.locator('[data-testid^="home-section-"]').evaluateAll(es=>es.map(e=>e.dataset.testid));check('history follows manufactured directly',order.indexOf('home-section-personalized')===order.indexOf('home-section-manufactured')+1);await p.screenshot({path:out+'/history-order.png'});}
+}
+await p.goto(base+'/');await p.getByTestId('home-hero').waitFor();const business=await reveal(p,'home-business');check(width+' business light surface',await business.evaluate(e=>getComputedStyle(e).backgroundColor==='rgb(245, 246, 248)'));check(width+' consistent B2B heading',await business.getByRole('heading').evaluate(e=>getComputedStyle(e).fontSize==='21px'));const cta=business.getByRole('button',{name:'Отправить заявку на просчёт',exact:true}),box=await cta.boundingBox();check(width+' compact B2B CTA',box.height>=48&&box.height<=70&&(width<500||box.width<400));check(width+' B2B links retained',await business.getByRole('button').count()===3);await p.screenshot({path:out+'/business-'+width+'.png'});
+await business.getByRole('button',{name:'Нужен подбор оборудования',exact:true}).click();await p.waitForURL(u=>u.pathname==='/procurement');check(width+' selection route works',new URL(p.url()).searchParams.get('mode')==='selection');
+const token=await p.evaluate(()=>localStorage.getItem('prom23-local-session-v2'));if(token)await p.request.delete(base+'/api/session',{headers:{Authorization:'Bearer '+token}});await ctx.close();console.log('Width '+width+' passed');
+}check('no JS errors',report.errors.length===0)}finally{fs.writeFileSync(out+'/details-report.json',JSON.stringify(report,null,2));await browser.close()}console.log(JSON.stringify({checks:report.checks.length,errors:report.errors,bundle:report.bundle}))})().catch(e=>{console.error(e);process.exitCode=1});

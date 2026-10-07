@@ -1,0 +1,212 @@
+{
+  "checkedAt": "2026-09-11T13:17:51.363Z",
+  "base": "http://127.0.0.1:8087",
+  "persona": "Прораб, 56 лет: выбрать товар, разобраться с получением и запросить счёт",
+  "checks": [
+    {
+      "name": "Responsive home: 320 / 390 / 430 / 768 and 844 × 390 landscape",
+      "status": "passed"
+    },
+    {
+      "name": "Phone and contacts are immediately discoverable at 320 / 390; contacts return works",
+      "status": "passed",
+      "detail": "Phone control and contacts route verified; the tel action itself was never clicked."
+    },
+    {
+      "name": "Popular products: at least six unique products and explicit continuation",
+      "status": "passed"
+    },
+    {
+      "name": "Search input, recent query, menu/back and refresh persistence",
+      "status": "passed"
+    },
+    {
+      "name": "City popover: named controls, focus trap, Escape and landscape reachability",
+      "status": "passed"
+    },
+    {
+      "name": "Product finance, reward terms, all delivery methods and return to the product",
+      "status": "passed"
+    },
+    {
+      "name": "Personal cart recovery and checkout without forced account registration",
+      "status": "passed"
+    },
+    {
+      "name": "No false success for offline form, no preselected consents",
+      "status": "passed"
+    },
+    {
+      "name": "Home guide has explicit task choices and a non-destructive next action",
+      "status": "passed"
+    },
+    {
+      "name": "Account benefits explain the value before login and preserve return",
+      "status": "passed"
+    },
+    {
+      "name": "Home service accordions expose delivery, payment and account information progressively",
+      "status": "passed"
+    },
+    {
+      "name": "B2B context retains its own cart/history and leads to a company quote",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion renders all content without long running decorative animation",
+      "status": "passed"
+    },
+    {
+      "name": "Home semantics: one primary heading, section levels, useful page titles and noindex preview",
+      "status": "passed"
+    },
+    {
+      "name": "No browser crashes and no attempts to submit externally",
+      "status": "passed"
+    }
+  ],
+  "pageErrors": [],
+  "blockedExternalRequests": [],
+  "postPaths": [
+    "/api/sessions",
+    "/api/actions"
+  ],
+  "layouts": [
+    {
+      "name": "home-320x844",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "home-scrolled-320x844",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "home-390x844",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "home-scrolled-390x844",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "home-430x932",
+      "width": 430,
+      "height": 932,
+      "documentWidth": 430,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "home-scrolled-430x932",
+      "width": 430,
+      "height": 932,
+      "documentWidth": 430,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "home-768x1024",
+      "width": 768,
+      "height": 1024,
+      "documentWidth": 768,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "home-scrolled-768x1024",
+      "width": 768,
+      "height": 1024,
+      "documentWidth": 768,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "home-844x390",
+      "width": 844,
+      "height": 390,
+      "documentWidth": 844,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "home-scrolled-844x390",
+      "width": 844,
+      "height": 390,
+      "documentWidth": 844,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "popular-expanded",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "city-sheet",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "split-sheet",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "guide",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "account-accordion",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "smallTargets": []
+    },
+    {
+      "name": "motion-enabled",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "smallTargets": []
+    }
+  ],
+  "limitations": [
+    "Chromium / Expo Web, not an on-device VoiceOver or TalkBack certification.",
+    "No real forms, calls, orders, payments or external API writes."
+  ],
+  "summary": {
+    "passed": 15,
+    "failed": 0
+  }
+}

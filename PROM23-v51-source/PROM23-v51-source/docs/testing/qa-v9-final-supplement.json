@@ -1,0 +1,500 @@
+{
+  "at": "2026-09-11T18:53:51.220Z",
+  "expected": "f511f4c425f0956cb8c2dd105ef3dba2",
+  "checks": [
+    {
+      "name": "Search discovery uses viewed categories and real product fields; spelling and zero recovery are explicit",
+      "status": "PASS",
+      "details": {
+        "categories": "Разделы просмотренных товаров\nВышки-туры",
+        "fields": "Подходящие товары\nВышка-тура ВСПТ 0,7×1,6, высота 2,8 метра\n13 450 ₽\nНаличие уточняйте при заказе\nВышки-туры\nАлюминиевая вышка-тура ПРОФИ 2×7, высота 3 метра\n66 899 ₽\nНаличие уточняйте при заказе\nВышки-туры\nАлюминиевая вышка-тура ПРОФИ 2×15, высота 7 метров\n97 575 ₽\nНаличие уточняйте при заказе\nВышки-туры",
+        "explicitCorrection": true,
+        "categoryRecovery": true
+      }
+    },
+    {
+      "name": "Official settlement update preserves cart, shows notice and keeps unknown stock honest",
+      "status": "PASS",
+      "details": {
+        "settlement": "край Краснодарский, р-н Динской, ст-ца Динская",
+        "cartQuantity": 1,
+        "stock": "unknown"
+      },
+      "recheckReason": "Harness read .items instead of response .data.items; UI was not failing.",
+      "recheckArtifact": "qa-v9-final-supplement-geo-confirmation.json"
+    },
+    {
+      "name": "Catalog independent stack and scroll survive Cart switch; child reload and Back preserve parent",
+      "status": "PASS",
+      "details": {
+        "selected": "http://127.0.0.1:8087/catalog/section/179",
+        "scroll": [
+          {
+            "tag": "DIV",
+            "top": 1602
+          }
+        ],
+        "parent": "http://127.0.0.1:8087/catalog/section/250",
+        "current": "http://127.0.0.1:8087/catalog/section/https:%2F%2Fprom.myfast.space%2Fcatalog%2Fstroitelnye-lesa%2Framnogo-tipa%2F"
+      }
+    },
+    {
+      "name": "Review filters, unavailable state and contextual question form",
+      "status": "PASS",
+      "details": {
+        "filters": true,
+        "unavailableNotFakeEmpty": true,
+        "questionProductContext": true,
+        "realMediaRuntime": "BLOCKED"
+      }
+    },
+    {
+      "name": "Procurement modes preserve task; invalid phone and unchecked consent prevent submission",
+      "status": "PASS",
+      "details": {
+        "taskPreserved": true,
+        "uncheckedConsents": true,
+        "errors": [
+          "Укажите ваше имя.",
+          "Укажите телефон с кодом страны.",
+          "Подтвердите согласие.",
+          "Подтвердите согласие.",
+          "Проверьте отмеченные поля."
+        ],
+        "submitted": false
+      }
+    },
+    {
+      "name": "Contacts Back and return guide lead to owned orders without fabricated order",
+      "status": "PASS",
+      "details": {
+        "callsInspectedNotActivated": [
+          "",
+          "Позвонить",
+          "Позвонить+7 (861) 225-00-90"
+        ],
+        "contactsBack": true,
+        "returnOrdersEntry": true
+      }
+    },
+    {
+      "name": "Responsive critical routes and browser reduced motion",
+      "status": "PASS",
+      "details": {
+        "combinations": 25,
+        "reducedMotion": true,
+        "native": "NOT_CERTIFIED"
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "size": {
+        "width": 320,
+        "height": 844
+      },
+      "route": "/",
+      "width": 320,
+      "doc": 320,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 844
+      },
+      "route": "/catalog/section/250",
+      "width": 320,
+      "doc": 320,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 844
+      },
+      "route": "/product/prom-2414",
+      "width": 320,
+      "doc": 320,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 844
+      },
+      "route": "/cart",
+      "width": 320,
+      "doc": 320,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 844
+      },
+      "route": "/pages/cooperation",
+      "width": 320,
+      "doc": 320,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/",
+      "width": 390,
+      "doc": 390,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/catalog/section/250",
+      "width": 390,
+      "doc": 390,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/product/prom-2414",
+      "width": 390,
+      "doc": 390,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/cart",
+      "width": 390,
+      "doc": 390,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "route": "/pages/cooperation",
+      "width": 390,
+      "doc": 390,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844,
+          "height": 844
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/",
+      "width": 430,
+      "doc": 430,
+      "nav": [
+        {
+          "top": 869,
+          "bottom": 932,
+          "height": 932
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/catalog/section/250",
+      "width": 430,
+      "doc": 430,
+      "nav": [
+        {
+          "top": 869,
+          "bottom": 932,
+          "height": 932
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/product/prom-2414",
+      "width": 430,
+      "doc": 430,
+      "nav": [
+        {
+          "top": 869,
+          "bottom": 932,
+          "height": 932
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/cart",
+      "width": 430,
+      "doc": 430,
+      "nav": [
+        {
+          "top": 869,
+          "bottom": 932,
+          "height": 932
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 430,
+        "height": 932
+      },
+      "route": "/pages/cooperation",
+      "width": 430,
+      "doc": 430,
+      "nav": [
+        {
+          "top": 869,
+          "bottom": 932,
+          "height": 932
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "route": "/",
+      "width": 768,
+      "doc": 768,
+      "nav": [
+        {
+          "top": 961,
+          "bottom": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "route": "/catalog/section/250",
+      "width": 768,
+      "doc": 768,
+      "nav": [
+        {
+          "top": 961,
+          "bottom": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "route": "/product/prom-2414",
+      "width": 768,
+      "doc": 768,
+      "nav": [
+        {
+          "top": 961,
+          "bottom": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "route": "/cart",
+      "width": 768,
+      "doc": 768,
+      "nav": [
+        {
+          "top": 961,
+          "bottom": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 768,
+        "height": 1024
+      },
+      "route": "/pages/cooperation",
+      "width": 768,
+      "doc": 768,
+      "nav": [
+        {
+          "top": 961,
+          "bottom": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "route": "/",
+      "width": 844,
+      "doc": 844,
+      "nav": [
+        {
+          "top": 327,
+          "bottom": 390,
+          "height": 390
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "route": "/catalog/section/250",
+      "width": 844,
+      "doc": 844,
+      "nav": [
+        {
+          "top": 327,
+          "bottom": 390,
+          "height": 390
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "route": "/product/prom-2414",
+      "width": 844,
+      "doc": 844,
+      "nav": [
+        {
+          "top": 327,
+          "bottom": 390,
+          "height": 390
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "route": "/cart",
+      "width": 844,
+      "doc": 844,
+      "nav": [
+        {
+          "top": 327,
+          "bottom": 390,
+          "height": 390
+        }
+      ]
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "route": "/pages/cooperation",
+      "width": 844,
+      "doc": 844,
+      "nav": [
+        {
+          "top": 327,
+          "bottom": 390,
+          "height": 390
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "blocked": [],
+  "limits": [
+    "Isolated browser; no external submissions/calls/payment. Native accessibility and live integration acceptance remain separate."
+  ],
+  "entry": "/_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js",
+  "finishedAt": "2026-09-11T18:54:10.658Z",
+  "normalizedAt": "2026-09-11T19:00:42.108400+00:00"
+}

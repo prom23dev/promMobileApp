@@ -1,0 +1,19 @@
+✔ actual public snapshot has image/description; private files and flags without provenance are excluded (1.306333ms)
+✔ snapshot cannot provide inventory, lease approval or a fabricated stock number (0.498083ms)
+✔ warehouse IDs from client rejected before calling any provider (0.672375ms)
+✔ complete explicit source rows preserve quantity without asserting reservation, pickup, nearest warehouse (1.140875ms)
+✔ missing row is unknown, explicit zero is zero; partial query cannot sum a false total (0.345375ms)
+✔ stale stock, mismatched context/product, foreign/duplicate/negative warehouse data fail closed (0.780625ms)
+✔ stale or cross-buyer/settlement mapping never queries inventory; raw provider errors never escape (0.631541ms)
+✔ public content has stable ETag, conditional304 and detached copies (2.317459ms)
+✔ invalid source/duplicate IDs/HTML fail closed and unknown slugs cannot select filesystem paths (0.996083ms)
+✔ forms/private targets/remote instructions excluded, unsafe links omitted (0.714583ms)
+✔ actual curated snapshot is available but never claims live CMS (7.089583ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 81.762125

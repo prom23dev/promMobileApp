@@ -1,0 +1,713 @@
+{
+  "updatedAt": "2026-09-12T00:23:13.194126+00:00",
+  "sourceCanonicalDefinitions": 64,
+  "aliases": 4,
+  "derivedDefinitions": 1,
+  "rows": [
+    {
+      "id": "auth-login",
+      "canonicalId": "auth-login",
+      "derived": false,
+      "driver": "AuthDriver",
+      "sourceAction": "/local/include/forms/auth-reg/action-auth.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "auth-email",
+      "canonicalId": "auth-email",
+      "derived": false,
+      "driver": "AuthDriver",
+      "sourceAction": "/local/include/forms/auth-reg/action-auth-by-email.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "auth-register",
+      "canonicalId": "auth-register",
+      "derived": false,
+      "driver": "AuthDriver",
+      "sourceAction": "/local/include/forms/auth-reg/action-reg.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "auth-phone",
+      "canonicalId": "auth-phone",
+      "derived": false,
+      "driver": "AuthDriver",
+      "sourceAction": "/local/include/forms/auth-reg/action-get-code-for-phone.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "auth-otp",
+      "canonicalId": "auth-otp",
+      "derived": false,
+      "driver": "AuthDriver",
+      "sourceAction": "/local/include/forms/auth-reg/action-auth-by-phone.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "auth-register-phone",
+      "canonicalId": "auth-register-phone",
+      "derived": false,
+      "driver": "AuthDriver",
+      "sourceAction": "/local/include/forms/auth-reg/action-reg-step-phone.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "auth-register-otp",
+      "canonicalId": "auth-register-otp",
+      "derived": false,
+      "driver": "AuthDriver",
+      "sourceAction": "/local/include/forms/auth-reg/action-reg-step-phone-code.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "auth-recovery",
+      "canonicalId": "auth-recovery",
+      "derived": false,
+      "driver": "AuthDriver",
+      "sourceAction": "/local/include/forms/auth-reg/action-password-recovery.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "profile-name",
+      "canonicalId": "profile-name",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/info/edit/change-user-data.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "profile-surname",
+      "canonicalId": "profile-surname",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/info/edit/change-user-data.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "profile-city",
+      "canonicalId": "profile-city",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/info/edit/change-user-data.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "profile-email",
+      "canonicalId": "profile-email",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/info/edit/forms/change-email-get-code-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "profile-email-otp",
+      "canonicalId": "profile-email-otp",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/info/edit/forms/change-email-check-code-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "profile-phone",
+      "canonicalId": "profile-phone",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/info/edit/forms/change-phone-get-code-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "profile-phone-otp",
+      "canonicalId": "profile-phone-otp",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/info/edit/forms/change-phone-check-code-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "profile-passport",
+      "canonicalId": "profile-passport",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": null,
+      "status": "LEGACY_REVIEW",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "address-create",
+      "canonicalId": "address-create",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/address-delivery/add-address-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "address-edit",
+      "canonicalId": "address-edit",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/address-delivery/add-address-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "address-default",
+      "canonicalId": "address-default",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/address-delivery/change-main-address.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "address-delete",
+      "canonicalId": "address-delete",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/address-delivery/remove-address-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "organization-add",
+      "canonicalId": "organization-add",
+      "derived": false,
+      "driver": "OrganizationDriver",
+      "sourceAction": "/local/ajax/lk/organization/organizations-add.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "organization-requisites",
+      "canonicalId": "organization-requisites",
+      "derived": false,
+      "driver": "OrganizationDriver",
+      "sourceAction": "/local/ajax/lk/organization/action-organizations-details.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "organization-bank",
+      "canonicalId": "organization-bank",
+      "derived": false,
+      "driver": "OrganizationDriver",
+      "sourceAction": null,
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "organization-verify",
+      "canonicalId": "organization-verify",
+      "derived": false,
+      "driver": "OrganizationDriver",
+      "sourceAction": "/local/ajax/lk/organization/action-organization-verify.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "organization-edo",
+      "canonicalId": "organization-edo",
+      "derived": false,
+      "driver": "OrganizationDriver",
+      "sourceAction": "/local/ajax/lk/organization/action-organization-edo.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "organization-consignee",
+      "canonicalId": "organization-consignee",
+      "derived": false,
+      "driver": "OrganizationDriver",
+      "sourceAction": null,
+      "status": "LEGACY_REVIEW",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "organization-switch",
+      "canonicalId": "organization-switch",
+      "derived": false,
+      "driver": "OrganizationDriver",
+      "sourceAction": "/local/ajax/lk/organization/action-organizations-switcher.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "organization-delete",
+      "canonicalId": "organization-delete",
+      "derived": false,
+      "driver": "OrganizationDriver",
+      "sourceAction": null,
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "account-delete",
+      "canonicalId": "account-delete",
+      "derived": false,
+      "driver": "AccountActionDriver",
+      "sourceAction": null,
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "sessions-terminate",
+      "canonicalId": "sessions-terminate",
+      "derived": false,
+      "driver": "AccountActionDriver",
+      "sourceAction": "/local/ajax/lk/info/edit/terminate-session.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "document-request",
+      "canonicalId": "document-request",
+      "derived": false,
+      "driver": "DocumentRequestDriver",
+      "sourceAction": "/local/ajax/form/request-document-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "payment-card",
+      "canonicalId": "payment-card",
+      "derived": false,
+      "driver": "AccountActionDriver",
+      "sourceAction": null,
+      "status": "LEGACY_REVIEW",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "payment-default",
+      "canonicalId": "payment-default",
+      "derived": false,
+      "driver": "AccountActionDriver",
+      "sourceAction": "/local/ajax/lk/payment-methods/change-main-card-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "payment-remove",
+      "canonicalId": "payment-remove",
+      "derived": false,
+      "driver": "AccountActionDriver",
+      "sourceAction": "/local/ajax/lk/payment-methods/remove-card-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "checkout",
+      "canonicalId": "checkout",
+      "derived": false,
+      "driver": "CommerceDriver/dedicated BFF",
+      "sourceAction": "/order/",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "order-cancel",
+      "canonicalId": "order-cancel",
+      "derived": false,
+      "driver": "OrderActionDriver",
+      "sourceAction": null,
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "order-repeat",
+      "canonicalId": "order-repeat",
+      "derived": false,
+      "driver": "OrderActionDriver",
+      "sourceAction": "/local/ajax/lk/orders/order-repeat.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "order-pay",
+      "canonicalId": "order-pay",
+      "derived": false,
+      "driver": "OrderActionDriver",
+      "sourceAction": null,
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "callback",
+      "canonicalId": "callback",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/catalog/action-request-a-call.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "buy-one-click",
+      "canonicalId": "buy-one-click",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/catalog/action-buy-one-click.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "rent",
+      "canonicalId": "rent",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/catalog/action-request-a-rent.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "leasing",
+      "canonicalId": "leasing",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/catalog/action-request-a-call.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "found-cheaper",
+      "canonicalId": "found-cheaper",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/catalog/action-found-it-cheaper.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "tour",
+      "canonicalId": "tour",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/form/book-a-tour-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "business-advice",
+      "canonicalId": "business-advice",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/form/get-business-advice-form-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "supplier",
+      "canonicalId": "supplier",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/form/suppliers-form-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "partner",
+      "canonicalId": "partner",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/form/partners-form-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "advice",
+      "canonicalId": "advice",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/form/orangeAsk-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "review",
+      "canonicalId": "review",
+      "derived": false,
+      "driver": "PublicationDriver",
+      "sourceAction": "/local/ajax/reviews/form-review-add-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "order-review",
+      "canonicalId": "order-review",
+      "derived": false,
+      "driver": "PublicationDriver",
+      "sourceAction": "/local/ajax/lk/orders/action-review-add.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "question",
+      "canonicalId": "question",
+      "derived": false,
+      "driver": "PublicationDriver",
+      "sourceAction": "/local/ajax/reviews/form-question-add-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "review-reply",
+      "canonicalId": "review-reply",
+      "derived": false,
+      "driver": "PublicationDriver",
+      "sourceAction": "/local/ajax/reviews/form-review-reply-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "question-reply",
+      "canonicalId": "question-reply",
+      "derived": false,
+      "driver": "PublicationDriver",
+      "sourceAction": "/local/ajax/reviews/form-question-reply-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "review-edit",
+      "canonicalId": "review-edit",
+      "derived": false,
+      "driver": "PublicationDriver",
+      "sourceAction": "/local/ajax/lk/questions-and-reviews/action-edit-review.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "question-edit",
+      "canonicalId": "question-edit",
+      "derived": false,
+      "driver": "PublicationDriver",
+      "sourceAction": "/local/ajax/lk/questions-and-reviews/action-edit-question.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "review-delete",
+      "canonicalId": "review-delete",
+      "derived": false,
+      "driver": "PublicationDriver",
+      "sourceAction": "/local/ajax/lk/questions-and-reviews/action-delete.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "question-delete",
+      "canonicalId": "question-delete",
+      "derived": false,
+      "driver": "PublicationDriver",
+      "sourceAction": "/local/ajax/lk/questions-and-reviews/action-delete.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "appeal",
+      "canonicalId": "appeal",
+      "derived": false,
+      "driver": "ServiceDriver",
+      "sourceAction": "/local/ajax/lk/appeals/appeals-text-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "appeal-order",
+      "canonicalId": "appeal-order",
+      "derived": false,
+      "driver": "ServiceDriver",
+      "sourceAction": "/local/ajax/lk/appeals/appeals-order-form-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "appeal-rating",
+      "canonicalId": "appeal-rating",
+      "derived": false,
+      "driver": "ServiceDriver",
+      "sourceAction": "/local/ajax/lk/appeals/appeals-rate-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "return",
+      "canonicalId": "return",
+      "derived": false,
+      "driver": "ServiceDriver",
+      "sourceAction": "/local/ajax/lk/returns-products/action-returns-product.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "subscription",
+      "canonicalId": "subscription",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/subscription/subscription.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "product-notify",
+      "canonicalId": "product-notify",
+      "derived": false,
+      "driver": "PublicationDriver",
+      "sourceAction": "/local/ajax/catalog/action-add-to-waitlist.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "notification-preferences",
+      "canonicalId": "notification-preferences",
+      "derived": false,
+      "driver": "ProfileDriver",
+      "sourceAction": "/local/ajax/lk/notifications/notifications.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "quote",
+      "canonicalId": "business-advice",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/form/get-business-advice-form-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "production-request",
+      "canonicalId": "business-advice",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/form/get-business-advice-form-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "contact",
+      "canonicalId": "callback",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/catalog/action-request-a-call.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "franchise",
+      "canonicalId": "partner",
+      "derived": false,
+      "driver": "FormsDriver/SourceHttp",
+      "sourceAction": "/local/ajax/form/partners-form-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    },
+    {
+      "id": "procurement",
+      "canonicalId": "procurement",
+      "derived": true,
+      "driver": "ProcurementDriver",
+      "sourceAction": "/local/ajax/form/get-business-advice-form-action.php",
+      "status": "PARTIAL",
+      "runtimeValidation": "NOT_RUN_ON_BITRIX",
+      "remainingDetails": "runtime-forms.md"
+    }
+  ],
+  "validation": {
+    "nodeTransportAndForms": "18/18 PASS",
+    "isolatedPHP04": {
+      "lint": "PASS",
+      "IntegrationDrivers": 26,
+      "Procurement": 44,
+      "Profile": 53,
+      "Account": 13,
+      "Location": 9,
+      "Commerce": 45,
+      "sqliteSkipped": 3
+    },
+    "sourceRuntimeExecuted": false
+  },
+  "warning": "Callable dispatch is not full functional acceptance. Missing implementation remains PARTIAL; source legacy remains LEGACY_REVIEW."
+}

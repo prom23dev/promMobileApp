@@ -1,0 +1,280 @@
+{
+  "history": [
+    {
+      "label": "catalog-root",
+      "url": "http://127.0.0.1:8087/catalog?section=all",
+      "length": 3,
+      "historyStateKeys": [
+        "id"
+      ],
+      "heading": [
+        "Каталог",
+        "Популярные товары"
+      ]
+    },
+    {
+      "label": "parent",
+      "url": "http://127.0.0.1:8087/catalog?section=250",
+      "length": 3,
+      "historyStateKeys": [
+        "id"
+      ],
+      "heading": [
+        "Каталог",
+        "Леса",
+        "Товары из каталога"
+      ]
+    },
+    {
+      "label": "child",
+      "url": "http://127.0.0.1:8087/catalog?section=https%3A%2F%2Fprom.myfast.space%2Fcatalog%2Fstroitelnye-lesa%2Framnogo-tipa%2F",
+      "length": 3,
+      "historyStateKeys": [
+        "id"
+      ],
+      "heading": [
+        "Каталог",
+        "Леса рамные ЛРСП",
+        "Товары из каталога"
+      ]
+    },
+    {
+      "label": "child-reload",
+      "url": "http://127.0.0.1:8087/catalog?section=https%3A%2F%2Fprom.myfast.space%2Fcatalog%2Fstroitelnye-lesa%2Framnogo-tipa%2F",
+      "length": 3,
+      "historyStateKeys": [
+        "id"
+      ],
+      "heading": [
+        "Каталог",
+        "Леса рамные ЛРСП",
+        "Товары из каталога"
+      ]
+    },
+    {
+      "label": "browser-back",
+      "url": "http://127.0.0.1:8087/",
+      "length": 3,
+      "historyStateKeys": [
+        "id"
+      ],
+      "heading": [
+        "Оборудование для дела.\nОт выбора до поставки.",
+        "Каталог",
+        "Популярные товары"
+      ]
+    }
+  ],
+  "scroll": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "step": 0,
+      "scrollTop": 0,
+      "scrollHeight": 2497,
+      "clientHeight": 623,
+      "rect": {
+        "x": 0,
+        "y": 155,
+        "width": 390,
+        "height": 623
+      },
+      "buyer": false,
+      "business": false,
+      "headings": [
+        "Оборудование для дела.\nОт выбора до поставки.",
+        "Каталог",
+        "Популярные товары"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "step": 1,
+      "scrollTop": 450,
+      "scrollHeight": 2497,
+      "clientHeight": 623,
+      "rect": {
+        "x": 0,
+        "y": 155,
+        "width": 390,
+        "height": 623
+      },
+      "buyer": false,
+      "business": false,
+      "headings": [
+        "Оборудование для дела.\nОт выбора до поставки.",
+        "Каталог",
+        "Популярные товары"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "step": 2,
+      "scrollTop": 900,
+      "scrollHeight": 3107,
+      "clientHeight": 623,
+      "rect": {
+        "x": 0,
+        "y": 155,
+        "width": 390,
+        "height": 623
+      },
+      "buyer": true,
+      "business": false,
+      "headings": [
+        "Оборудование для дела.\nОт выбора до поставки.",
+        "Каталог",
+        "Популярные товары",
+        "Выбирайте с уверенностью"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "step": 0,
+      "scrollTop": 0,
+      "scrollHeight": 2910,
+      "clientHeight": 217,
+      "rect": {
+        "x": 62,
+        "y": 107,
+        "width": 720,
+        "height": 217
+      },
+      "buyer": false,
+      "business": false,
+      "headings": [
+        "Оборудование для дела.\nОт выбора до поставки.",
+        "Каталог",
+        "Популярные товары"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "step": 1,
+      "scrollTop": 450,
+      "scrollHeight": 2910,
+      "clientHeight": 217,
+      "rect": {
+        "x": 62,
+        "y": 107,
+        "width": 720,
+        "height": 217
+      },
+      "buyer": false,
+      "business": false,
+      "headings": [
+        "Оборудование для дела.\nОт выбора до поставки.",
+        "Каталог",
+        "Популярные товары"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "step": 2,
+      "scrollTop": 916,
+      "scrollHeight": 2926,
+      "clientHeight": 217,
+      "rect": {
+        "x": 62,
+        "y": 107,
+        "width": 720,
+        "height": 217
+      },
+      "buyer": false,
+      "business": false,
+      "headings": [
+        "Оборудование для дела.\nОт выбора до поставки.",
+        "Каталог",
+        "Популярные товары"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "step": 3,
+      "scrollTop": 1366,
+      "scrollHeight": 2926,
+      "clientHeight": 217,
+      "rect": {
+        "x": 62,
+        "y": 107,
+        "width": 720,
+        "height": 217
+      },
+      "buyer": false,
+      "business": false,
+      "headings": [
+        "Оборудование для дела.\nОт выбора до поставки.",
+        "Каталог",
+        "Популярные товары"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "step": 4,
+      "scrollTop": 1816,
+      "scrollHeight": 2926,
+      "clientHeight": 217,
+      "rect": {
+        "x": 62,
+        "y": 107,
+        "width": 720,
+        "height": 217
+      },
+      "buyer": false,
+      "business": false,
+      "headings": [
+        "Оборудование для дела.\nОт выбора до поставки.",
+        "Каталог",
+        "Популярные товары"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "step": 5,
+      "scrollTop": 2266,
+      "scrollHeight": 4114,
+      "clientHeight": 217,
+      "rect": {
+        "x": 62,
+        "y": 107,
+        "width": 720,
+        "height": 217
+      },
+      "buyer": true,
+      "business": true,
+      "headings": [
+        "Оборудование для дела.\nОт выбора до поставки.",
+        "Каталог",
+        "Популярные товары",
+        "Выбирайте с уверенностью",
+        "Один поставщик.\nВся комплектация."
+      ]
+    }
+  ]
+}

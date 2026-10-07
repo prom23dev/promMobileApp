@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-09-11T17:22:07.389Z",
+  "base": "http://159.253.19.172:18087",
+  "entry": "/_expo/static/js/web/entry-868a5bbc6dfffc180ef9df17946774da.js",
+  "sha256": "717cbbb0384c3bbc468d4d4637cd22faf3b8bb89262cde3ce7b67548d0dadec7",
+  "pages": [
+    {
+      "path": "/information/production",
+      "overflow": false,
+      "textLength": 2251
+    },
+    {
+      "path": "/information/business",
+      "overflow": false,
+      "textLength": 2910
+    },
+    {
+      "path": "/procurement",
+      "overflow": false,
+      "textLength": 708
+    },
+    {
+      "path": "/catalog/section/250",
+      "overflow": false,
+      "textLength": 987
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "realFormsSent": false
+}

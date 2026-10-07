@@ -1,0 +1,179 @@
+{
+  "at": "2026-09-11T18:55:13.534Z",
+  "phase": "MASTER5_PUBLISHED_F511",
+  "base": "http://159.253.19.172:18087",
+  "checks": [
+    {
+      "name": "Home 390/320: commerce visible, no overflow",
+      "status": "PASS",
+      "details": {
+        "screenshots": [
+          "qa-v9-public-flows-home-390.png",
+          "qa-v9-public-flows-home-320.png"
+        ]
+      }
+    },
+    {
+      "name": "PDP gallery next/fullscreen/zoom/close restores nav",
+      "status": "PASS",
+      "details": {
+        "photos": 8,
+        "zoom": 150,
+        "resetOnPhoto": true
+      }
+    },
+    {
+      "name": "PDP add1 → badge1 → cart1tap; quantity; payment unavailable visible",
+      "status": "PASS",
+      "details": {
+        "cartOneTap": true,
+        "quantity": 2,
+        "totalRubles": 26900,
+        "noFakeSchedule": true
+      }
+    },
+    {
+      "name": "PDP save and compare persist; secondary actions open contextual form without submit",
+      "status": "PASS",
+      "details": {
+        "actions": [
+          "Купить в один клик",
+          "Уточнить аренду"
+        ],
+        "submission": false
+      }
+    },
+    {
+      "name": "Search input, history and zero state remain distinct from navigation",
+      "status": "PASS",
+      "details": {
+        "history": true,
+        "zero": true
+      }
+    },
+    {
+      "name": "Location modal rejects made-up input and preserves cart draft",
+      "status": "PASS",
+      "details": {
+        "freeTextSaved": false,
+        "cartQuantity": 2
+      }
+    },
+    {
+      "name": "Published contacts and production retain navigation and content",
+      "status": "PASS",
+      "details": {
+        "routes": 3
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "name": "home-390",
+      "width": 390,
+      "document": 390,
+      "height": 844,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844
+        }
+      ]
+    },
+    {
+      "name": "home-320",
+      "width": 320,
+      "document": 320,
+      "height": 844,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844
+        }
+      ]
+    },
+    {
+      "name": "pdp-390",
+      "width": 390,
+      "document": 390,
+      "height": 844,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844
+        }
+      ]
+    },
+    {
+      "name": "pdp-320",
+      "width": 320,
+      "document": 320,
+      "height": 844,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844
+        }
+      ]
+    },
+    {
+      "name": "search-zero",
+      "width": 390,
+      "document": 390,
+      "height": 844,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844
+        }
+      ]
+    },
+    {
+      "name": "/information/contacts",
+      "width": 390,
+      "document": 390,
+      "height": 844,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844
+        }
+      ]
+    },
+    {
+      "name": "/information/production",
+      "width": 390,
+      "document": 390,
+      "height": 844,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844
+        }
+      ]
+    },
+    {
+      "name": "/pages/about",
+      "width": 390,
+      "document": 390,
+      "height": 844,
+      "nav": [
+        {
+          "top": 781,
+          "bottom": 844
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "networkErrors": [],
+  "blocked": [],
+  "limits": [
+    "Web emulation; native pinch, VoiceOver/TalkBack and device performance not certified.",
+    "Only own preview sessions/actions; no real submissions."
+  ],
+  "entry": "/_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js",
+  "hashBefore": "27a9c685453283780f6d80f010ea732a4f0fad6a8afb842358d3c0b9485bf859",
+  "hashAfter": "27a9c685453283780f6d80f010ea732a4f0fad6a8afb842358d3c0b9485bf859",
+  "finishedAt": "2026-09-11T18:55:37.831Z"
+}

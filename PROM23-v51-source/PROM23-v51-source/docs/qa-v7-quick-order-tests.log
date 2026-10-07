@@ -1,0 +1,15 @@
+✔ specification preserves spreadsheet rows, quantities, duplicates and unknown SKUs for manager review (1.256875ms)
+✔ invalid and unsafe quantities never become actionable supply requests (0.258125ms)
+✔ empty input, oversized row count and overlong lines cannot silently truncate a request (0.157791ms)
+✔ valid upper quantity boundary and missing-match lines remain explicit (0.075917ms)
+✔ long comments fail instead of silently losing specification rows (0.238583ms)
+✔ draft ID contains no specification and cannot read another buyer context (0.136958ms)
+✔ draft expires at 30 minutes without extending retention on read (0.070417ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 108.485666

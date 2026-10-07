@@ -1,0 +1,26 @@
+node_modules/
+.expo/
+dist/
+site-source/
+.env*
+!.env.example
+*.keystore
+*.p12
+*.mobileprovision
+
+native-export/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Local artifacts and credentials excluded from recovery checkpoint
+deliverables/
+incoming-context/
+*.tar.gz
+*.zip
+*.pem
+*.key
+*.secret
+*.p8
+.DS_Store
+__pycache__/

@@ -1,0 +1,62 @@
+[
+  {
+    "caption": "Москва-Сити",
+    "tabs": [
+      {
+        "text": "Астрахань",
+        "selected": "false",
+        "border": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "text": "Москва",
+        "selected": "true",
+        "border": "rgb(217, 57, 22)"
+      },
+      {
+        "text": "Краснодар",
+        "selected": "false",
+        "border": "rgba(0, 0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "caption": "Development Plaza",
+    "tabs": [
+      {
+        "text": "Астрахань",
+        "selected": "false",
+        "border": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "text": "Москва",
+        "selected": "false",
+        "border": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "text": "Краснодар",
+        "selected": "true",
+        "border": "rgb(217, 57, 22)"
+      }
+    ]
+  },
+  {
+    "caption": "КРК «Октябрь»",
+    "tabs": [
+      {
+        "text": "Астрахань",
+        "selected": "true",
+        "border": "rgb(217, 57, 22)"
+      },
+      {
+        "text": "Москва",
+        "selected": "false",
+        "border": "rgba(0, 0, 0, 0)"
+      },
+      {
+        "text": "Краснодар",
+        "selected": "false",
+        "border": "rgba(0, 0, 0, 0)"
+      }
+    ]
+  }
+]

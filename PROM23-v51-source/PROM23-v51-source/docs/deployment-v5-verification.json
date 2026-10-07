@@ -1,0 +1,11 @@
+{
+  "release": "v0.5-20260911-01",
+  "previewHttp": 200,
+  "htmlMatchesLocal": true,
+  "sections": 226,
+  "productionThemeFilesUnchanged": 82,
+  "productionProcessesUnchanged": true,
+  "productionHttpBefore": 200,
+  "productionHttpAfter": 200,
+  "dnsChanged": false
+}

@@ -1,0 +1,359 @@
+{
+  "checkedAt": "2026-09-11T15:15:19.491Z",
+  "base": "http://127.0.0.1:8087",
+  "persona": "Снабженец, 56 лет. Нужно передать список оборудования и понять условия поставки; плохо переносит потерю введённых данных и мелкие элементы.",
+  "checks": [
+    {
+      "name": "Responsive home / product shelf / B2B at 320,390,430,768,844 landscape",
+      "status": "passed"
+    },
+    {
+      "name": "Phone/contact visibility and Back",
+      "status": "passed",
+      "detail": "No telephone control activated."
+    },
+    {
+      "name": "Hero photo toggles, project link and return",
+      "status": "passed"
+    },
+    {
+      "name": "Search history, persistence and menu Back",
+      "status": "passed"
+    },
+    {
+      "name": "Popular continuation preserves uniqueness",
+      "status": "passed",
+      "detail": {
+        "before": 6,
+        "after": 10
+      }
+    },
+    {
+      "name": "B2B radio routes to selection and quick specification",
+      "status": "passed"
+    },
+    {
+      "name": "B2B radio labels remain within their controls at 320 CSS px",
+      "status": "passed",
+      "detail": {
+        "control": {
+          "x": 164,
+          "right": 288
+        },
+        "children": [
+          {
+            "text": "Нужен подбор",
+            "x": 193.234375,
+            "right": 278
+          }
+        ]
+      }
+    },
+    {
+      "name": "Quick-order validates quantity and preserves known/unknown lines in quote and Back",
+      "status": "passed",
+      "detail": {
+        "specificationPreserved": true,
+        "queryCarriesSpecification": true
+      }
+    },
+    {
+      "name": "Projects gallery all tabs, information, Back and heading hierarchy",
+      "status": "failed",
+      "error": "Home contains more than one H1 after project gallery loads\n\n3 !== 1\n"
+    },
+    {
+      "name": "Delivery/payment/account explain terms and return routes",
+      "status": "passed"
+    },
+    {
+      "name": "City modal focus trap, Escape, landscape action",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced motion, no page errors or external mutations",
+      "status": "passed",
+      "detail": "Reduced-motion browser preference; no external form submit attempted."
+    }
+  ],
+  "layouts": [
+    {
+      "name": "home-320x844",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "unnamed": [],
+      "outside": [
+        {
+          "name": "Раздел каталога: Подмости строительные",
+          "x": 226,
+          "width": 98
+        }
+      ],
+      "tiny": []
+    },
+    {
+      "name": "popular-320",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "unnamed": [],
+      "outside": [
+        {
+          "name": "Раздел каталога: Подмости строительные",
+          "x": 226,
+          "width": 98
+        }
+      ],
+      "tiny": []
+    },
+    {
+      "name": "business-320",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "home-390x844",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "outside": [
+        {
+          "name": "Раздел каталога: Сетка, тенты, брезенты",
+          "x": 359,
+          "width": 98
+        }
+      ],
+      "tiny": []
+    },
+    {
+      "name": "popular-390",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "outside": [
+        {
+          "name": "Раздел каталога: Сетка, тенты, брезенты",
+          "x": 331,
+          "width": 98
+        }
+      ],
+      "tiny": []
+    },
+    {
+      "name": "business-390",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "home-430x932",
+      "width": 430,
+      "height": 932,
+      "documentWidth": 430,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "popular-430",
+      "width": 430,
+      "height": 932,
+      "documentWidth": 430,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "business-430",
+      "width": 430,
+      "height": 932,
+      "documentWidth": 430,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "home-768x1024",
+      "width": 768,
+      "height": 1024,
+      "documentWidth": 768,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "popular-768",
+      "width": 768,
+      "height": 1024,
+      "documentWidth": 768,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "business-768",
+      "width": 768,
+      "height": 1024,
+      "documentWidth": 768,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "home-844x390",
+      "width": 844,
+      "height": 390,
+      "documentWidth": 844,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "popular-844",
+      "width": 844,
+      "height": 390,
+      "documentWidth": 844,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "business-844",
+      "width": 844,
+      "height": 390,
+      "documentWidth": 844,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "contacts-320",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "contacts-390",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "business-radio-320",
+      "width": 320,
+      "height": 844,
+      "documentWidth": 320,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "projects",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "service-delivery",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "service-payment",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    },
+    {
+      "name": "service-account",
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390,
+      "unnamed": [],
+      "outside": [],
+      "tiny": []
+    }
+  ],
+  "pageErrors": [],
+  "blockedWrites": [],
+  "localPosts": [
+    "/api/sessions",
+    "/api/actions"
+  ],
+  "limitations": [
+    "Chromium / Expo Web only; no native certification.",
+    "No external submissions, payments or telephone actions."
+  ],
+  "projectMetadata": {
+    "title": "Строительное оборудование и инструмент | Промышленник",
+    "h1": [
+      "От нашего цеха\nдо вашего объекта",
+      "Оборудование в деле",
+      "Development Plaza"
+    ],
+    "headings": [
+      {
+        "text": "От нашего цеха\nдо вашего объекта",
+        "level": "1"
+      },
+      {
+        "text": "Каталог",
+        "level": "2"
+      },
+      {
+        "text": "Популярные товары",
+        "level": "2"
+      },
+      {
+        "text": "Один поставщик.\nВся комплектация.",
+        "level": "2"
+      },
+      {
+        "text": "Оборудование в деле",
+        "level": "H1"
+      },
+      {
+        "text": "Development Plaza",
+        "level": "H1"
+      },
+      {
+        "text": "Что планируете делать?",
+        "level": "2"
+      },
+      {
+        "text": "От выбора до получения",
+        "level": "2"
+      }
+    ]
+  },
+  "summary": {
+    "passed": 11,
+    "failed": 1
+  }
+}

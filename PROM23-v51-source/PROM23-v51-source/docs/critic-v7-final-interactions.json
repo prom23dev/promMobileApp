@@ -1,0 +1,100 @@
+[
+  {
+    "test": "project projects-krc-oktyabr-astrakhan",
+    "box": {
+      "x": 16,
+      "y": 161.984375,
+      "width": 358,
+      "height": 579.65625
+    },
+    "imgs": [
+      {
+        "w": 358,
+        "h": 238.65625
+      },
+      {
+        "w": 358,
+        "h": 238.65625
+      },
+      {
+        "w": 358,
+        "h": 238.65625
+      }
+    ],
+    "pass": true
+  },
+  {
+    "test": "project projects-moscow-city",
+    "box": {
+      "x": 16,
+      "y": 161.984375,
+      "width": 358,
+      "height": 579.65625
+    },
+    "imgs": [
+      {
+        "w": 358,
+        "h": 238.65625
+      },
+      {
+        "w": 358,
+        "h": 238.65625
+      },
+      {
+        "w": 358,
+        "h": 238.65625
+      }
+    ],
+    "pass": true
+  },
+  {
+    "test": "project projects-development-plaza-krasnodar",
+    "box": {
+      "x": 16,
+      "y": 161.984375,
+      "width": 358,
+      "height": 579.65625
+    },
+    "imgs": [
+      {
+        "w": 358,
+        "h": 238.65625
+      },
+      {
+        "w": 358,
+        "h": 238.65625
+      },
+      {
+        "w": 358,
+        "h": 238.65625
+      }
+    ],
+    "pass": true
+  },
+  {
+    "test": "project native route",
+    "url": "http://127.0.0.1:8087/blog/projects-development-plaza-krasnodar",
+    "pass": true
+  },
+  {
+    "test": "B2B choice CTA",
+    "pass": true
+  },
+  {
+    "test": "B2B process disclosure",
+    "pass": true
+  },
+  {
+    "test": "empty list is truly empty",
+    "pass": true
+  },
+  {
+    "test": "no SKU escape",
+    "url": "http://127.0.0.1:8087/forms/quote?expectedContext=personal",
+    "pass": true
+  },
+  {
+    "test": "quick-order320",
+    "pass": true
+  }
+]

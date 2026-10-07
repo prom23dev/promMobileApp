@@ -1,0 +1,39 @@
+▶ Публичный снимок каталога PROM23 от 11.09.2026
+  ✔ не подменяет неизвестный остаток снимка искусственным количеством (0.443542ms)
+  ✔ сохраняет все 20 корней и их порядок из меню сайта, включая леса перед металлом (0.424083ms)
+  ✔ не содержит повторных ID, URL, отсутствующих родителей или повторных ссылок на потомков (1.433833ms)
+  ✔ полностью достижим из корней без циклов и сохраняет исходный DFS-порядок четырёх уровней (0.2485ms)
+  ✔ связывает каждый товар с точной цепочкой разделов его исходного URL (0.734166ms)
+  ✔ productIds на каждом уровне включает ровно свои товары и товары потомков, без чужих SKU (0.975125ms)
+  ✔ находит товар на четвёртом уровне и не помещает вышку в посторонний корневой раздел (0.092333ms)
+  ✔ сохраняет связь по section.productIds для старого товара без sectionIds (0.06325ms)
+  ✔ останавливает построение хлебных крошек при повреждённом циклическом дереве (0.113125ms)
+✔ Публичный снимок каталога PROM23 от 11.09.2026 (5.230958ms)
+▶ Корзины личных и корпоративных покупок
+  ✔ изолирует корзины при смене контекста (0.967542ms)
+  ✔ ограничивает количество остатком и отклоняет дробные/отрицательные значения (0.11225ms)
+  ✔ удаляет нулевое количество и не добавляет отсутствующий товар (0.100584ms)
+  ✔ считает целые копейки и отклоняет устаревшие SKU/остатки (0.252209ms)
+  ✔ не выдаёт неизвестный остаток за ноль или прежний искусственный лимит20 (0.124292ms)
+  ✔ соблюдает отдельный лимит черновика и новые реальные остатки (0.141666ms)
+✔ Корзины личных и корпоративных покупок (2.4085ms)
+▶ Каталог
+  ✔ ищет слова независимо от регистра, учитывает артикул, категорию и сортировку (0.457667ms)
+  ✔ ограничивает сравнение шестью товарами и позволяет убрать выбранный (0.136166ms)
+✔ Каталог (0.70725ms)
+✔ source forms keep unchecked consent, valid related routes and source provenance (0.983459ms)
+✔ registration catches password mismatch and invalid email; OTP requires six digits (0.328792ms)
+✔ return renders and serializes only selected authorized order items (0.265417ms)
+✔ checkbox false is explicit; readonly identity cannot be supplied by form values (0.079708ms)
+✔ courier details retain source names and free text for both buyer contexts without becoming required (0.236125ms)
+✔ support video policy is scoped to order appeal and per-item returns, not all photo forms (0.228875ms)
+✔ return media stays attached to the selected authorized product, never stale or forged rows (0.161ms)
+✔ disconnected form transport never sends or fabricates acceptance (0.358791ms)
+ℹ tests 25
+ℹ suites 3
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 196.896

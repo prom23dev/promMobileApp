@@ -1,0 +1,250 @@
+{
+  "Краснодар": {
+    "id": "2868",
+    "hours": [
+      "Пн-Пт: с 8:00 до 17:00",
+      "Сб: с 09:00 до 15:00",
+      "Вс: выходной"
+    ],
+    "coordinates": [
+      45.153215,
+      38.989893
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/4bf/uo9o9xr5r0f7tj8dikeirjfgw9c7izfx.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Москва": {
+    "id": "2863",
+    "hours": [
+      "Пн-Чт: с 9:00 до 18:00",
+      "Пт: с 9:00 до 17:00",
+      "Сб: с 9:00 до 14:00",
+      "Вс: выходной"
+    ],
+    "coordinates": [
+      55.66705420801,
+      37.984650982532
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/aee/2x9e4pypdgfl13g3mhqje8wj6zio2hgx.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Ростов-на-Дону": {
+    "id": "2864",
+    "hours": [
+      "Пн-Чт: с 9:00 до 18:00",
+      "Пт: с 9:00 до 17:00",
+      "Сб, Вс: выходной"
+    ],
+    "coordinates": [
+      47.208343,
+      39.608194
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/267/x328gi53ov2hc7glyl6e3zdtaq59xew0.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Санкт-Петербург": {
+    "id": "2862",
+    "hours": [
+      "Пн-Пт: с 9:00 до 18:00"
+    ],
+    "coordinates": [
+      60.059131,
+      30.364656
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/cbc/fw31clss4v68szkym2malvw1tsatvopd.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Симферополь": {
+    "id": "2869",
+    "hours": [
+      "Пн-Чт: с 8:00 до 17:00",
+      "Пт: с 8:00 - 16:00",
+      "Сб: с 09:00 до 14:00",
+      "Вс: выходной"
+    ],
+    "coordinates": [
+      44.972090826497,
+      34.151870692838
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/e38/qh9h478m24ez31bw17v4j14ewo71rnit.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Пермь": {
+    "id": "2866",
+    "hours": [
+      "Пн-Пт: с 9:00 до 18:00",
+      "перерыв: с 12:30 до 13:00",
+      "Сб, Вс: выходной"
+    ],
+    "coordinates": [
+      58.088570363932,
+      56.308798558741
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/bd0/hqmom7tk921ffwt0i8135p5se3im3fdi.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Пятигорск": {
+    "id": "2870",
+    "hours": [
+      "Пн-Чт: с 9:00 до 18:00",
+      "Пт: с 9:00 до 17:00",
+      "Сб: с 9:00 до 13:00",
+      "Вс: выходной"
+    ],
+    "coordinates": [
+      44.118238,
+      42.954366
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/d96/zlc4gc2nzgoc72040yfxu8xwfkzh60ae.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Грозный": {
+    "id": "2865",
+    "hours": [
+      "Пн-Пт: с 9:00 до 17:30",
+      "Сб: с 9:00 до 17:00",
+      "Вс: выходной"
+    ],
+    "coordinates": [
+      43.293100436076,
+      45.819286104112
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/f9b/if8euvsafgm2qcfift39iamaacw959tb.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Тюмень": {
+    "id": "2876",
+    "hours": [
+      "Пн-Пт: с 08:00 до 17:00",
+      "Сб, Вс: выходной"
+    ],
+    "coordinates": [
+      57.184675,
+      65.344451
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/81f/7uwtqc37vc9xs28jf44k6aswr8yt3kk1.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Луганск": {
+    "id": "2878",
+    "hours": [
+      "Пн-Пт: с 08:00 до 17:00"
+    ],
+    "coordinates": [
+      48.566749,
+      39.295616
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/e3b/8cllkur3mgngtopj0tw2yi1co5cusgf4.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Иркутск": {
+    "id": "2871",
+    "hours": [],
+    "coordinates": [
+      52.33901626373,
+      104.23091965935
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/857/v4jrol6frk8xqhydvsq2e5a64af7mf1r.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Тбилиси": {
+    "id": "24093",
+    "hours": [
+      "Пн-Пт: с 09:00 до 18:00",
+      "Сб, Вс: выходной"
+    ],
+    "coordinates": [
+      41.791357998746,
+      45.021888210026
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/iblock/a0a/fqw4uiffa8x77btcy0b177t9aq814gng/4f8f21bf51059a460b4a1898c56d84dd17e60f66-Ct8A9HkR.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Гудаута": {
+    "id": "2880",
+    "hours": [
+      "Пн-Пт: с 09:00 до 18:00",
+      "Сб: с 09:00 до 13:00"
+    ],
+    "coordinates": [
+      43.104649,
+      40.600834
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/fec/90jk9x55akqftsolnjtjqpthbay5mld2.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Ереван": {
+    "id": "2873",
+    "hours": [
+      "Пн-Чт: с 8:30 до 17:30",
+      "Пт: с 8:30 до 16:30",
+      "Сб: с 10:00 до 14:00",
+      "Вс: выходной"
+    ],
+    "coordinates": [
+      40.248523,
+      44.341849
+    ],
+    "photoUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/fe2/dky8zbow53n7g1wpais89stfv81x4all.webp",
+    "photoNote": "Published in the branch card on company website",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Астана": {
+    "id": "2882",
+    "hours": [
+      "Пн-Пт: с 09:00 до 18:00",
+      "Сб: с 9:00 до 13:00"
+    ],
+    "coordinates": [
+      51.181553,
+      71.491685
+    ],
+    "photoUrl": null,
+    "photoNote": "Duplicate source picture excluded",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  },
+  "Минск": {
+    "id": "3194",
+    "hours": [
+      "Пн-Пт: с 8:00 до 17:00",
+      "Сб: с 09:00 до 15:00",
+      "Вс: выходной"
+    ],
+    "coordinates": [
+      54.023170169979,
+      28.065347817899
+    ],
+    "photoUrl": null,
+    "photoNote": "Duplicate source picture excluded",
+    "sourceUrl": "https://prom.myfast.space/contacts/",
+    "checkedAt": "2026-09-11"
+  }
+}

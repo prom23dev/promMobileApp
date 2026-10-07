@@ -1,0 +1,218 @@
+[
+  {
+    "id": "2868",
+    "name": "Краснодар",
+    "coords": [
+      45.153215,
+      38.989893
+    ],
+    "addr": "г. Краснодар ул. Карла Гусника, д. 17/20 (р-н Витаминкомбината)",
+    "worktime": "Пн-Пт: с 8:00 до 17:00,\r\nСб: с 09:00 до 15:00,\r\nВс: выходной",
+    "phone": "+7 (861) 225-00-90",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/4bf/uo9o9xr5r0f7tj8dikeirjfgw9c7izfx.webp"
+  },
+  {
+    "id": "2863",
+    "name": "Москва",
+    "coords": [
+      55.66705420801,
+      37.984650982532
+    ],
+    "addr": "Московская область, Люберецкий район, пос. Красково, ул. 2-ая Заводская, стр. 5а",
+    "worktime": "Пн-Чт: с 9:00 до 18:00,\r\nПт: с 9:00 до 17:00,\r\nСб: с 9:00 до 14:00,\r\nВс: выходной",
+    "phone": "+7 (495) 640-80-81",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/aee/2x9e4pypdgfl13g3mhqje8wj6zio2hgx.webp"
+  },
+  {
+    "id": "2864",
+    "name": "Ростов-на-Дону",
+    "coords": [
+      47.208343,
+      39.608194
+    ],
+    "addr": "г. Ростов-на-Дону, пер.Машиностроительный 16, офис 23",
+    "worktime": "Пн-Чт: с 9:00 до 18:00,\r\nПт: с 9:00 до 17:00,\r\nСб, Вс: выходной",
+    "phone": "+7 (928) 903-63-88",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/267/x328gi53ov2hc7glyl6e3zdtaq59xew0.webp"
+  },
+  {
+    "id": "2862",
+    "name": "Санкт-Петербург",
+    "coords": [
+      60.059131,
+      30.364656
+    ],
+    "addr": "г. Санкт-Петербург, ул. Домостроительная д.1 Литер А, офис 702",
+    "worktime": "Пн-Пт: с 9:00 до 18:00\r\n",
+    "phone": "+7 (812) 209-69-00",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/cbc/fw31clss4v68szkym2malvw1tsatvopd.webp"
+  },
+  {
+    "id": "2869",
+    "name": "Симферополь",
+    "coords": [
+      44.972090826497,
+      34.151870692838
+    ],
+    "addr": "г. Симферополь                    ул. Кубанская, 22А",
+    "worktime": "Пн-Чт: с 8:00 до 17:00,\r\nПт: с 8:00 - 16:00,\r\nСб: с 09:00 до 14:00,\r\nВс: выходной",
+    "phone": "+7 (978) 149-25-90",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/e38/qh9h478m24ez31bw17v4j14ewo71rnit.webp"
+  },
+  {
+    "id": "2866",
+    "name": "Пермь",
+    "coords": [
+      58.088570363932,
+      56.308798558741
+    ],
+    "addr": "г. Пермь ул.Новогайвинская, д.102 оф.2",
+    "worktime": "Пн-Пт: с 9:00 до 18:00,\r\nперерыв: с 12:30 до 13:00,\r\nСб, Вс: выходной",
+    "phone": "+7 (982) 492-33-14",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/bd0/hqmom7tk921ffwt0i8135p5se3im3fdi.webp"
+  },
+  {
+    "id": "2870",
+    "name": "Пятигорск",
+    "coords": [
+      44.118238,
+      42.954366
+    ],
+    "addr": "Ставропольский край, г. Лермонтов, ул. Промышленная, 15/6",
+    "worktime": "Пн-Чт: с 9:00 до 18:00,\r\nПт: с 9:00 до 17:00,\r\nСб: с 9:00 до 13:00,\r\nВс: выходной",
+    "phone": "+7 (905) 468-22-88",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/d96/zlc4gc2nzgoc72040yfxu8xwfkzh60ae.webp"
+  },
+  {
+    "id": "2865",
+    "name": "Грозный",
+    "coords": [
+      43.293100436076,
+      45.819286104112
+    ],
+    "addr": "Чеченская Республика, городской округ г. Аргун, с. Бердыкель, ул. Торговая, 13",
+    "worktime": "Пн-Пт: с 9:00 до 17:30,\r\nСб: с 9:00 до 17:00,\r\nВс: выходной",
+    "phone": "+7 (938) 992-1-992",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/f9b/if8euvsafgm2qcfift39iamaacw959tb.webp"
+  },
+  {
+    "id": "2876",
+    "name": "Тюмень",
+    "coords": [
+      57.184675,
+      65.344451
+    ],
+    "addr": "г. Тюмень, ул. Сергея Ильюшина 3В, стр. 3",
+    "worktime": "Пн-Пт: с 08:00 до 17:00,\r\nСб, Вс: выходной",
+    "phone": "+7 (963) 454-74-04",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/81f/7uwtqc37vc9xs28jf44k6aswr8yt3kk1.webp"
+  },
+  {
+    "id": "2878",
+    "name": "Луганск",
+    "coords": [
+      48.566749,
+      39.295616
+    ],
+    "addr": "г. Луганск, ул. Луначарского 95, офис 182",
+    "worktime": "Пн-Пт: с 08:00 до 17:00,",
+    "phone": "+7 (959) 551-00-06",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/e3b/8cllkur3mgngtopj0tw2yi1co5cusgf4.webp"
+  },
+  {
+    "id": "2871",
+    "name": "Иркутск",
+    "coords": [
+      52.33901626373,
+      104.23091965935
+    ],
+    "addr": "Иркутск, ул. Мира д.3",
+    "worktime": "",
+    "phone": "+7 (3952) 48 58 80",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/857/v4jrol6frk8xqhydvsq2e5a64af7mf1r.webp"
+  },
+  {
+    "id": "24093",
+    "name": "Тбилиси",
+    "coords": [
+      41.791357998746,
+      45.021888210026
+    ],
+    "addr": "Муниципалитет Гардабани, село Марткопи",
+    "worktime": "Пн-Пт: с 09:00 до 18:00,\r\nСб, Вс: выходной",
+    "phone": "+995591442467",
+    "picture": "/upload/iblock/a0a/fqw4uiffa8x77btcy0b177t9aq814gng/4f8f21bf51059a460b4a1898c56d84dd17e60f66-Ct8A9HkR.webp"
+  },
+  {
+    "id": "2880",
+    "name": "Гудаута",
+    "coords": [
+      43.104649,
+      40.600834
+    ],
+    "addr": "Республика Абхазия, г. Гудаута, ул. Гердзмава, 4",
+    "worktime": "Пн-Пт: с 09:00 до 18:00\r\nСб: с 09:00 до 13:00",
+    "phone": "+7 (940)979-69-69",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/fec/90jk9x55akqftsolnjtjqpthbay5mld2.webp"
+  },
+  {
+    "id": "2873",
+    "name": "Ереван",
+    "coords": [
+      40.248523,
+      44.341849
+    ],
+    "addr": "0012, Республика Армения г. Ереван ул. В.Вагаршяна, 20",
+    "worktime": "Пн-Чт: с 8:30 до 17:30, \r\nПт: с 8:30 до 16:30,\r\nСб: с 10:00 до 14:00,\r\nВс: выходной",
+    "phone": "+374-992-840-88",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/fe2/dky8zbow53n7g1wpais89stfv81x4all.webp"
+  },
+  {
+    "id": "2883",
+    "name": "Баку",
+    "coords": [
+      40.419574,
+      49.878202
+    ],
+    "addr": "Баку, Наримановский район, улица Алескера Гаибова, 10/12 ",
+    "worktime": "Пн.-Пт. 9:00 - 18:00\r\nСб. 10:00-14:00\r\nВс. выходной",
+    "phone": "+994 55 388 22 82",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/c53/zk7ykb5d23ep5fj5b7djb9lp4v68uo6k.webp"
+  },
+  {
+    "id": "2882",
+    "name": "Астана",
+    "coords": [
+      51.181553,
+      71.491685
+    ],
+    "addr": "Республика Казахстан, г. Астана, ул. Пушкина 30",
+    "worktime": "Пн-Пт: с 09:00 до 18:00\r\nСб: с 9:00 до 13:00",
+    "phone": "+7 (701) 982-36-15",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/3ea/vtwexm1qrzs5hya0xperxrtvazkm0yul.webp"
+  },
+  {
+    "id": "3194",
+    "name": "Минск",
+    "coords": [
+      54.023170169979,
+      28.065347817899
+    ],
+    "addr": "222201 г.Смолевичи, ул.Магистральная 3, каб.3",
+    "worktime": "Пн-Пт: с 8:00 до 17:00,\r\nСб: с 09:00 до 15:00,\r\nВс: выходной",
+    "phone": "+375 25 971 51 36",
+    "picture": "/upload/dev2fun.imagecompress/webp/iblock/3ea/vtwexm1qrzs5hya0xperxrtvazkm0yul.webp"
+  },
+  {
+    "id": "2872",
+    "name": "Бишкек",
+    "coords": [
+      42.873776,
+      74.576859
+    ],
+    "addr": "720001, Кыргызстан, г. Бишкек, ул. Калыка Акиева 66 (пер. Токтогула), ТЦ \"Весна\", 3-й этаж, офис C3",
+    "worktime": "Пн-Чт: с 8:30 до 17:30, \r\nПт: с 8:30 до 16:30,\r\nСб: с 10:00 до 14:00,\r\nВс: выходной",
+    "phone": "+996 (776) 00-66-55",
+    "picture": "/upload/iblock/289/qbnkx8q05wxaib94dbd33saxt9k1kjq5/bnevp2xshequwbomwme1mk859jq97d3q%5B1%5D.jpg"
+  }
+]

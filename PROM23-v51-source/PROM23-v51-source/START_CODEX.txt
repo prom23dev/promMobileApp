@@ -1,0 +1,20 @@
+Продолжай проект PROM23.
+
+Перед любыми действиями полностью прочитай:
+
+AGENTS.md
+docs/PARITY_REQUIREMENTS.md
+docs/ACCEPTANCE_CHECKLIST.md
+docs/CURRENT_TASK.md
+docs/DECISIONS.md
+docs/PROGRESS.md
+
+Не полагайся на предыдущий chat context.
+
+Начни с CURRENT_TASK.md.
+
+После каждого законченного этапа обновляй PROGRESS.md.
+После любого нового продуктового/архитектурного решения обновляй DECISIONS.md.
+Если обнаружишь новую страницу, форму или функцию на prom.myfast.space или в source code — сразу обновляй PARITY_REQUIREMENTS.md.
+
+Не начинай новый redesign до завершения текущего recovery/parity sprint.

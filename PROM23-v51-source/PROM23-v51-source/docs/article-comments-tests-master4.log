@@ -1,0 +1,10 @@
+✔ disabled article comment contract uses the verified source entity ID and does not expose fabricated posts (0.735292ms)
+✔ article comment adapter makes no network requests and never reports accepted/moderated success (0.388ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 167.374292

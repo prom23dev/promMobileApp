@@ -1,0 +1,12 @@
+import React, { type ReactNode, type ComponentProps, useState } from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { ArrowRight } from 'lucide-react-native';
+import { colors } from './theme';
+export function FranchiseTap({style,...props}:ComponentProps<typeof Pressable>) { const [focus,setFocus]=useState(false); return <Pressable {...props} onFocus={()=>setFocus(true)} onBlur={()=>setFocus(false)} style={state=>[typeof style==='function'?style(state):style,focus&&{outlineStyle:'solid',outlineColor:colors.accent,outlineWidth:2,outlineOffset:3},state.pressed&&{opacity:.75}]}/>; }
+export function FranchiseHeading({children,level=2}:{children:ReactNode;level?:2|3}) { return <Text accessibilityRole="header" aria-level={level} style={level===2?fs.h2:fs.h3}>{children}</Text>; }
+export function FranchiseText({children}:{children:ReactNode}) { return <Text selectable style={fs.body}>{children}</Text>; }
+export function FranchiseAction({label,onPress,primary=false,disabled=false}:{label:string;onPress:()=>void;primary?:boolean;disabled?:boolean}) { return <FranchiseTap accessibilityRole="button" accessibilityLabel={label} disabled={disabled} accessibilityState={{disabled}} onPress={onPress} style={[fs.action,primary&&{backgroundColor:colors.accent,borderColor:colors.accent},disabled&&{opacity:.5}]}><Text style={[fs.actionText,primary&&{color:colors.white}]}>{label}</Text><ArrowRight size={18} color={primary?colors.white:colors.accent}/></FranchiseTap>; }
+export const fs=StyleSheet.create({
+  body:{fontSize:15,lineHeight:23,color:colors.ink},h2:{fontSize:23,lineHeight:29,fontWeight:'700',letterSpacing:-.3,color:colors.ink},h3:{fontSize:17,lineHeight:24,fontWeight:'700',color:colors.ink},caption:{fontSize:12,lineHeight:18,color:colors.muted},label:{fontSize:14,lineHeight:20,fontWeight:'600',color:colors.ink},eyebrow:{fontSize:11,lineHeight:17,letterSpacing:.7,fontWeight:'700',textTransform:'uppercase',color:colors.muted},
+  action:{minHeight:48,padding:12,borderRadius:10,borderWidth:1,borderColor:colors.line,backgroundColor:colors.white,flexDirection:'row',alignItems:'center',justifyContent:'space-between',gap:10},actionText:{fontSize:14,lineHeight:21,fontWeight:'600',color:colors.ink,flexShrink:1},grow:{flex:1,minWidth:0},row:{flexDirection:'row',gap:12},wrap:{flexDirection:'row',flexWrap:'wrap',gap:8},card:{backgroundColor:colors.white,borderRadius:16,padding:18,gap:12},
+});

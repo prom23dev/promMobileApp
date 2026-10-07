@@ -1,0 +1,20 @@
+✔ GAR fixture preserves verified station/village/settlement/hamlet/federal-city identities and administrative labels (55.126417ms)
+✔ location search ranks real exact/prefix matches, accepts ё/e, typo, transliteration and wrong keyboard layout (33.161542ms)
+✔ homonyms remain distinct, carry real chains, and cannot silently migrate to the first result (32.173084ms)
+✔ search/route validation rejects control chars, oversized or duplicate queries, unknown keys and free-form IDs (27.709291ms)
+✔ selection persists authoritative IDs, preserves both carts, revokes only unconsumed own quotes and isolates sessions (32.90875ms)
+✔ CAS/context reject stale writes, body injection, unknown IDs and free text without changing selection (26.108958ms)
+✔ B2C and B2B share geography without physical DEFAULT_CITY reset; revalidation reports unavailable without cart changes (28.360417ms)
+✔ recent choices deduplicate and cap at eight; deleting owner cascades location and revokes access (41.249084ms)
+✔ missing, invalid or replaced official index fails closed or reloads atomically without keeping removed IDs (78.931166ms)
+✔ HTTP exposes official suggestions/details with exact methods, query validation, noindex and existing origin/auth/body protections (110.535ms)
+✔ HTTP location lifecycle persists IDs and both session/cart boundaries; stale mutations and old free text cannot override it (71.240625ms)
+✔ HTTP legacy cities infer only unique verified names; invalid and homonymous labels stay unselected without GET writes (51.928042ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 666.309458

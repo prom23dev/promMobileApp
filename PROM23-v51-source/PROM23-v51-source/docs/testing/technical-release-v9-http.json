@@ -1,0 +1,239 @@
+{
+  "at": "2026-09-11T18:52:19.236968+00:00",
+  "base": "http://127.0.0.1:8087",
+  "method": "GET only, no session creation",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 1559,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+        "ETag": null,
+        "Vary": "Accept-Encoding"
+      },
+      "entry": [
+        "/_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js"
+      ],
+      "lang": [
+        "ru"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"noindex, nofollow\" />"
+      ]
+    },
+    {
+      "path": "/catalog",
+      "status": 200,
+      "bytes": 1559,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+        "ETag": null,
+        "Vary": "Accept-Encoding"
+      }
+    },
+    {
+      "path": "/information/delivery",
+      "status": 200,
+      "bytes": 1559,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+        "ETag": null,
+        "Vary": "Accept-Encoding"
+      }
+    },
+    {
+      "path": "/information/production",
+      "status": 200,
+      "bytes": 1559,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+        "ETag": null,
+        "Vary": "Accept-Encoding"
+      }
+    },
+    {
+      "path": "/account",
+      "status": 200,
+      "bytes": 1559,
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+        "ETag": null,
+        "Vary": "Accept-Encoding"
+      }
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 26,
+      "headers": {
+        "Content-Type": "text/plain",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": null,
+        "Content-Security-Policy": null,
+        "ETag": null,
+        "Vary": null
+      },
+      "body": "User-agent: *\nDisallow: /\n"
+    },
+    {
+      "path": "/api/v1/app-config",
+      "status": 200,
+      "bytes": 853,
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store",
+        "Content-Security-Policy": null,
+        "ETag": null,
+        "Vary": "Origin"
+      },
+      "data": {
+        "schemaVersion": 1,
+        "revision": "app-v7-1",
+        "environment": "preview",
+        "capabilities": {
+          "publicCatalog": true,
+          "homeConfiguration": true,
+          "liveCatalog": false,
+          "liveWrites": false,
+          "authentication": false,
+          "organizations": false,
+          "checkout": false,
+          "payments": false,
+          "orderWrites": false,
+          "formWrites": false,
+          "consentWrites": false,
+          "notificationWrites": false,
+          "pushRegistration": false
+        },
+        "catalog": {
+          "mode": "public-snapshot",
+          "defaultCity": "Краснодар",
+          "cities": [
+            "Краснодар",
+            "Москва",
+            "Ростов-на-Дону",
+            "Санкт-Петербург",
+            "Симферополь",
+            "Пермь",
+            "Пятигорск",
+            "Грозный",
+            "Тюмень",
+            "Луганск",
+            "Иркутск",
+            "Тбилиси",
+            "Гудаута",
+            "Ереван",
+            "Баку",
+            "Астана",
+            "Минск",
+            "Бишкек"
+          ],
+          "contexts": [
+            "personal",
+            "organization"
+          ],
+          "defaultPageSize": 20,
+          "maxPageSize": 50
+        }
+      }
+    },
+    {
+      "path": "/api/v1/home",
+      "status": 200,
+      "bytes": 790,
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store",
+        "Content-Security-Policy": null,
+        "ETag": null,
+        "Vary": "Origin"
+      },
+      "revision": "home-v9-1"
+    },
+    {
+      "path": "/api/v1/catalog?limit=1",
+      "status": 200,
+      "bytes": 3441,
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store",
+        "Content-Security-Policy": null,
+        "ETag": null,
+        "Vary": "Origin"
+      },
+      "provenance": {
+        "mode": "public-snapshot",
+        "importedAt": "2026-09-11T06:12:03.000Z",
+        "revision": "catalog-fff517d92d0f700c62c5afcd",
+        "pricing": "snapshot",
+        "stock": "unverified",
+        "regionalPricing": false,
+        "checkoutEligible": false
+      }
+    },
+    {
+      "path": "/api/v1/content/pages/about",
+      "status": 200,
+      "bytes": 3810,
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "public, max-age=300, must-revalidate",
+        "Content-Security-Policy": null,
+        "ETag": "\"7779e2417080d3cabd4e963f3872976914b13a7b8ae32f7b559952dea35ae135\"",
+        "Vary": "Origin"
+      },
+      "conditionalStatus": 304,
+      "conditionalBytes": 0
+    },
+    {
+      "path": "/api/v1/products/prom-2414/details",
+      "status": 200,
+      "bytes": 7601,
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store",
+        "Content-Security-Policy": null,
+        "ETag": null,
+        "Vary": "Origin"
+      }
+    },
+    {
+      "path": "/api/v1/products/prom-2414/availability",
+      "status": 401,
+      "bytes": 112,
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "X-Robots-Tag": "noindex, nofollow",
+        "Cache-Control": "no-store",
+        "Content-Security-Policy": null,
+        "ETag": null,
+        "Vary": "Origin"
+      },
+      "error": {
+        "code": "UNAUTHORIZED",
+        "message": "Создайте локальную тестовую сессию."
+      }
+    }
+  ]
+}

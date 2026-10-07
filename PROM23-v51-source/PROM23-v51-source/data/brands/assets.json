@@ -1,0 +1,156 @@
+{
+  "alumet": {
+    "file": "alumet-original.svg",
+    "originalPath": "https://en.alumet.ru/doc-files/cat_9_compressed.pdf",
+    "officialSourceReviewed": true,
+    "provenance": "Official catalogue cover, original blue vector logo extracted unchanged; clip 30,93,568,151 pt.",
+    "outputFile": "alumet-original.svg",
+    "officialWebsite": "https://alumet.ru/",
+    "verified": true,
+    "publicPath": "/brand-assets/alumet-original.svg",
+    "sha256": "72d0aa006d628e72df5a0417c9c2e09ce97224fc6e161bbee32b48b390d3ffd8",
+    "retrievedAt": "2026-09-18"
+  },
+  "afacan": {
+    "file": "afacan.png",
+    "originalPath": "https://www.afacan.com.tr/wp-content/uploads/2025-LOGO-r01-tr.png",
+    "officialWebsite": "https://www.afacan.com.tr/",
+    "officialSourceReviewed": true,
+    "provenance": "Original logo from official website",
+    "verified": true,
+    "publicPath": "/brand-assets/afacan.png",
+    "sha256": "c72b521659d70d942a31ca6d78c3cda2e27412e8ff9ca7e4763d6900a354e88b",
+    "retrievedAt": "2026-09-18"
+  },
+  "zhfk": {
+    "file": "zhfk.svg",
+    "originalPath": "https://www.plyplant.com/themes/plyplant/assets/svg/logo-header.svg",
+    "officialWebsite": "https://www.plyplant.com/",
+    "officialSourceReviewed": true,
+    "provenance": "Original logo from official website",
+    "verified": true,
+    "publicPath": "/brand-assets/zhfk.svg",
+    "sha256": "438c96d547edbf8987e845063bdce1337661b7085fdc053108cfb769b97d4e68",
+    "retrievedAt": "2026-09-18"
+  },
+  "stroymash": {
+    "file": "stroymash.png",
+    "originalPath": "https://lzsom.ru/wa-data/public/site/themes/theme//img/logo-top.png",
+    "officialWebsite": "https://lzsom.ru/",
+    "officialSourceReviewed": true,
+    "provenance": "Original logo from official website",
+    "verified": true,
+    "publicPath": "/brand-assets/stroymash.png",
+    "sha256": "500e2a3aaf02fd112cf5be4006ac97f6a4084ce7c21a8dd4777e1e776d303531",
+    "retrievedAt": "2026-09-18"
+  },
+  "tisel-technics": {
+    "file": "tisel-technics.svg",
+    "originalPath": "https://static.tildacdn.com/tild6535-6364-4236-b163-323763383031/Tisel_logo.svg",
+    "officialWebsite": "https://tiseltechnics.ru/",
+    "officialSourceReviewed": true,
+    "provenance": "Original logo from official website",
+    "verified": true,
+    "publicPath": "/brand-assets/tisel-technics.svg",
+    "sha256": "0a9638c0671669af492c20d22331a608cd8ae734b420eea0f763ecd7f83b9983",
+    "retrievedAt": "2026-09-18"
+  },
+  "bestweld": {
+    "file": "bestweld.png",
+    "originalPath": "https://www.bestweld.ru/tmpl_img/logo.png",
+    "officialWebsite": "https://www.bestweld.ru/",
+    "officialSourceReviewed": true,
+    "provenance": "Original logo from official website",
+    "verified": true,
+    "publicPath": "/brand-assets/bestweld.png",
+    "sha256": "df9a1d99325a29bb994fb10ffdaf95c75440eff08d0118fe365e68a777f7ad83",
+    "retrievedAt": "2026-09-18"
+  },
+  "ballu": {
+    "file": "ballu.svg",
+    "originalPath": "https://www.ballu.ru/images/ballu_logo_2024.svg",
+    "officialWebsite": "https://www.ballu.ru/",
+    "officialSourceReviewed": true,
+    "provenance": "Original logo from official website",
+    "verified": true,
+    "publicPath": "/brand-assets/ballu.svg",
+    "sha256": "fbbaf034aed04ec7380c3b70d29159d5fd26c2229acd5bef1b3568ba2049ae56",
+    "retrievedAt": "2026-09-18"
+  },
+  "sveza": {
+    "file": "sveza.svg",
+    "originalPath": "https://sveza.ru/local/templates/sveza/html/build/assets/img/logo.svg",
+    "officialWebsite": "https://sveza.ru/",
+    "officialSourceReviewed": true,
+    "provenance": "Original logo from official website",
+    "verified": true,
+    "publicPath": "/brand-assets/sveza.svg",
+    "sha256": "70091035faaf3165c99bc0a6bde4019a029ee708a21b9df0a630486e8f97896a",
+    "retrievedAt": "2026-09-18"
+  },
+  "centaure": {
+    "file": "centaure.png",
+    "originalPath": "https://centaure.fr/wp-content/uploads/2019/01/centaure-illustrator-noir-et-jaune-Converti.png",
+    "officialWebsite": "https://centaure.fr/",
+    "officialSourceReviewed": true,
+    "provenance": "Original logo from official website",
+    "verified": true,
+    "publicPath": "/brand-assets/centaure.png",
+    "sha256": "b0bf0bd0a2c337c09193b320e33d2d06470e2a5ded0b3bf1886ebb81d48e2f10",
+    "retrievedAt": "2026-09-18"
+  },
+  "denzel": {
+    "file": "denzel.svg",
+    "originalPath": "https://denzel-power.com/local/components/severcode/search.bar/templates/.default/images/logo.svg",
+    "officialWebsite": "https://denzel-power.com/",
+    "officialSourceReviewed": true,
+    "provenance": "Original logo from official website",
+    "verified": true,
+    "publicPath": "/brand-assets/denzel.svg",
+    "sha256": "ae94f985455f91b5c556645e0d213f0a269ab29038d797e5f1a0252842f8547c",
+    "retrievedAt": "2026-09-18"
+  },
+  "geoplast": {
+    "file": "geoplast.svg",
+    "originalPath": "https://www.geoplastglobal.com/wp-content/uploads/2024/07/geoplast-logo.svg",
+    "officialWebsite": "https://www.geoplastglobal.com/",
+    "officialSourceReviewed": true,
+    "provenance": "Original logo from official website",
+    "verified": true,
+    "publicPath": "/brand-assets/geoplast.svg",
+    "sha256": "d260d56bbead6fd290665869ea55ff0a7326f416eaca204f6f7d65053f1a3535",
+    "retrievedAt": "2026-09-18"
+  },
+  "daire": {
+    "file": "daire.svg",
+    "originalPath": "https://www.mto-rus.ru/docs/instrukcii/daire/ht306-508-610-915-manual.pdf",
+    "provenance": "Original Daire manufacturer manual, page 1; vector logo extracted unchanged (PDF clip 262,552,336,628 pt). Manufacturer and daire.ru contact verified on final page; former website now parked, omitted from sameAs.",
+    "officialSourceReviewed": true,
+    "verified": true,
+    "publicPath": "/brand-assets/daire.svg",
+    "sha256": "c69fd859eb91460f7fa5c0c618329815c04e5775ddaf2143e717325715028f5b",
+    "retrievedAt": "2026-09-18"
+  },
+  "promyshlennik": {
+    "file": "promyshlennik-original.svg",
+    "originalPath": "/Users/prom23/Downloads/Лого_ПРОМЫШЛЕННИК верный.pdf",
+    "officialSourceReviewed": true,
+    "provenance": "Owner original logo sheet, upper-left positive black version, clip 98,87,548,304 pt; vector shapes and color unchanged.",
+    "outputFile": "promyshlennik-original.svg",
+    "verified": true,
+    "publicPath": "/brand-assets/promyshlennik-original.svg",
+    "sha256": "18eaf573322d50bf9c8ba1d1aceee3fc1cb5314c392dcfe1f483861a67de32ac",
+    "retrievedAt": "2026-09-18"
+  },
+  "team": {
+    "file": "team-original.svg",
+    "originalPath": "/Users/prom23/Downloads/logo team.ai",
+    "officialSourceReviewed": true,
+    "provenance": "Owner original Illustrator artwork, PDF-compatible vector exported unchanged; original orange and gray.",
+    "outputFile": "team-original.svg",
+    "verified": true,
+    "publicPath": "/brand-assets/team-original.svg",
+    "sha256": "35d6cfe083509b5aba1503a4b5812517dc685fd68871b518a227fef559100b6f",
+    "retrievedAt": "2026-09-18"
+  }
+}

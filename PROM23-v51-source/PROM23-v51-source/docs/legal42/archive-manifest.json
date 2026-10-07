@@ -1,0 +1,114 @@
+[
+  {
+    "number": "00",
+    "title": "00 — INTERNAL — Матрица соответствия и внедрения — FINAL — 01.10.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1yywmVQVqfX9vwWdg5WVVZPfiTn6uWX106GZS8YrAB70/edit?usp=drivesdk",
+    "file": "docs/legal42/source/00.txt",
+    "sha256": "fd9f023a0387c3ca3a1a58ab2cf9e2ad17e8ebbac78ad8c100b863a34a833460",
+    "public": false
+  },
+  {
+    "number": "01",
+    "title": "01 — Политика в отношении обработки персональных данных — PUBLIC FINAL — 01.10.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1HVjb-WDOexqcK-Vgi4uozd3L5Gdu1_MepM1PycaXIY4/edit?usp=drivesdk",
+    "file": "docs/legal42/source/01.txt",
+    "sha256": "c5e29d383a8afa3e7ff01791b43a66380f6b3511db5d328bce69c64183296db3",
+    "public": true
+  },
+  {
+    "number": "02",
+    "title": "02 — Согласие на обработку персональных данных — PUBLIC FINAL — 01.10.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1jYR0e_J0OW5ykuGcehdJ8qDR1ft9zq58eKu77W5dwvw/edit?usp=drivesdk",
+    "file": "docs/legal42/source/02.txt",
+    "sha256": "79f0db38e06382dd44273b7a6b51aa43ac7a71c91bf3d6d2b842b86e418c3355",
+    "public": true
+  },
+  {
+    "number": "03",
+    "title": "03 — Политика использования cookie и аналогичных технологий — PUBLIC FINAL — 01.10.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1cvlpLSTKhhCZwnaOXI1lfWJ137NUHWUtSdiFP8xM5TM/edit?usp=drivesdk",
+    "file": "docs/legal42/source/03.txt",
+    "sha256": "4ec20e72b84640f13b868b92732a0635d0b9543a7ddbc2ccba72f0816b843c5e",
+    "public": true
+  },
+  {
+    "number": "04",
+    "title": "04 — Правила применения рекомендательных технологий — PUBLIC FINAL — 01.10.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1zoTAnlJSw2n-R8T74M1cQL-6HcTiBajefLoQFzvGAAg/edit?usp=drivesdk",
+    "file": "docs/legal42/source/04.txt",
+    "sha256": "ca9b6561097005c2cc4c9846ee3ba94e7abc7558c5c4e1c13b1edab51daa659b",
+    "public": true
+  },
+  {
+    "number": "05",
+    "title": "05 — INTERNAL — Уведомления, чекбоксы и юридические тексты интерфейса — FINAL — 01.10.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1IRc5oMUVancLODyDpHoa-aOHMVXDI1wSqJtxq_VZQTY/edit?usp=drivesdk",
+    "file": "docs/legal42/source/05.txt",
+    "sha256": "406084ce4dddbefd2cfe72dfc9e0d43d25e56f8d62b9f6687a48310e69645c12",
+    "public": false
+  },
+  {
+    "number": "06",
+    "title": "06 — Согласие на получение рекламы и информационно-рекламных сообщений — PUBLIC FINAL — 01.10.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1scaJFkWgn-8dWbfAAYdJUBcFGCnh3IVhtjP_wqXiWRM/edit?usp=drivesdk",
+    "file": "docs/legal42/source/06.txt",
+    "sha256": "67d2a699298b30291ac303c56481773a2313de119c65d799ee5a9441021f6554",
+    "public": true
+  },
+  {
+    "number": "07",
+    "title": "07 — Согласие на распространение персональных данных для отзывов и вопросов — PUBLIC FINAL — 01.10.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1JO3BW13KeEIH9nDX-V_cTAmqweuMNN6GuL5Qkn4G_K4/edit?usp=drivesdk",
+    "file": "docs/legal42/source/07.txt",
+    "sha256": "9b6ff06b96f86fa965cec0fef4d8a1af5e3dbd484f78edb5501444dd363dbb0b",
+    "public": true
+  },
+  {
+    "number": "08",
+    "title": "08 — Публичная оферта дистанционной розничной купли-продажи — B2C — PUBLIC FINAL — 01.10.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1BZajsiR_t7jigs198rkQzij4E7mRO1bS4N4oc-IWZkA/edit?usp=drivesdk",
+    "file": "docs/legal42/source/08.txt",
+    "sha256": "76b4a75f3972799e4edb8aa76e7b48d7b726a21c4285e0fac85efff0df3947f7",
+    "public": true
+  },
+  {
+    "number": "09",
+    "title": "09 — INTERNAL — Типовой договор поставки для юридических лиц и ИП — FINAL DRAFT — 18.09.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1g92V2ylPeSYozDPIf1hpE5mjtPq1epVq3xsDbpVP5HA/edit?usp=drivesdk",
+    "file": "docs/legal42/source/09.txt",
+    "sha256": "347b000aa0c7047126f00f47ac1e75141f9d9d35813e65469c60587a588028b5",
+    "public": false
+  },
+  {
+    "number": "10",
+    "title": "10 — INTERNAL — Юридическое заключение по B2C-оферте и индивидуальному B2B-договору — 18.09.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1h63-zJN-YYPJtMhPWvV2nnDR_vDGcGgtxNN_T3xg5fE/edit?usp=drivesdk",
+    "file": "docs/legal42/source/10.txt",
+    "sha256": "190c73bbc5b64ffd5b21fe2d5026dafe1bc6b008baa6cb9b5c3f94f0fbb37c86",
+    "public": false
+  },
+  {
+    "number": "11",
+    "title": "11 — INTERNAL — Юридический стресс-тест и риск-регистр — 18.09.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1ddco6AGb_xsmeDLH7CXJCziZbWKwiU9SrqQmW5hKHdI/edit?usp=drivesdk",
+    "file": "docs/legal42/source/11.txt",
+    "sha256": "c1d824a7137b036c717256351492ff51048eb6eeaf5953562160d897d08c89fb",
+    "public": false
+  },
+  {
+    "number": "12",
+    "title": "12 — INTERNAL — Техническое ТЗ по приведению prom23.ru в соответствие — FINAL — 01.10.2026",
+    "sourceUrl": "https://docs.google.com/document/d/151MgsHQHVzXntJ3M0gUtWIjViqK64qsaq7b5UjJfgBM/edit?usp=drivesdk",
+    "file": "docs/legal42/source/12.txt",
+    "sha256": "cd11dd330330b66134fcda275f508901b602d9dc25e56b808c770a3d8d0fd360",
+    "public": false
+  },
+  {
+    "number": "13",
+    "title": "13 — INTERNAL — Протокол правок к типовому договору поставки — для юриста — 18.09.2026",
+    "sourceUrl": "https://docs.google.com/document/d/1JrLHIprFoNgX61eYLRumEhHc1YdBZp04rCi7XP0OaHQ/edit?usp=drivesdk",
+    "file": "docs/legal42/source/13.txt",
+    "sha256": "356acad2002b7a98381b66777fb3d9b9b284b13c87b92403e5e5d9932fa31efa",
+    "public": false
+  }
+]

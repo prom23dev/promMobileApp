@@ -1,0 +1,248 @@
+{
+  "at": "2026-09-11T18:51:36.402Z",
+  "base": "http://127.0.0.1:8087",
+  "routes": [
+    {
+      "status": 200,
+      "route": "/",
+      "title": "Строительное оборудование и инструмент | Промышленник",
+      "lang": "ru",
+      "descriptions": [
+        "Строительное оборудование и инструмент: опалубка, леса, вышки-туры и техника. Личные покупки и поставки для бизнеса. Доставка и самовывоз."
+      ],
+      "robots": [
+        "noindex, nofollow",
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "headings": [
+        {
+          "text": "Леса. Вышки.\nОборудование.",
+          "level": "1"
+        },
+        {
+          "text": "Каталог",
+          "level": "2"
+        },
+        {
+          "text": "Популярные товары",
+          "level": "2"
+        },
+        {
+          "text": "Покупать проще, когда всё рядом",
+          "level": "2"
+        }
+      ],
+      "entry": "/_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js"
+    },
+    {
+      "status": 200,
+      "route": "/catalog",
+      "title": "Каталог строительного оборудования | Промышленник",
+      "lang": "ru",
+      "descriptions": [
+        "Подберите опалубку, строительные леса, вышки-туры, инструмент и оборудование. Характеристики и комплектация товаров, подбор для объекта и производства."
+      ],
+      "robots": [
+        "noindex, nofollow",
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "headings": [
+        {
+          "text": "Каталог",
+          "level": "1"
+        },
+        {
+          "text": "Популярные товары",
+          "level": "2"
+        }
+      ],
+      "entry": "/_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js"
+    },
+    {
+      "status": 200,
+      "route": "/information/delivery",
+      "title": "Доставка и самовывоз | Промышленник",
+      "lang": "ru",
+      "descriptions": [
+        "На объект, до терминала или со склада"
+      ],
+      "robots": [
+        "noindex, nofollow",
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "headings": [
+        {
+          "text": "Доставка",
+          "level": "1"
+        },
+        {
+          "text": "Получить так, как удобно вам",
+          "level": "2"
+        },
+        {
+          "text": "Условия получения",
+          "level": "2"
+        },
+        {
+          "text": "Покупателю",
+          "level": "2"
+        }
+      ],
+      "entry": "/_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js"
+    },
+    {
+      "status": 200,
+      "route": "/information/production",
+      "title": "Собственное производство | Промышленник",
+      "lang": "ru",
+      "descriptions": [
+        "От проектирования до готового оборудования"
+      ],
+      "robots": [
+        "noindex, nofollow",
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "headings": [
+        {
+          "text": "Производство",
+          "level": "1"
+        },
+        {
+          "text": "Создаём оборудование\nдля вашей работы.",
+          "level": "2"
+        },
+        {
+          "text": "Как создаём оборудование",
+          "level": "2"
+        },
+        {
+          "text": "Проектирование",
+          "level": "3"
+        },
+        {
+          "text": "На производстве",
+          "level": "2"
+        },
+        {
+          "text": "Нужно своё исполнение?",
+          "level": "2"
+        },
+        {
+          "text": "Для основных этапов работ",
+          "level": "2"
+        },
+        {
+          "text": "Оборудование в деле",
+          "level": "2"
+        },
+        {
+          "text": "КРК «Октябрь»",
+          "level": "3"
+        },
+        {
+          "text": "Компания с историей.\nСобственное производство.",
+          "level": "2"
+        },
+        {
+          "text": "О продукции и производстве",
+          "level": "2"
+        },
+        {
+          "text": "Посмотрите, как мы работаем",
+          "level": "2"
+        },
+        {
+          "text": "Покупателю",
+          "level": "2"
+        }
+      ],
+      "entry": "/_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js"
+    },
+    {
+      "status": 200,
+      "route": "/account",
+      "title": "Кабинет покупателя | Промышленник",
+      "lang": "ru",
+      "descriptions": [],
+      "robots": [
+        "noindex, nofollow",
+        "noindex, nofollow"
+      ],
+      "canonical": [],
+      "headings": [
+        {
+          "text": "Кабинет",
+          "level": "1"
+        },
+        {
+          "text": "Ваши покупки под контролем",
+          "level": "2"
+        },
+        {
+          "text": "Профиль",
+          "level": "2"
+        },
+        {
+          "text": "Покупки и документы",
+          "level": "2"
+        },
+        {
+          "text": "Для вашей компании",
+          "level": "2"
+        },
+        {
+          "text": "Настройки",
+          "level": "2"
+        }
+      ],
+      "entry": "/_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js"
+    }
+  ],
+  "blockedRequests": [],
+  "pageErrors": [],
+  "sessionCleanup": true,
+  "afterClientNavigation": {
+    "route": "/account",
+    "title": "Кабинет покупателя | Промышленник",
+    "lang": "ru",
+    "descriptions": [],
+    "robots": [
+      "noindex, nofollow",
+      "noindex, nofollow"
+    ],
+    "canonical": [],
+    "headings": [
+      {
+        "text": "Кабинет",
+        "level": "1"
+      },
+      {
+        "text": "Ваши покупки под контролем",
+        "level": "2"
+      },
+      {
+        "text": "Профиль",
+        "level": "2"
+      },
+      {
+        "text": "Покупки и документы",
+        "level": "2"
+      },
+      {
+        "text": "Для вашей компании",
+        "level": "2"
+      },
+      {
+        "text": "Настройки",
+        "level": "2"
+      }
+    ],
+    "entry": "/_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js"
+  },
+  "buildConsistent": true,
+  "entrySHA256": "27a9c685453283780f6d80f010ea732a4f0fad6a8afb842358d3c0b9485bf859"
+}

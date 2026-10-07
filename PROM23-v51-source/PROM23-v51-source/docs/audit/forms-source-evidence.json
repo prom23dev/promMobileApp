@@ -1,0 +1,1461 @@
+{
+  "registryCount": 68,
+  "baseCount": 64,
+  "dynamicDefinitions": [
+    "organization-add",
+    "organization-edo",
+    "organization-switch",
+    "document-request",
+    "checkout",
+    "tour",
+    "supplier",
+    "advice",
+    "appeal",
+    "appeal-order",
+    "return"
+  ],
+  "evidence": [
+    {
+      "id": "auth-login",
+      "sourceFilesExisting": [
+        "site-source/local/templates/.default/components/bitrix/system.auth.form/.default/template.php",
+        "site-source/local/include/forms/auth-reg/action-auth.php"
+      ],
+      "sourceInputNames": [
+        "login"
+      ],
+      "sourceRequestKeys": [
+        "login"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "auth-email",
+      "sourceFilesExisting": [
+        "site-source/local/include/forms/auth-reg/form-auth-by-email.php",
+        "site-source/local/include/forms/auth-reg/action-auth-by-email.php"
+      ],
+      "sourceInputNames": [
+        "email",
+        "password"
+      ],
+      "sourceRequestKeys": [
+        "email",
+        "login",
+        "password"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "auth-register",
+      "sourceFilesExisting": [
+        "site-source/local/include/forms/auth-reg/form-reg.php",
+        "site-source/local/include/forms/auth-reg/action-reg.php"
+      ],
+      "sourceInputNames": [
+        "agree_consent_reg",
+        "agree_policy_reg",
+        "email",
+        "password",
+        "password_repeat"
+      ],
+      "sourceRequestKeys": [
+        "agree_consent_reg",
+        "agree_policy_reg",
+        "email",
+        "login",
+        "password",
+        "password_repeat"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "auth-phone",
+      "sourceFilesExisting": [
+        "site-source/local/include/forms/auth-reg/form-auth-by-phone.php",
+        "site-source/local/include/forms/auth-reg/action-get-code-for-phone.php"
+      ],
+      "sourceInputNames": [
+        "code[1]",
+        "code[2]",
+        "code[3]",
+        "code[4]",
+        "code[5]",
+        "code[6]",
+        "code_public",
+        "phone"
+      ],
+      "sourceRequestKeys": [
+        "login"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "auth-otp",
+      "sourceFilesExisting": [
+        "site-source/local/include/forms/auth-reg/form-auth-by-phone.php",
+        "site-source/local/include/forms/auth-reg/action-auth-by-phone.php"
+      ],
+      "sourceInputNames": [
+        "code[1]",
+        "code[2]",
+        "code[3]",
+        "code[4]",
+        "code[5]",
+        "code[6]",
+        "code_public",
+        "phone"
+      ],
+      "sourceRequestKeys": [
+        "code",
+        "code_public",
+        "login",
+        "phone"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "auth-register-phone",
+      "sourceFilesExisting": [
+        "site-source/local/include/forms/auth-reg/form-reg-step-phone.php",
+        "site-source/local/include/forms/auth-reg/action-reg-step-phone.php"
+      ],
+      "sourceInputNames": [
+        "email",
+        "password",
+        "password_repeat",
+        "phone"
+      ],
+      "sourceRequestKeys": [
+        "email",
+        "password",
+        "password_repeat",
+        "phone"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Do not reproduce hidden plaintext password fields from the PHP form; use an opaque registration challenge."
+      ]
+    },
+    {
+      "id": "auth-register-otp",
+      "sourceFilesExisting": [
+        "site-source/local/include/forms/auth-reg/form-reg-step-phone-code.php",
+        "site-source/local/include/forms/auth-reg/action-reg-step-phone-code.php"
+      ],
+      "sourceInputNames": [
+        "code[1]",
+        "code[2]",
+        "code[3]",
+        "code[4]",
+        "code[5]",
+        "code[6]",
+        "code_public",
+        "email",
+        "password",
+        "password_repeat",
+        "phone"
+      ],
+      "sourceRequestKeys": [
+        "code",
+        "code_public",
+        "email",
+        "login",
+        "password",
+        "password_repeat",
+        "phone"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "auth-recovery",
+      "sourceFilesExisting": [
+        "site-source/local/include/forms/auth-reg/password-recovery.php",
+        "site-source/local/include/forms/auth-reg/action-password-recovery.php"
+      ],
+      "sourceInputNames": [
+        "email"
+      ],
+      "sourceRequestKeys": [
+        "email"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "profile-name",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/info/edit/forms/change-name.php",
+        "site-source/local/ajax/lk/info/edit/change-user-data.php"
+      ],
+      "sourceInputNames": [
+        "name"
+      ],
+      "sourceRequestKeys": [
+        "city",
+        "email",
+        "hash_email",
+        "hash_phone",
+        "last_name",
+        "name",
+        "phone",
+        "value"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "profile-surname",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/info/edit/forms/change-family.php",
+        "site-source/local/ajax/lk/info/edit/change-user-data.php"
+      ],
+      "sourceInputNames": [
+        "last_name"
+      ],
+      "sourceRequestKeys": [
+        "city",
+        "email",
+        "hash_email",
+        "hash_phone",
+        "last_name",
+        "name",
+        "phone",
+        "value"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "profile-city",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/info/edit/forms/change-city.php",
+        "site-source/local/ajax/lk/info/edit/change-user-data.php"
+      ],
+      "sourceInputNames": [
+        "city"
+      ],
+      "sourceRequestKeys": [
+        "city",
+        "email",
+        "hash_email",
+        "hash_phone",
+        "last_name",
+        "name",
+        "phone",
+        "value"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "profile-email",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/info/edit/forms/change-email.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-email-get-code-action.php"
+      ],
+      "sourceInputNames": [
+        "email"
+      ],
+      "sourceRequestKeys": [
+        "email"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "profile-email-otp",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/info/edit/forms/code-verification-by-email.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-email-check-code-action.php"
+      ],
+      "sourceInputNames": [
+        "code[1]",
+        "code[2]",
+        "code[3]",
+        "code[4]",
+        "code[5]",
+        "code[6]",
+        "code_public",
+        "email"
+      ],
+      "sourceRequestKeys": [
+        "code",
+        "code_public",
+        "email"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "profile-phone",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/info/edit/forms/change-phone.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-phone-get-code-action.php"
+      ],
+      "sourceInputNames": [
+        "phone"
+      ],
+      "sourceRequestKeys": [
+        "phone"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "profile-phone-otp",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/info/edit/forms/code-verification-by-phone.php",
+        "site-source/local/ajax/lk/info/edit/forms/change-phone-check-code-action.php"
+      ],
+      "sourceInputNames": [
+        "code[1]",
+        "code[2]",
+        "code[3]",
+        "code[4]",
+        "code[5]",
+        "code[6]",
+        "code_public",
+        "phone"
+      ],
+      "sourceRequestKeys": [
+        "code",
+        "code_public",
+        "phone"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "profile-passport",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/info/edit/forms/gosuslugi.php"
+      ],
+      "sourceInputNames": [
+        "country"
+      ],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Source points to a frontend mock; unnamed controls and no verified passport or Gosuslugi integration. Read-only until the actual contract exists."
+      ]
+    },
+    {
+      "id": "address-create",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/order-placing/popup-courier.php",
+        "site-source/local/ajax/lk/address-delivery/add-address-action.php"
+      ],
+      "sourceInputNames": [
+        "change_address_id",
+        "full_address",
+        "q"
+      ],
+      "sourceRequestKeys": [
+        "D",
+        "change_address_id",
+        "full_address"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "address-edit",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/order-placing/popup-courier.php",
+        "site-source/local/ajax/lk/address-delivery/add-address-action.php"
+      ],
+      "sourceInputNames": [
+        "change_address_id",
+        "full_address",
+        "q"
+      ],
+      "sourceRequestKeys": [
+        "D",
+        "change_address_id",
+        "full_address"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "address-default",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/address-delivery/change-main-address.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [
+        "address_id"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "address-delete",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/address-delivery/remove-address-action.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [
+        "address_id"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "organization-add",
+      "sourceFilesExisting": [
+        "site-source/local/components/prom.personal/personal_my_organizations_add/templates/.default/template.php",
+        "site-source/local/ajax/lk/organization/organizations-find.php",
+        "site-source/local/ajax/lk/organization/organizations-add.php"
+      ],
+      "sourceInputNames": [
+        "bank-name",
+        "bik",
+        "correspondent-bill",
+        "fact-address",
+        "inn",
+        "inn-company",
+        "kpp",
+        "kpp-company",
+        "legal-addresss",
+        "name",
+        "payment-bill",
+        "store_region_id"
+      ],
+      "sourceRequestKeys": [
+        "inn",
+        "inn-company",
+        "kpp",
+        "kpp-company",
+        "store_region_id"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": true,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Lookup accepts inn/kpp. Final add uses returned inn-company/kpp-company and store_region_id. Read-only details originate from the lookup; never trust client organization ownership."
+      ]
+    },
+    {
+      "id": "organization-requisites",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/organization/organizations-details.php",
+        "site-source/local/ajax/lk/organization/action-organizations-details.php"
+      ],
+      "sourceInputNames": [
+        "card_company",
+        "companyID",
+        "company_letter",
+        "scan_card"
+      ],
+      "sourceRequestKeys": [
+        "card_company",
+        "companyID",
+        "company_letter",
+        "scan_card"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "organization-bank",
+      "sourceFilesExisting": [
+        "site-source/local/components/prom.personal/personal_my_organizations_add/templates/.default/template.php",
+        "site-source/local/ajax/lk/organization/organizations-find.php"
+      ],
+      "sourceInputNames": [
+        "bank-name",
+        "bik",
+        "correspondent-bill",
+        "fact-address",
+        "inn",
+        "inn-company",
+        "kpp",
+        "kpp-company",
+        "legal-addresss",
+        "name",
+        "payment-bill",
+        "store_region_id"
+      ],
+      "sourceRequestKeys": [
+        "inn",
+        "kpp"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "No editable bank-details submission exists. Bank data is read-only in the organization lookup."
+      ]
+    },
+    {
+      "id": "organization-verify",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/organization/organization-verify.php",
+        "site-source/local/ajax/lk/organization/action-organization-verify.php"
+      ],
+      "sourceInputNames": [
+        "companyID",
+        "fio",
+        "phone"
+      ],
+      "sourceRequestKeys": [
+        "companyID",
+        "fio",
+        "phone"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "organization-edo",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/organization/organization-edo.php",
+        "site-source/local/ajax/lk/organization/action-organization-edo.php"
+      ],
+      "sourceInputNames": [
+        "companyID",
+        "edo_id",
+        "edo_operator"
+      ],
+      "sourceRequestKeys": [
+        "companyID",
+        "edo_id",
+        "edo_operator"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": true,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "organization-consignee",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/organization/organizations-consignee.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Source controls have no names and no connected handler. Do not invent a consignee API."
+      ]
+    },
+    {
+      "id": "organization-switch",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/organization/organizations-switcher.php",
+        "site-source/local/ajax/lk/organization/action-organizations-switcher.php"
+      ],
+      "sourceInputNames": [
+        "organization"
+      ],
+      "sourceRequestKeys": [
+        "organization"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": true,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "organization-delete",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/organization/form-delete-organization.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [
+        "org_id",
+        "org_name"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Source confirmation links to ?delete_org=y&org_id=… in the organization page. The native integration must recheck membership and scope."
+      ]
+    },
+    {
+      "id": "account-delete",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/info/edit/delete-account.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Source links to /?deleteAccount=y&sessid=…. Native deletion requires a verified server result; a local session reset is not account deletion."
+      ]
+    },
+    {
+      "id": "sessions-terminate",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/info/edit/terminate-session.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [
+        "id"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "document-request",
+      "sourceFilesExisting": [
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-document/template.php",
+        "site-source/local/ajax/form/request-document-action.php"
+      ],
+      "sourceInputNames": [
+        "WEB_FORM_ID"
+      ],
+      "sourceRequestKeys": [
+        "WEB_FORM_ID",
+        "sessid"
+      ],
+      "dynamicCForm": true,
+      "dynamicMobile": true,
+      "crmMethods": [],
+      "sourceNotes": [
+        "DOC_TYPE/PERIOD_FROM/PERIOD_TO/COMMENT are question SIDs. Numeric input names and REQUIRED flags must be loaded from REQUEST_DOCUMENT, not inferred."
+      ]
+    },
+    {
+      "id": "payment-card",
+      "sourceFilesExisting": [
+        "site-source/local/components/prom.personal/personal_payment_methods/templates/.default/template.php",
+        "site-source/local/ajax/lk/payment-methods/add-card-action.php"
+      ],
+      "sourceInputNames": [
+        "card_code",
+        "card_expire",
+        "card_number"
+      ],
+      "sourceRequestKeys": [
+        "card_code",
+        "card_expire",
+        "card_number"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Original card_number/card_expire/card_code fields post to an unfinished own-site stub. They are intentionally not collected by the app. A real provider SDK/session is required."
+      ]
+    },
+    {
+      "id": "payment-default",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/payment-methods/change-main-card-action.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [
+        "card_id"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "payment-remove",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/payment-methods/remove-card-action.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [
+        "card_id"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "checkout",
+      "sourceFilesExisting": [
+        "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/template.php",
+        "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/script.js",
+        "site-source/order/index.php"
+      ],
+      "sourceInputNames": [
+        "${name}",
+        "DELIVERY_ID",
+        "DELIVERY_ID_TK",
+        "DELIVERY_PICKUP_ADDRESS",
+        "DELIVERY_PICKUP_ID",
+        "ORDER_PROP_20",
+        "ORDER_PROP_21",
+        "PAY_SYSTEM_ID",
+        "PERSON_TYPE",
+        "PERSON_TYPE_OLD",
+        "RECENT_DELIVERY_VALUE",
+        "agree_consent_order",
+        "agree_policy_order",
+        "delivery-date",
+        "location_type",
+        "order-placing-delivery-company",
+        "order-placing-pay-method-fiz",
+        "phone",
+        "promo_code",
+        "sessid",
+        "time"
+      ],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": true,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Order property IDs, allowed delivery/payment methods and address requirements are server/context-dependent. Do not copy fallback test email, static demo times, or hardcoded recipient data. YaPay CARD/SPLIT belongs to an online physical-person payment session; invoice is conditional on organization/legal-price context."
+      ]
+    },
+    {
+      "id": "order-cancel",
+      "sourceFilesExisting": [
+        "site-source/local/components/prom.personal/personal_order_detail/templates/.default/template.php",
+        "site-source/local/components/prom.organization/organization_order_detail/templates/.default/template.php"
+      ],
+      "sourceInputNames": [
+        "benefits"
+      ],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Source uses the current order page ?cancelOrder=y&sessid=…. No cancellation-reason enum is present."
+      ]
+    },
+    {
+      "id": "order-repeat",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/orders/order-repeat.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [
+        "id"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Original action clears non-delayed basket entries before re-adding the order goods. Do not describe this as an additive operation."
+      ]
+    },
+    {
+      "id": "order-pay",
+      "sourceFilesExisting": [
+        "site-source/local/components/prom.personal/personal_order_detail/templates/.default/template.php",
+        "site-source/local/components/prom.organization/organization_order_detail/templates/.default/template.php"
+      ],
+      "sourceInputNames": [
+        "benefits"
+      ],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Availability and the payment session must be returned for the selected owned order. Never collect PAN/CVV or invent a payment URL."
+      ]
+    },
+    {
+      "id": "callback",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/catalog/request-a-call.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-call/template.php",
+        "site-source/local/ajax/catalog/action-request-a-call.php"
+      ],
+      "sourceInputNames": [
+        "WEB_FORM_ID",
+        "agree_consent_call",
+        "agree_policy_call"
+      ],
+      "sourceRequestKeys": [
+        "WEB_FORM_ID"
+      ],
+      "dynamicCForm": true,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addContactManager",
+        "addLeasing"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "buy-one-click",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/catalog/buy-one-click.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/buy-one-click/template.php",
+        "site-source/local/ajax/catalog/action-buy-one-click.php"
+      ],
+      "sourceInputNames": [
+        "WEB_FORM_ID",
+        "agree_consent_one_click",
+        "agree_policy_one_click"
+      ],
+      "sourceRequestKeys": [
+        "WEB_FORM_ID",
+        "agree_consent_one_click",
+        "agree_policy_one_click",
+        "sessid"
+      ],
+      "dynamicCForm": true,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addOneClick"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "rent",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/catalog/request-a-rent.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-rent/template.php",
+        "site-source/local/ajax/catalog/action-request-a-rent.php"
+      ],
+      "sourceInputNames": [
+        "WEB_FORM_ID",
+        "agree_consent_rent",
+        "agree_policy_rent"
+      ],
+      "sourceRequestKeys": [
+        "WEB_FORM_ID",
+        "agree_consent_rent",
+        "agree_policy_rent",
+        "sessid"
+      ],
+      "dynamicCForm": true,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addRent"
+      ],
+      "sourceNotes": [
+        "The retrieved public form has no phone field. Do not add one by analogy with callback."
+      ]
+    },
+    {
+      "id": "leasing",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/catalog/request-a-leasing.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-leasing/template.php",
+        "site-source/local/ajax/catalog/action-request-a-call.php"
+      ],
+      "sourceInputNames": [
+        "WEB_FORM_ID",
+        "agree_consent_leasing",
+        "agree_policy_leasing"
+      ],
+      "sourceRequestKeys": [
+        "WEB_FORM_ID"
+      ],
+      "dynamicCForm": true,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addContactManager",
+        "addLeasing"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "found-cheaper",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/catalog/form-found-it-cheaper.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/found-it-cheaper/template.php",
+        "site-source/local/ajax/catalog/action-found-it-cheaper.php"
+      ],
+      "sourceInputNames": [
+        "WEB_FORM_ID",
+        "agree_consent_cheaper",
+        "agree_policy_cheaper"
+      ],
+      "sourceRequestKeys": [
+        "WEB_FORM_ID",
+        "agree_consent_cheaper",
+        "agree_policy_cheaper"
+      ],
+      "dynamicCForm": true,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addCheaper"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "tour",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/form/book-a-tour.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/book-a-tour/template.php",
+        "site-source/local/ajax/form/book-a-tour-action.php"
+      ],
+      "sourceInputNames": [
+        "WEB_FORM_ID",
+        "agree_consent_tour",
+        "agree_policy_tour"
+      ],
+      "sourceRequestKeys": [
+        "WEB_FORM_ID",
+        "agree_consent_tour",
+        "agree_policy_tour",
+        "sessid"
+      ],
+      "dynamicCForm": true,
+      "dynamicMobile": true,
+      "crmMethods": [
+        "addBookATour"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "business-advice",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/form/get-business-advice-form-action.php",
+        "site-source/frontend/h/production.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addBusinessHelp"
+      ],
+      "sourceNotes": [
+        "Field names/required flags are confirmed in the current public /vendor/ form and the handler. frontend/h/production.php alone is a layout, not a running route."
+      ]
+    },
+    {
+      "id": "supplier",
+      "sourceFilesExisting": [
+        "site-source/suppliers/index.php",
+        "site-source/local/ajax/form/suppliers-form-action.php"
+      ],
+      "sourceInputNames": [
+        "agree_consent",
+        "agree_policy",
+        "attachment",
+        "comment",
+        "company-name",
+        "email",
+        "first-name",
+        "phone",
+        "product-category",
+        "product-desc"
+      ],
+      "sourceRequestKeys": [
+        "attachment"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": true,
+      "crmMethods": [
+        "addSupplier"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "partner",
+      "sourceFilesExisting": [
+        "site-source/franchise/index.php",
+        "site-source/local/ajax/form/partners-form-action.php"
+      ],
+      "sourceInputNames": [
+        "agree_consent",
+        "agree_policy",
+        "company-name",
+        "email",
+        "first-name",
+        "has-warehouse",
+        "inn",
+        "phone",
+        "warehouse-address",
+        "warehouse-phone",
+        "warehouse-schedule"
+      ],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addPartner"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "advice",
+      "sourceFilesExisting": [
+        "site-source/local/templates/main/components/bitrix/form.result.new/orange-form-ask/template.php",
+        "site-source/local/ajax/form/orangeAsk-action.php"
+      ],
+      "sourceInputNames": [
+        "WEB_FORM_ID",
+        "agree_policy",
+        "web_form_submit"
+      ],
+      "sourceRequestKeys": [
+        "WEB_FORM_ID",
+        "agree_policy",
+        "sessid"
+      ],
+      "dynamicCForm": true,
+      "dynamicMobile": true,
+      "crmMethods": [
+        "addOrangeAsk"
+      ],
+      "sourceNotes": [
+        "All question SIDs/types/REQUIRED flags are database-owned CForm fields. Do not invent an email/name/message schema from another form."
+      ]
+    },
+    {
+      "id": "review",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/reviews/form-review-add.php",
+        "site-source/local/ajax/reviews/form-review-add-action.php"
+      ],
+      "sourceInputNames": [
+        "media[]",
+        "product-id",
+        "rate",
+        "review-text",
+        "votes[]"
+      ],
+      "sourceRequestKeys": [
+        "photos"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addReview"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "order-review",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/orders/form-review-add.php",
+        "site-source/local/ajax/lk/orders/action-review-add.php"
+      ],
+      "sourceInputNames": [
+        "media[]",
+        "order-id",
+        "product-id",
+        "rate",
+        "review-text",
+        "votes[]"
+      ],
+      "sourceRequestKeys": [
+        "media"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "question",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/reviews/form-question-add.php",
+        "site-source/local/ajax/reviews/form-question-add-action.php"
+      ],
+      "sourceInputNames": [
+        "agree_consent_question",
+        "agree_policy_question",
+        "product-id",
+        "question-text"
+      ],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addQuestion"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "review-reply",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/reviews/form-review-reply-action.php"
+      ],
+      "sourceInputNames": [
+        "comment_text",
+        "parent-id",
+        "product-id"
+      ],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addReview"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "question-reply",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/reviews/form-question-reply-action.php"
+      ],
+      "sourceInputNames": [
+        "comment_text",
+        "parent-id",
+        "product-id"
+      ],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addQuestion"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "review-edit",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/questions-and-reviews/form-edit-review.php",
+        "site-source/local/ajax/lk/questions-and-reviews/action-edit-review.php"
+      ],
+      "sourceInputNames": [
+        "media[]",
+        "product-id",
+        "rate",
+        "review-id",
+        "review-text",
+        "votes[]"
+      ],
+      "sourceRequestKeys": [
+        "media"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "question-edit",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/questions-and-reviews/form-edit-question.php",
+        "site-source/local/ajax/lk/questions-and-reviews/action-edit-question.php"
+      ],
+      "sourceInputNames": [
+        "product-id",
+        "question-id",
+        "question-text"
+      ],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "review-delete",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/questions-and-reviews/action-delete.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "question-delete",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/questions-and-reviews/action-delete.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "appeal",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/appeals/appeals-questions.php",
+        "site-source/local/ajax/lk/appeals/appeals-text-action.php"
+      ],
+      "sourceInputNames": [
+        "comment",
+        "theme"
+      ],
+      "sourceRequestKeys": [
+        "comment",
+        "theme"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": true,
+      "crmMethods": [
+        "addQuestionPersonal"
+      ],
+      "sourceNotes": [
+        "THEME is an iblock enumeration absent from the archive. HTML allows 1500 characters; handler limits strlen(comment) to 2000 bytes. Must reconcile in the integration."
+      ]
+    },
+    {
+      "id": "appeal-order",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/appeals/appeals-order-form.php",
+        "site-source/local/ajax/lk/appeals/appeals-order-form-action.php"
+      ],
+      "sourceInputNames": [
+        "comment",
+        "order-help",
+        "tags[]",
+        "theme_id"
+      ],
+      "sourceRequestKeys": [
+        "comment",
+        "order-help",
+        "photos",
+        "tags",
+        "theme_id"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": true,
+      "crmMethods": [],
+      "sourceNotes": [
+        "TAGS_HELP and theme identifiers must come from the source dictionaries. Source counter says 300, handler strlen maximum is 500; no invented theme or tags."
+      ]
+    },
+    {
+      "id": "appeal-rating",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/appeals/appeals-rate-add.php",
+        "site-source/local/ajax/lk/appeals/appeals-rate-action.php"
+      ],
+      "sourceInputNames": [
+        "appealID",
+        "rate"
+      ],
+      "sourceRequestKeys": [
+        "appealID",
+        "id",
+        "rate"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": []
+    },
+    {
+      "id": "return",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/lk/returns-products/returns-product.php",
+        "site-source/local/ajax/lk/returns-products/action-returns-product.php"
+      ],
+      "sourceInputNames": [
+        "orderID"
+      ],
+      "sourceRequestKeys": [
+        "orderID",
+        "order_id",
+        "products"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": true,
+      "crmMethods": [],
+      "sourceNotes": [
+        "The source checks STATUS_ORDER_FINISH and ownership. REASONS enum and allowed order items are server-owned. The source repeats comment/reasons/photos per item; never return an unfinished order or accept arbitrary item IDs."
+      ]
+    },
+    {
+      "id": "subscription",
+      "sourceFilesExisting": [
+        "site-source/local/templates/main/footer.php",
+        "site-source/local/ajax/subscription/subscription.php"
+      ],
+      "sourceInputNames": [
+        "agree_policy",
+        "email"
+      ],
+      "sourceRequestKeys": [
+        "agree_policy",
+        "email"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Voluntary standalone subscription. Public rendered footer includes mailing consent; archived footer label mentions policy only. Never require this consent to buy or register."
+      ]
+    },
+    {
+      "id": "product-notify",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/catalog/action-add-to-waitlist.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "Owned waiting-list toggle, not newsletter subscription. Do not port the public upload/waiting_list_errors.log logging from the source."
+      ]
+    },
+    {
+      "id": "notification-preferences",
+      "sourceFilesExisting": [
+        "site-source/local/components/prom.personal/personal_notifications/templates/.default/template.php",
+        "site-source/local/components/prom.organization/organization_notifications/templates/.default/template.php",
+        "site-source/local/ajax/lk/notifications/notifications.php"
+      ],
+      "sourceInputNames": [
+        "email_order_info",
+        "email_promotions",
+        "sms_order_info",
+        "sms_promotions"
+      ],
+      "sourceRequestKeys": [
+        "email_order_info",
+        "email_promotions",
+        "sms_order_info",
+        "sms_promotions"
+      ],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [],
+      "sourceNotes": [
+        "All four switches are independent and optional. Actual saved values must be loaded; never convert missing preferences to consent."
+      ]
+    },
+    {
+      "id": "quote",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/form/get-business-advice-form-action.php",
+        "site-source/frontend/h/production.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addBusinessHelp"
+      ],
+      "sourceNotes": [
+        "Field names/required flags are confirmed in the current public /vendor/ form and the handler. frontend/h/production.php alone is a layout, not a running route."
+      ]
+    },
+    {
+      "id": "production-request",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/form/get-business-advice-form-action.php",
+        "site-source/frontend/h/production.php"
+      ],
+      "sourceInputNames": [],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addBusinessHelp"
+      ],
+      "sourceNotes": [
+        "Field names/required flags are confirmed in the current public /vendor/ form and the handler. frontend/h/production.php alone is a layout, not a running route."
+      ]
+    },
+    {
+      "id": "contact",
+      "sourceFilesExisting": [
+        "site-source/local/ajax/catalog/request-a-call.php",
+        "site-source/local/templates/main/components/bitrix/form.result.new/request-a-call/template.php",
+        "site-source/local/ajax/catalog/action-request-a-call.php"
+      ],
+      "sourceInputNames": [
+        "WEB_FORM_ID",
+        "agree_consent_call",
+        "agree_policy_call"
+      ],
+      "sourceRequestKeys": [
+        "WEB_FORM_ID"
+      ],
+      "dynamicCForm": true,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addContactManager",
+        "addLeasing"
+      ],
+      "sourceNotes": []
+    },
+    {
+      "id": "franchise",
+      "sourceFilesExisting": [
+        "site-source/franchise/index.php",
+        "site-source/local/ajax/form/partners-form-action.php"
+      ],
+      "sourceInputNames": [
+        "agree_consent",
+        "agree_policy",
+        "company-name",
+        "email",
+        "first-name",
+        "has-warehouse",
+        "inn",
+        "phone",
+        "warehouse-address",
+        "warehouse-phone",
+        "warehouse-schedule"
+      ],
+      "sourceRequestKeys": [],
+      "dynamicCForm": false,
+      "dynamicMobile": false,
+      "crmMethods": [
+        "addPartner"
+      ],
+      "sourceNotes": []
+    }
+  ]
+}

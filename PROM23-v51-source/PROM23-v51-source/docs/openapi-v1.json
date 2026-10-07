@@ -1,0 +1,2531 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Промышленник — Public Snapshot BFF",
+    "version": "0.8.0",
+    "description": "Public snapshot/configuration and local official location BFF. MASTER5 adds content/PDP/availability projections. Actual website auth, orders, payment and durable consent writes remain unavailable."
+  },
+  "servers": [
+    {
+      "url": "/",
+      "description": "Текущий согласованный preview origin; production URL не задан."
+    }
+  ],
+  "security": [],
+  "paths": {
+    "/api/v1/app-config": {
+      "get": {
+        "operationId": "getAppConfig",
+        "summary": "Доступность интеграций; все live writes выключены",
+        "responses": {
+          "200": {
+            "description": "Успешный публичный ответ; не подтверждает live integration.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/AppConfig"
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "414": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/home": {
+      "get": {
+        "operationId": "getHomeConfig",
+        "summary": "Порядок заранее реализованных native slots",
+        "responses": {
+          "200": {
+            "description": "Успешный публичный ответ; не подтверждает live integration.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/HomeConfig"
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "414": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/catalog": {
+      "get": {
+        "operationId": "getCatalogPage",
+        "summary": "Страница публичного снимка каталога",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 120,
+              "default": ""
+            },
+            "description": "NFKC + trim; все слова ищутся в name/sku, control bytes запрещены."
+          },
+          {
+            "name": "city",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Краснодар",
+                "Москва",
+                "Ростов-на-Дону",
+                "Санкт-Петербург",
+                "Симферополь",
+                "Пермь",
+                "Пятигорск",
+                "Грозный",
+                "Тюмень",
+                "Луганск",
+                "Иркутск",
+                "Тбилиси",
+                "Гудаута",
+                "Ереван",
+                "Баку",
+                "Астана",
+                "Минск",
+                "Бишкек"
+              ],
+              "default": "Краснодар"
+            }
+          },
+          {
+            "name": "context",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "personal",
+                "organization"
+              ],
+              "default": "personal"
+            },
+            "description": "Display context, не identity/роль/договорной прайс."
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50,
+              "default": 20
+            },
+            "description": "Строковое представление без ведущих нулей."
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 512
+            },
+            "description": "Непрозрачный continuation token с теми же q/city/context/limit. После 409 начать заново."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешный публичный ответ; не подтверждает live integration.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/CatalogPage"
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "414": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Стабильная ошибка; тексты не используются как код состояния.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/locations/suggest": {
+      "get": {
+        "operationId": "suggestSettlements",
+        "summary": "Search verified official GAR settlements, independent of commercial service areas",
+        "description": "Query text is not a saved address. Normalizes ё/е/case, prefixes, transliteration, keyboard layout and bounded typos. Completeness and exclusions are explicit in coverage. No request goes to DaData or Bitrix.",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 120,
+              "default": ""
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20,
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "data"
+                  ],
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/LocationSuggestions"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid query/body/settlement ID",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Origin forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method not allowed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Official provider unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/locations/{id}": {
+      "get": {
+        "operationId": "getSettlement",
+        "summary": "Read one active verified Settlement ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "data"
+                  ],
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/Settlement"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid query/body/settlement ID",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Origin forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method not allowed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Official provider unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Settlement not in the active validated index",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/location": {
+      "get": {
+        "security": [
+          {
+            "LocalSession": []
+          }
+        ],
+        "operationId": "getSelectedLocation",
+        "summary": "Read session selection and bounded recent places",
+        "description": "Old exact-unique official names may be inferred at version 0 with selectionSource=legacy-exact without a GET write. Ambiguous strings remain unselected. No physical DEFAULT_CITY override.",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "data"
+                  ],
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/LocationState"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Session invalid",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Origin forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Official index unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "security": [
+          {
+            "LocalSession": []
+          }
+        ],
+        "operationId": "selectLocation",
+        "summary": "Save an official Settlement ID with version and context checks",
+        "description": "Atomically updates only session geography/compatibility label/recent choices and revokes unconsumed session quotes. Preserves every cart and historical order. No prices, warehouses, delivery or payment eligibility are fabricated.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LocationSelection"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "data"
+                  ],
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/LocationState"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid query/body/settlement ID",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Origin forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method not allowed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Official provider unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Session invalid",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Settlement not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "STALE_LOCATION or STALE_CONTEXT",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "JSON body exceeds 32 KiB",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "JSON content type required",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Local storage quota reached",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/cart/revalidate-location": {
+      "post": {
+        "security": [
+          {
+            "LocalSession": []
+          }
+        ],
+        "operationId": "requestLocationRevalidation",
+        "summary": "Closed integration boundary for regional cart validation",
+        "description": "Currently never returns success: validates session/version/context and requires a selected settlement, then returns503 LOCATION_INTEGRATION_REQUIRED. Does not reprice a cart or create an order.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LocationRevalidation"
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Session invalid",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Origin forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Stale location/context or SETTLEMENT_REQUIRED",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Request too large",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "LOCATION_INTEGRATION_REQUIRED or LOCATION_PROVIDER_UNAVAILABLE",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/content/pages/{slug}": {
+      "get": {
+        "operationId": "getPublicContentPage",
+        "summary": "Curated public presentation snapshot; immutable IDs, not live CMS",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "slug",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,79}$"
+            }
+          },
+          {
+            "in": "header",
+            "name": "If-None-Match",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public content, ETag SHA256 and max-age300",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "data"
+                  ],
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/ContentPageConfig"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "ETag matches; response has no body"
+          },
+          "403": {
+            "description": "Origin not allowed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown content page",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "GET only",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/products/{productId}/details": {
+      "get": {
+        "operationId": "getPublicProductDetails",
+        "summary": "Public PDP media/text/form visibility snapshot; no live purchase eligibility",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "productId",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^prom-[1-9][0-9]{0,11}$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public DTO, no local paths or private documents",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "data"
+                  ],
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/ProductDetails"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown product or unavailable detail snapshot",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "GET only",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/products/{productId}/availability": {
+      "get": {
+        "operationId": "getScopedProductAvailability",
+        "summary": "Session-selected location/context; unknown until verified Bitrix mapping",
+        "security": [
+          {
+            "LocalSession": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "productId",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^prom-[1-9][0-9]{0,11}$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "No-store; current unknown physical availability, never checkout approval",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "data"
+                  ],
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "productId",
+                        "settlementId",
+                        "locationVersion",
+                        "buyerContext",
+                        "availability"
+                      ],
+                      "properties": {
+                        "productId": {
+                          "type": "string"
+                        },
+                        "settlementId": {
+                          "type": "string",
+                          "format": "uuid"
+                        },
+                        "locationVersion": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "buyerContext": {
+                          "enum": [
+                            "personal",
+                            "organization"
+                          ]
+                        },
+                        "availability": {
+                          "$ref": "#/components/schemas/ProductAvailability"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Local session missing/revoked",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown product",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Official settlement not selected",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "GET only",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "error": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "message"
+            ]
+          }
+        },
+        "required": [
+          "error"
+        ]
+      },
+      "HomeBlock": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-hero"
+              },
+              "type": {
+                "const": "hero"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-categories"
+              },
+              "type": {
+                "const": "categories"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-popular"
+              },
+              "type": {
+                "const": "popular"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-business"
+              },
+              "type": {
+                "const": "business"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-production"
+              },
+              "type": {
+                "const": "production"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-projects"
+              },
+              "type": {
+                "const": "projects"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-guide"
+              },
+              "type": {
+                "const": "guide"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-services"
+              },
+              "type": {
+                "const": "services"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-articles"
+              },
+              "type": {
+                "const": "articles"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-personalized"
+              },
+              "type": {
+                "const": "personalized"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-buyers"
+              },
+              "type": {
+                "const": "buyers"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "home-company"
+              },
+              "type": {
+                "const": "company"
+              },
+              "enabled": {
+                "const": true
+              }
+            },
+            "required": [
+              "id",
+              "type",
+              "enabled"
+            ]
+          }
+        ]
+      },
+      "HomeConfig": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "schemaVersion": {
+            "const": 1
+          },
+          "revision": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]{0,63}$"
+          },
+          "blocks": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 12,
+            "uniqueItems": true,
+            "items": {
+              "$ref": "#/components/schemas/HomeBlock"
+            },
+            "description": "Hero первым; один immutable id на type. Нет URL/HTML/JSX. Unknown future type клиент пропускает."
+          }
+        },
+        "required": [
+          "schemaVersion",
+          "revision",
+          "blocks"
+        ]
+      },
+      "AppConfig": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "schemaVersion": {
+            "const": 1
+          },
+          "revision": {
+            "type": "string"
+          },
+          "environment": {
+            "const": "preview"
+          },
+          "capabilities": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "publicCatalog": {
+                "type": "boolean",
+                "const": true
+              },
+              "homeConfiguration": {
+                "type": "boolean",
+                "const": true
+              },
+              "liveCatalog": {
+                "type": "boolean",
+                "const": false
+              },
+              "liveWrites": {
+                "type": "boolean",
+                "const": false
+              },
+              "authentication": {
+                "type": "boolean",
+                "const": false
+              },
+              "organizations": {
+                "type": "boolean",
+                "const": false
+              },
+              "checkout": {
+                "type": "boolean",
+                "const": false
+              },
+              "payments": {
+                "type": "boolean",
+                "const": false
+              },
+              "orderWrites": {
+                "type": "boolean",
+                "const": false
+              },
+              "formWrites": {
+                "type": "boolean",
+                "const": false
+              },
+              "consentWrites": {
+                "type": "boolean",
+                "const": false
+              },
+              "notificationWrites": {
+                "type": "boolean",
+                "const": false
+              },
+              "pushRegistration": {
+                "type": "boolean",
+                "const": false
+              }
+            },
+            "required": [
+              "publicCatalog",
+              "homeConfiguration",
+              "liveCatalog",
+              "liveWrites",
+              "authentication",
+              "organizations",
+              "checkout",
+              "payments",
+              "orderWrites",
+              "formWrites",
+              "consentWrites",
+              "notificationWrites",
+              "pushRegistration"
+            ]
+          },
+          "catalog": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "mode": {
+                "const": "public-snapshot"
+              },
+              "defaultCity": {
+                "const": "Краснодар"
+              },
+              "cities": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "Краснодар",
+                    "Москва",
+                    "Ростов-на-Дону",
+                    "Санкт-Петербург",
+                    "Симферополь",
+                    "Пермь",
+                    "Пятигорск",
+                    "Грозный",
+                    "Тюмень",
+                    "Луганск",
+                    "Иркутск",
+                    "Тбилиси",
+                    "Гудаута",
+                    "Ереван",
+                    "Баку",
+                    "Астана",
+                    "Минск",
+                    "Бишкек"
+                  ]
+                }
+              },
+              "contexts": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "personal",
+                    "organization"
+                  ]
+                }
+              },
+              "defaultPageSize": {
+                "const": 20
+              },
+              "maxPageSize": {
+                "const": 50
+              }
+            },
+            "required": [
+              "mode",
+              "defaultCity",
+              "cities",
+              "contexts",
+              "defaultPageSize",
+              "maxPageSize"
+            ]
+          }
+        },
+        "required": [
+          "schemaVersion",
+          "revision",
+          "environment",
+          "capabilities",
+          "catalog"
+        ]
+      },
+      "Product": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "sku": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "scaffold",
+              "tower",
+              "ladder",
+              "mixer",
+              "tool",
+              "equipment"
+            ]
+          },
+          "sectionIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "popularRank": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "priceKopecks": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "oldPriceKopecks": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991,
+            "description": "Только из source snapshot, строго больше priceKopecks; иначе поле отсутствует."
+          },
+          "unit": {
+            "type": "string"
+          },
+          "specs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "label",
+                "value"
+              ]
+            }
+          },
+          "imageFile": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sourceUrl": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          },
+          "importedAt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "availabilityText": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "stock": {
+            "type": "null"
+          },
+          "stockSource": {
+            "const": "unverified"
+          },
+          "priceSource": {
+            "const": "imported-snapshot"
+          },
+          "discountPercent": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 99,
+            "description": "Server integer projection of valid snapshot old/current price. Not a client price rule."
+          }
+        },
+        "required": [
+          "id",
+          "sku",
+          "name",
+          "category",
+          "kind",
+          "sectionIds",
+          "priceKopecks",
+          "unit",
+          "specs",
+          "imageFile",
+          "sourceUrl",
+          "importedAt",
+          "availabilityText",
+          "stock",
+          "stockSource",
+          "priceSource"
+        ]
+      },
+      "Provenance": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "mode": {
+            "const": "public-snapshot"
+          },
+          "importedAt": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "revision": {
+            "type": "string"
+          },
+          "pricing": {
+            "const": "snapshot"
+          },
+          "stock": {
+            "const": "unverified"
+          },
+          "regionalPricing": {
+            "const": false
+          },
+          "checkoutEligible": {
+            "const": false
+          }
+        },
+        "required": [
+          "mode",
+          "importedAt",
+          "revision",
+          "pricing",
+          "stock",
+          "regionalPricing",
+          "checkoutEligible"
+        ]
+      },
+      "CatalogPage": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "schemaVersion": {
+            "const": 1
+          },
+          "query": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "q": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string",
+                "enum": [
+                  "Краснодар",
+                  "Москва",
+                  "Ростов-на-Дону",
+                  "Санкт-Петербург",
+                  "Симферополь",
+                  "Пермь",
+                  "Пятигорск",
+                  "Грозный",
+                  "Тюмень",
+                  "Луганск",
+                  "Иркутск",
+                  "Тбилиси",
+                  "Гудаута",
+                  "Ереван",
+                  "Баку",
+                  "Астана",
+                  "Минск",
+                  "Бишкек"
+                ]
+              },
+              "context": {
+                "type": "string",
+                "enum": [
+                  "personal",
+                  "organization"
+                ]
+              }
+            },
+            "required": [
+              "q",
+              "city",
+              "context"
+            ]
+          },
+          "products": {
+            "type": "array",
+            "maxItems": 50,
+            "items": {
+              "$ref": "#/components/schemas/Product"
+            }
+          },
+          "page": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "limit": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 50
+              },
+              "total": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "nextCursor": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "limit",
+              "total",
+              "nextCursor"
+            ]
+          },
+          "provenance": {
+            "$ref": "#/components/schemas/Provenance"
+          }
+        },
+        "required": [
+          "schemaVersion",
+          "query",
+          "products",
+          "page",
+          "provenance"
+        ]
+      },
+      "LocationAdministrativeUnit": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "typeShort"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "typeShort": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          }
+        }
+      },
+      "Settlement": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "fiasId",
+          "garId",
+          "name",
+          "type",
+          "typeShort",
+          "region",
+          "district",
+          "fullName",
+          "providerVersion"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+          },
+          "fiasId": {
+            "type": "string",
+            "format": "uuid",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+          },
+          "garId": {
+            "type": "string",
+            "pattern": "^[1-9][0-9]{0,19}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "type": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "typeShort": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          },
+          "region": {
+            "$ref": "#/components/schemas/LocationAdministrativeUnit"
+          },
+          "district": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/LocationAdministrativeUnit"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "fullName": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "providerVersion": {
+            "type": "string",
+            "pattern": "^[0-9]{8}$"
+          }
+        }
+      },
+      "LocationCoverage": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "status",
+          "regionCodes",
+          "loadedRegions",
+          "totalRegions",
+          "settlementCount",
+          "excludedWithoutVerifiedChain"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "partial",
+              "complete"
+            ]
+          },
+          "regionCodes": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[0-9]{2}$"
+            }
+          },
+          "loadedRegions": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 120
+          },
+          "totalRegions": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 120
+          },
+          "settlementCount": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1000000
+          },
+          "excludedWithoutVerifiedChain": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      },
+      "LocationSuggestions": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "items",
+          "query",
+          "coverage",
+          "providerVersion"
+        ],
+        "properties": {
+          "items": {
+            "type": "array",
+            "maxItems": 20,
+            "items": {
+              "$ref": "#/components/schemas/Settlement"
+            }
+          },
+          "query": {
+            "type": "string",
+            "maxLength": 120
+          },
+          "coverage": {
+            "$ref": "#/components/schemas/LocationCoverage"
+          },
+          "providerVersion": {
+            "type": "string",
+            "pattern": "^[0-9]{8}$"
+          }
+        }
+      },
+      "LocationCommerce": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "status",
+          "serviceRegion",
+          "warehouses",
+          "deliveryMethods",
+          "paymentMethods",
+          "reason"
+        ],
+        "properties": {
+          "status": {
+            "const": "unresolved"
+          },
+          "serviceRegion": {
+            "type": "null"
+          },
+          "warehouses": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "deliveryMethods": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "paymentMethods": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "reason": {
+            "const": "BITRIX_MAPPING_REQUIRED"
+          }
+        }
+      },
+      "LocationCartValidation": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "status",
+          "checkoutEligible",
+          "reason"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "required",
+              "unavailable"
+            ]
+          },
+          "checkoutEligible": {
+            "const": false
+          },
+          "reason": {
+            "enum": [
+              "BITRIX_REVALIDATION_REQUIRED",
+              "SETTLEMENT_REQUIRED"
+            ]
+          }
+        }
+      },
+      "LocationState": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "version",
+          "settlement",
+          "recent",
+          "selectionSource",
+          "migrationRequired",
+          "commerce",
+          "cartValidation"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "settlement": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Settlement"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "recent": {
+            "type": "array",
+            "maxItems": 8,
+            "items": {
+              "$ref": "#/components/schemas/Settlement"
+            }
+          },
+          "selectionSource": {
+            "enum": [
+              "explicit",
+              "legacy-exact",
+              null
+            ]
+          },
+          "migrationRequired": {
+            "type": "boolean"
+          },
+          "commerce": {
+            "$ref": "#/components/schemas/LocationCommerce"
+          },
+          "cartValidation": {
+            "$ref": "#/components/schemas/LocationCartValidation"
+          }
+        }
+      },
+      "LocationSelection": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "settlementId",
+          "expectedVersion",
+          "expectedContext"
+        ],
+        "properties": {
+          "settlementId": {
+            "type": "string",
+            "format": "uuid",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+          },
+          "expectedVersion": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "expectedContext": {
+            "enum": [
+              "personal",
+              "organization-demo"
+            ]
+          }
+        }
+      },
+      "LocationRevalidation": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "expectedVersion",
+          "expectedContext"
+        ],
+        "properties": {
+          "expectedVersion": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "expectedContext": {
+            "enum": [
+              "personal",
+              "organization-demo"
+            ]
+          }
+        }
+      },
+      "ProductDetails": {
+        "type": "object",
+        "required": [
+          "productId",
+          "sourceUrl",
+          "sourcePageSHA256",
+          "capturedAt",
+          "gallery",
+          "descriptionParagraphs",
+          "advantages",
+          "packageContents",
+          "documents",
+          "documentPolicy",
+          "capabilities",
+          "capabilityMode",
+          "runtimeWritesAvailable"
+        ],
+        "properties": {
+          "productId": {
+            "type": "string",
+            "pattern": "^prom-[1-9][0-9]*$"
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "sourcePageSHA256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "capturedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "gallery": {
+            "type": "array",
+            "maxItems": 50,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "kind",
+                "url",
+                "alt"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "kind": {
+                  "const": "image"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "originalUrl": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "alt": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "height": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "descriptionParagraphs": {
+            "type": "array",
+            "maxItems": 200,
+            "items": {
+              "type": "string"
+            }
+          },
+          "advantages": {
+            "type": "array",
+            "maxItems": 200,
+            "items": {
+              "type": "string"
+            }
+          },
+          "packageContents": {
+            "type": "array",
+            "maxItems": 200,
+            "items": {
+              "type": "string"
+            }
+          },
+          "documents": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "url",
+                "access"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "access": {
+                  "const": "public"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "documentPolicy": {
+            "type": "object",
+            "required": [
+              "requiresOrder",
+              "manifestAvailable"
+            ],
+            "properties": {
+              "requiresOrder": {
+                "type": "boolean"
+              },
+              "manifestAvailable": {
+                "const": false
+              }
+            },
+            "additionalProperties": false
+          },
+          "capabilities": {
+            "type": "object",
+            "required": [
+              "canRent",
+              "canLease",
+              "canBuyOneClick",
+              "canRequestBetterPrice",
+              "canRequestQuote",
+              "canRequestCallback"
+            ],
+            "properties": {
+              "canRent": {
+                "type": "boolean"
+              },
+              "canLease": {
+                "type": "boolean"
+              },
+              "canBuyOneClick": {
+                "type": "boolean"
+              },
+              "canRequestBetterPrice": {
+                "type": "boolean"
+              },
+              "canRequestQuote": {
+                "type": "boolean"
+              },
+              "canRequestCallback": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false
+          },
+          "capabilityMode": {
+            "const": "source-form-visibility"
+          },
+          "runtimeWritesAvailable": {
+            "const": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductAvailability": {
+        "type": "object",
+        "required": [
+          "status",
+          "reason",
+          "quantityBasis",
+          "totalQuantity",
+          "warehouses",
+          "nearestWarehouse",
+          "pickupAvailable",
+          "estimatedRestock",
+          "availableToPromise",
+          "measuredAt",
+          "expiresAt",
+          "checkoutEligible"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "unknown",
+              "in-stock",
+              "out-of-stock"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "quantityBasis": {
+            "const": "physical-on-hand"
+          },
+          "totalQuantity": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "warehouses": {
+            "type": "array",
+            "maxItems": 500,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "quantity"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "nearestWarehouse": {
+            "type": "null"
+          },
+          "pickupAvailable": {
+            "type": "null"
+          },
+          "estimatedRestock": {
+            "type": "null"
+          },
+          "availableToPromise": {
+            "type": "null"
+          },
+          "measuredAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "expiresAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "checkoutEligible": {
+            "const": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContentPageConfig": {
+        "type": "object",
+        "required": [
+          "schemaVersion",
+          "revision",
+          "sourceCheckedAt",
+          "mode",
+          "page"
+        ],
+        "properties": {
+          "schemaVersion": {
+            "const": 1
+          },
+          "revision": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "sourceCheckedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "mode": {
+            "const": "source-snapshot"
+          },
+          "page": {
+            "type": "object",
+            "required": [
+              "slug",
+              "title",
+              "sourceUrl",
+              "sections",
+              "links"
+            ],
+            "properties": {
+              "slug": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{0,79}$"
+              },
+              "title": {
+                "type": "string",
+                "maxLength": 300
+              },
+              "sourceUrl": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "uri"
+              },
+              "sections": {
+                "type": "array",
+                "maxItems": 80,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "paragraphs"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9-]{0,79}$"
+                    },
+                    "title": {
+                      "type": "string",
+                      "maxLength": 300
+                    },
+                    "paragraphs": {
+                      "type": "array",
+                      "maxItems": 120,
+                      "items": {
+                        "type": "string",
+                        "maxLength": 20000
+                      }
+                    },
+                    "bullets": {
+                      "type": "array",
+                      "maxItems": 120,
+                      "items": {
+                        "type": "string",
+                        "maxLength": 20000
+                      }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "links": {
+                "type": "array",
+                "maxItems": 40,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "label",
+                    "url"
+                  ],
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "maxLength": 200
+                    },
+                    "url": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "LocalSession": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Opaque local session token from POST /api/sessions. This is not production user authentication."
+      }
+    }
+  },
+  "x-integration-boundaries": {
+    "procurement": "Mobile ProcurementRequest contract is documented in docs/architecture/mobile-bff.md. No enabled HTTP submission/upload route is advertised before a verified source adapter exists.",
+    "organizations": "Anonymous session has no organization membership. Old draft is retained, but public context toggle cannot grant business permissions."
+  }
+}

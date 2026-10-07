@@ -1,0 +1,737 @@
+[
+  {
+    "id": "krc-oktyabr-astrakhan",
+    "url": "https://prom.myfast.space/blog/projects/krc-oktyabr-astrakhan/",
+    "status": 200,
+    "title": "Реконструкция КРК «Октябрь» в Астрахани | Промышленник",
+    "images": [
+      {
+        "alt": "preloader",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/frontend/img/1px.webp",
+        "dataSrc": "/frontend/img/gif/preloader.gif?v=2",
+        "srcset": null,
+        "width": 1,
+        "height": 1,
+        "link": null,
+        "cl": "lazy"
+      },
+      {
+        "alt": "Россия",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/f30/mmsup5qyi8m626iw75rwd3wdio2q0ppb.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Россия",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/f30/mmsup5qyi8m626iw75rwd3wdio2q0ppb.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Беларусь",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/704/dalhibqj0blrtgzvs72fvqcroye02oik.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Казахстан",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/7c6/n00bxd3e5dqfibftbslvf0ua23s9ehh0.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Киргизия",
+        "src": "https://prom.myfast.space/upload/uf/c6b/0772vc8n9ql2fq9amvfu3lok5pte243j.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 250,
+        "height": 150,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Армения",
+        "src": "https://prom.myfast.space/upload/uf/730/iib40nswcj5f4fhkhcj0owxlmcskhxls.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 250,
+        "height": 125,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Грузия",
+        "src": "https://prom.myfast.space/upload/uf/642/5klhackrg5f3ya10heglj8q1a75s1knv/Flag_of_Georgia.svg.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 500,
+        "height": 334,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Азербайджан",
+        "src": "https://prom.myfast.space/upload/uf/f25/ltxoqv42610k0i39zim33jm763m369wy.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 250,
+        "height": 125,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Реконструкция КРК «Октябрь» в Астрахани — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/983/bdjsz3356pkzxmhjlp1ss5b0o9o1vz7b/krc-oktyabr-astrakhan-01.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Реконструкция КРК «Октябрь» в Астрахани — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/f76/6k62wig66r5ashpmsdpro5p0npn1d7p1/krc-oktyabr-astrakhan-02.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Реконструкция КРК «Октябрь» в Астрахани — этап строительства",
+        "src": "https://prom.myfast.space/upload/medialibrary/7ef/2q55vhz3xrkr0k9rdcn73i09ywxkzyyd/krc-oktyabr-astrakhan-03.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Реконструкция КРК «Октябрь» в Астрахани — этап строительства",
+        "src": "https://prom.myfast.space/upload/medialibrary/da5/q5a2bldyw4hjlshceq6ro1ic5ci4dlhh/krc-oktyabr-astrakhan-04.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Реконструкция КРК «Октябрь» в Астрахани — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/b03/ay4yytfuw1ogyl7a3n8njffaq2p78ckt/krc-oktyabr-astrakhan-05.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Хомутовые строительные леса Промышленник: пошаговая сборка, виды хомутов и советы по монтажу",
+        "src": "https://prom.myfast.space/upload/iblock/de4/v2467qcv8s7s0w4zlpk5pr2yl9hxa2jv/Post6_SborLHS16.png",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/khomutovye-stroitelnye-lesa-promyshlennik-poshagovaya-sborka-vidy-khomutov-i-sovety-po-montazhu/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Сетка затеняющая «Промышленник»: как выбрать для стройки, дачи, маскировки и декора",
+        "src": "https://prom.myfast.space/upload/iblock/b3b/jgw8mborxp6ts0ni4v3r630dur7j5voh/Post5_Setka10.png",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/setka-zatenyayushchaya-promyshlennik-kak-vybrat-dlya-stroyki-dachi-maskirovki-i-dekora/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Вышка-тура или строительные леса: 5 шагов к правильному выбору для фасада и ремонта",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/68e/y6a1s8y87x96wo6od3oslw1g10qw5em0.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/vyshka-tura-ili-stroitelnye-lesa-5-shagov-k-pravilnomu-vyboru-dlya-fasada-i-remonta/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Конус Абрамса для бетона: как проверить качество и подвижность бетонной смеси на стройплощадке",
+        "src": "https://prom.myfast.space/upload/iblock/48f/foe4jetn985jopi1i72wezvw7rc45ngb/IMG_7339.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/konus-abramsa-dlya-betona-kak-proverit-kachestvo-i-podvizhnost-betonnoy-smesi-na-stroyploshchadke/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Как собрать строительные рамные леса ЛРСП своими руками: пошаговая инструкция для новичков",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/c3a/ji65fvgks5cis9iq3xly3iu0itvgo4hp/Post1_LRSP.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/kak-sobrat-stroitelnye-ramnye-lesa-lrsp-svoimi-rukami-poshagovaya-instruktsiya-dlya-novichkov/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Как собрать вышку-туру своими руками: пошаговая инструкция для начинающих",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/article-content/Post2_SborVSP.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/kak-sobrat-vyshku-turu-svoimi-rukami-poshagovaya-instruktsiya-dlya-nachinayushchikh/",
+        "cl": "absolut-wrap bg-img-cover"
+      }
+    ],
+    "gallery": [],
+    "backgrounds": [
+      "/upload/iblock/4e8/v1soh00wi0ql6vahd1jcms18c8tkx1ar/cover.jpg",
+      "/upload/dev2fun.imagecompress/webp/frontend/img/pay-mir.webp",
+      "/upload/dev2fun.imagecompress/webp/frontend/img/pay-visa.webp",
+      "/upload/dev2fun.imagecompress/webp/frontend/img/pay-master.webp"
+    ]
+  },
+  {
+    "id": "moscow-city",
+    "url": "https://prom.myfast.space/blog/projects/moscow-city/",
+    "status": 200,
+    "title": "Строительство в деловом центре «Москва-Сити» | Промышленник",
+    "images": [
+      {
+        "alt": "preloader",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/frontend/img/1px.webp",
+        "dataSrc": "/frontend/img/gif/preloader.gif?v=2",
+        "srcset": null,
+        "width": 1,
+        "height": 1,
+        "link": null,
+        "cl": "lazy"
+      },
+      {
+        "alt": "Россия",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/f30/mmsup5qyi8m626iw75rwd3wdio2q0ppb.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Россия",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/f30/mmsup5qyi8m626iw75rwd3wdio2q0ppb.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Беларусь",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/704/dalhibqj0blrtgzvs72fvqcroye02oik.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Казахстан",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/7c6/n00bxd3e5dqfibftbslvf0ua23s9ehh0.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Киргизия",
+        "src": "https://prom.myfast.space/upload/uf/c6b/0772vc8n9ql2fq9amvfu3lok5pte243j.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 250,
+        "height": 150,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Армения",
+        "src": "https://prom.myfast.space/upload/uf/730/iib40nswcj5f4fhkhcj0owxlmcskhxls.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 250,
+        "height": 125,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Грузия",
+        "src": "https://prom.myfast.space/upload/uf/642/5klhackrg5f3ya10heglj8q1a75s1knv/Flag_of_Georgia.svg.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 500,
+        "height": 334,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Азербайджан",
+        "src": "https://prom.myfast.space/upload/uf/f25/ltxoqv42610k0i39zim33jm763m369wy.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 250,
+        "height": 125,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Строительство в деловом центре «Москва-Сити» — этап строительства",
+        "src": "https://prom.myfast.space/upload/medialibrary/476/27vifuy2qb0gxmfeodca0fv138s8qgil/moscow-city-01.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 1024,
+        "height": 683,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Строительство в деловом центре «Москва-Сити» — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/21c/cpzv7g74in80u4pe0lar1qu2bgb2i0ot/moscow-city-02.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 1024,
+        "height": 683,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Строительство в деловом центре «Москва-Сити» — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/c11/jjasv0pikjcwfip6liasceqw0df2de0l/moscow-city-03.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 1024,
+        "height": 683,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Строительство в деловом центре «Москва-Сити» — этап строительства",
+        "src": "https://prom.myfast.space/upload/medialibrary/7bf/w1z0jz87uv2na5rc3j4lovioo8n802s3/moscow-city-04.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 683,
+        "height": 1024,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Хомутовые строительные леса Промышленник: пошаговая сборка, виды хомутов и советы по монтажу",
+        "src": "https://prom.myfast.space/upload/iblock/de4/v2467qcv8s7s0w4zlpk5pr2yl9hxa2jv/Post6_SborLHS16.png",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/khomutovye-stroitelnye-lesa-promyshlennik-poshagovaya-sborka-vidy-khomutov-i-sovety-po-montazhu/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Сетка затеняющая «Промышленник»: как выбрать для стройки, дачи, маскировки и декора",
+        "src": "https://prom.myfast.space/upload/iblock/b3b/jgw8mborxp6ts0ni4v3r630dur7j5voh/Post5_Setka10.png",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/setka-zatenyayushchaya-promyshlennik-kak-vybrat-dlya-stroyki-dachi-maskirovki-i-dekora/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Вышка-тура или строительные леса: 5 шагов к правильному выбору для фасада и ремонта",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/68e/y6a1s8y87x96wo6od3oslw1g10qw5em0.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/vyshka-tura-ili-stroitelnye-lesa-5-shagov-k-pravilnomu-vyboru-dlya-fasada-i-remonta/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Конус Абрамса для бетона: как проверить качество и подвижность бетонной смеси на стройплощадке",
+        "src": "https://prom.myfast.space/upload/iblock/48f/foe4jetn985jopi1i72wezvw7rc45ngb/IMG_7339.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/konus-abramsa-dlya-betona-kak-proverit-kachestvo-i-podvizhnost-betonnoy-smesi-na-stroyploshchadke/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Как собрать строительные рамные леса ЛРСП своими руками: пошаговая инструкция для новичков",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/c3a/ji65fvgks5cis9iq3xly3iu0itvgo4hp/Post1_LRSP.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/kak-sobrat-stroitelnye-ramnye-lesa-lrsp-svoimi-rukami-poshagovaya-instruktsiya-dlya-novichkov/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Как собрать вышку-туру своими руками: пошаговая инструкция для начинающих",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/article-content/Post2_SborVSP.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/kak-sobrat-vyshku-turu-svoimi-rukami-poshagovaya-instruktsiya-dlya-nachinayushchikh/",
+        "cl": "absolut-wrap bg-img-cover"
+      }
+    ],
+    "gallery": [],
+    "backgrounds": [
+      "/upload/iblock/e53/5v7v4f5p19s55m0gia4e9e10kwbwpk3w/cover.jpg",
+      "/upload/dev2fun.imagecompress/webp/frontend/img/pay-mir.webp",
+      "/upload/dev2fun.imagecompress/webp/frontend/img/pay-visa.webp",
+      "/upload/dev2fun.imagecompress/webp/frontend/img/pay-master.webp"
+    ]
+  },
+  {
+    "id": "development-plaza-krasnodar",
+    "url": "https://prom.myfast.space/blog/projects/development-plaza-krasnodar/",
+    "status": 200,
+    "title": "Development Plaza, Краснодар | Промышленник",
+    "images": [
+      {
+        "alt": "preloader",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/frontend/img/1px.webp",
+        "dataSrc": "/frontend/img/gif/preloader.gif?v=2",
+        "srcset": null,
+        "width": 1,
+        "height": 1,
+        "link": null,
+        "cl": "lazy"
+      },
+      {
+        "alt": "Россия",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/f30/mmsup5qyi8m626iw75rwd3wdio2q0ppb.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Россия",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/f30/mmsup5qyi8m626iw75rwd3wdio2q0ppb.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Беларусь",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/704/dalhibqj0blrtgzvs72fvqcroye02oik.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Казахстан",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/uf/7c6/n00bxd3e5dqfibftbslvf0ua23s9ehh0.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 40,
+        "height": 40,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Киргизия",
+        "src": "https://prom.myfast.space/upload/uf/c6b/0772vc8n9ql2fq9amvfu3lok5pte243j.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 250,
+        "height": 150,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Армения",
+        "src": "https://prom.myfast.space/upload/uf/730/iib40nswcj5f4fhkhcj0owxlmcskhxls.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 250,
+        "height": 125,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Грузия",
+        "src": "https://prom.myfast.space/upload/uf/642/5klhackrg5f3ya10heglj8q1a75s1knv/Flag_of_Georgia.svg.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 500,
+        "height": 334,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Азербайджан",
+        "src": "https://prom.myfast.space/upload/uf/f25/ltxoqv42610k0i39zim33jm763m369wy.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 250,
+        "height": 125,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — этап строительства",
+        "src": "https://prom.myfast.space/upload/medialibrary/9cc/ls2kdo9jkwmhodw2gqhmna3to4n59342/development-plaza-krasnodar-01.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 1024,
+        "height": 768,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/aa6/ckn9rv6zd2o3lmr6qmx8s3dm4olelk46/development-plaza-krasnodar-02.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 1024,
+        "height": 683,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — этап строительства",
+        "src": "https://prom.myfast.space/upload/medialibrary/2e4/ub8mxamucfur5jfrdrb5rh1lolw7jbb4/development-plaza-krasnodar-03.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 1024,
+        "height": 768,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/1e3/8ct51y0nzwfxinh8ummuhkf8ffmm4gwh/development-plaza-krasnodar-04.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 1024,
+        "height": 683,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — этап строительства",
+        "src": "https://prom.myfast.space/upload/medialibrary/9ca/mr10pobi26m4o1fnntbo2x6c3n7mh68v/development-plaza-krasnodar-05.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 1024,
+        "height": 768,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/f1f/n3q0q3eom4djip19nc4v76g9wc4ib37t/development-plaza-krasnodar-06.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — этап строительства",
+        "src": "https://prom.myfast.space/upload/medialibrary/254/41c1z7hud11ba1aib6xwm5jh2zx0rk1p/development-plaza-krasnodar-07.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — этап строительства",
+        "src": "https://prom.myfast.space/upload/medialibrary/db5/gpujzuce02lgvvavm0fpgmouhcr154yh/development-plaza-krasnodar-08.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — этап строительства",
+        "src": "https://prom.myfast.space/upload/medialibrary/ae6/i963k1x3dq760psxk15n2hl8j5x4oxhl/development-plaza-krasnodar-09.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/359/ktvvrclyh8rzlo42c765m58aic7uyayt/development-plaza-krasnodar-10.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/a93/a5905t5zb7llyplbs1y7zuxwezwg0zdj/development-plaza-krasnodar-11.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/e4e/8z964ltfvioqmr64z8tlv39yw4ulw4nw/development-plaza-krasnodar-12.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/487/1dvy8tx0qh5q4m6imv5zb44hkmwk366x/development-plaza-krasnodar-13.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/c9b/edzlm5hv0qtbuw9vz1fbefh7maf33pri/development-plaza-krasnodar-14.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Development Plaza, Краснодар — оборудование на строительной площадке",
+        "src": "https://prom.myfast.space/upload/medialibrary/088/19vbs7dd2suuxw395gk1abae7cg0uurw/development-plaza-krasnodar-15.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": null,
+        "cl": ""
+      },
+      {
+        "alt": "Хомутовые строительные леса Промышленник: пошаговая сборка, виды хомутов и советы по монтажу",
+        "src": "https://prom.myfast.space/upload/iblock/de4/v2467qcv8s7s0w4zlpk5pr2yl9hxa2jv/Post6_SborLHS16.png",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/khomutovye-stroitelnye-lesa-promyshlennik-poshagovaya-sborka-vidy-khomutov-i-sovety-po-montazhu/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Сетка затеняющая «Промышленник»: как выбрать для стройки, дачи, маскировки и декора",
+        "src": "https://prom.myfast.space/upload/iblock/b3b/jgw8mborxp6ts0ni4v3r630dur7j5voh/Post5_Setka10.png",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/setka-zatenyayushchaya-promyshlennik-kak-vybrat-dlya-stroyki-dachi-maskirovki-i-dekora/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Вышка-тура или строительные леса: 5 шагов к правильному выбору для фасада и ремонта",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/68e/y6a1s8y87x96wo6od3oslw1g10qw5em0.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/vyshka-tura-ili-stroitelnye-lesa-5-shagov-k-pravilnomu-vyboru-dlya-fasada-i-remonta/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Конус Абрамса для бетона: как проверить качество и подвижность бетонной смеси на стройплощадке",
+        "src": "https://prom.myfast.space/upload/iblock/48f/foe4jetn985jopi1i72wezvw7rc45ngb/IMG_7339.jpg",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/konus-abramsa-dlya-betona-kak-proverit-kachestvo-i-podvizhnost-betonnoy-smesi-na-stroyploshchadke/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Как собрать строительные рамные леса ЛРСП своими руками: пошаговая инструкция для новичков",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/c3a/ji65fvgks5cis9iq3xly3iu0itvgo4hp/Post1_LRSP.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/kak-sobrat-stroitelnye-ramnye-lesa-lrsp-svoimi-rukami-poshagovaya-instruktsiya-dlya-novichkov/",
+        "cl": "absolut-wrap bg-img-cover"
+      },
+      {
+        "alt": "Как собрать вышку-туру своими руками: пошаговая инструкция для начинающих",
+        "src": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/article-content/Post2_SborVSP.webp",
+        "dataSrc": null,
+        "srcset": null,
+        "width": 0,
+        "height": 0,
+        "link": "https://prom.myfast.space/blog/kak-sobrat-vyshku-turu-svoimi-rukami-poshagovaya-instruktsiya-dlya-nachinayushchikh/",
+        "cl": "absolut-wrap bg-img-cover"
+      }
+    ],
+    "gallery": [],
+    "backgrounds": [
+      "/upload/iblock/fca/mhcrnjqxq7shk3iv7f4n33fwrnk46y1o/cover.jpg",
+      "/upload/dev2fun.imagecompress/webp/frontend/img/pay-mir.webp",
+      "/upload/dev2fun.imagecompress/webp/frontend/img/pay-visa.webp",
+      "/upload/dev2fun.imagecompress/webp/frontend/img/pay-master.webp"
+    ]
+  }
+]

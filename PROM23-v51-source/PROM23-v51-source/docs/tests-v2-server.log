@@ -1,0 +1,31 @@
+✔ private preview preserves API headers, blocks unknown hosts and hides non-public files (48.824625ms)
+✔ health/catalog disclose sandbox, snapshot metadata, and new product kinds (30.372708ms)
+✔ missing or invalid seed keeps health explicit and catalog empty (29.477875ms)
+✔ opaque tokens isolate state and are stored only as hashes (27.953167ms)
+✔ personal and organization baskets stay separate and unknown organizations are rejected (24.492458ms)
+✔ quantity validation rejects bad values, unknown products and client-supplied prices (60.3295ms)
+✔ comparison is capped at three, favorites toggle and reset clears state (62.567667ms)
+✔ quotes use server prices, exact kopecks, test delivery tariffs and context addresses (29.197709ms)
+✔ order creation is atomic and idempotent; new-key quote replay and key conflict fail (36.472584ms)
+✔ orders reject expired quotes and changed carts without clearing the cart (31.878167ms)
+✔ quotes/orders are session scoped and checkout clears only the matching context cart (47.219958ms)
+✔ cancellation is local, owner scoped, recorded once, and survives an idempotent retry (22.304375ms)
+✔ appeal/return creation is blocked until site integration and historical data stays owner/context scoped (50.112291ms)
+✔ SQLite reopen preserves baskets, preferences, orders, appeals, returns and idempotency (34.290709ms)
+✔ strict origins, bounded bodies, JSON format and exact routes/methods are enforced (33.165375ms)
+✔ deleting a local session cascades its data, revokes token, and preserves another session (37.076417ms)
+✔ configured origins replace defaults and reject wildcards or URL paths (6.443042ms)
+✔ session quota returns 429 without deleting sessions and deletion releases capacity (17.424416ms)
+✔ quote quota is per session; expired unused quotes are pruned while consumed history survives (40.625166ms)
+✔ order quota spans both contexts, preserves state and allows safe order retries (43.412708ms)
+✔ SQLite page cap returns 429 STORAGE_LIMIT and rolls back without a generic 500 (80.09375ms)
+✔ every action requires expectedContext and stale tabs cannot modify either basket or preferences (61.830667ms)
+✔ a completed historical order cannot bypass missing canonical return reasons and item flow (57.697417ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 952.365

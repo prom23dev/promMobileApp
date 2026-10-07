@@ -1,0 +1,38 @@
+[
+  {
+    "width": 390,
+    "topic": "business",
+    "bodyWidth": 390,
+    "viewport": 390
+  },
+  {
+    "width": 390,
+    "topic": "production",
+    "bodyWidth": 390,
+    "viewport": 390
+  },
+  {
+    "width": 390,
+    "topic": "production",
+    "stage": "6. Склад и отгрузка",
+    "selected": "true"
+  },
+  {
+    "width": 320,
+    "topic": "business",
+    "bodyWidth": 320,
+    "viewport": 320
+  },
+  {
+    "width": 320,
+    "topic": "production",
+    "bodyWidth": 320,
+    "viewport": 320
+  },
+  {
+    "width": 320,
+    "topic": "production",
+    "stage": "6. Склад и отгрузка",
+    "selected": "true"
+  }
+]

@@ -1,0 +1,2 @@
+PASS: Cards / PDP use server old price and integer discount; null stock permits draft25
+{"passed":1,"failed":0,"pageErrors":0,"blockedWrites":0}

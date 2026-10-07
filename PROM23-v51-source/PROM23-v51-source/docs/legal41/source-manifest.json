@@ -1,0 +1,32 @@
+{
+  "privacy": {
+    "edition": "2026-10-01",
+    "sha256": "0b3df30365d041c3a6b395f47b5174bc5611defb6bcdace5eea1c2b8db18c2bb",
+    "sourceUrl": "https://docs.google.com/document/d/1jQTIAnYXpT1CMPiAQ2gTlnH3i8K8eoT8_y7n9pLAwvQ/edit",
+    "sourceFile": "docs/legal41/source/01.txt"
+  },
+  "consent": {
+    "edition": "2026-10-01",
+    "sha256": "a05642efc3f4b6c10479c51406fa4fe0dd1e5482699323cea49c7ec57dd1eb04",
+    "sourceUrl": "https://docs.google.com/document/d/19glQU6fzLkXspIT_zEeZWr77VMk7t7JuknPxV453FJ4/edit",
+    "sourceFile": "docs/legal41/source/02.txt"
+  },
+  "cookies": {
+    "edition": "2026-10-01",
+    "sha256": "f262b3d3f0e0c5eed6efa0f8a7032f523ef3b2da78371554e36eb32fe49e63a1",
+    "sourceUrl": "https://docs.google.com/document/d/1umB1adehHQ2VZzkn_HyVQMKVMLTs2wQXGoFgbHgZqoA/edit",
+    "sourceFile": "docs/legal41/source/03.txt"
+  },
+  "recommendations": {
+    "edition": "2026-10-01",
+    "sha256": "2998cab516e694c170893aa24afec40920555618607f0da674d4cd9e6f9ceeac",
+    "sourceUrl": "https://docs.google.com/document/d/15raJMyslzGZJOc-4agQF6GqsXIy7pb6KvtOf_Fup0rg/edit",
+    "sourceFile": "docs/legal41/source/04.txt"
+  },
+  "ui": {
+    "edition": "2026-10-01",
+    "sha256": "e0405421ba18756a3e3eedf57df1d6e8c5eca5b2538bbb73c5fb8f6360216290",
+    "sourceUrl": "https://docs.google.com/document/d/1NhDCF-QTY5H29ng0gYH_F7_hGmJO81qSHC3VWaVNDRQ/edit",
+    "sourceFile": "docs/legal41/source/05.txt"
+  }
+}

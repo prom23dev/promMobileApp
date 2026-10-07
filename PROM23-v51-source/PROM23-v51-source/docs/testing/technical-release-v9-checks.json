@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-11T18:55:44.885Z",
+  "distSHA256": "0cb8945be36b5192f43830e261aa0d791b9306f2d5fe438a95875772157b7b38",
+  "distUnchangedByPreparation": true,
+  "checks": [
+    {
+      "name": "EAS gate preview",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "name": "EAS gate production",
+      "exitCode": 1,
+      "passed": true
+    },
+    {
+      "name": "EAS gate __unset__",
+      "exitCode": 1,
+      "passed": true
+    }
+  ],
+  "signedOrInstallableArtifactsFound": [],
+  "frozenEntry": "entry-f511f4c425f0956cb8c2dd105ef3dba2.js"
+}

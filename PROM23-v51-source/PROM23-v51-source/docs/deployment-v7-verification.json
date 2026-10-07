@@ -1,0 +1,15 @@
+{
+  "release": "v0.7-20260911-01",
+  "previewHttp": 200,
+  "publicBundle": "/_expo/static/js/web/entry-9bd376941d209cef85b2f91b43359fc7.js",
+  "bundleSha256": "9363d3ae94ab0f1b214535ff636e133a3bebae394dcb84e385c0b44ef683c91d",
+  "publicMatchesLocal": true,
+  "productionHttp": 200,
+  "productionFilesVerified": 82,
+  "productionFileHashesUnchanged": true,
+  "productionServiceStatesPidsUnchanged": true,
+  "products": 28,
+  "popular": 10,
+  "homeSlots": 9,
+  "noDnsChanges": true
+}

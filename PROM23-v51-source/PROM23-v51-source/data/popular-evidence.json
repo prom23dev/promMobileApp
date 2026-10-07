@@ -1,0 +1,18 @@
+{
+  "sourceUrl": "https://prom.myfast.space/",
+  "sourceBlock": "Популярные товары / first catalog-grid__important__grid",
+  "checkedAt": "2026-09-11T08:20:38.079818+00:00",
+  "sourceSha256": "95e13318ba84b4b790cbc099d79275a61f898ec4798254abc1cabcdac05af404",
+  "sourceProductIds": [
+    "prom-472",
+    "prom-2200",
+    "prom-2491",
+    "prom-2414"
+  ],
+  "importedProductIds": [
+    "prom-2200",
+    "prom-2491",
+    "prom-2414"
+  ],
+  "note": "Source selection, not inferred sales statistics; unavailable products outside the current catalog are omitted."
+}

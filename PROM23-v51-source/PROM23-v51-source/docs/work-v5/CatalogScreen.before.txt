@@ -1,0 +1,108 @@
+import React, { useEffect, useMemo, useState } from 'react';
+import { FlatList, Pressable, ScrollView, StyleSheet, Text, TextInput, View, useWindowDimensions } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import { ArrowLeft, ArrowRight, ChartNoAxesColumnIncreasing, Check, ChevronRight, Heart, Menu, Search, SlidersHorizontal, X } from 'lucide-react-native';
+import { searchProducts, type Product } from '../domain';
+import { productInSection, sectionTrail, type CatalogSection } from '../catalog-tree';
+import { useShop } from '../store';
+import { colors, layout, type } from '../ui/theme';
+import { Button, ConnectionState, DemoNote, EmptyState, IconButton, Sheet, ShopError, ShopHeader } from '../ui/primitives';
+import { ProductCard } from '../ui/ProductCard';
+import { CategoryPictogram } from '../ui/CategoryPictogram';
+import { readableSpecLabel } from '../ui/product-data';
+import { HomeBenefits } from '../ui/SiteBenefits';
+import { ProductShelves } from '../ui/ProductShelves';
+
+const sortOptions = [{ value: 'default', label: 'По порядку в каталоге' }, { value: 'price-asc', label: 'Сначала дешевле' }, { value: 'price-desc', label: 'Сначала дороже' }] as const;
+type Sort = (typeof sortOptions)[number]['value'];
+type Filters = { min: string; max: string; brand: string; technical: string; technicalLabel: string; sort: Sort };
+const initialFilters: Filters = { min: '', max: '', brand: '', technical: '', technicalLabel: '', sort: 'default' };
+const valuesOf = (items: Product[], label: string) => [...new Set(items.flatMap(p => p.specs.filter(s => s.label === label).map(s => s.value)))].sort((a, b) => a.localeCompare(b, 'ru'));
+function Choice({ label, selected, onPress }: { label: string; selected: boolean; onPress: () => void }) {
+  return <Pressable accessibilityRole="button" accessibilityState={{ selected }} aria-selected={selected} onPress={onPress} style={[s.chip, selected && s.activeChip]}><Text style={[type.label, selected && { color: colors.white }]}>{label}</Text></Pressable>;
+}
+export default function CatalogScreen({ mode = 'catalog' }: { mode?: 'home' | 'catalog' | 'favorites' }) {
+  const router = useRouter();
+  const params = useLocalSearchParams<{ category?: string; section?: string; brand?: string }>();
+  const { state, products, catalogTree, ready } = useShop();
+  const { width, fontScale } = useWindowDimensions();
+  const columns = width < 340 || fontScale > 1.5 ? 1 : 2;
+  const [query, setQuery] = useState('');
+  const [sectionId, setSectionId] = useState('');
+  const [filters, setFilters] = useState<Filters>(initialFilters);
+  const [draft, setDraft] = useState<Filters>(initialFilters);
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [browseAll, setBrowseAll] = useState(false);
+  const byId = useMemo(() => new Map(catalogTree.sections.map(s => [s.id, s])), [catalogTree]);
+  const roots = catalogTree.rootIds.map(id => byId.get(id)).filter((s): s is CatalogSection => !!s)
+    .sort((a, b) => Number(b.name === 'Леса') - Number(a.name === 'Леса'));
+  const selected = byId.get(sectionId);
+  const children = selected ? selected.children.map(id => byId.get(id)).filter((s): s is CatalogSection => !!s) : roots;
+  const trail = sectionTrail(catalogTree, sectionId);
+  useEffect(() => {
+    const target = typeof params.section === 'string' ? byId.get(params.section) : catalogTree.sections.find(s => s.name === params.category);
+    if (typeof params.brand === 'string') { setSectionId(''); setFilters({ ...initialFilters, brand: params.brand }); setBrowseAll(true); setQuery(''); }
+    else if (target) { setSectionId(target.id); setFilters(initialFilters); setBrowseAll(true); setQuery(''); }
+    else if (params.section === 'all') { setSectionId(''); setFilters(initialFilters); setBrowseAll(false); setQuery(''); }
+  }, [params.section, params.category, params.brand, byId, catalogTree]);
+  const source = useMemo(() => products.filter(p => (mode !== 'favorites' || state.favorites.includes(p.id)) && (!selected || productInSection(p, selected))), [mode, products, state.favorites, selected]);
+  const results = useMemo(() => {
+    const words = query.trim().toLocaleLowerCase('ru-RU').split(/\s+/).filter(Boolean);
+    return searchProducts(source, '', 'Все', filters.sort).filter(p => {
+      const searchable = [p.name, p.sku, ...p.specs.filter(s => s.label === 'Производитель').map(s => s.value)].join(' ').toLocaleLowerCase('ru-RU');
+      return words.every(word => searchable.includes(word)) && (!filters.min || p.priceKopecks >= Number(filters.min) * 100) && (!filters.max || p.priceKopecks <= Number(filters.max) * 100) && (!filters.brand || p.specs.some(s => s.label === 'Производитель' && s.value.toLocaleLowerCase('ru') === filters.brand.toLocaleLowerCase('ru'))) && (!filters.technical || p.specs.some(s => s.label === filters.technicalLabel && s.value === filters.technical));
+    });
+  }, [source, query, filters]);
+  const categoryRoot = mode === 'catalog' && !selected && !query.trim() && !browseAll;
+  const brands = valuesOf(source, 'Производитель');
+  const technicalLabel = selected ? [...new Set(source.flatMap(p => p.specs.map(s => s.label)))].find(label => /^(Материал|Тип|Рабочая высота|Количество ступеней)(\b|,|\s|$)/u.test(label) && valuesOf(source, label).length > 1 && valuesOf(source, label).length <= 12) ?? '' : '';
+  const technicalValues = technicalLabel ? valuesOf(source, technicalLabel) : [];
+  const filterCount = [!!filters.min, !!filters.max, !!filters.brand, !!filters.technical, filters.sort !== 'default'].filter(Boolean).length;
+  const invalidPrice = !!draft.min && !!draft.max && Number(draft.min) > Number(draft.max);
+  const choose = (section: CatalogSection) => {
+    if (mode === 'home') router.push({ pathname: '/catalog', params: { section: section.id } });
+    else { setSectionId(section.id); setFilters(initialFilters); setBrowseAll(true); setQuery(''); }
+  };
+  const reset = () => { setQuery(''); setFilters(initialFilters); };
+  const root = () => { setSectionId(''); setQuery(''); setFilters(initialFilters); setBrowseAll(false); };
+  const categoryTile = (section: CatalogSection, horizontal = false) => {
+    return <Pressable key={section.id} accessibilityRole="button" accessibilityLabel={'Раздел каталога: ' + section.name} onPress={() => choose(section)} style={[s.category, horizontal ? { width: 108, minHeight: 124 } : { width: width < 360 || fontScale > 1.5 ? '100%' : '48%', flexDirection: 'row', minHeight: 88 }]}>
+      <View style={[s.categoryIcon, { width: horizontal ? 74 : 48, height: horizontal ? 68 : 56 }]}><CategoryPictogram name={section.name} size={horizontal ? 50 : 40} /></View>
+      <Text style={[s.categoryName, horizontal ? { textAlign: 'center' } : { flex: 1, minWidth: 0 }]}>{section.name}</Text>
+    </Pressable>;
+  };
+  return <SafeAreaView style={layout.screen} edges={['top', 'left', 'right']}>
+    <ShopHeader><View style={s.search}><IconButton label="Все разделы магазина" onPress={() => router.push('/more')}><Menu size={23} color={colors.brand} /></IconButton><TextInput accessibilityLabel="Поиск по названию, бренду или артикулу" placeholder="Найти товар или артикул" placeholderTextColor={colors.muted} value={query} onChangeText={setQuery} returnKeyType="search" autoCorrect={false} style={s.searchInput} />{query.length > 0 && <IconButton label="Очистить поиск" onPress={() => setQuery('')}><X size={19} color={colors.muted} /></IconButton>}</View></ShopHeader>
+    <ShopError />
+    {!ready ? <ConnectionState /> : <FlatList key={columns} data={categoryRoot ? [] : results} numColumns={columns} keyExtractor={item => item.id} style={layout.content} contentContainerStyle={{ paddingHorizontal: 14, paddingBottom: 24, flexGrow: 1 }} columnWrapperStyle={columns > 1 ? { gap: 10, marginBottom: 12 } : undefined} renderItem={({ item }) => <View style={{ width: columns > 1 ? '48.5%' : '100%', marginBottom: columns === 1 ? 12 : 0 }}><ProductCard product={item} /></View>} initialNumToRender={6} maxToRenderPerBatch={6} windowSize={5} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag"
+      ListHeaderComponent={<View style={{ gap: 14, paddingTop: 6, paddingBottom: 14 }}>
+        <View style={[layout.between, { gap: 6 }]}><Text accessibilityRole="header" style={[mode === 'home' ? type.label : type.heading, { flex: 1 }]}>{mode === 'home' ? 'Оборудование для вашего дела' : mode === 'favorites' ? 'Избранное' : 'Каталог'}</Text><DemoNote /></View>
+        {mode === 'home' && !query.trim() && <><View style={layout.between}><Text style={type.heading}>Каталог</Text><Pressable accessibilityRole="button" onPress={() => router.push({ pathname: '/catalog', params: { section: 'all' } })} style={[layout.row, { minHeight: 44, gap: 5 }]}><Text style={[type.label, { color: colors.brand }]}>Все разделы</Text><ArrowRight size={18} color={colors.brand} /></Pressable></View><ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8 }}>{roots.map(section => categoryTile(section, true))}</ScrollView><HomeBenefits /></>}
+        {mode === 'catalog' && <>
+          {!categoryRoot && <View style={{ gap: 4 }}><Pressable accessibilityRole="button" onPress={root} style={[layout.row, { minHeight: 44, gap: 6 }]}><ArrowLeft size={18} color={colors.brand} /><Text style={[type.label, { color: colors.brand }]}>Все разделы</Text></Pressable>{trail.length > 1 && <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 6 }}>{trail.slice(0, -1).map(section => <Pressable key={section.id} accessibilityRole="button" onPress={() => choose(section)} style={[layout.row, { minHeight: 44, gap: 5 }]}><Text style={type.caption}>{section.name}</Text><ChevronRight size={14} color={colors.muted} /></Pressable>)}</ScrollView>}{selected && <Text accessibilityRole="header" style={type.heading}>{selected.name}</Text>}</View>}
+          {categoryRoot ? <><Text style={type.caption}>Разделы и подразделы вашего магазина</Text><View style={s.categoryGrid}>{roots.map(section => categoryTile(section))}</View><ProductShelves /><Button label="Все товары" variant="secondary" icon={<ArrowRight size={18} color={colors.brand} />} onPress={() => setBrowseAll(true)} /></> : !query.trim() && selected && children.length > 0 ? <View style={s.subsections}>{children.map(section => <Pressable key={section.id} accessibilityRole="button" accessibilityLabel={'Подраздел: ' + section.name} onPress={() => choose(section)} style={s.subsection}><Text style={[type.label, { flex: 1, minWidth: 0 }]}>{section.name}</Text><ChevronRight size={18} color={colors.brand} /></Pressable>)}</View> : null}
+        </>}
+        {!categoryRoot && <><View style={layout.between}><View style={{ flex: 1 }}><Text accessibilityRole="header" style={type.subheading}>{query.trim() ? 'Результаты поиска' : mode === 'favorites' ? 'Сохранённые товары' : 'Товары из каталога'}</Text><Text accessibilityLiveRegion="polite" style={type.caption}>{results.length} {new Intl.PluralRules('ru').select(results.length) === 'one' ? 'товар' : new Intl.PluralRules('ru').select(results.length) === 'few' ? 'товара' : 'товаров'}</Text></View><Pressable accessibilityRole="button" accessibilityLabel={'Фильтры и сортировка. Применено: ' + filterCount} onPress={() => { setDraft(filters); setFilterOpen(true); }} style={s.filterButton}><SlidersHorizontal size={19} color={colors.brand} /><Text style={[type.label, { color: colors.brand }]}>Фильтры{filterCount ? ' · ' + filterCount : ''}</Text></Pressable></View>{filterCount > 0 && <Button label="Сбросить фильтры" variant="quiet" onPress={reset} />}</>}
+        {state.comparison.length > 0 && <Pressable accessibilityRole="button" onPress={() => router.push('/compare')} style={s.compare}><ChartNoAxesColumnIncreasing size={20} color={colors.brand} /><Text style={[type.label, { flex: 1 }]}>Сравнить оборудование · {state.comparison.length}</Text><ChevronRight size={19} color={colors.brand} /></Pressable>}
+      </View>}
+      ListEmptyComponent={categoryRoot ? null : <EmptyState icon={mode === 'favorites' ? <Heart size={32} color={colors.brand} /> : <Search size={32} color={colors.brand} />} title={mode === 'favorites' && !source.length ? 'Нужное всегда под рукой' : selected && !source.length ? 'Подберём оборудование для вас' : 'Товары не найдены'} message={mode === 'favorites' && !source.length ? 'Сохраняйте товары нажатием на сердце.' : selected && !source.length ? 'Уточните ассортимент этого раздела у менеджера. Поможем подобрать оборудование под вашу задачу.' : 'Измените запрос или сбросьте фильтры.'} action={<Button label={selected && !source.length ? 'Связаться с менеджером' : mode === 'favorites' && !source.length ? 'Открыть каталог' : 'Сбросить поиск и фильтры'} onPress={() => selected && !source.length ? router.push('/information/contacts') : mode === 'favorites' && !source.length ? router.push('/catalog') : reset()} />} />}
+
+    />}
+    <Sheet visible={filterOpen} onClose={() => setFilterOpen(false)} title="Фильтры и сортировка">
+      {selected && <Text style={type.caption}>{selected.name}</Text>}
+      <Text style={type.subheading}>Цена, ₽</Text><View style={[layout.row, { gap: 10 }]}><TextInput value={draft.min} onChangeText={min => setDraft({ ...draft, min: min.replace(/\D/g, '').slice(0, 9) })} accessibilityLabel="Цена от, рублей" placeholder="От" placeholderTextColor={colors.muted} keyboardType="number-pad" style={s.priceInput} /><TextInput value={draft.max} onChangeText={max => setDraft({ ...draft, max: max.replace(/\D/g, '').slice(0, 9) })} accessibilityLabel="Цена до, рублей" placeholder="До" placeholderTextColor={colors.muted} keyboardType="number-pad" style={s.priceInput} /></View>
+      {invalidPrice && <Text accessibilityRole="alert" style={[type.caption, { color: colors.accent }]}>Цена «от» должна быть меньше или равна цене «до».</Text>}
+      {brands.length > 1 && <><Text style={type.subheading}>Производитель</Text><View style={s.choices}><Choice label="Любой" selected={!draft.brand} onPress={() => setDraft({ ...draft, brand: '' })} />{brands.map(brand => <Choice key={brand} label={brand} selected={draft.brand === brand} onPress={() => setDraft({ ...draft, brand })} />)}</View></>}
+      {technicalValues.length > 1 && <><Text style={type.subheading}>{readableSpecLabel(technicalLabel)}</Text><View style={s.choices}><Choice label="Любой" selected={!draft.technical} onPress={() => setDraft({ ...draft, technical: '', technicalLabel: '' })} />{technicalValues.map(technical => <Choice key={technical} label={technical} selected={draft.technical === technical} onPress={() => setDraft({ ...draft, technical, technicalLabel })} />)}</View></>}
+      <Text style={type.subheading}>Порядок товаров</Text>{sortOptions.map(item => <Pressable key={item.value} accessibilityRole="radio" accessibilityState={{ checked: draft.sort === item.value }} aria-checked={draft.sort === item.value} onPress={() => setDraft({ ...draft, sort: item.value })} style={s.sortOption}><Text style={[type.body, { flex: 1 }]}>{item.label}</Text>{draft.sort === item.value && <Check size={22} color={colors.accent} />}</Pressable>)}
+      <Button label="Показать товары" disabled={invalidPrice} onPress={() => { setFilters(draft); setBrowseAll(true); setFilterOpen(false); }} /><Button label="Сбросить фильтры" variant="secondary" onPress={() => setDraft(initialFilters)} />
+    </Sheet>
+  </SafeAreaView>;
+}
+const s = StyleSheet.create({
+  search: { minHeight: 52, backgroundColor: colors.background, borderWidth: 1.5, borderColor: colors.brand, borderRadius: 12, flexDirection: 'row', alignItems: 'center', paddingLeft: 4, gap: 2 }, searchInput: { flex: 1, minHeight: 50, fontSize: 16, color: colors.ink, paddingVertical: 10, minWidth: 0 },
+  categoryGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 }, category: { backgroundColor: colors.white, borderRadius: 14, alignItems: 'center', gap: 8, padding: 10 }, categoryIcon: { borderRadius: 12, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.pale }, categoryName: { color: colors.ink, fontSize: 13, lineHeight: 18, fontWeight: '500' },
+  subsections: { backgroundColor: colors.white, borderRadius: 14, overflow: 'hidden' }, subsection: { minHeight: 52, flexDirection: 'row', alignItems: 'center', paddingHorizontal: 14, paddingVertical: 12, gap: 10, borderBottomWidth: 1, borderBottomColor: colors.background },
+  chip: { paddingHorizontal: 12, paddingVertical: 10, minHeight: 44, justifyContent: 'center', borderRadius: 11, backgroundColor: colors.white, borderWidth: 1, borderColor: colors.line }, activeChip: { backgroundColor: colors.brand, borderColor: colors.brand }, choices: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 }, priceInput: { flex: 1, minWidth: 0, minHeight: 52, fontSize: 16, color: colors.ink, paddingHorizontal: 13, backgroundColor: colors.background, borderWidth: 1, borderColor: colors.line, borderRadius: 10 }, filterButton: { minHeight: 44, flexDirection: 'row', alignItems: 'center', gap: 7, paddingHorizontal: 10, backgroundColor: colors.white, borderRadius: 10 }, compare: { minHeight: 48, backgroundColor: colors.pale, borderRadius: 12, flexDirection: 'row', alignItems: 'center', gap: 10, paddingHorizontal: 12 }, sortOption: { minHeight: 52, flexDirection: 'row', gap: 12, alignItems: 'center', justifyContent: 'space-between', borderBottomWidth: 1, borderBottomColor: colors.line },
+});

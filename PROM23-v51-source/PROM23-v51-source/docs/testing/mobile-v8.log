@@ -1,0 +1,79 @@
+
+> prom23-mobile-preview@0.8.0 test
+> tsx --test tests/*.test.ts
+
+▶ Граница будущего мобильного API
+  ✔ запрещает HTTP и встроенные секреты (8.167667ms)
+  ✔ не отправляет запросы на другой origin или за пределы API (0.622791ms)
+  ✔ передаёт ключ и контекст, задаёт запрет cookie и редиректов транспорту (21.509292ms)
+  ✔ не допускает B2B запрос без авторизации и отменённый запрос (0.622625ms)
+  ✔ возвращает понятную ошибку авторизации, не выдаёт HTML или внутренний текст сервера (0.760916ms)
+  ✔ проверяет JSON и структуру ответа (3.304ms)
+  ✔ отменяет запрос по таймауту и не повторяет POST автоматически (10.205791ms)
+✔ Граница будущего мобильного API (46.215542ms)
+✔ disabled article comment contract uses the verified source entity ID and does not expose fabricated posts (0.806375ms)
+✔ article comment adapter makes no network requests and never reports accepted/moderated success (0.443041ms)
+▶ Публичный снимок каталога PROM23 от 11.09.2026
+  ✔ не подменяет неизвестный остаток снимка искусственным количеством (0.495791ms)
+  ✔ сохраняет все 20 корней и их порядок из меню сайта, включая леса перед металлом (0.502625ms)
+  ✔ не содержит повторных ID, URL, отсутствующих родителей или повторных ссылок на потомков (0.969958ms)
+  ✔ полностью достижим из корней без циклов и сохраняет исходный DFS-порядок четырёх уровней (0.290959ms)
+  ✔ связывает каждый товар с точной цепочкой разделов его исходного URL (0.666667ms)
+  ✔ productIds на каждом уровне включает ровно свои товары и товары потомков, без чужих SKU (1.405958ms)
+  ✔ находит товар на четвёртом уровне и не помещает вышку в посторонний корневой раздел (0.152166ms)
+  ✔ сохраняет связь по section.productIds для старого товара без sectionIds (0.076208ms)
+  ✔ останавливает построение хлебных крошек при повреждённом циклическом дереве (0.115583ms)
+✔ Публичный снимок каталога PROM23 от 11.09.2026 (5.43925ms)
+▶ Корзины личных и корпоративных покупок
+  ✔ изолирует корзины при смене контекста (1.001041ms)
+  ✔ ограничивает количество остатком и отклоняет дробные/отрицательные значения (0.101583ms)
+  ✔ удаляет нулевое количество и не добавляет отсутствующий товар (0.096291ms)
+  ✔ считает целые копейки и отклоняет устаревшие SKU/остатки (0.242541ms)
+  ✔ не выдаёт неизвестный остаток за ноль или прежний искусственный лимит20 (0.124ms)
+  ✔ соблюдает отдельный лимит черновика и новые реальные остатки (0.140459ms)
+✔ Корзины личных и корпоративных покупок (2.783ms)
+▶ Каталог
+  ✔ ищет слова независимо от регистра, учитывает артикул, категорию и сортировку (0.395583ms)
+  ✔ ограничивает сравнение шестью товарами и позволяет убрать выбранный (0.127209ms)
+✔ Каталог (0.628333ms)
+✔ source forms keep unchecked consent, valid related routes and source provenance (1.220917ms)
+✔ registration catches password mismatch and invalid email; OTP requires six digits (0.345375ms)
+✔ return renders and serializes only selected authorized order items (0.266375ms)
+✔ checkbox false is explicit; readonly identity cannot be supplied by form values (0.077166ms)
+✔ courier details retain source names and free text for both buyer contexts without becoming required (0.233125ms)
+✔ support video policy is scoped to order appeal and per-item returns, not all photo forms (0.214958ms)
+✔ return media stays attached to the selected authorized product, never stale or forged rows (0.144166ms)
+✔ disconnected form transport never sends or fabricates acceptance (0.376959ms)
+✔ home parser preserves server order, ignores unknown future types and never accepts remote UI fields (2.289291ms)
+✔ home loader performs one credential-free public GET and validates the envelope (22.62825ms)
+✔ bad response, network failure or oversized content falls back without fabricated live readiness (2.027459ms)
+✔ home timeout and external cancellation return fallback even if the transport ignores abort (11.937166ms)
+✔ home loader refuses remote HTTP, secrets, non-API paths and URL parameters before requesting (0.32475ms)
+✔ push opens an order only in its own customer context (0.518667ms)
+✔ push cannot navigate to external URLs or traverse paths (0.139542ms)
+✔ procurement accepts a need without articles/organization; validates required contact and file boundaries (1.29875ms)
+✔ settlement parser rejects arbitrary text, mismatched IDs and malformed state (1.101125ms)
+✔ new settlement or version invalidates delivery/payment offer even for the same display name (0.359ms)
+✔ specification preserves spreadsheet rows, quantities, duplicates and unknown SKUs for manager review (1.642375ms)
+✔ invalid and unsafe quantities never become actionable supply requests (0.271583ms)
+✔ empty input, oversized row count and overlong lines cannot silently truncate a request (0.160041ms)
+✔ valid upper quantity boundary and missing-match lines remain explicit (0.086625ms)
+✔ long comments fail instead of silently losing specification rows (0.266459ms)
+✔ draft ID contains no specification and cannot read another buyer context (0.142292ms)
+✔ draft expires at 30 minutes without extending retention on read (0.076667ms)
+✔ empty history yields no invented interests or recommendations; popularity uses source rank (0.864792ms)
+✔ deduplicates history, excludes stale IDs and prioritizes deepest shared category (0.203375ms)
+✔ recommendations exclude products already in the current cart (0.094291ms)
+✔ search history normalizes whitespace/case, retains latest spelling and limits ten (1.248917ms)
+✔ search history removes one query, clears current context and resets both (0.253625ms)
+✔ four-part example preserves kopecks and rejects invalid amounts (0.133292ms)
+✔ commerce quote is bound to buyer, city, items, price, quantity and expiry (0.185083ms)
+✔ B2B never renders personal Split/Plus; pluralization is correct (1.039292ms)
+ℹ tests 59
+ℹ suites 4
+ℹ pass 59
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 311.008541

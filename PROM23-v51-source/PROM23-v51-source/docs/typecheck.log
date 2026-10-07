@@ -1,0 +1,4 @@
+
+> prom23-mobile-preview@0.1.0 typecheck
+> tsc --noEmit
+

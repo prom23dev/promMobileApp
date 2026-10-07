@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "prom-2414",
+    "sku": "ВПТ0728",
+    "name": "Вышка-тура ВСПТ 0,7×1,6, высота 2,8 метра",
+    "category": "Вышки-туры",
+    "kind": "tower",
+    "priceKopecks": 1345000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "TeaM"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "63.6"
+      },
+      {
+        "label": "Длина, см",
+        "value": "240"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "80"
+      },
+      {
+        "label": "Высота, см",
+        "value": "23"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607949499924"
+      },
+      {
+        "label": "Серия",
+        "value": "ВСПТ 0,7х1,6"
+      },
+      {
+        "label": "Тип",
+        "value": "Передвижная вышка-тура"
+      },
+      {
+        "label": "Страна",
+        "value": "Россия"
+      },
+      {
+        "label": "Размер площадки",
+        "value": "0,7х1,6 м"
+      },
+      {
+        "label": "Ширина площадки, м",
+        "value": "0,7"
+      },
+      {
+        "label": "Длина площадки, м",
+        "value": "1,6"
+      },
+      {
+        "label": "Площадь площадки, м²",
+        "value": "1.12"
+      },
+      {
+        "label": "Рабочая высота, м",
+        "value": "3,6"
+      },
+      {
+        "label": "Полная высота, м",
+        "value": "2,8"
+      },
+      {
+        "label": "Высота до настила, м",
+        "value": "1,6"
+      },
+      {
+        "label": "Нагрузка, кг",
+        "value": "250"
+      },
+      {
+        "label": "Количество секций, шт",
+        "value": "1"
+      },
+      {
+        "label": "Настил с люком, шт",
+        "value": "1"
+      },
+      {
+        "label": "Материал",
+        "value": "сталь"
+      },
+      {
+        "label": "Диаметр трубы, мм",
+        "value": "42"
+      },
+      {
+        "label": "Толщина стенки, мм",
+        "value": "1,5"
+      },
+      {
+        "label": "Материал настила",
+        "value": "фанера"
+      },
+      {
+        "label": "Толщина фанеры, мм",
+        "value": "10"
+      },
+      {
+        "label": "Колёса",
+        "value": "есть"
+      },
+      {
+        "label": "Диаметр колёс, мм",
+        "value": "125"
+      },
+      {
+        "label": "Количество колёс, шт",
+        "value": "4"
+      },
+      {
+        "label": "Стабилизаторы в комплекте",
+        "value": "опция"
+      },
+      {
+        "label": "Длина упаковки, см",
+        "value": "240"
+      },
+      {
+        "label": "Ширина упаковки, см",
+        "value": "80"
+      },
+      {
+        "label": "Высота упаковки, см",
+        "value": "23"
+      },
+      {
+        "label": "Назначение",
+        "value": "профессиональная"
+      },
+      {
+        "label": "Модель товара",
+        "value": "ВСП 0.7х1.6, 2.8 м"
+      },
+      {
+        "label": "Артикул",
+        "value": "ВПТ0728"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "64"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-2414.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavspt07kh16/id-vyshka-tura-vspt-0-7h1-6-2-8-m/",
+    "importedAt": "2026-09-11T06:12:03Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/32c/640_4000_1/tbo6tbol168ns5wf2nfd2h2gd0mxo23z.jpg",
+    "sectionIds": [
+      "16",
+      "https://prom.myfast.space/catalog/vyshki-tury/stalnye/",
+      "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/",
+      "https://prom.myfast.space/catalog/vyshki-tury/stalnye/vsp-250-0-71/vyshkaturavspt07kh16/"
+    ],
+    "popularRank": 3,
+    "oldPriceKopecks": 1526500
+  },
+  {
+    "id": "prom-1042",
+    "sku": "ВТПА273",
+    "name": "Алюминиевая вышка-тура ПРОФИ 2×7, высота 3 метра",
+    "category": "Вышки-туры",
+    "kind": "tower",
+    "priceKopecks": 6689900,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "80.0"
+      },
+      {
+        "label": "Длина, см",
+        "value": "201.5"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "140"
+      },
+      {
+        "label": "Высота, см",
+        "value": "63"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607949491201"
+      },
+      {
+        "label": "Серия",
+        "value": "Техно"
+      },
+      {
+        "label": "Тип",
+        "value": "Алюминиевая передвижная вышка-тура"
+      },
+      {
+        "label": "Страна",
+        "value": "Турция"
+      },
+      {
+        "label": "Размер площадки",
+        "value": "0,5х1,3 м"
+      },
+      {
+        "label": "Ширина площадки, м",
+        "value": "0,5"
+      },
+      {
+        "label": "Длина площадки, м",
+        "value": "1,3"
+      },
+      {
+        "label": "Площадь площадки, м²",
+        "value": "0.65"
+      },
+      {
+        "label": "Рабочая высота, м",
+        "value": "3,8"
+      },
+      {
+        "label": "Полная высота, м",
+        "value": "3"
+      },
+      {
+        "label": "Высота до настила, м",
+        "value": "1,8"
+      },
+      {
+        "label": "Нагрузка, кг",
+        "value": "150"
+      },
+      {
+        "label": "Материал",
+        "value": "алюминий"
+      },
+      {
+        "label": "Диаметр трубы, мм",
+        "value": "40"
+      },
+      {
+        "label": "Толщина стенки, мм",
+        "value": "1,5"
+      },
+      {
+        "label": "Материал настила",
+        "value": "ламинированная фанера"
+      },
+      {
+        "label": "Толщина фанеры, мм",
+        "value": "10"
+      },
+      {
+        "label": "Колёса",
+        "value": "есть"
+      },
+      {
+        "label": "Диаметр колёс, мм",
+        "value": "125"
+      },
+      {
+        "label": "Количество колёс, шт",
+        "value": "4"
+      },
+      {
+        "label": "Длина упаковки, см",
+        "value": "201.5"
+      },
+      {
+        "label": "Ширина упаковки, см",
+        "value": "140"
+      },
+      {
+        "label": "Высота упаковки, см",
+        "value": "63"
+      },
+      {
+        "label": "Назначение",
+        "value": "профессиональная"
+      },
+      {
+        "label": "Модель товара",
+        "value": "ПРОФИ 2х7/H=3м"
+      },
+      {
+        "label": "Артикул",
+        "value": "ВТПА273"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "80"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Турция"
+      }
+    ],
+    "imageFile": "prom-1042.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/id-alyuminievaya-vyshka-tura-profi-2h7-h-3m/",
+    "importedAt": "2026-09-11T06:12:05Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/9cf/640_4000_1/nttcm2f30p8o878nef51rhuc9v569pc0.jpg",
+    "sectionIds": [
+      "16",
+      "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/",
+      "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/"
+    ],
+    "popularRank": 8,
+    "oldPriceKopecks": 9192960
+  },
+  {
+    "id": "prom-1046",
+    "sku": "ВТПА2157",
+    "name": "Алюминиевая вышка-тура ПРОФИ 2×15, высота 7 метров",
+    "category": "Вышки-туры",
+    "kind": "tower",
+    "priceKopecks": 9757500,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "130.0"
+      },
+      {
+        "label": "Длина, см",
+        "value": "401.5"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "140"
+      },
+      {
+        "label": "Высота, см",
+        "value": "63"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607949491249"
+      },
+      {
+        "label": "Серия",
+        "value": "Техно"
+      },
+      {
+        "label": "Тип",
+        "value": "Алюминиевая передвижная вышка-тура"
+      },
+      {
+        "label": "Страна",
+        "value": "Турция"
+      },
+      {
+        "label": "Размер площадки",
+        "value": "0,5х1,9 м"
+      },
+      {
+        "label": "Ширина площадки, м",
+        "value": "0,5"
+      },
+      {
+        "label": "Длина площадки, м",
+        "value": "1,9"
+      },
+      {
+        "label": "Площадь площадки, м²",
+        "value": "0.95"
+      },
+      {
+        "label": "Рабочая высота, м",
+        "value": "7,8"
+      },
+      {
+        "label": "Полная высота, м",
+        "value": "7"
+      },
+      {
+        "label": "Высота до настила, м",
+        "value": "5,8"
+      },
+      {
+        "label": "Нагрузка, кг",
+        "value": "150"
+      },
+      {
+        "label": "Материал",
+        "value": "алюминий"
+      },
+      {
+        "label": "Диаметр трубы, мм",
+        "value": "40"
+      },
+      {
+        "label": "Толщина стенки, мм",
+        "value": "1,5"
+      },
+      {
+        "label": "Материал настила",
+        "value": "ламинированная фанера"
+      },
+      {
+        "label": "Толщина фанеры, мм",
+        "value": "10"
+      },
+      {
+        "label": "Колёса",
+        "value": "есть"
+      },
+      {
+        "label": "Диаметр колёс, мм",
+        "value": "125"
+      },
+      {
+        "label": "Количество колёс, шт",
+        "value": "4"
+      },
+      {
+        "label": "Длина упаковки, см",
+        "value": "401.5"
+      },
+      {
+        "label": "Ширина упаковки, см",
+        "value": "140"
+      },
+      {
+        "label": "Высота упаковки, см",
+        "value": "63"
+      },
+      {
+        "label": "Назначение",
+        "value": "профессиональная"
+      },
+      {
+        "label": "Модель товара",
+        "value": "ПРОФИ 2х15/H=7м"
+      },
+      {
+        "label": "Артикул",
+        "value": "ВТПА2157"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "130"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Турция"
+      }
+    ],
+    "imageFile": "prom-1046.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/id-alyuminievaya-vyshka-tura-profi-2h15-h-7m/",
+    "importedAt": "2026-09-11T06:12:06Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/56c/640_4000_1/x5pxfb8be0pd1pfs1jkopyu1ahcc2i9o.jpg",
+    "sectionIds": [
+      "16",
+      "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/",
+      "https://prom.myfast.space/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/"
+    ],
+    "oldPriceKopecks": 12930624
+  },
+  {
+    "id": "prom-908",
+    "sku": "MCH202",
+    "name": "Стремянка стальная с широкими ступенями Alumet MCH 202 Home, 2 ступени",
+    "category": "Лестницы",
+    "kind": "ladder",
+    "priceKopecks": 281000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Alumet"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "450"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "860"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "4.6"
+      },
+      {
+        "label": "Длина, см",
+        "value": "86"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "46"
+      },
+      {
+        "label": "Высота, см",
+        "value": "6.5"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607145152555"
+      },
+      {
+        "label": "Активность",
+        "value": "Да"
+      },
+      {
+        "label": "Под заказ в регионе",
+        "value": "Нет"
+      },
+      {
+        "label": "Цена региона",
+        "value": "52"
+      },
+      {
+        "label": "Цена региона со скдикой",
+        "value": "52"
+      },
+      {
+        "label": "Единица товара",
+        "value": "Штука"
+      },
+      {
+        "label": "Страна производитель / MANUFACTURER",
+        "value": "Россия"
+      },
+      {
+        "label": "Паспорт изделия / PASPORT",
+        "value": "31632"
+      },
+      {
+        "label": "Сертификат изделия / CERTIFICATE",
+        "value": "31633"
+      },
+      {
+        "label": "Количество ступеней / PROP_01366",
+        "value": "2"
+      },
+      {
+        "label": "Толщина профиля, мм / PROP_171",
+        "value": "0,7"
+      },
+      {
+        "label": "Максимальная нагрузка, кг / PROP_172",
+        "value": "150,0"
+      },
+      {
+        "label": "Серия / PROP_264",
+        "value": "MCH Home"
+      },
+      {
+        "label": "Производитель / PROP_368",
+        "value": "Alumet"
+      },
+      {
+        "label": "Конструкция / PROP_01311",
+        "value": "односекционная"
+      },
+      {
+        "label": "Назначение / PROP_01322",
+        "value": "бытовая"
+      },
+      {
+        "label": "Материал / PROP_01333",
+        "value": "сталь"
+      },
+      {
+        "label": "Настил / PROP_01355",
+        "value": "без настила"
+      },
+      {
+        "label": "Тип / PROP_01377",
+        "value": "стремянка"
+      },
+      {
+        "label": "Статус данных",
+        "value": "Проверено по Alumet"
+      },
+      {
+        "label": "Исходное наименование",
+        "value": "Стремянка Alumet MCH 202"
+      },
+      {
+        "label": "Исходная серия",
+        "value": "Алюминиевые бытовые стремянки Алюмет"
+      },
+      {
+        "label": "Официальная серия / нормализованная серия",
+        "value": "MCH Home"
+      },
+      {
+        "label": "Рекомендуемое наименование",
+        "value": "Стремянка стальная с широкими ступенями Alumet MCH 202 Home, 2 ступени"
+      },
+      {
+        "label": "Семейство / модель",
+        "value": "MCH 202"
+      },
+      {
+        "label": "Основание сопоставления",
+        "value": "совпадение артикула и числовых характеристик с официальным семейством Alumet MCH Home; исходный артикул сохранён"
+      },
+      {
+        "label": "Уверенность сопоставления",
+        "value": "Высокая"
+      },
+      {
+        "label": "Официальная страница",
+        "value": "https://alumet.ru/katalog/stremyanki/seriya-mch/"
+      },
+      {
+        "label": "Официальный паспорт PDF",
+        "value": "https://alumet.ru/download/6432"
+      },
+      {
+        "label": "H1",
+        "value": "Стремянка стальная с широкими ступенями Alumet MCH 202 Home, 2 ступени"
+      },
+      {
+        "label": "SEO Title",
+        "value": "Стремянка Alumet MCH 202, 2 ступени — купить"
+      },
+      {
+        "label": "Meta Description",
+        "value": "Стремянка Alumet MCH 202: 2 ступени, достигаемая высота до 2,58 м, нагрузка до 150 кг. Подробное описание, преимущества, выбор и безопасная эксплуатация."
+      },
+      {
+        "label": "Модель товара",
+        "value": "MCH 202"
+      },
+      {
+        "label": "Артикул",
+        "value": "MCH202"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "3,8"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-908.png",
+    "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyestremyankistulya/id-stremyankaalumetmsn202/",
+    "importedAt": "2026-09-11T06:12:07Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/e81/640_4000_1/ji7rwz3wdbw0frfzhj313otfg3yc0riw.png",
+    "sectionIds": [
+      "179",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyestremyankistulya/"
+    ],
+    "popularRank": 4,
+    "oldPriceKopecks": 302512
+  },
+  {
+    "id": "prom-592",
+    "sku": "M8404",
+    "name": "Стремянка стальная с алюминиевыми ступенями Alumet M 8404 Classic, 4 ступени",
+    "category": "Лестницы",
+    "kind": "ladder",
+    "priceKopecks": 220500,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Alumet"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "440"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "1540"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "5.0"
+      },
+      {
+        "label": "Длина, см",
+        "value": "154"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "44"
+      },
+      {
+        "label": "Высота, см",
+        "value": "16"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607145150742"
+      },
+      {
+        "label": "Активность",
+        "value": "Да"
+      },
+      {
+        "label": "Под заказ в регионе",
+        "value": "Нет"
+      },
+      {
+        "label": "Цена региона",
+        "value": "52"
+      },
+      {
+        "label": "Цена региона со скдикой",
+        "value": "52"
+      },
+      {
+        "label": "Единица товара",
+        "value": "Штука"
+      },
+      {
+        "label": "Страна производитель / MANUFACTURER",
+        "value": "Россия"
+      },
+      {
+        "label": "Паспорт изделия / PASPORT",
+        "value": "31578"
+      },
+      {
+        "label": "Сертификат изделия / CERTIFICATE",
+        "value": "31579"
+      },
+      {
+        "label": "Количество ступеней / PROP_01366",
+        "value": "4"
+      },
+      {
+        "label": "Толщина профиля, мм / PROP_171",
+        "value": "0,7"
+      },
+      {
+        "label": "Максимальная нагрузка, кг / PROP_172",
+        "value": "150,0"
+      },
+      {
+        "label": "Серия / PROP_264",
+        "value": "M Classic"
+      },
+      {
+        "label": "Производитель / PROP_368",
+        "value": "Alumet"
+      },
+      {
+        "label": "Конструкция / PROP_01311",
+        "value": "односекционная"
+      },
+      {
+        "label": "Назначение / PROP_01322",
+        "value": "бытовая"
+      },
+      {
+        "label": "Материал / PROP_01333",
+        "value": "сталь/алюминий"
+      },
+      {
+        "label": "Настил / PROP_01355",
+        "value": "без настила"
+      },
+      {
+        "label": "Тип / PROP_01377",
+        "value": "стремянка"
+      },
+      {
+        "label": "Материал / PROP_363",
+        "value": "сталь/алюминий"
+      },
+      {
+        "label": "Статус данных",
+        "value": "Проверено по Alumet"
+      },
+      {
+        "label": "Исходное наименование",
+        "value": "Стремянка Alumet M8404"
+      },
+      {
+        "label": "Исходная серия",
+        "value": "Стальные стремянки Алюмет"
+      },
+      {
+        "label": "Официальная серия / нормализованная серия",
+        "value": "M Classic"
+      },
+      {
+        "label": "Рекомендуемое наименование",
+        "value": "Стремянка стальная с алюминиевыми ступенями Alumet M 8404 Classic, 4 ступени"
+      },
+      {
+        "label": "Семейство / модель",
+        "value": "M 8404"
+      },
+      {
+        "label": "Основание сопоставления",
+        "value": "совпадение артикула и числовых характеристик с официальным семейством Alumet M Classic; исходный артикул сохранён"
+      },
+      {
+        "label": "Уверенность сопоставления",
+        "value": "Высокая"
+      },
+      {
+        "label": "Официальная страница",
+        "value": "https://alumet.ru/katalog/stremyanki/stalnye-m/"
+      },
+      {
+        "label": "Официальный паспорт PDF",
+        "value": "https://alumet.ru/download/6394"
+      },
+      {
+        "label": "H1",
+        "value": "Стремянка стальная с алюминиевыми ступенями Alumet M 8404 Classic, 4 ступени"
+      },
+      {
+        "label": "SEO Title",
+        "value": "Стремянка Alumet M 8404, 4 ступени — купить"
+      },
+      {
+        "label": "Meta Description",
+        "value": "Стремянка Alumet M 8404: 4 ступени, достигаемая высота до 2,91 м, нагрузка до 150 кг. Подробное описание, преимущества, выбор и безопасная эксплуатация."
+      },
+      {
+        "label": "Модель товара",
+        "value": "M 8404"
+      },
+      {
+        "label": "Артикул",
+        "value": "M8404"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "5,0"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-592.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/id-m8404/",
+    "importedAt": "2026-09-11T06:12:08Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/a14/640_4000_1/m7us9l09ti0nlwvg1bi94cg077qillk7.jpg",
+    "sectionIds": [
+      "179",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/"
+    ],
+    "popularRank": 5,
+    "oldPriceKopecks": 228368
+  },
+  {
+    "id": "prom-1774",
+    "sku": "APD9206",
+    "name": "Стремянка алюминиевая двухсторонняя анодированная Alumet APD 9206 Pro Premium, 6 ступеней",
+    "category": "Лестницы",
+    "kind": "ladder",
+    "priceKopecks": 676000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Alumet"
+      },
+      {
+        "label": "Длина, мм",
+        "value": "1370"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "510"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "160"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "5.8"
+      },
+      {
+        "label": "Длина, см",
+        "value": "137"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "51"
+      },
+      {
+        "label": "Высота, см",
+        "value": "16.0"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607145154450"
+      },
+      {
+        "label": "Активность",
+        "value": "Да"
+      },
+      {
+        "label": "Под заказ в регионе",
+        "value": "Нет"
+      },
+      {
+        "label": "Цена региона",
+        "value": "52"
+      },
+      {
+        "label": "Цена региона со скдикой",
+        "value": "52"
+      },
+      {
+        "label": "Единица товара",
+        "value": "Штука"
+      },
+      {
+        "label": "Страна производитель / MANUFACTURER",
+        "value": "Россия"
+      },
+      {
+        "label": "Количество ступеней / PROP_01366",
+        "value": "6"
+      },
+      {
+        "label": "Толщина профиля, мм / PROP_171",
+        "value": "1,4"
+      },
+      {
+        "label": "Максимальная нагрузка, кг / PROP_172",
+        "value": "150,0"
+      },
+      {
+        "label": "Серия / PROP_264",
+        "value": "APD Pro"
+      },
+      {
+        "label": "Производитель / PROP_368",
+        "value": "Alumet"
+      },
+      {
+        "label": "Конструкция / PROP_01311",
+        "value": "односекционная"
+      },
+      {
+        "label": "Назначение / PROP_01322",
+        "value": "бытовая"
+      },
+      {
+        "label": "Материал / PROP_01333",
+        "value": "алюминий"
+      },
+      {
+        "label": "Настил / PROP_01355",
+        "value": "без настила"
+      },
+      {
+        "label": "Тип / PROP_01377",
+        "value": "стремянка"
+      },
+      {
+        "label": "Материал / PROP_363",
+        "value": "Алюминий"
+      },
+      {
+        "label": "Статус данных",
+        "value": "Проверено по Alumet"
+      },
+      {
+        "label": "Исходное наименование",
+        "value": "Стремянка Alumet APD 9206"
+      },
+      {
+        "label": "Исходная серия",
+        "value": "Алюминиевые стремянки Алюмет"
+      },
+      {
+        "label": "Официальная серия / нормализованная серия",
+        "value": "APD Pro"
+      },
+      {
+        "label": "Рекомендуемое наименование",
+        "value": "Стремянка алюминиевая двухсторонняя анодированная Alumet APD 9206 Pro Premium, 6 ступеней"
+      },
+      {
+        "label": "Семейство / модель",
+        "value": "APD 9206"
+      },
+      {
+        "label": "Основание сопоставления",
+        "value": "совпадение артикула и числовых характеристик с официальным семейством Alumet APD Pro; исходный артикул сохранён"
+      },
+      {
+        "label": "Уверенность сопоставления",
+        "value": "Высокая"
+      },
+      {
+        "label": "Официальная страница",
+        "value": "https://alumet.ru/katalog/stremyanki/seriya-apd/"
+      },
+      {
+        "label": "Официальный паспорт PDF",
+        "value": "https://alumet.ru/download/6786"
+      },
+      {
+        "label": "H1",
+        "value": "Стремянка алюминиевая двухсторонняя анодированная Alumet APD 9206 Pro Premium, 6 ступеней"
+      },
+      {
+        "label": "SEO Title",
+        "value": "Стремянка Alumet APD 9206, 6 ступеней — купить"
+      },
+      {
+        "label": "Meta Description",
+        "value": "Стремянка Alumet APD 9206: 6 ступеней, достигаемая высота до 3,33 м, нагрузка до 150 кг. Подробное описание, преимущества, выбор и безопасная эксплуатация."
+      },
+      {
+        "label": "Модель товара",
+        "value": "APD 9206"
+      },
+      {
+        "label": "Артикул",
+        "value": "APD9206"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "5,8"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-1774.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyedvustoronniestremyanki/id-stremyankaalumetapd9206/",
+    "importedAt": "2026-09-11T06:12:10Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/a53/640_4000_1/wbri4773va3uswfvhfi4qt06cczzvxvb.jpg",
+    "sectionIds": [
+      "179",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/anodirovannyedvustoronniestremyanki/"
+    ],
+    "popularRank": 6,
+    "oldPriceKopecks": 727664
+  },
+  {
+    "id": "prom-23916",
+    "sku": "НОЦ0330М",
+    "name": "Настил перфорированный оцинкованный для строительных лесов 0,3х3,0 м",
+    "category": "Леса",
+    "kind": "scaffold",
+    "priceKopecks": 440000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Длина, мм",
+        "value": "3000"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "300"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "50"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607949501382"
+      },
+      {
+        "label": "Артикул",
+        "value": "НОЦ0330М"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "17,2"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Китай"
+      }
+    ],
+    "imageFile": "prom-23916.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/a/id-nastilperforirovannyyotsinkovannyydlyastroitelnykhlesov03kh30m/",
+    "importedAt": "2026-09-11T06:12:10Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/203/d4dkww48mbbkjm21flcqacmzbx0kxzx9/640_4000_1/18a77zx42q5g3k3obwhc88xpv79t2cwc.jpg",
+    "sectionIds": [
+      "250",
+      "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/",
+      "https://prom.myfast.space/catalog/stroitelnye-lesa/khomutovye/a/"
+    ]
+  },
+  {
+    "id": "prom-2749",
+    "sku": "ГОР3М",
+    "name": "Горизонтальная связь рамных лесов 3 м",
+    "category": "Леса",
+    "kind": "scaffold",
+    "priceKopecks": 34500,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Артикул",
+        "value": "ГОР3М"
+      }
+    ],
+    "imageFile": "prom-2749.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/svyazi-krepleniya-opory/id-gorizontalnayasvyazramnykhlesov3m/",
+    "importedAt": "2026-09-11T06:12:12Z",
+    "availabilityText": "В наличии много",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/430/640_4000_1/x6cvabyxhcvgy4n893skrvqfqqh2rpf0.jpg",
+    "sectionIds": [
+      "250",
+      "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+      "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/svyazi-krepleniya-opory/"
+    ]
+  },
+  {
+    "id": "prom-2743",
+    "sku": "ВОУ350",
+    "name": "Винтовая опорная пята 0,35 м универсальная",
+    "category": "Леса",
+    "kind": "scaffold",
+    "priceKopecks": 72000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Артикул",
+        "value": "ВОУ350"
+      }
+    ],
+    "imageFile": "prom-2743.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/svyazi-krepleniya-opory/id-vintovayaopornayapyata035muniversalnaya/",
+    "importedAt": "2026-09-11T06:12:13Z",
+    "availabilityText": "В наличии много",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/ec5/640_4000_1/3dk9cm7moj07ykmsca1gm42wtpiths1r.jpg",
+    "sectionIds": [
+      "250",
+      "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+      "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/svyazi-krepleniya-opory/"
+    ],
+    "oldPriceKopecks": 77280
+  },
+  {
+    "id": "prom-2733",
+    "sku": "РП30",
+    "name": "Рама проходная ЛРСП 30",
+    "category": "Леса",
+    "kind": "scaffold",
+    "priceKopecks": 126500,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607949491065"
+      },
+      {
+        "label": "Артикул",
+        "value": "РП30"
+      }
+    ],
+    "imageFile": "prom-2733.png",
+    "sourceUrl": "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/ramy-stroitelnykh-lesov/id-ramaprokhodnayalrsp30/",
+    "importedAt": "2026-09-11T06:12:15Z",
+    "availabilityText": "В наличии много",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/cb1/t7yjmdsp781kac1pnp37fq1lur4jqxzo/640_4000_1/01.png",
+    "sectionIds": [
+      "250",
+      "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/",
+      "https://prom.myfast.space/catalog/stroitelnye-lesa/komplektuyushchiye/ramy-stroitelnykh-lesov/"
+    ],
+    "oldPriceKopecks": 142352
+  },
+  {
+    "id": "prom-2402",
+    "sku": "GF-20S",
+    "name": "Скоростной электрический станок для гибки арматуры TeaM GF20S",
+    "category": "Инструменты",
+    "kind": "tool",
+    "priceKopecks": 5325000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "TeaM"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "116.0"
+      },
+      {
+        "label": "Длина, см",
+        "value": "102"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "84"
+      },
+      {
+        "label": "Высота, см",
+        "value": "59"
+      },
+      {
+        "label": "Тип товара",
+        "value": "Электрический станок для гибки арматуры"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "2001000008957"
+      },
+      {
+        "label": "Серия",
+        "value": "GF / RB"
+      },
+      {
+        "label": "Страна",
+        "value": "Китай"
+      },
+      {
+        "label": "Материал",
+        "value": "сталь"
+      },
+      {
+        "label": "Назначение",
+        "value": "Компактная электрическая гибка арматуры малых и средних диаметров с повторяемой настройкой рабочего угла."
+      },
+      {
+        "label": "Вопросы и ответы",
+        "value": "Вопрос: Подходит ли станок для рифлёной арматуры предельного диаметра? Ответ: Заявлен общий диапазон, но усилие зависит от класса стали. Постоянную работу на максимуме нужно подтвердить паспортом и пробной гибкой. Вопрос: Как получить одинаковые хомуты в серии? Ответ: Используйте фиксированный упор длины, одну схему пальцев, контрольный шаблон и учитывайте пружинение на пробной детали. Вопрос: Можно ли изменить радиус изгиба? Ответ: Да, подбором штатных рабочих элементов. Нештатные пальцы и втулки использовать нельзя: они меняют нагрузку и могут повредить механизм. Вопрос: Когда выбирать GF/RB25A, а когда GW? Ответ: Скоростные модели выгодны для массовой гибки малых диаметров. GW выбирают для более крупных прутков, классовой матрицы и многопрутковой обработки."
+      },
+      {
+        "label": "Рекомендации по выбору",
+        "value": "Выбирайте модель по напряжению сети, максимальному диаметру, требуемой скорости и способу задания угла. Для постоянной работы на верхней границе предусмотрите запас и подтвердите класс стали по паспорту. До серии настройте упор, радиус и компенсацию пружинения."
+      },
+      {
+        "label": "Тип привода / инструмента",
+        "value": "электрический"
+      },
+      {
+        "label": "Минимальный диаметр арматуры, мм",
+        "value": "4"
+      },
+      {
+        "label": "Максимальный диаметр арматуры, мм",
+        "value": "20"
+      },
+      {
+        "label": "Диаметр арматуры, мм",
+        "value": "4–20 мм"
+      },
+      {
+        "label": "Ограничения по классу арматуры, мм",
+        "value": "Каталог указывает общий диапазон; класс стали и пакетная гибка подтверждаются паспортом."
+      },
+      {
+        "label": "Тип угла / форма гиба",
+        "value": "типовые углы 90°, 135° и 180°"
+      },
+      {
+        "label": "Угол загиба, °",
+        "value": "180"
+      },
+      {
+        "label": "Цвет",
+        "value": "синий/белый"
+      },
+      {
+        "label": "Напряжение, В",
+        "value": "220"
+      },
+      {
+        "label": "Мощность двигателя, кВт",
+        "value": "2.2"
+      },
+      {
+        "label": "Что можно изготовить / выполнить",
+        "value": "углы; анкеры; закладные; скобы; крюки; элементы арматурных каркасов"
+      },
+      {
+        "label": "Модель",
+        "value": "GF20S"
+      },
+      {
+        "label": "Операция",
+        "value": "гибка"
+      },
+      {
+        "label": "Габариты оборудования, мм",
+        "value": "840×590×1020"
+      },
+      {
+        "label": "Частота хода / вращения",
+        "value": "25–30 об/мин"
+      },
+      {
+        "label": "Режим работы",
+        "value": "точный и быстрый"
+      },
+      {
+        "label": "Управление",
+        "value": "педали; электронное табло у GF20A"
+      },
+      {
+        "label": "Мобильность",
+        "value": "на колёсах"
+      },
+      {
+        "label": "Источник каталога",
+        "value": "Каталог 2026, стр. 108"
+      },
+      {
+        "label": "index",
+        "value": "171"
+      },
+      {
+        "label": "Модель товара",
+        "value": "GF-20S"
+      },
+      {
+        "label": "Артикул",
+        "value": "GF-20S"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "116,0"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Китай"
+      }
+    ],
+    "imageFile": "prom-2402.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/gidravlicheskie-stanki-dlya-gibki-armatury/id-skorostnoystanokdlyagibkiarmaturyteamgf20s/",
+    "importedAt": "2026-09-11T06:12:15Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/1ae/640_4000_1/dhhs5b1viqqp6k4wi5ojdgashe3ocbje.jpg",
+    "sectionIds": [
+      "125",
+      "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/",
+      "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/",
+      "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/dlya-gibki/gidravlicheskie-stanki-dlya-gibki-armatury/"
+    ],
+    "oldPriceKopecks": 6949712
+  },
+  {
+    "id": "prom-2335",
+    "sku": "RC-16",
+    "name": "Мобильный электрогидравлический станок для резки арматуры TeaM RC-16",
+    "category": "Инструменты",
+    "kind": "tool",
+    "priceKopecks": 2979000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "TeaM"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "6.8"
+      },
+      {
+        "label": "Длина, см",
+        "value": "45"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "13"
+      },
+      {
+        "label": "Высота, см",
+        "value": "18"
+      },
+      {
+        "label": "Тип товара",
+        "value": "Мобильный электрогидравлический станок для резки арматуры"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "2001000006861"
+      },
+      {
+        "label": "Серия",
+        "value": "RC"
+      },
+      {
+        "label": "Страна",
+        "value": "Китай"
+      },
+      {
+        "label": "Материал",
+        "value": "Сталь"
+      },
+      {
+        "label": "Назначение",
+        "value": "Мобильная электрогидравлическая резка арматуры, прутков и стержней в размер прямо в рабочей зоне."
+      },
+      {
+        "label": "Вопросы и ответы",
+        "value": "Вопрос: Можно ли резать арматуру максимального диаметра любого класса? Ответ: Нет. Каталог указывает общий предел модели, но более прочная сталь требует большего усилия. Допуск уточняют по паспорту и пробному резу. Вопрос: Почему время фактической операции больше паспортного цикла? Ответ: В таблице указано время рабочего хода. Полный темп включает укладку, выравнивание, поддержку и удаление отрезка. Вопрос: Что делать, если пруток застрял в головке? Ответ: Отключить питание и действовать по инструкции возврата поршня. Нельзя выбивать арматуру, раскачивать инструмент или повторно запускать цикл на перегруженной головке. Вопрос: Как часто проверять масло и ножи? Ответ: Перед каждой сменой — на утечки, крепёж и сколы. Интервал замены масла и порядок регулировки ножей определяет паспорт конкретной модели."
+      },
+      {
+        "label": "Рекомендации по выбору",
+        "value": "Выбирайте RC с запасом по диаметру и с учётом класса стали, массы инструмента и доступной сети 220 В. Для частой резки предельного диаметра рассмотрите более крупную модель. Проверьте комплект кейса, масло, ножи и наличие сервисных расходников."
+      },
+      {
+        "label": "Тип привода / инструмента",
+        "value": "электрогидравлический"
+      },
+      {
+        "label": "Минимальный диаметр арматуры, мм",
+        "value": "4"
+      },
+      {
+        "label": "Максимальный диаметр арматуры, мм",
+        "value": "16"
+      },
+      {
+        "label": "Диаметр арматуры, мм",
+        "value": "4–16 мм; класс стали по паспорту"
+      },
+      {
+        "label": "Ограничения по классу арматуры, мм",
+        "value": "Каталог не приводит классовую матрицу; расчётные значения из исходного шаблона удалены."
+      },
+      {
+        "label": "Цвет",
+        "value": "оранжевый"
+      },
+      {
+        "label": "Напряжение, В",
+        "value": "220"
+      },
+      {
+        "label": "Мощность двигателя, кВт",
+        "value": "0.8"
+      },
+      {
+        "label": "Что можно изготовить / выполнить",
+        "value": "нарезка арматурных стержней и заготовок по длине"
+      },
+      {
+        "label": "Модель",
+        "value": "RC-16"
+      },
+      {
+        "label": "Операция",
+        "value": "резка"
+      },
+      {
+        "label": "Масса оборудования, кг",
+        "value": "13"
+      },
+      {
+        "label": "Время цикла / реза",
+        "value": "3,0 с"
+      },
+      {
+        "label": "Режим работы",
+        "value": "электрогидравлический"
+      },
+      {
+        "label": "Управление",
+        "value": "кнопка под рукоятью / по модели"
+      },
+      {
+        "label": "Мобильность",
+        "value": "переносной, в кейсе"
+      },
+      {
+        "label": "Источник каталога",
+        "value": "Каталог 2026, стр. 112"
+      },
+      {
+        "label": "Источник web",
+        "value": "https://rostov.prom23.ru/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/"
+      },
+      {
+        "label": "Спорный вопрос",
+        "value": "WB указывает вес с упаковкой 7 кг, что меньше массы оборудования 13 кг по каталогу; вес упаковки очищен. | Текущая карточка prom23.ru показывает 1200 Вт / 11 кг, печатный каталог — 0,8 кВт / 13 кг; требуется единый паспорт."
+      },
+      {
+        "label": "index",
+        "value": "163"
+      },
+      {
+        "label": "Модель товара",
+        "value": "RC-16"
+      },
+      {
+        "label": "Артикул",
+        "value": "RC-16"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "6,8"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Китай"
+      }
+    ],
+    "imageFile": "prom-2335.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/mobilnyeelektricheskiestankidlyarezkiarmatury/id-stanokdlyarezkiarmaturyelektricheskiymobilnyyrc16/",
+    "importedAt": "2026-09-11T06:12:17Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/0ef/640_4000_1/ywie1r19v6528j9qcgrqbaeqsvmbi80w.jpg",
+    "sectionIds": [
+      "125",
+      "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/",
+      "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/",
+      "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/stankidlyagibkiirezkiarmatury/rezchiki/mobilnyeelektricheskiestankidlyarezkiarmatury/"
+    ],
+    "oldPriceKopecks": 3666208
+  },
+  {
+    "id": "prom-2377",
+    "sku": "ЛГ150",
+    "name": "Ручной лом-гвоздодёр 150 см",
+    "category": "Инструменты",
+    "kind": "tool",
+    "priceKopecks": 180000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Длина, мм",
+        "value": "1500"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "125"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "220"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "5.2"
+      },
+      {
+        "label": "Длина, см",
+        "value": "150"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "12.5"
+      },
+      {
+        "label": "Высота, см",
+        "value": "22"
+      },
+      {
+        "label": "Тип товара",
+        "value": "Лом / инструмент для демонтажа"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "2001000008575"
+      },
+      {
+        "label": "Серия",
+        "value": "ЛГ"
+      },
+      {
+        "label": "Материал",
+        "value": "Сталь"
+      },
+      {
+        "label": "Назначение",
+        "value": "Демонтаж, поддевание, извлечение крепежа и разборка конструкций."
+      },
+      {
+        "label": "Вопросы и ответы",
+        "value": "Вопрос: Можно ли гнуть ломом арматуру? Ответ: Нет. Он не имеет контролируемой рабочей вилки и не обеспечивает проектный радиус. Для арматуры нужен специальный ключ или станок. Вопрос: Как выбрать длину? Ответ: Длинный инструмент даёт большее плечо, но требует пространства и контроля. В тесной зоне удобнее короткая модель. Вопрос: Почему нельзя наращивать лом трубой? Ответ: Нештатный рычаг может превысить прочность стержня или рабочей части и вызвать внезапный отскок. Вопрос: Что проверить перед демонтажем? Ответ: Состояние инструмента, прочность точки опоры, скрытый крепёж и траекторию высвобождаемой детали."
+      },
+      {
+        "label": "Рекомендации по выбору",
+        "value": "Выбирайте длину и форму рабочих концов под конкретный демонтаж. Не используйте лом как грузозахват, страховочную опору или инструмент для точной гибки арматуры. Работайте в защитных очках и перчатках, прикладывайте усилие плавно."
+      },
+      {
+        "label": "Тип привода / инструмента",
+        "value": "ручной"
+      },
+      {
+        "label": "Что можно изготовить / выполнить",
+        "value": "поддевание досок; выдергивание гвоздей; разборка деревянных конструкций; демонтаж настилов"
+      },
+      {
+        "label": "Модель",
+        "value": "150"
+      },
+      {
+        "label": "Операция",
+        "value": "демонтаж и поддевание"
+      },
+      {
+        "label": "Режим работы",
+        "value": "ручной"
+      },
+      {
+        "label": "Управление",
+        "value": "рычаг"
+      },
+      {
+        "label": "Мобильность",
+        "value": "ручной инструмент"
+      },
+      {
+        "label": "index",
+        "value": "168"
+      },
+      {
+        "label": "Модель товара",
+        "value": "150 см"
+      },
+      {
+        "label": "Артикул",
+        "value": "ЛГ150"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "5,20"
+      }
+    ],
+    "imageFile": "prom-2377.png",
+    "sourceUrl": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/lomburklombara/id-lomgvozdodyer150sm/",
+    "importedAt": "2026-09-11T06:12:17Z",
+    "availabilityText": "В наличии много",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/064/640_4000_1/lki99c8km3xp6ix939exqwmqd2fii3wo.png",
+    "sectionIds": [
+      "125",
+      "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/lomburklombara/"
+    ],
+    "oldPriceKopecks": 213808
+  },
+  {
+    "id": "prom-2272",
+    "sku": "BC25",
+    "name": "Ручной станок для резки брусчатки (гильотина) TeaM BC25",
+    "category": "Инструменты",
+    "kind": "tool",
+    "priceKopecks": 519000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "TeaM"
+      },
+      {
+        "label": "Длина, мм",
+        "value": "495"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "390"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "440"
+      },
+      {
+        "label": "Тип товара",
+        "value": "Ручной станок для резки брусчатки"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "2001000005833"
+      },
+      {
+        "label": "Серия",
+        "value": "BC"
+      },
+      {
+        "label": "Страна",
+        "value": "Китай"
+      },
+      {
+        "label": "Материал",
+        "value": "Сталь"
+      },
+      {
+        "label": "Назначение",
+        "value": "Раскалывание тротуарной плитки, брусчатки, кирпича и сходных материалов."
+      },
+      {
+        "label": "Вопросы и ответы",
+        "value": "Вопрос: Получится ли идеально гладкий рез? Ответ: Нет. Гильотина создаёт контролируемый раскол. Для декоративной видимой кромки может потребоваться камнерез или дополнительная обработка. Вопрос: Можно ли колоть гранит и клинкер? Ответ: Только если материал и размеры входят в паспортный допуск. Обязательно выполните пробу: твёрдость и внутренняя структура сильно влияют на результат. Вопрос: Почему плитка дробится по краям? Ответ: Причины — изношенные ножи, крошка на столе, перекос заготовки, неверный зазор или неоднородный материал. Вопрос: Как выбрать модель? Ответ: По максимальной высоте и ширине материала, массе, наличию колёс, длине рычага и доступности запасных ножей."
+      },
+      {
+        "label": "Рекомендации по выбору",
+        "value": "Сверьте толщину, ширину и тип материала с паспортом. Для видимой кромки заранее оцените качество пробного раскола. Поддерживайте чистоту стола и состояние ножей; не используйте удары и не превышайте рабочий зазор."
+      },
+      {
+        "label": "Тип привода / инструмента",
+        "value": "ручной"
+      },
+      {
+        "label": "Цвет",
+        "value": "синий"
+      },
+      {
+        "label": "Что можно изготовить / выполнить",
+        "value": "подгонка брусчатки в размер; раскол тротуарной плитки; подготовка доборных элементов мощения; рез кирпича и силикатного блока"
+      },
+      {
+        "label": "Максимальная высота реза, мм",
+        "value": "30"
+      },
+      {
+        "label": "Материал реза гильотины",
+        "value": "бетон; кирпич; брусчатка; тротуарная плитка; силикатный блок"
+      },
+      {
+        "label": "Модель",
+        "value": "BC25"
+      },
+      {
+        "label": "Операция",
+        "value": "раскалывание плитки и брусчатки"
+      },
+      {
+        "label": "Режим работы",
+        "value": "ручной механический"
+      },
+      {
+        "label": "Управление",
+        "value": "рычаг"
+      },
+      {
+        "label": "Мобильность",
+        "value": "перемещаемый"
+      },
+      {
+        "label": "index",
+        "value": "155"
+      },
+      {
+        "label": "Модель товара",
+        "value": "BC25"
+      },
+      {
+        "label": "Артикул",
+        "value": "BC25"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "16"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Китай"
+      }
+    ],
+    "imageFile": "prom-2272.png",
+    "sourceUrl": "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/gilotinadlyakolkibruschatki/id-ruchnoystanokdlyarezkibruschatkibc25/",
+    "importedAt": "2026-09-11T06:12:20Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/7cc/640_4000_1/3o786lo91oti06k3m57ukmajor9bgj2n.png",
+    "sectionIds": [
+      "125",
+      "https://prom.myfast.space/catalog/stanki-dlya-gibki-i-rezki-armatury/gilotinadlyakolkibruschatki/"
+    ],
+    "oldPriceKopecks": 714560
+  },
+  {
+    "id": "prom-2388",
+    "sku": "ВЭ45800",
+    "name": "Глубинный вибратор для бетона ВЭ-45-800",
+    "category": "Вибротехника",
+    "kind": "equipment",
+    "priceKopecks": 525000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "TeaM"
+      },
+      {
+        "label": "Длина, мм",
+        "value": "510"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "510"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "100"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "8.65"
+      },
+      {
+        "label": "Длина, см",
+        "value": "51"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "51"
+      },
+      {
+        "label": "Высота, см",
+        "value": "10"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "2001000008483"
+      },
+      {
+        "label": "Модель товара",
+        "value": "ВЭ-45"
+      },
+      {
+        "label": "Артикул",
+        "value": "ВЭ45800"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "8,65"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Китай"
+      }
+    ],
+    "imageFile": "prom-2388.png",
+    "sourceUrl": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/glubinnye/id-glubinnyyvibratordlyabetonave45800/",
+    "importedAt": "2026-09-11T06:12:20Z",
+    "availabilityText": "В наличии много",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/90f/tulz57zxjifx2up2y6csdph6kwqy4gzk/640_4000_1/01.png",
+    "sectionIds": [
+      "113",
+      "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/",
+      "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/glubinnye/"
+    ],
+    "oldPriceKopecks": 543200
+  },
+  {
+    "id": "prom-2349",
+    "sku": "LV3515",
+    "name": "Глубинный вибратор для бетона c аккумулятором LV-3515",
+    "category": "Вибротехника",
+    "kind": "equipment",
+    "priceKopecks": 1500000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "TeaM"
+      },
+      {
+        "label": "Длина, мм",
+        "value": "700"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "700"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "120"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "8,00"
+      },
+      {
+        "label": "Длина, см",
+        "value": "70"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "70"
+      },
+      {
+        "label": "Высота, см",
+        "value": "12"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "2001000006915"
+      },
+      {
+        "label": "Модель товара",
+        "value": "LV-3515"
+      },
+      {
+        "label": "Артикул",
+        "value": "LV3515"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Китай"
+      }
+    ],
+    "imageFile": "prom-2349.png",
+    "sourceUrl": "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/glubinnye/id-glubinnyyvibratordlyabetonacakkumulyatoromlv3515/",
+    "importedAt": "2026-09-11T06:12:23Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/9e4/dof8eusvwsp7gnmxosrhl00czg5zkq7e/640_4000_1/01.png",
+    "sectionIds": [
+      "113",
+      "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/",
+      "https://prom.myfast.space/catalog/vibrotekhnika/vibratory-dlja-betona/glubinnye/"
+    ],
+    "oldPriceKopecks": 1565760
+  },
+  {
+    "id": "prom-2266",
+    "sku": "ЗМ120",
+    "name": "Затирочная машина BPM 120",
+    "category": "Вибротехника",
+    "kind": "equipment",
+    "priceKopecks": 10299000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "TeaM"
+      },
+      {
+        "label": "Длина, мм",
+        "value": "1000"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "1000"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "750"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "105.0"
+      },
+      {
+        "label": "Длина, см",
+        "value": "100"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "100"
+      },
+      {
+        "label": "Высота, см",
+        "value": "75"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "2001000010349"
+      },
+      {
+        "label": "Модель товара",
+        "value": "BPM 120 с двигателем Honda GX-270"
+      },
+      {
+        "label": "Артикул",
+        "value": "ЗМ120"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Китай"
+      }
+    ],
+    "imageFile": "prom-2266.png",
+    "sourceUrl": "https://prom.myfast.space/catalog/vibrotekhnika/zaglazhivayushchaya-mashina/id-zatirochnayamashinahmr120/",
+    "importedAt": "2026-09-11T06:12:23Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/97f/640_4000_1/5jl3x2asswu06zunlbuc11h4o6z1lelc.png",
+    "sectionIds": [
+      "113",
+      "https://prom.myfast.space/catalog/vibrotekhnika/zaglazhivayushchaya-mashina/"
+    ],
+    "oldPriceKopecks": 10886400
+  },
+  {
+    "id": "prom-1649",
+    "sku": "СБР260/380",
+    "name": "Бетономешалка СБР (Лебедянь) СБР-260/380В",
+    "category": "Бетонные работы",
+    "kind": "mixer",
+    "priceKopecks": 10629500,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Лебедянь"
+      },
+      {
+        "label": "Длина, мм",
+        "value": "1650"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "900"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "1430"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "150.0"
+      },
+      {
+        "label": "Длина, см",
+        "value": "165"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "90"
+      },
+      {
+        "label": "Высота, см",
+        "value": "143"
+      },
+      {
+        "label": "Модель товара",
+        "value": "СБР-260/380В"
+      },
+      {
+        "label": "Артикул",
+        "value": "СБР260/380"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "150,0"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-1649.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/betonomeshalki/id-betonomeshalkasbrlebedyansbr260380v/",
+    "importedAt": "2026-09-11T06:12:25Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/514/640_4000_1/ao1bzvjvmmas8lmu6ybrnh3hdwb2um6w.jpg",
+    "sectionIds": [
+      "141",
+      "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/betonomeshalki/"
+    ]
+  },
+  {
+    "id": "prom-969",
+    "sku": "БН1.0",
+    "name": "Бадья для бетона БН 1,0 м3 c лотком",
+    "category": "Бетонные работы",
+    "kind": "equipment",
+    "priceKopecks": 3939000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Длина, мм",
+        "value": "1470"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "1470"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "1755"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "172"
+      },
+      {
+        "label": "Длина, см",
+        "value": "147"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "147"
+      },
+      {
+        "label": "Высота, см",
+        "value": "175"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607949494400"
+      },
+      {
+        "label": "Модель товара",
+        "value": "БН 1,0 м3 c лотком"
+      },
+      {
+        "label": "Артикул",
+        "value": "БН1.0"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-969.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/rjumka-kolokolchik/id-badyadlyabetonabn10m3/",
+    "importedAt": "2026-09-11T06:12:26Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/fef/640_4000_1/ngbc54kvqwmgpn9ibrz5cxw1qdsl3tf3.jpg",
+    "sectionIds": [
+      "141",
+      "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/",
+      "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/badi-dlja-betona/rjumka-kolokolchik/"
+    ],
+    "oldPriceKopecks": 4643296
+  },
+  {
+    "id": "prom-1343",
+    "sku": "ТРПП80",
+    "name": "Тара антиударная для раствора TeaM 80, прямоугольная",
+    "category": "Бетонные работы",
+    "kind": "equipment",
+    "priceKopecks": 99000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "TeaM"
+      },
+      {
+        "label": "Длина, мм",
+        "value": "775"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "470"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "295"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "2.14"
+      },
+      {
+        "label": "Длина, см",
+        "value": "77.5"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "47"
+      },
+      {
+        "label": "Высота, см",
+        "value": "29.5"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607949495759"
+      },
+      {
+        "label": "Модель товара",
+        "value": "Т80 антиударная, прямоугольная"
+      },
+      {
+        "label": "Артикул",
+        "value": "ТРПП80"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "2,14"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-1343.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/stroitelnyetazy/id-taraantiudarnayadlyarastvorateam80pryamougolnaya/",
+    "importedAt": "2026-09-11T06:12:29Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/cda/640_4000_1/vu9n09279rvmgbokm41tfcgaldxayd43.jpg",
+    "sectionIds": [
+      "141",
+      "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/",
+      "https://prom.myfast.space/catalog/oborudovanie-dlja-betonnyh-rabot/plastikovayatara/stroitelnyetazy/"
+    ],
+    "oldPriceKopecks": 106400
+  },
+  {
+    "id": "prom-2033",
+    "sku": "АТПО400",
+    "name": "Анкер торцевой для опалубки оцинкованный удлиненный",
+    "category": "Опалубка",
+    "kind": "equipment",
+    "priceKopecks": 30000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Длина, мм",
+        "value": "450"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "150"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "20"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "1.15"
+      },
+      {
+        "label": "Длина, см",
+        "value": "45"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "15"
+      },
+      {
+        "label": "Высота, см",
+        "value": "2"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "2001000007158"
+      },
+      {
+        "label": "Модель товара",
+        "value": "Ø 15 мм /17 мм оцинкованный"
+      },
+      {
+        "label": "Артикул",
+        "value": "АТПО400"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "1,15"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-2033.png",
+    "sourceUrl": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/vintystyazhnye/id-ankertortsevoydlyaopalubkiotsinkovannyy/",
+    "importedAt": "2026-09-11T06:12:29Z",
+    "availabilityText": "В наличии много",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/9ab/640_4000_1/ll6oyv78fjpi34pmdgjhyxzxzwwbriy9.png",
+    "sectionIds": [
+      "79",
+      "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+      "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/vintystyazhnye/"
+    ],
+    "oldPriceKopecks": 36400
+  },
+  {
+    "id": "prom-2017",
+    "sku": "Ш350",
+    "name": "Анкер для опалубки",
+    "category": "Опалубка",
+    "kind": "equipment",
+    "priceKopecks": 27000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Длина, мм",
+        "value": "335"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "115"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "35"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "0.7"
+      },
+      {
+        "label": "Длина, см",
+        "value": "33.5"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "11.5"
+      },
+      {
+        "label": "Высота, см",
+        "value": "3.5"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "2001000008988"
+      },
+      {
+        "label": "Модель товара",
+        "value": "35 мм"
+      },
+      {
+        "label": "Артикул",
+        "value": "Ш350"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "0,7"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-2017.png",
+    "sourceUrl": "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/vintystyazhnye/id-shkvoren-dlyaopalubki/",
+    "importedAt": "2026-09-11T06:12:32Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/798/640_4000_1/3yj6ii5frh0qb2tr3dxi8ctcsk9qejnl.png",
+    "sectionIds": [
+      "79",
+      "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/",
+      "https://prom.myfast.space/catalog/opalubka/komplektuyushchie/vintystyazhnye/"
+    ]
+  },
+  {
+    "id": "prom-372",
+    "sku": "АП140225",
+    "name": "Плёнка армированная Промышленник 140 г/м² 2×25 м 50 м²",
+    "category": "Сетка и тенты",
+    "kind": "equipment",
+    "priceKopecks": 210000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "7"
+      },
+      {
+        "label": "Длина, см",
+        "value": "200"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "9"
+      },
+      {
+        "label": "Высота, см",
+        "value": "9"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607949498392"
+      },
+      {
+        "label": "Вопросы и ответы",
+        "value": "Вопрос: Чем армированная плёнка отличается от обычной?Ответ: Внутри находится сетчатый каркас, который распределяет нагрузку и ограничивает расползание прокола. Это не делает материал неразрывным, но повышает ремонтопригодность.Вопрос: Какую плотность выбрать?Ответ: 120–140 г/м² обычно достаточно для теплиц, ремонта и сезонных укрытий; 200–250 г/м² рациональнее для больших пролётов и более интенсивной эксплуатации.Вопрос: Нужно ли проверять метраж до монтажа?Ответ: Да. Измерьте длину и ширину до раскроя, осмотрите край и швы. Это позволяет вовремя обнаружить отклонение и правильно пересчитать карту деталей.Вопрос: Можно ли использовать плёнку зимой?Ответ: Можно в пределах заявленного температурного диапазона, но необходимо исключить снеговые мешки, острые кромки и сильное натяжение; на морозе полотно нельзя резко складывать."
+      },
+      {
+        "label": "SEO-теги",
+        "value": "плёнка армированная; плёнка для теплицы; строительная плёнка; укрывная плёнка; плёнка с сеткой; 140 г/м²; 2×25 м; белый"
+      },
+      {
+        "label": "Рекомендации по выбору",
+        "value": "Сравните плотность, размер рулона, светопропускание и предполагаемую нагрузку; для крупных объектов выбирайте большие рулоны с минимумом стыков."
+      },
+      {
+        "label": "Активность",
+        "value": "Да"
+      },
+      {
+        "label": "Под заказ в регионе",
+        "value": "Нет"
+      },
+      {
+        "label": "Цена региона",
+        "value": "55"
+      },
+      {
+        "label": "Цена региона со скдикой",
+        "value": "55"
+      },
+      {
+        "label": "Единица товара",
+        "value": "Рулон"
+      },
+      {
+        "label": "Страна производитель / MANUFACTURER",
+        "value": "Китай"
+      },
+      {
+        "label": "Производитель / PROP_368",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Материал / PROP_363",
+        "value": "полиэтилен со стекловолоконной армирующей сеткой"
+      },
+      {
+        "label": "Тип товара / TYPE_PREFIX",
+        "value": "Армированная полиэтиленовая плёнка"
+      },
+      {
+        "label": "Удельный вес, г/м2 / PROP_77",
+        "value": "140 г/м²"
+      },
+      {
+        "label": "Минимальная партия, шт. / MIN_CONSIGMENT",
+        "value": "1 рулон"
+      },
+      {
+        "label": "Функция материала / PROP_03001",
+        "value": "защитная/укрывная/светопропускающая"
+      },
+      {
+        "label": "Тип материала / PROP_03002",
+        "value": "полиэтилен со стекловолоконной армирующей сеткой"
+      },
+      {
+        "label": "Цвет / PROP_03003",
+        "value": "белый"
+      },
+      {
+        "label": "Плотность, г/м2 / PROP_03008",
+        "value": "140"
+      },
+      {
+        "label": "Размер полотна, м / PROP_03007",
+        "value": "2×25"
+      },
+      {
+        "label": "Площадь, м2 / PROP_030010",
+        "value": "50"
+      },
+      {
+        "label": "Крепление / PROP_76",
+        "value": "рейки, клипсы или широкие прижимы"
+      },
+      {
+        "label": "Материал / MATERIAL",
+        "value": "полиэтилен со стекловолоконной армирующей сеткой"
+      },
+      {
+        "label": "Тип товара стандартизированный",
+        "value": "Армированная полиэтиленовая плёнка"
+      },
+      {
+        "label": "SEO-описание для сайта",
+        "value": "Плёнка армированная Промышленник 140 г/м² 2×25 м 50 м² — светостабилизированное полиэтиленовое полотно с внутренней армирующей сеткой для укрытия и временной защиты.Размер рулона 2×25 м, площадь 50 м², плотность 140 г/м², материал — полиэтилен со стекловолоконной армирующей сеткой. Армирование распределяет усилие и помогает ограничить дальнейшее расползание локального прокола или надреза.Размер 2×25 м площадью 50 м² подходит для частных и профессиональных задач: полотно можно использовать целиком либо раскроить на несколько рабочих фрагментов с учётом припусков.На строительном объекте плёнкой закрывают леса и фасады, оконные и дверные проёмы, кровлю на период работ, опалубку, утеплитель, пиломатериалы, оборудование и складские зоны. Она подходит для создания временного теплового контура, защиты помещений от осадков и пыли, а также как разделительный слой в технологических операциях, если это предусмотрено проектом.В тепличном и фермерском хозяйстве прозрачное полотно используют на каркасах теплиц и парников, для укрытия рассады, кормов, сена, инвентаря и хозяйственных сооружений. Для растений необходимо предусмотреть вентиляцию: герметично закрытая теплица может перегреваться и накапливать конденсат даже при хорошем светопропускании.Лёгкие варианты 120–140 г/м² удобны для теплиц, ремонта и сезонных укрытий; плотности 200–250 г/м² выбирают для более интенсивной строительной и хозяйственной эксплуатации. Перед раскроем измерьте рулон и разметьте детали по армирующей сетке. Покупатели особенно обращают внимание на фактический метраж и ровность отреза, поэтому длину и ширину лучше проверить до монтажа.Полотно закрепляют рейками, клипсами или широкими прижимными элементами, не прокалывая его в случайных местах. На углах исключают контакт с острым металлом, а в местах крепления предусматривают усиление. Небольшие повреждения ремонтируют совместимой лентой по сухой и чистой поверхности.Армированная плёнка является временным укрывным материалом, а не постоянной кровлей. Не допускайте водяных и снеговых мешков, контакта с горячими поверхностями и чрезмерного натяжения. После демонтажа полотно очищают, высушивают и сворачивают."
+      },
+      {
+        "label": "Монтаж и эксплуатация",
+        "value": "Крепить широкими прижимами или рейками, защищать от острых кромок, обеспечивать уклон, вентиляцию и компенсацию температурного натяжения."
+      },
+      {
+        "label": "Источник prom23 / каталог",
+        "value": "https://www.prom23.ru/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/ | Печатный каталог 2026, стр. 49"
+      },
+      {
+        "label": "Модель товара",
+        "value": "140г/м2, 2х25м"
+      },
+      {
+        "label": "Артикул",
+        "value": "АП140225"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Китай"
+      }
+    ],
+    "imageFile": "prom-372.png",
+    "sourceUrl": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/id-armirovannayaplenka140gm22kh25m/",
+    "importedAt": "2026-09-11T06:12:31Z",
+    "availabilityText": "В наличии много",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/d8d/sxkuyo8w2gv2vn27ttqyk031am5uzcfh/480_4000_1/06.png",
+    "sectionIds": [
+      "41",
+      "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/",
+      "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/"
+    ],
+    "oldPriceKopecks": 218400
+  },
+  {
+    "id": "prom-2491",
+    "sku": "АП200625",
+    "name": "Плёнка армированная Промышленник 200 г/м² 6×25 м 150 м²",
+    "category": "Сетка и тенты",
+    "kind": "equipment",
+    "priceKopecks": 1650000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "36.0"
+      },
+      {
+        "label": "Длина, см",
+        "value": "206"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "26"
+      },
+      {
+        "label": "Высота, см",
+        "value": "26"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4640300130418"
+      },
+      {
+        "label": "Вопросы и ответы",
+        "value": "Вопрос: Чем армированная плёнка отличается от обычной? Ответ: Внутри находится сетчатый каркас, который распределяет нагрузку и ограничивает расползание прокола. Это не делает материал неразрывным, но повышает ремонтопригодность. Вопрос: Какую плотность выбрать? Ответ: 120–140 г/м² обычно достаточно для теплиц, ремонта и сезонных укрытий; 200–250 г/м² рациональнее для больших пролётов и более интенсивной эксплуатации. Вопрос: Нужно ли проверять метраж до монтажа? Ответ: Да. Измерьте длину и ширину до раскроя, осмотрите край и швы. Это позволяет вовремя обнаружить отклонение и правильно пересчитать карту деталей. Вопрос: Можно ли использовать плёнку зимой? Ответ: Можно в пределах заявленного температурного диапазона, но необходимо исключить снеговые мешки, острые кромки и сильное натяжение; на морозе полотно нельзя резко складывать."
+      },
+      {
+        "label": "SEO-теги",
+        "value": "плёнка армированная; плёнка для теплицы; строительная плёнка; укрывная плёнка; плёнка с сеткой; 200 г/м²; 6×25 м; белый"
+      },
+      {
+        "label": "Рекомендации по выбору",
+        "value": "Сравните плотность, размер рулона, светопропускание и предполагаемую нагрузку; для крупных объектов выбирайте большие рулоны с минимумом стыков."
+      },
+      {
+        "label": "Активность",
+        "value": "Нет"
+      },
+      {
+        "label": "Под заказ в регионе",
+        "value": "Нет"
+      },
+      {
+        "label": "Цена региона",
+        "value": "55"
+      },
+      {
+        "label": "Цена региона со скдикой",
+        "value": "55"
+      },
+      {
+        "label": "Единица товара",
+        "value": "Рулон"
+      },
+      {
+        "label": "Страна производитель / MANUFACTURER",
+        "value": "Китай"
+      },
+      {
+        "label": "Производитель / PROP_368",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Материал / PROP_363",
+        "value": "полиэтилен со стекловолоконной армирующей сеткой"
+      },
+      {
+        "label": "Тип товара / TYPE_PREFIX",
+        "value": "Армированная полиэтиленовая плёнка"
+      },
+      {
+        "label": "Удельный вес, г/м2 / PROP_77",
+        "value": "200 г/м²"
+      },
+      {
+        "label": "Минимальная партия, шт. / MIN_CONSIGMENT",
+        "value": "1 рулон"
+      },
+      {
+        "label": "Функция материала / PROP_03001",
+        "value": "защитная/укрывная/светопропускающая"
+      },
+      {
+        "label": "Тип материала / PROP_03002",
+        "value": "полиэтилен со стекловолоконной армирующей сеткой"
+      },
+      {
+        "label": "Цвет / PROP_03003",
+        "value": "белый"
+      },
+      {
+        "label": "Плотность, г/м2 / PROP_03008",
+        "value": "200"
+      },
+      {
+        "label": "Размер полотна, м / PROP_03007",
+        "value": "6×25"
+      },
+      {
+        "label": "Площадь, м2 / PROP_030010",
+        "value": "150"
+      },
+      {
+        "label": "Крепление / PROP_76",
+        "value": "рейки, клипсы или широкие прижимы"
+      },
+      {
+        "label": "Материал / MATERIAL",
+        "value": "полиэтилен со стекловолоконной армирующей сеткой"
+      },
+      {
+        "label": "Тип товара стандартизированный",
+        "value": "Армированная полиэтиленовая плёнка"
+      },
+      {
+        "label": "SEO-описание для сайта",
+        "value": "Плёнка армированная Промышленник 200 г/м² 6×25 м 150 м² — светостабилизированное полиэтиленовое полотно с внутренней армирующей сеткой для укрытия и временной защиты. Размер рулона 6×25 м, площадь 150 м², плотность 200 г/м², материал — полиэтилен со стекловолоконной армирующей сеткой. Армирование распределяет усилие и помогает ограничить дальнейшее расползание локального прокола или надреза. Размер 6×25 м площадью 150 м² подходит для частных и профессиональных задач: полотно можно использовать целиком либо раскроить на несколько рабочих фрагментов с учётом припусков. На строительном объекте плёнкой закрывают леса и фасады, оконные и дверные проёмы, кровлю на период работ, опалубку, утеплитель, пиломатериалы, оборудование и складские зоны. Она подходит для создания временного теплового контура, защиты помещений от осадков и пыли, а также как разделительный слой в технологических операциях, если это предусмотрено проектом. В тепличном и фермерском хозяйстве прозрачное полотно используют на каркасах теплиц и парников, для укрытия рассады, кормов, сена, инвентаря и хозяйственных сооружений. Для растений необходимо предусмотреть вентиляцию: герметично закрытая теплица может перегреваться и накапливать конденсат даже при хорошем светопропускании. Лёгкие варианты 120–140 г/м² удобны для теплиц, ремонта и сезонных укрытий; плотности 200–250 г/м² выбирают для более интенсивной строительной и хозяйственной эксплуатации. Перед раскроем измерьте рулон и разметьте детали по армирующей сетке. Покупатели особенно обращают внимание на фактический метраж и ровность отреза, поэтому длину и ширину лучше проверить до монтажа. Полотно закрепляют рейками, клипсами или широкими прижимными элементами, не прокалывая его в случайных местах. На углах исключают контакт с острым металлом, а в местах крепления предусматривают усиление. Небольшие повреждения ремонтируют совместимой лентой по сухой и чистой поверхности. Армированная плёнка является временным укрывным материалом, а не постоянной кровлей. Не допускайте водяных и снеговых мешков, контакта с горячими поверхностями и чрезмерного натяжения. После демонтажа полотно очищают, высушивают и сворачивают."
+      },
+      {
+        "label": "Монтаж и эксплуатация",
+        "value": "Крепить широкими прижимами или рейками, защищать от острых кромок, обеспечивать уклон, вентиляцию и компенсацию температурного натяжения."
+      },
+      {
+        "label": "Источник prom23 / каталог",
+        "value": "https://www.prom23.ru/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/ | Печатный каталог 2026, стр. 49"
+      },
+      {
+        "label": "Модель товара",
+        "value": "200 г/м2, 6х25м"
+      },
+      {
+        "label": "Артикул",
+        "value": "АП200625"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "17,3"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Китай"
+      }
+    ],
+    "imageFile": "prom-2491.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/id-armirovannayaplenka200gm26kh25m/",
+    "importedAt": "2026-09-11T06:12:34Z",
+    "availabilityText": "В наличии много",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/d0d/300_300_1/h393q4vvjg3yr4myxl9ub01szp232sra.jpg",
+    "sectionIds": [
+      "41",
+      "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/",
+      "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/"
+    ],
+    "popularRank": 2
+  },
+  {
+    "id": "prom-2200",
+    "sku": "ТУ18034",
+    "name": "Тент укрывной тарпаулин 180 г/м² 3×4 м с люверсами",
+    "category": "Сетка и тенты",
+    "kind": "equipment",
+    "priceKopecks": 76000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "10.8"
+      },
+      {
+        "label": "Длина, см",
+        "value": "55"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "55"
+      },
+      {
+        "label": "Высота, см",
+        "value": "20"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "2001000004133"
+      },
+      {
+        "label": "Вопросы и ответы",
+        "value": "Вопрос: Это тент ПВХ или тарпаулин? Ответ: Модели 70, 120 и 180 г/м² относятся к полиэтиленовым укрывным тентам — тарпаулину. ПВХ-тенты имеют другую основу и обычно плотность около 550 г/м². Вопрос: Можно ли оставить тент на всю зиму? Ответ: Только при правильном каркасе, уклоне и регулярной очистке от снега. Лёгкие 70 г/м² лучше использовать кратковременно; для длительной зимней эксплуатации выбирают более плотный материал. Вопрос: Почему вырываются люверсы? Ответ: Основные причины — перетяжка, редкие точки крепления, острый край груза и хлопки полотна на ветру. Используйте эластичные связи и распределяйте нагрузку по периметру. Вопрос: Как рассчитать размер? Ответ: Измерьте объект с учётом бокового свеса и добавьте запас на уклон, подворот и крепление. Для сложной формы сделайте схему, чтобы избежать натяжения по диагонали."
+      },
+      {
+        "label": "SEO-теги",
+        "value": "тент укрывной; тарпаулин; тент с люверсами; тент строительный; тент для дачи; 180 г/м²; 3×4 м; синий"
+      },
+      {
+        "label": "Рекомендации по выбору",
+        "value": "70 г/м² — лёгкие кратковременные задачи; 120 г/м² — универсальное применение; 180 г/м² — более интенсивная эксплуатация."
+      },
+      {
+        "label": "Активность",
+        "value": "Нет"
+      },
+      {
+        "label": "Под заказ в регионе",
+        "value": "Нет"
+      },
+      {
+        "label": "Цена региона",
+        "value": "55"
+      },
+      {
+        "label": "Цена региона со скдикой",
+        "value": "55"
+      },
+      {
+        "label": "Единица товара",
+        "value": "Рулон"
+      },
+      {
+        "label": "Страна производитель / MANUFACTURER",
+        "value": "Россия"
+      },
+      {
+        "label": "Производитель / PROP_368",
+        "value": "Промышленник"
+      },
+      {
+        "label": "Материал / PROP_363",
+        "value": "ламинированный полиэтилен (тарпаулин)"
+      },
+      {
+        "label": "Тип товара / TYPE_PREFIX",
+        "value": "Тент укрывной тарпаулин"
+      },
+      {
+        "label": "Удельный вес, г/м2 / PROP_77",
+        "value": "180 г/м²"
+      },
+      {
+        "label": "Функция материала / PROP_03001",
+        "value": "водозащитная/укрывная"
+      },
+      {
+        "label": "Тип материала / PROP_03002",
+        "value": "ламинированный полиэтилен (тарпаулин)"
+      },
+      {
+        "label": "Цвет / PROP_03003",
+        "value": "синий"
+      },
+      {
+        "label": "Плотность, г/м2 / PROP_03008",
+        "value": "180"
+      },
+      {
+        "label": "Размер полотна, м / PROP_03007",
+        "value": "3×4"
+      },
+      {
+        "label": "Площадь, м2 / PROP_030010",
+        "value": "12"
+      },
+      {
+        "label": "Крепление / PROP_76",
+        "value": "люверсы по периметру"
+      },
+      {
+        "label": "Материал / MATERIAL",
+        "value": "ламинированный полиэтилен (тарпаулин)"
+      },
+      {
+        "label": "Тип товара стандартизированный",
+        "value": "Тент укрывной тарпаулин"
+      },
+      {
+        "label": "SEO-описание для сайта",
+        "value": "Тент укрывной тарпаулин 180 г/м² 3×4 м с люверсами — укрывной тент из ламинированного полиэтиленового полотна (тарпаулина) для временной защиты от осадков, пыли и солнца. Размер 3×4 м, площадь 12 м², плотность 180 г/м², цвет — синий. Полотно изготовлено из полиэтиленовой ткани с защитным ламинированием. Это не ПВХ-ткань: тарпаулин легче, гибче и предназначен прежде всего для оперативных укрытий, тогда как тяжёлые ПВХ-тенты 550 г/м² выбирают для более интенсивной эксплуатации. Размер 3×4 м площадью 12 м² подходит для частных и профессиональных задач: полотно можно использовать целиком либо раскроить на несколько рабочих фрагментов с учётом припусков. Плотность 180 г/м² подходит для более интенсивного использования, больших укрытий, складских и строительных площадок, где требуется повышенная устойчивость к растяжению и истиранию. Тент используют для укрытия пиломатериалов, кирпича, утеплителя, садовой техники, дров, сена, грузов, лодок, прицепов, бассейнов, временных складов и рабочих зон. Он подходит для навесов и временных перегородок, если полотно натянуто на каркас с уклоном. Материал не следует применять как самостоятельную несущую кровлю. Металлические люверсы распределены по периметру и служат точками крепления. Используйте шнур, эластичные петли или мягкие стяжки, чтобы компенсировать порывы ветра. Не затягивайте крепёж до деформации кромки: у лёгких тентов чаще всего повреждаются люверсы, если полотно перетянуто или свободно хлопает на ветру. Полотно монтируют с уклоном, исключая карманы для воды, снега и мокрой листвы. На больших размерах добавляют промежуточную поддержку и крепления, а острые углы груза закрывают прокладками. Для длительной зимней эксплуатации и постоянного навеса лучше выбрать более плотный тарпаулин либо ПВХ-тент. После использования тент очищают, полностью высушивают и складывают без острых заломов. Небольшие повреждения ремонтируют заплатой или лентой для полиэтиленовых тентов; разорванный люверс необходимо разгрузить дополнительной точкой крепления."
+      },
+      {
+        "label": "Монтаж и эксплуатация",
+        "value": "Крепить через люверсы равномерно, лучше эластичными связями; обеспечить уклон и промежуточную поддержку, не допускать водяных и снеговых мешков."
+      },
+      {
+        "label": "Источник prom23 / каталог",
+        "value": "https://www.prom23.ru/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/ | Печатный каталог 2026, стр. 48"
+      },
+      {
+        "label": "Модель товара",
+        "value": "OXISS 180 г/м2, 3х4 м"
+      },
+      {
+        "label": "Артикул",
+        "value": "ТУ18034"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-2200.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/tenty/id-tentukryvnoyoxiss180gm23kh4m/",
+    "importedAt": "2026-09-11T06:12:34Z",
+    "availabilityText": "В наличии много",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/b06/640_4000_1/io7ychhqyygp4plovld5mwluj8n1czc5.jpg",
+    "sectionIds": [
+      "41",
+      "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/",
+      "https://prom.myfast.space/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/tenty/"
+    ],
+    "popularRank": 1,
+    "oldPriceKopecks": 79296
+  },
+  {
+    "id": "prom-594",
+    "sku": "M8406",
+    "name": "Стремянка стальная с алюминиевыми ступенями Alumet M 8406 Classic, 6 ступеней",
+    "category": "Лестницы",
+    "kind": "ladder",
+    "priceKopecks": 314500,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Alumet"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "490"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "2000"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "6.6"
+      },
+      {
+        "label": "Длина, см",
+        "value": "200"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "49"
+      },
+      {
+        "label": "Высота, см",
+        "value": "16"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607145150728"
+      },
+      {
+        "label": "Активность",
+        "value": "Да"
+      },
+      {
+        "label": "Под заказ в регионе",
+        "value": "Нет"
+      },
+      {
+        "label": "Цена региона",
+        "value": "52"
+      },
+      {
+        "label": "Цена региона со скдикой",
+        "value": "52"
+      },
+      {
+        "label": "Единица товара",
+        "value": "Штука"
+      },
+      {
+        "label": "Страна производитель / MANUFACTURER",
+        "value": "Россия"
+      },
+      {
+        "label": "Паспорт изделия / PASPORT",
+        "value": "31582"
+      },
+      {
+        "label": "Сертификат изделия / CERTIFICATE",
+        "value": "31583"
+      },
+      {
+        "label": "Количество ступеней / PROP_01366",
+        "value": "6"
+      },
+      {
+        "label": "Толщина профиля, мм / PROP_171",
+        "value": "0.7"
+      },
+      {
+        "label": "Максимальная нагрузка, кг / PROP_172",
+        "value": "150,0"
+      },
+      {
+        "label": "Серия / PROP_264",
+        "value": "M Classic"
+      },
+      {
+        "label": "Производитель / PROP_368",
+        "value": "Alumet"
+      },
+      {
+        "label": "Конструкция / PROP_01311",
+        "value": "односекционная"
+      },
+      {
+        "label": "Назначение / PROP_01322",
+        "value": "бытовая"
+      },
+      {
+        "label": "Материал / PROP_01333",
+        "value": "сталь/алюминий"
+      },
+      {
+        "label": "Настил / PROP_01355",
+        "value": "без настила"
+      },
+      {
+        "label": "Тип / PROP_01377",
+        "value": "стремянка"
+      },
+      {
+        "label": "Материал / PROP_363",
+        "value": "сталь/алюминий"
+      },
+      {
+        "label": "Статус данных",
+        "value": "Проверено по Alumet"
+      },
+      {
+        "label": "Исходное наименование",
+        "value": "Стремянка Alumet M8406"
+      },
+      {
+        "label": "Исходная серия",
+        "value": "Стальные стремянки Алюмет"
+      },
+      {
+        "label": "Официальная серия / нормализованная серия",
+        "value": "M Classic"
+      },
+      {
+        "label": "Рекомендуемое наименование",
+        "value": "Стремянка стальная с алюминиевыми ступенями Alumet M 8406 Classic, 6 ступеней"
+      },
+      {
+        "label": "Семейство / модель",
+        "value": "M 8406"
+      },
+      {
+        "label": "Основание сопоставления",
+        "value": "совпадение артикула и числовых характеристик с официальным семейством Alumet M Classic; исходный артикул сохранён"
+      },
+      {
+        "label": "Уверенность сопоставления",
+        "value": "Высокая"
+      },
+      {
+        "label": "Официальная страница",
+        "value": "https://alumet.ru/katalog/stremyanki/stalnye-m/"
+      },
+      {
+        "label": "Официальный паспорт PDF",
+        "value": "https://alumet.ru/download/6394"
+      },
+      {
+        "label": "H1",
+        "value": "Стремянка стальная с алюминиевыми ступенями Alumet M 8406 Classic, 6 ступеней"
+      },
+      {
+        "label": "SEO Title",
+        "value": "Стремянка Alumet M 8406, 6 ступеней — купить"
+      },
+      {
+        "label": "Meta Description",
+        "value": "Стремянка Alumet M 8406: 6 ступеней, достигаемая высота до 3,33 м, нагрузка до 150 кг. Подробное описание, преимущества, выбор и безопасная эксплуатация."
+      },
+      {
+        "label": "Модель товара",
+        "value": "M 8406"
+      },
+      {
+        "label": "Артикул",
+        "value": "M8406"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "6,6"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-594.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/id-m8406/",
+    "importedAt": "2026-09-11T15:03:50Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/fbc/640_4000_1/53mrdk8im2ijfmhf46xcp22aa0mpfisn.jpg",
+    "popularRank": 7,
+    "sectionIds": [
+      "179",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/"
+    ],
+    "oldPriceKopecks": 325696
+  },
+  {
+    "id": "prom-596",
+    "sku": "M8408",
+    "name": "Стремянка стальная с алюминиевыми ступенями Alumet M 8408 Classic, 8 ступеней",
+    "category": "Лестницы",
+    "kind": "ladder",
+    "priceKopecks": 407500,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Alumet"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "540"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "2460"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "8.2"
+      },
+      {
+        "label": "Длина, см",
+        "value": "246"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "54"
+      },
+      {
+        "label": "Высота, см",
+        "value": "16"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607145150704"
+      },
+      {
+        "label": "Активность",
+        "value": "Да"
+      },
+      {
+        "label": "Под заказ в регионе",
+        "value": "Нет"
+      },
+      {
+        "label": "Цена региона",
+        "value": "52"
+      },
+      {
+        "label": "Цена региона со скдикой",
+        "value": "52"
+      },
+      {
+        "label": "Единица товара",
+        "value": "Штука"
+      },
+      {
+        "label": "Страна производитель / MANUFACTURER",
+        "value": "Россия"
+      },
+      {
+        "label": "Паспорт изделия / PASPORT",
+        "value": "31586"
+      },
+      {
+        "label": "Сертификат изделия / CERTIFICATE",
+        "value": "31587"
+      },
+      {
+        "label": "Количество ступеней / PROP_01366",
+        "value": "8"
+      },
+      {
+        "label": "Толщина профиля, мм / PROP_171",
+        "value": "0,7"
+      },
+      {
+        "label": "Максимальная нагрузка, кг / PROP_172",
+        "value": "150,0"
+      },
+      {
+        "label": "Серия / PROP_264",
+        "value": "M Classic"
+      },
+      {
+        "label": "Производитель / PROP_368",
+        "value": "Alumet"
+      },
+      {
+        "label": "Конструкция / PROP_01311",
+        "value": "односекционная"
+      },
+      {
+        "label": "Назначение / PROP_01322",
+        "value": "бытовая"
+      },
+      {
+        "label": "Материал / PROP_01333",
+        "value": "сталь/алюминий"
+      },
+      {
+        "label": "Настил / PROP_01355",
+        "value": "без настила"
+      },
+      {
+        "label": "Тип / PROP_01377",
+        "value": "стремянка"
+      },
+      {
+        "label": "Материал / PROP_363",
+        "value": "сталь/алюминий"
+      },
+      {
+        "label": "Статус данных",
+        "value": "Проверено по Alumet"
+      },
+      {
+        "label": "Исходное наименование",
+        "value": "Стремянка Alumet M8408"
+      },
+      {
+        "label": "Исходная серия",
+        "value": "Стальные стремянки Алюмет"
+      },
+      {
+        "label": "Официальная серия / нормализованная серия",
+        "value": "M Classic"
+      },
+      {
+        "label": "Рекомендуемое наименование",
+        "value": "Стремянка стальная с алюминиевыми ступенями Alumet M 8408 Classic, 8 ступеней"
+      },
+      {
+        "label": "Семейство / модель",
+        "value": "M 8408"
+      },
+      {
+        "label": "Основание сопоставления",
+        "value": "совпадение артикула и числовых характеристик с официальным семейством Alumet M Classic; исходный артикул сохранён"
+      },
+      {
+        "label": "Уверенность сопоставления",
+        "value": "Высокая"
+      },
+      {
+        "label": "Официальная страница",
+        "value": "https://alumet.ru/katalog/stremyanki/stalnye-m/"
+      },
+      {
+        "label": "Официальный паспорт PDF",
+        "value": "https://alumet.ru/download/6394"
+      },
+      {
+        "label": "H1",
+        "value": "Стремянка стальная с алюминиевыми ступенями Alumet M 8408 Classic, 8 ступеней"
+      },
+      {
+        "label": "SEO Title",
+        "value": "Стремянка Alumet M 8408, 8 ступеней — купить"
+      },
+      {
+        "label": "Meta Description",
+        "value": "Стремянка Alumet M 8408: 8 ступеней, достигаемая высота до 3,76 м, нагрузка до 150 кг. Подробное описание, преимущества, выбор и безопасная эксплуатация."
+      },
+      {
+        "label": "Модель товара",
+        "value": "M 8408"
+      },
+      {
+        "label": "Артикул",
+        "value": "M8408"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "8,2"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-596.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/id-m8408/",
+    "importedAt": "2026-09-11T15:03:51Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/0c8/640_4000_1/lfbwab8ohdf042vq8sp7lpp2jrmzzrjw.jpg",
+    "popularRank": 9,
+    "sectionIds": [
+      "179",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/"
+    ],
+    "oldPriceKopecks": 422464
+  },
+  {
+    "id": "prom-597",
+    "sku": "M8409",
+    "name": "Стремянка стальная с алюминиевыми ступенями Alumet M 8409 Classic, 9 ступеней",
+    "category": "Лестницы",
+    "kind": "ladder",
+    "priceKopecks": 463000,
+    "stock": null,
+    "unit": "ед.",
+    "specs": [
+      {
+        "label": "Производитель",
+        "value": "Alumet"
+      },
+      {
+        "label": "Ширина, мм",
+        "value": "560"
+      },
+      {
+        "label": "Высота, мм",
+        "value": "2690"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "8.2"
+      },
+      {
+        "label": "Длина, см",
+        "value": "246"
+      },
+      {
+        "label": "Ширина, см",
+        "value": "54"
+      },
+      {
+        "label": "Высота, см",
+        "value": "16"
+      },
+      {
+        "label": "Штрихкод",
+        "value": "4607145150698"
+      },
+      {
+        "label": "Активность",
+        "value": "Да"
+      },
+      {
+        "label": "Под заказ в регионе",
+        "value": "Нет"
+      },
+      {
+        "label": "Цена региона",
+        "value": "52"
+      },
+      {
+        "label": "Цена региона со скдикой",
+        "value": "52"
+      },
+      {
+        "label": "Единица товара",
+        "value": "Штука"
+      },
+      {
+        "label": "Страна производитель / MANUFACTURER",
+        "value": "Россия"
+      },
+      {
+        "label": "Паспорт изделия / PASPORT",
+        "value": "31588"
+      },
+      {
+        "label": "Сертификат изделия / CERTIFICATE",
+        "value": "31589"
+      },
+      {
+        "label": "Количество ступеней / PROP_01366",
+        "value": "9"
+      },
+      {
+        "label": "Толщина профиля, мм / PROP_171",
+        "value": "0,7"
+      },
+      {
+        "label": "Максимальная нагрузка, кг / PROP_172",
+        "value": "150,0"
+      },
+      {
+        "label": "Серия / PROP_264",
+        "value": "M Classic"
+      },
+      {
+        "label": "Производитель / PROP_368",
+        "value": "Alumet"
+      },
+      {
+        "label": "Конструкция / PROP_01311",
+        "value": "односекционная"
+      },
+      {
+        "label": "Назначение / PROP_01322",
+        "value": "бытовая"
+      },
+      {
+        "label": "Материал / PROP_01333",
+        "value": "сталь/алюминий"
+      },
+      {
+        "label": "Настил / PROP_01355",
+        "value": "без настила"
+      },
+      {
+        "label": "Тип / PROP_01377",
+        "value": "стремянка"
+      },
+      {
+        "label": "Материал / PROP_363",
+        "value": "сталь/алюминий"
+      },
+      {
+        "label": "Статус данных",
+        "value": "Проверено по Alumet"
+      },
+      {
+        "label": "Исходное наименование",
+        "value": "Стремянка Alumet M8409"
+      },
+      {
+        "label": "Исходная серия",
+        "value": "Стальные стремянки Алюмет"
+      },
+      {
+        "label": "Официальная серия / нормализованная серия",
+        "value": "M Classic"
+      },
+      {
+        "label": "Рекомендуемое наименование",
+        "value": "Стремянка стальная с алюминиевыми ступенями Alumet M 8409 Classic, 9 ступеней"
+      },
+      {
+        "label": "Семейство / модель",
+        "value": "M 8409"
+      },
+      {
+        "label": "Основание сопоставления",
+        "value": "совпадение артикула и числовых характеристик с официальным семейством Alumet M Classic; исходный артикул сохранён"
+      },
+      {
+        "label": "Уверенность сопоставления",
+        "value": "Высокая"
+      },
+      {
+        "label": "Официальная страница",
+        "value": "https://alumet.ru/katalog/stremyanki/stalnye-m/"
+      },
+      {
+        "label": "Официальный паспорт PDF",
+        "value": "https://alumet.ru/download/6394"
+      },
+      {
+        "label": "H1",
+        "value": "Стремянка стальная с алюминиевыми ступенями Alumet M 8409 Classic, 9 ступеней"
+      },
+      {
+        "label": "SEO Title",
+        "value": "Стремянка Alumet M 8409, 9 ступеней — купить"
+      },
+      {
+        "label": "Meta Description",
+        "value": "Стремянка Alumet M 8409: 9 ступеней, достигаемая высота до 3,97 м, нагрузка до 150 кг. Подробное описание, преимущества, выбор и безопасная эксплуатация."
+      },
+      {
+        "label": "Модель товара",
+        "value": "M 8409"
+      },
+      {
+        "label": "Артикул",
+        "value": "M8409"
+      },
+      {
+        "label": "Вес, кг",
+        "value": "9,2"
+      },
+      {
+        "label": "Страна производитель",
+        "value": "Россия"
+      }
+    ],
+    "imageFile": "prom-597.jpg",
+    "sourceUrl": "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/id-m8409/",
+    "importedAt": "2026-09-11T15:03:51Z",
+    "availabilityText": "В наличии мало",
+    "priceSource": "staging-snapshot",
+    "stockSource": "unverified",
+    "draftQuantityLimit": 999,
+    "unitSource": "local-catalog-position",
+    "imageSourceUrl": "https://prom.myfast.space/upload/resize_cache/iblock/2a6/640_4000_1/0jz82yu4cdiplk02b9tj4digzhsm0m8r.jpg",
+    "popularRank": 10,
+    "sectionIds": [
+      "179",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/",
+      "https://prom.myfast.space/catalog/lestnitsy-stremyanki/dielektricheskie/stalnyeodnostoronniestremyanki/"
+    ],
+    "oldPriceKopecks": 479696
+  }
+]

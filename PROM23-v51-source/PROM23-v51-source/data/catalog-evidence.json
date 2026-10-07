@@ -1,0 +1,199 @@
+[
+  {
+    "productId": "prom-2414",
+    "detailPageSHA256": "031c36cf2c192d77d6468d10a806276524f271e557c453473c08fa923553676e",
+    "imageSHA256": "d7d7d535017e23ed0ab6a3e169fec2c5b05ab09b54be10bc746eb4d001cbd8b1",
+    "imageBytes": 313806,
+    "sourcePriceText": "13 450 ₽"
+  },
+  {
+    "productId": "prom-1042",
+    "detailPageSHA256": "bbe72aa54e6869b82e54ee01041e92ae17a699bb93657174d29e932c66dfea86",
+    "imageSHA256": "cad99d2ce579e61418614d97d772b1ac238b8499f09abef9ff5e02ab3aa1cf3f",
+    "imageBytes": 135549,
+    "sourcePriceText": "66 899 ₽"
+  },
+  {
+    "productId": "prom-1046",
+    "detailPageSHA256": "8436ae7528430aa8d5d2d8e6dedb7f5910a0a0df8774d7bb7398baaf2d9ef12a",
+    "imageSHA256": "4beaa294898b78629037d1fe54c6b990a1d90748c759c40a97436f4407e47750",
+    "imageBytes": 125818,
+    "sourcePriceText": "97 575 ₽"
+  },
+  {
+    "productId": "prom-908",
+    "detailPageSHA256": "35e1ec4402821b1e62b76bd2fd9bfb23b8087c41a8282070c8a191600eb170e3",
+    "imageSHA256": "1c362fb6e0ed71711a0c199c0c0bfafc94bce1dda81b97d3a8f10dbffaee8500",
+    "imageBytes": 110079,
+    "sourcePriceText": "2 810 ₽"
+  },
+  {
+    "productId": "prom-592",
+    "detailPageSHA256": "c422416ce3f717f601097b4c043820c90b2c1ddb8c0d1babb92b816b54eb481a",
+    "imageSHA256": "6bd8dbd1eb96241edfa3cbd49c0db8183db1e497b72807fa5be56a13660720a6",
+    "imageBytes": 199769,
+    "sourcePriceText": "2 205 ₽"
+  },
+  {
+    "productId": "prom-1774",
+    "detailPageSHA256": "2115e0515ea3d36396fcdee078ef0f74c1148658ce083bd0132a251088fa4a84",
+    "imageSHA256": "75f71ff3ed6606a12d4a2d2e6e5ba5b41228298b56434d3636579652cd170ff0",
+    "imageBytes": 282725,
+    "sourcePriceText": "6 760 ₽"
+  },
+  {
+    "productId": "prom-23916",
+    "detailPageSHA256": "e66a0aa3b1b347beb0d3bdda2515a9175694c41edc760561c451952be7277115",
+    "imageSHA256": "709b10bd6fb5c94fcbf122d5906b4a11dad1fac071a7299f8e8930ec4866f14d",
+    "imageBytes": 105489,
+    "sourcePriceText": "4 400 ₽"
+  },
+  {
+    "productId": "prom-2749",
+    "detailPageSHA256": "b2c4c68791b6d5f1bfc343ee020dd6b2cb71a6cdddfcbae964ce488c9afd6efa",
+    "imageSHA256": "9c17d080c87c00de893503f1a9e85342f9e1d0ff6bf55761a74d7efcd2504724",
+    "imageBytes": 14685,
+    "sourcePriceText": "345 ₽"
+  },
+  {
+    "productId": "prom-2743",
+    "detailPageSHA256": "751ed01c85918864b46e51945a3d9133e2f9965985185311ce52877ab094d345",
+    "imageSHA256": "0ff93ece826d0e14088baea27007ea99d4a40409fe6fc647db4261163c799cd3",
+    "imageBytes": 44309,
+    "sourcePriceText": "720 ₽"
+  },
+  {
+    "productId": "prom-2733",
+    "detailPageSHA256": "ed8546e9250455e7e2f0d24aedb5a134a0fe3c721a8908da38374d1d67b02c85",
+    "imageSHA256": "b08d8ef4d72ece424301d7be94585e36b6410220a0cb90571ada964b885f7dc6",
+    "imageBytes": 87424,
+    "sourcePriceText": "1 265 ₽"
+  },
+  {
+    "productId": "prom-2402",
+    "detailPageSHA256": "fcca22e1fdbfabdfcc1c13ca22c2e4cfe3c97e723d0856ceb2d109482b63f144",
+    "imageSHA256": "695957b0895ba8c5e3d0b89bb0845a32f926ac457eb0ae935a6034878a970153",
+    "imageBytes": 108196,
+    "sourcePriceText": "53 250 ₽"
+  },
+  {
+    "productId": "prom-2335",
+    "detailPageSHA256": "2da0c31d95e599cc9343851777d8e09edc4bf6af4216253b7134968fec6e7a05",
+    "imageSHA256": "ef6daf77e9585ed49187212bea0e1ddacb29e5faf2e01f2db28968533df71040",
+    "imageBytes": 202975,
+    "sourcePriceText": "29 790 ₽"
+  },
+  {
+    "productId": "prom-2377",
+    "detailPageSHA256": "f3d0dd97db60f625fc8da834b45e39eed9b5d7fe927882936ebfe8399d1b77c0",
+    "imageSHA256": "67135a58456ec11f2abc9d7ea0eb2be7e220758c777a63a21adecbd18a3a97ad",
+    "imageBytes": 40339,
+    "sourcePriceText": "1 800 ₽"
+  },
+  {
+    "productId": "prom-2272",
+    "detailPageSHA256": "309fb41b18e2726bbdd1994e950e695e52d8801a3d11ff34b503cb5fe97a4b05",
+    "imageSHA256": "f7806590d50a59067f8abe2ce44d4622c6cd3366dec625d8ddbd908e4079c7bc",
+    "imageBytes": 110013,
+    "sourcePriceText": "5 190 ₽"
+  },
+  {
+    "productId": "prom-2388",
+    "detailPageSHA256": "db0bcf9fc4d957741a99cc3d771daf1f373bfbe87478a9873a0a0888b2724490",
+    "imageSHA256": "e9efe91f21346c8dd01dc66537a09d9db99559c50b821e08e45e229fc34cb569",
+    "imageBytes": 318829,
+    "sourcePriceText": "5 250 ₽"
+  },
+  {
+    "productId": "prom-2349",
+    "detailPageSHA256": "2b2961c585373f94b836cf32fedf056863c03de8f5954e928751758a02e9b7da",
+    "imageSHA256": "4828294832afce9c1cbe32f1b75743fb153efed542fe5d4cc1d02d91efe4f22f",
+    "imageBytes": 415483,
+    "sourcePriceText": "15 000 ₽"
+  },
+  {
+    "productId": "prom-2266",
+    "detailPageSHA256": "ce84be66340b853b6040cd0fd4b19dd96afdf67630485dd1781f60f76fe2bf7e",
+    "imageSHA256": "c88be47789669d60efe92db8a4d0386a805039d194a17a75ea0421bce50b1e2e",
+    "imageBytes": 219947,
+    "sourcePriceText": "102 990 ₽"
+  },
+  {
+    "productId": "prom-1649",
+    "detailPageSHA256": "aae45fbda92fa6c0a5364ffc1e9d77435fb559989db6c4b204e836ff58a74236",
+    "imageSHA256": "f145cfe0ebfeff55ed655dc773dea4fe131bd00b41cc654d578c9b39c235b0b2",
+    "imageBytes": 49495,
+    "sourcePriceText": "106 295 ₽"
+  },
+  {
+    "productId": "prom-969",
+    "detailPageSHA256": "433077acdc86e8245e518f30ee65b3087db707f86923a3d36f92481a47204bd8",
+    "imageSHA256": "cc7c572d53aeeae58e5896450c0efe52aa645d967ab66dbf9f8a8f3b88a4cfa5",
+    "imageBytes": 267547,
+    "sourcePriceText": "39 390 ₽"
+  },
+  {
+    "productId": "prom-1343",
+    "detailPageSHA256": "ccb5ee856e2bfcc67df7179b785ed328861a44e00b9ad668aaeb682d39835025",
+    "imageSHA256": "7fae10f02cee324e8361d54637b1f5ee9a9347ce930aae26a510862e9ea28565",
+    "imageBytes": 51429,
+    "sourcePriceText": "990 ₽"
+  },
+  {
+    "productId": "prom-2033",
+    "detailPageSHA256": "35b9587b3d7a79924a9b0f4a27aa15625d64b22b91086454c4eea1d8d367ed70",
+    "imageSHA256": "f4963cc63adb4cee08d8f06fbbd91877f1ddada265bd59848a8fd28af0f865f8",
+    "imageBytes": 143465,
+    "sourcePriceText": "300 ₽"
+  },
+  {
+    "productId": "prom-2017",
+    "detailPageSHA256": "5abc7465f76c92e7ac37ed78a7a46e90af7e0df0ac35797f1e42475491f64a0b",
+    "imageSHA256": "8173c80a6932c6d23bbd658244b17a92dcfa3a74bce5cbbcb947a57c2b6257b1",
+    "imageBytes": 164451,
+    "sourcePriceText": "270 ₽"
+  },
+  {
+    "productId": "prom-372",
+    "detailPageSHA256": "af6d9dfb7243c554bf8fe77449604b6b814266418223df2c2eaf60c0cb95fe9e",
+    "imageSHA256": "386045c948d188449cc5cb52f4b38428ccee0856dcc0d9ac2d7f91f626daeca6",
+    "imageBytes": 215191,
+    "sourcePriceText": "2 100 ₽",
+    "imageSelectionNote": "Gallery image 06 selected: first source image states 2x10 m / 20 m2, contradicting this SKU name 2x25 m / 50 m2."
+  },
+  {
+    "productId": "prom-2491",
+    "detailPageSHA256": "1cf0515de49df21fad9125f18dd69daedaac98f0e06c32f4950fe18252e7478f",
+    "imageSHA256": "84138ba94dc967987f061da8ef556fde18cb44aeadd312dd9a331d71aca97fe2",
+    "imageBytes": 55478,
+    "sourcePriceText": "16 500 ₽"
+  },
+  {
+    "productId": "prom-2200",
+    "detailPageSHA256": "fe08d8c0686eccdb22f3919b2c375e5eab819ba81ae7b286ebc1b87942dd8483",
+    "imageSHA256": "10829f0345d3a1207f62f1970c2ac2566fa0aee6ec46a513828d1a4a8bfbd8b6",
+    "imageBytes": 184638,
+    "sourcePriceText": "760 ₽"
+  },
+  {
+    "productId": "prom-594",
+    "detailPageSHA256": "23e9242c5b7b059919aa089c552c8c634e1c2a0fb2a489aa87bcb6dbaea46d27",
+    "imageSHA256": "f7d44f7b588644e0bf6ea19141cf2b9b1b8f407906e8c2d74ed19b750befbbdd",
+    "imageBytes": 201080,
+    "sourcePriceText": "3 145 ₽"
+  },
+  {
+    "productId": "prom-596",
+    "detailPageSHA256": "aed79815f6cb148bad161e8eeffaff3cbfd60d5626103dedea484a8e1102bd65",
+    "imageSHA256": "f3ae34009dd84eb6729e93efa7b5637cf96c26e15ee8f5120f0e245f8441dfc3",
+    "imageBytes": 204534,
+    "sourcePriceText": "4 075 ₽"
+  },
+  {
+    "productId": "prom-597",
+    "detailPageSHA256": "665eb393c9fe284db8bb32aa43e5030ac64eee4b155ba0e3c2cce35de2a862e4",
+    "imageSHA256": "b68cb01f7fde45e3982e5c4ba2a8c0f3c8bb980b81c5dd30a9b9daf39082dfed",
+    "imageBytes": 206275,
+    "sourcePriceText": "4 630 ₽"
+  }
+]

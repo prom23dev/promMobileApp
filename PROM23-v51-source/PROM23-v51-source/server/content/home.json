@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "revision": "home-v20-1",
+  "blocks": [
+    {
+      "id": "home-hero",
+      "type": "hero",
+      "enabled": true
+    },
+    {
+      "id": "home-categories",
+      "type": "categories",
+      "enabled": true
+    },
+    {
+      "id": "home-popular",
+      "type": "popular",
+      "enabled": true
+    },
+    {
+      "id": "home-buyers",
+      "type": "buyers",
+      "enabled": true
+    },
+    {
+      "id": "home-business",
+      "type": "business",
+      "enabled": true
+    },
+    {
+      "id": "home-discounts",
+      "type": "discounts",
+      "enabled": true
+    },
+    {
+      "id": "home-manufactured",
+      "type": "manufactured",
+      "enabled": true
+    },
+    {
+      "id": "home-personalized",
+      "type": "personalized",
+      "enabled": true
+    },
+    {
+      "id": "home-company",
+      "type": "company",
+      "enabled": true
+    },
+    {
+      "id": "home-guide",
+      "type": "guide",
+      "enabled": true
+    },
+    {
+      "id": "home-projects",
+      "type": "projects",
+      "enabled": true
+    },
+    {
+      "id": "home-articles",
+      "type": "articles",
+      "enabled": true
+    },
+    {
+      "id": "home-services",
+      "type": "services",
+      "enabled": true
+    }
+  ]
+}

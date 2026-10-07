@@ -1,0 +1,27 @@
+▶ Публичный снимок каталога PROM23 от 11.09.2026
+  ✔ не подменяет неизвестный остаток снимка искусственным количеством (0.45375ms)
+  ✔ сохраняет все 20 корней и их порядок из меню сайта, включая леса перед металлом (0.448917ms)
+  ✔ не содержит повторных ID, URL, отсутствующих родителей или повторных ссылок на потомков (1.104166ms)
+  ✔ полностью достижим из корней без циклов и сохраняет исходный DFS-порядок четырёх уровней (0.32425ms)
+  ✔ связывает каждый товар с точной цепочкой разделов его исходного URL (0.716709ms)
+  ✔ productIds на каждом уровне включает ровно свои товары и товары потомков, без чужих SKU (1.036583ms)
+  ✔ находит товар на четвёртом уровне и не помещает вышку в посторонний корневой раздел (0.109375ms)
+  ✔ сохраняет связь по section.productIds для старого товара без sectionIds (0.6815ms)
+  ✔ останавливает построение хлебных крошек при повреждённом циклическом дереве (0.146375ms)
+✔ Публичный снимок каталога PROM23 от 11.09.2026 (5.837958ms)
+✔ search history normalizes whitespace/case, retains latest spelling and limits ten (0.909792ms)
+✔ search history removes one query, clears current context and resets both (0.218167ms)
+✔ four-part example preserves kopecks and rejects invalid amounts (0.130083ms)
+✔ commerce quote is bound to buyer, city, items, price, quantity and expiry (0.174459ms)
+✔ B2B never renders personal Split/Plus; pluralization is correct (0.411375ms)
+✔ suggestions match real name/SKU and never manufacture fallback stock or products (1.293084ms)
+✔ recent sections use only existing viewed products, deduplicate and preserve recency (0.223ms)
+✔ spelling help is explicit, conservative and backed by matching real products (1.687542ms)
+ℹ tests 17
+ℹ suites 1
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 111.730375

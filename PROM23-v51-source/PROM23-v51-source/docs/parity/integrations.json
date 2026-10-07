@@ -1,0 +1,1078 @@
+{
+  "at": "2026-09-11T23:17:59.925486+00:00",
+  "scope": "Static source/public GET audit; source original not executed/modified; integration groups are not vendor count or live acceptance",
+  "integrationGroups": 24,
+  "rows": [
+    {
+      "id": "auth-rest",
+      "name": "Bitrix custom REST identity",
+      "sourceEvidence": [
+        "site-source/local/class/Lib/Rest.php:157",
+        "site-source/local/class/Rest/RestAuthController.php:36",
+        "site-source/local/include/forms/auth-reg/action-auth-by-email.php:20"
+      ],
+      "sourceFlow": "Rest wrapper → user.registration.email/phone, user.authorization.email/phone, user.passwordRecovery.email → CUser",
+      "inputs": "email/phone/login,password,password_repeat,hash,code; server basic auth/REST endpoint",
+      "outputs": "status/authorize/message; source STATUS REDIRECT/URL; selected organization cleared on login",
+      "mobileImplementation": "api/client.ts HTTPS generic transport; api/site.ts empty context/always throws",
+      "missingImplementation": "Callable operation dispatch; trusted identity/session binding; multi-step registration challenge; logout/refresh/revoke; normalize field errors/next step. No account success yet.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "otp-cascade",
+      "name": "Digital Direct flashcall→Telegram Gateway→SMS",
+      "sourceEvidence": [
+        "site-source/local/class/Controllers/ServiceVerificationController.php:40",
+        "site-source/local/class/Controllers/ServiceVerificationController.php:141",
+        "site-source/local/class/Models/ConfirmationCodes.php:14"
+      ],
+      "sourceFlow": "ConfirmationCodes → ServiceVerification.quickSendCodeAction → direct.i-dgtl.ru cascade",
+      "inputs": "destination phone,6digit code,server sender settings; TTL10min; resend>=60sec; login/IP/session counters",
+      "outputs": "TIMER/retry_after,CODE_PUBLIC/hash; delivery API status",
+      "mobileImplementation": "Six-digit fields only",
+      "missingImplementation": "Issue/resend/verify challenge adapter; sender response failure must not become delivered success; retry limits; do not expose OTP/hash in logs.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "email",
+      "name": "Bitrix mail events / email OTP",
+      "sourceEvidence": [
+        "site-source/local/class/Models/ConfirmationCodes.php:111",
+        "site-source/local/ajax/form/get-business-advice-form-action.php",
+        "site-source/local/ajax/form/suppliers-form-action.php:156",
+        "site-source/local/php_interface/events.php:1801"
+      ],
+      "sourceFlow": "AUTH_CONFIRM_CODE; NEW_SUPPLIER_REQUEST; NEW_PARTNER_REQUEST; order email/status events",
+      "inputs": "Code/contact/form/order fields; templates + SITE_ID + mail transport from Bitrix",
+      "outputs": "Mail enqueue result, not delivered proof",
+      "mobileImplementation": "No mail sender in mobile (correct)",
+      "missingImplementation": "Preserve server mail events; operation result/outbox distinguishes accepted vs delivery failure; template config + receipt integration.",
+      "status": "MISSING",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "sms-marketing",
+      "name": "Digital Direct SMS mailing/status",
+      "sourceEvidence": [
+        "site-source/local/class/Controllers/SmsMailingController.php:37",
+        "site-source/local/class/Controllers/SmsMailingController.php:93",
+        "site-source/local/class/Controllers/SmsMailingController.php:168"
+      ],
+      "sourceFlow": "sendSms/sendBulkSms/checkStatus → direct.i-dgtl.ru",
+      "inputs": "phone/message/sender; message<=1000; bulk<=100",
+      "outputs": "provider message ID/status; exceptions",
+      "mobileImplementation": "Notification preferences UI only",
+      "missingImplementation": "Validated server-only channel adapter; consent/opt-out and delivery state, no campaigns sent.",
+      "status": "MISSING",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "crm-order",
+      "name": "Bitrix24 order→deal",
+      "sourceEvidence": [
+        "site-source/local/php_interface/events.php:221",
+        "site-source/local/php_interface/events.php:371",
+        "site-source/local/class/Controllers/Bitrix24WebhookController.php:156"
+      ],
+      "sourceFlow": "Existing Sale Order saved event→createDeal→crm.deal.add (existing wrapper)",
+      "inputs": "saved order contact,total,payment/delivery,organization,product rows,region branch",
+      "outputs": "CRM result or null; current source logging",
+      "mobileImplementation": "Read-only bridge/readiness exist; checkout live absent",
+      "missingImplementation": "Create actual Sale order through verified adapter; preserve component events and idempotency; never duplicate direct lead/deal from app; inspect event signature before live.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "crm-forms",
+      "name": "Bitrix24 forms/leads and CForm/HL persistence",
+      "sourceEvidence": [
+        "site-source/local/class/Controllers/Bitrix24WebhookController.php:228",
+        "site-source/local/ajax/form/suppliers-form-action.php:106",
+        "site-source/local/ajax/catalog/action-request-a-call.php:140"
+      ],
+      "sourceFlow": "CFormResult/HL add → typed addBusinessHelp/Supplier/Partner/Rent/Leasing/OneClick/etc → CRM lead; mail side effects",
+      "inputs": "Per-form key mappings in crmMethodMappings; files base64 on server only; branch/city source",
+      "outputs": "CForm/HL id; CRM nullable response; JSON STATUS/SUCCESS_* may ignore CRM failure",
+      "mobileImplementation": "68registry definitions; sourceAction docs only",
+      "missingImplementation": "Callable wrappers + dynamic schemas + uploads + durable consent + outbox/idempotency. Current throw is MISSING implementation.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "one-c-documents",
+      "name": "1С invoice/UPD PDF import",
+      "sourceEvidence": [
+        "site-source/local/php_interface/lib/Documents1C.php:46",
+        "site-source/local/php_interface/lib/Documents1C.php:178",
+        "site-source/local/php_interface/lib/Documents1C.php:397"
+      ],
+      "sourceFlow": "Scheduled Documents1C.run→existing order UID/type→configured HTTP Basic 1C→validated PDF→UF_LINK/UF_TYPE/UF_ORDER_ID",
+      "inputs": "order UID/ACCOUNT_NUMBER; type config invoice/upd; baseURL/login/password server-only",
+      "outputs": "PDF file then owned document manifest; HTTP/mime errors",
+      "mobileImplementation": "ReadOnlyBitrix + DocumentManifest export existing approved docs; no new pull execution",
+      "missingImplementation": "Bind actual authenticated actor, owned documents read/download; preserve source scheduled fetch; runtime schema config and test needed. Existing manifest is not full1C sync.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "one-c-exchange",
+      "name": "1С/catalog Exchange events",
+      "sourceEvidence": [
+        "site-source/local/php_interface/lib/Exchange.php:10",
+        "site-source/local/php_interface/lib/Exchange.php:77",
+        "site-source/local/php_interface/lib/Exchange.php:224",
+        "site-source/local/php_interface/events.php:2359"
+      ],
+      "sourceFlow": "price/store updates→Exchange mapping by article/XML_ID→regional catalog quantity/price and OnProductInStock",
+      "inputs": "EXCHANGE_STORE_ID/catalog group/iblock, productXML_ID/SKU,price,AMOUNT",
+      "outputs": "Bitrix price/store writes and notifications",
+      "mobileImplementation": "Product snapshot+strict unavailable availability DTO",
+      "missingImplementation": "Actual runtime mapping/reader and preserve existing server event chain; import/exchange schedule not recreated from snapshots.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "cdek-product",
+      "name": "CDEK OAuth/city/tariff calculator",
+      "sourceEvidence": [
+        "site-source/local/php_interface/lib/delivery/Providers/CdekCourierProvider.php:129",
+        "site-source/local/php_interface/lib/delivery/Providers/CdekCourierProvider.php:223"
+      ],
+      "sourceFlow": "OAuth token→city codes→calculator tariff139",
+      "inputs": "clientID/secret server; from/to city,weight/dimensions/quantity",
+      "outputs": "tariff price/period, error/debug",
+      "mobileImplementation": "Delivery info only; root restoring checkout adapter",
+      "missingImplementation": "Binding to real service region/warehouse/GAR address; provider quote TTL/error normalization; never infer dates from source texts.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "cdek-checkout",
+      "name": "Installed IPOL SDEK checkout module",
+      "sourceEvidence": [
+        "site-source/local/php_interface/events.php:1753",
+        "site-source/local/php_interface/events.php:1763",
+        "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/template.php"
+      ],
+      "sourceFlow": "Sale component→installed IPOL module tariffs/pickup/session props; cleanup at component completion SORT200",
+      "inputs": "Delivery ID/location/warehouse/PVZ/tariff/order props",
+      "outputs": "Sale shipping cost+selected pickup metadata",
+      "mobileImplementation": "No installed module in mobile",
+      "missingImplementation": "Bridge uses existing module/session, preserve OnSaleComponentOrderOneStepComplete; no generic fake courier tariff.",
+      "status": "MISSING",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "yandex-delivery",
+      "name": "Yandex Delivery B2B taxi estimate",
+      "sourceEvidence": [
+        "site-source/local/php_interface/lib/delivery/Providers/YandexDeliveryProvider.php:19",
+        "site-source/local/php_interface/lib/delivery/Providers/YandexDeliveryProvider.php:85"
+      ],
+      "sourceFlow": "warehouse→destination coordinates/items→b2b.taxi.yandex.net estimate",
+      "inputs": "server token,dimensions/weight/count,route coords",
+      "outputs": "estimate/period or explicit fail; not confirmed delivery order",
+      "mobileImplementation": "Root checkout recovery; public display",
+      "missingImplementation": "Source-compatible quote reader + location binding + safe errors, not static available-for-every-city promise.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "dellin",
+      "name": "Деловые Линии provider / TK option",
+      "sourceEvidence": [
+        "site-source/local/php_interface/lib/delivery/Providers/DellinCourierProvider.php:21",
+        "site-source/local/php_interface/lib/delivery/ProductDeliveryCalculator.php:74"
+      ],
+      "sourceFlow": "api.dellin.ru calculator class exists; not in current ProductDeliveryCalculator provider registry",
+      "inputs": "appkey/sessionId,from/to points,cargo/dimensions",
+      "outputs": "price/period or fail",
+      "mobileImplementation": "Info content only",
+      "missingImplementation": "LEGACY_REVIEW/config check: preserve known TK capability, do not claim dormant class live; root determines checkout availability from Sale config.",
+      "status": "LEGACY_REVIEW",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "dadata",
+      "name": "DaData address/organization/bank/IP suggestions",
+      "sourceEvidence": [
+        "site-source/local/class/Controllers/DaDataController.php:95",
+        "site-source/local/class/Controllers/DaDataController.php:109",
+        "site-source/local/class/Controllers/DaDataController.php:153",
+        "site-source/local/ajax/lk/organization/organizations-find.php",
+        "site-source/local/ajax/order/resolve-location.php"
+      ],
+      "sourceFlow": "clean/findById/suggest/geolocate/iplocate; company lookup→INN/KPP/bank; delivery locations",
+      "inputs": "server key/secret; query/INN/KPP/address",
+      "outputs": "official/suggestion fields, FIAS GUID, party data; suggestions not selected identity",
+      "mobileImplementation": "Full local GAR implemented; organization lookup absent",
+      "missingImplementation": "Keep replaceable address/party provider; no archive keys. GAR settlement != address/party lookup. Trusted chosen suggestion and server commit.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "yandex-maps",
+      "name": "Yandex maps/geocode",
+      "sourceEvidence": [
+        "site-source/frontend/sources/js/_helpers.js:9",
+        "site-source/local/php_interface/lib/Regions.php:54",
+        "site-source/local/ajax/order/courier-geocode.php"
+      ],
+      "sourceFlow": "map render / geocode query→coords, delivery popup",
+      "inputs": "map/geocode key server where applicable; address/coords",
+      "outputs": "coordinates or error",
+      "mobileImplementation": "Curated branch coords; no live map/geocoder",
+      "missingImplementation": "Map/address picker adapter and linkage to trusted delivery address; branch coords not nearest warehouse.",
+      "status": "MISSING",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "yandex-pay",
+      "name": "Yandex Pay / Split provider",
+      "sourceEvidence": [
+        "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/template.php:780",
+        "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/template.php:845",
+        "site-source/personal/order/payment/index.php",
+        "site-source/local/php_interface/include/defines.php:108"
+      ],
+      "sourceFlow": "YaPay SDK session/Ultimate widget plus actual Sale pay system selection; source14online,17onreceipt,16INVOICE constant (13comment stale)",
+      "inputs": "order ID/signed provider session, RUB amount from server,merchant config,callback",
+      "outputs": "provider status/order payment; widget presentation alone not payment",
+      "mobileImplementation": "Marketing/info components; real payment session absent",
+      "missingImplementation": "Root checkout quote/order/payment handoff; runtime provider session/return/deep link/webhook reconciliation. Card/SBP/Pay/Split only if real provider options permit; no made-up method IDs.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "cards",
+      "name": "Saved card model / unfinished capture",
+      "sourceEvidence": [
+        "site-source/local/ajax/lk/payment-methods/add-card-action.php",
+        "site-source/local/class/Models/ConfirmedCards.php"
+      ],
+      "sourceFlow": "Source direct card_number/card_expire/card_code then ConfirmedCards; default/remove owned record",
+      "inputs": "Raw card fields in legacy source; card_id for default/remove",
+      "outputs": "stored card metadata/sourceTODO; not verified PSP tokenization",
+      "mobileImplementation": "externalCapture declaration only",
+      "missingImplementation": "LEGACY_REVIEW: implement PSP session/token reference, never generic PAN/CVV form upload; binding SDK/redirect + secure results missing.",
+      "status": "LEGACY_REVIEW",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "newsletter",
+      "name": "Bitrix Sender + CRM newsletter agent",
+      "sourceEvidence": [
+        "site-source/local/ajax/subscription/subscription.php",
+        "site-source/local/php_interface/agent_events.php",
+        "site-source/local/class/Controllers/Bitrix24WebhookController.php:338",
+        "site-source/local/class/Controllers/Bitrix24WebhookController.php:357"
+      ],
+      "sourceFlow": "email consent→Sender Contact→agent→newsletterExists/addNewsletter dedupe",
+      "inputs": "email/agree_policy,server idempotency key/contactID",
+      "outputs": "contact added/exists, CRM delivery pending/result",
+      "mobileImplementation": "Source subscription form/prefs exist",
+      "missingImplementation": "Callable request/preferences/unsubscribe mapping and consent receipt; preserve agent dedupe and retries; no automatic marketing subscribe.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "ozon-review-import",
+      "name": "Ozon Seller review importer (admin)",
+      "sourceEvidence": [
+        "site-source/local/class/import/review_parser.php:33"
+      ],
+      "sourceFlow": "Admin import→api-seller.ozon.ru reviews→site review storage",
+      "inputs": "seller credentials,cursors/SKU mapping",
+      "outputs": "imported reviews and provenance",
+      "mobileImplementation": "Read-only product reviews contract empty",
+      "missingImplementation": "Server admin integration/source provenance; not a mobile Ozon account function. Do not run/import with archived credentials.",
+      "status": "LEGACY_REVIEW",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "vk-import",
+      "name": "VK OAuth/content import (admin)",
+      "sourceEvidence": [
+        "site-source/local/class/import/import.php:36",
+        "site-source/local/class/import/import.php:68"
+      ],
+      "sourceFlow": "OAuth token acquisition and VK API import content/media",
+      "inputs": "admin tokens and content IDs",
+      "outputs": "site import data",
+      "mobileImplementation": "Public curated media only",
+      "missingImplementation": "This source usage is import/admin, not proof of VK shopper login. Preserve server import contract separately.",
+      "status": "LEGACY_REVIEW",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "ip-geolocation",
+      "name": "IP geolocation for authorization history",
+      "sourceEvidence": [
+        "site-source/local/php_interface/events.php:2101",
+        "site-source/local/php_interface/events.php:2120"
+      ],
+      "sourceFlow": "OnAfterUserAuthorize→ip-api.com location lookup→authorization record; logout cleanup",
+      "inputs": "server request IP/user-agent/user/session",
+      "outputs": "history geography/device/date",
+      "mobileImplementation": "Sessions workspace empty",
+      "missingImplementation": "Authenticated session history/revoke adapter; privacy and timeout/retention behavior, no direct device geo inference.",
+      "status": "MISSING",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "indexnow",
+      "name": "IndexNow notifications (server SEO)",
+      "sourceEvidence": [
+        "site-source/local/php_interface/lib/Seo/IndexNow.php:14",
+        "site-source/local/php_interface/events.php:181"
+      ],
+      "sourceFlow": "iblock add/update/delete→IndexNow URL submission",
+      "inputs": "public URLs,keyfile/config",
+      "outputs": "submission result",
+      "mobileImplementation": "Preview intentionally noindex",
+      "missingImplementation": "Server SEO integration not mobile runtime; no submission in audit; keep preview outside index.",
+      "status": "LEGACY_REVIEW",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "metrika",
+      "name": "Yandex Metrika (web only)",
+      "sourceEvidence": [
+        "site-source/local/templates/main/footer.php:240"
+      ],
+      "sourceFlow": "Web counter script/event traffic",
+      "inputs": "counter/config,page interaction",
+      "outputs": "analytics events",
+      "mobileImplementation": "No mobile analytics SDK initialized",
+      "missingImplementation": "Explicit native analytics adapter/consent/retention if user requires; do not copy web counter silently.",
+      "status": "LEGACY_REVIEW",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "external-media",
+      "name": "Embedded/public videos and communication links",
+      "sourceEvidence": [
+        "site-source/local/templates/main/footer.php",
+        "site-source/local/components/prom/blog.detail"
+      ],
+      "sourceFlow": "Public YouTube/VK/video/t.me/tel/mailto links",
+      "inputs": "allowlisted public URL",
+      "outputs": "external player/browser or communication app",
+      "mobileImplementation": "Local images + safe external link UI",
+      "missingImplementation": "Not payment/CRM transport. Exact video/link route parity in pages inventory; do not send messages to validate.",
+      "status": "PARTIAL",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    },
+    {
+      "id": "gosuslugi",
+      "name": "Госуслуги/passport presentation candidate",
+      "sourceEvidence": [
+        "site-source/local/ajax/lk/info/edit/forms/gosuslugi.php"
+      ],
+      "sourceFlow": "Unnamed form fields only; verified OAuth/provider handler not found",
+      "inputs": "country/passport fields in mock",
+      "outputs": "No verified persisted/authenticated result",
+      "mobileImplementation": "Read-only registry fields",
+      "missingImplementation": "LEGACY_REVIEW, not real integration count claim; cannot fabricate identity verification.",
+      "status": "LEGACY_REVIEW",
+      "externalBlockerEligible": false,
+      "externalDependencies": "Existing Bitrix core/DB/module config and freshly supplied credentials where needed; never use archive secrets; actual end-to-end remains untested."
+    }
+  ],
+  "crmMethodMappings": [
+    {
+      "method": "createDeal",
+      "line": 156,
+      "bindings": [
+        {
+          "line": 168,
+          "expression": "'TITLE' => 'Заявка с сайта - Заказ клиента',"
+        },
+        {
+          "line": 170,
+          "expression": "'SOURCE_DESCRIPTION' => $source,"
+        },
+        {
+          "line": 171,
+          "expression": "'UF_CRM_67BD851199D4D' => $branchId, // Филиал"
+        },
+        {
+          "line": 175,
+          "expression": "if (isset($data['amount'])) {"
+        },
+        {
+          "line": 176,
+          "expression": "$fields['OPPORTUNITY'] = $data['amount'];"
+        },
+        {
+          "line": 179,
+          "expression": "if (isset($data['order_items'])) {"
+        },
+        {
+          "line": 180,
+          "expression": "$fields['UF_CRM_1758288962771'] = $data['order_items']; // Состав заказа"
+        },
+        {
+          "line": 183,
+          "expression": "if (isset($data['phone'])) {"
+        },
+        {
+          "line": 184,
+          "expression": "$fields['UF_CRM_1758282249461'] = $data['phone']; // Телефон"
+        },
+        {
+          "line": 187,
+          "expression": "if (isset($data['email'])) {"
+        },
+        {
+          "line": 188,
+          "expression": "$fields['UF_CRM_1758282260837'] = $data['email']; // E-mail"
+        },
+        {
+          "line": 191,
+          "expression": "if (isset($data['delivery_address'])) {"
+        },
+        {
+          "line": 192,
+          "expression": "$fields['UF_CRM_1758282271653'] = $data['delivery_address']; // Адрес доставки"
+        },
+        {
+          "line": 195,
+          "expression": "if (isset($data['payment_method'])) {"
+        },
+        {
+          "line": 196,
+          "expression": "$fields['UF_CRM_1758282374013'] = $data['payment_method']; // Способ оплаты (ID)"
+        },
+        {
+          "line": 199,
+          "expression": "if (isset($data['comment'])) {"
+        },
+        {
+          "line": 200,
+          "expression": "$fields['UF_CRM_1758282394173'] = $data['comment']; // Комментарий"
+        },
+        {
+          "line": 203,
+          "expression": "if (isset($data['delivery_method'])) {"
+        },
+        {
+          "line": 204,
+          "expression": "$fields['UF_CRM_1758282447598'] = $data['delivery_method']; // Способ доставки (ID)"
+        },
+        {
+          "line": 208,
+          "expression": "if ($clientType == 'physical' && isset($data['full_name'])) {"
+        },
+        {
+          "line": 209,
+          "expression": "$fields['UF_CRM_1758282234518'] = $data['full_name']; // ФИО"
+        },
+        {
+          "line": 214,
+          "expression": "if (isset($data['company_name'])) {"
+        },
+        {
+          "line": 215,
+          "expression": "$fields['UF_CRM_1758282456693'] = $data['company_name']; // Название компании"
+        },
+        {
+          "line": 217,
+          "expression": "if (isset($data['contact_person'])) {"
+        },
+        {
+          "line": 218,
+          "expression": "$fields['UF_CRM_1758282467077'] = $data['contact_person']; // Контактное лицо"
+        }
+      ]
+    },
+    {
+      "method": "createLead",
+      "line": 228,
+      "bindings": [
+        {
+          "line": 231,
+          "expression": "'TITLE' => 'Заявка с сайта - ' . $title,"
+        },
+        {
+          "line": 232,
+          "expression": "'SOURCE_DESCRIPTION' => $source,"
+        }
+      ]
+    },
+    {
+      "method": "addBusinessHelp",
+      "line": 271,
+      "bindings": [
+        {
+          "line": 274,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 275,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 276,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 277,
+          "expression": "'UF_CRM_1776267208372' => $data['company'],"
+        },
+        {
+          "line": 278,
+          "expression": "'COMMENTS' => $data['comment'],"
+        },
+        {
+          "line": 279,
+          "expression": "'UF_CRM_1776267008813' => $data['city'],"
+        }
+      ]
+    },
+    {
+      "method": "addSupplier",
+      "line": 303,
+      "bindings": [
+        {
+          "line": 306,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 307,
+          "expression": "'UF_CRM_1776267208372' => $data['company'],"
+        },
+        {
+          "line": 308,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 309,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 310,
+          "expression": "'UF_CRM_1776267178025' => $data['category'],"
+        },
+        {
+          "line": 311,
+          "expression": "'UF_CRM_1776267220831' => $data['description'],"
+        },
+        {
+          "line": 312,
+          "expression": "'COMMENTS' => $data['comment'],"
+        },
+        {
+          "line": 313,
+          "expression": "'UF_CRM_1776267008813' => $data['city'],"
+        },
+        {
+          "line": 317,
+          "expression": "$fields['__HAS_FILES'] = true;"
+        },
+        {
+          "line": 318,
+          "expression": "$fields['UF_CRM_1776267327660'] = array_map(function ($file) {"
+        }
+      ]
+    },
+    {
+      "method": "addNewsletter",
+      "line": 338,
+      "bindings": [
+        {
+          "line": 345,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 346,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 350,
+          "expression": "$fields['ORIGINATOR_ID'] = self::NEWSLETTER_ORIGINATOR_ID;"
+        },
+        {
+          "line": 351,
+          "expression": "$fields['ORIGIN_ID'] = $idempotencyKey;"
+        }
+      ]
+    },
+    {
+      "method": "addRent",
+      "line": 390,
+      "bindings": [
+        {
+          "line": 393,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 394,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 395,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 396,
+          "expression": "'COMMENTS' => $data['comment'],"
+        },
+        {
+          "line": 397,
+          "expression": "'UF_CRM_1776267293871' => $data['public-link'],"
+        },
+        {
+          "line": 398,
+          "expression": "'UF_CRM_1776267061331' => [$data['admin-link']],"
+        },
+        {
+          "line": 399,
+          "expression": "'UF_CRM_1776267028927' => [$data['product-name']],"
+        },
+        {
+          "line": 400,
+          "expression": "'UF_CRM_1776267193987' => $data['quantity'],"
+        },
+        {
+          "line": 401,
+          "expression": "'UF_CRM_1776267008813' => $data['city']"
+        }
+      ]
+    },
+    {
+      "method": "addContactManager",
+      "line": 420,
+      "bindings": [
+        {
+          "line": 423,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 424,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 425,
+          "expression": "'UF_CRM_1776267061331' => [$data['admin-link']],"
+        },
+        {
+          "line": 426,
+          "expression": "'UF_CRM_1776267008813' => $data['region-city'],"
+        },
+        {
+          "line": 427,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 428,
+          "expression": "'UF_CRM_1776267293871' => $data['public-link'],"
+        },
+        {
+          "line": 429,
+          "expression": "'UF_CRM_1776267028927' => [$data['product-name']],"
+        },
+        {
+          "line": 430,
+          "expression": "//'UF_CRM_' => $data['manager']"
+        }
+      ]
+    },
+    {
+      "method": "addLeasing",
+      "line": 449,
+      "bindings": [
+        {
+          "line": 452,
+          "expression": "'UF_CRM_1776267167890' => $data['inn'] ?? '',"
+        },
+        {
+          "line": 453,
+          "expression": "'UF_CRM_1776267208372' => $data['company'] ?? '',"
+        },
+        {
+          "line": 454,
+          "expression": "'PHONE' => self::formatPhone($data['phone'] ?? ''),"
+        },
+        {
+          "line": 455,
+          "expression": "'EMAIL' => self::formatEmail($data['email'] ?? ''),"
+        },
+        {
+          "line": 456,
+          "expression": "'COMMENTS' => 'Стоимость предмета лизинга: ' . ($data['leasing-price'] ?? ''),"
+        },
+        {
+          "line": 457,
+          "expression": "'UF_CRM_1776267061331' => [$data['admin-link'] ?? ''],"
+        },
+        {
+          "line": 458,
+          "expression": "'UF_CRM_1776267293871' => $data['public-link'] ?? '',"
+        },
+        {
+          "line": 459,
+          "expression": "'UF_CRM_1776267028927' => [$data['product-name'] ?? ''],"
+        }
+      ]
+    },
+    {
+      "method": "addCheaper",
+      "line": 477,
+      "bindings": [
+        {
+          "line": 480,
+          "expression": "'UF_CRM_1776267355327' => $data['price'],"
+        },
+        {
+          "line": 481,
+          "expression": "'UF_CRM_1776267293871' => $data['competitor_link'],"
+        },
+        {
+          "line": 482,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 483,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 484,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 485,
+          "expression": "'UF_CRM_1776267305768' => $data['page_url'],"
+        },
+        {
+          "line": 486,
+          "expression": "'UF_CRM_1776267008813' => $data['city'],"
+        }
+      ]
+    },
+    {
+      "method": "addOneClick",
+      "line": 505,
+      "bindings": [
+        {
+          "line": 508,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 509,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 510,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 511,
+          "expression": "'UF_CRM_1776267061331' => [$data['admin-link']],"
+        },
+        {
+          "line": 512,
+          "expression": "'UF_CRM_1776267193987' => $data['quantity'],"
+        },
+        {
+          "line": 513,
+          "expression": "'UF_CRM_1776267293871' => $data['public-link'],"
+        },
+        {
+          "line": 514,
+          "expression": "'UF_CRM_1776267028927' => [$data['product-name']],"
+        },
+        {
+          "line": 515,
+          "expression": "'UF_CRM_1776267008813' => $data['city']"
+        }
+      ]
+    },
+    {
+      "method": "addReview",
+      "line": 541,
+      "bindings": [
+        {
+          "line": 544,
+          "expression": "'UF_CRM_1776267284046' => $data['rating'],"
+        },
+        {
+          "line": 545,
+          "expression": "'UF_CRM_1776267365544' => $data['pros'],"
+        },
+        {
+          "line": 546,
+          "expression": "'COMMENTS' => $data['comment'],"
+        },
+        {
+          "line": 547,
+          "expression": "'UF_CRM_1776267111130' => $data['date'],"
+        },
+        {
+          "line": 548,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 549,
+          "expression": "'UF_CRM_1776267293871' => $data['public-link'],"
+        },
+        {
+          "line": 550,
+          "expression": "'UF_CRM_1776267028927' => [$data['product-name']],"
+        },
+        {
+          "line": 551,
+          "expression": "'UF_CRM_1776267008813' => $data['city'],"
+        },
+        {
+          "line": 552,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 553,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 557,
+          "expression": "$fields['__HAS_FILES'] = true;"
+        },
+        {
+          "line": 558,
+          "expression": "$fields['UF_CRM_1776267341110'] = array_map(function ($file) {"
+        }
+      ]
+    },
+    {
+      "method": "addPartner",
+      "line": 587,
+      "bindings": [
+        {
+          "line": 590,
+          "expression": "'UF_CRM_1776267167890' => $data['inn'],"
+        },
+        {
+          "line": 591,
+          "expression": "'UF_CRM_1776267208372' => $data['company'],"
+        },
+        {
+          "line": 592,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 593,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 594,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 595,
+          "expression": "'UF_CRM_1776267123179' => $data['has_warehouse'] ? 'Y' : 'N',"
+        },
+        {
+          "line": 596,
+          "expression": "'UF_CRM_1776266993883' => $data['warehouse_address'],"
+        },
+        {
+          "line": 597,
+          "expression": "'UF_CRM_1776267314906' => $data['warehouse_phone'],"
+        },
+        {
+          "line": 598,
+          "expression": "'UF_CRM_1776267098775' => $data['warehouse_schedule'],"
+        },
+        {
+          "line": 599,
+          "expression": "'UF_CRM_1776267111130' => $data['date'],"
+        },
+        {
+          "line": 600,
+          "expression": "'UF_CRM_1776267008813' => $data['city'],"
+        }
+      ]
+    },
+    {
+      "method": "addEntityComment",
+      "line": 618,
+      "bindings": [
+        {
+          "line": 621,
+          "expression": "'UF_CRM_1776267157879' => $data['entity_id'],"
+        },
+        {
+          "line": 622,
+          "expression": "'COMMENTS' => $data['text'],"
+        },
+        {
+          "line": 623,
+          "expression": "'UF_CRM_1776267111130' => $data['date'],"
+        },
+        {
+          "line": 624,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 625,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 626,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 627,
+          "expression": "'UF_CRM_1776267008813' => $data['city']"
+        }
+      ]
+    },
+    {
+      "method": "addQuestion",
+      "line": 646,
+      "bindings": [
+        {
+          "line": 649,
+          "expression": "'COMMENTS' => $data['text'],"
+        },
+        {
+          "line": 650,
+          "expression": "'UF_CRM_1776267111130' => $data['date'],"
+        },
+        {
+          "line": 651,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 652,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 653,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 654,
+          "expression": "'UF_CRM_1776267293871' => $data['public-link'],"
+        },
+        {
+          "line": 655,
+          "expression": "'UF_CRM_1776267028927' => [$data['product-name']],"
+        },
+        {
+          "line": 656,
+          "expression": "'UF_CRM_1776267008813' => $data['city']"
+        }
+      ]
+    },
+    {
+      "method": "addQuestionPersonal",
+      "line": 671,
+      "bindings": [
+        {
+          "line": 674,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 675,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 676,
+          "expression": "'COMMENTS' => $data['text'],"
+        },
+        {
+          "line": 677,
+          "expression": "'UF_CRM_1776267008813' => $data['city'],"
+        }
+      ]
+    },
+    {
+      "method": "addBookATour",
+      "line": 693,
+      "bindings": [
+        {
+          "line": 696,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 697,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 698,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 699,
+          "expression": "'UF_CRM_1776267136332' => $data['date'],"
+        },
+        {
+          "line": 700,
+          "expression": "'UF_CRM_1776267008813' => $data['city'],"
+        }
+      ]
+    },
+    {
+      "method": "addOrangeAsk",
+      "line": 716,
+      "bindings": [
+        {
+          "line": 719,
+          "expression": "'NAME' => $data['name'],"
+        },
+        {
+          "line": 720,
+          "expression": "'PHONE' => self::formatPhone($data['phone']),"
+        },
+        {
+          "line": 721,
+          "expression": "'EMAIL' => self::formatEmail($data['email']),"
+        },
+        {
+          "line": 722,
+          "expression": "'COMMENTS' => $data['comment'],"
+        },
+        {
+          "line": 723,
+          "expression": "'UF_CRM_1776267008813' => $data['city']"
+        }
+      ]
+    }
+  ],
+  "productionRequests": 0,
+  "externalBlockerEligible": 0,
+  "baselineOnly": true,
+  "recoveryImplementation": {
+    "transport": "server/integrations/runtime-client.mjs",
+    "runtime": "integrations/runtime/",
+    "forms": "runtime-dispatch-coverage.json",
+    "status": "PARTIAL",
+    "actualRuntimeExecuted": false,
+    "missing": "Provider callbacks, document download/open, complete catalog, connected runtime acceptance"
+  }
+}

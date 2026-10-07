@@ -1,0 +1,36 @@
+[Unit]
+Description=PROM23 mobile test preview
+StartLimitIntervalSec=120
+StartLimitBurst=3
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/fastuser/data/prom23-mobile-preview/current
+ExecStart=/usr/local/bin/node --max-old-space-size=128 preview/index.mjs
+Environment=PROM23_PREVIEW_PORT=18087
+Environment=PROM23_PREVIEW_BIND=0.0.0.0
+Environment=PROM23_API_PORT=18090
+Environment=PROM23_DATABASE_PATH=/var/www/fastuser/data/prom23-mobile-preview/state/runtime.sqlite
+Environment='PROM23_PREVIEW_HOSTS=["159.253.19.172:18087","127.0.0.1:18087"]'
+UMask=0077
+Restart=on-failure
+RestartSec=10
+Nice=15
+MemoryAccounting=yes
+MemoryMax=256M
+CPUAccounting=yes
+CPUQuota=25%
+TasksMax=32
+LimitNOFILE=256
+LimitFSIZE=67108864
+NoNewPrivileges=yes
+PrivateUsers=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/www/fastuser/data/prom23-mobile-preview/state
+InaccessiblePaths=/var/www/fastuser/data/www
+RestrictAddressFamilies=AF_INET AF_UNIX
+
+[Install]
+WantedBy=default.target

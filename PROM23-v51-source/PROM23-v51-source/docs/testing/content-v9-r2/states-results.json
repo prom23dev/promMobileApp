@@ -1,0 +1,42 @@
+[
+  {
+    "check": "FAQ initially closed",
+    "pass": true
+  },
+  {
+    "check": "FAQ search open",
+    "pass": true
+  },
+  {
+    "check": "FAQ no results",
+    "pass": true
+  },
+  {
+    "check": "timeline source year2023",
+    "pass": true
+  },
+  {
+    "check": "BuyerInfoGrid8",
+    "pass": true
+  },
+  {
+    "check": "workflow middlephase456",
+    "pass": true
+  },
+  {
+    "check": "gallery next",
+    "pass": true
+  },
+  {
+    "check": "franchise requirement",
+    "pass": true
+  },
+  {
+    "check": "Moscow hours restored",
+    "pass": true
+  },
+  {
+    "check": "Dinskaya no inventedbranch",
+    "pass": true
+  }
+]

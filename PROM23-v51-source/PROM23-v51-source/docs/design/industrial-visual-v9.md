@@ -1,0 +1,3 @@
+# Technology concept for MASTER5 §18–21
+
+Created with image generation11September2026. Asset: mobile/assets/brand/automated-tube-concept.png. Depicts a conceptual automated laser machine cutting round steel tube; prompt requested42mm outside diameter. A rendered image cannot establish actual physical scale or prove installed equipment. Public UI explicitly labels it «Технологический визуал»; accessible description says it is not a plant photograph. Documentary production, projects, company and awards continue using source photographs and evidence. Original generated file retained outside source delivery under user .codex/generated_images. No third-party logos.

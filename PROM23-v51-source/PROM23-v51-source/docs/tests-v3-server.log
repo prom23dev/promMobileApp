@@ -1,0 +1,41 @@
+✔ health/catalog disclose sandbox, snapshot metadata, and new product kinds (36.95275ms)
+✔ missing or invalid seed keeps health explicit and catalog empty (25.375125ms)
+✔ opaque tokens isolate state and are stored only as hashes (34.24425ms)
+✔ personal and organization baskets stay separate and unknown organizations are rejected (30.859ms)
+✔ quantity validation rejects bad values, unknown products and client-supplied prices (59.170333ms)
+✔ comparison is capped at three, favorites toggle and reset clears state (63.743584ms)
+✔ quotes use server prices, exact kopecks, test delivery tariffs and context addresses (29.104583ms)
+✔ order creation is atomic and idempotent; new-key quote replay and key conflict fail (35.793791ms)
+✔ orders reject expired quotes and changed carts without clearing the cart (29.159083ms)
+✔ quotes/orders are session scoped and checkout clears only the matching context cart (52.172834ms)
+✔ cancellation is local, owner scoped, recorded once, and survives an idempotent retry (24.347709ms)
+✔ appeal/return creation is blocked until site integration and historical data stays owner/context scoped (54.695125ms)
+✔ SQLite reopen preserves baskets, preferences, orders, appeals, returns and idempotency (40.398375ms)
+✔ strict origins, bounded bodies, JSON format and exact routes/methods are enforced (35.345ms)
+✔ deleting a local session cascades its data, revokes token, and preserves another session (36.483375ms)
+✔ configured origins replace defaults and reject wildcards or URL paths (10.584708ms)
+✔ session quota returns 429 without deleting sessions and deletion releases capacity (19.653292ms)
+✔ quote quota is per session; expired unused quotes are pruned while consumed history survives (45.511333ms)
+✔ order quota spans both contexts, preserves state and allows safe order retries (39.151375ms)
+✔ SQLite page cap returns 429 STORAGE_LIMIT and rolls back without a generic 500 (84.218041ms)
+✔ every action requires expectedContext and stale tabs cannot modify either basket or preferences (50.582709ms)
+✔ a completed historical order cannot bypass missing canonical return reasons and item flow (20.939ms)
+✔ catalog sections preserve a valid tree, reject broken parents/cycles, and remain optional for fixtures (28.346ms)
+✔ inbox derives committed order events, isolates customers and persists read status (45.533167ms)
+✔ notification preferences are opt-in drafts, scoped, bounded and deleted with the session (29.268834ms)
+✔ bridge is disabled by default and writes are rejected before any network operation (1.750916ms)
+✔ private key file and explicit HTTPS shop origin are mandatory; unrelated site/URLs fail closed (1.945917ms)
+✔ read requests are signed with exact body/target and unique nonces; no cookies or CRM secrets are forwarded (17.593459ms)
+✔ invalid actor/order or injected operation is rejected locally (2.61925ms)
+✔ redirects are rejected and an upstream message cannot expose credentials (5.257833ms)
+✔ response actor mismatch and claimed write capability fail the read-only contract (2.3335ms)
+✔ bounded responses and timeout fail without implicit request retries (18.951083ms)
+✔ offline readiness reports missing runtime and existing CRM TLS/event blockers without pretending to connect (3.2515ms)
+ℹ tests 33
+ℹ suites 0
+ℹ pass 33
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1042.421791

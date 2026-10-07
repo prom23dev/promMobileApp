@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "20 pictograms, Lesa first, three shelves present",
+    "Opening a product persists its viewed history",
+    "Listing and cart expose delivery, Split and Plus terms",
+    "Checkout opens source-derived form with order summary",
+    "Required fields and unchecked consents validated; filled form sends no network request",
+    "More -> blog -> native article with table of contents",
+    "68 source form routes render without JS errors",
+    "320px catalogue and five navigation items fit the viewport"
+  ],
+  "errors": []
+}

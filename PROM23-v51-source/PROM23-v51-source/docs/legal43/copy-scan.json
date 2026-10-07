@@ -1,0 +1,10 @@
+{
+  "matches": [
+    {
+      "file": "mobile/src/content/sitePages.ts",
+      "pattern": "не является публичной офертой",
+      "context": "й.\",\n          \"3.4. Глобальная формулировка «вся информация на сайте не является публичной офертой» к товарам, реально предназначенным для дистанционной продажи, не применяется.\",\n          \"4. Информация о т"
+    }
+  ],
+  "note": "Matches require context review: official documents quote prohibited phrases; do not alter source texts."
+}

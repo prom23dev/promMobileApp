@@ -1,0 +1,46 @@
+import React from 'react';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { useRouter } from 'expo-router';
+import { ArrowRight, BookOpen, Building2, ChevronRight, CreditCard, FileCheck2, MapPin, PackageCheck, Truck } from 'lucide-react-native';
+import { useShop } from '../store';
+import { getSiteContact } from '../content/siteContent';
+import { colors, layout, type } from './theme';
+
+export function HomeBenefits() {
+  const router = useRouter();
+  return <View style={{ gap: 10 }}>
+    <Pressable accessibilityRole="button" accessibilityLabel="Собственное производство — от проектирования до готового оборудования" onPress={() => router.push('/information/production')} style={s.production}>
+      <Image source={require('../../assets/brand/production-hero.jpg')} resizeMode="cover" style={s.productionImage} />
+      <View style={s.productionCopy}><Text style={[type.heading, { color: colors.white, fontSize: 21, lineHeight: 24 }]}>Собственное{ '\n' }производство</Text><Text style={[type.caption, { color: '#FFFFFF' }]}>От проектирования{ '\n' }до готового оборудования</Text><View style={[layout.row, { gap: 7, paddingTop: 2 }]}><Text style={[type.label, { color: colors.white }]}>О производстве</Text><ArrowRight size={18} color={colors.white} /></View></View>
+    </Pressable>
+    <BusinessBenefit compact />
+    <Pressable accessibilityRole="button" onPress={() => router.push('/blog')} style={[layout.card, { flexDirection: 'row', alignItems: 'center', gap: 12 }]}><BookOpen size={24} color={colors.brand} /><View style={{ flex: 1, gap: 4 }}><Text style={type.subheading}>Оборудование в деле</Text><Text style={type.caption}>Блог, инструкции и проекты наших клиентов</Text></View><ChevronRight size={18} color={colors.brand} /></Pressable>
+    <View style={[layout.row, { gap: 10, alignItems: 'stretch' }]}><Pressable accessibilityRole="button" onPress={() => router.push('/information/delivery')} style={s.quick}><Truck size={22} color={colors.brand} /><Text style={type.label}>Доставка и ПВЗ</Text><Text style={type.caption}>СДЭК, Яндекс Маркет,{ '\n' }транспортные компании</Text></Pressable><Pressable accessibilityRole="button" onPress={() => router.push('/information/payment')} style={s.quick}><CreditCard size={22} color={colors.brand} /><Text style={type.label}>Оплата</Text><Text style={type.caption}>Пэй, Сплит, баллы Плюса{ '\n' }и оплата по счёту</Text></Pressable></View>
+  </View>;
+}
+export function BusinessBenefit({ compact = false }: { compact?: boolean }) {
+  const router = useRouter();
+  return <Pressable accessibilityRole="button" accessibilityLabel="Для бизнеса: комплексная поставка, счёт, НДС и ЭДО" onPress={() => router.push('/information/business')} style={[layout.card, { padding: 15, gap: 10 }]}>
+    <View style={[layout.row, { gap: 10 }]}><Building2 size={23} color={colors.accent} /><View style={{ flex: 1 }}><Text style={type.subheading}>Комплексные поставки для бизнеса</Text><Text style={type.caption}>Подбор оборудования и изготовление под задачу</Text></View><ChevronRight size={18} color={colors.brand} /></View>
+    {!compact && <View style={[layout.row, { gap: 14, flexWrap: 'wrap' }]}><View style={[layout.row, { gap: 5 }]}><FileCheck2 size={16} color={colors.brand} /><Text style={type.caption}>Счёт, НДС и ЭДО</Text></View><View style={[layout.row, { gap: 5 }]}><PackageCheck size={16} color={colors.brand} /><Text style={type.caption}>Поставка на объект</Text></View></View>}
+    <Text style={[type.label, { color: colors.accent }]}>Получить предложение →</Text>
+  </Pressable>;
+}
+export function DeliveryBenefit() {
+  const router = useRouter(); const { state } = useShop(); const branch = getSiteContact(state.city);
+  return <Pressable accessibilityRole="button" accessibilityLabel="Доставка, самовывоз и пункты выдачи" onPress={() => router.push('/information/delivery')} style={[layout.card, { padding: 16 }]}>
+    <View style={[layout.row, { gap: 10 }]}><Truck size={22} color={colors.brand} /><View style={{ flex: 1 }}><Text style={type.subheading}>Получение · {state.city}</Text><Text style={type.caption}>Самовывоз, СДЭК, Яндекс Маркет и перевозчики</Text></View><ChevronRight size={18} color={colors.brand} /></View>
+    {branch && <View style={[layout.row, { gap: 8 }]}><MapPin size={18} color={colors.brand} /><Text style={[type.caption, { flex: 1 }]}>{branch.address}</Text></View>}
+    <Text style={type.caption}>Стоимость и срок зависят от склада, габаритов и маршрута. Доступность ПВЗ для вашего груза уточняется при оформлении.</Text>
+    <Text style={[type.label, { color: colors.brand }]}>Условия и способы доставки</Text>
+  </Pressable>;
+}
+export function PaymentBenefit() {
+  const router = useRouter(); const { state } = useShop(); const personal = state.context === 'personal';
+  return <Pressable accessibilityRole="button" accessibilityLabel={personal ? 'Яндекс Пэй, Сплит и условия баллов Плюса' : 'Оплата по счёту и документы для бизнеса'} onPress={() => router.push('/information/payment')} style={[layout.card, { padding: 16 }]}>
+    <View style={[layout.row, { gap: 10 }]}><CreditCard size={22} color={colors.brand} /><View style={{ flex: 1 }}><Text style={type.subheading}>{personal ? 'Яндекс Пэй и Сплит' : 'Оплата по счёту'}</Text><Text style={type.caption}>{personal ? 'Оплата покупки частями — на условиях Яндекса' : 'Для юридических лиц и ИП'}</Text></View><ChevronRight size={18} color={colors.brand} /></View>
+    <Text style={type.caption}>{personal ? 'Баллы Плюса — по условиям Яндекс Пэй. При оплате Сплитом баллы не начисляются. Доступность и условия проверяются до оплаты.' : 'Состав заказа, НДС и условия оплаты фиксируются в счёте. Индивидуальные условия и ЭДО согласуются с менеджером.'}</Text>
+    <Text style={[type.label, { color: colors.brand }]}>{personal ? 'Условия Сплита и баллов Плюса' : 'Оплата и комплект документов'}</Text>
+  </Pressable>;
+}
+const s = StyleSheet.create({ production: { minHeight: 144, borderRadius: 16, overflow: 'hidden', backgroundColor: colors.brand }, productionImage: { position: 'absolute', right: 0, top: 0, bottom: 0, width: '49%', height: '100%' }, productionCopy: { padding: 14, width: '58%', minHeight: 144, gap: 6, backgroundColor: colors.brand, borderTopRightRadius: 70 }, quick: { flex: 1, backgroundColor: colors.white, borderRadius: 14, padding: 13, gap: 6 } });

@@ -1,0 +1,244 @@
+{
+  "checkedAt": "2026-09-11",
+  "method": "public GET, only article data-entity-type/data-entity-id retained; no sessions or comments persisted",
+  "sourceJoin": [
+    "local/templates/main/components/bitrix/news/blog/bitrix/news.detail/.default/template.php:98",
+    "local/templates/main/components/bitrix/news/blog/includes/comments.php:9"
+  ],
+  "records": [
+    {
+      "id": "articles-khomutovye-stroitelnye-lesa-promyshlennik-poshagovaya-sborka-vidy-khomutov-i-sovety-po-montazhu",
+      "sourceUrl": "https://prom.myfast.space/blog/khomutovye-stroitelnye-lesa-promyshlennik-poshagovaya-sborka-vidy-khomutov-i-sovety-po-montazhu/",
+      "targetId": "54871",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "9ffbf54fd5c8916f98de0b4ff152b149ae4694ef73e38e6859e5be8fab70f389",
+      "checkedAt": "2026-09-11T17:10:09.871913+00:00"
+    },
+    {
+      "id": "articles-setka-zatenyayushchaya-promyshlennik-kak-vybrat-dlya-stroyki-dachi-maskirovki-i-dekora",
+      "sourceUrl": "https://prom.myfast.space/blog/setka-zatenyayushchaya-promyshlennik-kak-vybrat-dlya-stroyki-dachi-maskirovki-i-dekora/",
+      "targetId": "54870",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "a483a1f0f4a591785f4f7b55356e117efff7018982ce546602f1e05b6d7b2fd4",
+      "checkedAt": "2026-09-11T17:10:15.945093+00:00"
+    },
+    {
+      "id": "articles-vyshka-tura-ili-stroitelnye-lesa-5-shagov-k-pravilnomu-vyboru-dlya-fasada-i-remonta",
+      "sourceUrl": "https://prom.myfast.space/blog/vyshka-tura-ili-stroitelnye-lesa-5-shagov-k-pravilnomu-vyboru-dlya-fasada-i-remonta/",
+      "targetId": "2944",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "f71f748742de1287e12ddbfeb13a5695631053b89e82c715f8b6f331dab5e58c",
+      "checkedAt": "2026-09-11T17:10:14.963445+00:00"
+    },
+    {
+      "id": "articles-konus-abramsa-dlya-betona-kak-proverit-kachestvo-i-podvizhnost-betonnoy-smesi-na-stroyploshchadke",
+      "sourceUrl": "https://prom.myfast.space/blog/konus-abramsa-dlya-betona-kak-proverit-kachestvo-i-podvizhnost-betonnoy-smesi-na-stroyploshchadke/",
+      "targetId": "24095",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "1bc45707d803cbbe1773f2ae7e64f31cdb241831599911f188c5b22d14d19488",
+      "checkedAt": "2026-09-11T17:10:13.348544+00:00"
+    },
+    {
+      "id": "articles-kak-sobrat-stroitelnye-ramnye-lesa-lrsp-svoimi-rukami-poshagovaya-instruktsiya-dlya-novichkov",
+      "sourceUrl": "https://prom.myfast.space/blog/kak-sobrat-stroitelnye-ramnye-lesa-lrsp-svoimi-rukami-poshagovaya-instruktsiya-dlya-novichkov/",
+      "candidateCount": 0,
+      "sourceHash": "00a001d53eea88530d8474254e4cda74aab295a130f67758505a66a633b4d50d",
+      "checkedAt": "2026-09-11T17:10:16.573187+00:00"
+    },
+    {
+      "id": "articles-kak-sobrat-vyshku-turu-svoimi-rukami-poshagovaya-instruktsiya-dlya-nachinayushchikh",
+      "sourceUrl": "https://prom.myfast.space/blog/kak-sobrat-vyshku-turu-svoimi-rukami-poshagovaya-instruktsiya-dlya-nachinayushchikh/",
+      "targetId": "3236",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "4b53c0ce359fa566594a34d24a34e1d15f0d2dcc8df57b5a50405032faae982e",
+      "checkedAt": "2026-09-11T17:10:27.546032+00:00"
+    },
+    {
+      "id": "projects-moscow-city",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/moscow-city/",
+      "targetId": "2960",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "fdd557bdabe5efb638496eb5235cc469b87dc693d3c21a3eeb9c061bbe214e8a",
+      "checkedAt": "2026-09-11T17:10:16.952711+00:00"
+    },
+    {
+      "id": "projects-krc-oktyabr-astrakhan",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/krc-oktyabr-astrakhan/",
+      "targetId": "2959",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "c9e97d94463c38526b71250f5c5f0f458401f63bb190c98102516aa850ec3e45",
+      "checkedAt": "2026-09-11T17:10:17.439306+00:00"
+    },
+    {
+      "id": "projects-development-plaza-krasnodar",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/development-plaza-krasnodar/",
+      "targetId": "2958",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "f5f46c9a92ae55561d1ec37c84b37d171a39a595f44e68996e8fad56ab8e379c",
+      "checkedAt": "2026-09-11T17:10:20.501088+00:00"
+    },
+    {
+      "id": "projects-serdtse-krasnodara",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/serdtse-krasnodara/",
+      "targetId": "2957",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "3d21b21dff2decd908fa4284a21c9d8679d01a98f46a0aac9e8d8f1d92c7ce11",
+      "checkedAt": "2026-09-11T17:10:18.132491+00:00"
+    },
+    {
+      "id": "projects-zhk-obraztsovo-insiti",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/zhk-obraztsovo-insiti/",
+      "targetId": "2956",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "d2d7fe894449bb95db92453355261d6e5c5eb3bc56b9d9d56ec94e6ecfcc277e",
+      "checkedAt": "2026-09-11T17:10:21.051603+00:00"
+    },
+    {
+      "id": "projects-zhk-fontany-krasnodar",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/zhk-fontany-krasnodar/",
+      "targetId": "2955",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "446cf0e7345ce5eac7075df8b5ca8d293d872b348f777722c541ccc36d0bbcbb",
+      "checkedAt": "2026-09-11T17:10:35.689462+00:00"
+    },
+    {
+      "id": "projects-zhk-pervoe-mesto",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/zhk-pervoe-mesto/",
+      "targetId": "2954",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "9533b47c53aec487b2012a966e9f19596c862307b398e93f078eff37cb8a3708",
+      "checkedAt": "2026-09-11T17:10:37.286770+00:00"
+    },
+    {
+      "id": "projects-residential-complex-derbent",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/residential-complex-derbent/",
+      "targetId": "2953",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "073ce82c73a2eaa011a4916e75fdfd4e2f99fbee071035dbbd440742fa327a1d",
+      "checkedAt": "2026-09-11T17:10:35.330723+00:00"
+    },
+    {
+      "id": "projects-botanika-hills",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/botanika-hills/",
+      "targetId": "2831",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "bb2f481a70cda7a333f95c1e8fdf40a4cd94de91c08690ad33aa765b5b36e064",
+      "checkedAt": "2026-09-11T17:10:47.921568+00:00"
+    },
+    {
+      "id": "projects-nova-vita",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/nova-vita/",
+      "targetId": "2830",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "22d08633d80f8dfc57faa5a26a79a056f34f92c6adeb4e2453ed591c68e31700",
+      "checkedAt": "2026-09-11T17:10:36.578033+00:00"
+    },
+    {
+      "id": "projects-zhk-ritm",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/zhk-ritm/",
+      "targetId": "54925",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "4ebb42148f1f8c48334d30cb9730818c43d353b07e6f09686f3096a0ecaa2c81",
+      "checkedAt": "2026-09-11T17:10:45.773948+00:00"
+    },
+    {
+      "id": "projects-zhk-slavyanka",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/zhk-slavyanka/",
+      "targetId": "54926",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "808826e4862cba838f3690900e738b5fc25c0c19a9bde1db7a013867f25d9216",
+      "checkedAt": "2026-09-11T17:10:38.150598+00:00"
+    },
+    {
+      "id": "projects-zhk-zvezdy",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/zhk-zvezdy/",
+      "targetId": "54927",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "500e2c2958b0ff7b8e38666f8c593fd8dc600b876a8d33e80d2edb888c0b3528",
+      "checkedAt": "2026-09-11T17:10:52.534976+00:00"
+    },
+    {
+      "id": "projects-zhk-tsentralnyy",
+      "sourceUrl": "https://prom.myfast.space/blog/projects/zhk-tsentralnyy/",
+      "targetId": "54928",
+      "entityType": "articles",
+      "candidateCount": 1,
+      "sourceHash": "aa98ddc38481171611f65928ca6c5c8c1df2039d7af39d9605182832f290cda6",
+      "checkedAt": "2026-09-11T17:10:49.498363+00:00"
+    },
+    {
+      "id": "video-inforce-7",
+      "sourceUrl": "https://prom.myfast.space/blog/video/inforce-7/",
+      "candidateCount": 0,
+      "sourceHash": "603c627b82663da333fda150529b51c9b2103cd26867ab0a8baf8f5d82404566",
+      "checkedAt": "2026-09-11T17:10:50.210837+00:00"
+    },
+    {
+      "id": "video-fubag-6",
+      "sourceUrl": "https://prom.myfast.space/blog/video/fubag-6/",
+      "candidateCount": 0,
+      "sourceHash": "7f9ce71b512c2e82257142a62f17c9279998debb50a58960bddadae79d5df925",
+      "checkedAt": "2026-09-11T17:10:51.248973+00:00"
+    },
+    {
+      "id": "video-inforce-5",
+      "sourceUrl": "https://prom.myfast.space/blog/video/inforce-5/",
+      "candidateCount": 0,
+      "sourceHash": "a01cdb313ff11441d7f22fca86b30fd79b5f19818c599c33f16b3df7bd0def19",
+      "checkedAt": "2026-09-11T17:10:53.592842+00:00"
+    },
+    {
+      "id": "video-fubag-4",
+      "sourceUrl": "https://prom.myfast.space/blog/video/fubag-4/",
+      "candidateCount": 0,
+      "sourceHash": "c639635a64307bbe4e285516dc812ba466512b94a1adea34a7aa181369b45472",
+      "checkedAt": "2026-09-11T17:10:53.045675+00:00"
+    },
+    {
+      "id": "video-fubag-3",
+      "sourceUrl": "https://prom.myfast.space/blog/video/fubag-3/",
+      "candidateCount": 0,
+      "sourceHash": "e18cf68576076ca7e9c566aefa42b07dcd876823e32b49e254aca3e3c9afb47e",
+      "checkedAt": "2026-09-11T17:10:53.227021+00:00"
+    },
+    {
+      "id": "video-inforce-2",
+      "sourceUrl": "https://prom.myfast.space/blog/video/inforce-2/",
+      "candidateCount": 0,
+      "sourceHash": "cac70413bbe5ba93ff0a6c34cb727b88dd1a37e365632b672565c6b655be1d81",
+      "checkedAt": "2026-09-11T17:11:00.814498+00:00"
+    },
+    {
+      "id": "video-fubag-1",
+      "sourceUrl": "https://prom.myfast.space/blog/video/fubag-1/",
+      "candidateCount": 0,
+      "sourceHash": "9c632ba3ac9fdfebdfa0b0b19a5131f55336724ecc3d94d3687162f0dc3266af",
+      "checkedAt": "2026-09-11T17:10:54.122605+00:00"
+    },
+    {
+      "id": "video-inforce-0",
+      "sourceUrl": "https://prom.myfast.space/blog/video/inforce-0/",
+      "candidateCount": 0,
+      "sourceHash": "9a17d77dc9b788207ee9910a17c1860be3bb7fbee9e29903fa93b86aac8c37d9",
+      "checkedAt": "2026-09-11T17:10:54.195313+00:00"
+    }
+  ]
+}

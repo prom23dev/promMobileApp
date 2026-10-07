@@ -1,0 +1,39 @@
+{
+  "importedAt": "2026-09-12T02:00:07+03:00",
+  "archive": "/Users/prom23/Downloads/prom23_codex_context_bundle.zip",
+  "archiveSha256": "b66d9338689468be457da1ba5a02802d3d8413acfcfdd9abc517fdf747c15b99",
+  "files": {
+    "AGENTS.md": {
+      "sourceSha256": "6ef51c7d2007c99040f1981fbdb4d4b6bef54b4d253baf50176e7678e62415e2",
+      "targetSha256": "38aef5e71f351a9f4047897706bf3636b48f7af3333c8f2cac005b90170c44a8"
+    },
+    "RECOVERY_AFTER_COMPACTION.txt": {
+      "sourceSha256": "ea36f8c6fff5914b5a09c1da38c23b068824d6abfb51450e109747e04d918b42",
+      "targetSha256": "ea36f8c6fff5914b5a09c1da38c23b068824d6abfb51450e109747e04d918b42"
+    },
+    "START_CODEX.txt": {
+      "sourceSha256": "e5de3d9b7edefea2dec5754bcdc1a7fc291030c9f875eb4e9b33f4fd0df2c99f",
+      "targetSha256": "e5de3d9b7edefea2dec5754bcdc1a7fc291030c9f875eb4e9b33f4fd0df2c99f"
+    },
+    "docs/PROGRESS.md": {
+      "sourceSha256": "ae73e98a81b6770e68807f24146be62713048848cbf6af3ce7d3f6891022bb39",
+      "targetSha256": "799136cb02d37f81e2b1c2e703bb33b4c4d6e73f1a5ff54d285d62911f75784f"
+    },
+    "docs/ACCEPTANCE_CHECKLIST.md": {
+      "sourceSha256": "7d4c1a547b52c4833d9955ac1c17899559afddc7bb95302e90690e9bcfa1feb8",
+      "targetSha256": "7d4c1a547b52c4833d9955ac1c17899559afddc7bb95302e90690e9bcfa1feb8"
+    },
+    "docs/CURRENT_TASK.md": {
+      "sourceSha256": "69b7d73e904d02ae0e65d2981c1f68f4f866b4011b73ca1ebd066b5ac41e05cf",
+      "targetSha256": "cd6dae757c631f25e47c2792166051cfd6e020a71d32f1a52f594c79b71bbfc1"
+    },
+    "docs/PARITY_REQUIREMENTS.md": {
+      "sourceSha256": "77c8d211f19dabb890219367481c4c1371372415e47653917f5c8a040da5bddb",
+      "targetSha256": "1d5e0134eb8901bdb62fe625b342768b2201317a870bc95feaebd55684f2596c"
+    },
+    "docs/DECISIONS.md": {
+      "sourceSha256": "373b6baf85b1faabe72de6d751065fb9875ddf8b1a46ed40a38f259a3e94e1a0",
+      "targetSha256": "e6537a16bb7054cd95ba9d207bd48147ac22af41925fd62693f3313de3b5da88"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+✔ public content has stable ETag, conditional304 and detached copies (1.5405ms)
+✔ invalid source/duplicate IDs/HTML fail closed and unknown slugs cannot select filesystem paths (0.39675ms)
+✔ forms/private targets/remote instructions excluded, unsafe links omitted (0.128709ms)
+✔ actual curated snapshot is available but never claims live CMS (3.567125ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 64.474541

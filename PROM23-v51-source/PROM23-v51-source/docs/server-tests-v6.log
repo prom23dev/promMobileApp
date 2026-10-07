@@ -1,0 +1,48 @@
+✔ private preview preserves API headers, blocks unknown hosts and hides non-public files (114.022166ms)
+✔ health/catalog disclose sandbox, snapshot metadata, and new product kinds (83.428708ms)
+✔ missing or invalid seed keeps health explicit and catalog empty (42.204958ms)
+✔ opaque tokens isolate state and are stored only as hashes (65.658167ms)
+✔ personal and organization baskets stay separate and unknown organizations are rejected (65.159292ms)
+✔ view history puts the last opened product first, deduplicates and retains only thirty products (250.519084ms)
+✔ view history remains isolated by session and purchase context across SQLite reopen (48.947959ms)
+✔ clear-viewed clears only current context and reset clears both without modifying another session (69.087834ms)
+✔ invalid view actions and stale context cannot change or clear either history (71.001958ms)
+✔ legacy sessions without viewed are normalized without losing stored baskets or favorites (32.319375ms)
+✔ quantity validation rejects bad values, unknown products and client-supplied prices (58.513667ms)
+✔ comparison is capped at three, favorites toggle and reset clears state (57.502125ms)
+✔ quotes use server prices, exact kopecks, test delivery tariffs and context addresses (25.062916ms)
+✔ order creation is atomic and idempotent; new-key quote replay and key conflict fail (33.14425ms)
+✔ orders reject expired quotes and changed carts without clearing the cart (27.539625ms)
+✔ quotes/orders are session scoped and checkout clears only the matching context cart (48.1685ms)
+✔ cancellation is local, owner scoped, recorded once, and survives an idempotent retry (25.239167ms)
+✔ appeal/return creation is blocked until site integration and historical data stays owner/context scoped (51.40275ms)
+✔ SQLite reopen preserves baskets, preferences, orders, appeals, returns and idempotency (39.532209ms)
+✔ strict origins, bounded bodies, JSON format and exact routes/methods are enforced (35.370416ms)
+✔ deleting a local session cascades its data, revokes token, and preserves another session (61.342792ms)
+✔ configured origins replace defaults and reject wildcards or URL paths (8.463416ms)
+✔ session quota returns 429 without deleting sessions and deletion releases capacity (19.502375ms)
+✔ quote quota is per session; expired unused quotes are pruned while consumed history survives (45.90125ms)
+✔ order quota spans both contexts, preserves state and allows safe order retries (37.953125ms)
+✔ SQLite page cap returns 429 STORAGE_LIMIT and rolls back without a generic 500 (77.7335ms)
+✔ every action requires expectedContext and stale tabs cannot modify either basket or preferences (48.978334ms)
+✔ a completed historical order cannot bypass missing canonical return reasons and item flow (22.926042ms)
+✔ catalog sections preserve a valid tree, reject broken parents/cycles, and remain optional for fixtures (25.41575ms)
+✔ inbox derives committed order events, isolates customers and persists read status (44.833542ms)
+✔ notification preferences are opt-in drafts, scoped, bounded and deleted with the session (28.264708ms)
+✔ search history is normalized, bounded, persistent, context-isolated and clearable (121.291667ms)
+✔ bridge is disabled by default and writes are rejected before any network operation (2.418584ms)
+✔ private key file and explicit HTTPS shop origin are mandatory; unrelated site/URLs fail closed (2.216625ms)
+✔ read requests are signed with exact body/target and unique nonces; no cookies or CRM secrets are forwarded (41.361167ms)
+✔ invalid actor/order or injected operation is rejected locally (3.163542ms)
+✔ redirects are rejected and an upstream message cannot expose credentials (9.807125ms)
+✔ response actor mismatch and claimed write capability fail the read-only contract (6.176875ms)
+✔ bounded responses and timeout fail without implicit request retries (20.780791ms)
+✔ offline readiness reports missing runtime and existing CRM TLS/event blockers without pretending to connect (5.469875ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1803.14575

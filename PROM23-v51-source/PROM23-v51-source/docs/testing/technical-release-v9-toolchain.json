@@ -1,0 +1,46 @@
+{
+  "at": "2026-09-11T18:51:44.311874+00:00",
+  "scope": "Read-only toolchain discovery; no native build, signing, installation or cloud request attempted.",
+  "checks": [
+    {
+      "command": [
+        "/usr/bin/xcode-select",
+        "-p"
+      ],
+      "exitCode": 0,
+      "output": "/Library/Developer/CommandLineTools"
+    },
+    {
+      "command": [
+        "/usr/bin/xcodebuild",
+        "-version"
+      ],
+      "exitCode": 1,
+      "output": "xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance"
+    },
+    {
+      "command": [
+        "/usr/libexec/java_home",
+        "-V"
+      ],
+      "exitCode": 1,
+      "output": "The operation couldn’t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java."
+    },
+    {
+      "command": [
+        "/usr/bin/java",
+        "-version"
+      ],
+      "exitCode": 1,
+      "output": "The operation couldn’t be completed. Unable to locate a Java Runtime.\nPlease visit http://www.java.com for information on installing Java."
+    },
+    {
+      "command": [
+        "/Users/prom23/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "mobile/scripts/check-release.cjs"
+      ],
+      "exitCode": 1,
+      "output": "Релиз не готов:\n- Каталог — снимок сайта; реальные остатки, тарифы и доступность оплаты не подключены.\n- Авторизация, оплата, ККТ, документы, возвраты, ЭДО и удаление аккаунта не интегрированы.\n- Обмен с Битрикс24/1С и полный ассортимент не проверены на работающем Bitrix.\n- Настройки уведомлений не подключены; APNs/FCM и подписки сайта не подключены.\n- Не подтверждены правовые документы, аккаунты издателя, native builds и испытания на устройствах."
+    }
+  ]
+}

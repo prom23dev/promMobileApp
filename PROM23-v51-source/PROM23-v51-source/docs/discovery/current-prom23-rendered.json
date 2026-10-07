@@ -1,0 +1,415 @@
+{
+  "requestedUrl": "https://www.prom23.ru/",
+  "finalUrl": "https://www.prom23.ru/",
+  "status": 200,
+  "title": [
+    "Компания «Промышленник» - производство и продажа строительного оборудования в Краснодаре"
+  ],
+  "headings": [
+    "«Промышленник» - производство и продажа строительного оборудования",
+    "Мы угадали?",
+    "Выберите склад отгрузки"
+  ],
+  "links": [
+    {
+      "href": "/zashchitnye-konstruktsii/",
+      "text": "Защитные конструкции для промышленных объектов"
+    },
+    {
+      "href": "tel:88002002590",
+      "text": "8 (800) 200-25-90"
+    },
+    {
+      "href": "https://www.prom23.by/?set_region=by",
+      "text": "Беларусь"
+    },
+    {
+      "href": "https://www.prom23.ru/?set_region=krasnodar",
+      "text": "Краснодар"
+    },
+    {
+      "href": "https://msk.prom23.ru/?set_region=msk",
+      "text": "Москва"
+    },
+    {
+      "href": "https://rostov.prom23.ru/?set_region=rostov",
+      "text": "Ростов-на-Дону"
+    },
+    {
+      "href": "https://spb.prom23.ru/?set_region=spb",
+      "text": "Санкт-Петербург"
+    },
+    {
+      "href": "https://smf.prom23.ru/?set_region=smf",
+      "text": "Симферополь"
+    },
+    {
+      "href": "https://perm.prom23.ru/?set_region=perm",
+      "text": "Пермь"
+    },
+    {
+      "href": "https://kmv.prom23.ru/?set_region=kmv",
+      "text": "Пятигорск"
+    },
+    {
+      "href": "https://groznyy.prom23.ru/?set_region=groznyy",
+      "text": "Грозный"
+    },
+    {
+      "href": "https://tyumen.prom23.ru/?set_region=tyumen",
+      "text": "Тюмень"
+    },
+    {
+      "href": "https://lugansk.prom23.ru/?set_region=lugansk",
+      "text": "Луганск"
+    },
+    {
+      "href": "https://irk.prom23.ru/?set_region=irk",
+      "text": "Иркутск"
+    },
+    {
+      "href": "https://ysk.prom23.ru/?set_region=ysk",
+      "text": "Южно-Сахалинск"
+    },
+    {
+      "href": "https://apsny.prom23.ru/?set_region=apsny",
+      "text": "Абхазия"
+    },
+    {
+      "href": "https://www.prom23.am/?set_region=am",
+      "text": "Ереван"
+    },
+    {
+      "href": "https://www.prom23.az/?set_region=az",
+      "text": "Баку"
+    },
+    {
+      "href": "https://www.prom23.kz/?set_region=kz",
+      "text": "Казахстан"
+    },
+    {
+      "href": " https://itm-kalip.com.tr/",
+      "text": "Стамбул"
+    },
+    {
+      "href": "https://www.prom23.kg/?set_region=kg",
+      "text": "Бишкек"
+    },
+    {
+      "href": "tel:+78612250090",
+      "text": "+7 (861) 225-00-90"
+    },
+    {
+      "href": "/about/",
+      "text": "О компании"
+    },
+    {
+      "href": "/vendor",
+      "text": "Производство"
+    },
+    {
+      "href": "/delivery/",
+      "text": "Доставка и оплата"
+    },
+    {
+      "href": "/franchise/",
+      "text": "Франшиза"
+    },
+    {
+      "href": "/catalog/stroitelnye-lesa/",
+      "text": "Строительные леса"
+    },
+    {
+      "href": "/catalog/vyshki-tury/",
+      "text": "Вышки-туры"
+    },
+    {
+      "href": "/catalog/podmostistroitelnye/",
+      "text": "Подмости строительные"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/",
+      "text": "Сетка, тенты, брезенты"
+    },
+    {
+      "href": "/catalog/podemniki-krany-lyulki/",
+      "text": "Строительные подъемники"
+    },
+    {
+      "href": "/catalog/lebedki-elektricheskie/",
+      "text": "Грузоподъемное оборудование"
+    },
+    {
+      "href": "/catalog/musoroprovod/",
+      "text": "Мусоропровод строительный"
+    },
+    {
+      "href": "/catalog/fanera-laminirovannaya/",
+      "text": "Фанера ламинированная"
+    },
+    {
+      "href": "/catalog/opalubka/",
+      "text": "Опалубка"
+    },
+    {
+      "href": "/catalog/vibrotekhnika/",
+      "text": "Вибротехника для строительства"
+    },
+    {
+      "href": "/catalog/stanki-dlya-gibki-i-rezki-armatury/",
+      "text": "Оборудование для работы с арматурой"
+    },
+    {
+      "href": "/catalog/oborudovanie-dlja-betonnyh-rabot/",
+      "text": "Оборудование для бетонных работ"
+    },
+    {
+      "href": "/catalog/gruzovye-telezhki/",
+      "text": "Техника для склада"
+    },
+    {
+      "href": "/catalog/tachki/",
+      "text": "Тачки строительные и садовые"
+    },
+    {
+      "href": "/catalog/lestnitsy-stremyanki/",
+      "text": "Лестницы и стремянки"
+    },
+    {
+      "href": "/catalog/shtukaturnye-komplekty/",
+      "text": "Штукатурные комплекты"
+    },
+    {
+      "href": "/catalog/svarochnye-apparaty/",
+      "text": "Сварочные аппараты"
+    },
+    {
+      "href": "/catalog/teplovye-pushki/",
+      "text": "Тепловые пушки"
+    },
+    {
+      "href": "/catalog/metallicheskieizdeliya/",
+      "text": "Металл и металлообработка"
+    },
+    {
+      "href": "/catalog/vyshki-tury/stalnye/vsp-250-0-71/",
+      "text": "Вышки-туры всп 250 0,7x1,6 м&nbsp;(22)"
+    },
+    {
+      "href": "/catalog/vyshki-tury/stalnye/vsp-1-6x2-0/",
+      "text": "Вышки-туры всп 250 1,6x2,0 м&nbsp;(50)"
+    },
+    {
+      "href": "/catalog/vyshki-tury/stalnye/vsp-1-2-kh-2-0/",
+      "text": "Вышки-туры всп 250 1,2x2,0 м&nbsp;(56)"
+    },
+    {
+      "href": "/catalog/vyshki-tury/stalnye/vsp-2-0-kh-2-0/",
+      "text": "Вышки-туры всп 250 2,0х2,0 м&nbsp;(48)"
+    },
+    {
+      "href": "/catalog/vyshki-tury/stalnye/vyshkituryekonom/",
+      "text": "Вышки-туры всэ 250&nbsp;(10)"
+    },
+    {
+      "href": "/catalog/vyshki-tury/stalnye/vyshkaturadachnik/",
+      "text": "Вышка-тура дачник&nbsp;(4)"
+    },
+    {
+      "href": "/catalog/vyshki-tury/stalnye/vyshkituryrezervuarnyevsp25020kh20m/",
+      "text": "Вышки-туры всп резервуарные 2,0х2,0 м &nbsp;(16)"
+    },
+    {
+      "href": "/catalog/vyshki-tury/alyuminievye/vyshkituryprofi/",
+      "text": "Вышки-туры профи&nbsp;(5)"
+    },
+    {
+      "href": "/catalog/vyshki-tury/alyuminievye/alumet/",
+      "text": "Вышки-туры alumet&nbsp;(8)"
+    },
+    {
+      "href": "/catalog/vyshki-tury/alyuminievye/promyshlennik/",
+      "text": "Платформы промышленник&nbsp;(14)"
+    },
+    {
+      "href": "/catalog/vyshki-tury/komplektuyushchiekvyshkam/",
+      "text": "Комплектующие к вышкам турам&nbsp;(40)"
+    },
+    {
+      "href": "/catalog/vyshki-tury/motorizovannyevyshkitury/",
+      "text": "Моторизованные вышки-туры&nbsp;(1)"
+    },
+    {
+      "href": "/catalog/podmostistroitelnye/malyarnyestoliki/",
+      "text": "Малярные столики&nbsp;(6)"
+    },
+    {
+      "href": "/catalog/podmostistroitelnye/podmostimalyarnyeslesarnye/",
+      "text": "Подмости малярные слесарные&nbsp;(8)"
+    },
+    {
+      "href": "/catalog/podmostistroitelnye/pomostymalyarnye/",
+      "text": "Помосты малярные&nbsp;(17)"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/setkazashchitnaya/komplektuyushchiedlyazatenyayushcheysetki/",
+      "text": "Клипса люверс для сетки&nbsp;(2)"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkadlyazabora/",
+      "text": "Сетка для забора&nbsp;(3)"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkazatenyayushchaya/",
+      "text": "Сетка затеняющая&nbsp;(55)"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkamaskirovochnaya/",
+      "text": "Сетка маскировочная&nbsp;(9)"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/setkazashchitnaya/setkafasadnayazatenyayushchaya/",
+      "text": "Сетка фасадная затеняющая&nbsp;(18)"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/polietilen-armirovanny/",
+      "text": "Армированная пленка&nbsp;(30)"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/brezent/",
+      "text": "Брезент&nbsp;(11)"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/brezent-i-tent-pvkh-dlya-ukrytiya-fasadov-i-betona/tenty/",
+      "text": "Тенты&nbsp;(62)"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/zashchitno-ulavlivayushchaya-setka/",
+      "text": "Защитно-улавливающая сетка (зус)&nbsp;(12)"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/dekorativnyeukrytiyadlyastroitelnykhlesov/",
+      "text": "Декоративные укрытия для строительных лесов&nbsp;(3)"
+    },
+    {
+      "href": "/catalog/zashhnaja-setka-brezent/zashchitnoeograzhdenie/",
+      "text": "Защитное ограждение&nbsp;(13)"
+    },
+    {
+      "href": "/catalog/podemniki-krany-lyulki/stroitelnye-ljulki/",
+      "text": "Строительные люльки (фасадные подъемники)&nbsp;(5)"
+    },
+    {
+      "href": "/catalog/podemniki-krany-lyulki/rabochie-platformy/",
+      "text": "Строительные площадки&nbsp;(12)"
+    },
+    {
+      "href": "/catalog/podemniki-krany-lyulki/machtovye-podemniki/",
+      "text": "Мачтовые подъемники&nbsp;(10)"
+    },
+    {
+      "href": "/catalog/podemniki-krany-lyulki/machtovye-stroitelnye-platformy-reechnogo-tipa/",
+      "text": "Мачтовые строительные платформы реечного типа&nbsp;(3)"
+    },
+    {
+      "href": "/catalog/podemniki-krany-lyulki/zapchastidlyalyulekzlp/",
+      "text": "Комплектующие для люлек zlp&nbsp;(9)"
+    },
+    {
+      "href": "/catalog/lebedki-elektricheskie/buksirytekstilnyelentochnye/",
+      "text": "Буксиры текстильные ленточные&nbsp;(2)"
+    },
+    {
+      "href": "/catalog/lebedki-elektricheskie/lebedkiruchnye/",
+      "text": "Лебедки ручные&nbsp;(7)"
+    },
+    {
+      "href": "/catalog/lebedki-elektricheskie/lebedkielektricheskie/",
+      "text": "Лебедки электрические&nbsp;(15)"
+    },
+    {
+      "href": "/catalog/lebedki-elektricheskie/montazhnyepoyasaiprivyazi/",
+      "text": "Монтажные пояса и привязи&nbsp;(4)"
+    },
+    {
+      "href": "/catalog/lebedki-elektricheskie/remnistyazhnye/",
+      "text": "Ремни стяжные&nbsp;(8)"
+    },
+    {
+      "href": "/catalog/lebedki-elektricheskie/stropytekstilnyepetlevye/",
+      "text": "Стропы текстильные петлевые&nbsp;(16)"
+    },
+    {
+      "href": "/catalog/lebedki-elektricheskie/taliruchnye/",
+      "text": "Тали ручные&nbsp;(5)"
+    },
+    {
+      "href": "/catalog/fanera-laminirovannaya/18-mm/",
+      "text": "Фанера ламинированная 18 мм&nbsp;(23)"
+    },
+    {
+      "href": "/catalog/fanera-laminirovannaya/fanera10mm/",
+      "text": "Фанера 10 мм&nbsp;(28)"
+    },
+    {
+      "href": "/catalog/fanera-laminirovannaya/faneralaminirovannaya12mm/",
+      "text": "Фанера ламинированная 12 мм&nbsp;(6)"
+    },
+    {
+      "href": "/catalog/fanera-laminirovannaya/21-mm/",
+      "text": "Фанера ламинированная 21 мм&nbsp;(11)"
+    },
+    {
+      "href": "/catalog/opalubka/opalubka-perekrytiy/dvutavrovayabalka/",
+      "text": "Двутавровая балка&nbsp;(25)"
+    },
+    {
+      "href": "/catalog/opalubka/opalubka-perekrytiy/obemnayaopalubkaperekrytiy/",
+      "text": "Объемная опалубка перекрытий&nbsp;(23)"
+    },
+    {
+      "href": "/catalog/opalubka/opalubka-perekrytiy/ramnayaklinovayaopalubka/",
+      "text": "Рамная клиновая опалубка&nbsp;(16)"
+    },
+    {
+      "href": "/catalog/opalubka/opalubka-perekrytiy/ramnayaopalubka/",
+      "text": "Рамная опалубка&nbsp;(1)"
+    },
+    {
+      "href": "/catalog/opalubka/opalubka-perekrytiy/teleskopicheskiestoyki/",
+      "text": "Телескопические стойки для опалубки перекрытия &nbsp;(35)"
+    },
+    {
+      "href": "/catalog/opalubka/komplektuyushchie/vintystyazhnye/",
+      "text": "Винты стяжные для опалубки&nbsp;(31)"
+    },
+    {
+      "href": "/catalog/opalubka/komplektuyushchie/gaykiistyazhnyevinty/",
+      "text": "Гайки для опалубки&nbsp;(37)"
+    },
+    {
+      "href": "/catalog/opalubka/komplektuyushchie/zamkidlyaopalubki/",
+      "text": "Замки для опалубки&nbsp;(24)"
+    },
+    {
+      "href": "/catalog/opalubka/komplektuyushchie/zakhvatymontazhnye/",
+      "text": "Захваты монтажные&nbsp;(10)"
+    },
+    {
+      "href": "/catalog/opalubka/komplektuyushchie/ograzhdayushchieustroystvaipodkosyvintovye/",
+      "text": "Ограждающие устройства и подкосы винтовые&nbsp;(8)"
+    },
+    {
+      "href": "/catalog/opalubka/pruzhinnye-zazhimy/",
+      "text": "Пружинные зажимы для опалубки&nbsp;(35)"
+    },
+    {
+      "href": "/catalog/opalubka/fiksatory-armatury/plastikovyefiksatory/",
+      "text": "Пластиковые фиксаторы арматуры&nbsp;(58)"
+    },
+    {
+      "href": "/catalog/opalubka/fiksatory-armatury/betonnye/",
+      "text": "Фиксаторы из бетона&nbsp;(23)"
+    }
+  ]
+}

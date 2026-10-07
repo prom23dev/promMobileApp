@@ -1,0 +1,23 @@
+import React from 'react';
+import { Image, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Link, type Href } from 'expo-router';
+import { ArrowRight, ChevronRight } from 'lucide-react-native';
+import { SvgUri, SvgXml } from 'react-native-svg';
+import type { Brand } from './types';
+import { logoAssets } from './logoAssets';
+import { colors, type } from '../ui/theme';
+import { VerticalReveal } from '../ui/VerticalReveal';
+export const productCount=(n:number)=>`${n.toLocaleString('ru')} ${new Intl.PluralRules('ru').select(n)==='one'?'товар':new Intl.PluralRules('ru').select(n)==='few'?'товара':'товаров'}`;
+export function LogoFrame({brand,detail=false}:{brand:Brand;detail?:boolean}) {
+ const asset=logoAssets[brand.slug],uri=Platform.OS==='web'?brand.logo:(process.env.EXPO_PUBLIC_LOCAL_API_URL??'http://127.0.0.1:8090/api').replace(/\/api\/?$/,'')+brand.logo;
+ return <View testID={'brand-logo-'+brand.slug} style={[s.logo,detail&&{height:150}]}>
+   {asset?.xml?<View accessible accessibilityRole="image" accessibilityLabel={'Логотип '+brand.name} style={s.logoImage}><SvgXml xml={asset.xml} width="100%" height="100%"/></View>:Platform.OS!=='web'&&brand.logo.endsWith('.svg')?<View accessible accessibilityRole="image" accessibilityLabel={'Логотип '+brand.name} style={s.logoImage}><SvgUri uri={uri} width="100%" height="100%"/></View>:<Image source={asset?.image??{uri}} resizeMode="contain" accessibilityLabel={'Логотип '+brand.name} style={s.logoImage}/>}
+ </View>;
+}
+export function Breadcrumbs({brand}:{brand?:Brand}) {return <View accessibilityLabel="Хлебные крошки" style={{flexDirection:'row',flexWrap:'wrap',alignItems:'center',gap:6}}><Link href="/" style={s.crumb}>Главная</Link><ChevronRight size={14} color={colors.muted}/>{brand?<><Link href={'/brands/' as Href} style={s.crumb}>Бренды</Link><ChevronRight size={14} color={colors.muted}/><Text style={type.caption}>{brand.name}</Text></>:<Text style={type.caption}>Бренды</Text>}</View>;}
+export function BrandCard({brand,own=false,index=0}:{brand:Brand;own?:boolean;index?:number}) {return <VerticalReveal delay={(index%3)*45} style={[s.card,own&&s.own]}><Link href={brand.detailUrl as Href} asChild><Pressable testID={'brand-card-'+brand.slug} accessibilityLabel={`Бренд ${brand.name}. ${brand.productCount===null?'':productCount(brand.productCount)+'.'} Смотреть бренд`} style={{flex:1}}><LogoFrame brand={brand}/><View style={s.cardBody}><View style={{gap:5,minHeight:own?48:28}}><Text accessibilityRole="header" aria-level={3} style={[type.heading,{fontSize:21,lineHeight:27}]}>{brand.name}</Text>{own&&<Text style={type.caption}>Торговая марка с {brand.trademarkYear} года</Text>}</View><Text numberOfLines={4} style={[type.body,{minHeight:88}]}>{brand.shortDescription}</Text><View style={s.cardFooter}>{brand.productCount!==null&&<Text style={type.caption}>{productCount(brand.productCount)}</Text>}<View style={{flexDirection:'row',alignItems:'center',gap:6}}><Text style={[type.label,{color:colors.accent}]}>Смотреть бренд</Text><ArrowRight size={18} color={colors.accent}/></View></View></View></Pressable></Link></VerticalReveal>;}
+export const s=StyleSheet.create({
+ logo:{height:132,paddingHorizontal:26,paddingVertical:22,alignItems:'center',justifyContent:'center',backgroundColor:colors.white},logoImage:{width:'100%',maxWidth:230,height:'100%'},
+ card:{flex:1,backgroundColor:colors.white,borderRadius:18,borderWidth:1,borderColor:colors.line,overflow:'hidden'},own:{borderColor:colors.ink},cardBody:{flex:1,padding:20,gap:16},cardFooter:{marginTop:'auto',paddingTop:16,borderTopWidth:1,borderTopColor:colors.line,gap:10},crumb:{fontSize:12,lineHeight:18,color:colors.muted,paddingVertical:12},
+ section:{gap:18},surface:{padding:22,gap:18,borderRadius:18,backgroundColor:colors.white},h1:{...type.title,fontSize:32,lineHeight:39},eyebrow:{...type.caption,fontWeight:'700',letterSpacing:1.5,color:colors.accent},grid:{gap:16},row:{flexDirection:'row',gap:16},grow:{flex:1,minWidth:0},search:{flexDirection:'row',alignItems:'center',gap:10,borderWidth:1,borderColor:colors.line,backgroundColor:colors.white,borderRadius:12,paddingHorizontal:14,minHeight:52},input:{...type.body,flex:1,minWidth:0,minHeight:50},chip:{minHeight:44,paddingVertical:12,paddingHorizontal:16,borderRadius:12,backgroundColor:colors.white,borderWidth:1,borderColor:colors.line,justifyContent:'center'},selected:{borderColor:colors.accent,backgroundColor:'#FFF0E9'},toolbar:{flexDirection:'row',alignItems:'center',flexWrap:'wrap',gap:12,justifyContent:'space-between'},sort:{flexDirection:'row',alignItems:'center',gap:8,minHeight:48,paddingHorizontal:14,backgroundColor:colors.white,borderWidth:1,borderColor:colors.line,borderRadius:12},
+});

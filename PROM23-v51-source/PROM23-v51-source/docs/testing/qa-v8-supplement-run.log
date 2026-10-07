@@ -1,0 +1,4 @@
+FAIL: Cards / PDP use server old price and integer discount; null stock permits draft25
+PASS: Source child categories are visual tiles, with Back
+PASS: Calls remain visible, contacts and legal pages have a return path, waiting list is honest
+{"passed":2,"failed":1,"pageErrors":0,"blockedWrites":0}

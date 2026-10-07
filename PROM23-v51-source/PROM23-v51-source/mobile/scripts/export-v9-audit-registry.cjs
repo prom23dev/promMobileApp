@@ -1,0 +1,18 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'../..');
+for(const ext of ['.jpg','.jpeg','.png','.webp'])require.extensions[ext]=(module,filename)=>{module.exports=filename;};
+const {siteFormList}=require('../src/forms/siteForms.ts');
+const {sitePages}=require('../src/content/sitePages.ts');
+const {blogArticles}=require('../src/content/blogContent.ts');
+const tree=JSON.parse(fs.readFileSync(path.join(root,'data/catalog-tree.json')));
+const products=JSON.parse(fs.readFileSync(path.join(root,'data/catalog.json')));
+const workspaceSource=fs.readFileSync(path.join(root,'mobile/src/screens/WorkspaceScreen.tsx'),'utf8').split('export default function WorkspaceScreen')[0];
+const workspaces=[...workspaceSource.matchAll(/^  (?:'([^']+)'|([a-z-]+)): \{/gm)].map(match=>match[1]||match[2]);
+const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?walk(path.join(dir,entry.name)):[path.join(dir,entry.name)]);
+const files=walk(path.join(root,'mobile/app')).filter(file=>file.endsWith('.tsx'));
+const infra=files.filter(file=>/(?:_layout|\+html)\.tsx$/.test(file));
+const patterns=files.filter(file=>!infra.includes(file)).map(file=>({file:path.relative(root,file),route:file.slice(path.join(root,'mobile/app').length).replace('/(tabs)','').replace(/\/index\.tsx$/,'/').replace(/\.tsx$/,'').replace(/\/$/,'')||'/',source:fs.readFileSync(file,'utf8').trim()}));
+const forms=siteFormList.map(form=>({id:form.id,title:form.title,group:form.group,externalCapture:form.externalCapture,sourceFiles:form.sourceFiles}));
+const registry={createdAt:new Date().toISOString(),patterns,infra:infra.map(file=>path.relative(root,file)),forms,workspaces,pages:Object.entries(sitePages).map(([id,page])=>({id,title:page.title,sourceUrl:page.sourceUrl,contract:page.dataContract??null})),blog:blogArticles.map(article=>({id:article.id,title:article.title,kind:article.kind})),sections:tree.sections.map(section=>({id:section.id,name:section.name,parentId:section.parentId,productIds:section.productIds})),products:products.map(product=>({id:product.id,name:product.name,sku:product.sku}))};
+fs.writeFileSync(path.join(root,'docs/audit/current-build-v9-registry.json'),JSON.stringify(registry,null,2)+'\n');
+console.log(JSON.stringify(Object.fromEntries(Object.entries(registry).filter(([,value])=>Array.isArray(value)).map(([key,value])=>[key,value.length]))));

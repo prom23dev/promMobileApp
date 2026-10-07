@@ -1,0 +1,80 @@
+{
+  "at": "2026-09-11T18:53:02.204Z",
+  "expected": "f511f4c425f0956cb8c2dd105ef3dba2",
+  "checks": [
+    {
+      "name": "Ordinary nav /forms/callback",
+      "status": "PASS",
+      "details": {
+        "tabs": 5
+      }
+    },
+    {
+      "name": "Ordinary nav /forms/return",
+      "status": "PASS",
+      "details": {
+        "tabs": 5
+      }
+    },
+    {
+      "name": "Ordinary nav /catalog/section/64",
+      "status": "PASS",
+      "details": {
+        "tabs": 5
+      }
+    },
+    {
+      "name": "Immersive /forms/checkout",
+      "status": "PASS",
+      "details": {
+        "back": true,
+        "navHidden": true
+      }
+    },
+    {
+      "name": "Immersive /forms/payment-card",
+      "status": "PASS",
+      "details": {
+        "back": true,
+        "navHidden": true
+      }
+    },
+    {
+      "name": "Immersive /forms/order-pay",
+      "status": "PASS",
+      "details": {
+        "back": true,
+        "navHidden": true
+      }
+    },
+    {
+      "name": "PDF drag/drop selection and remove do not upload",
+      "status": "PASS",
+      "details": {
+        "selected": true,
+        "removed": true,
+        "upload": false
+      }
+    },
+    {
+      "name": "EXE and 11 files rejected without adding them",
+      "status": "PASS",
+      "details": {
+        "exeRejected": true,
+        "elevenRejected": true
+      }
+    },
+    {
+      "name": "Local file + task retained on consent/name/phone validation errors",
+      "status": "PASS",
+      "details": {
+        "retained": true,
+        "noFalseSuccess": true,
+        "submitted": false
+      }
+    }
+  ],
+  "errors": [],
+  "blocked": [],
+  "entry": "/_expo/static/js/web/entry-f511f4c425f0956cb8c2dd105ef3dba2.js"
+}

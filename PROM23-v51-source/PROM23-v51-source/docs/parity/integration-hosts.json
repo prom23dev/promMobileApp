@@ -1,0 +1,970 @@
+{
+  "scope": "Origins only, paths/query/credentials omitted; source references not proof of active integration",
+  "references": [
+    {
+      "host": "www.sitemaps.org",
+      "file": "site-source/sitemap.php",
+      "line": 195
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/order/good/index.php",
+      "line": 41
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/order/good/index.php",
+      "line": 52
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/suppliers/index.php",
+      "line": 278
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/suppliers/index.php",
+      "line": 319
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/suppliers/index.php",
+      "line": 326
+    },
+    {
+      "host": "api-maps.yandex.ru",
+      "file": "site-source/frontend/sources/js/_helpers.js",
+      "line": 9
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/frontend/sources/components/popup/popup.js",
+      "line": 112
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/frontend/sources/components/popup/popup.js",
+      "line": 413
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/frontend/sources/components/svg-sprite/svg-sprite.js",
+      "line": 5
+    },
+    {
+      "host": "${unicdomain}",
+      "file": "site-source/frontend/sources/components/header/geo/geo.js",
+      "line": 48
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/frontend/sources/pages/order-placing/points/courier.js",
+      "line": 260
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/frontend/sources/pages/order-placing/points/pickup.js",
+      "line": 187
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/cookie-policy/index.php",
+      "line": 21
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/cookie-policy/index.php",
+      "line": 21
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/cookie-policy/index.php",
+      "line": 545
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/cookie-policy/index.php",
+      "line": 545
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 16
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 16
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 24
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 24
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 67
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 67
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 105
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 105
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 568
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 568
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1131
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1131
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1167
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1167
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1211
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1211
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1229
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1229
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1245
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1245
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1250
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1250
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1255
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/privacy-policy/index.php",
+      "line": 1255
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/business/index.php",
+      "line": 365
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/prom/product.reviews.list/templates/.default/template.php",
+      "line": 159
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/prom/product.reviews.list/templates/.default/template.php",
+      "line": 160
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/prom/product.reviews.list/templates/.default/template.php",
+      "line": 166
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/prom/product.rating/templates/product-detail/template.php",
+      "line": 15
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/components/prom.organization/organization_questions/templates/.default/template.php",
+      "line": 142
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/components/prom.organization/organization_info_organization_add/templates/.default/template.php",
+      "line": 67
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/components/prom.organization/organization_order_detail/templates/.default/template.php",
+      "line": 217
+    },
+    {
+      "host": "marketplace.1c-bitrix.ru",
+      "file": "site-source/local/components/arturgolubev/search.title/lang/ru/component.php",
+      "line": 2
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/components/arturgolubev/search.title/templates/redesign/template.php",
+      "line": 43
+    },
+    {
+      "host": "marketplace.1c-bitrix.ru",
+      "file": "site-source/local/components/arturgolubev/search.page.new/lang/ru/component.php",
+      "line": 2
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/arturgolubev/search.page.new/templates/test/template.php",
+      "line": 236
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/arturgolubev/search.page.new/templates/test/template.php",
+      "line": 243
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/arturgolubev/search.page.new/templates/test/template.php",
+      "line": 291
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/arturgolubev/search.page.new/templates/.default/template.php",
+      "line": 234
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/arturgolubev/search.page.new/templates/.default/template.php",
+      "line": 242
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/arturgolubev/search.page.new/templates/.default/template.php",
+      "line": 290
+    },
+    {
+      "host": "marketplace.1c-bitrix.ru",
+      "file": "site-source/local/components/arturgolubev/search.title.new/lang/ru/component.php",
+      "line": 2
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/components/arturgolubev/search.title.new/templates/redesign/template.php",
+      "line": 43
+    },
+    {
+      "host": "marketplace.1c-bitrix.ru",
+      "file": "site-source/local/components/arturgolubev/search.page/lang/ru/component.php",
+      "line": 2
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/arturgolubev/search.page/templates/.default/template.php",
+      "line": 188
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/arturgolubev/search.page/templates/.default/template.php",
+      "line": 195
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/components/arturgolubev/search.page/templates/.default/template.php",
+      "line": 243
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/components/prom.personal/personal_questions/templates/.default/template.php",
+      "line": 142
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/components/prom.personal/personal_order_detail/templates/.default/template.php",
+      "line": 205
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/components/prom.personal/personal_my_organizations_add/templates/.default/template.php",
+      "line": 67
+    },
+    {
+      "host": "direct.i-dgtl.ru",
+      "file": "site-source/local/class/Controllers/SmsMailingController.php",
+      "line": 19
+    },
+    {
+      "host": "direct.i-dgtl.ru",
+      "file": "site-source/local/class/Controllers/ServiceVerificationController.php",
+      "line": 21
+    },
+    {
+      "host": "github.com",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 5
+    },
+    {
+      "host": "cleaner.dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 59
+    },
+    {
+      "host": "suggestions.dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 60
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 88
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 89
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 90
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 91
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 105
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 106
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 107
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 117
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 133
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 147
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 148
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 149
+    },
+    {
+      "host": "dadata.ru",
+      "file": "site-source/local/class/Controllers/DaDataController.php",
+      "line": 150
+    },
+    {
+      "host": "api-seller.ozon.ru",
+      "file": "site-source/local/class/import/review_parser.php",
+      "line": 33
+    },
+    {
+      "host": "api-seller.ozon.ru",
+      "file": "site-source/local/class/import/review_parser.php",
+      "line": 116
+    },
+    {
+      "host": "www.prom23.ru",
+      "file": "site-source/local/class/import/import.php",
+      "line": 7
+    },
+    {
+      "host": "www.prom23.ru",
+      "file": "site-source/local/class/import/import.php",
+      "line": 8
+    },
+    {
+      "host": "oauth.vk.com",
+      "file": "site-source/local/class/import/import.php",
+      "line": 36
+    },
+    {
+      "host": "oauth.vk.com",
+      "file": "site-source/local/class/import/import.php",
+      "line": 41
+    },
+    {
+      "host": "api.vk.com",
+      "file": "site-source/local/class/import/import.php",
+      "line": 68
+    },
+    {
+      "host": "api.vk.com",
+      "file": "site-source/local/class/import/import.php",
+      "line": 79
+    },
+    {
+      "host": "oauth.vk.com",
+      "file": "site-source/local/class/import/import.php",
+      "line": 89
+    },
+    {
+      "host": "oauth.vk.com",
+      "file": "site-source/local/class/import/import.php",
+      "line": 95
+    },
+    {
+      "host": "www.prom23.ru",
+      "file": "site-source/local/class/import/import.php",
+      "line": 203
+    },
+    {
+      "host": "api.vk.com",
+      "file": "site-source/local/class/import/import.php",
+      "line": 281
+    },
+    {
+      "host": "api.vk.com",
+      "file": "site-source/local/class/import/import.php",
+      "line": 308
+    },
+    {
+      "host": "api.vk.com",
+      "file": "site-source/local/class/import/import.php",
+      "line": 326
+    },
+    {
+      "host": "api.vk.com",
+      "file": "site-source/local/class/import/import.php",
+      "line": 343
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/header.php",
+      "line": 488
+    },
+    {
+      "host": "vk.com",
+      "file": "site-source/local/templates/main/footer.php",
+      "line": 96
+    },
+    {
+      "host": "www.youtube.com",
+      "file": "site-source/local/templates/main/footer.php",
+      "line": 99
+    },
+    {
+      "host": "t.me",
+      "file": "site-source/local/templates/main/footer.php",
+      "line": 102
+    },
+    {
+      "host": "vk.com",
+      "file": "site-source/local/templates/main/footer.php",
+      "line": 130
+    },
+    {
+      "host": "www.youtube.com",
+      "file": "site-source/local/templates/main/footer.php",
+      "line": 133
+    },
+    {
+      "host": "t.me",
+      "file": "site-source/local/templates/main/footer.php",
+      "line": 136
+    },
+    {
+      "host": "mc.yandex.ru",
+      "file": "site-source/local/templates/main/footer.php",
+      "line": 240
+    },
+    {
+      "host": "mc.yandex.ru",
+      "file": "site-source/local/templates/main/footer.php",
+      "line": 258
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog/main/section.php",
+      "line": 374
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.element/old/template.php",
+      "line": 127
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.element/old/template.php",
+      "line": 148
+    },
+    {
+      "host": "pay.yandex.ru",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.element/old/template.php",
+      "line": 909
+    },
+    {
+      "host": "vk.com",
+      "file": "site-source/local/templates/main/components/bitrix/news/blog/bitrix/news.detail/.default/template.php",
+      "line": 153
+    },
+    {
+      "host": "www.youtube.com",
+      "file": "site-source/local/templates/main/components/bitrix/news/blog/bitrix/news.detail/.default/template.php",
+      "line": 156
+    },
+    {
+      "host": "t.me",
+      "file": "site-source/local/templates/main/components/bitrix/news/blog/bitrix/news.detail/.default/template.php",
+      "line": 159
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/form.result.new/book-a-tour/template.php",
+      "line": 79
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/script.js",
+      "line": 1916
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/script.js",
+      "line": 4343
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/confirm.php",
+      "line": 46
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/confirm.php",
+      "line": 77
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/confirm.php",
+      "line": 114
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/confirm.php",
+      "line": 187
+    },
+    {
+      "host": "pay.yandex.ru",
+      "file": "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/template.php",
+      "line": 908
+    },
+    {
+      "host": "pay.yandex.ru",
+      "file": "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/template.php",
+      "line": 1141
+    },
+    {
+      "host": "pay.yandex.ru",
+      "file": "site-source/local/templates/main/components/bitrix/sale.order.ajax/main/template.php",
+      "line": 1173
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.section/catalog.list/template.php",
+      "line": 210
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.section/catalog.list/template.php",
+      "line": 304
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.section/catalog.list/template.php",
+      "line": 350
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.item/.default/component_epilog.php",
+      "line": 200
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.item/.default/component_epilog.php",
+      "line": 201
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.item/.default/template.php",
+      "line": 102
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.item/.default/template.php",
+      "line": 270
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.item/card.good/template.php",
+      "line": 100
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.item/card.good/template.php",
+      "line": 105
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.item/card.good/template.php",
+      "line": 217
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.item/card.good/template.php",
+      "line": 228
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/templates/main/components/bitrix/catalog.item/card.good/template.php",
+      "line": 249
+    },
+    {
+      "host": "suggestions.dadata.ru",
+      "file": "site-source/local/ajax/order/dadata.php",
+      "line": 5
+    },
+    {
+      "host": "suggestions.dadata.ru",
+      "file": "site-source/local/ajax/order/courier-geocode.php",
+      "line": 34
+    },
+    {
+      "host": "suggestions.dadata.ru",
+      "file": "site-source/local/ajax/order/courier-geocode.php",
+      "line": 43
+    },
+    {
+      "host": "suggestions.dadata.ru",
+      "file": "site-source/local/ajax/order/courier-dropdown-results.php",
+      "line": 4
+    },
+    {
+      "host": "suggestions.dadata.ru",
+      "file": "site-source/local/ajax/order/resolve-location.php",
+      "line": 21
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/ajax/lk/organization/organization-edo.php",
+      "line": 57
+    },
+    {
+      "host": "suggestions.dadata.ru",
+      "file": "site-source/local/ajax/lk/order-placing/dadata.php",
+      "line": 5
+    },
+    {
+      "host": "suggestions.dadata.ru",
+      "file": "site-source/local/ajax/lk/order-placing/courier-dropdown-results.php",
+      "line": 4
+    },
+    {
+      "host": "prom23.ru",
+      "file": "site-source/local/ajax/subscription/subscription.php",
+      "line": 5
+    },
+    {
+      "host": "www.prom23.ru",
+      "file": "site-source/local/ajax/subscription/subscription.php",
+      "line": 5
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/local/ajax/subscription/subscription.php",
+      "line": 5
+    },
+    {
+      "host": "prom23.ru",
+      "file": "site-source/local/ajax/subscription/subscription.php",
+      "line": 10
+    },
+    {
+      "host": "ip-api.com",
+      "file": "site-source/local/php_interface/events.php",
+      "line": 2120
+    },
+    {
+      "host": "159.253.19.172",
+      "file": "site-source/local/php_interface/include/defines.php",
+      "line": 131
+    },
+    {
+      "host": "159.253.19.172",
+      "file": "site-source/local/php_interface/include/defines.php",
+      "line": 132
+    },
+    {
+      "host": "direct.i-dgtl.ru",
+      "file": "site-source/local/php_interface/include/defines.php",
+      "line": 153
+    },
+    {
+      "host": "1c.forbion.ru",
+      "file": "site-source/local/php_interface/include/documents1c.php",
+      "line": 21
+    },
+    {
+      "host": "geocode-maps.yandex.ru",
+      "file": "site-source/local/php_interface/lib/Regions.php",
+      "line": 54
+    },
+    {
+      "host": "api.cdek.ru",
+      "file": "site-source/local/php_interface/lib/delivery/Cdek.php",
+      "line": 23
+    },
+    {
+      "host": "api.cdek.ru",
+      "file": "site-source/local/php_interface/lib/delivery/Cdek.php",
+      "line": 70
+    },
+    {
+      "host": "api.cdek.ru",
+      "file": "site-source/local/php_interface/lib/delivery/Cdek.php",
+      "line": 90
+    },
+    {
+      "host": "b2b.taxi.yandex.net",
+      "file": "site-source/local/php_interface/lib/delivery/Providers/YandexDeliveryProvider.php",
+      "line": 12
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/php_interface/lib/delivery/Providers/YandexDeliveryProvider.php",
+      "line": 241
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/php_interface/lib/delivery/Providers/PickupProvider.php",
+      "line": 33
+    },
+    {
+      "host": "api.cdek.ru",
+      "file": "site-source/local/php_interface/lib/delivery/Providers/CdekCourierProvider.php",
+      "line": 17
+    },
+    {
+      "host": "api.cdek.ru",
+      "file": "site-source/local/php_interface/lib/delivery/Providers/CdekCourierProvider.php",
+      "line": 18
+    },
+    {
+      "host": "api.cdek.ru",
+      "file": "site-source/local/php_interface/lib/delivery/Providers/CdekCourierProvider.php",
+      "line": 19
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/local/php_interface/lib/delivery/Providers/CdekCourierProvider.php",
+      "line": 379
+    },
+    {
+      "host": "api.dellin.ru",
+      "file": "site-source/local/php_interface/lib/delivery/Providers/DellinCourierProvider.php",
+      "line": 13
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/StructuredData.php",
+      "line": 247
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/StructuredData.php",
+      "line": 247
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/StructuredData.php",
+      "line": 351
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/MetaTags.php",
+      "line": 399
+    },
+    {
+      "host": "vk.com",
+      "file": "site-source/local/php_interface/lib/Seo/MetaTags.php",
+      "line": 439
+    },
+    {
+      "host": "www.youtube.com",
+      "file": "site-source/local/php_interface/lib/Seo/MetaTags.php",
+      "line": 440
+    },
+    {
+      "host": "t.me",
+      "file": "site-source/local/php_interface/lib/Seo/MetaTags.php",
+      "line": 441
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/MetaTags.php",
+      "line": 498
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/MetaTags.php",
+      "line": 518
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/MetaTags.php",
+      "line": 543
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/MetaTags.php",
+      "line": 551
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/MetaTags.php",
+      "line": 573
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/MetaTags.php",
+      "line": 591
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/ProductMicrodata.php",
+      "line": 59
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/ProductMicrodata.php",
+      "line": 60
+    },
+    {
+      "host": "schema.org",
+      "file": "site-source/local/php_interface/lib/Seo/ProductMicrodata.php",
+      "line": 63
+    },
+    {
+      "host": "yandex.com",
+      "file": "site-source/local/php_interface/lib/Seo/IndexNow.php",
+      "line": 14
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/recom-tech-info/index.php",
+      "line": 22
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/recom-tech-info/index.php",
+      "line": 22
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/recom-tech-info/index.php",
+      "line": 142
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/recom-tech-info/index.php",
+      "line": 142
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/recom-tech-info/index.php",
+      "line": 148
+    },
+    {
+      "host": "prom.myfast.space",
+      "file": "site-source/recom-tech-info/index.php",
+      "line": 148
+    },
+    {
+      "host": "prom23.ru",
+      "file": "site-source/api/prom23/rest.php",
+      "line": 61
+    },
+    {
+      "host": "www.prom23.ru",
+      "file": "site-source/api/prom23/export/config.php",
+      "line": 5
+    },
+    {
+      "host": "www.w3.org",
+      "file": "site-source/ajax/forms/form-excursion.php",
+      "line": 24
+    }
+  ]
+}

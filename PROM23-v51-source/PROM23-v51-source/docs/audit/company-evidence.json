@@ -1,0 +1,413 @@
+{
+  "checkedAt": "2026-09-11",
+  "scope": "Corporate-source verification, not independent external audit. No UI changes.",
+  "audiencePriority": "B2C and B2B equal; shared trust content must support both.",
+  "claims": [
+    {
+      "id": "founded",
+      "uiCopy": "На рынке с 2008 года",
+      "sourceQuote": "Основание компании. Строительство первых складов на Юге России.",
+      "sourceUrl": "https://prom.myfast.space/about/",
+      "sourceCode": "site-source/about/index.php:95–131, UF_HISTORY",
+      "status": "SOURCE_CONFIRMED",
+      "notes": "Дата основания из корпоративной timeline, не дата начала производства. Не повторять лидерство без отдельного доказательства.",
+      "date": "2008"
+    },
+    {
+      "id": "factory-construction",
+      "uiCopy": "Развиваем собственное производство",
+      "sourceQuote": "Запуск строительства собственных заводов строительного оборудования в России.",
+      "sourceUrl": "https://prom.myfast.space/about/",
+      "sourceCode": "site-source/about/index.php:95–131, UF_HISTORY",
+      "status": "SOURCE_CONFIRMED",
+      "notes": "",
+      "date": "2021"
+    },
+    {
+      "id": "factory-first-stage",
+      "uiCopy": "Первая очередь производства — 2022",
+      "sourceQuote": "Открытие первой очереди производства.",
+      "sourceUrl": "https://prom.myfast.space/about/",
+      "sourceCode": "site-source/about/index.php:95–131, UF_HISTORY",
+      "status": "SOURCE_CONFIRMED",
+      "notes": "",
+      "date": "2022"
+    },
+    {
+      "id": "factory-second-stage",
+      "uiCopy": "Вторая очередь производства — 2023",
+      "sourceQuote": "Открытие второй очереди производства.",
+      "sourceUrl": "https://prom.myfast.space/about/",
+      "sourceCode": "site-source/about/index.php:95–131, UF_HISTORY",
+      "status": "SOURCE_CONFIRMED",
+      "notes": "",
+      "date": "2023"
+    },
+    {
+      "id": "factory-third-stage",
+      "uiCopy": "Третья очередь производства — 2024",
+      "sourceQuote": "Открытие третьей очереди производства.",
+      "sourceUrl": "https://prom.myfast.space/about/",
+      "sourceCode": "site-source/about/index.php:95–131, UF_HISTORY",
+      "status": "SOURCE_CONFIRMED",
+      "notes": "",
+      "date": "2024"
+    },
+    {
+      "id": "export-geography",
+      "uiCopy": "Экспортируем в СНГ, Азию и Африку",
+      "sourceQuote": "Мы экспортируем продукцию в страны СНГ, Азии и Африки",
+      "sourceUrl": "https://prom.myfast.space/about/",
+      "sourceCode": "site-source/about/index.php:58–92, UF_BLOCK_ACHIEVEMENTS_DESCRIPTION",
+      "status": "SOURCE_CONFIRMED",
+      "notes": "Явное корпоративное заявление живой страницы. Не выведено из карты филиалов. Не является независимой проверкой таможенных поставок; не добавлять страны/объёмы/доли.",
+      "date": null
+    },
+    {
+      "id": "export-2023",
+      "uiCopy": "Экспорт в 20+ стран: этап истории 2023 года",
+      "sourceQuote": "Экспорт в 20+ стран.",
+      "sourceUrl": "https://prom.myfast.space/about/",
+      "sourceCode": "site-source/about/index.php:95–131, UF_HISTORY",
+      "status": "HISTORICAL_SOURCE_CLAIM",
+      "notes": "Допустимо только как датированная запись timeline. Не превращать в актуальный счётчик стран на сентябрь2026.",
+      "date": "2023"
+    },
+    {
+      "id": "factory-owner",
+      "uiCopy": "Собственное производство в Краснодарском крае",
+      "sourceQuote": "ООО «ТЕАМ ИНДАСТРИ»",
+      "sourceUrl": "https://prom.myfast.space/business/",
+      "sourceCode": "site-source/business/index.php:155–190, UF_ACHIEVEMENTS",
+      "status": "SOURCE_CONFIRMED",
+      "notes": "Компания/производственные марки «Промышленник» и TeaM названы на B2B странице. Не считать Fubag/Inforce/Ryobi собственными марками.",
+      "date": null
+    },
+    {
+      "id": "warehouse-area",
+      "uiCopy": "Краснодарский склад — 12 000 м²",
+      "sourceQuote": "12 000 м²",
+      "sourceUrl": "https://prom.myfast.space/business/",
+      "sourceCode": "site-source/business/index.php:155–190, UF_ACHIEVEMENTS",
+      "status": "SOURCE_CONFIRMED",
+      "notes": "Именно складская площадь. Не завод/производственный цех и не общая сеть.",
+      "date": null
+    },
+    {
+      "id": "award-0",
+      "uiCopy": "I место в региональном конкурсе «Экспортер года»",
+      "sourceQuote": "I место в региональном конкурсе «Экспортер года»: диплом",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "status": "SOURCE_CONFIRMED",
+      "notes": "Название подтверждено реестром сайта. Website ACTIVE_FROM rendered as year; not independently verified from certificate. Для общего trustblock год лучше не выводить, пока он не прочитан с документа.",
+      "date": "2024"
+    },
+    {
+      "id": "award-2",
+      "uiCopy": "I место регионального этапа премии «Золотой Меркурий»",
+      "sourceQuote": "I место регионального этапа премии «Золотой Меркурий»",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "status": "SOURCE_CONFIRMED",
+      "notes": "Название подтверждено реестром сайта. Website ACTIVE_FROM rendered as year; not independently verified from certificate. Для общего trustblock год лучше не выводить, пока он не прочитан с документа.",
+      "date": "2024"
+    },
+    {
+      "id": "award-4",
+      "uiCopy": "II место окружного этапа Всероссийской премии «Экспортер года»",
+      "sourceQuote": "II место окружного этапа Всероссийской премии «Экспортер года»",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "status": "SOURCE_CONFIRMED",
+      "notes": "Название подтверждено реестром сайта. Website ACTIVE_FROM rendered as year; not independently verified from certificate. Для общего trustblock год лучше не выводить, пока он не прочитан с документа.",
+      "date": "2024"
+    }
+  ],
+  "awards": [
+    {
+      "title": "I место в региональном конкурсе «Экспортер года»: диплом",
+      "yearLabel": "2024",
+      "yearMeaning": "Website ACTIVE_FROM rendered as year; not independently verified from certificate",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "image": {
+        "alt": "I место в региональном конкурсе «Экспортер года»: диплом",
+        "src": "https://prom.myfast.space/upload/iblock/330/y0kaxrosycsfzlq6y12qhs3nn2iltoac/3.png",
+        "width": 86,
+        "height": 123,
+        "href": null
+      },
+      "status": "SOURCE_REGISTER_CONFIRMED",
+      "notes": "Diploma and statuette may describe same award; do not count records as independent wins. Named personal awards are not automatically company awards."
+    },
+    {
+      "title": "I место в региональном конкурсе «Экспортер года»: награда",
+      "yearLabel": "2024",
+      "yearMeaning": "Website ACTIVE_FROM rendered as year; not independently verified from certificate",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "image": {
+        "alt": "I место в региональном конкурсе «Экспортер года»: награда",
+        "src": "https://prom.myfast.space/upload/iblock/14d/notuo8bljadj8arh97ciypjl3cg11uc4/8.png",
+        "width": 86,
+        "height": 123,
+        "href": null
+      },
+      "status": "SOURCE_REGISTER_CONFIRMED",
+      "notes": "Diploma and statuette may describe same award; do not count records as independent wins. Named personal awards are not automatically company awards."
+    },
+    {
+      "title": "I место регионального этапа премии «Золотой Меркурий»",
+      "yearLabel": "2024",
+      "yearMeaning": "Website ACTIVE_FROM rendered as year; not independently verified from certificate",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "image": {
+        "alt": "I место регионального этапа премии «Золотой Меркурий»",
+        "src": "https://prom.myfast.space/upload/iblock/a66/cn9t0q0h8hcj0ggkqupqoeza1uca7ex6/4.png",
+        "width": 86,
+        "height": 123,
+        "href": null
+      },
+      "status": "SOURCE_REGISTER_CONFIRMED",
+      "notes": "Diploma and statuette may describe same award; do not count records as independent wins. Named personal awards are not automatically company awards."
+    },
+    {
+      "title": "II место в региональном конкурсе «Экспортер года»",
+      "yearLabel": "2023",
+      "yearMeaning": "Website ACTIVE_FROM rendered as year; not independently verified from certificate",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "image": {
+        "alt": "II место в региональном конкурсе «Экспортер года»",
+        "src": "https://prom.myfast.space/upload/iblock/659/teuhxoyr4ywpqojwz1r0u6u0ex2935zc/6.png",
+        "width": 86,
+        "height": 123,
+        "href": null
+      },
+      "status": "SOURCE_REGISTER_CONFIRMED",
+      "notes": "Diploma and statuette may describe same award; do not count records as independent wins. Named personal awards are not automatically company awards."
+    },
+    {
+      "title": "II место окружного этапа Всероссийской премии «Экспортер года»",
+      "yearLabel": "2024",
+      "yearMeaning": "Website ACTIVE_FROM rendered as year; not independently verified from certificate",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "image": {
+        "alt": "II место окружного этапа Всероссийской премии «Экспортер года»",
+        "src": "https://prom.myfast.space/upload/iblock/364/htt8n2enhovlr9zqbc0tpepqfu7oytts/9.png",
+        "width": 86,
+        "height": 123,
+        "href": null
+      },
+      "status": "SOURCE_REGISTER_CONFIRMED",
+      "notes": "Diploma and statuette may describe same award; do not count records as independent wins. Named personal awards are not automatically company awards."
+    },
+    {
+      "title": "II место окружного этапа премии «Экспортер года»: Ирина Еланская",
+      "yearLabel": "2023",
+      "yearMeaning": "Website ACTIVE_FROM rendered as year; not independently verified from certificate",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "image": {
+        "alt": "II место окружного этапа премии «Экспортер года»: Ирина Еланская",
+        "src": "https://prom.myfast.space/upload/iblock/6c5/ss702398cfd3miehwstbx8rfxmdthurk/2.png",
+        "width": 86,
+        "height": 123,
+        "href": null
+      },
+      "status": "SOURCE_REGISTER_CONFIRMED",
+      "notes": "Diploma and statuette may describe same award; do not count records as independent wins. Named personal awards are not automatically company awards."
+    },
+    {
+      "title": "III место в региональном конкурсе «Экспортер года»",
+      "yearLabel": "2022",
+      "yearMeaning": "Website ACTIVE_FROM rendered as year; not independently verified from certificate",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "image": {
+        "alt": "III место в региональном конкурсе «Экспортер года»",
+        "src": "https://prom.myfast.space/upload/iblock/beb/c898kr765zpmntstiry6488wpx2qdh1d/7.png",
+        "width": 86,
+        "height": 123,
+        "href": null
+      },
+      "status": "SOURCE_REGISTER_CONFIRMED",
+      "notes": "Diploma and statuette may describe same award; do not count records as independent wins. Named personal awards are not automatically company awards."
+    },
+    {
+      "title": "Бронзовый лауреат конкурса «Триумф»: диплом Павла Хомякова",
+      "yearLabel": "2024",
+      "yearMeaning": "Website ACTIVE_FROM rendered as year; not independently verified from certificate",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "image": {
+        "alt": "Бронзовый лауреат конкурса «Триумф»: диплом Павла Хомякова",
+        "src": "https://prom.myfast.space/upload/iblock/fc3/0uitbkhk186rju1zwyq0fk2ejcef84ea/1.png",
+        "width": 86,
+        "height": 123,
+        "href": null
+      },
+      "status": "SOURCE_REGISTER_CONFIRMED",
+      "notes": "Diploma and statuette may describe same award; do not count records as independent wins. Named personal awards are not automatically company awards."
+    },
+    {
+      "title": "Бронзовый лауреат конкурса «Триумф»: статуэтка Павла Хомякова",
+      "yearLabel": "2024",
+      "yearMeaning": "Website ACTIVE_FROM rendered as year; not independently verified from certificate",
+      "sourceUrl": "https://prom.myfast.space/awards/",
+      "sourceCode": "site-source/awards/index.php:66–99",
+      "image": {
+        "alt": "Бронзовый лауреат конкурса «Триумф»: статуэтка Павла Хомякова",
+        "src": "https://prom.myfast.space/upload/iblock/ed2/d4wsw2dk7vye6jq212j5le30buknzbck/5.png",
+        "width": 86,
+        "height": 123,
+        "href": null
+      },
+      "status": "SOURCE_REGISTER_CONFIRMED",
+      "notes": "Diploma and statuette may describe same award; do not count records as independent wins. Named personal awards are not automatically company awards."
+    }
+  ],
+  "media": [
+    {
+      "id": "factory-wide",
+      "localPath": "mobile/assets/brand/factory-wide.webp",
+      "sourceUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/bcc/z4gs8bwe6bxu0cm3ezw3lthrtl0hfhdy.webp",
+      "width": 1400,
+      "height": 600,
+      "role": "Документальный широкий цех. Собственный публичный source hero; визуально просмотрен ранее.",
+      "evidence": "docs/discovery/visual-assets-v7.json + local pixel dimensions",
+      "localExists": true,
+      "sha256": "d5efab0b65f8d291bf9a701a45489c5656cb1960a3e202db090d51b75fd2b677",
+      "bytes": 133824
+    },
+    {
+      "id": "equipment-wide",
+      "localPath": "mobile/assets/brand/equipment-wide.webp",
+      "sourceUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/535/xqo3v5or5ufb5dur1476r7783bpweel0.webp",
+      "width": 1401,
+      "height": 600,
+      "role": "Жёлтые бадьи/оборудование с маркировкой Промышленник; подходит B2C/B2B.",
+      "evidence": "docs/discovery/visual-assets-v7.json + local pixel dimensions",
+      "localExists": true,
+      "sha256": "28355b1965384a223d06baa3d13c654c4c54588d21d4328ac03157373fc97abe",
+      "bytes": 58552
+    },
+    {
+      "id": "laser-wide",
+      "localPath": "mobile/assets/brand/laser-wide.webp",
+      "sourceUrl": "https://prom.myfast.space/upload/dev2fun.imagecompress/webp/iblock/201/tmkke0a0ewwu011v75lfy5auimj1htxw.webp",
+      "width": 1400,
+      "height": 600,
+      "role": "Процесс лазерной обработки из source vendor hero. Не подтверждает роботизированный станок для круглой трубыØ42.",
+      "evidence": "docs/discovery/visual-assets-v7.json + local pixel dimensions",
+      "localExists": true,
+      "sha256": "524aaec814c2ff5fc0d8f5d8ea069ac2eb85fc8caa71133cbeb71fc9c6e321cf",
+      "bytes": 98512
+    }
+  ],
+  "projectMedia": [
+    {
+      "project": "krc-oktyabr-astrakhan",
+      "sourcePage": "https://prom.myfast.space/blog/projects/krc-oktyabr-astrakhan/",
+      "sourceImage": "https://prom.myfast.space/upload/medialibrary/b03/ay4yytfuw1ogyl7a3n8njffaq2p78ckt/krc-oktyabr-astrakhan-05.jpg",
+      "originalAlt": "Реконструкция КРК «Октябрь» в Астрахани — оборудование на строительной площадке",
+      "localFile": "mobile/assets/blog/gallery-krc-oktyabr-astrakhan-05.jpg",
+      "width": 1024,
+      "height": 683,
+      "bytes": 456161,
+      "sha256": "13e1425b5084f7fc9c68330960e20fea943261f59c8c48f02bd68782cd1cdf39",
+      "visualInspection": "Хомутовые леса и сплошные оцинкованные настилы внутри реконструируемого зала; широкая горизонтальная сцена.",
+      "status": "Observed in live source article DOM; fetched with GET and visually inspected. No generation or photo edits. Image alone does not prove authorship or company installation responsibility."
+    },
+    {
+      "project": "moscow-city",
+      "sourcePage": "https://prom.myfast.space/blog/projects/moscow-city/",
+      "sourceImage": "https://prom.myfast.space/upload/medialibrary/21c/cpzv7g74in80u4pe0lar1qu2bgb2i0ot/moscow-city-02.jpg",
+      "originalAlt": "Строительство в деловом центре «Москва-Сити» — оборудование на строительной площадке",
+      "localFile": "mobile/assets/blog/gallery-moscow-city-02.jpg",
+      "width": 1024,
+      "height": 683,
+      "bytes": 320506,
+      "sha256": "95c8fe7a8d534ba0f8dbb950c8f31191822328717c186c8aa8c6fa7cd69e8215",
+      "visualInspection": "Рабочие на строительных лесах на фоне башен; оборудование и реальный контекст объекта в одном кадре.",
+      "status": "Observed in live source article DOM; fetched with GET and visually inspected. No generation or photo edits. Image alone does not prove authorship or company installation responsibility."
+    },
+    {
+      "project": "development-plaza-krasnodar",
+      "sourcePage": "https://prom.myfast.space/blog/projects/development-plaza-krasnodar/",
+      "sourceImage": "https://prom.myfast.space/upload/medialibrary/aa6/ckn9rv6zd2o3lmr6qmx8s3dm4olelk46/development-plaza-krasnodar-02.jpg",
+      "originalAlt": "Development Plaza, Краснодар — оборудование на строительной площадке",
+      "localFile": "mobile/assets/blog/gallery-development-plaza-krasnodar-02.jpg",
+      "width": 1024,
+      "height": 683,
+      "bytes": 405761,
+      "sha256": "45d7a2be434222343fd74c1376e6cca850600d5db4dea22e78684b8561c495e2",
+      "visualInspection": "Монолитный каркас, опалубка, стойки и бадья на этапе строительства.",
+      "status": "Observed in live source article DOM; fetched with GET and visually inspected. No generation or photo edits. Image alone does not prove authorship or company installation responsibility."
+    }
+  ],
+  "doNotUseAsCurrentVerifiedFact": [
+    {
+      "claim": "Производим с2008",
+      "reason": "Timeline:2008основание,2021строительство,2022перваяочередь."
+    },
+    {
+      "claim": "16 лет на рынке",
+      "reason": "Старая относительная цифра source в2026; использовать абсолютный2008."
+    },
+    {
+      "claim": "10+наград /9наград",
+      "reason": "Реестр9записей содержитдипломы/статуэткиоднихпремий; достоверноеподсчитываниеуникальныхнаграднеподтверждено."
+    },
+    {
+      "claim": "10 000+проектов /50 000+клиентов",
+      "reason": "Маркетинговые counters source без даты/методики; не нужны для безопасного trustblock."
+    },
+    {
+      "claim": "Производство12000м²",
+      "reason": "12000м² — Краснодарский склад."
+    },
+    {
+      "claim": "Экспорт в каждую страну, где указан филиал",
+      "reason": "Список франшиз/складов сам по себе не доказательствоэкспорта."
+    },
+    {
+      "claim": "Все товары сертифицированы",
+      "reason": "Маркетинговыйgenericтекст не подтверждает product-level сертификаты; awardsреестр в основном дипломы, не сертификатысоответствия."
+    },
+    {
+      "claim": "Fubag/Inforce/Ryobi — наши собственные бренды",
+      "reason": "Brands page смешиваетперепродажу и собственные марки; ownershipнеподтверждён."
+    },
+    {
+      "claim": "Компания построила Москва-Сити/КРКОктябрь",
+      "reason": "Sourceкейсы о поставленномоборудовании, нестроительствезданиякомпанией."
+    },
+    {
+      "claim": "Отзывы с [название компании]",
+      "reason": "Очевидныеplaceholderнаживыхabout/vendor; исключить."
+    },
+    {
+      "claim": "Наш роботизированный станокØ42",
+      "reason": "Конкретнаямашина/владение/типоперациине подтверждены."
+    }
+  ],
+  "suggestedSharedTrust": {
+    "title": "Промышленник: производство и поставки",
+    "items": [
+      "На рынке с 2008 года",
+      "Собственное производство",
+      "Награды «Экспортер года»",
+      "Экспорт в СНГ, Азию и Африку"
+    ],
+    "links": [
+      "/pages/about",
+      "/information/production",
+      "/pages/awards",
+      "/pages/about"
+    ]
+  }
+}

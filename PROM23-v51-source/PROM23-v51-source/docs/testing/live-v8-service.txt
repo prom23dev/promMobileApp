@@ -1,0 +1,6 @@
+MainPID=2753436
+MemoryCurrent=26505216
+MemoryMax=268435456
+ActiveState=active
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        63G   58G  4.1G  94% /

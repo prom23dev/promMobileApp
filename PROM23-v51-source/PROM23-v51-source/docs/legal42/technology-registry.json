@@ -1,0 +1,57 @@
+{
+  "scope": "isolated application preview only; production inventory pending",
+  "checkedAt": "2026-09-18",
+  "items": [
+    {
+      "vendor": "PROM23",
+      "tag": "prom23-local-session-v2",
+      "purpose": "session/cart/location",
+      "data": "opaque session token",
+      "country": "hosting location not independently verified",
+      "consent_category": "necessary",
+      "transborder_notice_ref": null,
+      "enabled": true,
+      "retention": "Until reset; production TTL pending"
+    },
+    {
+      "vendor": "PROM23",
+      "tag": "prom23-privacy-v1",
+      "purpose": "record category choice and versions",
+      "data": "booleans, edition, document hashes, chosenAt/expiresAt",
+      "country": "browser/device",
+      "consent_category": "necessary",
+      "transborder_notice_ref": null,
+      "enabled": true,
+      "retention": "180 days"
+    },
+    {
+      "vendor": "PROM23",
+      "tag": "server viewed/search history",
+      "purpose": "optional history",
+      "data": "product IDs/search terms",
+      "country": "hosting location not independently verified",
+      "consent_category": "functional",
+      "transborder_notice_ref": null,
+      "enabled": "only opted-in",
+      "retention": "30 viewed IDs / 10 queries per context; clear on withdrawal after sync"
+    }
+  ],
+  "foreignAnalyticsAndAds": {
+    "enabled": false,
+    "sourceReview": "No Google Analytics/Ads, Meta or other analytics SDK installed in changed app",
+    "networkEvidence": "browser-local.json requestHosts",
+    "productionGTM": "NOT_VERIFIED",
+    "serverSideTags": "NOT_VERIFIED"
+  },
+  "rknDocument": {
+    "document_number": "9484204",
+    "date": "2025-06-04",
+    "document_type": "UNKNOWN_PENDING_ORIGINAL",
+    "publicPermissionClaim": false
+  },
+  "storageSourceInventory": [
+    "mobile/src/api/local.ts: prom23-local-session-v2",
+    "mobile/src/PrivacyPreferences.tsx: prom23-privacy-v1"
+  ],
+  "otherPersistentBrowserStoresFound": []
+}

@@ -1,0 +1,12 @@
+✔ content can update presentation while preserving immutable local forms (0.913125ms)
+✔ cross-page content, unknown/missing IDs, HTML and form overrides rejected (0.564125ms)
+✔ optional GET never submits credentials and safe failure returns exact fallback (12.150708ms)
+✔ timeout/abort and invalid base cannot block startup or call a guessed origin (5.723084ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 198.004875

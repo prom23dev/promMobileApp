@@ -1,0 +1,6 @@
+Mode: built-in image_gen (edit with referenced_image_paths).
+Input: /Users/prom23/Downloads/a_Use_the_provided_ima.png
+Output: /Users/prom23/Projects/prom23-mobile/mobile/assets/brand/construction-hero-wide-v20.png
+Usage: illustrative background of the equipment banner; not documentary evidence of a company project.
+
+Use case: compositing / landscape adaptation. Edit the supplied portrait construction-site image into a photorealistic horizontal website hero photograph, approximately 16:9 landscape. Preserve its visual identity: concrete multistory building under construction, blue steel formwork, telescopic shoring props, safety netting, workers in orange hard hats, yellow concrete bucket suspended from a crane, clear blue sky. Reframe and naturally extend the site horizontally; keep coherent realistic architecture and equipment. Put the main crane bucket, workers and blue formwork on the RIGHT THIRD so they remain visible when the left 60% is covered by website headline and gradient. Left side can be a quieter continuation of concrete slabs and open sky. Similar sunny daylight and natural photographic colors to the source. No text, no UI, no buttons, no typography, no added logos or watermark. This is only the landscape background image, not a screenshot of a banner. High quality clean detailed architectural photography.

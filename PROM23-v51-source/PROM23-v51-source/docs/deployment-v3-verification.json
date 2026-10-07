@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-09-11T07:51:26.596628+00:00",
+  "previewUrl": "http://159.253.19.172:18087/",
+  "release": "v0.3-20260911-01",
+  "productionHttp": 200,
+  "themeFileCount": 82,
+  "themeFilesUnchanged": true,
+  "productionProcessesUnchanged": true,
+  "dnsChanged": false,
+  "firewallChanged": false,
+  "productionSettingsChanged": false,
+  "previewUnitPreserved": true
+}
