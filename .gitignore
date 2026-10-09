@@ -17,6 +17,14 @@ __pycache__/
 *.keystore
 !debug.keystore
 
+# SSH private keys (never commit, even if copied in by mistake)
+id_rsa
+id_rsa*
+id_ed25519
+id_ed25519*
+!id_ed25519*.pub
+.ssh/
+
 # Private runtime configs (filled from ops/runtime-stage0 templates — never commit real values)
 **/config.private.php
 **/*.sqlite
