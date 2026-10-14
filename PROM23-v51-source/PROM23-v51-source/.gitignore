@@ -24,3 +24,13 @@ incoming-context/
 *.p8
 .DS_Store
 __pycache__/
+
+# region-mapping pipeline intermediate artifacts (large, regeneratable from
+# a live Bitrix export — see integrations/runtime/region-mapping/README.md).
+# Only the final regionBySettlement.json + manifest are kept.
+integrations/runtime/region-mapping/regions-export.json
+integrations/runtime/region-mapping/matched.json
+integrations/runtime/region-mapping/unmatched.json
+integrations/runtime/region-mapping/homonyms.json
+integrations/runtime/region-mapping/sale-locations.json
+integrations/runtime/region-mapping/skipped.json

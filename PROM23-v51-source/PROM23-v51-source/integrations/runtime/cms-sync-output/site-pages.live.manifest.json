@@ -1,21 +1,27 @@
 {
-    "generatedAt": "2026-09-29T15:02:42+00:00",
-    "slugCount": 14,
+    "generatedAt": "2026-10-09T13:22:24+00:00",
+    "slugCount": 15,
     "requestedSlugs": [
         "personal-data",
-        "checkout",
-        "details",
-        "returns",
-        "offer",
-        "privacy",
         "about",
         "brands",
         "suppliers",
+        "cooperation",
         "franchise",
         "awards",
-        "faq",
+        "returns",
+        "details",
+        "offer",
+        "checkout",
+        "warranty",
         "cookies",
-        "recommendations"
+        "faq",
+        "recommendations",
+        "privacy",
+        "promotions"
     ],
-    "errors": []
+    "errors": {
+        "warranty": "CMS_TAB_NOT_FOUND",
+        "privacy": "CMS_CONTENT_UNSAFE"
+    }
 }

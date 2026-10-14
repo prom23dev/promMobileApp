@@ -27,6 +27,7 @@ final class CmsContentDriver {
             'page-element' => $this->withIblock(fn() => $this->fromPageElement($slug, $spec)),
             'delivery-tab' => $this->withIblock(fn() => $this->fromDeliveryTab($slug, $spec)),
             'faq-list' => $this->withIblock(fn() => $this->fromFaqList($slug, $spec)),
+            'promotions-list' => $this->withIblock(fn() => $this->fromPromotionsList($slug, $spec)),
             'static-template' => $this->fromStaticTemplate($slug, $spec),
             default => throw new RuntimeExceptionCode('CMS_SOURCE_NOT_MIGRATED', 503),
         };
@@ -162,6 +163,53 @@ final class CmsContentDriver {
     }
 
     /**
+     * promotions: owner decided 2026-10-06 to create a dedicated iblock
+     * (no equivalent existed anywhere in the real backend — see
+     * runtime-cms.md's "promotions — not found" note) rather than fake a
+     * mapping onto an unrelated source. IBLOCK_ID_PROMOTIONS was created via
+     * local/php_interface/migrations/Version20261009130000.php, shaped like
+     * IBLOCK_ID_NEW_PRODUCTS/IBLOCK_ID_NEWS (plain NAME/PREVIEW_TEXT/
+     * DETAIL_TEXT/ACTIVE_FROM/ACTIVE_TO — no custom UF_ date properties
+     * needed, those two fields are native CIBlockElement fields). Only the
+     * read-only CMS content page is implemented here; the mobile app's
+     * `data-contract` also lists `productIds`/`buyerTypes`/`regions` for a
+     * *structured* promotions resource/feed — that is a separate, not yet
+     * built API shape and is intentionally out of scope for this adapter,
+     * which only feeds the `/promotions/` content page's title+sections.
+     */
+    private function fromPromotionsList(string $slug, array $spec): array {
+        if (!defined('IBLOCK_ID_PROMOTIONS')) throw new RuntimeExceptionCode('SOURCE_SCHEMA_REQUIRED');
+        $cursor = \CIBlockElement::GetList(['SORT' => 'ASC', 'ID' => 'ASC'], ['IBLOCK_ID' => (int)IBLOCK_ID_PROMOTIONS, 'ACTIVE' => 'Y'], false, ['nTopCount' => 80], ['ID', 'NAME', 'PREVIEW_TEXT', 'DETAIL_TEXT', 'ACTIVE_FROM', 'ACTIVE_TO', 'TIMESTAMP_X']);
+        $sections = [];
+        $latest = null;
+        while ($row = $cursor->Fetch()) {
+            $title = $this->text($row['NAME'] ?? '', 300);
+            $detail = $this->text($row['DETAIL_TEXT'] ?? '');
+            $body = $detail !== '' ? $detail : $this->text($row['PREVIEW_TEXT'] ?? '');
+            if ($title === '' || $body === '') continue;
+            // ACTIVE_FROM/ACTIVE_TO are site-locale Bitrix date strings (not
+            // ISO) — same FormatDate/MakeTimeStamp handling as awards'
+            // yearField, but keeping the full date, not just the year, since
+            // the mobile data-contract names these validFrom/validTo.
+            $validFrom = !empty($row['ACTIVE_FROM']) && \MakeTimeStamp($row['ACTIVE_FROM']) ? \FormatDate('d.m.Y', \MakeTimeStamp($row['ACTIVE_FROM'])) : null;
+            $validTo = !empty($row['ACTIVE_TO']) && \MakeTimeStamp($row['ACTIVE_TO']) ? \FormatDate('d.m.Y', \MakeTimeStamp($row['ACTIVE_TO'])) : null;
+            if ($validFrom !== null || $validTo !== null) {
+                $body .= "\n".'Срок действия: '.($validFrom ?? '—').' — '.($validTo ?? '—');
+            }
+            $sections[] = $this->section('promo-'.$row['ID'], $title, $body);
+            if ($latest === null || (string)$row['TIMESTAMP_X'] > $latest) $latest = (string)$row['TIMESTAMP_X'];
+        }
+        if (!$sections) throw new RuntimeExceptionCode('CMS_TAB_EMPTY', 503);
+        return [
+            'title' => $spec['title'] ?? 'Акции и предложения',
+            'sourceUrl' => $spec['sourceUrl'] ?? null,
+            'sections' => $sections,
+            'links' => $spec['links'] ?? [],
+            'provenance' => ['source' => 'IBLOCK_ID_PROMOTIONS', 'iblockId' => (int)IBLOCK_ID_PROMOTIONS, 'itemCount' => count($sections), 'lastModified' => $latest],
+        ];
+    }
+
+    /**
      * cookies: unlike every other slug, /cookie-policy/ is not backed by any
      * iblock element at all — the legal text is hardcoded directly in the
      * page's own template file (local site confirmed 2026-09-29: no matching
@@ -183,8 +231,16 @@ final class CmsContentDriver {
         $end = stripos($raw, 'footer.php');
         if ($start === false) throw new RuntimeExceptionCode('CMS_TAB_EMPTY', 503);
         $body = substr($raw, $start, ($end !== false ? $end : strlen($raw)) - $start);
-        preg_match_all('#<(h1|h2|h3|p)[^>]*>(.*?)</\1>#is', $body, $blocks, PREG_SET_ORDER);
-        // One <p> per legal clause easily exceeds the 80-section cap (this
+        // 'li' alongside h1/h2/h3/p: confirmed 2026-10-09 against privacy-policy/index.php
+        // that several bullet lists there put raw text directly inside <li> with no <p>
+        // child at all (e.g. lines 528-612) — a p-only pattern silently drops that text
+        // instead of failing loudly. A <li> encountered before an inner <p> is matched as
+        // one block (lazy .*? extends to the matching </li>, swallowing any nested <p> tags,
+        // which the stripping in text() below still cleans up), so <li><p>…</p></li> pages
+        // like cookie-policy/recom-tech-info are unaffected — each <li> still yields exactly
+        // one paragraph, not a double count of the outer <li> and the inner <p>.
+        preg_match_all('#<(h1|h2|h3|p|li)[^>]*>(.*?)</\1>#is', $body, $blocks, PREG_SET_ORDER);
+        // One <p>/<li> per legal clause easily exceeds the 80-section cap (this
         // page alone has 100+) - group every block into a single 'content'
         // section's paragraph list, matching the pattern textProperty/
         // delivery-tab already use for long-form legal text.
@@ -229,7 +285,15 @@ final class CmsContentDriver {
             // table rows (FormatDate/MakeTimeStamp, not strtotime: ACTIVE_FROM
             // is a site-locale Bitrix date string, not necessarily ISO).
             $year = !empty($block['yearField']) && !empty($row['ACTIVE_FROM']) && \MakeTimeStamp($row['ACTIVE_FROM']) ? \FormatDate('Y', \MakeTimeStamp($row['ACTIVE_FROM'])) : null;
-            $line = trim(($year !== null ? $year.' — ' : '').$this->text($row['NAME'] ?? '', 300).($preview ? ' — '.$this->text($preview) : ''), ' —');
+            // 'previewOnly' drops NAME from the line entirely. Confirmed 2026-10-09:
+            // across every template that touches IBLOCK_ID_CASES_AND_REVIEWS (about/
+            // business/vendor/franchise, all via the same cases_and_reviews news.list
+            // instance), NAME is never requested as visible FIELD_CODE; the one place
+            // the shared template reads $arItem['NAME'] at all is an <img alt="">, i.e.
+            // Bitrix's default per-element placeholder, not real editorial content —
+            // so including it here would leak "Элемент #123"-style text into bullets.
+            $name = empty($block['previewOnly']) ? $this->text($row['NAME'] ?? '', 300) : '';
+            $line = trim(($year !== null ? $year.' — ' : '').$name.($preview ? ' — '.$this->text($preview) : ''), ' —');
             if ($line === '') continue;
             if (!empty($block['asBullets'])) { $bullets[] = $line; continue; }
             // DETAIL_TEXT is often '' (not null) when unused — '' must still fall

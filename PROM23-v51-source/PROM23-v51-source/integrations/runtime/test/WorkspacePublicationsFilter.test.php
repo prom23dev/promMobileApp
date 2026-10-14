@@ -84,9 +84,14 @@ WPFQuestionTable::$rows=[
 // Bug repro: rating=5 (matches review #1, which has the reply) combined with withReplies=true.
 // Before the fix, the reply-grouping query reused the rating-scoped filter, so the reply (UF_RATING=0)
 // never matched '=UF_RATING'=>5 and review #1 looked reply-less, failing the withReplies filter entirely.
+// 'rating' only ever scopes the review root filter (publications() line ~111: `$kind==='review'&&isset($f['rating'])`)
+// - questions have no UF_RATING at all, so question #201 (which has its own reply) legitimately still
+// passes withReplies here too; this is the documented behavior at the top of this file, not a second bug.
 $result=$run(['rating'=>5,'withReplies'=>true]);
-wcheck(count($result['items'])===1&&$result['items'][0]['id']==='1','rating+withReplies: review #1 (5★, has a reply) is returned');
-wcheck(count($result['items'][0]['replies'])===1&&$result['items'][0]['replies'][0]['text']==='Thanks!','rating+withReplies: the reply text is actually attached, not dropped by the rating filter');
+wcheck(count($result['items'])===2,'rating+withReplies: both review #1 (5★, has a reply) and question #201 (unaffected by rating) are returned');
+$review1=null;foreach($result['items'] as $item)if($item['id']==='1')$review1=$item;
+wcheck($review1!==null,'rating+withReplies: review #1 is among the returned items');
+wcheck(count($review1['replies'])===1&&$review1['replies'][0]['text']==='Thanks!','rating+withReplies: the reply text is actually attached, not dropped by the rating filter');
 
 // Without any filter, both reviews are present and review #1 still carries its reply.
 $result=$run([]);

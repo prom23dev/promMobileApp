@@ -80,6 +80,7 @@ final class FormsDriver {
                     $record['options'][$name]=$options;
                 }
                 if(!empty($form['awaitingFields']))$record['fields'][]=['name'=>$name,'label'=>$name,'type'=>in_array($type,['text','email','tel','textarea','select','date','file','checkbox','number'],true)?$type:'text','required'=>$control->hasAttribute('required'),...($tag==='select'?['options'=>$record['options'][$name]]:[])];
+                if($type==='radio'){if($control->hasAttribute('checked'))$record['initialValues'][$name]=$value;continue;}
                 if($type!=='file'&&$type!=='checkbox')$record['initialValues'][$name]=$value;
             }
         }elseif(!empty($form['awaitingFields'])||!empty($form['repeatedFields'])||array_filter($form['fields']??[],static fn($field)=>isset($field['awaitingOptions'])))throw new RuntimeExceptionCode('SOURCE_FORM_SCHEMA_REQUIRED');
@@ -182,6 +183,13 @@ final class FormsDriver {
         $query=$this->authorizedTarget($payload,$actor);
         if(isset($query['id'])&&in_array($id,['review','question','product-notify'],true))$post['id']=$query['id'];
         if(isset($query['order_id'])&&in_array($id,['order-review','order-repeat'],true))$post['order-id']=$query['order_id'];
+        // get-business-advice-form-action.php has no product field; the only way to carry which
+        // product a quote/production-request was about into Bitrix is folding it into comment-text.
+        // $id is already canonicalized to 'business-advice' for both aliases, so check $form['id'].
+        if(isset($query['id'])&&in_array($form['id'],['quote','production-request'],true)){
+            $product=\CIBlockElement::GetByID($query['id'])->Fetch();
+            if($product)$post['comment-text']='Товар: '.$product['NAME'].' (ID '.$query['id'].')'."\n".$post['comment-text'];
+        }
         $raw=(new SourceHttp($this->config))->call($form['sourceAction'],[],$post,$files);
         try{$result=json_decode($raw,true,32,JSON_THROW_ON_ERROR);}catch(\Throwable $error){throw new RuntimeExceptionCode('RESULT_RECONCILIATION_REQUIRED',409);}
         if(($result['STATUS']??'')!=='OK'){

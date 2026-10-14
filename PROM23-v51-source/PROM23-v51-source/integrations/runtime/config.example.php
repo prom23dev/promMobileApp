@@ -21,6 +21,12 @@ return [
     'ffprobePath' => null,
     'location' => [
         // Verify actual installed Sale location external service name. Do not copy blindly.
+        // Checked live on prom-stage 2026-10-14: Sale\Location\ExternalTable has ZERO rows for
+        // SERVICE.CODE IN ('FIAS','GAR') on that instance (only YAMARKET/ZIP/ZIP_LOWER/
+        // BX_ISO_3166_NUMERIC/ADD_DLV exist) — LocationDriver::resolve() will throw
+        // LOCATION_MAPPING_REQUIRED for every settlement there until that instance gets a
+        // fuller FIAS/GAR import. See region-mapping/README.md "Executed live" section.
+        // Re-verify on whichever instance actually goes live before trusting this value.
         'externalServiceCode' => 'FIAS',
         // This deployment's own Bitrix site domain code (defines.php DEFAULT_DOMAIN='space' means
         // "no separate country domain" — the main .ru site). Regions.php:465-481 forces personal
@@ -28,8 +34,15 @@ return [
         'siteDomain' => 'space',
         'cisDomains' => ['kg', 'am', 'az', 'kz', 'by'],
         // Real GAR UUID for DEFAULT_CITY (Krasnodar, defines.php:88) — must have a matching
-        // entry in regionBySettlement below.
-        'defaultSettlementId' => '',
+        // entry in regionBySettlement below. Resolved 2026-10-14 from the live
+        // region-mapping export: GAR settlement "край Краснодарский, г. Краснодар"
+        // (region-mapping/matched.json bitrixCityId=67743) — not the unrelated
+        // same-named "х. Краснодар" hamlet in Воронежская область
+        // (bitrixCityId=81638, fiasId 6b960d8b-...), which is a real but
+        // different GAR settlement that also happens to fall into Krasnodar's
+        // catch-all price zone. Verify this UUID still matches regionId=2868
+        // in regionBySettlement.json after any pipeline re-run.
+        'defaultSettlementId' => '7dfa745e-aa19-4688-b121-b655c11e482f',
     ],
     // Explicit fresh runtime configuration after schema verification; never fabricated GAR mappings.
     'commerce' => [

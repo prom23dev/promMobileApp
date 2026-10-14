@@ -2549,66 +2549,140 @@
       "fields": [
         {
           "name": "inn",
-          "label": "ИНН компании",
+          "label": "ИНН / регистрационный номер",
           "type": "text",
-          "required": true,
-          "sourceMapping": "exact"
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 300
         },
         {
           "name": "company-name",
           "label": "Название компании",
           "type": "text",
-          "required": true,
-          "sourceMapping": "exact"
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 300
         },
         {
           "name": "email",
-          "label": "Email",
+          "label": "E-mail",
           "type": "email",
           "required": true,
           "sourceMapping": "exact"
         },
         {
           "name": "phone",
-          "label": "Телефон",
+          "label": "Ваш телефон",
           "type": "tel",
           "required": true,
-          "sourceMapping": "exact"
+          "sourceMapping": "exact",
+          "maxLength": 300,
+          "hint": "Укажите международный код: например, +7, +375, +995 или +374."
         },
         {
           "name": "first-name",
           "label": "Ваше имя",
           "type": "text",
           "required": true,
-          "sourceMapping": "exact"
-        },
-        {
-          "name": "has-warehouse",
-          "label": "Есть склад",
-          "type": "checkbox",
-          "required": false,
-          "sourceMapping": "exact"
+          "sourceMapping": "exact",
+          "maxLength": 300
         },
         {
           "name": "warehouse-address",
-          "label": "Адрес склада",
+          "label": "Адрес или город расположения",
           "type": "text",
           "required": false,
-          "sourceMapping": "exact"
+          "sourceMapping": "exact",
+          "sourceNotes": ["Server requires this field when warehouse-status='Да' (partners-form-action.php's empty($warehouseAddress) check); not enforceable client-side as a static required flag since it depends on another field's value."]
         },
         {
           "name": "warehouse-phone",
           "label": "Телефон склада",
           "type": "tel",
           "required": false,
-          "sourceMapping": "exact"
+          "sourceMapping": "exact",
+          "maxLength": 300
         },
         {
           "name": "warehouse-schedule",
-          "label": "График работы склада",
+          "label": "График склада",
           "type": "text",
           "required": false,
           "sourceMapping": "exact"
+        },
+        {
+          "name": "country",
+          "label": "Страна",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 300
+        },
+        {
+          "name": "region",
+          "label": "Город / регион",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 300
+        },
+        {
+          "name": "business-status",
+          "label": "Есть действующий бизнес?",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "options": [
+            { "value": "Да", "label": "Да" },
+            { "value": "Нет", "label": "Нет" }
+          ]
+        },
+        {
+          "name": "warehouse-status",
+          "label": "Есть склад или помещение?",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "options": [
+            { "value": "Да", "label": "Да" },
+            { "value": "Нет", "label": "Нет" },
+            { "value": "Планирую", "label": "Планирую" }
+          ]
+        },
+        {
+          "name": "interests",
+          "label": "Какие направления вам интересны?",
+          "type": "select",
+          "required": true,
+          "multiple": true,
+          "sourceMapping": "exact",
+          "options": [
+            { "value": "Строительные леса", "label": "Строительные леса" },
+            { "value": "Вышки-туры", "label": "Вышки-туры" },
+            { "value": "Опалубка", "label": "Опалубка" },
+            { "value": "Оборудование для бетонных работ", "label": "Оборудование для бетонных работ" },
+            { "value": "Оборудование для арматуры", "label": "Оборудование для арматуры" },
+            { "value": "Лестницы и стремянки", "label": "Лестницы и стремянки" },
+            { "value": "Складская техника", "label": "Складская техника" },
+            { "value": "Грузоподъёмное оборудование", "label": "Грузоподъёмное оборудование" },
+            { "value": "Другое", "label": "Другое" }
+          ]
+        },
+        {
+          "name": "about",
+          "label": "Расскажите о себе или вашем бизнесе",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 3000
+        },
+        {
+          "name": "has-warehouse",
+          "label": "Есть склад",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceNotes": ["Server ignores this posted value entirely and recomputes UF_HAS_WAREHOUSE from warehouse-status==='Да' itself (partners-form-action.php). Kept in the contract only so the mobile client's derived has-warehouse value (franchiseForm.ts's franchiseValues()) passes FormsDriver::run()'s known-fields check; harmless extra POST param."]
         }
       ],
       "consents": [
@@ -4005,7 +4079,7 @@
           "initial": false
         },
         {
-          "name": "agree_privacy",
+          "name": "agree_policy",
           "label": "Я ознакомился(-ась) с политикой конфиденциальности.",
           "required": true,
           "documents": [
@@ -4074,7 +4148,7 @@
           "initial": false
         },
         {
-          "name": "agree_privacy",
+          "name": "agree_policy",
           "label": "Я ознакомился(-ась) с политикой конфиденциальности.",
           "required": true,
           "documents": [
@@ -4145,66 +4219,140 @@
       "fields": [
         {
           "name": "inn",
-          "label": "ИНН компании",
+          "label": "ИНН / регистрационный номер",
           "type": "text",
-          "required": true,
-          "sourceMapping": "exact"
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 300
         },
         {
           "name": "company-name",
           "label": "Название компании",
           "type": "text",
-          "required": true,
-          "sourceMapping": "exact"
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 300
         },
         {
           "name": "email",
-          "label": "Email",
+          "label": "E-mail",
           "type": "email",
           "required": true,
           "sourceMapping": "exact"
         },
         {
           "name": "phone",
-          "label": "Телефон",
+          "label": "Ваш телефон",
           "type": "tel",
           "required": true,
-          "sourceMapping": "exact"
+          "sourceMapping": "exact",
+          "maxLength": 300,
+          "hint": "Укажите международный код: например, +7, +375, +995 или +374."
         },
         {
           "name": "first-name",
           "label": "Ваше имя",
           "type": "text",
           "required": true,
-          "sourceMapping": "exact"
-        },
-        {
-          "name": "has-warehouse",
-          "label": "Есть склад",
-          "type": "checkbox",
-          "required": false,
-          "sourceMapping": "exact"
+          "sourceMapping": "exact",
+          "maxLength": 300
         },
         {
           "name": "warehouse-address",
-          "label": "Адрес склада",
+          "label": "Адрес или город расположения",
           "type": "text",
           "required": false,
-          "sourceMapping": "exact"
+          "sourceMapping": "exact",
+          "sourceNotes": ["Server requires this field when warehouse-status='Да' (partners-form-action.php's empty($warehouseAddress) check); not enforceable client-side as a static required flag since it depends on another field's value."]
         },
         {
           "name": "warehouse-phone",
           "label": "Телефон склада",
           "type": "tel",
           "required": false,
-          "sourceMapping": "exact"
+          "sourceMapping": "exact",
+          "maxLength": 300
         },
         {
           "name": "warehouse-schedule",
-          "label": "График работы склада",
+          "label": "График склада",
           "type": "text",
           "required": false,
           "sourceMapping": "exact"
+        },
+        {
+          "name": "country",
+          "label": "Страна",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 300
+        },
+        {
+          "name": "region",
+          "label": "Город / регион",
+          "type": "text",
+          "required": true,
+          "sourceMapping": "exact",
+          "maxLength": 300
+        },
+        {
+          "name": "business-status",
+          "label": "Есть действующий бизнес?",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "options": [
+            { "value": "Да", "label": "Да" },
+            { "value": "Нет", "label": "Нет" }
+          ]
+        },
+        {
+          "name": "warehouse-status",
+          "label": "Есть склад или помещение?",
+          "type": "select",
+          "required": true,
+          "sourceMapping": "exact",
+          "options": [
+            { "value": "Да", "label": "Да" },
+            { "value": "Нет", "label": "Нет" },
+            { "value": "Планирую", "label": "Планирую" }
+          ]
+        },
+        {
+          "name": "interests",
+          "label": "Какие направления вам интересны?",
+          "type": "select",
+          "required": true,
+          "multiple": true,
+          "sourceMapping": "exact",
+          "options": [
+            { "value": "Строительные леса", "label": "Строительные леса" },
+            { "value": "Вышки-туры", "label": "Вышки-туры" },
+            { "value": "Опалубка", "label": "Опалубка" },
+            { "value": "Оборудование для бетонных работ", "label": "Оборудование для бетонных работ" },
+            { "value": "Оборудование для арматуры", "label": "Оборудование для арматуры" },
+            { "value": "Лестницы и стремянки", "label": "Лестницы и стремянки" },
+            { "value": "Складская техника", "label": "Складская техника" },
+            { "value": "Грузоподъёмное оборудование", "label": "Грузоподъёмное оборудование" },
+            { "value": "Другое", "label": "Другое" }
+          ]
+        },
+        {
+          "name": "about",
+          "label": "Расскажите о себе или вашем бизнесе",
+          "type": "textarea",
+          "required": false,
+          "sourceMapping": "exact",
+          "maxLength": 3000
+        },
+        {
+          "name": "has-warehouse",
+          "label": "Есть склад",
+          "type": "checkbox",
+          "required": false,
+          "sourceMapping": "exact",
+          "sourceNotes": ["Server ignores this posted value entirely and recomputes UF_HAS_WAREHOUSE from warehouse-status==='Да' itself (partners-form-action.php). Kept in the contract only so the mobile client's derived has-warehouse value (franchiseForm.ts's franchiseValues()) passes FormsDriver::run()'s known-fields check; harmless extra POST param."]
         }
       ],
       "consents": [
@@ -4218,7 +4366,7 @@
           "initial": false
         },
         {
-          "name": "agree_privacy",
+          "name": "agree_policy",
           "label": "Я ознакомился(-ась) с политикой конфиденциальности.",
           "required": true,
           "documents": [

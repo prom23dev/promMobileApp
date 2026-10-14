@@ -78,16 +78,13 @@ return [
                 ['id' => 'advantages-slider', 'title' => 'Преимущества франшизы', 'iblockConstant' => 'IBLOCK_ID_ADVANTAGES', 'listProperty' => 'UF_ADVANTAGES_SLIDER', 'asBullets' => true],
                 ['id' => 'how-to-become', 'title' => 'Как стать франчайзи', 'iblockConstant' => 'IBLOCK_ID_ACHIEVEMENTS', 'listProperty' => 'UF_HOW_TO_BECOME_FRANCHISEES', 'asBullets' => true],
                 ['id' => 'projects', 'title' => 'Примеры успешных партнёров', 'iblockConstant' => 'IBLOCK_ID_PROJECTS', 'listProperty' => 'UF_PROJECTS', 'asBullets' => true],
-                // The template's own FIELD_CODE for this block is PREVIEW_TEXT/
-                // DATE_ACTIVE_FROM/PROPERTY_IMG only, with no NAME — but that
-                // only proves the *template* doesn't render NAME, not that the
-                // elements have none. Not verified against live data (no DB
-                // access this session). If real elements do have a NAME that
-                // shouldn't appear (e.g. an internal-only review title), add
-                // 'nameOnly' => true's inverse is not available yet — check the
-                // live content once reachable and add a 'previewOnly' option to
-                // blockSection() if needed, rather than guessing here.
-                ['id' => 'cases-and-reviews', 'title' => 'Отзывы', 'iblockConstant' => 'IBLOCK_ID_CASES_AND_REVIEWS', 'listProperty' => 'UF_CASES_AND_REVIEWS', 'asBullets' => true],
+                // Confirmed 2026-10-09: NAME is never requested as a visible
+                // FIELD_CODE by any of the 4 templates sharing this iblock
+                // (about/business/vendor/franchise, same cases_and_reviews
+                // news.list instance) — the shared template's one NAME read
+                // is an <img alt="">, i.e. Bitrix's default placeholder, not
+                // real content. 'previewOnly' drops it from the rendered line.
+                ['id' => 'cases-and-reviews', 'title' => 'Отзывы', 'iblockConstant' => 'IBLOCK_ID_CASES_AND_REVIEWS', 'listProperty' => 'UF_CASES_AND_REVIEWS', 'asBullets' => true, 'previewOnly' => true],
                 ['id' => 'faq', 'title' => 'Часто задаваемые вопросы', 'iblockConstant' => 'IBLOCK_ID_FAQ', 'listProperty' => 'UF_FAQ', 'asBullets' => true],
             ],
         ],
@@ -112,32 +109,45 @@ return [
         // Confirmed source, but not wired by default — static legal template,
         // no CMS element. See 'fromStaticTemplate()'/runtime-cms.md.
         'cookies' => ['type' => 'static-template', 'file' => 'cookie-policy/index.php', 'sourceUrl' => 'https://prom.myfast.space/cookie-policy/'],
-        // Owner decision pending: real content is IBLOCK_ID_FAQ (Q&A list), not the
-        // /delivery/ warranty tab the curated snapshot currently points "faq" at.
-        // Do not enable until the owner confirms which is the actual /faq/ replacement.
-        // 'faq' => ['type' => 'faq-list', 'sourceUrl' => 'https://prom.myfast.space/faq/'],
+        // Owner confirmed 2026-10-06: the curated snapshot's "faq" -> /delivery/
+        // mapping was a copy-paste bug. Real content is IBLOCK_ID_FAQ (Q&A list)
+        // at /faq/, below.
+        'faq' => ['type' => 'faq-list', 'sourceUrl' => 'https://prom.myfast.space/faq/'],
 
-        // 'recommendations' is NOT MIGRATABLE from an iblock element at all
-        // — a hardcoded HTML/PHP template with no CMS element behind it
-        // (same situation as 'cookies' above, just not yet wired through
-        // 'static-template'). See runtime-cms.md.
-        // 'recommendations' => ['type' => 'static-template', 'file' => 'recom-tech-info/index.php', ...],
+        // Confirmed 2026-10-09 (recom-tech-info/index.php:1-162): hardcoded
+        // template, no backing iblock element — single <h1> (line15) then
+        // clean <h3>/<p>/<ul><li><p> blocks (lines26-154) before footer.php
+        // (line160), structurally identical to cookie-policy's shape. Wired
+        // the same way.
+        'recommendations' => ['type' => 'static-template', 'file' => 'recom-tech-info/index.php', 'sourceUrl' => 'https://prom.myfast.space/recom-tech-info/'],
 
-        // 'privacy' is NOT a static-template case (correction 2026-10-06):
-        // the real cms-sync.config.php (private, run against prom-stage
-        // 2026-09-29) found a matching IBLOCK_ID_PAGES=9 element at
-        // CODE='/privacy/' with textProperty='UF_CONTENT', whose text
-        // matched the hardcoded privacy-policy/index.php template
-        // byte-for-byte on its revision-date line. Left commented here
-        // because *why* a duplicate element exists alongside the hardcoded
-        // template is unexplained (see runtime-cms.md/runtime-consent.md) —
-        // confirm with the owner before wiring it live, same bar as any
-        // other owner-pending slug.
-        // 'privacy' => ['type' => 'page-element', 'code' => '/privacy/', 'textProperty' => 'UF_CONTENT', 'sourceUrl' => 'https://prom.myfast.space/privacy-policy/', 'links' => []],
+        // Resolved 2026-10-09 (was the open "duplicate element" question from
+        // 2026-10-06): grepped every href="...privacy..." across all
+        // templates/includes/forms/components — every single one points at
+        // /privacy-policy/; zero link anywhere to /privacy/, and no
+        // ./privacy directory exists on disk at all. The IBLOCK_ID_PAGES
+        // CODE='/privacy/' element found earlier is orphaned — nothing
+        // navigates to it. /privacy-policy/ is the real, canonical,
+        // universally-linked route, so this is wired as a static-template
+        // (same shape as cookies/recommendations above) instead of via that
+        // unlinked iblock element.
+        'privacy' => ['type' => 'static-template', 'file' => 'privacy-policy/index.php', 'sourceUrl' => 'https://prom.myfast.space/privacy-policy/'],
 
-        // NOT FOUND anywhere in prom23marketplace — no /promotions/ route, no
-        // matching iblock or index.php. Needs owner clarification before any
-        // adapter work; likely mobile-only content today.
-        // 'promotions' => intentionally absent.
+        // Built 09.10.2026 on owner go-ahead (2026-10-06): no promotions
+        // route/iblock existed anywhere in the real backend (re-confirmed
+        // 2026-10-09 — no IBLOCK_ID_* constant matching promo/akcii/special/
+        // discount/sale, no matching top-level directory; Bitrix's sale-module
+        // coupon/discount calculator is a checkout-time price calculator with
+        // no editorial content, not a usable substitute). New dedicated
+        // iblock created via local/php_interface/migrations/
+        // Version20261009130000.php (CODE=akcii, ID=42, defines.php's
+        // IBLOCK_ID_PROMOTIONS=42), shaped like IBLOCK_ID_NEW_PRODUCTS=17/
+        // IBLOCK_ID_NEWS=18 (plain NAME/PREVIEW_TEXT/DETAIL_TEXT/ACTIVE_FROM/
+        // ACTIVE_TO, no custom UF_ properties). 3 test elements added for
+        // verification; real editorial content is the owner's to add going
+        // forward via the Bitrix admin. The mobile data-contract's structured
+        // fields (productIds/buyerTypes/regions) are NOT implemented — this
+        // only feeds the page's title+sections content, not a structured feed.
+        'promotions' => ['type' => 'promotions-list', 'title' => 'Акции и предложения', 'sourceUrl' => null],
     ],
 ];
