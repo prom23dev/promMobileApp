@@ -89,6 +89,23 @@ while ($row = $res->fetch()) {
 }
 fwrite(STDERR, "Loaded " . count($regionMap) . " regions.\n");
 
+// 2b. Region name aliases: matched.json's regionName comes from Bitrix's own
+//     HL "регионы продаж" block, which formats a few region names
+//     differently from Sale\Location's own dictionary. Found by inspecting
+//     the "no_region" skip bucket from the first full run (2026-10-15) —
+//     these 3 account for 1,022 of the 1,088 misses; see
+//     region-mapping/README.md's "Region name aliases" note.
+//     Sevastopol has no region-type row of its own on this instance at all
+//     (only a CITY-type row under some other region) — mapped to Crimea,
+//     the nearest administratively/commercially sensible parent for a
+//     delivery-zone lookup.
+$regionAliases = [
+    'Республика Крым' => 'Крым',
+    'Севастополь' => 'Крым',
+    'Республика Северная Осетия - Алания' => 'Республика Северная Осетия-Алания',
+    'Ханты-Мансийский Автономный округ - Югра' => 'Ханты-Мансийский автономный округ',
+];
+
 // 3. Build (regionId|districtName) -> districtId map (TYPE_ID=4, ~1900 rows).
 $districtMap = [];
 $res = $connection->query(
@@ -122,7 +139,7 @@ foreach ($villages as $fiasId => $entry) {
     }
 
     $regionName = (string)($entry['regionName'] ?? '');
-    $regionId = $regionMap[$regionName] ?? null;
+    $regionId = $regionMap[$regionName] ?? $regionMap[$regionAliases[$regionName] ?? ''] ?? null;
     if ($regionId === null) {
         $out[$fiasId] = ['error' => 'LOCATION_MAPPING_REQUIRED', 'reason' => 'region-not-found', 'regionName' => $regionName];
         $stats['no_region']++;

@@ -187,13 +187,48 @@ left unresolved, same as any other `LOCATION_MAPPING_REQUIRED` case.
 
 Re-ran the pipeline's step 3+4 with the enlarged location tree
 (`sale-locations.json` merged with the new `village-sale-locations.json`
-output, fed into `build_region_by_settlement.py` unchanged): final
-**`regionBySettlement.json` now covers 98,065 settlements across the same
-12 Bitrix regions** (up from 2,017 — a ~49x increase), manifest
-`providerVersion` bumped to `20261015`. 1,240 matched settlements remain
-unresolved (`skipped.json`) — the 1,088 no-region-match rows above plus a
-handful of pre-existing `LOCATION_MAPPING_AMBIGUOUS`/`INVALID` cases
-carried over from the original 2,017-row resolution.
+output, fed into `build_region_by_settlement.py` unchanged): first pass
+**`regionBySettlement.json` covered 98,065 settlements** across the same
+12 Bitrix regions (up from 2,017 — a ~49x increase). 1,240 matched
+settlements were skipped; inspecting `skipped.json`'s `saleLocationError`
+breakdown found:
+
+- **1,114 `LOCATION_MAPPING_REQUIRED`** — almost all (1,061) were **not** a
+  real data gap, just regionName formatting differences between the HL
+  "регионы продаж" block (where `matched.json`'s `regionName` comes from)
+  and Bitrix's own `Sale\Location` region dictionary:
+  - `"Республика Крым"` vs Bitrix's `"Крым"` (655 settlements)
+  - `"Республика Северная Осетия - Алания"` (spaced dash) vs Bitrix's
+    `"Республика Северная Осетия-Алания"` (no spaces) (197)
+  - `"Ханты-Мансийский Автономный округ - Югра"` vs Bitrix's
+    `"Ханты-Мансийский автономный округ"` (capitalization + no "- Югра"
+    suffix) (170)
+  - `"Севастополь"` — this instance has **no region-type row for
+    Sevastopol at all** (only a city-type row nested under another
+    region); mapped to the `"Крым"` region as the nearest
+    administratively/commercially sensible delivery zone (39)
+  - The remaining ~53 are genuinely outside Bitrix's region dictionary
+    (Belarus/Armenia/Azerbaijan/Kazakhstan oblasts present in GAR's border
+    data but not in this Russia-only Sale\Location classifier) — correctly
+    unresolvable, not a bug.
+  - Added these 4 as a `$regionAliases` map in `import-villages.php` and
+    re-ran it (idempotent — the 96,048 already-inserted rows were skipped
+    via the `gar-%` CODE pre-check, only the previously-failed ones were
+    retried): **1,059 more inserted**, 29 still unresolved (the genuine
+    foreign-topomym cases). Total villages: 97,107 of 97,136.
+- **126 `CONFLICTING_REGION_FOR_SAME_SETTLEMENT`** — not a Sale\Location
+  gap at all, a **pre-existing ambiguity in `matched.json` itself**: the
+  same GAR `fiasId` appears against two different Bitrix HL cities that
+  belong to two different price/delivery regions.
+  `build_region_by_settlement.py:70-74` deliberately refuses to pick one
+  silently. Needs manual/owner review per-case; out of scope for this
+  import (it would exist regardless of Sale\Location coverage).
+
+**Final result after the alias fix: `regionBySettlement.json` covers
+99,124 settlements** across the same 12 Bitrix regions, manifest
+`providerVersion` `20261015`. 179 settlements remain skipped: 126
+conflicting (data ambiguity, needs owner review) + 53 genuinely
+unresolvable (foreign topomyns / no Bitrix region match).
 
 ## Re-running after a `gar.sqlite` refresh
 

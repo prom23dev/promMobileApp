@@ -3,10 +3,10 @@
   "provider": "bitrix-iblock22-region-mapping",
   "providerVersion": "20261015",
   "sourceGarProviderVersion": "20260911",
-  "generatedAt": "2026-10-15T15:22:00.240137+00:00",
-  "settlementCount": 98065,
+  "generatedAt": "2026-10-15T15:56:01.049640+00:00",
+  "settlementCount": 99124,
   "regionCount": 12,
   "unmatchedCount": 2164,
   "homonymCount": 47933,
-  "skippedCount": 1240
+  "skippedCount": 179
 }
