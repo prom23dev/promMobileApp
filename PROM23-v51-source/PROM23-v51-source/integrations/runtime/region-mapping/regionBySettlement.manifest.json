@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "provider": "bitrix-iblock22-region-mapping",
-  "providerVersion": "20261014",
+  "providerVersion": "20261015",
   "sourceGarProviderVersion": "20260911",
-  "generatedAt": "2026-10-14T12:34:09.679091+00:00",
-  "settlementCount": 2017,
+  "generatedAt": "2026-10-15T15:22:00.240137+00:00",
+  "settlementCount": 98065,
   "regionCount": 12,
   "unmatchedCount": 2164,
   "homonymCount": 47933,
-  "skippedCount": 98442
+  "skippedCount": 1240
 }

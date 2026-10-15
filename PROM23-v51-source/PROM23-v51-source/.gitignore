@@ -33,4 +33,7 @@ integrations/runtime/region-mapping/matched.json
 integrations/runtime/region-mapping/unmatched.json
 integrations/runtime/region-mapping/homonyms.json
 integrations/runtime/region-mapping/sale-locations.json
+integrations/runtime/region-mapping/sale-locations-merged.json
 integrations/runtime/region-mapping/skipped.json
+integrations/runtime/region-mapping/villages-to-import.json
+integrations/runtime/region-mapping/village-sale-locations.json

@@ -108,11 +108,10 @@ isolated instance, see memory `project-prom-stage-real-bitrix`):
   `skipped.json` 87MB, `unmatched.json` 1.2MB) are regeneratable from a
   fresh live export and are now gitignored, not committed.
 
-**Open items for the owner:**
-1. Decide whether to invest in a fuller FIAS/GAR import on the Bitrix side
-   to get village-level `regionBySettlement`/`LocationDriver::resolve()`
-   coverage, or accept city-level-only resolution (2,017 settlements is
-   still real coverage for every town/city a buyer is likely to search).
+**Open items for the owner (status as of 2026-10-14):**
+1. ~~Decide whether to invest in a fuller FIAS/GAR import on the Bitrix side~~
+   — **decided 2026-10-15: yes, import village-level data.** See the
+   "Village-level import" section below — done.
 2. The 47,933-row homonym backlog and 2,164 unmatched rows need either
    manual review or an explicit decision to leave them as
    `REGION_MAPPING_REQUIRED` (dispatcher already fails safely for settlements
@@ -123,6 +122,78 @@ isolated instance, see memory `project-prom-stage-real-bitrix`):
    the Krasnodar-catch-all ambiguity found during an earlier (abandoned)
    federal-subject approach does not apply here — no action needed on that
    front.
+
+## Village-level import (2026-10-15) — closes the item-1 gap above
+
+The owner chose **variant B**: write a custom importer into Bitrix's own
+`Sale\Location` tables from the mobile app's existing `gar.sqlite` (full
+FIAS, 160,478 settlements nationwide), rather than running Bitrix's own
+remote classifier-import wizard (`bitrix/modules/sale/lib/location/import/
+importprocess.php` — downloads its own CSV layout from Bitrix's classifier
+server; would need a fresh multi-GB download and doesn't accept GAR data
+directly) or switching `LocationDriver::resolve()` to the site's DaData
+integration (works, but moves a server-side dependency into the mobile
+runtime's critical path for no benefit once the import below landed).
+
+Scripts (new, kept in this directory):
+- `build_villages_to_import.py matched.json sale-locations.json --out
+  villages-to-import.json` — diffs `matched.json` against the 2,017 already
+  resolved by `resolve-sale-locations.php`, extracting district name from
+  `garFullName`'s `"р-н <name>"` fragment for each remaining (mostly
+  village) settlement. Output: 97,136 settlements to import.
+- `import-villages.php villages-to-import.json [limit]` — run on the Bitrix
+  instance (same prolog/bootstrap pattern as `resolve-sale-locations.php`).
+  Inserts one `Sale\Location\LocationTable` row per settlement (`TYPE_ID=6`
+  VILLAGE) via the **public `LocationTable::addExtended()` API** (not raw
+  SQL), attached as a child of the matching `SUBREGION` (district, `TYPE_ID=
+  4`) row by exact name match (`<district> район`), falling back to the
+  matching `REGION` row (`TYPE_ID=3`) when no district match exists. Also
+  registers a new `GAR` row in `b_sale_loc_ext_srv` (didn't exist on this
+  instance) and attaches each new location's FIAS UUID as an `EXTERNAL`
+  row against it. Bulk inserts use `REBALANCE=>false` (append-only, O(1)
+  per row — `Tree::addExtended()` just stamps `LEFT_MARGIN=parent.RIGHT_
+  MARGIN`/`RIGHT_MARGIN=parent.RIGHT_MARGIN+1` without shifting siblings
+  when this flag is off), followed by a single `LocationTable::resort()`
+  at the end, which rebuilds `LEFT_MARGIN`/`RIGHT_MARGIN` for the whole
+  tree purely from `PARENT_ID` edges (`Tree::resort()`,
+  `bitrix/modules/sale/lib/location/tree.php` — read before writing this
+  script, confirmed it ignores pre-existing margins entirely). Idempotent:
+  `CODE` (`gar-<fiasId>`) has a `UNIQUE` index
+  (`IX_SALE_LOCATION_CODE`), and the script pre-loads existing `gar-%`
+  codes to skip them on a re-run rather than attempting (and discarding)
+  a duplicate insert.
+
+**Before writing:** took a JSON snapshot of all `b_sale_loc*` tables
+(`/var/backups/prom23-db/sale-location-snapshot-before-village-import-
+<timestamp>.json.gz` on the server, ~173KB gzipped — tables were small
+enough that a full mysqldump wasn't needed; `mysqldump` itself also hit an
+unrelated auth-plugin mismatch against this DB, a PHP `mysqli` snapshot
+sidestepped it). Tested on a 300-row slice first (`checkIntegrity()` passed,
+manually walked one inserted row's `PARENT_ID` chain all the way to the
+`Россия` root and confirmed it matched the GAR `garFullName` exactly),
+**then ran the full 97,136-row batch** (4m3s wall time):
+
+```
+{"inserted":95750,"skipped_existing":298,"no_region":1088,
+ "parent_region_fallback":9358,"parent_district":86690,"insert_error":0}
+```
+
+Post-import: `LocationTable::checkIntegrity()` → OK. Total rows in
+`b_sale_location`: 99,202 (3,154 original + 96,048 new `VILLAGE` rows —
+298 from the test slice + 95,750 from the full run). 1,088 settlements had
+no matching Bitrix `REGION` row by name at all (regionName string mismatch
+or a region genuinely outside Bitrix's 12 delivery/price zones) and were
+left unresolved, same as any other `LOCATION_MAPPING_REQUIRED` case.
+
+Re-ran the pipeline's step 3+4 with the enlarged location tree
+(`sale-locations.json` merged with the new `village-sale-locations.json`
+output, fed into `build_region_by_settlement.py` unchanged): final
+**`regionBySettlement.json` now covers 98,065 settlements across the same
+12 Bitrix regions** (up from 2,017 — a ~49x increase), manifest
+`providerVersion` bumped to `20261015`. 1,240 matched settlements remain
+unresolved (`skipped.json`) — the 1,088 no-region-match rows above plus a
+handful of pre-existing `LOCATION_MAPPING_AMBIGUOUS`/`INVALID` cases
+carried over from the original 2,017-row resolution.
 
 ## Re-running after a `gar.sqlite` refresh
 
