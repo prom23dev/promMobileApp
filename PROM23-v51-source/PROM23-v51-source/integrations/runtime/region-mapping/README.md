@@ -224,11 +224,50 @@ breakdown found:
   silently. Needs manual/owner review per-case; out of scope for this
   import (it would exist regardless of Sale\Location coverage).
 
-**Final result after the alias fix: `regionBySettlement.json` covers
-99,124 settlements** across the same 12 Bitrix regions, manifest
-`providerVersion` `20261015`. 179 settlements remain skipped: 126
-conflicting (data ambiguity, needs owner review) + 53 genuinely
-unresolvable (foreign topomyns / no Bitrix region match).
+After the alias fix: `regionBySettlement.json` covered 99,124 settlements,
+179 still skipped (126 conflicting + 53 unresolvable).
+
+### `CONFLICTING_REGION_FOR_SAME_SETTLEMENT` disambiguation (2026-10-15)
+
+Investigated the 126 conflicts by hand: every single matched.json group
+(same `fiasId`, 2-3 different Bitrix HL city rows) had its `garFullName`
+leading with the settlement's **true** region (e.g. `"респ. Дагестан,
+р-н Тарумовский, ж/д рзд. 16-й"`), while exactly one candidate row's
+`regionName` matched that region and the others didn't — generic
+duplicate-name Bitrix cities ("27 км"/"29 км"/"5 км" railway markers,
+"Алешата", "Актау" clashing with Kazakhstan's Aktau, "Агарак" clashing
+with an Armenian city of the same name) or a `trigram-fuzzy` match that
+should have lost to an exact match that already existed for the same
+`fiasId` ("Аболдуевка" vs the correct "Болдаевка", "Амуши" vs the correct
+"Мамуши"). The build script's original first-occurrence-wins rule had
+**silently baked in the wrong region for some of these already** (e.g.
+`"16-й"` was shipped pointing at Курганская область — matched.json's
+first row — when GAR says it's in Дагестан, matched.json's second row).
+
+Added `_gar_region_token()`/`_normalize_region_tokens()` to
+`build_region_by_settlement.py`: for any `fiasId` with multiple candidate
+rows, compare each candidate's `regionName` against the region token
+parsed from `garFullName`'s leading `"обл./респ./край <Region>"` segment
+(token-set overlap after stripping the `обл./область/респ./...`
+boilerplate so differently-ordered/abbreviated forms still match). If
+exactly one candidate's region matches GAR's own region, use that one;
+if zero or more than one still match, leave it as a genuine
+`CONFLICTING_REGION_FOR_SAME_SETTLEMENT` skip rather than guess.
+
+Result: **125 of 126 resolved** (and 2 pre-existing wrong assignments,
+including "16-й" above, got corrected in the process — `regionCount` in
+the manifest actually *dropped* from 12 to 10, because two of those 12
+"regions" turned out to be single-settlement artifacts of the bug: one
+was literally Armenia's Сюник province, picked up only because of the
+Агарак homonym). Final: **`regionBySettlement.json` covers 99,123
+settlements**, manifest `providerVersion` still `20261015`. Only **30**
+settlements remain skipped: the same 29 genuinely-foreign/no-Bitrix-region
+cases as before, plus 1 true remaining conflict (`"Шорйыв"` — two Bitrix
+HL rows both filed under "Республика Коми" while GAR says this specific
+settlement is in "Пермский край"; could be a real homonym or a Bitrix
+data error, left for manual review since neither candidate's region
+matches GAR's — the disambiguation rule correctly refuses to guess here
+too).
 
 ## Re-running after a `gar.sqlite` refresh
 

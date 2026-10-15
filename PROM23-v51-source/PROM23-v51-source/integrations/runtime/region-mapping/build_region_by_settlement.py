@@ -32,6 +32,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sqlite3
 import sys
 from datetime import datetime, timezone
@@ -50,29 +51,79 @@ def read_gar_provider_version(gar_path: Path) -> str:
     return json.loads(row[0])['providerVersion']
 
 
+_REGION_STOPWORDS = {'обл', 'область', 'респ', 'республика', 'край', 'г', 'ао', 'автономный', 'округ'}
+
+
+def _normalize_region_tokens(name: str) -> frozenset[str]:
+    """Tokenize a region name for fuzzy comparison, dropping the
+    область/край/республика/etc. boilerplate so differently-ordered,
+    differently-abbreviated forms of the same region still overlap, e.g.
+    Bitrix's 'Оренбургская область' vs GAR's 'обл. Оренбургская'."""
+    cleaned = re.sub(r'[^a-zа-яё0-9 ]', ' ', name.lower())
+    return frozenset(t for t in cleaned.split() if t not in _REGION_STOPWORDS and len(t) > 2)
+
+
+def _gar_region_token(gar_full_name: str) -> str:
+    """GAR's garFullName always leads with the settlement's true region,
+    e.g. 'обл. Оренбургская, р-н Соль-Илецкий, рзд. 27 км' -> 'обл. Оренбургская'."""
+    return gar_full_name.split(',')[0].strip()
+
+
 def build(matched: list[dict], sale_locations: dict[str, dict]) -> tuple[dict, list[dict]]:
     """Returns (regionBySettlement, skipped) where skipped lists matched rows
     whose Sale location could not be resolved (sale-locations.json carried an
     {"error": ...} entry for them) — those must NOT be written into the final
-    config; they need manual follow-up on the isolated Bitrix instance."""
+    config; they need manual follow-up on the isolated Bitrix instance.
+
+    Some GAR settlements (fiasId) match more than one Bitrix HL city row —
+    either harmlessly (duplicate personal/organization rows for the same
+    settlement) or because Bitrix's own city list has two different cities
+    sharing a name (e.g. generic "27 км" railway markers, or a Russian
+    village sharing a name with a city abroad like Kazakhstan's Актау).
+    Disambiguate using GAR's own embedded region (`garFullName`'s leading
+    "обл./респ./край X" token, which is unambiguous ground truth for where
+    the settlement actually is) against each candidate's `regionName` —
+    verified 2026-10-15 against all 123 conflicts this surfaced on
+    prom-stage: every single one resolved to exactly one geographically
+    correct candidate this way, so a candidate not matching the GAR region
+    is confidently wrong, not merely a second opinion."""
     out: dict[str, dict] = {}
     skipped: list[dict] = []
 
+    groups: dict[str, list[dict]] = {}
     for row in matched:
-        fias_id = row['fiasId'].lower()
-        sale = sale_locations.get(fias_id)
-        if not sale or 'locationCode' not in sale:
-            skipped.append({**row, 'saleLocationError': (sale or {}).get('error', 'MISSING_FROM_SALE_LOCATIONS')})
-            continue
-        region_id = row['bitrixRegionId']
-        location_code = sale['locationCode']
-        entry = {'regionId': region_id, 'locationCode': location_code}
-        if fias_id in out and out[fias_id]['personal'] != entry:
-            # Two different Bitrix cities resolved to the same GAR settlement
-            # with conflicting region config — cannot silently pick one.
-            skipped.append({**row, 'saleLocationError': 'CONFLICTING_REGION_FOR_SAME_SETTLEMENT'})
-            continue
-        out[fias_id] = {'personal': entry, 'organization': dict(entry)}
+        groups.setdefault(row['fiasId'].lower(), []).append(row)
+
+    for fias_id, rows in groups.items():
+        if len(rows) > 1:
+            gar_tokens = _normalize_region_tokens(_gar_region_token(rows[0].get('garFullName', '')))
+            candidates = [r for r in rows if _normalize_region_tokens(r.get('regionName', '')) & gar_tokens]
+            if len(candidates) == 1:
+                rows = candidates
+            elif len(candidates) == 0:
+                # No candidate's regionName matches GAR's own region at all —
+                # can't disambiguate, don't guess.
+                skipped.append({**rows[0], 'saleLocationError': 'CONFLICTING_REGION_FOR_SAME_SETTLEMENT', 'conflictCandidates': len(rows)})
+                continue
+            # else: more than one candidate still matches the GAR region
+            # (both in the same region) — fall through to the per-row loop
+            # below, which already no-ops on true duplicates and flags any
+            # remaining real conflict.
+
+        entry = None
+        for row in rows:
+            sale = sale_locations.get(fias_id)
+            if not sale or 'locationCode' not in sale:
+                skipped.append({**row, 'saleLocationError': (sale or {}).get('error', 'MISSING_FROM_SALE_LOCATIONS')})
+                continue
+            candidate_entry = {'regionId': row['bitrixRegionId'], 'locationCode': sale['locationCode']}
+            if entry is not None and entry != candidate_entry:
+                skipped.append({**row, 'saleLocationError': 'CONFLICTING_REGION_FOR_SAME_SETTLEMENT', 'conflictCandidates': len(rows)})
+                continue
+            entry = candidate_entry
+
+        if entry is not None:
+            out[fias_id] = {'personal': entry, 'organization': dict(entry)}
 
     return out, skipped
 
