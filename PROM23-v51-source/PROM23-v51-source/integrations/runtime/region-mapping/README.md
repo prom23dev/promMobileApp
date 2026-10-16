@@ -262,12 +262,25 @@ was literally Armenia's Сюник province, picked up only because of the
 Агарак homonym). Final: **`regionBySettlement.json` covers 99,123
 settlements**, manifest `providerVersion` still `20261015`. Only **30**
 settlements remain skipped: the same 29 genuinely-foreign/no-Bitrix-region
-cases as before, plus 1 true remaining conflict (`"Шорйыв"` — two Bitrix
-HL rows both filed under "Республика Коми" while GAR says this specific
-settlement is in "Пермский край"; could be a real homonym or a Bitrix
-data error, left for manual review since neither candidate's region
-matches GAR's — the disambiguation rule correctly refuses to guess here
-too).
+cases as before, plus 1 true remaining conflict, **manually investigated
+and confirmed unfixable (2026-10-15):**
+
+**`"Шорйыв"` (`fiasId` `e2a8d30b-57b5-4009-a978-57e16f64b19c`, GAR: край
+Пермский, р-н Кудымкарский).** `gar.sqlite` has **three** settlements
+named "Шорйыв": two in Республика Коми (disambiguated there as
+`"Шорйыв (Кожимский с/с)"` and `"Шорйыв (Усть-Нёмский с/с)"`) and this one
+in Пермский край — a genuine nationwide name homonym, not a data-entry
+typo. Checked Bitrix's own HL city export
+(`regions-export.json`): it has **exactly two** cities named "Шорйыв",
+both tagged `"Республика Коми"`, with coordinates (`61.13,50.24` and
+`60.91,49.72`) both sitting in Komi, not Пермский край — i.e. these are
+Bitrix's (unsuffixed) records for the two *Komi* homonyms. **Bitrix's
+city list has no entry at all for the Пермский-край "Шорйыв"** — there is
+nothing to disambiguate *to*; picking either Komi candidate would
+mis-price/mis-route deliveries to the wrong village. Correctly left
+unresolved — fixing this for real would mean adding a new Bitrix HL city
+row for this specific village (a Bitrix-side content/data task, not
+something this pipeline can infer), not a pipeline bug.
 
 ## Re-running after a `gar.sqlite` refresh
 
