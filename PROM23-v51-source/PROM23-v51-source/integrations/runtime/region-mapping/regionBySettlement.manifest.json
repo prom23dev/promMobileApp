@@ -4,9 +4,9 @@
   "providerVersion": "20261015",
   "sourceGarProviderVersion": "20260911",
   "generatedAt": "2026-10-15T16:09:33.671495+00:00",
-  "settlementCount": 99123,
+  "settlementCount": 99124,
   "regionCount": 10,
   "unmatchedCount": 2164,
   "homonymCount": 47933,
-  "skippedCount": 30
+  "skippedCount": 29
 }
